@@ -1,0 +1,1219 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0recolectar_pelotas	6	1	0	4	4
+1	__D0PlaySound	6	1	4	4	48
+2	__D0main	6	1	8	4	49
+3	__D0SetSensorLowspeed_inline_main	6	1	12	4	3
+4	__DU0SetSensorLight_inline_main	5	1	16	4	6
+5	__D0SetSensorLight_inline_main	6	1	20	4	9
+6	__D0deslizar_derecha	6	1	24	4	9
+7	__CLSRMutex3	9	0	28	4	2
+8	__CLSWMutex3	9	0	32	4	2
+9	__CLSCSMutex3	9	0	36	4	2
+10	__D0atras	6	1	40	4	4
+11	__SPTArgsMutex	9	0	44	4	14
+12	__RLSBmutex3	9	0	48	4	4
+13	__Wait_7qG2_ms_7qG2_000_inline_atras	5	1	52	4	2
+14	__Wait_7qG2_ms_7qG2_000_inline_parar	5	1	56	4	2
+15	__signed_stack_001recolectar_pelotas	6	1	60	4	4
+16	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	64	4	2
+17	__Wait_7qG2_ms_7qG2_000_inline_recolectar_pelotas	5	1	68	4	2
+18	__Wait_7qG2_ms_7qG2_000_inline_deslizar_derecha	5	1	72	4	2
+19	__signed_stack_003PlaySound	6	1	76	4	14
+20	__signed_stack_001main	6	1	80	4	16
+21	__signed_stack_001deslizar_derecha	6	1	84	4	2
+22	__DU0SetSensorLowspeed_inline_main	5	1	88	4	2
+23	__signed_stack_002PlaySound	6	1	92	4	14
+24	__signed_stack_001PlaySound	6	1	96	4	38
+25	__signed_stack_002main	6	1	100	4	6
+26	__rotate_theAngle1	5	1	104	4	2
+27	__rotate_angle1	6	1	108	4	6
+28	__OnRevMutex	9	0	112	4	10
+29	__constVal500	4	0	116	2	1
+30	__rotate_OldRotCount1	4	1	118	2	2
+31	__PlaySound_7qG2_i_7qG2_001	4	1	120	2	15
+32	__constVal150	4	0	122	2	1
+33	__deslizar_derecha_7qG2_ms_7qG2_000	4	1	124	2	4
+34	__constVal200	4	0	126	2	1
+35	__rotate_RotCount1	4	1	128	2	4
+36	__constValNeg1400	4	0	130	2	1
+37	__main_7qG2_fi_7qG2_001	4	1	132	2	3
+38	__main_7qG2_fd_7qG2_001	4	1	134	2	3
+39	__main_7qG2_ti_7qG2_001	4	1	136	2	2
+40	__constVal523	4	0	138	2	3
+41	__PlaySound_7qG2_aCode_7qG2_000	4	1	140	2	7
+42	__main_7qG2_ul_7qG2_001	4	1	142	2	3
+43	__rotate_turnpct1	2	1	144	1	4
+44	__atras_return	1	1	145	1	3
+45	__parar_return	1	1	146	1	6
+46	__rotate_firstPort1	1	1	147	1	5
+47	__PlaySound_return	1	1	148	1	3
+48	__constVal96	2	0	149	1	15
+49	__rotate_stop1	1	1	150	1	3
+50	__constVal63	2	0	151	1	13
+51	__rotate_sync1	1	1	152	1	3
+52	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	153	1	3
+53	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	154	1	4
+54	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	155	1	6
+55	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	156	1	6
+56	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	157	1	2
+57	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	158	1	2
+58	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	159	1	2
+59	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	160	1	2
+60	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	161	1	2
+61	__recolectar_pelotas_return	1	1	162	1	3
+62	__OnRev_Tmp	2	1	163	1	10
+63	__rotate_power1	1	1	164	1	5
+64	__deslizar_derecha_return	1	1	165	1	4
+65	____initialize_global_data_return	1	1	166	1	3
+66	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	167	1	6
+67	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	168	1	6
+68	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	169	1	15
+69	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	170	1	6
+70	__rotate_theUF1	1	1	171	1	6
+71	__constVal15	2	0	172	1	5
+72	__constVal2	2	0	173	1	5
+73	__constVal1	2	0	174	1	21
+74	__constVal32	2	0	175	1	44
+75	____ReadLSBytes3_return	1	1	176	1	4
+76	__RLSBytesCount3	1	1	177	1	8
+77	__RLSBIterations3	1	1	178	1	4
+78	__rotate_theTurnPct1	2	1	179	1	4
+79	__RLSBResult3	2	1	180	1	7
+80	____RotateMotor1_sign_tmp	2	1	181	1	4
+81	__constVal3	2	0	182	1	13
+82	__constVal50	2	0	183	1	2
+83	____RotateMotor1_return	1	1	184	1	4
+84	__constVal4	2	0	185	1	3
+85	____ResetSensorSubroutine_return	1	1	186	1	6
+86	__constVal0	2	1	187	1	55
+87	__ResetSensorPort	1	1	188	1	6
+88	__ResetSensorTmp	1	1	189	1	2
+89	__rotate_theRVI1	1	1	190	1	3
+90	__rotate_theRVP1	1	1	191	1	3
+91	__zfPlaySound	1	1	192	1	27
+92	__rotate_theRVD1	1	1	193	1	3
+93	__zfSetSensorLight_inline_main	1	1	194	1	6
+94	__zfSetSensorLowspeed_inline_main	1	1	195	1	2
+95	__rotate_theOM1	1	1	196	1	7
+96	__rotate_theRS1	1	1	197	1	3
+97	__rotate_theRM1	1	1	198	1	4
+98	__rotate_rs1	1	1	199	1	2
+99	__rotate_thePower1	2	1	200	1	4
+100	__zfdeslizar_derecha	1	1	201	1	3
+101	__constVal100	2	0	202	1	2
+102	__PFTmp	1	1	203	1	1
+103	__zfmain	1	1	204	1	30
+104	__SPTArgs	8	0	5	8	42
+105	__SPTArgs.Result	2	1	208	1	42
+106	__SPTArgs.Frequency	3	1	210	2	42
+107	__SPTArgs.Duration	3	1	212	2	42
+108	__SPTArgs.Loop	1	1	214	1	42
+109	__SPTArgs.Volume	1	1	215	1	42
+110	__CLSRArgs3	8	0	4	12	5
+111	__CLSRArgs3.Result	2	1	216	1	5
+112	__CLSRArgs3.Port	1	1	217	1	5
+113	__CLSRArgs3.Buffer	7	0	218	4	5
+114	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+115	__CLSRArgs3.BufferLen	1	1	220	1	5
+116	__CLSCSArgs3	8	0	3	4	4
+117	__CLSCSArgs3.Result	2	1	224	1	4
+118	__CLSCSArgs3.Port	1	1	225	1	4
+119	__CLSCSArgs3.BytesReady	1	1	226	1	4
+120	__CLSWArgs3	8	0	4	12	5
+121	__CLSWArgs3.Result	2	1	228	1	5
+122	__CLSWArgs3.Port	1	1	229	1	5
+123	__CLSWArgs3.Buffer	7	0	230	4	5
+124	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+125	__CLSWArgs3.ReturnLen	1	1	232	1	5
+126	__OUT_ABC	7	0	234	4	1
+127	__OUT_ABC.__OUT_ABC_type	1	0	0	1	0
+128	__RLSReadBuf3	7	0	236	4	10
+129	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+130	__rotate_ports1	7	0	238	4	7
+131	__rotate_ports1.__rotate_ports1_type	1	0	0	1	0
+132	__RLSLastGoodRead3	7	0	240	4	2
+133	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+134	__RLSBbufLSWrite1	7	0	242	4	2
+135	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	49	0	#line 49 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	50	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	49	2	#line 49 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	49	2	#line 49 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	50	2		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 0
+0	49	5	#line 49 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	50	5	#line 50 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	51	5		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	7	#line 3729 "NXCDefs.h"
+0	3730	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	9	#line 3729 "NXCDefs.h"
+0	3729	9	#line 3729 "NXCDefs.h"
+0	3730	9		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	11	#line 3729 "NXCDefs.h"
+0	3730	11		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	14	#line 3729 "NXCDefs.h"
+0	3730	14		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	17	#line 3729 "NXCDefs.h"
+0	3730	17		set __D0SetSensorLight_inline_main, 5
+0	3729	20	#line 3729 "NXCDefs.h"
+0	3730	20		jmp __001__NXC_Label_5
+0	3729	22	#line 3729 "NXCDefs.h"
+0	3730	22		set __D0SetSensorLight_inline_main, 6
+0	3729	25	#line 3729 "NXCDefs.h"
+0	3730	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	27	#line 3663 "NXCDefs.h"
+0	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	31	#line 3663 "NXCDefs.h"
+0	3730	31	#line 3730 "NXCDefs.h"
+0	3730	31	#line 3730 "NXCDefs.h"
+0	3731	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	33	#line 3730 "NXCDefs.h"
+0	3730	33	#line 3730 "NXCDefs.h"
+0	3731	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	36	#line 3730 "NXCDefs.h"
+0	3676	36	#line 3676 "NXCDefs.h"
+0	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	40	#line 3676 "NXCDefs.h"
+0	3731	40	#line 3731 "NXCDefs.h"
+0	3731	40	#line 3731 "NXCDefs.h"
+0	3732	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	42	#line 3731 "NXCDefs.h"
+0	3694	42	#line 3694 "NXCDefs.h"
+0	3695	42	#pragma macro 4
+0	3695	42		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4422	46	#line 4422 "NXCDefs.h"
+0	3694	46	#line 3694 "NXCDefs.h"
+0	3732	46	#line 3732 "NXCDefs.h"
+0	50	46	#line 50 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	50	46	#line 50 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	51	46		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	50	49	#line 50 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	51	49	#line 51 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	52	49		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	51	#line 3729 "NXCDefs.h"
+0	3730	51		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	53	#line 3729 "NXCDefs.h"
+0	3729	53	#line 3729 "NXCDefs.h"
+0	3730	53		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	55	#line 3729 "NXCDefs.h"
+0	3730	55		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	58	#line 3729 "NXCDefs.h"
+0	3730	58		brtst 4, __002__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	61	#line 3729 "NXCDefs.h"
+0	3730	61		set __D0SetSensorLight_inline_main, 5
+0	3729	64	#line 3729 "NXCDefs.h"
+0	3730	64		jmp __002__NXC_Label_5
+0	3729	66	#line 3729 "NXCDefs.h"
+0	3730	66		set __D0SetSensorLight_inline_main, 6
+0	3729	69	#line 3729 "NXCDefs.h"
+0	3730	69		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	71	#line 3663 "NXCDefs.h"
+0	3664	71		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	75	#line 3663 "NXCDefs.h"
+0	3730	75	#line 3730 "NXCDefs.h"
+0	3730	75	#line 3730 "NXCDefs.h"
+0	3731	75		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	77	#line 3730 "NXCDefs.h"
+0	3730	77	#line 3730 "NXCDefs.h"
+0	3731	77		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	80	#line 3730 "NXCDefs.h"
+0	3676	80	#line 3676 "NXCDefs.h"
+0	3677	80		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	84	#line 3676 "NXCDefs.h"
+0	3731	84	#line 3731 "NXCDefs.h"
+0	3731	84	#line 3731 "NXCDefs.h"
+0	3732	84		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	86	#line 3731 "NXCDefs.h"
+0	3694	86	#line 3694 "NXCDefs.h"
+0	3695	86	#pragma macro 4
+0	3695	86		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	88		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4489	90	#line 4489 "NXCDefs.h"
+0	3694	90	#line 3694 "NXCDefs.h"
+0	3732	90	#line 3732 "NXCDefs.h"
+0	51	90	#line 51 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	51	90	#line 51 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	52	90		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 2
+0	51	93	#line 51 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	52	93	#line 52 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	53	93		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	95	#line 3729 "NXCDefs.h"
+0	3730	95		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	97	#line 3729 "NXCDefs.h"
+0	3729	97	#line 3729 "NXCDefs.h"
+0	3730	97		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	99	#line 3729 "NXCDefs.h"
+0	3730	99		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	102	#line 3729 "NXCDefs.h"
+0	3730	102		brtst 4, __003__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	105	#line 3729 "NXCDefs.h"
+0	3730	105		set __D0SetSensorLight_inline_main, 5
+0	3729	108	#line 3729 "NXCDefs.h"
+0	3730	108		jmp __003__NXC_Label_5
+0	3729	110	#line 3729 "NXCDefs.h"
+0	3730	110		set __D0SetSensorLight_inline_main, 6
+0	3729	113	#line 3729 "NXCDefs.h"
+0	3730	113		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	115	#line 3663 "NXCDefs.h"
+0	3664	115		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	119	#line 3663 "NXCDefs.h"
+0	3730	119	#line 3730 "NXCDefs.h"
+0	3730	119	#line 3730 "NXCDefs.h"
+0	3731	119		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	121	#line 3730 "NXCDefs.h"
+0	3730	121	#line 3730 "NXCDefs.h"
+0	3731	121		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	124	#line 3730 "NXCDefs.h"
+0	3676	124	#line 3676 "NXCDefs.h"
+0	3677	124		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	128	#line 3676 "NXCDefs.h"
+0	3731	128	#line 3731 "NXCDefs.h"
+0	3731	128	#line 3731 "NXCDefs.h"
+0	3732	128		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	130	#line 3731 "NXCDefs.h"
+0	3694	130	#line 3694 "NXCDefs.h"
+0	3695	130	#pragma macro 4
+0	3695	130		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	132		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4556	134	#line 4556 "NXCDefs.h"
+0	3694	134	#line 3694 "NXCDefs.h"
+0	3732	134	#line 3732 "NXCDefs.h"
+0	52	134	#line 52 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	52	134	#line 52 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	53	134		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 3
+0	52	137	#line 52 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	54	137	#line 54 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	55	137		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	139	#line 3758 "NXCDefs.h"
+0	3759	139		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	141	#line 3758 "NXCDefs.h"
+0	3758	141	#line 3758 "NXCDefs.h"
+0	3759	141		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	143	#line 3758 "NXCDefs.h"
+0	3759	143		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	146	#line 3758 "NXCDefs.h"
+0	3759	146		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	149	#line 3758 "NXCDefs.h"
+0	3759	149		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	152	#line 3758 "NXCDefs.h"
+0	3759	152		jmp __004__NXC_Label_37
+0	3758	154	#line 3758 "NXCDefs.h"
+0	3759	154		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	157	#line 3758 "NXCDefs.h"
+0	3759	157		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	159	#line 3663 "NXCDefs.h"
+0	3664	159		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	163	#line 3663 "NXCDefs.h"
+0	3759	163	#line 3759 "NXCDefs.h"
+0	3759	163	#line 3759 "NXCDefs.h"
+0	3760	163		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	165	#line 3759 "NXCDefs.h"
+0	3759	165	#line 3759 "NXCDefs.h"
+0	3760	165		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	168	#line 3759 "NXCDefs.h"
+0	3676	168	#line 3676 "NXCDefs.h"
+0	3677	168		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	172	#line 3676 "NXCDefs.h"
+0	3760	172	#line 3760 "NXCDefs.h"
+0	3760	172	#line 3760 "NXCDefs.h"
+0	3760	172	#line 3760 "NXCDefs.h"
+0	3694	172	#line 3694 "NXCDefs.h"
+0	3695	172	#pragma macro 4
+0	3695	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4651	176	#line 4651 "NXCDefs.h"
+0	3694	176	#line 3694 "NXCDefs.h"
+0	3761	176	#line 3761 "NXCDefs.h"
+0	54	176	#line 54 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	54	176	#line 54 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	55	176		set __D0main, 1
+0	55	179	#line 55 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	56	179		tst 5, __zfmain, __D0main
+0	55	182	#line 55 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	56	182		brtst 4, __NXC_Label_544, __zfmain
+0	55	185	#line 55 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	56	185		getin __main_7qG2_fi_7qG2_001, __constVal0, 4
+0	55	189	#line 55 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	56	189	#line 56 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	57	189		getin __main_7qG2_ti_7qG2_001, __constVal1, 4
+0	56	193	#line 56 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	57	193	#line 57 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	58	193		getin __main_7qG2_fd_7qG2_001, __constVal2, 4
+0	57	197	#line 57 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	58	197	#line 58 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	59	197	#pragma macro 26
+0	59	197		acquire __RLSBmutex3
+0	59	198		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	59	200		set __RLSBytesCount3, 1
+0	59	203		wait2 NA, __constVal15
+0	59	206		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	59	208		index __D0main, __RLSReadBuf3, 65535
+0	59	212		release __RLSBmutex3
+0	4699	213	#line 4699 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	58	213	#line 58 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	59	213		mov __main_7qG2_ul_7qG2_001, __D0main
+0	62	215	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	215		mov __signed_stack_001main, __main_7qG2_fi_7qG2_001
+0	62	217	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	62	217	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	217		set __D0main, 35
+0	62	220	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	220		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	62	224	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	224		mov __D0main, __zfmain
+0	62	226	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	226		brtst 4, __NXC_Label_556, __zfmain
+0	62	229	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	229		mov __signed_stack_001main, __D0main
+0	62	231	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	231		mov __signed_stack_002main, __main_7qG2_fd_7qG2_001
+0	62	233	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	62	233	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	233		set __D0main, 35
+0	62	236	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	236		cmp 0, __zfmain, __signed_stack_002main, __D0main
+0	62	240	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	62	240	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	240		and __D0main, __signed_stack_001main, __zfmain
+0	62	244	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	244		tst 5, __zfmain, __D0main
+0	62	247	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	247		mov __D0main, __zfmain
+0	62	249	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	249		brtst 4, __NXC_Label_556, __zfmain
+0	62	252	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	252		mov __signed_stack_001main, __D0main
+0	62	254	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	254		mov __signed_stack_002main, __main_7qG2_ul_7qG2_001
+0	62	256	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	62	256	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	256		set __D0main, 14
+0	62	259	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	259		cmp 0, __zfmain, __signed_stack_002main, __D0main
+0	62	263	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	62	263	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	63	263		and __D0main, __signed_stack_001main, __zfmain
+0	63	267	#line 63 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	64	267		tst 5, __zfmain, __D0main
+0	63	270	#line 63 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	64	270		brtst 4, __NXC_Label_557, __zfmain
+0	64	273	#line 64 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	65	273		subcall parar, __parar_return
+0	64	275	#line 64 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	65	275	#line 65 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	66	275		subcall recolectar_pelotas, __recolectar_pelotas_return
+0	65	277	#line 65 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	66	277	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	67	277		jmp __NXC_Label_544
+0	66	279	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	69	279	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	70	279		jmp __NXC_Label_558
+0	69	281	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	70	281		mov __signed_stack_001main, __main_7qG2_fi_7qG2_001
+0	69	283	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	69	283	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	70	283		set __D0main, 35
+0	69	286	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	70	286		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	69	290	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	70	290		mov __D0main, __zfmain
+0	69	292	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	70	292		brtst 5, __NXC_Label_559, __zfmain
+0	69	295	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	70	295		mov __signed_stack_001main, __D0main
+0	69	297	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	70	297		mov __signed_stack_002main, __main_7qG2_fd_7qG2_001
+0	69	299	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	69	299	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	70	299		set __D0main, 35
+0	69	302	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	70	302		cmp 0, __zfmain, __signed_stack_002main, __D0main
+0	69	306	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	69	306	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	70	306		or __D0main, __signed_stack_001main, __zfmain
+0	70	310	#line 70 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	71	310		tst 5, __zfmain, __D0main
+0	70	313	#line 70 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	71	313		brtst 4, __NXC_Label_562, __zfmain
+0	71	316	#line 71 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	72	316		subcall atras, __atras_return
+0	71	318	#line 71 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	71	318	#line 71 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	72	318		set __deslizar_derecha_7qG2_ms_7qG2_000, 500
+0	71	321	#line 71 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	72	321	#line 72 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	73	321		subcall deslizar_derecha, __deslizar_derecha_return
+0	72	323	#line 72 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	75	323	#line 75 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	76	323		jmp __NXC_Label_565
+0	75	325	#line 75 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	76	325		mov __signed_stack_001main, __main_7qG2_ul_7qG2_001
+0	75	327	#line 75 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	75	327	#line 75 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	76	327		set __D0main, 14
+0	75	330	#line 75 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	76	330		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	75	334	#line 75 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	76	334		mov __D0main, __zfmain
+0	77	336	#line 77 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	78	336		brtst 4, __NXC_Label_568, __zfmain
+0	77	339	#line 77 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	78	339	#pragma macro 26
+0	78	339		acquire __RLSBmutex3
+0	78	340		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	78	342		set __RLSBytesCount3, 1
+0	78	345		wait2 NA, __constVal15
+0	78	348		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	78	350		index __D0main, __RLSReadBuf3, 65535
+0	78	354		release __RLSBmutex3
+0	4832	355	#line 4832 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	77	355	#line 77 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	78	355		mov __signed_stack_001main, __D0main
+0	77	357	#line 77 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	78	357		set __D0main, 19
+0	77	360	#line 77 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	78	360		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	77	364	#line 77 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	78	364		mov __D0main, __zfmain
+0	78	366	#line 78 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	79	366		brtst 4, __NXC_Label_570, __zfmain
+0	78	369	#line 78 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	79	369		set __deslizar_derecha_7qG2_ms_7qG2_000, 0
+0	78	372	#line 78 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	79	372	#line 79 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	80	372		subcall deslizar_derecha, __deslizar_derecha_return
+0	79	374	#line 79 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	80	374	#line 80 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	81	374		jmp __NXC_Label_569
+0	80	376	#line 80 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	81	376	#line 81 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	82	376		subcall parar, __parar_return
+0	81	378	#line 81 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	85	378	#line 85 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	86	378		jmp __NXC_Label_577
+0	85	380	#line 85 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	86	380		mov __signed_stack_001main, __main_7qG2_ti_7qG2_001
+0	85	382	#line 85 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	85	382	#line 85 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	86	382		set __D0main, 35
+0	85	385	#line 85 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	86	385		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	85	389	#line 85 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	86	389		mov __D0main, __zfmain
+0	88	391	#line 88 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	89	391		brtst 4, __NXC_Label_580, __zfmain
+0	88	394	#line 88 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	89	394		set __D0main, 50
+0	89	397	#line 89 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	90	397	#pragma macro 10
+0	90	397		acquire __OnRevMutex
+0	90	398		neg __OnRev_Tmp, __D0main
+0	90	401		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	90	424		release __OnRevMutex
+0	4883	425	#line 4883 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	89	425	#line 89 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	89	425	#line 89 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	90	425		set __D0main, 50
+0	90	428	#line 90 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	91	428	#pragma macro 10
+0	91	428		acquire __OnRevMutex
+0	91	429		neg __OnRev_Tmp, __D0main
+0	91	432		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	91	455		release __OnRevMutex
+0	4890	456	#line 4890 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	90	456	#line 90 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	90	456	#line 90 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	91	456		set __D0main, 50
+0	91	459	#line 91 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	92	459	#pragma macro 7
+0	92	459		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4897	482	#line 4897 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	91	482	#line 91 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	94	482	#line 94 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	95	482		jmp __NXC_Label_587
+0	94	484	#line 94 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	95	484		set __D0main, 35
+0	95	487	#line 95 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	96	487	#pragma macro 7
+0	96	487		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4907	510	#line 4907 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	95	510	#line 95 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	95	510	#line 95 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	96	510		set __D0main, 50
+0	96	513	#line 96 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	97	513	#pragma macro 10
+0	97	513		acquire __OnRevMutex
+0	97	514		neg __OnRev_Tmp, __D0main
+0	97	517		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	97	540		release __OnRevMutex
+0	4914	541	#line 4914 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	96	541	#line 96 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	96	541	#line 96 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	97	541		set __D0main, 50
+0	97	544	#line 97 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	98	544	#pragma macro 7
+0	98	544		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4921	567	#line 4921 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	97	567	#line 97 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	99	567	#line 99 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	99	567	#line 99 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	99	567	#line 99 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	99	567	#line 99 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	99	567	#line 99 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	100	567		set __Wait_7qG2_ms_7qG2_000_inline_main, 20
+0	99	570	#line 99 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	7921	570	#line 7921 "NXCDefs.h"
+0	7922	570		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	573	#line 7921 "NXCDefs.h"
+0	100	573	#line 100 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	103	573	#line 103 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	104	573		jmp __NXC_Label_543
+0	103	575	#line 103 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+0	104	575		exit -1, -1
+1	4529	0		brtst 4, __rotate_Done1, __rotate_angle1
+1	4530	3		set ____RotateMotor1_sign_tmp, 0
+1	4530	6		brtst EQ, __sign_1, __rotate_angle1
+1	4530	9		set ____RotateMotor1_sign_tmp, -1
+1	4530	12		brtst LT, __sign_1, __rotate_angle1
+1	4530	15		set ____RotateMotor1_sign_tmp, 1
+1	4530	18	__sign_1:	mov __rotate_thePower1, ____RotateMotor1_sign_tmp
+1	4531	20		abs __rotate_theAngle1, __rotate_angle1
+1	4532	23		mul __rotate_thePower1, __rotate_thePower1, __rotate_power1
+1	4534	27		set __rotate_theUF1, 23
+1	4535	30		brtst 4, __rotate_NoSync1, __rotate_sync1
+1	4536	33		set __rotate_theOM1, 7
+1	4537	36		set __rotate_theRM1, 2
+1	4538	39		mov __rotate_theTurnPct1, __rotate_turnpct1
+1	4539	41		brtst 4, __rotate_Start1, __rotate_theTurnPct1
+1	4540	44		add __rotate_theUF1, __rotate_theUF1, __constVal32
+1	4541	48		jmp __rotate_Start1
+1	4543	50		set __rotate_theOM1, 3
+1	4544	53		set __rotate_theRM1, 0
+1	4545	56		set __rotate_theTurnPct1, 0
+1	4547	59		set __rotate_theRS1, 32
+1	4548	62		setout __rotate_ports1, 1, __rotate_theOM1, 8, __rotate_theRM1, 5, __rotate_theAngle1, 6, __rotate_theRS1, 10, __rotate_theRVP1, 11, __rotate_theRVI1, 12, __rotate_theRVD1, 2, __rotate_thePower1, 7, __rotate_turnpct1, 0, __rotate_theUF1
+1	4551	85		index __rotate_firstPort1, __rotate_ports1, 65535
+1	4553	89		getout __rotate_power1, __rotate_firstPort1, 2
+1	4554	93		brtst 4, __rotate_doneRunning1, __rotate_power1
+1	4555	96		getout __rotate_rs1, __rotate_firstPort1, 6
+1	4556	100		brcmp 4, __rotate_Running1, __rotate_rs1, __constVal32
+1	4558	104		brtst 4, __rotate_Reset1, __rotate_stop1
+1	4560	107		set __rotate_theOM1, 7
+1	4561	110		set __rotate_theUF1, 7
+1	4562	113		setout __rotate_ports1, 1, __rotate_theOM1, 8, __constVal1, 6, __rotate_theRS1, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF1
+1	4564	128		getout __rotate_RotCount1, __rotate_firstPort1, 14
+1	4566	132		mov __rotate_OldRotCount1, __rotate_RotCount1
+1	4567	134		wait2 NA, __constVal50
+1	4569	137		getout __rotate_RotCount1, __rotate_firstPort1, 14
+1	4570	141		brcmp 5, __rotate_Stabilize1, __rotate_OldRotCount1, __rotate_RotCount1
+1	4571	145		set __rotate_theOM1, 4
+1	4572	148		setout __rotate_ports1, 8, __rotate_theRM1, 6, __constVal0, 1, __rotate_theOM1, 0, __constVal1
+1	4575	159		brtst 4, __rotate_Done1, __rotate_theTurnPct1
+1	4576	162		setout __rotate_ports1, 0, __constVal32
+1	4578	167		subret ____RotateMotor1_return
+2	4885	0		setin __constVal1, __ResetSensorPort, 5
+2	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+2	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+2	4889	11		subret ____ResetSensorSubroutine_return
+3	5784	0	#pragma macro 25
+3	5784	0		acquire __CLSWMutex3
+3	5784	1		set __CLSWArgs3.Port, 3
+3	5784	4		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+3	5784	6		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+3	5784	8		syscall 21, __CLSWArgs3
+3	5784	11		mov __RLSBResult3, __CLSWArgs3.Result
+3	5784	13		release __CLSWMutex3
+3	5784	14	#line 5784 "NXTDefs.h"
+3	5785	14		brtst 4, __RLSBReturn3, __RLSBytesCount3
+3	5786	17		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+3	5787	21		brtst 5, __RLSBError3, __RLSBResult3
+3	5788	24		set __RLSBIterations3, 4
+3	5790	27	#pragma macro 23
+3	5790	27		acquire __CLSCSMutex3
+3	5790	28		set __CLSCSArgs3.Port, 3
+3	5790	31		syscall 23, __CLSCSArgs3
+3	5790	34		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+3	5790	36		mov __RLSBResult3, __CLSCSArgs3.Result
+3	5790	38		release __CLSCSMutex3
+3	5790	39	#line 5790 "NXTDefs.h"
+3	5791	39		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+3	5792	43		brtst 2, __RLSBError3, __RLSBIterations3
+3	5793	46		brtst 0, __RLSBError3, __RLSBResult3
+3	5794	49		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+3	5796	52		wait2 NA, __constVal15
+3	5797	55		jmp __RLSBDoCheckStatus3
+3	5800	57	#pragma macro 25
+3	5800	57		acquire __CLSRMutex3
+3	5800	58		set __CLSRArgs3.Port, 3
+3	5800	61		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+3	5800	63		syscall 22, __CLSRArgs3
+3	5800	66		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+3	5800	68		mov __RLSBResult3, __CLSRArgs3.Result
+3	5800	70		release __CLSRMutex3
+3	5800	71	#line 5800 "NXTDefs.h"
+3	5801	71		brtst 5, __RLSBError3, __RLSBResult3
+3	5802	74		mov __RLSLastGoodRead3, __RLSReadBuf3
+3	5803	76		jmp __RLSBDone3
+3	5805	78		mov __RLSReadBuf3, __RLSLastGoodRead3
+3	5807	80		arrsize __RLSBytesCount3, __RLSReadBuf3
+3	5809	83		subret ____ReadLSBytes3_return
+4	6518	0	#line 6518 "NXCDefs.h"
+4	6519	0		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+4	6518	2	#line 6518 "NXCDefs.h"
+4	6519	2	#line 6519 "NXCDefs.h"
+4	6520	2		set __D0PlaySound, 0
+4	6519	5	#line 6519 "NXCDefs.h"
+4	6520	5		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	6519	9	#line 6519 "NXCDefs.h"
+4	6520	9		mov __D0PlaySound, __zfPlaySound
+4	6519	11	#line 6519 "NXCDefs.h"
+4	6520	11		brtst 4, __NXC_Label_56, __zfPlaySound
+4	6519	14	#line 6519 "NXCDefs.h"
+4	6520	14		set __signed_stack_001PlaySound, 600
+4	6519	17	#line 6519 "NXCDefs.h"
+4	6519	17	#line 6519 "NXCDefs.h"
+4	6520	17		set __signed_stack_002PlaySound, 200
+4	6519	20	#line 6519 "NXCDefs.h"
+4	6519	20	#line 6519 "NXCDefs.h"
+4	6520	20		set __signed_stack_003PlaySound, 4
+4	6519	23	#line 6519 "NXCDefs.h"
+4	6519	23	#line 6519 "NXCDefs.h"
+4	6520	23		set __D0PlaySound, 0
+4	6520	26	#line 6520 "NXCDefs.h"
+4	6521	26		acquire __SPTArgsMutex
+4	6520	27	#line 6520 "NXCDefs.h"
+4	6521	27		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	6520	29	#line 6520 "NXCDefs.h"
+4	6521	29		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	6520	31	#line 6520 "NXCDefs.h"
+4	6521	31		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	6520	33	#line 6520 "NXCDefs.h"
+4	6521	33		mov __SPTArgs.Loop, __D0PlaySound
+4	6520	35	#line 6520 "NXCDefs.h"
+4	6521	35		syscall 10, __SPTArgs
+4	6520	38	#line 6520 "NXCDefs.h"
+4	6521	38		mov __D0PlaySound, __SPTArgs.Result
+4	6520	40	#line 6520 "NXCDefs.h"
+4	6521	40		release __SPTArgsMutex
+4	6520	41	#line 6520 "NXCDefs.h"
+4	6520	41	#line 6520 "NXCDefs.h"
+4	6521	41		jmp __NXC_Label_65
+4	6520	43	#line 6520 "NXCDefs.h"
+4	6521	43		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+4	6520	45	#line 6520 "NXCDefs.h"
+4	6521	45	#line 6521 "NXCDefs.h"
+4	6522	45		set __D0PlaySound, 1
+4	6521	48	#line 6521 "NXCDefs.h"
+4	6522	48		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	6521	52	#line 6521 "NXCDefs.h"
+4	6522	52		mov __D0PlaySound, __zfPlaySound
+4	6522	54	#line 6522 "NXCDefs.h"
+4	6523	54		brtst 4, __NXC_Label_68, __zfPlaySound
+4	6522	57	#line 6522 "NXCDefs.h"
+4	6523	57		set __signed_stack_001PlaySound, 600
+4	6522	60	#line 6522 "NXCDefs.h"
+4	6522	60	#line 6522 "NXCDefs.h"
+4	6523	60		set __signed_stack_002PlaySound, 150
+4	6522	63	#line 6522 "NXCDefs.h"
+4	6522	63	#line 6522 "NXCDefs.h"
+4	6523	63		set __signed_stack_003PlaySound, 4
+4	6522	66	#line 6522 "NXCDefs.h"
+4	6522	66	#line 6522 "NXCDefs.h"
+4	6523	66		set __D0PlaySound, 0
+4	6523	69	#line 6523 "NXCDefs.h"
+4	6524	69		acquire __SPTArgsMutex
+4	6523	70	#line 6523 "NXCDefs.h"
+4	6524	70		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	6523	72	#line 6523 "NXCDefs.h"
+4	6524	72		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	6523	74	#line 6523 "NXCDefs.h"
+4	6524	74		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	6523	76	#line 6523 "NXCDefs.h"
+4	6524	76		mov __SPTArgs.Loop, __D0PlaySound
+4	6523	78	#line 6523 "NXCDefs.h"
+4	6524	78		syscall 10, __SPTArgs
+4	6523	81	#line 6523 "NXCDefs.h"
+4	6524	81		mov __D0PlaySound, __SPTArgs.Result
+4	6523	83	#line 6523 "NXCDefs.h"
+4	6524	83		release __SPTArgsMutex
+4	6523	84	#line 6523 "NXCDefs.h"
+4	6523	84	#line 6523 "NXCDefs.h"
+4	6524	84		wait2 NA, __constVal200
+4	6523	87	#line 6523 "NXCDefs.h"
+4	6523	87	#line 6523 "NXCDefs.h"
+4	6524	87	#line 6524 "NXCDefs.h"
+4	6525	87		set __signed_stack_001PlaySound, 600
+4	6524	90	#line 6524 "NXCDefs.h"
+4	6524	90	#line 6524 "NXCDefs.h"
+4	6525	90		set __signed_stack_002PlaySound, 150
+4	6524	93	#line 6524 "NXCDefs.h"
+4	6524	93	#line 6524 "NXCDefs.h"
+4	6525	93		set __signed_stack_003PlaySound, 4
+4	6524	96	#line 6524 "NXCDefs.h"
+4	6524	96	#line 6524 "NXCDefs.h"
+4	6525	96		set __D0PlaySound, 0
+4	6525	99	#line 6525 "NXCDefs.h"
+4	6526	99		acquire __SPTArgsMutex
+4	6525	100	#line 6525 "NXCDefs.h"
+4	6526	100		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	6525	102	#line 6525 "NXCDefs.h"
+4	6526	102		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	6525	104	#line 6525 "NXCDefs.h"
+4	6526	104		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	6525	106	#line 6525 "NXCDefs.h"
+4	6526	106		mov __SPTArgs.Loop, __D0PlaySound
+4	6525	108	#line 6525 "NXCDefs.h"
+4	6526	108		syscall 10, __SPTArgs
+4	6525	111	#line 6525 "NXCDefs.h"
+4	6526	111		mov __D0PlaySound, __SPTArgs.Result
+4	6525	113	#line 6525 "NXCDefs.h"
+4	6526	113		release __SPTArgsMutex
+4	6525	114	#line 6525 "NXCDefs.h"
+4	6525	114	#line 6525 "NXCDefs.h"
+4	6526	114		wait2 NA, __constVal150
+4	6525	117	#line 6525 "NXCDefs.h"
+4	6525	117	#line 6525 "NXCDefs.h"
+4	6527	117	#line 6527 "NXCDefs.h"
+4	6528	117		jmp __NXC_Label_85
+4	6527	119	#line 6527 "NXCDefs.h"
+4	6528	119		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+4	6527	121	#line 6527 "NXCDefs.h"
+4	6528	121	#line 6528 "NXCDefs.h"
+4	6529	121		set __D0PlaySound, 3
+4	6528	124	#line 6528 "NXCDefs.h"
+4	6529	124		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	6528	128	#line 6528 "NXCDefs.h"
+4	6529	128		mov __D0PlaySound, __zfPlaySound
+4	6528	130	#line 6528 "NXCDefs.h"
+4	6529	130		brtst 4, __NXC_Label_88, __zfPlaySound
+4	6528	133	#line 6528 "NXCDefs.h"
+4	6529	133		set __PlaySound_7qG2_i_7qG2_001, 4
+4	6528	136	#line 6528 "NXCDefs.h"
+4	6528	136	#line 6528 "NXCDefs.h"
+4	6529	136		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+4	6528	138	#line 6528 "NXCDefs.h"
+4	6528	138	#line 6528 "NXCDefs.h"
+4	6529	138		set __D0PlaySound, 8
+4	6528	141	#line 6528 "NXCDefs.h"
+4	6529	141		cmp 0, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	6528	145	#line 6528 "NXCDefs.h"
+4	6529	145		mov __D0PlaySound, __zfPlaySound
+4	6528	147	#line 6528 "NXCDefs.h"
+4	6529	147		brtst 4, __NXC_Label_90, __zfPlaySound
+4	6528	150	#line 6528 "NXCDefs.h"
+4	6529	150		jmp __NXC_Label_91
+4	6529	152	#line 6529 "NXCDefs.h"
+4	6530	152		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+4	6530	156	#line 6530 "NXCDefs.h"
+4	6531	156		jmp __NXC_Label_89
+4	6530	158	#line 6530 "NXCDefs.h"
+4	6530	158	#line 6530 "NXCDefs.h"
+4	6530	158	#line 6530 "NXCDefs.h"
+4	6530	158	#line 6530 "NXCDefs.h"
+4	6531	158		mul __signed_stack_001PlaySound, __constVal523, __PlaySound_7qG2_i_7qG2_001
+4	6530	162	#line 6530 "NXCDefs.h"
+4	6530	162	#line 6530 "NXCDefs.h"
+4	6530	162	#line 6530 "NXCDefs.h"
+4	6531	162		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __constVal4
+4	6530	166	#line 6530 "NXCDefs.h"
+4	6530	166	#line 6530 "NXCDefs.h"
+4	6531	166		set __signed_stack_002PlaySound, 100
+4	6530	169	#line 6530 "NXCDefs.h"
+4	6530	169	#line 6530 "NXCDefs.h"
+4	6531	169		set __signed_stack_003PlaySound, 4
+4	6530	172	#line 6530 "NXCDefs.h"
+4	6530	172	#line 6530 "NXCDefs.h"
+4	6531	172		set __D0PlaySound, 0
+4	6531	175	#line 6531 "NXCDefs.h"
+4	6532	175		acquire __SPTArgsMutex
+4	6531	176	#line 6531 "NXCDefs.h"
+4	6532	176		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	6531	178	#line 6531 "NXCDefs.h"
+4	6532	178		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	6531	180	#line 6531 "NXCDefs.h"
+4	6532	180		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	6531	182	#line 6531 "NXCDefs.h"
+4	6532	182		mov __SPTArgs.Loop, __D0PlaySound
+4	6531	184	#line 6531 "NXCDefs.h"
+4	6532	184		syscall 10, __SPTArgs
+4	6531	187	#line 6531 "NXCDefs.h"
+4	6532	187		mov __D0PlaySound, __SPTArgs.Result
+4	6531	189	#line 6531 "NXCDefs.h"
+4	6532	189		release __SPTArgsMutex
+4	6531	190	#line 6531 "NXCDefs.h"
+4	6531	190	#line 6531 "NXCDefs.h"
+4	6532	190		wait2 NA, __constVal100
+4	6531	193	#line 6531 "NXCDefs.h"
+4	6531	193	#line 6531 "NXCDefs.h"
+4	6533	193	#line 6533 "NXCDefs.h"
+4	6534	193		jmp __NXC_Label_92
+4	6533	195	#line 6533 "NXCDefs.h"
+4	6533	195	#line 6533 "NXCDefs.h"
+4	6534	195		jmp __NXC_Label_105
+4	6533	197	#line 6533 "NXCDefs.h"
+4	6534	197		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+4	6533	199	#line 6533 "NXCDefs.h"
+4	6534	199	#line 6534 "NXCDefs.h"
+4	6535	199		set __D0PlaySound, 2
+4	6534	202	#line 6534 "NXCDefs.h"
+4	6535	202		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	6534	206	#line 6534 "NXCDefs.h"
+4	6535	206		mov __D0PlaySound, __zfPlaySound
+4	6534	208	#line 6534 "NXCDefs.h"
+4	6535	208		brtst 4, __NXC_Label_108, __zfPlaySound
+4	6534	211	#line 6534 "NXCDefs.h"
+4	6535	211		set __PlaySound_7qG2_i_7qG2_001, 7
+4	6534	214	#line 6534 "NXCDefs.h"
+4	6534	214	#line 6534 "NXCDefs.h"
+4	6535	214		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+4	6534	216	#line 6534 "NXCDefs.h"
+4	6534	216	#line 6534 "NXCDefs.h"
+4	6535	216		set __D0PlaySound, 3
+4	6534	219	#line 6534 "NXCDefs.h"
+4	6535	219		cmp 1, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	6534	223	#line 6534 "NXCDefs.h"
+4	6535	223		mov __D0PlaySound, __zfPlaySound
+4	6534	225	#line 6534 "NXCDefs.h"
+4	6535	225		brtst 4, __NXC_Label_110, __zfPlaySound
+4	6534	228	#line 6534 "NXCDefs.h"
+4	6535	228		jmp __NXC_Label_111
+4	6535	230	#line 6535 "NXCDefs.h"
+4	6536	230		sub __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+4	6536	234	#line 6536 "NXCDefs.h"
+4	6537	234		jmp __NXC_Label_109
+4	6536	236	#line 6536 "NXCDefs.h"
+4	6536	236	#line 6536 "NXCDefs.h"
+4	6536	236	#line 6536 "NXCDefs.h"
+4	6536	236	#line 6536 "NXCDefs.h"
+4	6537	236		mul __signed_stack_001PlaySound, __constVal523, __PlaySound_7qG2_i_7qG2_001
+4	6536	240	#line 6536 "NXCDefs.h"
+4	6536	240	#line 6536 "NXCDefs.h"
+4	6536	240	#line 6536 "NXCDefs.h"
+4	6537	240		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __constVal4
+4	6536	244	#line 6536 "NXCDefs.h"
+4	6536	244	#line 6536 "NXCDefs.h"
+4	6537	244		set __signed_stack_002PlaySound, 100
+4	6536	247	#line 6536 "NXCDefs.h"
+4	6536	247	#line 6536 "NXCDefs.h"
+4	6537	247		set __signed_stack_003PlaySound, 4
+4	6536	250	#line 6536 "NXCDefs.h"
+4	6536	250	#line 6536 "NXCDefs.h"
+4	6537	250		set __D0PlaySound, 0
+4	6537	253	#line 6537 "NXCDefs.h"
+4	6538	253		acquire __SPTArgsMutex
+4	6537	254	#line 6537 "NXCDefs.h"
+4	6538	254		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	6537	256	#line 6537 "NXCDefs.h"
+4	6538	256		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	6537	258	#line 6537 "NXCDefs.h"
+4	6538	258		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	6537	260	#line 6537 "NXCDefs.h"
+4	6538	260		mov __SPTArgs.Loop, __D0PlaySound
+4	6537	262	#line 6537 "NXCDefs.h"
+4	6538	262		syscall 10, __SPTArgs
+4	6537	265	#line 6537 "NXCDefs.h"
+4	6538	265		mov __D0PlaySound, __SPTArgs.Result
+4	6537	267	#line 6537 "NXCDefs.h"
+4	6538	267		release __SPTArgsMutex
+4	6537	268	#line 6537 "NXCDefs.h"
+4	6537	268	#line 6537 "NXCDefs.h"
+4	6538	268		wait2 NA, __constVal100
+4	6537	271	#line 6537 "NXCDefs.h"
+4	6537	271	#line 6537 "NXCDefs.h"
+4	6539	271	#line 6539 "NXCDefs.h"
+4	6540	271		jmp __NXC_Label_112
+4	6539	273	#line 6539 "NXCDefs.h"
+4	6539	273	#line 6539 "NXCDefs.h"
+4	6540	273		jmp __NXC_Label_125
+4	6539	275	#line 6539 "NXCDefs.h"
+4	6540	275		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+4	6539	277	#line 6539 "NXCDefs.h"
+4	6540	277	#line 6540 "NXCDefs.h"
+4	6541	277		set __D0PlaySound, 4
+4	6540	280	#line 6540 "NXCDefs.h"
+4	6541	280		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	6540	284	#line 6540 "NXCDefs.h"
+4	6541	284		mov __D0PlaySound, __zfPlaySound
+4	6541	286	#line 6541 "NXCDefs.h"
+4	6542	286		brtst 4, __NXC_Label_128, __zfPlaySound
+4	6541	289	#line 6541 "NXCDefs.h"
+4	6542	289		set __signed_stack_001PlaySound, 100
+4	6541	292	#line 6541 "NXCDefs.h"
+4	6541	292	#line 6541 "NXCDefs.h"
+4	6542	292		set __signed_stack_002PlaySound, 500
+4	6541	295	#line 6541 "NXCDefs.h"
+4	6541	295	#line 6541 "NXCDefs.h"
+4	6542	295		set __signed_stack_003PlaySound, 4
+4	6541	298	#line 6541 "NXCDefs.h"
+4	6541	298	#line 6541 "NXCDefs.h"
+4	6542	298		set __D0PlaySound, 0
+4	6542	301	#line 6542 "NXCDefs.h"
+4	6543	301		acquire __SPTArgsMutex
+4	6542	302	#line 6542 "NXCDefs.h"
+4	6543	302		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	6542	304	#line 6542 "NXCDefs.h"
+4	6543	304		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	6542	306	#line 6542 "NXCDefs.h"
+4	6543	306		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	6542	308	#line 6542 "NXCDefs.h"
+4	6543	308		mov __SPTArgs.Loop, __D0PlaySound
+4	6542	310	#line 6542 "NXCDefs.h"
+4	6543	310		syscall 10, __SPTArgs
+4	6542	313	#line 6542 "NXCDefs.h"
+4	6543	313		mov __D0PlaySound, __SPTArgs.Result
+4	6542	315	#line 6542 "NXCDefs.h"
+4	6543	315		release __SPTArgsMutex
+4	6542	316	#line 6542 "NXCDefs.h"
+4	6542	316	#line 6542 "NXCDefs.h"
+4	6543	316		wait2 NA, __constVal500
+4	6542	319	#line 6542 "NXCDefs.h"
+4	6542	319	#line 6542 "NXCDefs.h"
+4	6544	319	#line 6544 "NXCDefs.h"
+4	6545	319		jmp __NXC_Label_137
+4	6544	321	#line 6544 "NXCDefs.h"
+4	6545	321		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+4	6544	323	#line 6544 "NXCDefs.h"
+4	6545	323	#line 6545 "NXCDefs.h"
+4	6546	323		set __D0PlaySound, 5
+4	6545	326	#line 6545 "NXCDefs.h"
+4	6546	326		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	6545	330	#line 6545 "NXCDefs.h"
+4	6546	330		mov __D0PlaySound, __zfPlaySound
+4	6545	332	#line 6545 "NXCDefs.h"
+4	6546	332		brtst 4, __NXC_Label_140, __zfPlaySound
+4	6545	335	#line 6545 "NXCDefs.h"
+4	6546	335		set __PlaySound_7qG2_i_7qG2_001, 4
+4	6545	338	#line 6545 "NXCDefs.h"
+4	6545	338	#line 6545 "NXCDefs.h"
+4	6546	338		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+4	6545	340	#line 6545 "NXCDefs.h"
+4	6545	340	#line 6545 "NXCDefs.h"
+4	6546	340		set __D0PlaySound, 8
+4	6545	343	#line 6545 "NXCDefs.h"
+4	6546	343		cmp 0, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	6545	347	#line 6545 "NXCDefs.h"
+4	6546	347		mov __D0PlaySound, __zfPlaySound
+4	6545	349	#line 6545 "NXCDefs.h"
+4	6546	349		brtst 4, __NXC_Label_142, __zfPlaySound
+4	6545	352	#line 6545 "NXCDefs.h"
+4	6546	352		jmp __NXC_Label_143
+4	6546	354	#line 6546 "NXCDefs.h"
+4	6547	354		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+4	6547	358	#line 6547 "NXCDefs.h"
+4	6548	358		jmp __NXC_Label_141
+4	6547	360	#line 6547 "NXCDefs.h"
+4	6547	360	#line 6547 "NXCDefs.h"
+4	6547	360	#line 6547 "NXCDefs.h"
+4	6547	360	#line 6547 "NXCDefs.h"
+4	6548	360		mul __signed_stack_001PlaySound, __constVal523, __PlaySound_7qG2_i_7qG2_001
+4	6547	364	#line 6547 "NXCDefs.h"
+4	6547	364	#line 6547 "NXCDefs.h"
+4	6547	364	#line 6547 "NXCDefs.h"
+4	6548	364		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __constVal4
+4	6547	368	#line 6547 "NXCDefs.h"
+4	6547	368	#line 6547 "NXCDefs.h"
+4	6548	368		set __signed_stack_002PlaySound, 50
+4	6547	371	#line 6547 "NXCDefs.h"
+4	6547	371	#line 6547 "NXCDefs.h"
+4	6548	371		set __signed_stack_003PlaySound, 4
+4	6547	374	#line 6547 "NXCDefs.h"
+4	6547	374	#line 6547 "NXCDefs.h"
+4	6548	374		set __D0PlaySound, 0
+4	6548	377	#line 6548 "NXCDefs.h"
+4	6549	377		acquire __SPTArgsMutex
+4	6548	378	#line 6548 "NXCDefs.h"
+4	6549	378		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	6548	380	#line 6548 "NXCDefs.h"
+4	6549	380		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	6548	382	#line 6548 "NXCDefs.h"
+4	6549	382		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	6548	384	#line 6548 "NXCDefs.h"
+4	6549	384		mov __SPTArgs.Loop, __D0PlaySound
+4	6548	386	#line 6548 "NXCDefs.h"
+4	6549	386		syscall 10, __SPTArgs
+4	6548	389	#line 6548 "NXCDefs.h"
+4	6549	389		mov __D0PlaySound, __SPTArgs.Result
+4	6548	391	#line 6548 "NXCDefs.h"
+4	6549	391		release __SPTArgsMutex
+4	6548	392	#line 6548 "NXCDefs.h"
+4	6548	392	#line 6548 "NXCDefs.h"
+4	6549	392		wait2 NA, __constVal50
+4	6548	395	#line 6548 "NXCDefs.h"
+4	6548	395	#line 6548 "NXCDefs.h"
+4	6560	395	#line 6560 "NXCDefs.h"
+4	6561	395		jmp __NXC_Label_144
+4	6560	397	#line 6560 "NXCDefs.h"
+4	6560	397	#line 6560 "NXCDefs.h"
+4	6560	397	#line 6560 "NXCDefs.h"
+4	6560	397	#line 6560 "NXCDefs.h"
+4	6560	397	#line 6560 "NXCDefs.h"
+4	6560	397	#line 6560 "NXCDefs.h"
+4	6560	397	#line 6560 "NXCDefs.h"
+4	6560	397	#line 6560 "NXCDefs.h"
+4	6561	397		subret __PlaySound_return
+5	17	0	#line 17 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+5	18	0	#pragma macro 7
+5	18	0		setout __OUT_ABC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	4065	23	#line 4065 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+5	17	23	#line 17 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+5	17	23	#line 17 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+5	18	23		set __Wait_7qG2_ms_7qG2_000_inline_parar, 200
+5	17	26	#line 17 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+5	7921	26	#line 7921 "NXCDefs.h"
+5	7922	26		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_parar
+5	7921	29	#line 7921 "NXCDefs.h"
+5	17	29	#line 17 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+5	19	29	#line 19 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+5	20	29		subret __parar_return
+6	21	0	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	22	0		set __D0atras, 50
+6	21	3	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	22	3	#pragma macro 7
+6	22	3		setout __constVal1, 2, __D0atras, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4113	26	#line 4113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	21	26	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	21	26	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	22	26		set __D0atras, 50
+6	21	29	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	22	29	#pragma macro 10
+6	22	29		acquire __OnRevMutex
+6	22	30		neg __OnRev_Tmp, __D0atras
+6	22	33		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	22	56		release __OnRevMutex
+6	4120	57	#line 4120 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	21	57	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	21	57	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	22	57		set __Wait_7qG2_ms_7qG2_000_inline_atras, 400
+6	21	60	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	7921	60	#line 7921 "NXCDefs.h"
+6	7922	60		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_atras
+6	7921	63	#line 7921 "NXCDefs.h"
+6	21	63	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	21	63	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	22	63		subcall parar, __parar_return
+6	21	65	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	23	65	#line 23 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+6	24	65		subret __atras_return
+7	24	0	#line 24 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	25	0		set __D0deslizar_derecha, 50
+7	25	3	#line 25 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	26	3	#pragma macro 10
+7	26	3		acquire __OnRevMutex
+7	26	4		neg __OnRev_Tmp, __D0deslizar_derecha
+7	26	7		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	26	30		release __OnRevMutex
+7	4153	31	#line 4153 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	25	31	#line 25 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	25	31	#line 25 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	26	31		set __D0deslizar_derecha, 25
+7	26	34	#line 26 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	27	34	#pragma macro 7
+7	27	34		setout __constVal1, 2, __D0deslizar_derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4160	57	#line 4160 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	26	57	#line 26 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	26	57	#line 26 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	27	57		set __D0deslizar_derecha, 25
+7	27	60	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	28	60	#pragma macro 7
+7	28	60		setout __constVal2, 2, __D0deslizar_derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4167	83	#line 4167 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	27	83	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	27	83	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	28	83		mov __signed_stack_001deslizar_derecha, __deslizar_derecha_7qG2_ms_7qG2_000
+7	27	85	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	27	85	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	28	85		set __D0deslizar_derecha, 0
+7	27	88	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	28	88		cmp 1, __zfdeslizar_derecha, __signed_stack_001deslizar_derecha, __D0deslizar_derecha
+7	27	92	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	28	92		mov __D0deslizar_derecha, __zfdeslizar_derecha
+7	27	94	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	28	94		brtst 4, __NXC_Label_509, __zfdeslizar_derecha
+7	27	97	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	28	97		mov __Wait_7qG2_ms_7qG2_000_inline_deslizar_derecha, __deslizar_derecha_7qG2_ms_7qG2_000
+7	27	99	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	7921	99	#line 7921 "NXCDefs.h"
+7	7922	99		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_deslizar_derecha
+7	7921	102	#line 7921 "NXCDefs.h"
+7	27	102	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	27	102	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	28	102		subcall parar, __parar_return
+7	27	104	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	30	104	#line 30 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	30	104	#line 30 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+7	31	104		subret __deslizar_derecha_return
+8	39	0	#line 39 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	40	0		set __PlaySound_7qG2_aCode_7qG2_000, 1
+8	39	3	#line 39 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	42	3	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	43	3		subcall PlaySound, __PlaySound_return
+8	42	5	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	42	5	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	43	5		set __signed_stack_001recolectar_pelotas, 60
+8	42	8	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	42	8	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	43	8		set __D0recolectar_pelotas, 1400
+8	43	11	#line 43 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	44	11	#pragma macro 33
+8	44	11		arrbuild __rotate_ports1, __constVal1
+8	44	15		mov __rotate_power1, __signed_stack_001recolectar_pelotas
+8	44	17		mov __rotate_angle1, __D0recolectar_pelotas
+8	44	19		mov __rotate_turnpct1, __constVal0
+8	44	21		mov __rotate_sync1, __constVal0
+8	44	23		mov __rotate_stop1, __constVal1
+8	44	25		mov __rotate_theRVP1, __constVal32
+8	44	27		mov __rotate_theRVI1, __constVal0
+8	44	29		mov __rotate_theRVD1, __constVal96
+8	44	31		subcall __RotateMotor1, ____RotateMotor1_return
+8	4290	33	#line 4290 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	43	33	#line 43 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	43	33	#line 43 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	44	33		set __Wait_7qG2_ms_7qG2_000_inline_recolectar_pelotas, 500
+8	43	36	#line 43 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	7921	36	#line 7921 "NXCDefs.h"
+8	7922	36		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_recolectar_pelotas
+8	7921	39	#line 7921 "NXCDefs.h"
+8	44	39	#line 44 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	44	39	#line 44 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	45	39		set __signed_stack_001recolectar_pelotas, 60
+8	44	42	#line 44 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	44	42	#line 44 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	45	42		mov __D0recolectar_pelotas, __constValNeg1400
+8	45	44	#line 45 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	46	44	#pragma macro 33
+8	46	44		arrbuild __rotate_ports1, __constVal1
+8	46	48		mov __rotate_power1, __signed_stack_001recolectar_pelotas
+8	46	50		mov __rotate_angle1, __D0recolectar_pelotas
+8	46	52		mov __rotate_turnpct1, __constVal0
+8	46	54		mov __rotate_sync1, __constVal0
+8	46	56		mov __rotate_stop1, __constVal1
+8	46	58		mov __rotate_theRVP1, __constVal32
+8	46	60		mov __rotate_theRVI1, __constVal0
+8	46	62		mov __rotate_theRVD1, __constVal96
+8	46	64		subcall __RotateMotor1, ____RotateMotor1_return
+8	4317	66	#line 4317 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	45	66	#line 45 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	46	66	#line 46 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	47	66	#pragma macro 7
+8	47	66		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4320	89	#line 4320 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	46	89	#line 46 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	48	89	#line 48 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+8	49	89		subret __recolectar_pelotas_return
+9	104	0	#line 104 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc"
+9	105	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc
+1	__RotateMotor1	578	NXTDefs.h
+2	__ResetSensorSubroutine	747	NXTDefs.h
+3	__ReadLSBytes3	760	NXTDefs.h
+4	PlaySound	845	NXCDefs.h
+5	parar	1244	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc
+6	atras	1275	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc
+7	deslizar_derecha	1342	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc
+8	recolectar_pelotas	1448	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc
+9	__initialize_global_data	1539	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Esclavo_Ferdinand.nxc

@@ -1,0 +1,328 @@
+/* ==============================================================================
+ * PROYECTO : LARC OPEN 2026 - Robot Recolector de Cafe
+ * DISPOSITIVO: "Garra" (Esclavo BT)
+ * EQUIPO   : PUMA Nexus Coffea
+ * VERSION  : 3.0 - Corregido, refactorizado, I2C mejorado
+ * ==============================================================================
+ * PUERTOS (VERIFICADOS):
+ *   MA (OUT_A) - Motor de garra/pinza
+ *                Posicion inicial = 0 grados; +45 = cierra; -45 = abre
+ *   MB (OUT_B) - Motor elevador principal (Fwd = SUBE)
+ *   MC (OUT_C) - Motor elevador secundario (Rev = SUBE, sincronizado inverso)
+ *   S4 (IN_4)  - Sensor RGB HiTechnic Color v2
+ *
+ * LOGICA DE COLOR (basada en INPUT_GREENCOLOR):
+ *   Si el canal verde domina (G > R, G > B, G > umbral) -> grano VERDE -> NO recoger
+ *   Cualquier otro patron -> grano maduro o sobremaduro -> RECOGER
+ *
+ * COMUNICACION BT:
+ *   Recibe del Maestro (INBOX 1):
+ *     10 = subir a fila ALTA  y detectar/recoger
+ *     11 = subir a fila MEDIA y detectar/recoger
+ *     12 = subir a fila BAJA  y detectar/recoger
+ *     20 = soltar pelota (abrir pinza)
+ *   Responde al Maestro (OUTBOX 0):
+ *     1 = recogio pelota exitosamente
+ *     0 = no recogio (verde o vacio)
+ *
+ * MECANICA DEL ELEVADOR:
+ *   MB = Fwd + MC = Rev -> ambos motores suben el mecanismo
+ *   Se usan RotateMotor independientes por ser angulos pequenios (<=45 grados)
+ * ============================================================================ */
+
+// ---------------------------------------------------------------
+//  BLUETOOTH
+// ---------------------------------------------------------------
+#define INBOX    1   // buzon donde llegan comandos del maestro
+#define OUTBOX   0   // buzon para enviar ACK al maestro
+
+// ---------------------------------------------------------------
+//  COMANDOS
+// ---------------------------------------------------------------
+#define CMD_ALTO    10
+#define CMD_MEDIO   11
+#define CMD_BAJO    12
+#define CMD_SOLTAR  20
+
+// ACK de respuesta
+#define ACK_RECOGIO  1
+#define ACK_VACIO    0
+
+// ---------------------------------------------------------------
+//  MOTORES (puertos verificados)
+// ---------------------------------------------------------------
+#define M_PINZA   OUT_A   // garra / pinza
+#define M_ELEV1   OUT_B   // elevador principal (Fwd = sube)
+#define M_ELEV2   OUT_C   // elevador secundario (Rev = sube)
+
+// ---------------------------------------------------------------
+//  SENSOR (puerto verificado)
+// ---------------------------------------------------------------
+#define SEN_COLOR  IN_4   // HiTechnic Color v2
+
+// Direccion I2C del HiTechnic Color v2
+#define HT_ADDR  0x02
+
+// ---------------------------------------------------------------
+//  PARAMETROS MECANICOS
+// ---------------------------------------------------------------
+#define ANG_ALTO    45    // grados de elevador para fila alta
+#define ANG_MEDIO   25    // grados para fila media
+#define ANG_BAJO    10    // grados para fila baja
+
+#define ANG_PINZA   45    // grados para abrir/cerrar pinza
+#define VEL_ELEV    40    // potencia elevador (no aumentar; solo ajustar angulo)
+#define VEL_PINZA   50    // potencia pinza
+
+// ---------------------------------------------------------------
+//  UMBRAL DE COLOR VERDE
+// ---------------------------------------------------------------
+#define UMBRAL_VERDE  40  // canal G por encima de este valor y dominando = verde
+
+// ================================================================
+//  LECTURA DEL SENSOR HITECHNIC COLOR V2 (I2C manual)
+// ================================================================
+
+// Inicializa el sensor en modo activo (registro 0x41 = 0x00)
+bool iniciar_color()
+{
+    byte cmd[];
+    ArrayBuild(cmd, HT_ADDR, 0x41, 0x00);
+    int res = LowspeedWrite(SEN_COLOR, 0, cmd);
+    Wait(100);
+    return (res == NO_ERR);
+}
+
+// Lee R, G, B del sensor (registros 0x43, 0x44, 0x45)
+// Usa LowspeedCheckStatus para esperar datos disponibles
+bool leer_rgb(int &r, int &g, int &b)
+{
+    byte cmd[];
+    ArrayBuild(cmd, HT_ADDR, 0x43);  // inicio en registro R
+    int res = LowspeedWrite(SEN_COLOR, 3, cmd);
+    if (res != NO_ERR) { r = 0; g = 0; b = 0; return false; }
+
+    // Esperar a que los datos esten disponibles (max 50 ms)
+    long t0 = CurrentTick();
+    while (LowspeedCheckStatus(SEN_COLOR) != NO_ERR)
+    {
+        if ((CurrentTick() - t0) > 50) { r = 0; g = 0; b = 0; return false; }
+        Wait(2);
+    }
+
+    byte resp[];
+    ArrayInit(resp, 0, 3);
+    res = LowspeedRead(SEN_COLOR, 3, resp);
+    if (res != NO_ERR) { r = 0; g = 0; b = 0; return false; }
+
+    r = resp[0];
+    g = resp[1];
+    b = resp[2];
+    return true;
+}
+
+// ================================================================
+//  CLASIFICACION DE COLOR
+// ================================================================
+// Retorna true si la pelota es VERDE (no recoger)
+bool es_verde()
+{
+    int r, g, b;
+    if (!leer_rgb(r, g, b))
+        return false;  // error de lectura -> asumir que se puede recoger
+
+    // Verde domina si: G > R, G > B, y G > umbral
+    if (g > r && g > b && g > UMBRAL_VERDE)
+        return true;
+
+    return false;
+}
+
+// ================================================================
+//  FUNCIONES DEL ELEVADOR
+// ================================================================
+
+// Sube el elevador: MB=Fwd, MC=Rev (ambos producen subida mecanica)
+void subir(int angulo)
+{
+    RotateMotor(M_ELEV1, VEL_ELEV,  angulo);   // MB -> Fwd
+    RotateMotor(M_ELEV2, VEL_ELEV, -angulo);   // MC -> Rev (inverso)
+}
+
+// Baja el elevador
+void bajar(int angulo)
+{
+    RotateMotor(M_ELEV1, VEL_ELEV, -angulo);
+    RotateMotor(M_ELEV2, VEL_ELEV,  angulo);
+}
+
+// ================================================================
+//  FUNCIONES DE LA PINZA
+// ================================================================
+
+void cerrar_pinza()
+{
+    RotateMotor(M_PINZA, VEL_PINZA, ANG_PINZA);
+}
+
+void abrir_pinza()
+{
+    RotateMotor(M_PINZA, VEL_PINZA, -ANG_PINZA);
+}
+
+// ================================================================
+//  CICLO DE INTENTO DE RECOLECCION
+// ================================================================
+// 1. Sube al nivel indicado
+// 2. Lee color
+// 3. Si es verde -> baja sin tocar -> retorna false
+// 4. Si no es verde -> cierra pinza, baja con pelota -> retorna true
+bool intentar_recoger(int angulo)
+{
+    // Subir al nivel
+    subir(angulo);
+    Wait(400);  // estabilizacion
+
+    // Leer color
+    if (es_verde())
+    {
+        // Pelota verde: bajar sin recoger
+        bajar(angulo);
+        Wait(300);
+        return false;
+    }
+
+    // Pelota recogible: cerrar pinza
+    cerrar_pinza();
+    Wait(500);  // agarre firme
+
+    // Bajar con la pelota sujeta
+    bajar(angulo);
+    Wait(400);
+
+    return true;
+}
+
+// ================================================================
+//  SOLTAR PELOTA AL SELECTOR
+// ================================================================
+void soltar_pelota()
+{
+    abrir_pinza();
+    Wait(600);  // esperar a que caiga al canal del selector
+}
+
+// ================================================================
+//  ENVIAR ACK AL MAESTRO
+// ================================================================
+void enviar_ack(int valor)
+{
+    SendResponseNumber(OUTBOX, valor);
+}
+
+// ================================================================
+//  OBTENER ANGULO SEGUN COMANDO DE NIVEL
+// ================================================================
+// Funcion auxiliar para evitar repeticion de codigo en el switch
+int angulo_por_comando(int cmd)
+{
+    if (cmd == CMD_ALTO)  return ANG_ALTO;
+    if (cmd == CMD_MEDIO) return ANG_MEDIO;
+    if (cmd == CMD_BAJO)  return ANG_BAJO;
+    return 0;
+}
+
+// ================================================================
+//  PROCESAR COMANDO DE RECOLECCION (refactorizado)
+// ================================================================
+// Maneja CMD_ALTO, CMD_MEDIO, CMD_BAJO de forma unificada
+void procesar_recoleccion(int cmd, bool &tiene_pelota)
+{
+    if (!tiene_pelota)
+    {
+        int ang = angulo_por_comando(cmd);
+        if (ang > 0)
+        {
+            tiene_pelota = intentar_recoger(ang);
+            if (tiene_pelota)
+            {
+                PlayTone(880, 200);
+                enviar_ack(ACK_RECOGIO);
+            }
+            else
+            {
+                enviar_ack(ACK_VACIO);
+            }
+        }
+        else
+        {
+            enviar_ack(ACK_VACIO);
+        }
+    }
+    else
+    {
+        // Ya tiene pelota, no puede recoger otra
+        enviar_ack(ACK_VACIO);
+    }
+}
+
+// ================================================================
+//                    TAREA PRINCIPAL
+// ================================================================
+task main()
+{
+    // -- Configurar sensor I2C --
+    SetSensorLowspeed(SEN_COLOR);
+    Wait(300);
+
+    // Inicializar HiTechnic Color v2
+    bool ok = iniciar_color();
+    if (!ok)
+    {
+        Wait(300);
+        iniciar_color();  // reintento
+        Wait(200);
+    }
+
+    int comando = 0;
+    bool tiene_pelota = false;
+
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "GARRA v3");
+    TextOut(0, LCD_LINE2, "ESPERANDO BT");
+
+    // -- Bucle principal: espera comandos del maestro --
+    while (true)
+    {
+        // Intentar leer comando
+        if (ReceiveRemoteNumber(INBOX, true, comando) == NO_ERR)
+        {
+            // Comandos de recoleccion (ALTO, MEDIO, BAJO)
+            if (comando == CMD_ALTO || comando == CMD_MEDIO || comando == CMD_BAJO)
+            {
+                procesar_recoleccion(comando, tiene_pelota);
+            }
+            // Comando de soltar
+            else if (comando == CMD_SOLTAR)
+            {
+                if (tiene_pelota)
+                {
+                    soltar_pelota();
+                    tiene_pelota = false;
+                }
+            }
+
+            comando = 0;  // limpiar para el siguiente ciclo
+        }
+
+        // -- Display de estado --
+        ClearScreen();
+        TextOut(0, LCD_LINE1, "GARRA v3");
+        if (tiene_pelota)
+            TextOut(0, LCD_LINE2, "TIENE PELOTA");
+        else
+            TextOut(0, LCD_LINE2, "VACIA");
+
+        Wait(50);
+    }
+}

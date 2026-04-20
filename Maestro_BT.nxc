@@ -1,0 +1,244 @@
+// ================================================================
+//  MAESTRO_BT.nxc
+//  Robot de movimiento con seguidor de línea + control Bluetooth
+//  Basado en: MovimientoV2.nxc
+//
+//  PROTOCOLO BT:
+//    Envía  → buzón 1 del esclavo  (cmd=1: detecta y dispara)
+//    Recibe ← buzón 2 del maestro  (resp=1: OK | resp=2: timeout)
+//
+//  CONEXIÓN: Este NXT es el MAESTRO → conecta al esclavo.
+//  Asegúrate de que el nombre BT del esclavo coincida con NOMBRE_ESCLAVO.
+// ================================================================
+
+// ---------------------------------------------------------------
+//  BLUETOOTH
+// ---------------------------------------------------------------
+#define CONEXION        0            // slot de conexión BT (0-3)
+#define BUZON_TX        1            // buzón donde el esclavo RECIBE
+#define BUZON_RX        2            // buzón donde el maestro RECIBE respuesta
+#define NOMBRE_ESCLAVO  "ESCLAVO_NXT"  // nombre BT del brick esclavo
+
+// ---------------------------------------------------------------
+//  MOTORES
+// ---------------------------------------------------------------
+// OUT_A → motor auxiliar (giro)
+// OUT_B → motor izquierdo
+// OUT_C → motor derecho
+
+// ---------------------------------------------------------------
+//  SENSORES
+// ---------------------------------------------------------------
+#define SEN1  IN_1   // seguidor de línea – frontal izquierdo
+#define SEN2  IN_2   // seguidor de línea – trasero  izquierdo
+#define SEN3  IN_3   // seguidor de línea – frontal derecho
+#define SEN4  IN_4   // ultrasónico frontal
+
+// ---------------------------------------------------------------
+//  PARÁMETROS DE MOVIMIENTO
+// ---------------------------------------------------------------
+#define V        45   // velocidad base (0-100)
+#define TIEM    500   // tiempo base de movimiento (ms)
+#define SOM      35   // umbral de reflexión para sensores de luz
+#define DIST_US  15   // distancia mínima ultrasónico (cm)
+
+// ---------------------------------------------------------------
+//  ESTADO COMPARTIDO ENTRE TAREAS
+// ---------------------------------------------------------------
+int respuesta_esclavo = 0;   // 0=sin resp, 1=disparó OK, 2=timeout esclavo
+
+// ================================================================
+//  FUNCIONES DE MOVIMIENTO
+// ================================================================
+void adelante(int vel, int ms)
+{
+    OnRev(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+}
+
+void atras(int vel, int ms)
+{
+    OnFwd(OUT_B, vel);
+    OnRev(OUT_C, vel);
+    Wait(ms);
+}
+
+void derecha(int vel, int ms)
+{
+    OnRev(OUT_A, vel);
+    OnFwd(OUT_B, vel / 2 - 3);
+    OnFwd(OUT_C, vel / 2);
+    Wait(ms);
+}
+
+void rderecha(int vel, int ms)
+{
+    OnFwd(OUT_A, vel);
+    OnFwd(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+}
+
+void r(int vel, int ms)
+{
+    OnRev(OUT_A, vel);
+    OnRev(OUT_B, vel);
+    OnRev(OUT_C, vel);
+    Wait(ms);
+}
+
+void parar()
+{
+    Off(OUT_ABC);
+    Wait(200);
+}
+
+// ================================================================
+//  TAREA: Escuchar respuestas del esclavo (corre en paralelo)
+// ================================================================
+task escuchar_esclavo()
+{
+    int res = 0;
+    while (true)
+    {
+        if (ReceiveRemoteNumber(BUZON_RX, true, res) == NO_ERR)
+        {
+            if (res == 1)
+            {
+                // Esclavo confirmó disparo exitoso
+                respuesta_esclavo = 1;
+                PlaySound(SOUND_FAST_UP);
+                res = 0;
+            }
+            else if (res == 2)
+            {
+                // Esclavo no detectó color válido (su propio timeout)
+                respuesta_esclavo = 2;
+                res = 0;
+            }
+        }
+        Wait(20);
+    }
+}
+
+// ================================================================
+//  TAREA PRINCIPAL
+// ================================================================
+task main()
+{
+    // -- Inicializar sensores --
+    SetSensorLight(SEN1);
+    SetSensorLight(SEN2);
+    SetSensorLight(SEN3);
+    SetSensorLowspeed(SEN4);
+
+    // -- Conectar por Bluetooth --
+    //TextOut(0, LCD_LINE1, "Conectando BT...", true);
+    //ConnectBT(CONEXION, NOMBRE_ESCLAVO);
+    Wait(2000);
+
+    PlaySound(SOUND_DOUBLE_BEEP);
+    TextOut(0, LCD_LINE1, "BT Listo!       ", true);
+    Wait(500);
+
+    // -- Iniciar escucha de respuestas --
+    start escuchar_esclavo;
+
+    // -- Arranque inicial: avanzar un poco antes del bucle --
+    adelante(75, 1200);
+
+    // ============================================================
+    //  BUCLE PRINCIPAL DE SEGUIMIENTO DE LÍNEA
+    // ============================================================
+    while (true)
+    {
+        Wait(10);
+
+        int fi = Sensor(SEN1);   // frontal izquierdo
+        int ti = Sensor(SEN2);   // trasero  izquierdo
+        int fd = Sensor(SEN3);   // frontal derecho
+        int ul = SensorUS(SEN4); // distancia ultrasónico (cm)
+
+        // Mostrar valores en pantalla para depuración
+        NumOut(0,  LCD_LINE5, fi, true);
+        NumOut(40, LCD_LINE5, fd, false);
+        NumOut(80, LCD_LINE5, ul, false);
+
+        // ---- Caso 1: Obstáculo frontal ----
+        if (ul < DIST_US)
+        {
+            atras(V, TIEM);
+            parar();
+            PlayTone(880, 500);
+            Wait(500);
+        }
+
+        // ---- Caso 2: Ambos sensores frontales en negro ----
+        //      → Estación de disparo detectada
+        else if (fi < SOM && fd < SOM)
+        {
+            parar();
+            PlayTone(440, 300);
+            Wait(300);
+
+            // Ordenar al esclavo que detecte y dispare
+            TextOut(0, LCD_LINE2, "CMD -> Esclavo  ", true);
+            SendRemoteNumber(CONEXION, BUZON_TX, 1);
+
+            // Esperar respuesta del esclavo (máx. 8 segundos)
+            respuesta_esclavo = 0;
+            long t0 = CurrentTick();
+            while (respuesta_esclavo == 0 && (CurrentTick() - t0) < 8000)
+            {
+                Wait(20);
+            }
+
+            // Mostrar resultado
+            if (respuesta_esclavo == 1)
+            {
+                TextOut(0, LCD_LINE2, "Disparo OK!     ", true);
+                PlayTone(1000, 300);
+            }
+            else
+            {
+                TextOut(0, LCD_LINE2, "Sin respuesta   ", true);
+                PlayTone(300, 300);
+            }
+
+            Wait(1000);
+
+            // Continuar movimiento tras el disparo
+            adelante(V, TIEM);
+        }
+
+        // ---- Caso 3: Solo sensor frontal-izquierdo en negro ----
+        //      → Corregir girando a la derecha + reversa
+        else if (fi < SOM)
+        {
+            derecha(V, TIEM + 300);
+            r(V, TIEM + 100);
+            parar();
+            PlayTone(440, 200);
+            Wait(200);
+        }
+
+        // ---- Caso 4: Sensor trasero-izquierdo en negro ----
+        //      → Corregir girando a la derecha + avanzar derecha
+        else if (ti < SOM)
+        {
+            derecha(V, TIEM + 300);
+            rderecha(V, TIEM + 100);
+            parar();
+            PlayTone(440, 200);
+            Wait(200);
+        }
+
+        // ---- Caso 5: Camino libre → avanzar ----
+        else
+        {
+            adelante(V, TIEM);
+            parar();
+        }
+    }
+}

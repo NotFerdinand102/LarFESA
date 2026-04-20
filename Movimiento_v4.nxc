@@ -1,0 +1,285 @@
+// ---------------------------------------------------------------
+//  TIEMPOS (ms) - calibrados para VEL = 40
+// ---------------------------------------------------------------
+#define T_AVANCE        200
+#define T_GIRO_90       300
+#define T_FINO          150
+#define T_RETROCESO     120
+#define T_ESPERA_ACK   8000
+#define T_DEPOSITO    10000
+
+// ---------------------------------------------------------------
+//  MOTORES (puertos verificados)
+// ---------------------------------------------------------------
+#define MOT_A  OUT_A   // frontal derecho (eje de avance)
+#define MOT_B  OUT_B   // izquierdo
+#define MOT_C  OUT_C   // trasero
+
+// ---------------------------------------------------------------
+//  SENSORES (puertos verificados)
+// ---------------------------------------------------------------
+#define SEN_LINEA_FL  IN_1   // seguidor linea - frontal izquierdo
+#define SEN_LINEA_TL  IN_2   // seguidor linea - trasero izquierdo
+#define SEN_LINEA_FR  IN_3   // seguidor linea - frontal derecho
+#define SEN_US_FRONT  IN_4   // ultrasonico frontal
+
+// ---------------------------------------------------------------
+//  PARAMETROS DE MOVIMIENTO
+// ---------------------------------------------------------------
+#define VEL            35
+#define VEL_LENTO      40
+#define UMBRAL_LINEA   43   // < 35 = negro, > 35 = blanco
+//#define DIST_OBST      40   // cm
+
+// ---------------------------------------------------------------
+//  TIEMPOS DE MANIOBRA (ajustables en pista)
+// ---------------------------------------------------------------
+#define T_PASO_IZQ     470   // ms de cada paso izquierda buscando linea
+#define T_PASO_ADL     455   // ms de cada paso adelante siguiendo linea
+#define T_CORRECCION   380   // ms de derecha para separarse de linea
+#define T_GIRO_CORR    400   // ms de girar_eje para corregir angulo
+
+// ---------------------------------------------------------------
+//  FUNCIONES DE MOVIMIENTO OMNI
+// ---------------------------------------------------------------
+
+void adelante(int vel, int ms)
+{
+    OnRev(MOT_B, vel);
+    OnFwd(MOT_C, vel);
+}
+
+void atras(int vel, int ms)
+{
+    OnFwd(MOT_B, vel);
+    OnRev(MOT_C, vel);
+}
+
+void derecha(int vel, int ms)
+{
+    OnRev(MOT_A, vel);
+    OnFwd(MOT_B, vel / 2 - 3);
+    OnFwd(MOT_C, vel / 2);
+}
+
+void izquierda(int vel, int ms)
+{
+    OnFwd(MOT_A, vel);
+    OnRev(MOT_B, vel / 2 - 3);
+    OnRev(MOT_C, vel / 2);
+}
+
+// Giro sobre su propio eje HORARIO
+void girar_eje(int vel, int ms)
+{
+    OnRev(MOT_A, vel);
+    OnFwd(MOT_B, vel);
+    OnRev(MOT_C, vel);
+}
+
+// Giro sobre su propio eje ANTIHORARIO
+void girar_eje_anti(int vel, int ms)
+{
+    OnFwd(MOT_A, vel);
+    OnRev(MOT_B, vel);
+    OnFwd(MOT_C, vel);
+}
+
+void parar()
+{
+    Off(OUT_ABC);
+    Wait(150);
+}
+
+// ---------------------------------------------------------------
+//  leer_sensores() - lee los 3 seguidores de golpe
+//  Evita repetir Sensor() sueltos por todo el codigo
+// ---------------------------------------------------------------
+void leer_sensores(int &fl, int &fr, int &tl)
+{
+    fl = Sensor(SEN_LINEA_FL);
+    fr = Sensor(SEN_LINEA_FR);
+    tl = Sensor(SEN_LINEA_TL);
+}
+
+// ---------------------------------------------------------------
+//  corregir_en_linea() - corrige orientacion mientras sigue la linea
+//
+//  Sensor izquierdo frontal (fl) y trasero (tl) estan del lado
+//  de la linea. La idea es mantener la linea a la izquierda.
+//
+//  Caso 1: fl=NEGRO, tl=NEGRO
+//    Robot esta encima de la linea con ambos sensores.
+//    -> separarse a la derecha, girar antihorario para
+//       quedar paralelo con la linea a la izquierda.
+//
+//  Caso 2: fl=BLANCO, tl=NEGRO
+//    La cola sigue sobre la linea pero el frente se fue a la derecha.
+//    -> separarse a la derecha, girar horario para traer
+//       el frente de vuelta hacia la linea.
+//
+//  Caso 3: fl=NEGRO, tl=BLANCO
+//    El frente esta sobre la linea pero la cola se fue a la derecha.
+//    -> separarse a la derecha, girar antihorario para traer
+//       la cola de vuelta hacia la linea.
+//
+//  Caso 4: fl=BLANCO, tl=BLANCO
+//    Robot perdio la linea completamente -> no hacer nada,
+//    el siguiente adelante() lo acercara.
+// ---------------------------------------------------------------
+void corregir_en_linea(int fl, int tl)
+{
+    bool fl_negro = (fl < UMBRAL_LINEA);
+    bool tl_negro = (tl < UMBRAL_LINEA);
+
+    if (fl_negro && tl_negro)
+    {
+        // Caso 1: ambos en la linea -> separarse y alinear
+        derecha(VEL, 500);
+        parar();
+        girar_eje_anti(VEL, 500);
+        parar();
+    }
+    else if (!fl_negro && tl_negro)
+    {
+        // Caso 2: cola en linea, frente se fue -> traer frente
+        derecha(VEL, 500);
+        parar();
+        girar_eje(VEL, 500);
+        parar();
+    }
+
+    else if (fl_negro && !tl_negro)
+    {
+        // Caso 3: frente en linea, cola se fue -> traer cola
+        derecha(VEL, 500);
+        parar();
+        girar_eje_anti(VEL, 500);
+        parar();
+    }
+    
+    if(!fl_negro && !tl_negro)
+    {
+                  atras(VEL, 500);
+                  parar();
+                  Wait(200);
+    }
+}
+
+// ---------------------------------------------------------------
+//  corregir_busqueda() - corrige orientacion mientras busca la linea
+//
+//  Caso 1: tl=NEGRO, fl=BLANCO
+//    El trasero cruzo la linea pero el frente no la ve.
+//    -> girar horario para que el frente apunte hacia la linea.
+//
+//  Caso 2: ambos en BLANCO
+//    No ha encontrado linea aun.
+//    -> girar antihorario (seguir buscando en esa direccion).
+// ---------------------------------------------------------------
+void corregir_busqueda(int fl, int tl)
+{
+    bool fl_negro = (fl < UMBRAL_LINEA);
+    bool tl_negro = (tl < UMBRAL_LINEA);
+
+    if (tl_negro && !fl_negro)
+    {
+        // Trasero en linea, frente no -> girar horario
+        girar_eje(VEL, T_GIRO_CORR);
+        parar();
+    }
+}
+
+// ---------------------------------------------------------------
+//  avanzar_hasta_linea()
+//
+//  FASE A: Salir del cuadro inicial (impulso recto)
+//  FASE B: Girar izquierda buscando la linea negra lateral
+//          + correcciones con trasero
+//  FASE C: Seguir la linea avanzando hacia los arboles
+//          + correcciones fl/tl para no perder la linea
+//          + deteccion de obstaculo (return false)
+//          + deteccion de linea transversal (return true)
+//
+//  Retorna: true = llego a zona cultivo, false = obstaculo
+// ---------------------------------------------------------------
+bool avanzar_hasta_linea()
+{
+    int fl, fr, tl;
+
+    // ====== FASE A: Salir del cuadro ======
+    adelante(75, 2400);
+    parar();
+
+    // ====== FASE B: Buscar la linea girando a la izquierda ======
+    while (true)
+    {
+        // Paso a la izquierda
+        izquierda(VEL, 500);
+        parar();
+
+        // Leer sensores frescos
+        leer_sensores(fl, fr, tl);
+
+        // Algun frontal ve la linea -> pasar a FASE C
+        if (fl <= UMBRAL_LINEA || fr <=  UMBRAL_LINEA)
+        {
+            break;  // salir a FASE C
+        }
+
+        // No encontro linea -> corregir orientacion
+        corregir_busqueda(fl, tl);
+
+        Wait(10);
+    }
+
+    // ====== FASE C: Seguir linea hacia los arboles ======
+    while (true)
+    {
+
+        // Leer los 3 sensores frescos
+        leer_sensores(fl, fr, tl);
+
+        // Avanzar un paso
+        adelante(VEL, T_PASO_ADL);
+        parar();
+
+
+        // PRIORIDAD 1: Obstaculo al frente -> alberca
+        //if (SensorUS(SEN_US_FRONT) < DIST_OBST)
+        //{
+          //  parar();
+            //return false;
+        //}
+
+        // PRIORIDAD 2: Ambos frontales negro -> linea transversal = zona cultivo
+        if (fl < UMBRAL_LINEA && fr < UMBRAL_LINEA)
+        {
+            parar();
+            Wait(200);
+            return true;
+        }
+
+        // PRIORIDAD 3: Corregir orientacion para seguir la linea
+        corregir_en_linea(fl, tl);
+
+        Wait(10);
+    }
+}
+
+// ---------------------------------------------------------------
+//  TAREA PRINCIPAL
+// ---------------------------------------------------------------
+task main()
+{
+    // -- Configurar sensores --
+    SetSensorLight(SEN_LINEA_FL);    // S1
+    SetSensorLight(SEN_LINEA_TL);    // S2
+    SetSensorLight(SEN_LINEA_FR);    // S3
+    SetSensorLowspeed(SEN_US_FRONT); // S4
+    bool encontro_linea;
+
+    // Tramo 1: avanzar hasta linea o alberca
+    encontro_linea = avanzar_hasta_linea();
+    parar();
+}

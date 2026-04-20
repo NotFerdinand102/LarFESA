@@ -1,0 +1,142 @@
+// ================================================================
+//  MAESTRO_DEFINITIVO_PRO_BT.nxc
+//  Proyecto: Robótica Universitaria - Recolección Omnidireccional
+// ================================================================
+
+#define ESCLAVO_SLOT 1    // Conexión Bluetooth al esclavo
+#define BUZON_TX     1    // Envía orden al esclavo
+#define BUZON_RX     2    // Recibe confirmación del esclavo
+
+// --- PARÁMETROS DE MOVIMIENTO ---
+#define V_SALIDA     75   // Velocidad para salir de casilla
+#define V_CRUCERO    55   // Velocidad de navegación
+#define SOM          35   // Umbral de color negro
+#define DIST_OBJ     14   // Distancia de detección ultrasónica
+#define PASO_8CM     850  // Tiempo (ms) para avanzar 8 cm
+
+// --- MAPEO DE PUERTOS ---
+#define SEN_FI       IN_1 // Frontal Izquierdo
+#define SEN_LI       IN_2 // Lateral Trasero Izquierdo (Guía)
+#define SEN_FD       IN_3 // Frontal Derecho
+#define SEN_US       IN_4 // Ultrasónico
+
+#define M_LAT        OUT_A // Motor omni lateral (X)
+#define M_IZQ        OUT_B // Tracción Izquierda (Y)
+#define M_DER        OUT_C // Tracción Derecha (Y)
+
+// --- FUNCIONES DE CONTROL ---
+
+void parar() {
+    Off(OUT_ABC);
+    Wait(200);
+}
+
+// Avanza sin usar el motor lateral (estabilidad máxima)
+void adelante_recto(int vel) {
+    OnRev(M_IZQ, vel);
+    OnFwd(M_DER, vel);
+    Off(M_LAT); // El motor A frenado evita desviaciones
+}
+
+// Retroceso de emergencia
+void atras(int vel, int ms) {
+    OnFwd(M_IZQ, vel);
+    OnRev(M_DER, vel);
+    Wait(ms);
+    parar();
+}
+
+// Desplazamiento lateral (Strafe) sin rotar
+void slide_derecha(int vel, int ms) {
+    OnRev(M_LAT, vel);
+    // Compensación para que no gire mientras desliza
+    OnFwd(M_IZQ, vel/2);
+    OnFwd(M_DER, vel/2);
+    if(ms > 0) { Wait(ms); parar(); }
+}
+
+// --- TAREA PRINCIPAL ---
+
+task main() {
+    // Configuración de Sensores
+    SetSensorLight(SEN_FI);
+    SetSensorLight(SEN_LI);
+    SetSensorLight(SEN_FD);
+    SetSensorLowspeed(SEN_US);
+
+    TextOut(0, LCD_LINE1, "SISTEMA: OK");
+    Wait(500);
+
+    // --- FASE 1: SALIDA BLINDADA (40 cm) ---
+    // Ignoramos sensores para no quedar atrapados en la casilla de salida
+    TextOut(0, LCD_LINE2, "SALIDA BLINDADA");
+    adelante_recto(V_SALIDA);
+    Wait(2100);
+    PlaySound(SOUND_DOUBLE_BEEP);
+    ClearScreen();
+
+    // --- FASE 2: BUCLE DE NAVEGACIÓN Y RECOLECCIÓN ---
+    while(true) {
+        int fi = Sensor(SEN_FI);
+        int ti = Sensor(SEN_LI);
+        int fd = Sensor(SEN_FD);
+        int ul = SensorUS(SEN_US);
+
+        // 1. CONDICIÓN DE RECOLECCIÓN (Frontera Frontal + Objeto Detectado)
+        if (fi < SOM && fd < SOM && ul < DIST_OBJ) {
+            parar();
+            TextOut(0, LCD_LINE1, "OBJETIVO LISTO");
+
+            // Enviamos señal de inicio al Esclavo
+            SendRemoteNumber(ESCLAVO_SLOT, BUZON_TX, 1);
+
+            // Espera bloqueante hasta que el esclavo responda por Buzón 2
+            int respuesta = 0;
+            while (ReceiveRemoteNumber(BUZON_RX, true, respuesta) != NO_ERR) {
+                Wait(50); // Mantiene el canal abierto para escuchar
+            }
+
+            if(respuesta == 1) {
+                PlaySound(SOUND_UP);
+                TextOut(0, LCD_LINE2, "PASO 8CM...");
+                // Avance discreto de 8cm para la siguiente pelota
+                adelante_recto(V_CRUCERO);
+                Wait(PASO_8CM);
+                parar();
+            }
+            ClearScreen();
+        }
+
+        // 2. AJUSTE DE TRAYECTORIA LATERAL (Uso del sensor trasero en esquina)
+        // Si el robot pisa negro lateralmente, se aleja hacia el centro blanco
+        else if (ti < SOM) {
+            // Movimiento diagonal: avanza mientras se empuja a la derecha
+            OnRev(M_LAT, V_CRUCERO);
+            OnRev(M_IZQ, V_CRUCERO);
+            OnFwd(M_DER, V_CRUCERO);
+            Wait(100);
+        }
+
+        // 3. PROTECCIÓN DE FRONTERA FRONTAL (Solo línea negra, sin objeto)
+        else if (fi < SOM || fd < SOM) {
+            atras(V_CRUCERO, 400);
+            slide_derecha(V_CRUCERO, 600); // Busca salida lateral
+        }
+
+        // 4. SORTEO DE OBSTÁCULOS DINÁMICOS (Otros robots / paredes)
+        else if (ul < DIST_OBJ) {
+            // Esquiva lateral puro hasta que el sensor US ya no detecte nada
+            while(SensorUS(SEN_US) < (DIST_OBJ + 5)) {
+                slide_derecha(V_CRUCERO, 0);
+            }
+            parar();
+        }
+
+        // 5. NAVEGACIÓN EN LÍNEA RECTA ESTABLE
+        else {
+            adelante_recto(V_CRUCERO);
+        }
+
+        Wait(20); // Resolución del ciclo de control
+    }
+}

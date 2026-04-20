@@ -1,0 +1,872 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0SetSensorLight_inline_main	6	1	0	4	9
+1	__D0rderecha	6	1	4	4	6
+2	__DU0SetSensorLight_inline_main	5	1	8	4	6
+3	__DU0SetSensorLowspeed_inline_main	5	1	12	4	2
+4	__D0SetSensorLowspeed_inline_main	6	1	16	4	3
+5	__D0r	6	1	20	4	6
+6	__D0adelante	6	1	24	4	4
+7	__SPTArgsMutex	9	0	28	4	8
+8	__D0atras	6	1	32	4	4
+9	__D0main	6	1	36	4	33
+10	__D0derecha	6	1	40	4	6
+11	__Wait_7qG2_ms_7qG2_000_inline_rderecha	5	1	44	4	2
+12	__Wait_7qG2_ms_7qG2_000_inline_derecha	5	1	48	4	2
+13	__Wait_7qG2_ms_7qG2_000_inline_r	5	1	52	4	2
+14	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	56	4	10
+15	__Wait_7qG2_ms_7qG2_000_inline_parar	5	1	60	4	2
+16	__Wait_7qG2_ms_7qG2_000_inline_atras	5	1	64	4	2
+17	__signed_stack_001main	6	1	68	4	18
+18	__signed_stack_001derecha	6	1	72	4	2
+19	__signed_stack_002main	6	1	76	4	10
+20	__Wait_7qG2_ms_7qG2_000_inline_adelante	5	1	80	4	2
+21	__signed_stack_003main	6	1	84	4	8
+22	__CLSRMutex3	9	0	88	4	2
+23	__RLSBmutex3	9	0	92	4	2
+24	__CLSWMutex3	9	0	96	4	2
+25	__OnRevMutex	9	0	100	4	12
+26	__CLSCSMutex3	9	0	104	4	2
+27	__main_7qG2_fi_7qG2_001	4	1	108	2	3
+28	__r_7qG2_ms_7qG2_000	4	1	110	2	2
+29	__r_7qG2_vel_7qG2_000	4	1	112	2	4
+30	__adelante_7qG2_ms_7qG2_000	4	1	114	2	3
+31	__main_7qG2_fd_7qG2_001	4	1	116	2	2
+32	__adelante_7qG2_vel_7qG2_000	4	1	118	2	4
+33	__main_7qG2_ti_7qG2_001	4	1	120	2	2
+34	__derecha_7qG2_ms_7qG2_000	4	1	122	2	3
+35	__rderecha_7qG2_ms_7qG2_000	4	1	124	2	2
+36	__derecha_7qG2_vel_7qG2_000	4	1	126	2	5
+37	__rderecha_7qG2_vel_7qG2_000	4	1	128	2	4
+38	__atras_7qG2_vel_7qG2_000	4	1	130	2	3
+39	__atras_7qG2_ms_7qG2_000	4	1	132	2	2
+40	__parar_return	1	1	134	1	7
+41	__constVal32	2	0	135	1	42
+42	__rderecha_return	1	1	136	1	3
+43	__r_return	1	1	137	1	3
+44	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	138	1	4
+45	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	139	1	3
+46	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	140	1	6
+47	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	141	1	2
+48	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	142	1	2
+49	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	143	1	2
+50	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	144	1	2
+51	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	145	1	6
+52	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	146	1	15
+53	____initialize_global_data_return	1	1	147	1	3
+54	__OnRev_Tmp	2	1	148	1	12
+55	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	149	1	6
+56	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	150	1	2
+57	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	151	1	6
+58	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	152	1	6
+59	__constVal1	2	0	153	1	12
+60	__constVal15	2	0	154	1	3
+61	__constVal2	2	0	155	1	8
+62	__zfmain	1	1	156	1	18
+63	__zfSetSensorLowspeed_inline_main	1	1	157	1	2
+64	__zfSetSensorLight_inline_main	1	1	158	1	6
+65	__RLSBytesCount3	1	1	159	1	7
+66	__RLSBResult3	2	1	160	1	7
+67	__RLSBIterations3	1	1	161	1	4
+68	____ReadLSBytes3_return	1	1	162	1	3
+69	__PFTmp	1	1	163	1	1
+70	__constVal63	2	0	164	1	14
+71	__constVal96	2	0	165	1	14
+72	__adelante_return	1	1	166	1	4
+73	__constVal3	2	0	167	1	15
+74	__derecha_return	1	1	168	1	4
+75	__constVal0	2	1	169	1	48
+76	__atras_return	1	1	170	1	3
+77	__ResetSensorTmp	1	1	171	1	2
+78	____ResetSensorSubroutine_return	1	1	172	1	6
+79	__ResetSensorPort	1	1	173	1	6
+80	__CLSWArgs3	8	0	4	12	5
+81	__CLSWArgs3.Result	2	1	176	1	5
+82	__CLSWArgs3.Port	1	1	177	1	5
+83	__CLSWArgs3.Buffer	7	0	178	4	5
+84	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+85	__CLSWArgs3.ReturnLen	1	1	180	1	5
+86	__SPTArgs	8	0	5	8	24
+87	__SPTArgs.Result	2	1	184	1	24
+88	__SPTArgs.Frequency	3	1	186	2	24
+89	__SPTArgs.Duration	3	1	188	2	24
+90	__SPTArgs.Loop	1	1	190	1	24
+91	__SPTArgs.Volume	1	1	191	1	24
+92	__CLSRArgs3	8	0	4	12	5
+93	__CLSRArgs3.Result	2	1	192	1	5
+94	__CLSRArgs3.Port	1	1	193	1	5
+95	__CLSRArgs3.Buffer	7	0	194	4	5
+96	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+97	__CLSRArgs3.BufferLen	1	1	196	1	5
+98	__CLSCSArgs3	8	0	3	4	4
+99	__CLSCSArgs3.Result	2	1	200	1	4
+100	__CLSCSArgs3.Port	1	1	201	1	4
+101	__CLSCSArgs3.BytesReady	1	1	202	1	4
+102	__OUT_ABC	7	0	204	4	1
+103	__OUT_ABC.__OUT_ABC_type	1	0	0	1	0
+104	__RLSLastGoodRead3	7	0	206	4	2
+105	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+106	__RLSBbufLSWrite1	7	0	208	4	1
+107	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+108	__RLSReadBuf3	7	0	210	4	8
+109	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	56	0	#line 56 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	57	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	56	2	#line 56 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	56	2	#line 56 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	57	2		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 0
+0	56	5	#line 56 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	57	5	#line 57 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	58	5		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	7	#line 3729 "NXCDefs.h"
+0	3730	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	9	#line 3729 "NXCDefs.h"
+0	3729	9	#line 3729 "NXCDefs.h"
+0	3730	9		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	11	#line 3729 "NXCDefs.h"
+0	3730	11		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	14	#line 3729 "NXCDefs.h"
+0	3730	14		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	17	#line 3729 "NXCDefs.h"
+0	3730	17		set __D0SetSensorLight_inline_main, 5
+0	3729	20	#line 3729 "NXCDefs.h"
+0	3730	20		jmp __001__NXC_Label_5
+0	3729	22	#line 3729 "NXCDefs.h"
+0	3730	22		set __D0SetSensorLight_inline_main, 6
+0	3729	25	#line 3729 "NXCDefs.h"
+0	3730	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	27	#line 3663 "NXCDefs.h"
+0	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	31	#line 3663 "NXCDefs.h"
+0	3730	31	#line 3730 "NXCDefs.h"
+0	3730	31	#line 3730 "NXCDefs.h"
+0	3731	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	33	#line 3730 "NXCDefs.h"
+0	3730	33	#line 3730 "NXCDefs.h"
+0	3731	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	36	#line 3730 "NXCDefs.h"
+0	3676	36	#line 3676 "NXCDefs.h"
+0	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	40	#line 3676 "NXCDefs.h"
+0	3731	40	#line 3731 "NXCDefs.h"
+0	3731	40	#line 3731 "NXCDefs.h"
+0	3732	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	42	#line 3731 "NXCDefs.h"
+0	3694	42	#line 3694 "NXCDefs.h"
+0	3695	42	#pragma macro 4
+0	3695	42		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4467	46	#line 4467 "NXCDefs.h"
+0	3694	46	#line 3694 "NXCDefs.h"
+0	3732	46	#line 3732 "NXCDefs.h"
+0	57	46	#line 57 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	57	46	#line 57 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	58	46		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	57	49	#line 57 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	58	49	#line 58 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	59	49		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	51	#line 3729 "NXCDefs.h"
+0	3730	51		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	53	#line 3729 "NXCDefs.h"
+0	3729	53	#line 3729 "NXCDefs.h"
+0	3730	53		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	55	#line 3729 "NXCDefs.h"
+0	3730	55		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	58	#line 3729 "NXCDefs.h"
+0	3730	58		brtst 4, __002__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	61	#line 3729 "NXCDefs.h"
+0	3730	61		set __D0SetSensorLight_inline_main, 5
+0	3729	64	#line 3729 "NXCDefs.h"
+0	3730	64		jmp __002__NXC_Label_5
+0	3729	66	#line 3729 "NXCDefs.h"
+0	3730	66		set __D0SetSensorLight_inline_main, 6
+0	3729	69	#line 3729 "NXCDefs.h"
+0	3730	69		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	71	#line 3663 "NXCDefs.h"
+0	3664	71		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	75	#line 3663 "NXCDefs.h"
+0	3730	75	#line 3730 "NXCDefs.h"
+0	3730	75	#line 3730 "NXCDefs.h"
+0	3731	75		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	77	#line 3730 "NXCDefs.h"
+0	3730	77	#line 3730 "NXCDefs.h"
+0	3731	77		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	80	#line 3730 "NXCDefs.h"
+0	3676	80	#line 3676 "NXCDefs.h"
+0	3677	80		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	84	#line 3676 "NXCDefs.h"
+0	3731	84	#line 3731 "NXCDefs.h"
+0	3731	84	#line 3731 "NXCDefs.h"
+0	3732	84		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	86	#line 3731 "NXCDefs.h"
+0	3694	86	#line 3694 "NXCDefs.h"
+0	3695	86	#pragma macro 4
+0	3695	86		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	88		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4534	90	#line 4534 "NXCDefs.h"
+0	3694	90	#line 3694 "NXCDefs.h"
+0	3732	90	#line 3732 "NXCDefs.h"
+0	58	90	#line 58 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	58	90	#line 58 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	59	90		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 2
+0	58	93	#line 58 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	59	93	#line 59 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	60	93		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	95	#line 3729 "NXCDefs.h"
+0	3730	95		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	97	#line 3729 "NXCDefs.h"
+0	3729	97	#line 3729 "NXCDefs.h"
+0	3730	97		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	99	#line 3729 "NXCDefs.h"
+0	3730	99		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	102	#line 3729 "NXCDefs.h"
+0	3730	102		brtst 4, __003__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	105	#line 3729 "NXCDefs.h"
+0	3730	105		set __D0SetSensorLight_inline_main, 5
+0	3729	108	#line 3729 "NXCDefs.h"
+0	3730	108		jmp __003__NXC_Label_5
+0	3729	110	#line 3729 "NXCDefs.h"
+0	3730	110		set __D0SetSensorLight_inline_main, 6
+0	3729	113	#line 3729 "NXCDefs.h"
+0	3730	113		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	115	#line 3663 "NXCDefs.h"
+0	3664	115		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	119	#line 3663 "NXCDefs.h"
+0	3730	119	#line 3730 "NXCDefs.h"
+0	3730	119	#line 3730 "NXCDefs.h"
+0	3731	119		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	121	#line 3730 "NXCDefs.h"
+0	3730	121	#line 3730 "NXCDefs.h"
+0	3731	121		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	124	#line 3730 "NXCDefs.h"
+0	3676	124	#line 3676 "NXCDefs.h"
+0	3677	124		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	128	#line 3676 "NXCDefs.h"
+0	3731	128	#line 3731 "NXCDefs.h"
+0	3731	128	#line 3731 "NXCDefs.h"
+0	3732	128		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	130	#line 3731 "NXCDefs.h"
+0	3694	130	#line 3694 "NXCDefs.h"
+0	3695	130	#pragma macro 4
+0	3695	130		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	132		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4601	134	#line 4601 "NXCDefs.h"
+0	3694	134	#line 3694 "NXCDefs.h"
+0	3732	134	#line 3732 "NXCDefs.h"
+0	59	134	#line 59 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	59	134	#line 59 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	60	134		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 3
+0	59	137	#line 59 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	60	137	#line 60 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	61	137		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	139	#line 3758 "NXCDefs.h"
+0	3759	139		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	141	#line 3758 "NXCDefs.h"
+0	3758	141	#line 3758 "NXCDefs.h"
+0	3759	141		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	143	#line 3758 "NXCDefs.h"
+0	3759	143		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	146	#line 3758 "NXCDefs.h"
+0	3759	146		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	149	#line 3758 "NXCDefs.h"
+0	3759	149		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	152	#line 3758 "NXCDefs.h"
+0	3759	152		jmp __004__NXC_Label_37
+0	3758	154	#line 3758 "NXCDefs.h"
+0	3759	154		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	157	#line 3758 "NXCDefs.h"
+0	3759	157		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	159	#line 3663 "NXCDefs.h"
+0	3664	159		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	163	#line 3663 "NXCDefs.h"
+0	3759	163	#line 3759 "NXCDefs.h"
+0	3759	163	#line 3759 "NXCDefs.h"
+0	3760	163		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	165	#line 3759 "NXCDefs.h"
+0	3759	165	#line 3759 "NXCDefs.h"
+0	3760	165		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	168	#line 3759 "NXCDefs.h"
+0	3676	168	#line 3676 "NXCDefs.h"
+0	3677	168		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	172	#line 3676 "NXCDefs.h"
+0	3760	172	#line 3760 "NXCDefs.h"
+0	3760	172	#line 3760 "NXCDefs.h"
+0	3760	172	#line 3760 "NXCDefs.h"
+0	3694	172	#line 3694 "NXCDefs.h"
+0	3695	172	#pragma macro 4
+0	3695	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4696	176	#line 4696 "NXCDefs.h"
+0	3694	176	#line 3694 "NXCDefs.h"
+0	3761	176	#line 3761 "NXCDefs.h"
+0	60	176	#line 60 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	60	176	#line 60 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	61	176		set __adelante_7qG2_vel_7qG2_000, 75
+0	60	179	#line 60 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	60	179	#line 60 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	61	179		set __adelante_7qG2_ms_7qG2_000, 1200
+0	60	182	#line 60 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	63	182	#line 63 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	64	182		subcall adelante, __adelante_return
+0	63	184	#line 63 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	64	184	#line 64 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	65	184		set __D0main, 1
+0	65	187	#line 65 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	66	187		tst 5, __zfmain, __D0main
+0	65	190	#line 65 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	66	190		brtst 4, __NXC_Label_540, __zfmain
+0	65	193	#line 65 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	66	193		set __Wait_7qG2_ms_7qG2_000_inline_main, 10
+0	65	196	#line 65 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	7921	196	#line 7921 "NXCDefs.h"
+0	7922	196		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	199	#line 7921 "NXCDefs.h"
+0	66	199	#line 66 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	66	199	#line 66 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	67	199		getin __main_7qG2_fi_7qG2_001, __constVal0, 4
+0	66	203	#line 66 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	67	203	#line 67 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	68	203		getin __main_7qG2_ti_7qG2_001, __constVal1, 4
+0	67	207	#line 67 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	68	207	#line 68 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	69	207		getin __main_7qG2_fd_7qG2_001, __constVal2, 4
+0	68	211	#line 68 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	69	211	#line 69 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	70	211	#pragma macro 26
+0	70	211		acquire __RLSBmutex3
+0	70	212		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	70	214		set __RLSBytesCount3, 1
+0	70	217		wait2 NA, __constVal15
+0	70	220		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	70	222		index __D0main, __RLSReadBuf3, 65535
+0	70	226		release __RLSBmutex3
+0	4773	227	#line 4773 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	69	227	#line 69 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	71	227	#line 71 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	72	227		mov __signed_stack_001main, __D0main
+0	71	229	#line 71 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	72	229	#line 72 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	73	229		set __D0main, 15
+0	72	232	#line 72 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	73	232		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	72	236	#line 72 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	73	236		mov __D0main, __zfmain
+0	73	238	#line 73 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	74	238		brtst 4, __NXC_Label_555, __zfmain
+0	73	241	#line 73 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	74	241		set __atras_7qG2_vel_7qG2_000, 45
+0	73	244	#line 73 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	73	244	#line 73 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	74	244		set __atras_7qG2_ms_7qG2_000, 500
+0	73	247	#line 73 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	74	247	#line 74 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	75	247		subcall atras, __atras_return
+0	74	249	#line 74 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	75	249	#line 75 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	76	249		subcall parar, __parar_return
+0	75	251	#line 75 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	75	251	#line 75 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	76	251		set __signed_stack_001main, 880
+0	75	254	#line 75 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	75	254	#line 75 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	76	254		set __signed_stack_002main, 500
+0	75	257	#line 75 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	75	257	#line 75 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	76	257		set __signed_stack_003main, 4
+0	75	260	#line 75 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	75	260	#line 75 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	76	260		set __D0main, 0
+0	76	263	#line 76 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	77	263		acquire __SPTArgsMutex
+0	76	264	#line 76 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	77	264		mov __SPTArgs.Frequency, __signed_stack_001main
+0	76	266	#line 76 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	77	266		mov __SPTArgs.Duration, __signed_stack_002main
+0	76	268	#line 76 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	77	268		mov __SPTArgs.Volume, __signed_stack_003main
+0	76	270	#line 76 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	77	270		mov __SPTArgs.Loop, __D0main
+0	76	272	#line 76 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	77	272		syscall 10, __SPTArgs
+0	76	275	#line 76 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	77	275		mov __D0main, __SPTArgs.Result
+0	76	277	#line 76 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	77	277		release __SPTArgsMutex
+0	76	278	#line 76 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	76	278	#line 76 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	77	278		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	76	281	#line 76 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	7921	281	#line 7921 "NXCDefs.h"
+0	7922	281		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	284	#line 7921 "NXCDefs.h"
+0	77	284	#line 77 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	78	284	#line 78 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	79	284		jmp __NXC_Label_570
+0	78	286	#line 78 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	79	286		mov __signed_stack_001main, __main_7qG2_fi_7qG2_001
+0	78	288	#line 78 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	78	288	#line 78 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	79	288		set __D0main, 35
+0	78	291	#line 78 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	79	291		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	78	295	#line 78 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	79	295		mov __D0main, __zfmain
+0	78	297	#line 78 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	79	297		brtst 4, __NXC_Label_572, __zfmain
+0	78	300	#line 78 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	79	300		mov __signed_stack_001main, __D0main
+0	78	302	#line 78 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	79	302		mov __signed_stack_002main, __main_7qG2_fd_7qG2_001
+0	78	304	#line 78 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	79	304	#line 79 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	80	304		set __D0main, 35
+0	79	307	#line 79 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	80	307		cmp 0, __zfmain, __signed_stack_002main, __D0main
+0	79	311	#line 79 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	79	311	#line 79 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	80	311		and __D0main, __signed_stack_001main, __zfmain
+0	81	315	#line 81 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	82	315		tst 5, __zfmain, __D0main
+0	81	318	#line 81 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	82	318		brtst 4, __NXC_Label_573, __zfmain
+0	81	321	#line 81 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	82	321		set __signed_stack_001main, 440
+0	81	324	#line 81 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	81	324	#line 81 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	82	324		set __signed_stack_002main, 200
+0	81	327	#line 81 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	81	327	#line 81 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	82	327		set __signed_stack_003main, 4
+0	81	330	#line 81 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	81	330	#line 81 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	82	330		set __D0main, 0
+0	82	333	#line 82 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	83	333		acquire __SPTArgsMutex
+0	82	334	#line 82 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	83	334		mov __SPTArgs.Frequency, __signed_stack_001main
+0	82	336	#line 82 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	83	336		mov __SPTArgs.Duration, __signed_stack_002main
+0	82	338	#line 82 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	83	338		mov __SPTArgs.Volume, __signed_stack_003main
+0	82	340	#line 82 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	83	340		mov __SPTArgs.Loop, __D0main
+0	82	342	#line 82 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	83	342		syscall 10, __SPTArgs
+0	82	345	#line 82 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	83	345		mov __D0main, __SPTArgs.Result
+0	82	347	#line 82 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	83	347		release __SPTArgsMutex
+0	82	348	#line 82 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	82	348	#line 82 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	83	348		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	82	351	#line 82 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	7921	351	#line 7921 "NXCDefs.h"
+0	7922	351		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	354	#line 7921 "NXCDefs.h"
+0	84	354	#line 84 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	85	354	#line 85 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	86	354		subcall parar, __parar_return
+0	85	356	#line 85 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	86	356	#line 86 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	87	356		jmp __NXC_Label_540
+0	86	358	#line 86 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	87	358	#line 87 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	88	358		jmp __NXC_Label_584
+0	87	360	#line 87 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	88	360		mov __signed_stack_001main, __main_7qG2_fi_7qG2_001
+0	87	362	#line 87 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	88	362	#line 88 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	89	362		set __D0main, 35
+0	88	365	#line 88 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	89	365		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	88	369	#line 88 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	89	369		mov __D0main, __zfmain
+0	89	371	#line 89 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	90	371		brtst 4, __NXC_Label_587, __zfmain
+0	89	374	#line 89 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	90	374		set __derecha_7qG2_vel_7qG2_000, 45
+0	89	377	#line 89 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	89	377	#line 89 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	90	377		set __derecha_7qG2_ms_7qG2_000, 800
+0	89	380	#line 89 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	90	380	#line 90 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	91	380		subcall derecha, __derecha_return
+0	90	382	#line 90 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	90	382	#line 90 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	91	382		set __r_7qG2_vel_7qG2_000, 45
+0	90	385	#line 90 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	90	385	#line 90 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	91	385		set __r_7qG2_ms_7qG2_000, 600
+0	90	388	#line 90 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	91	388	#line 91 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	92	388		subcall r, __r_return
+0	91	390	#line 91 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	92	390	#line 92 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	93	390		subcall parar, __parar_return
+0	92	392	#line 92 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	92	392	#line 92 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	93	392		set __signed_stack_001main, 440
+0	92	395	#line 92 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	92	395	#line 92 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	93	395		set __signed_stack_002main, 200
+0	92	398	#line 92 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	92	398	#line 92 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	93	398		set __signed_stack_003main, 4
+0	92	401	#line 92 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	92	401	#line 92 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	93	401		set __D0main, 0
+0	93	404	#line 93 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	94	404		acquire __SPTArgsMutex
+0	93	405	#line 93 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	94	405		mov __SPTArgs.Frequency, __signed_stack_001main
+0	93	407	#line 93 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	94	407		mov __SPTArgs.Duration, __signed_stack_002main
+0	93	409	#line 93 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	94	409		mov __SPTArgs.Volume, __signed_stack_003main
+0	93	411	#line 93 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	94	411		mov __SPTArgs.Loop, __D0main
+0	93	413	#line 93 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	94	413		syscall 10, __SPTArgs
+0	93	416	#line 93 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	94	416		mov __D0main, __SPTArgs.Result
+0	93	418	#line 93 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	94	418		release __SPTArgsMutex
+0	93	419	#line 93 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	93	419	#line 93 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	94	419		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	93	422	#line 93 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	7921	422	#line 7921 "NXCDefs.h"
+0	7922	422		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	425	#line 7921 "NXCDefs.h"
+0	95	425	#line 95 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	96	425	#line 96 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	97	425		jmp __NXC_Label_606
+0	96	427	#line 96 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	97	427		mov __signed_stack_001main, __main_7qG2_ti_7qG2_001
+0	96	429	#line 96 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	97	429	#line 97 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	98	429		set __D0main, 35
+0	97	432	#line 97 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	98	432		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	97	436	#line 97 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	98	436		mov __D0main, __zfmain
+0	98	438	#line 98 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	99	438		brtst 4, __NXC_Label_609, __zfmain
+0	98	441	#line 98 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	99	441		set __derecha_7qG2_vel_7qG2_000, 45
+0	98	444	#line 98 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	98	444	#line 98 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	99	444		set __derecha_7qG2_ms_7qG2_000, 800
+0	98	447	#line 98 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	99	447	#line 99 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	100	447		subcall derecha, __derecha_return
+0	99	449	#line 99 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	99	449	#line 99 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	100	449		set __rderecha_7qG2_vel_7qG2_000, 45
+0	99	452	#line 99 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	99	452	#line 99 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	100	452		set __rderecha_7qG2_ms_7qG2_000, 600
+0	99	455	#line 99 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	100	455	#line 100 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	101	455		subcall rderecha, __rderecha_return
+0	100	457	#line 100 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	101	457	#line 101 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	102	457		subcall parar, __parar_return
+0	101	459	#line 101 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	101	459	#line 101 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	102	459		set __signed_stack_001main, 440
+0	101	462	#line 101 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	101	462	#line 101 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	102	462		set __signed_stack_002main, 200
+0	101	465	#line 101 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	101	465	#line 101 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	102	465		set __signed_stack_003main, 4
+0	101	468	#line 101 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	101	468	#line 101 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	102	468		set __D0main, 0
+0	102	471	#line 102 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	103	471		acquire __SPTArgsMutex
+0	102	472	#line 102 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	103	472		mov __SPTArgs.Frequency, __signed_stack_001main
+0	102	474	#line 102 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	103	474		mov __SPTArgs.Duration, __signed_stack_002main
+0	102	476	#line 102 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	103	476		mov __SPTArgs.Volume, __signed_stack_003main
+0	102	478	#line 102 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	103	478		mov __SPTArgs.Loop, __D0main
+0	102	480	#line 102 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	103	480		syscall 10, __SPTArgs
+0	102	483	#line 102 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	103	483		mov __D0main, __SPTArgs.Result
+0	102	485	#line 102 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	103	485		release __SPTArgsMutex
+0	102	486	#line 102 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	102	486	#line 102 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	103	486		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	102	489	#line 102 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	7921	489	#line 7921 "NXCDefs.h"
+0	7922	489		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	492	#line 7921 "NXCDefs.h"
+0	103	492	#line 103 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	106	492	#line 106 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	107	492		jmp __NXC_Label_628
+0	106	494	#line 106 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	107	494		set __adelante_7qG2_vel_7qG2_000, 45
+0	106	497	#line 106 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	106	497	#line 106 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	107	497		set __adelante_7qG2_ms_7qG2_000, 500
+0	106	500	#line 106 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	107	500	#line 107 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	108	500		subcall adelante, __adelante_return
+0	107	502	#line 107 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	110	502	#line 110 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	111	502		subcall parar, __parar_return
+0	110	504	#line 110 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	116	504	#line 116 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	116	504	#line 116 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	116	504	#line 116 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	116	504	#line 116 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	118	504	#line 118 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	119	504		jmp __NXC_Label_539
+0	118	506	#line 118 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+0	119	506		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5784	0	#pragma macro 25
+2	5784	0		acquire __CLSWMutex3
+2	5784	1		set __CLSWArgs3.Port, 3
+2	5784	4		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+2	5784	6		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+2	5784	8		syscall 21, __CLSWArgs3
+2	5784	11		mov __RLSBResult3, __CLSWArgs3.Result
+2	5784	13		release __CLSWMutex3
+2	5784	14	#line 5784 "NXTDefs.h"
+2	5785	14		brtst 4, __RLSBReturn3, __RLSBytesCount3
+2	5786	17		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+2	5787	21		brtst 5, __RLSBError3, __RLSBResult3
+2	5788	24		set __RLSBIterations3, 4
+2	5790	27	#pragma macro 23
+2	5790	27		acquire __CLSCSMutex3
+2	5790	28		set __CLSCSArgs3.Port, 3
+2	5790	31		syscall 23, __CLSCSArgs3
+2	5790	34		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+2	5790	36		mov __RLSBResult3, __CLSCSArgs3.Result
+2	5790	38		release __CLSCSMutex3
+2	5790	39	#line 5790 "NXTDefs.h"
+2	5791	39		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+2	5792	43		brtst 2, __RLSBError3, __RLSBIterations3
+2	5793	46		brtst 0, __RLSBError3, __RLSBResult3
+2	5794	49		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+2	5796	52		wait2 NA, __constVal15
+2	5797	55		jmp __RLSBDoCheckStatus3
+2	5800	57	#pragma macro 25
+2	5800	57		acquire __CLSRMutex3
+2	5800	58		set __CLSRArgs3.Port, 3
+2	5800	61		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+2	5800	63		syscall 22, __CLSRArgs3
+2	5800	66		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+2	5800	68		mov __RLSBResult3, __CLSRArgs3.Result
+2	5800	70		release __CLSRMutex3
+2	5800	71	#line 5800 "NXTDefs.h"
+2	5801	71		brtst 5, __RLSBError3, __RLSBResult3
+2	5802	74		mov __RLSLastGoodRead3, __RLSReadBuf3
+2	5803	76		jmp __RLSBDone3
+2	5805	78		mov __RLSReadBuf3, __RLSLastGoodRead3
+2	5807	80		arrsize __RLSBytesCount3, __RLSReadBuf3
+2	5809	83		subret ____ReadLSBytes3_return
+3	10	0	#line 10 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+3	11	0		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+3	11	2	#line 11 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+3	12	2	#pragma macro 10
+3	12	2		acquire __OnRevMutex
+3	12	3		neg __OnRev_Tmp, __D0adelante
+3	12	6		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	12	29		release __OnRevMutex
+3	4119	30	#line 4119 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+3	11	30	#line 11 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+3	11	30	#line 11 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+3	12	30		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+3	12	32	#line 12 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+3	13	32	#pragma macro 7
+3	13	32		setout __constVal2, 2, __D0adelante, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4126	55	#line 4126 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+3	12	55	#line 12 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+3	12	55	#line 12 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+3	13	55		mov __Wait_7qG2_ms_7qG2_000_inline_adelante, __adelante_7qG2_ms_7qG2_000
+3	12	57	#line 12 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+3	7921	57	#line 7921 "NXCDefs.h"
+3	7922	57		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_adelante
+3	7921	60	#line 7921 "NXCDefs.h"
+3	14	60	#line 14 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+3	16	60	#line 16 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+3	17	60		subret __adelante_return
+4	18	0	#line 18 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+4	19	0		mov __D0atras, __atras_7qG2_vel_7qG2_000
+4	19	2	#line 19 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+4	20	2	#pragma macro 7
+4	20	2		setout __constVal1, 2, __D0atras, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4160	25	#line 4160 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+4	19	25	#line 19 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+4	19	25	#line 19 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+4	20	25		mov __D0atras, __atras_7qG2_vel_7qG2_000
+4	20	27	#line 20 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+4	21	27	#pragma macro 10
+4	21	27		acquire __OnRevMutex
+4	21	28		neg __OnRev_Tmp, __D0atras
+4	21	31		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	21	54		release __OnRevMutex
+4	4167	55	#line 4167 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+4	20	55	#line 20 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+4	20	55	#line 20 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+4	21	55		mov __Wait_7qG2_ms_7qG2_000_inline_atras, __atras_7qG2_ms_7qG2_000
+4	20	57	#line 20 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+4	7921	57	#line 7921 "NXCDefs.h"
+4	7922	57		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_atras
+4	7921	60	#line 7921 "NXCDefs.h"
+4	21	60	#line 21 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+4	22	60	#line 22 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+4	23	60		subret __atras_return
+5	24	0	#line 24 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	25	0		mov __D0derecha, __derecha_7qG2_vel_7qG2_000
+5	25	2	#line 25 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	26	2	#pragma macro 10
+5	26	2		acquire __OnRevMutex
+5	26	3		neg __OnRev_Tmp, __D0derecha
+5	26	6		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	26	29		release __OnRevMutex
+5	4201	30	#line 4201 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	25	30	#line 25 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	25	30	#line 25 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	25	30	#line 25 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	25	30	#line 25 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	25	30	#line 25 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	26	30		div __signed_stack_001derecha, __derecha_7qG2_vel_7qG2_000, __constVal2
+5	25	34	#line 25 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	25	34	#line 25 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	25	34	#line 25 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	26	34		sub __D0derecha, __signed_stack_001derecha, __constVal3
+5	26	38	#line 26 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	27	38	#pragma macro 7
+5	27	38		setout __constVal1, 2, __D0derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	4220	61	#line 4220 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	26	61	#line 26 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	26	61	#line 26 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	26	61	#line 26 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	26	61	#line 26 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	26	61	#line 26 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	27	61		div __D0derecha, __derecha_7qG2_vel_7qG2_000, __constVal2
+5	27	65	#line 27 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	28	65	#pragma macro 7
+5	28	65		setout __constVal2, 2, __D0derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	4233	88	#line 4233 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	27	88	#line 27 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	27	88	#line 27 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	28	88		mov __Wait_7qG2_ms_7qG2_000_inline_derecha, __derecha_7qG2_ms_7qG2_000
+5	27	90	#line 27 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	7921	90	#line 7921 "NXCDefs.h"
+5	7922	90		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_derecha
+5	7921	93	#line 7921 "NXCDefs.h"
+5	28	93	#line 28 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	30	93	#line 30 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+5	31	93		subret __derecha_return
+6	32	0	#line 32 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	33	0		mov __D0rderecha, __rderecha_7qG2_vel_7qG2_000
+6	33	2	#line 33 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	34	2	#pragma macro 7
+6	34	2		setout __constVal0, 2, __D0rderecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4267	25	#line 4267 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	33	25	#line 33 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	33	25	#line 33 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	34	25		mov __D0rderecha, __rderecha_7qG2_vel_7qG2_000
+6	34	27	#line 34 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	35	27	#pragma macro 7
+6	35	27		setout __constVal1, 2, __D0rderecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4274	50	#line 4274 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	34	50	#line 34 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	34	50	#line 34 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	35	50		mov __D0rderecha, __rderecha_7qG2_vel_7qG2_000
+6	35	52	#line 35 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	36	52	#pragma macro 7
+6	36	52		setout __constVal2, 2, __D0rderecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4281	75	#line 4281 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	35	75	#line 35 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	35	75	#line 35 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	36	75		mov __Wait_7qG2_ms_7qG2_000_inline_rderecha, __rderecha_7qG2_ms_7qG2_000
+6	35	77	#line 35 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	7921	77	#line 7921 "NXCDefs.h"
+6	7922	77		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_rderecha
+6	7921	80	#line 7921 "NXCDefs.h"
+6	36	80	#line 36 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	38	80	#line 38 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+6	39	80		subret __rderecha_return
+7	40	0	#line 40 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	41	0		mov __D0r, __r_7qG2_vel_7qG2_000
+7	41	2	#line 41 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	42	2	#pragma macro 10
+7	42	2		acquire __OnRevMutex
+7	42	3		neg __OnRev_Tmp, __D0r
+7	42	6		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	42	29		release __OnRevMutex
+7	4315	30	#line 4315 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	41	30	#line 41 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	41	30	#line 41 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	42	30		mov __D0r, __r_7qG2_vel_7qG2_000
+7	42	32	#line 42 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	43	32	#pragma macro 10
+7	43	32		acquire __OnRevMutex
+7	43	33		neg __OnRev_Tmp, __D0r
+7	43	36		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	43	59		release __OnRevMutex
+7	4322	60	#line 4322 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	42	60	#line 42 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	42	60	#line 42 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	43	60		mov __D0r, __r_7qG2_vel_7qG2_000
+7	43	62	#line 43 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	44	62	#pragma macro 10
+7	44	62		acquire __OnRevMutex
+7	44	63		neg __OnRev_Tmp, __D0r
+7	44	66		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	44	89		release __OnRevMutex
+7	4329	90	#line 4329 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	43	90	#line 43 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	43	90	#line 43 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	44	90		mov __Wait_7qG2_ms_7qG2_000_inline_r, __r_7qG2_ms_7qG2_000
+7	43	92	#line 43 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	7921	92	#line 7921 "NXCDefs.h"
+7	7922	92		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_r
+7	7921	95	#line 7921 "NXCDefs.h"
+7	44	95	#line 44 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	46	95	#line 46 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+7	47	95		subret __r_return
+8	49	0	#line 49 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+8	50	0	#pragma macro 7
+8	50	0		setout __OUT_ABC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4351	23	#line 4351 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+8	49	23	#line 49 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+8	49	23	#line 49 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+8	50	23		set __Wait_7qG2_ms_7qG2_000_inline_parar, 200
+8	49	26	#line 49 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+8	7921	26	#line 7921 "NXCDefs.h"
+8	7922	26		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_parar
+8	7921	29	#line 7921 "NXCDefs.h"
+8	50	29	#line 50 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+8	54	29	#line 54 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+8	55	29		subret __parar_return
+9	119	0	#line 119 "C:\Users\amorp\AppData\Local\Temp\temp.nxc"
+9	120	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\amorp\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	509	NXTDefs.h
+2	__ReadLSBytes3	522	NXTDefs.h
+3	adelante	607	C:\Users\amorp\AppData\Local\Temp\temp.nxc
+4	atras	669	C:\Users\amorp\AppData\Local\Temp\temp.nxc
+5	derecha	731	C:\Users\amorp\AppData\Local\Temp\temp.nxc
+6	rderecha	826	C:\Users\amorp\AppData\Local\Temp\temp.nxc
+7	r	908	C:\Users\amorp\AppData\Local\Temp\temp.nxc
+8	parar	1005	C:\Users\amorp\AppData\Local\Temp\temp.nxc
+9	__initialize_global_data	1036	C:\Users\amorp\AppData\Local\Temp\temp.nxc

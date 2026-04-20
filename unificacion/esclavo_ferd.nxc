@@ -1,0 +1,133 @@
+#define SEN_COLOR  IN_4
+#define M_PINZA    OUT_B
+#define M_TIJERA   OUT_AC
+#define VEL_ELEV    100
+#define VEL_PINZA   55
+
+// --- PARÁMETROS ---
+#define VEL_GOLPE    60
+#define ANG_GOLPE    1400
+#define BUZON_RECIBE 1
+#define BUZON_MANDAR 2
+#define CONEXION     1
+
+int mensaje;
+int color_detectado = 0;
+
+// --- FUNCIONES POR COLOR ---
+void ejecutar_mecanismo() {
+    RotateMotor(M_PINZA, VEL_GOLPE, -ANG_GOLPE);
+    Off(M_PINZA);
+    Wait(300); // Pausa para el tornillo sin fin
+    RotateMotor(M_PINZA, VEL_GOLPE, ANG_GOLPE);
+    Off(M_PINZA);
+}
+
+void caso_negro() {
+    TextOut(0, LCD_LINE3, "PELOTA NEGRA", true);
+    // Acción para el tornillo
+    RotateMotor(M_PINZA, VEL_GOLPE, -ANG_GOLPE);
+    Off(M_PINZA);
+    Wait(300);
+    RotateMotor(M_PINZA, VEL_GOLPE, ANG_GOLPE);
+    Off(M_PINZA);
+}
+
+void caso_verde() {
+    TextOut(0, LCD_LINE3, "VERDE: IGNORAR", true);
+    // No acciona nada por instrucción
+    Wait(100);
+}
+
+void caso_otros() {
+    TextOut(0, LCD_LINE3, "COLOR DETECTADO", true);
+    //cualquier otro color
+    RotateMotor(M_PINZA, VEL_GOLPE, -ANG_GOLPE);
+    Off(M_PINZA);
+    Wait(300);
+    RotateMotor(M_PINZA, VEL_GOLPE, ANG_GOLPE);
+    Off(M_PINZA);
+}
+
+// --- LÓGICA SENSORIAL ---
+
+void RGB() {
+    color_detectado = SensorValue(SEN_COLOR);
+
+    switch(color_detectado) {
+       case 1: // NEGRO
+            TextOut(0, LCD_LINE3, "COLOR: NEGRO", true);
+            ejecutar_mecanismo();
+            break;
+
+        case 2: // AZUL
+            TextOut(0, LCD_LINE3, "COLOR: AZUL", true);
+            ejecutar_mecanismo();
+            break;
+
+        case 3: // VERDE
+            TextOut(0, LCD_LINE3, "COLOR: VERDE", true);
+            // No acciona nada por instrucción
+            break;
+
+        case 4: // AMARILLO
+            TextOut(0, LCD_LINE3, "COLOR: AMARILLO", true);
+            ejecutar_mecanismo();
+            break;
+
+        case 5: // ROJO
+            TextOut(0, LCD_LINE3, "COLOR: ROJO", true);
+            ejecutar_mecanismo();
+            break;
+
+        case 6: // BLANCO
+            TextOut(0, LCD_LINE3, "COLOR: BLANCO", true);
+            ejecutar_mecanismo();
+            break;
+        default:
+            break;
+    }
+}
+
+// --- ELEVACIÓN ---
+
+void subir_tijera(int grados) {
+    RotateMotor(OUT_AC,50 , grados);
+}
+
+// --- TAREA PRINCIPAL (ESCLAVO) ---
+task main(){
+     //ConnectBT(CONEXION, "MASTER_NXT");
+     Wait(2000);
+     PlaySound(SOUND_DOUBLE_BEEP);
+     while(true){
+         if(ReceiveRemoteNumber(BUZON_RECIBE, true, mensaje) == NO_ERR){
+             if(mensaje == 0){
+                 NumOut(0,LCD_LINE3,mensaje,true);
+             }
+             else if(mensaje == 1){ // 1 si quieren uqe la garra detecte
+                 PlaySound(SOUND_FAST_UP);
+                 RGB();
+                 Wait(1000);
+                 mensaje = 0;
+                 SendMessage(BUZON_MANDAR, "1");
+             }
+             else if(mensaje == 2){  // Mensaje para subir nivel 2
+                  PlaySound(SOUND_UP);
+                  for(int i=0;i<2;i++){
+                  subir_tijera(10); // Ejemplo: Ajusten los grados a su mecanismo
+                  Off(OUT_AC);
+                  Wait(100);
+                  }
+                  // IMPORTANTE: Después de subir, manden una confirmación
+                  // al ladrillo de movimiento (Maestro)
+                 SendMessage(BUZON_MANDAR, "2");
+                  mensaje = 0;
+             }
+             else{
+                 PlayTone(400,200); //Raro
+             }
+         }
+         Wait(50);
+     }
+}

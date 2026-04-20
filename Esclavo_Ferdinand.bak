@@ -1,0 +1,102 @@
+#define V    50
+#define SOM  35      // Umbral para el color negro (frontera/línea)
+#define DIST 14      // Distancia del obstáculo
+
+// Sensores
+#define SEN_FRONT_IZQ IN_1
+#define SEN_LAT_IZQ   IN_2  // El que "sigue" la línea lateral
+#define SEN_FRONT_DER IN_3
+#define SEN_US        IN_4
+
+// Motores (3 ejes omni)
+#define M_LATERAL     OUT_A
+#define M_IZQ         OUT_B // *Atención: Se comparte con el empuje
+#define M_DER         OUT_C
+
+// --- FUNCIONES DE MOVIMIENTO ---
+
+void parar() { Off(OUT_ABC); Wait(200); }
+
+void adelante() { OnRev(M_IZQ, V); OnFwd(M_DER, V); Off(M_LATERAL); }
+
+void atras() { OnFwd(M_IZQ, V); OnRev(M_DER, V); Wait(400); parar(); }
+
+void deslizar_derecha(int ms) {
+    OnRev(M_LATERAL, V);
+    OnFwd(M_IZQ, V/2);
+    OnFwd(M_DER, V/2);
+    if(ms > 0) { Wait(ms); parar(); }
+}
+
+void deslizar_izquierda(int ms) {
+    OnFwd(M_LATERAL, V);
+    OnRev(M_IZQ, V/2);
+    OnRev(M_DER, V/2);
+    if(ms > 0) { Wait(ms); parar(); }
+}
+
+// --- MECANISMO DE RECOLECCIÓN (ESCLAVO) ---
+void recolectar_pelotas() {
+    PlaySound(SOUND_DOUBLE_BEEP);
+    // Aquí activas tu mecanismo de empuje/succión
+    // Ejemplo: usando el motor B que ahora está libre porque el robot paró
+    RotateMotor(OUT_B, 60, 1400); // Ajusta según tu diseño de "worm gear"
+    Wait(500);
+    RotateMotor(OUT_B, 60, -1400);
+    Off(OUT_B);
+}
+
+task main() {
+    SetSensorLight(SEN_FRONT_IZQ);
+    SetSensorLight(SEN_LAT_IZQ);
+    SetSensorLight(SEN_FRONT_DER);
+    SetSensorLowspeed(SEN_US);
+
+    while(true) {
+        int fi = Sensor(SEN_FRONT_IZQ);
+        int ti = Sensor(SEN_LAT_IZQ);
+        int fd = Sensor(SEN_FRONT_DER);
+        int ul = SensorUS(SEN_US);
+
+        // 1. CONDICIÓN FINAL: FRONTERA + OBSTÁCULO
+        // El robot se detiene y activa el mecanismo del esclavo
+        if (fi < SOM && fd < SOM && ul < DIST) {
+            parar();
+            recolectar_pelotas();
+            break; // Finaliza la tarea o espera nueva orden
+        }
+
+        // 2. FRONTERA FRONTAL: NO CRUZAR (Prioridad de seguridad)
+        else if (fi < SOM || fd < SOM) {
+            atras();
+            deslizar_derecha(500); // Se aleja de la frontera de lado
+        }
+
+        // 3. SORTEO DE OBSTÁCULO (Si hay objeto pero no hay línea de frente)
+        else if (ul < DIST) {
+            // Esquiva lateralmente hasta que el camino esté limpio
+            while(SensorUS(SEN_US) < (DIST + 5)) {
+                deslizar_derecha(0);
+            }
+            parar();
+        }
+
+        // 4. SEGUIDOR DE LÍNEA LATERAL (SEN2 en esquina trasera)
+        // El robot avanza siguiendo la línea negra lateral pero sin pisarla
+        else if (ti < SOM) {
+            // Si toca negro atrás, el robot se está "metiendo" en la línea.
+            // Deslizamos a la derecha mientras avanzamos para enderezar.
+            OnRev(M_LATERAL, V);
+            OnRev(M_IZQ, V);
+            OnFwd(M_DER, V);
+        }
+        else {
+            // Si no detecta la línea, la busca deslizándose un poco a la izquierda
+            OnFwd(M_LATERAL, V-15);
+            OnRev(M_IZQ, V);
+            OnFwd(M_DER, V);
+        }
+
+        Wait(20);
+    }
+}

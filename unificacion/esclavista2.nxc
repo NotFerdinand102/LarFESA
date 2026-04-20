@@ -1,0 +1,171 @@
+#define BUZON_MANDAR 1
+#define BUZON_RECIBE 2
+#define CONEXION 1
+
+// ---------------------------------------------------------------
+//  SENSORES (puertos verificados)
+#define SEN1 IN_1   // seguidor linea - frontal izquierdo
+#define SEN2 IN_2   // seguidor linea - trasero izquierdo
+#define SEN3 IN_3   // seguidor linea - frontal derecho
+#define SEN4 IN_4   // ultra sonico
+//
+#define V    45
+#define TIEM 500
+#define SOM 35
+
+int Aviso = 0;
+
+void adelante(int vel, int ms)
+{
+    OnRev(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+
+}
+
+void atras(int vel, int ms)
+{
+ OnFwd(OUT_B,vel);
+ OnRev(OUT_C,vel);
+ Wait(ms);
+}
+void derecha(int vel, int ms)
+{
+    OnRev(OUT_A, vel);
+    OnFwd(OUT_B, vel/2-3);
+    OnFwd(OUT_C, vel/2);
+    Wait(ms);
+}
+
+void rderecha(int vel, int ms)
+{
+    OnFwd(OUT_A, vel);
+    OnFwd(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+}
+
+void r(int vel, int ms)
+{
+    OnRev(OUT_A, vel);
+    OnRev(OUT_B, vel);
+    OnRev(OUT_C, vel);
+    Wait(ms);
+}
+
+void parar()
+{
+ Off(OUT_ABC);
+ Wait(200);
+}
+
+
+
+task escuchar(){
+     int res;
+     while(true){
+         if(ReceiveRemoteNumber(BUZON_RECIBE, true, res) == NO_ERR){
+             if(res == 0){
+                 NumOut(0,LCD_LINE3,res,true);
+             }
+             else if(res == 1){
+                 PlaySound(SOUND_FAST_UP);
+                 Aviso = 1;
+                 res = 0;
+             }
+             else if(res == 2){
+                 Aviso = 2;
+                 res = 0;
+             }
+             else{
+                 PlayTone(400,200); //Raro
+             }
+         }
+     }
+}
+
+
+task main(){
+     //BluetoothConnect(CONEXION, "SLAVE_NXT");
+     Wait(2000);
+     PlaySound(SOUND_DOUBLE_BEEP);
+     
+     SetSensorLight(SEN1);
+     SetSensorLight(SEN2);
+     SetSensorLight(SEN3);
+     SetSensorLowspeed(SEN4);
+     
+     SendRemoteNumber(CONEXION, BUZON_MANDAR, 2);
+     
+     Wait(10000);
+     
+     adelante(75,1200);
+
+    //iniciar movimiento.
+    while(true)
+    {
+      Wait(10);
+      int fi = Sensor(SEN1);
+      int ti = Sensor(SEN2);
+      int fd = Sensor(SEN3);
+      int ul = SensorUS(SEN4);
+
+      if(ul<15)
+      {
+        atras(V,TIEM);
+        parar();
+        PlayTone(880,500);
+        Wait(500);
+      }
+      else if(fi < SOM && fd <SOM)
+      {
+
+         PlayTone(440,200);
+         Wait(200);
+
+         parar();
+         break;
+      }
+      else if(fi < SOM)
+      {
+        derecha(V,TIEM+300);
+        r(V,TIEM+100);
+        parar();
+        PlayTone(440,200);
+        Wait(200);
+
+      }
+      else if(ti < SOM)
+      {
+        derecha(V,TIEM+300);
+        rderecha(V,TIEM+100);
+        parar();
+        PlayTone(440,200);
+        Wait(200);
+      }
+      else
+      {
+          adelante(V, TIEM);
+          parar();
+
+
+      }
+
+
+
+    }
+
+     
+     start escuchar;
+     Wait(500);
+     // MANDA MENSAJE A ESCLAVO que chambee
+     SendRemoteNumber(CONEXION, BUZON_MANDAR, 1);
+     
+     //Espera hasat que esclavo conteste
+     while (Aviso == 0){
+         NumOut(0,LCD_LINE3,Aviso,true);
+     }
+     Aviso = 0;
+     
+     //SIgue
+}
