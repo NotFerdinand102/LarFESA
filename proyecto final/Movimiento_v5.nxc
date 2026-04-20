@@ -1,0 +1,387 @@
+// ---------------------------------------------------------------
+//  TIEMPOS (ms) - calibrados para VEL = 40
+// ---------------------------------------------------------------
+#define T_AVANCE        200
+#define T_GIRO_90       300
+#define T_FINO          150
+#define T_RETROCESO     120
+#define T_ESPERA_ACK   8000
+#define T_DEPOSITO    10000
+
+// ---------------------------------------------------------------
+//  MOTORES (puertos verificados)
+// ---------------------------------------------------------------
+#define MOT_A  OUT_A   // frontal derecho (eje de avance)
+#define MOT_B  OUT_B   // izquierdo
+#define MOT_C  OUT_C   // trasero
+
+// ---------------------------------------------------------------
+//  SENSORES (puertos verificados)
+// ---------------------------------------------------------------
+#define SEN_LINEA_FL  IN_1   // seguidor linea - frontal izquierdo
+#define SEN_LINEA_TL  IN_2   // seguidor linea - trasero izquierdo
+#define SEN_LINEA_FR  IN_3   // seguidor linea - frontal derecho
+#define SEN_US_FRONT  IN_4   // ultrasonico frontal
+
+// ---------------------------------------------------------------
+//  PARAMETROS DE MOVIMIENTO
+// ---------------------------------------------------------------
+#define VEL            40
+#define VEL_LENTO      30
+#define UMBRAL_LINEA   43
+#define DIST_OBST      40   // cm
+
+// ---------------------------------------------------------------
+//  TIEMPOS DE MANIOBRA (ajustables en pista)
+// ---------------------------------------------------------------
+#define T_PASO_IZQ     455   // ms paso izquierda buscando linea
+#define T_PASO_ADL     455   // ms paso adelante siguiendo linea
+#define T_CORR_SUAVE   220   // ms correccion suave (mitad de paso)
+#define T_GIRO_SUAVE   275   // ms giro suave (mitad de giro)
+#define T_DEBOUNCE     300   // ms minimo entre detecciones de linea
+
+// ---------------------------------------------------------------
+//  CONTEO DE LINEAS
+//  Segun el escenario (beneficiadero -> cultivo):
+//    Linea 1: salida del beneficiadero
+//    Linea 2: entrada zona albercas
+//    Linea 3: salida zona albercas (si no hay alberca en medio)
+//    Linea 4: entrada zona cultivo -> DESTINO
+// ---------------------------------------------------------------
+int lineas_cruzadas;
+long ultimo_cruce;   // timestamp del ultimo cruce para debounce
+
+// ---------------------------------------------------------------
+//  FUNCIONES DE MOVIMIENTO OMNI
+// ---------------------------------------------------------------
+
+void adelante(int vel, int ms)
+{
+    OnRev(MOT_B, vel);
+    OnFwd(MOT_C, vel);
+    Wait(ms);
+}
+
+void atras(int vel, int ms)
+{
+    OnFwd(MOT_B, vel);
+    OnRev(MOT_C, vel);
+    Wait(ms);
+}
+
+void derecha(int vel, int ms)
+{
+    OnRev(MOT_A, vel);
+    OnFwd(MOT_B, vel / 2 - 3);
+    OnFwd(MOT_C, vel / 2);
+    Wait(ms);
+}
+
+void izquierda(int vel, int ms)
+{
+    OnFwd(MOT_A, vel);
+    OnRev(MOT_B, vel / 2 - 3);
+    OnRev(MOT_C, vel / 2);
+    Wait(ms);
+}
+
+// Giro sobre su propio eje HORARIO
+void girar_eje(int vel, int ms)
+{
+    OnRev(MOT_A, vel);
+    OnFwd(MOT_B, vel);
+    OnRev(MOT_C, vel);
+    Wait(ms);
+}
+
+// Giro sobre su propio eje ANTIHORARIO
+void girar_eje_anti(int vel, int ms)
+{
+    OnFwd(MOT_A, vel);
+    OnRev(MOT_B, vel);
+    OnFwd(MOT_C, vel);
+    Wait(ms);
+}
+
+void parar()
+{
+    Off(OUT_ABC);
+    Wait(150);
+}
+
+// ---------------------------------------------------------------
+//  leer_sensores() - lee los 3 seguidores de golpe
+// ---------------------------------------------------------------
+void leer_sensores(int &fl, int &fr, int &tl)
+{
+    fl = Sensor(SEN_LINEA_FL);
+    fr = Sensor(SEN_LINEA_FR);
+    tl = Sensor(SEN_LINEA_TL);
+}
+
+// ---------------------------------------------------------------
+//  detectar_cruce() - detecta si el robot cruzo una linea transversal
+//
+//  Usa debounce por tiempo: si hace menos de T_DEBOUNCE ms
+//  que detecto la ultima linea, ignora (es la misma linea,
+//  el robot sigue encima).
+//
+//  Retorna true si detecto un cruce NUEVO.
+// ---------------------------------------------------------------
+bool detectar_cruce(int fl, int fr)
+{
+    // Ambos frontales ven negro = linea transversal
+    if (fl < UMBRAL_LINEA && fr < UMBRAL_LINEA)
+    {
+        long ahora = CurrentTick();
+
+        // Debounce: ignorar si paso muy poco tiempo desde el ultimo cruce
+        if ((ahora - ultimo_cruce) > T_DEBOUNCE)
+        {
+            lineas_cruzadas++;
+            ultimo_cruce = ahora;
+
+            // Mostrar en pantalla
+            ClearScreen();
+            TextOut(0, LCD_LINE1, "LINEA #");
+            NumOut(50, LCD_LINE1, lineas_cruzadas);
+            PlayTone(660, 100);
+
+            return true;
+        }
+    }
+    return false;
+}
+
+// ---------------------------------------------------------------
+//  corregir_busqueda() - FASE B: buscando la linea lateral
+//
+//  tl=NEGRO, fl=BLANCO -> trasero cruzo linea, girar horario
+//  ambos BLANCO        -> seguir girando antihorario
+// ---------------------------------------------------------------
+void corregir_busqueda(int fl, int tl)
+{
+    bool fl_negro = (fl < UMBRAL_LINEA);
+    bool tl_negro = (tl < UMBRAL_LINEA);
+
+    if (tl_negro && !fl_negro)
+    {
+        // Trasero en linea, frente no -> girar horario para alinear
+        girar_eje(VEL, T_GIRO_SUAVE);
+        parar();
+    }
+    else if (!tl_negro && !fl_negro)
+    {
+        // Ambos en blanco -> seguir girando antihorario buscando
+        girar_eje_anti(VEL, T_GIRO_SUAVE);
+        parar();
+    }
+}
+
+// ---------------------------------------------------------------
+//  corregir_en_linea() - FASE C: siguiendo la linea hacia arboles
+//
+//  La linea esta a la IZQUIERDA del robot.
+//  fl = sensor frontal izquierdo (lado de la linea)
+//  tl = sensor trasero izquierdo (lado de la linea)
+//
+//  Caso 1: fl=NEGRO, tl=NEGRO
+//    Robot encima de la linea -> separarse un poco a la derecha
+//
+//  Caso 2: fl=BLANCO, tl=NEGRO
+//    Cola en linea, frente se alejo a la derecha
+//    Robot giro en sentido horario sin querer
+//    -> girar antihorario para traer frente hacia la linea
+//
+//  Caso 3: fl=NEGRO, tl=BLANCO
+//    Frente en linea, cola se alejo a la derecha
+//    Robot giro en sentido antihorario sin querer
+//    -> girar horario para traer cola hacia la linea
+//
+//  Caso 4: fl=BLANCO, tl=BLANCO
+//    Ambos en blanco -> esta bien, seguir recto
+// ---------------------------------------------------------------
+void corregir_en_linea(int fl, int tl)
+{
+    bool fl_negro = (fl < UMBRAL_LINEA);
+    bool tl_negro = (tl < UMBRAL_LINEA);
+
+    if (fl_negro && tl_negro)
+    {
+        // Caso 1: encima de la linea -> separarse a la derecha
+        derecha(VEL_LENTO, T_CORR_SUAVE);
+        parar();
+    }
+    else if (!fl_negro && tl_negro)
+    {
+        // Caso 2: cola en linea, frente se fue
+        // -> girar antihorario (traer frente hacia linea)
+        girar_eje_anti(VEL_LENTO, T_GIRO_SUAVE);
+        parar();
+    }
+    else if (fl_negro && !tl_negro)
+    {
+        // Caso 3: frente en linea, cola se fue
+        // -> girar horario (traer cola hacia linea)
+        girar_eje(VEL_LENTO, T_GIRO_SUAVE);
+        parar();
+    }
+    // Caso 4: ambos blanco -> no corregir, seguir avanzando
+}
+
+// ---------------------------------------------------------------
+//  avanzar_hasta_linea()
+//
+//  FASE A: Salir del cuadro inicial (impulso recto)
+//  FASE B: Girar izquierda buscando la linea negra lateral
+//  FASE C: Seguir la linea avanzando hacia los arboles
+//          detectando cruces de lineas transversales
+//
+//  Retorna:
+//    true  = llego a zona cultivo (cruzo suficientes lineas)
+//    false = encontro obstaculo (alberca)
+// ---------------------------------------------------------------
+bool avanzar_hasta_linea()
+{
+    int fl, fr, tl;
+
+    // Inicializar conteo
+    lineas_cruzadas = 0;
+    ultimo_cruce = 0;
+
+    // ====== FASE A: Salir del cuadro ======
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "FASE A");
+    TextOut(0, LCD_LINE2, "Salir cuadro");
+
+    adelante(VEL + 35, 2400);
+    parar();
+
+    // ====== FASE B: Buscar la linea girando a la izquierda ======
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "FASE B");
+    TextOut(0, LCD_LINE2, "Buscar linea");
+
+    while (true)
+    {
+        // Paso a la izquierda
+        izquierda(VEL, T_PASO_IZQ);
+        parar();
+
+        // Leer sensores frescos
+        leer_sensores(fl, fr, tl);
+
+        // Algun frontal ve la linea -> pasar a FASE C
+        if (fl < UMBRAL_LINEA || fr < UMBRAL_LINEA)
+        {
+            PlayTone(880, 200);
+            Wait(200);
+            break;  // salir a FASE C
+        }
+
+        // No encontro linea -> corregir orientacion
+        corregir_busqueda(fl, tl);
+
+        Wait(10);
+    }
+
+    // ====== FASE C: Seguir linea hacia los arboles ======
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "FASE C");
+    TextOut(0, LCD_LINE2, "Hacia arboles");
+
+    // Resetear conteo al empezar a avanzar
+    lineas_cruzadas = 0;
+    ultimo_cruce = CurrentTick();
+
+    while (true)
+    {
+        // Avanzar un paso
+        adelante(VEL, T_PASO_ADL);
+        parar();
+
+        // Leer los 3 sensores frescos
+        leer_sensores(fl, fr, tl);
+
+        // --- PRIORIDAD 1: Obstaculo al frente -> alberca ---
+        if (SensorUS(SEN_US_FRONT) < DIST_OBST)
+        {
+            parar();
+            ClearScreen();
+            TextOut(0, LCD_LINE1, "OBSTACULO");
+            NumOut(0, LCD_LINE2, lineas_cruzadas);
+            TextOut(20, LCD_LINE2, " lineas");
+            PlayTone(440, 300);
+            Wait(300);
+            return false;
+        }
+
+        // --- PRIORIDAD 2: Detectar cruce de linea transversal ---
+        if (detectar_cruce(fl, fr))
+        {
+            // Mostrar cuantas lineas llevamos
+            TextOut(0, LCD_LINE3, "Cruces:");
+            NumOut(50, LCD_LINE3, lineas_cruzadas);
+
+            // Si ya cruzo suficientes lineas -> llego a zona cultivo
+            // (ajustar este numero segun la posicion inicial)
+            if (lineas_cruzadas >= 3)
+            {
+                parar();
+                ClearScreen();
+                TextOut(0, LCD_LINE1, "ZONA CULTIVO");
+                TextOut(0, LCD_LINE2, "Lineas:");
+                NumOut(50, LCD_LINE2, lineas_cruzadas);
+                PlayTone(880, 500);
+                Wait(500);
+                return true;
+            }
+
+            // No es la ultima linea -> cruzarla y seguir
+            // Avanzar un poco extra para pasar completamente la linea
+            adelante(VEL, 300);
+            parar();
+        }
+
+        // --- PRIORIDAD 3: Corregir orientacion ---
+        corregir_en_linea(fl, tl);
+
+        Wait(10);
+    }
+}
+
+// ---------------------------------------------------------------
+//  TAREA PRINCIPAL
+// ---------------------------------------------------------------
+task main()
+{
+    // -- Configurar sensores --
+    SetSensorLight(SEN_LINEA_FL);    // S1
+    SetSensorLight(SEN_LINEA_TL);    // S2
+    SetSensorLight(SEN_LINEA_FR);    // S3
+    SetSensorLowspeed(SEN_US_FRONT); // S4
+
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "MOVIMIENTO v5");
+    Wait(1000);
+
+    bool encontro_linea;
+
+    // Tramo 1: avanzar hasta linea o alberca
+    encontro_linea = avanzar_hasta_linea();
+    parar();
+
+    // Mostrar resultado
+    ClearScreen();
+    if (encontro_linea)
+    {
+        TextOut(0, LCD_LINE1, "LLEGO OK");
+    }
+    else
+    {
+        TextOut(0, LCD_LINE1, "OBSTACULO");
+        TextOut(0, LCD_LINE2, "Lineas:");
+        NumOut(50, LCD_LINE2, lineas_cruzadas);
+    }
+    Wait(5000);
+}

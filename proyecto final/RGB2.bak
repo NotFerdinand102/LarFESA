@@ -1,0 +1,26 @@
+                                                                                                                                                              #include "NXCDefs.h"
+
+#define SENSOR_PORT S1
+#define MOTOR_PORT  OUT_A
+
+task main()
+{
+  int color;
+  int pos = 0;
+
+  SetSensorLowspeed(SENSOR_PORT);
+
+  while (true)
+  {
+    color = SensorHTColorNum(SENSOR_PORT);
+
+    if (color != 3)   // en HiTechnic, verde suele ser 3
+    {
+      RotateMotor(MOTOR_PORT, 60, 31);
+      Wait(2000);
+      RotateMotor(MOTOR_PORT, -60, 31);
+    }
+
+    Wait(4000);
+  }
+}

@@ -1,0 +1,315 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__CLSRMutex0	9	0	0	4	2
+1	__RLSBmutex0	9	0	4	4	2
+2	__CLSWMutex0	9	0	8	4	2
+3	__rotate_theAngle0	5	1	12	4	2
+4	__CLSCSMutex0	9	0	16	4	2
+5	__signed_stack_001main	6	1	20	4	6
+6	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	24	4	4
+7	__DU0SetSensorLowspeed_inline_main	5	1	28	4	2
+8	__D0main	6	1	32	4	11
+9	__D0SetSensorLowspeed_inline_main	6	1	36	4	3
+10	__rotate_angle0	6	1	40	4	6
+11	__rotate_OldRotCount0	4	1	44	2	2
+12	__rotate_RotCount0	4	1	46	2	4
+13	__RLSBResult0	2	1	48	1	7
+14	__rotate_power0	1	1	49	1	5
+15	__RLSBytesCount0	1	1	50	1	7
+16	__constVal96	2	0	51	1	2
+17	__RLSBIterations0	1	1	52	1	4
+18	____ReadLSBytes0_return	1	1	53	1	3
+19	__constValNeg60	2	0	54	1	1
+20	__rotate_turnpct0	2	1	55	1	4
+21	__rotate_stop0	1	1	56	1	3
+22	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	57	1	2
+23	__zfSetSensorLowspeed_inline_main	1	1	58	1	2
+24	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	59	1	2
+25	____initialize_global_data_return	1	1	60	1	3
+26	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	61	1	2
+27	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	62	1	4
+28	__PFTmp	1	1	63	1	1
+29	__constVal15	2	0	64	1	1
+30	__rotate_sync0	1	1	65	1	3
+31	__rotate_firstPort0	1	1	66	1	5
+32	__zfmain	1	1	67	1	5
+33	__rotate_theRM0	1	1	68	1	4
+34	__rotate_thePower0	2	1	69	1	4
+35	__rotate_theTurnPct0	2	1	70	1	4
+36	____RotateMotor0_sign_tmp	2	1	71	1	4
+37	____RotateMotor0_return	1	1	72	1	4
+38	__rotate_theRVP0	1	1	73	1	3
+39	__rotate_theRS0	1	1	74	1	3
+40	__rotate_theRVI0	1	1	75	1	3
+41	__rotate_rs0	1	1	76	1	2
+42	__rotate_theRVD0	1	1	77	1	3
+43	__constVal32	2	0	78	1	5
+44	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	79	1	2
+45	____ResetSensorSubroutine_return	1	1	80	1	3
+46	__rotate_theOM0	1	1	81	1	7
+47	__rotate_theUF0	1	1	82	1	6
+48	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	83	1	2
+49	__constVal0	2	1	84	1	12
+50	__constVal1	2	0	85	1	7
+51	__constVal50	2	0	86	1	1
+52	__ResetSensorTmp	1	1	87	1	2
+53	__ResetSensorPort	1	1	88	1	3
+54	__CLSCSArgs0	8	0	3	4	4
+55	__CLSCSArgs0.Result	2	1	92	1	4
+56	__CLSCSArgs0.Port	1	1	93	1	4
+57	__CLSCSArgs0.BytesReady	1	1	94	1	4
+58	__CLSWArgs0	8	0	4	12	5
+59	__CLSWArgs0.Result	2	1	96	1	5
+60	__CLSWArgs0.Port	1	1	97	1	5
+61	__CLSWArgs0.Buffer	7	0	98	4	5
+62	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+63	__CLSWArgs0.ReturnLen	1	1	100	1	5
+64	__CLSRArgs0	8	0	4	12	5
+65	__CLSRArgs0.Result	2	1	104	1	5
+66	__CLSRArgs0.Port	1	1	105	1	5
+67	__CLSRArgs0.Buffer	7	0	106	4	5
+68	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+69	__CLSRArgs0.BufferLen	1	1	108	1	5
+70	__RLSLastGoodRead0	7	0	110	4	2
+71	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+72	__RLSBbufLSWrite1	7	0	112	4	1
+73	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+74	__rotate_ports0	7	0	114	4	7
+75	__rotate_ports0.__rotate_ports0_type	1	0	0	1	0
+76	__RLSReadBuf0	7	0	116	4	8
+77	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	7	0	#line 7 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	8	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	7	2	#line 7 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	10	2	#line 10 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	10	2	#line 10 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	10	2	#line 10 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	11	2		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 0
+0	10	5	#line 10 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	12	5	#line 12 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	13	5		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	7	#line 3758 "NXCDefs.h"
+0	3759	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	9	#line 3758 "NXCDefs.h"
+0	3758	9	#line 3758 "NXCDefs.h"
+0	3759	9		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	11	#line 3758 "NXCDefs.h"
+0	3759	11		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	14	#line 3758 "NXCDefs.h"
+0	3759	14		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	17	#line 3758 "NXCDefs.h"
+0	3759	17		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	20	#line 3758 "NXCDefs.h"
+0	3759	20		jmp __004__NXC_Label_37
+0	3758	22	#line 3758 "NXCDefs.h"
+0	3759	22		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	25	#line 3758 "NXCDefs.h"
+0	3759	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	27	#line 3663 "NXCDefs.h"
+0	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	31	#line 3663 "NXCDefs.h"
+0	3759	31	#line 3759 "NXCDefs.h"
+0	3759	31	#line 3759 "NXCDefs.h"
+0	3760	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	33	#line 3759 "NXCDefs.h"
+0	3759	33	#line 3759 "NXCDefs.h"
+0	3760	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	36	#line 3759 "NXCDefs.h"
+0	3676	36	#line 3676 "NXCDefs.h"
+0	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	40	#line 3676 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3694	40	#line 3694 "NXCDefs.h"
+0	3695	40	#pragma macro 4
+0	3695	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3669	44	#line 3669 "NXCDefs.h"
+0	3694	44	#line 3694 "NXCDefs.h"
+0	3761	44	#line 3761 "NXCDefs.h"
+0	12	44	#line 12 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	13	44	#line 13 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	14	44		set __D0main, 1
+0	14	47	#line 14 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	15	47		tst 5, __zfmain, __D0main
+0	14	50	#line 14 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	15	50		brtst 4, __NXC_Label_494, __zfmain
+0	14	53	#line 14 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	15	53	#pragma macro 24
+0	15	53		acquire __RLSBmutex0
+0	15	54		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	15	56		set __RLSBytesCount0, 1
+0	15	59		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	15	61		index __D0main, __RLSReadBuf0, 65535
+0	15	65		release __RLSBmutex0
+0	3683	66	#line 3683 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	14	66	#line 14 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	14	66	#line 14 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	14	66	#line 14 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	16	66	#line 16 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	17	66		mov __signed_stack_001main, __D0main
+0	16	68	#line 16 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	17	68	#line 17 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	18	68		set __D0main, 3
+0	17	71	#line 17 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	18	71		cmp 5, __zfmain, __signed_stack_001main, __D0main
+0	17	75	#line 17 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	18	75		mov __D0main, __zfmain
+0	18	77	#line 18 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	19	77		brtst 4, __NXC_Label_501, __zfmain
+0	18	80	#line 18 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	19	80		set __signed_stack_001main, 60
+0	18	83	#line 18 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	18	83	#line 18 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	19	83		set __D0main, 31
+0	19	86	#line 19 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	20	86	#pragma macro 33
+0	20	86		arrbuild __rotate_ports0, __constVal0
+0	20	90		mov __rotate_power0, __signed_stack_001main
+0	20	92		mov __rotate_angle0, __D0main
+0	20	94		mov __rotate_turnpct0, __constVal0
+0	20	96		mov __rotate_sync0, __constVal0
+0	20	98		mov __rotate_stop0, __constVal1
+0	20	100		mov __rotate_theRVP0, __constVal32
+0	20	102		mov __rotate_theRVI0, __constVal0
+0	20	104		mov __rotate_theRVD0, __constVal96
+0	20	106		subcall __RotateMotor0, ____RotateMotor0_return
+0	3715	108	#line 3715 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	19	108	#line 19 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	19	108	#line 19 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	20	108		set __Wait_7qG2_ms_7qG2_000_inline_main, 2000
+0	19	111	#line 19 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	7921	111	#line 7921 "NXCDefs.h"
+0	7922	111		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	114	#line 7921 "NXCDefs.h"
+0	20	114	#line 20 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	20	114	#line 20 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	21	114		mov __signed_stack_001main, __constValNeg60
+0	20	116	#line 20 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	20	116	#line 20 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	21	116		set __D0main, 31
+0	21	119	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	22	119	#pragma macro 33
+0	22	119		arrbuild __rotate_ports0, __constVal0
+0	22	123		mov __rotate_power0, __signed_stack_001main
+0	22	125		mov __rotate_angle0, __D0main
+0	22	127		mov __rotate_turnpct0, __constVal0
+0	22	129		mov __rotate_sync0, __constVal0
+0	22	131		mov __rotate_stop0, __constVal1
+0	22	133		mov __rotate_theRVP0, __constVal32
+0	22	135		mov __rotate_theRVI0, __constVal0
+0	22	137		mov __rotate_theRVD0, __constVal96
+0	22	139		subcall __RotateMotor0, ____RotateMotor0_return
+0	3742	141	#line 3742 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	21	141	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	23	141	#line 23 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	23	141	#line 23 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	24	141		set __Wait_7qG2_ms_7qG2_000_inline_main, 4000
+0	23	144	#line 23 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	7921	144	#line 7921 "NXCDefs.h"
+0	7922	144		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	147	#line 7921 "NXCDefs.h"
+0	24	147	#line 24 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	27	147	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	28	147		jmp __NXC_Label_493
+0	27	149	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+0	28	149		exit -1, -1
+1	4476	0		brtst 4, __rotate_Done0, __rotate_angle0
+1	4477	3		set ____RotateMotor0_sign_tmp, 0
+1	4477	6		brtst EQ, __sign_0, __rotate_angle0
+1	4477	9		set ____RotateMotor0_sign_tmp, -1
+1	4477	12		brtst LT, __sign_0, __rotate_angle0
+1	4477	15		set ____RotateMotor0_sign_tmp, 1
+1	4477	18	__sign_0:	mov __rotate_thePower0, ____RotateMotor0_sign_tmp
+1	4478	20		abs __rotate_theAngle0, __rotate_angle0
+1	4479	23		mul __rotate_thePower0, __rotate_thePower0, __rotate_power0
+1	4481	27		set __rotate_theUF0, 23
+1	4482	30		brtst 4, __rotate_NoSync0, __rotate_sync0
+1	4483	33		set __rotate_theOM0, 7
+1	4484	36		set __rotate_theRM0, 2
+1	4485	39		mov __rotate_theTurnPct0, __rotate_turnpct0
+1	4486	41		brtst 4, __rotate_Start0, __rotate_theTurnPct0
+1	4487	44		add __rotate_theUF0, __rotate_theUF0, __constVal32
+1	4488	48		jmp __rotate_Start0
+1	4490	50		set __rotate_theOM0, 3
+1	4491	53		set __rotate_theRM0, 0
+1	4492	56		set __rotate_theTurnPct0, 0
+1	4494	59		set __rotate_theRS0, 32
+1	4495	62		setout __rotate_ports0, 1, __rotate_theOM0, 8, __rotate_theRM0, 5, __rotate_theAngle0, 6, __rotate_theRS0, 10, __rotate_theRVP0, 11, __rotate_theRVI0, 12, __rotate_theRVD0, 2, __rotate_thePower0, 7, __rotate_turnpct0, 0, __rotate_theUF0
+1	4498	85		index __rotate_firstPort0, __rotate_ports0, 65535
+1	4500	89		getout __rotate_power0, __rotate_firstPort0, 2
+1	4501	93		brtst 4, __rotate_doneRunning0, __rotate_power0
+1	4502	96		getout __rotate_rs0, __rotate_firstPort0, 6
+1	4503	100		brcmp 4, __rotate_Running0, __rotate_rs0, __constVal32
+1	4505	104		brtst 4, __rotate_Reset0, __rotate_stop0
+1	4507	107		set __rotate_theOM0, 7
+1	4508	110		set __rotate_theUF0, 7
+1	4509	113		setout __rotate_ports0, 1, __rotate_theOM0, 8, __constVal1, 6, __rotate_theRS0, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF0
+1	4511	128		getout __rotate_RotCount0, __rotate_firstPort0, 14
+1	4513	132		mov __rotate_OldRotCount0, __rotate_RotCount0
+1	4514	134		wait2 NA, __constVal50
+1	4516	137		getout __rotate_RotCount0, __rotate_firstPort0, 14
+1	4517	141		brcmp 5, __rotate_Stabilize0, __rotate_OldRotCount0, __rotate_RotCount0
+1	4518	145		set __rotate_theOM0, 4
+1	4519	148		setout __rotate_ports0, 8, __rotate_theRM0, 6, __constVal0, 1, __rotate_theOM0, 0, __constVal1
+1	4522	159		brtst 4, __rotate_Done0, __rotate_theTurnPct0
+1	4523	162		setout __rotate_ports0, 0, __constVal32
+1	4525	167		subret ____RotateMotor0_return
+2	4885	0		setin __constVal1, __ResetSensorPort, 5
+2	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+2	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+2	4889	11		subret ____ResetSensorSubroutine_return
+3	5672	0	#pragma macro 25
+3	5672	0		acquire __CLSWMutex0
+3	5672	1		set __CLSWArgs0.Port, 0
+3	5672	4		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+3	5672	6		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+3	5672	8		syscall 21, __CLSWArgs0
+3	5672	11		mov __RLSBResult0, __CLSWArgs0.Result
+3	5672	13		release __CLSWMutex0
+3	5673	14	#line 5673 "NXTDefs.h"
+3	5674	14		brtst 4, __RLSBReturn0, __RLSBytesCount0
+3	5675	17		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+3	5676	21		brtst 5, __RLSBError0, __RLSBResult0
+3	5677	24		set __RLSBIterations0, 4
+3	5679	27	#pragma macro 23
+3	5679	27		acquire __CLSCSMutex0
+3	5679	28		set __CLSCSArgs0.Port, 0
+3	5679	31		syscall 23, __CLSCSArgs0
+3	5679	34		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+3	5679	36		mov __RLSBResult0, __CLSCSArgs0.Result
+3	5679	38		release __CLSCSMutex0
+3	5679	39	#line 5679 "NXTDefs.h"
+3	5680	39		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+3	5681	43		brtst 2, __RLSBError0, __RLSBIterations0
+3	5682	46		brtst 0, __RLSBError0, __RLSBResult0
+3	5683	49		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+3	5685	52		wait2 NA, __constVal15
+3	5686	55		jmp __RLSBDoCheckStatus0
+3	5689	57	#pragma macro 25
+3	5689	57		acquire __CLSRMutex0
+3	5689	58		set __CLSRArgs0.Port, 0
+3	5689	61		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+3	5689	63		syscall 22, __CLSRArgs0
+3	5689	66		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+3	5689	68		mov __RLSBResult0, __CLSRArgs0.Result
+3	5689	70		release __CLSRMutex0
+3	5689	71	#line 5689 "NXTDefs.h"
+3	5690	71		brtst 5, __RLSBError0, __RLSBResult0
+3	5691	74		mov __RLSLastGoodRead0, __RLSReadBuf0
+3	5692	76		jmp __RLSBDone0
+3	5694	78		mov __RLSReadBuf0, __RLSLastGoodRead0
+3	5696	80		arrsize __RLSBytesCount0, __RLSReadBuf0
+3	5698	83		subret ____ReadLSBytes0_return
+4	28	0	#line 28 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc"
+4	29	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc
+1	__RotateMotor0	152	NXTDefs.h
+2	__ResetSensorSubroutine	321	NXTDefs.h
+3	__ReadLSBytes0	334	NXTDefs.h
+4	__initialize_global_data	419	C:\Users\amorp\OneDrive\Escritorio\proyecto final\RGB2.nxc

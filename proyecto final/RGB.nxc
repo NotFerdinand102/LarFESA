@@ -1,0 +1,27 @@
+#include "NXCDefs.h"
+int isGreen(byte port)
+{
+byte r, g, b;
+int color;
+ReadSensorHTColor(port, color, r, g, b);
+if (g > r + 10 && g > b + 10)
+return 1;
+else
+return 0;
+}
+task main()
+{
+SetSensorLowspeed(S1);
+OnFwd(OUT_B, 60);
+while (true)
+{
+if (!isGreen(S1))
+{
+OnFwd(OUT_B, 60);
+RotateMotor(OUT_B, 35, 60);
+RotateMotor(OUT_B, -35, 60);
+Off(OUT_B);
+}
+Wait(100);
+}
+}

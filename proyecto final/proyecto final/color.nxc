@@ -1,0 +1,46 @@
+//color
+
+#define SEN1 IN_1
+#define MA OUT_A
+#define T_AV 200
+#define UMBRAL_LINEA   35
+
+void ade(int vel, int ms)
+{
+    OnRev(MA, T_AV);
+    Wait(ms);
+}
+
+void parar()
+{
+ Off(OUT_A);
+ Wait(500);
+}
+
+
+task main()
+{
+ SetSensorLight(SEN1);
+ 
+
+ 
+ while(true){
+   int sen= Sensor(SEN1); // nueva lectura
+ if(sen <= 43){
+
+  ade(20,T_AV);
+
+
+  }else
+  {
+  parar();
+  }
+  
+  Wait(90);
+ }
+  
+  
+  
+}
+
+

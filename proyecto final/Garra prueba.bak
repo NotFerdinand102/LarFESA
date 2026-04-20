@@ -1,0 +1,193 @@
+ // garra y motores
+
+// para color verde
+#define UMBRAL_VERDE  40  // canal G por encima de este valor y dominando = verde
+
+// ---------------------------------------------------------------
+//  SENSOR (puerto verificado)
+// ---------------------------------------------------------------
+#define SEN_COLOR  IN_4   // HiTechnic Color v2
+
+// Direccion I2C del HiTechnic Color v2
+#define HT_ADDR  0x02
+
+
+ 
+#define M_PINZA   OUT_B   // garra / pinza
+#define M_ELEV1   OUT_C   // elevador principal (Fwd = sube)
+#define M_ELEV2   OUT_A   // elevador secundario (Rev = sube)
+
+#define ANG_PINZA   65    // grados para abrir/cerrar pinza
+#define VEL_ELEV    100    // potencia elevador (no aumentar; solo ajustar angulo)
+#define VEL_PINZA   55    // potencia pinza
+
+
+// ================================================================
+//  LECTURA DEL SENSOR HITECHNIC COLOR V2 (I2C manual)
+// ================================================================
+
+// Inicializa el sensor en modo activo (registro 0x41 = 0x00)
+bool iniciar_color()
+{
+    byte cmd[];
+    ArrayBuild(cmd, HT_ADDR, 0x41, 0x00);
+    int res = LowspeedWrite(SEN_COLOR, 0, cmd);
+    Wait(100);
+    return (res == NO_ERR);
+}
+
+// Lee R, G, B del sensor (registros 0x43, 0x44, 0x45)
+// Usa LowspeedCheckStatus para esperar datos disponibles
+bool leer_rgb(int &r, int &g, int &b)
+{
+    byte cmd[];
+    ArrayBuild(cmd, HT_ADDR, 0x43);  // inicio en registro R
+    int res = LowspeedWrite(SEN_COLOR, 3, cmd);
+    if (res != NO_ERR) { r = 0; g = 0; b = 0; return false; }
+
+    // Esperar a que los datos esten disponibles (max 50 ms)
+    long t0 = CurrentTick();
+    while (LowspeedCheckStatus(SEN_COLOR) != NO_ERR)
+    {
+        if ((CurrentTick() - t0) > 50) { r = 0; g = 0; b = 0; return false; }
+        Wait(2);
+    }
+
+    byte resp[];
+    ArrayInit(resp, 0, 3);
+    res = LowspeedRead(SEN_COLOR, 3, resp);
+    if (res != NO_ERR) { r = 0; g = 0; b = 0; return false; }
+
+    r = resp[0];
+    g = resp[1];
+    b = resp[2];
+    return true;
+}
+
+// ================================================================
+//  CLASIFICACION DE COLOR
+// ================================================================
+// Retorna true si la pelota es VERDE (no recoger)
+bool es_verde()
+{
+    int r, g, b;
+    if (!leer_rgb(r, g, b))
+        return false;  // error de lectura -> asumir que se puede recoger
+
+    // Verde domina si: G > R, G > B, y G > umbral
+    if (g > r && g > b && g > UMBRAL_VERDE)
+        return true;
+
+    return false;
+}
+
+
+
+// Sube el elevador: MB=Fwd, MC=Rev (ambos producen subida mecanica)
+void subir(int angulo)
+{
+    RotateMotor(OUT_AC, VEL_ELEV, angulo);   // MC -> Rev (inverso)
+
+}
+void para()
+{
+    RotateMotor(OUT_C, 0, 0);
+}
+
+void cerrar_pinza()
+{
+  RotateMotor(M_PINZA, VEL_PINZA, -ANG_PINZA);
+}
+
+void abrir_pinza()
+{
+  RotateMotor(M_PINZA, VEL_PINZA, ANG_PINZA);
+}
+
+task main()
+{
+
+ 
+ //////empujar elevador////////
+ 
+ //for(int i=0;i<5;i++){
+   //    subir(20);
+     //  para();
+ //}
+ /////////////////////////////
+ 
+ //////////////agarrar  pelota//////////
+ int contador = 33;
+ 
+ while(contador >= 0 && contador <= 33)
+ {
+   cerrar_pinza();
+   ClearScreen();
+   TextOut(0,LCD_LINE1, "Contador: ");
+   NumOut(0,LCD_LINE2, contador);
+   Wait(90);
+   contador -=1;
+ }
+
+ Wait(2000);
+
+ while(contador <= 33)
+ {
+   ClearScreen();
+   TextOut(0,LCD_LINE1, "Contador: ");
+   NumOut(0,LCD_LINE2, contador);
+   abrir_pinza();
+   Wait(90);
+   contador +=1;
+ }
+ /////////////////////////////////////
+ 
+ 
+ 
+  //Parte del RGB
+  //por intentar
+  
+
+  // estructuras logicas
+
+
+  // Leer color
+    //if (es_verde())
+    //{
+      //  Wait(300);
+        //moverse a la derecha.
+    //}else if
+    //{
+
+    // Pelota recogible: cerrar pinza
+
+    //CREAR UNA CONDICION
+     //while(contador < 35)
+     //{
+       //cerrar_pinza();
+       //Wait(500);
+       //contador -=1;
+     //}
+     
+      //Wait(1500);
+      
+      // parte para moverse atras y no estorbar.
+
+
+
+     // while(contador < 0)
+      //{
+        // abrir_pinza();
+         //Wait(500);
+         //contador +=1;
+      //}
+
+    }
+  
+
+  
+ 
+ 
+ 
+
+}

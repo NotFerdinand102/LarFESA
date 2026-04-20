@@ -1,0 +1,1065 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__DU0SetSensorLight_inline_main	5	1	0	4	6
+1	__D0SetSensorLight_inline_main	6	1	4	4	9
+2	__signed_stack_002avanzar_hasta_linea	6	1	8	4	2
+3	__signed_stack_001avanzar_hasta_linea	6	1	12	4	4
+4	__D0izquierda	6	1	16	4	6
+5	__D0derecha	6	1	20	4	6
+6	__Wait_7qG2_ms_7qG2_000_inline_girar_eje	5	1	24	4	2
+7	__D0girar_eje_anti	6	1	28	4	6
+8	__D0girar_eje	6	1	32	4	6
+9	__signed_stack_001corregir_busqueda	6	1	36	4	8
+10	__Wait_7qG2_ms_7qG2_000_inline_adelante	5	1	40	4	2
+11	__Wait_7qG2_ms_7qG2_000_inline_izquierda	5	1	44	4	2
+12	__Wait_7qG2_ms_7qG2_000_inline_atras	5	1	48	4	2
+13	__Wait_7qG2_ms_7qG2_000_inline_derecha	5	1	52	4	2
+14	__Wait_7qG2_ms_7qG2_000_inline_parar	5	1	56	4	2
+15	__signed_stack_002corregir_en_linea	6	1	60	4	10
+16	__signed_stack_001corregir_en_linea	6	1	64	4	24
+17	__signed_stack_001izquierda	6	1	68	4	2
+18	__signed_stack_001derecha	6	1	72	4	2
+19	__D0corregir_en_linea	6	1	76	4	48
+20	__D0adelante	6	1	80	4	4
+21	__D0atras	6	1	84	4	4
+22	__OnRevMutex	9	0	88	4	16
+23	__Wait_7qG2_ms_7qG2_000_inline_girar_eje_anti	5	1	92	4	2
+24	__D0avanzar_hasta_linea	6	1	96	4	12
+25	__DU0corregir_busqueda	5	1	100	4	8
+26	__D0corregir_busqueda	6	1	104	4	12
+27	__Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea	5	1	108	4	4
+28	__izquierda_7qG2_ms_7qG2_000	4	1	112	2	4
+29	__avanzar_hasta_linea_7qG2_fl_7qG2_001	4	1	114	2	5
+30	__avanzar_hasta_linea_7qG2_fr_7qG2_001	4	1	116	2	3
+31	__izquierda_7qG2_vel_7qG2_000	4	1	118	2	6
+32	__derecha_7qG2_vel_7qG2_000	4	1	120	2	7
+33	__derecha_7qG2_ms_7qG2_000	4	1	122	2	5
+34	__avanzar_hasta_linea_7qG2_tl_7qG2_001	4	1	124	2	4
+35	__girar_eje_7qG2_vel_7qG2_000	4	1	126	2	6
+36	__girar_eje_7qG2_ms_7qG2_000	4	1	128	2	4
+37	__corregir_en_linea_7qG2_fl_7qG2_000	4	1	130	2	6
+38	__girar_eje_anti_7qG2_vel_7qG2_000	4	1	132	2	8
+39	__girar_eje_anti_7qG2_ms_7qG2_000	4	1	134	2	6
+40	__corregir_en_linea_7qG2_tl_7qG2_000	4	1	136	2	6
+41	__corregir_busqueda_7qG2_fl_7qG2_000	4	1	138	2	2
+42	__corregir_busqueda_7qG2_tl_7qG2_000	4	1	140	2	2
+43	__corregir_en_linea_7qG2_contador_7qG2_001	4	1	142	2	6
+44	__corregir_en_linea_7qG2_contador2_7qG2_001	4	1	144	2	6
+45	__atras_7qG2_vel_7qG2_000	4	1	146	2	3
+46	__adelante_7qG2_ms_7qG2_000	4	1	148	2	3
+47	__adelante_7qG2_vel_7qG2_000	4	1	150	2	4
+48	__atras_7qG2_ms_7qG2_000	4	1	152	2	2
+49	__corregir_busqueda_7qG2_tl_negro_7qG2_000	1	1	154	1	3
+50	__avanzar_hasta_linea_return	1	1	155	1	3
+51	__constVal32	2	0	156	1	51
+52	__constVal1	2	0	157	1	16
+53	__constVal3	2	0	158	1	19
+54	__ResetSensorPort	1	1	159	1	5
+55	__constVal0	2	1	160	1	58
+56	__corregir_busqueda_7qG2_fl_negro_7qG2_000	1	1	161	1	5
+57	__corregir_busqueda_return	1	1	162	1	3
+58	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	163	1	6
+59	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	164	1	6
+60	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	165	1	6
+61	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	166	1	6
+62	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	167	1	6
+63	____initialize_global_data_return	1	1	168	1	3
+64	__OnRev_Tmp	2	1	169	1	16
+65	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	170	1	15
+66	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	171	1	3
+67	__parar_return	1	1	172	1	18
+68	__adelante_return	1	1	173	1	4
+69	__girar_eje_return	1	1	174	1	5
+70	__zfSetSensorLight_inline_main	1	1	175	1	6
+71	__izquierda_return	1	1	176	1	5
+72	__derecha_return	1	1	177	1	6
+73	__atras_return	1	1	178	1	3
+74	__constVal96	2	0	179	1	17
+75	__constVal63	2	0	180	1	17
+76	__constVal2	2	0	181	1	12
+77	__PFTmp	1	1	182	1	1
+78	____ResetSensorSubroutine_return	1	1	183	1	5
+79	__ResetSensorTmp	1	1	184	1	2
+80	__corregir_en_linea_return	1	1	185	1	3
+81	__zfcorregir_busqueda	1	1	186	1	19
+82	__zfcorregir_en_linea	1	1	187	1	43
+83	__girar_eje_anti_return	1	1	188	1	7
+84	__zfavanzar_hasta_linea	1	1	189	1	11
+85	__OUT_ABC	7	0	190	4	1
+86	__OUT_ABC.__OUT_ABC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	265	0	#line 265 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	266	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	265	2	#line 265 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	265	2	#line 265 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	266	2		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 0
+0	265	5	#line 265 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	266	5	#line 266 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	267	5		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	7	#line 3729 "NXCDefs.h"
+0	3730	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	9	#line 3729 "NXCDefs.h"
+0	3729	9	#line 3729 "NXCDefs.h"
+0	3730	9		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	11	#line 3729 "NXCDefs.h"
+0	3730	11		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	14	#line 3729 "NXCDefs.h"
+0	3730	14		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	17	#line 3729 "NXCDefs.h"
+0	3730	17		set __D0SetSensorLight_inline_main, 5
+0	3729	20	#line 3729 "NXCDefs.h"
+0	3730	20		jmp __001__NXC_Label_5
+0	3729	22	#line 3729 "NXCDefs.h"
+0	3730	22		set __D0SetSensorLight_inline_main, 6
+0	3729	25	#line 3729 "NXCDefs.h"
+0	3730	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	27	#line 3663 "NXCDefs.h"
+0	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	31	#line 3663 "NXCDefs.h"
+0	3730	31	#line 3730 "NXCDefs.h"
+0	3730	31	#line 3730 "NXCDefs.h"
+0	3731	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	33	#line 3730 "NXCDefs.h"
+0	3730	33	#line 3730 "NXCDefs.h"
+0	3731	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	36	#line 3730 "NXCDefs.h"
+0	3676	36	#line 3676 "NXCDefs.h"
+0	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	40	#line 3676 "NXCDefs.h"
+0	3731	40	#line 3731 "NXCDefs.h"
+0	3731	40	#line 3731 "NXCDefs.h"
+0	3732	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	42	#line 3731 "NXCDefs.h"
+0	3694	42	#line 3694 "NXCDefs.h"
+0	3695	42	#pragma macro 4
+0	3695	42		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	5592	46	#line 5592 "NXCDefs.h"
+0	3694	46	#line 3694 "NXCDefs.h"
+0	3732	46	#line 3732 "NXCDefs.h"
+0	266	46	#line 266 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	266	46	#line 266 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	267	46		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	266	49	#line 266 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	267	49	#line 267 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	268	49		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	51	#line 3729 "NXCDefs.h"
+0	3730	51		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	53	#line 3729 "NXCDefs.h"
+0	3729	53	#line 3729 "NXCDefs.h"
+0	3730	53		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	55	#line 3729 "NXCDefs.h"
+0	3730	55		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	58	#line 3729 "NXCDefs.h"
+0	3730	58		brtst 4, __002__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	61	#line 3729 "NXCDefs.h"
+0	3730	61		set __D0SetSensorLight_inline_main, 5
+0	3729	64	#line 3729 "NXCDefs.h"
+0	3730	64		jmp __002__NXC_Label_5
+0	3729	66	#line 3729 "NXCDefs.h"
+0	3730	66		set __D0SetSensorLight_inline_main, 6
+0	3729	69	#line 3729 "NXCDefs.h"
+0	3730	69		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	71	#line 3663 "NXCDefs.h"
+0	3664	71		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	75	#line 3663 "NXCDefs.h"
+0	3730	75	#line 3730 "NXCDefs.h"
+0	3730	75	#line 3730 "NXCDefs.h"
+0	3731	75		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	77	#line 3730 "NXCDefs.h"
+0	3730	77	#line 3730 "NXCDefs.h"
+0	3731	77		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	80	#line 3730 "NXCDefs.h"
+0	3676	80	#line 3676 "NXCDefs.h"
+0	3677	80		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	84	#line 3676 "NXCDefs.h"
+0	3731	84	#line 3731 "NXCDefs.h"
+0	3731	84	#line 3731 "NXCDefs.h"
+0	3732	84		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	86	#line 3731 "NXCDefs.h"
+0	3694	86	#line 3694 "NXCDefs.h"
+0	3695	86	#pragma macro 4
+0	3695	86		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	88		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	5659	90	#line 5659 "NXCDefs.h"
+0	3694	90	#line 3694 "NXCDefs.h"
+0	3732	90	#line 3732 "NXCDefs.h"
+0	267	90	#line 267 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	267	90	#line 267 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	268	90		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 2
+0	267	93	#line 267 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	269	93	#line 269 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	270	93		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	95	#line 3729 "NXCDefs.h"
+0	3730	95		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	97	#line 3729 "NXCDefs.h"
+0	3729	97	#line 3729 "NXCDefs.h"
+0	3730	97		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	99	#line 3729 "NXCDefs.h"
+0	3730	99		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	102	#line 3729 "NXCDefs.h"
+0	3730	102		brtst 4, __003__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	105	#line 3729 "NXCDefs.h"
+0	3730	105		set __D0SetSensorLight_inline_main, 5
+0	3729	108	#line 3729 "NXCDefs.h"
+0	3730	108		jmp __003__NXC_Label_5
+0	3729	110	#line 3729 "NXCDefs.h"
+0	3730	110		set __D0SetSensorLight_inline_main, 6
+0	3729	113	#line 3729 "NXCDefs.h"
+0	3730	113		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	115	#line 3663 "NXCDefs.h"
+0	3664	115		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	119	#line 3663 "NXCDefs.h"
+0	3730	119	#line 3730 "NXCDefs.h"
+0	3730	119	#line 3730 "NXCDefs.h"
+0	3731	119		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	121	#line 3730 "NXCDefs.h"
+0	3730	121	#line 3730 "NXCDefs.h"
+0	3731	121		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	124	#line 3730 "NXCDefs.h"
+0	3676	124	#line 3676 "NXCDefs.h"
+0	3677	124		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	128	#line 3676 "NXCDefs.h"
+0	3731	128	#line 3731 "NXCDefs.h"
+0	3731	128	#line 3731 "NXCDefs.h"
+0	3732	128		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	130	#line 3731 "NXCDefs.h"
+0	3694	130	#line 3694 "NXCDefs.h"
+0	3695	130	#pragma macro 4
+0	3695	130		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	132		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	5726	134	#line 5726 "NXCDefs.h"
+0	3694	134	#line 3694 "NXCDefs.h"
+0	3732	134	#line 3732 "NXCDefs.h"
+0	269	134	#line 269 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	273	134	#line 273 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	274	134		subcall avanzar_hasta_linea, __avanzar_hasta_linea_return
+0	273	136	#line 273 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	273	136	#line 273 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+0	274	136		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	27	0	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+2	28	0		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+2	28	2	#line 28 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+2	29	2	#pragma macro 10
+2	29	2		acquire __OnRevMutex
+2	29	3		neg __OnRev_Tmp, __D0adelante
+2	29	6		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+2	29	29		release __OnRevMutex
+2	4287	30	#line 4287 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+2	28	30	#line 28 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+2	28	30	#line 28 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+2	29	30		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+2	29	32	#line 29 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+2	30	32	#pragma macro 7
+2	30	32		setout __constVal2, 2, __D0adelante, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+2	4294	55	#line 4294 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+2	29	55	#line 29 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+2	29	55	#line 29 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+2	30	55		mov __Wait_7qG2_ms_7qG2_000_inline_adelante, __adelante_7qG2_ms_7qG2_000
+2	29	57	#line 29 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+2	7921	57	#line 7921 "NXCDefs.h"
+2	7922	57		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_adelante
+2	7921	60	#line 7921 "NXCDefs.h"
+2	30	60	#line 30 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+2	32	60	#line 32 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+2	33	60		subret __adelante_return
+3	34	0	#line 34 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+3	35	0		mov __D0atras, __atras_7qG2_vel_7qG2_000
+3	35	2	#line 35 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+3	36	2	#pragma macro 7
+3	36	2		setout __constVal1, 2, __D0atras, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4328	25	#line 4328 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+3	35	25	#line 35 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+3	35	25	#line 35 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+3	36	25		mov __D0atras, __atras_7qG2_vel_7qG2_000
+3	36	27	#line 36 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+3	37	27	#pragma macro 10
+3	37	27		acquire __OnRevMutex
+3	37	28		neg __OnRev_Tmp, __D0atras
+3	37	31		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	37	54		release __OnRevMutex
+3	4335	55	#line 4335 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+3	36	55	#line 36 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+3	36	55	#line 36 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+3	37	55		mov __Wait_7qG2_ms_7qG2_000_inline_atras, __atras_7qG2_ms_7qG2_000
+3	36	57	#line 36 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+3	7921	57	#line 7921 "NXCDefs.h"
+3	7922	57		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_atras
+3	7921	60	#line 7921 "NXCDefs.h"
+3	37	60	#line 37 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+3	39	60	#line 39 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+3	40	60		subret __atras_return
+4	41	0	#line 41 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	42	0		mov __D0derecha, __derecha_7qG2_vel_7qG2_000
+4	42	2	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	43	2	#pragma macro 10
+4	43	2		acquire __OnRevMutex
+4	43	3		neg __OnRev_Tmp, __D0derecha
+4	43	6		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	43	29		release __OnRevMutex
+4	4369	30	#line 4369 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	42	30	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	42	30	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	42	30	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	42	30	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	42	30	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	43	30		div __signed_stack_001derecha, __derecha_7qG2_vel_7qG2_000, __constVal2
+4	42	34	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	42	34	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	42	34	#line 42 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	43	34		sub __D0derecha, __signed_stack_001derecha, __constVal3
+4	43	38	#line 43 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	44	38	#pragma macro 7
+4	44	38		setout __constVal1, 2, __D0derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4388	61	#line 4388 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	43	61	#line 43 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	43	61	#line 43 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	43	61	#line 43 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	43	61	#line 43 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	43	61	#line 43 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	44	61		div __D0derecha, __derecha_7qG2_vel_7qG2_000, __constVal2
+4	44	65	#line 44 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	45	65	#pragma macro 7
+4	45	65		setout __constVal2, 2, __D0derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4401	88	#line 4401 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	44	88	#line 44 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	44	88	#line 44 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	45	88		mov __Wait_7qG2_ms_7qG2_000_inline_derecha, __derecha_7qG2_ms_7qG2_000
+4	44	90	#line 44 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	7921	90	#line 7921 "NXCDefs.h"
+4	7922	90		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_derecha
+4	7921	93	#line 7921 "NXCDefs.h"
+4	45	93	#line 45 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	47	93	#line 47 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+4	48	93		subret __derecha_return
+5	49	0	#line 49 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	50	0		mov __D0izquierda, __izquierda_7qG2_vel_7qG2_000
+5	50	2	#line 50 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	51	2	#pragma macro 7
+5	51	2		setout __constVal0, 2, __D0izquierda, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	4435	25	#line 4435 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	50	25	#line 50 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	50	25	#line 50 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	50	25	#line 50 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	50	25	#line 50 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	50	25	#line 50 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	51	25		div __signed_stack_001izquierda, __izquierda_7qG2_vel_7qG2_000, __constVal2
+5	50	29	#line 50 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	50	29	#line 50 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	50	29	#line 50 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	51	29		sub __D0izquierda, __signed_stack_001izquierda, __constVal3
+5	51	33	#line 51 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	52	33	#pragma macro 10
+5	52	33		acquire __OnRevMutex
+5	52	34		neg __OnRev_Tmp, __D0izquierda
+5	52	37		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	52	60		release __OnRevMutex
+5	4454	61	#line 4454 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	51	61	#line 51 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	51	61	#line 51 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	51	61	#line 51 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	51	61	#line 51 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	51	61	#line 51 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	52	61		div __D0izquierda, __izquierda_7qG2_vel_7qG2_000, __constVal2
+5	52	65	#line 52 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	53	65	#pragma macro 10
+5	53	65		acquire __OnRevMutex
+5	53	66		neg __OnRev_Tmp, __D0izquierda
+5	53	69		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	53	92		release __OnRevMutex
+5	4467	93	#line 4467 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	52	93	#line 52 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	52	93	#line 52 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	53	93		mov __Wait_7qG2_ms_7qG2_000_inline_izquierda, __izquierda_7qG2_ms_7qG2_000
+5	52	95	#line 52 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	7921	95	#line 7921 "NXCDefs.h"
+5	7922	95		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_izquierda
+5	7921	98	#line 7921 "NXCDefs.h"
+5	53	98	#line 53 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	55	98	#line 55 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+5	56	98		subret __izquierda_return
+6	58	0	#line 58 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+6	59	0	#pragma macro 7
+6	59	0		setout __OUT_ABC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4489	23	#line 4489 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+6	58	23	#line 58 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+6	58	23	#line 58 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+6	59	23		set __Wait_7qG2_ms_7qG2_000_inline_parar, 500
+6	58	26	#line 58 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+6	7921	26	#line 7921 "NXCDefs.h"
+6	7922	26		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_parar
+6	7921	29	#line 7921 "NXCDefs.h"
+6	60	29	#line 60 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+6	66	29	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+6	67	29		subret __parar_return
+7	68	0	#line 68 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	69	0		mov __D0girar_eje, __girar_eje_7qG2_vel_7qG2_000
+7	69	2	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	70	2	#pragma macro 10
+7	70	2		acquire __OnRevMutex
+7	70	3		neg __OnRev_Tmp, __D0girar_eje
+7	70	6		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	70	29		release __OnRevMutex
+7	4523	30	#line 4523 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	69	30	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	69	30	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	70	30		mov __D0girar_eje, __girar_eje_7qG2_vel_7qG2_000
+7	70	32	#line 70 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	71	32	#pragma macro 7
+7	71	32		setout __constVal1, 2, __D0girar_eje, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4530	55	#line 4530 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	70	55	#line 70 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	70	55	#line 70 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	71	55		mov __D0girar_eje, __girar_eje_7qG2_vel_7qG2_000
+7	71	57	#line 71 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	72	57	#pragma macro 10
+7	72	57		acquire __OnRevMutex
+7	72	58		neg __OnRev_Tmp, __D0girar_eje
+7	72	61		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	72	84		release __OnRevMutex
+7	4537	85	#line 4537 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	71	85	#line 71 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	71	85	#line 71 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	72	85		mov __Wait_7qG2_ms_7qG2_000_inline_girar_eje, __girar_eje_7qG2_ms_7qG2_000
+7	71	87	#line 71 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	7921	87	#line 7921 "NXCDefs.h"
+7	7922	87		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_girar_eje
+7	7921	90	#line 7921 "NXCDefs.h"
+7	72	90	#line 72 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	75	90	#line 75 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+7	76	90		subret __girar_eje_return
+8	77	0	#line 77 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	78	0		mov __D0girar_eje_anti, __girar_eje_anti_7qG2_vel_7qG2_000
+8	78	2	#line 78 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	79	2	#pragma macro 7
+8	79	2		setout __constVal0, 2, __D0girar_eje_anti, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4571	25	#line 4571 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	78	25	#line 78 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	78	25	#line 78 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	79	25		mov __D0girar_eje_anti, __girar_eje_anti_7qG2_vel_7qG2_000
+8	79	27	#line 79 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	80	27	#pragma macro 10
+8	80	27		acquire __OnRevMutex
+8	80	28		neg __OnRev_Tmp, __D0girar_eje_anti
+8	80	31		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	80	54		release __OnRevMutex
+8	4578	55	#line 4578 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	79	55	#line 79 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	79	55	#line 79 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	80	55		mov __D0girar_eje_anti, __girar_eje_anti_7qG2_vel_7qG2_000
+8	80	57	#line 80 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	81	57	#pragma macro 7
+8	81	57		setout __constVal2, 2, __D0girar_eje_anti, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4585	80	#line 4585 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	80	80	#line 80 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	80	80	#line 80 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	81	80		mov __Wait_7qG2_ms_7qG2_000_inline_girar_eje_anti, __girar_eje_anti_7qG2_ms_7qG2_000
+8	80	82	#line 80 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	7921	82	#line 7921 "NXCDefs.h"
+8	7922	82		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_girar_eje_anti
+8	7921	85	#line 7921 "NXCDefs.h"
+8	81	85	#line 81 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	103	85	#line 103 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+8	104	85		subret __girar_eje_anti_return
+9	108	0	#line 108 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	109	0		mov __signed_stack_001corregir_en_linea, __corregir_en_linea_7qG2_fl_7qG2_000
+9	108	2	#line 108 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	108	2	#line 108 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	109	2		set __D0corregir_en_linea, 35
+9	108	5	#line 108 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	109	5		cmp 0, __zfcorregir_en_linea, __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+9	108	9	#line 108 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	109	9		mov __D0corregir_en_linea, __zfcorregir_en_linea
+9	108	11	#line 108 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	109	11		brtst 4, __NXC_Label_536, __zfcorregir_en_linea
+9	108	14	#line 108 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	109	14		mov __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+9	108	16	#line 108 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	109	16		mov __signed_stack_002corregir_en_linea, __corregir_en_linea_7qG2_tl_7qG2_000
+9	108	18	#line 108 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	109	18	#line 109 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	110	18		set __D0corregir_en_linea, 35
+9	109	21	#line 109 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	110	21		cmp 0, __zfcorregir_en_linea, __signed_stack_002corregir_en_linea, __D0corregir_en_linea
+9	109	25	#line 109 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	109	25	#line 109 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	110	25		and __D0corregir_en_linea, __signed_stack_001corregir_en_linea, __zfcorregir_en_linea
+9	111	29	#line 111 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	112	29		tst 5, __zfcorregir_en_linea, __D0corregir_en_linea
+9	111	32	#line 111 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	112	32		brtst 4, __NXC_Label_537, __zfcorregir_en_linea
+9	111	35	#line 111 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	112	35		set __derecha_7qG2_vel_7qG2_000, 36
+9	111	38	#line 111 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	111	38	#line 111 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	112	38		set __derecha_7qG2_ms_7qG2_000, 500
+9	111	41	#line 111 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	112	41	#line 112 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	113	41		subcall derecha, __derecha_return
+9	112	43	#line 112 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	113	43	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	114	43		subcall parar, __parar_return
+9	113	45	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	113	45	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	114	45		set __girar_eje_anti_7qG2_vel_7qG2_000, 36
+9	113	48	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	113	48	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	114	48		set __girar_eje_anti_7qG2_ms_7qG2_000, 300
+9	113	51	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	114	51	#line 114 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	115	51		subcall girar_eje_anti, __girar_eje_anti_return
+9	114	53	#line 114 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	115	53	#line 115 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	116	53		subcall parar, __parar_return
+9	115	55	#line 115 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	116	55	#line 116 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	116	55	#line 116 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	117	55		mov __signed_stack_001corregir_en_linea, __corregir_en_linea_7qG2_fl_7qG2_000
+9	116	57	#line 116 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	116	57	#line 116 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	117	57		set __D0corregir_en_linea, 35
+9	116	60	#line 116 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	117	60		cmp 1, __zfcorregir_en_linea, __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+9	116	64	#line 116 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	117	64		mov __D0corregir_en_linea, __zfcorregir_en_linea
+9	116	66	#line 116 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	117	66		brtst 4, __NXC_Label_547, __zfcorregir_en_linea
+9	116	69	#line 116 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	117	69		mov __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+9	116	71	#line 116 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	117	71		mov __signed_stack_002corregir_en_linea, __corregir_en_linea_7qG2_tl_7qG2_000
+9	116	73	#line 116 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	117	73	#line 117 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	118	73		set __D0corregir_en_linea, 35
+9	117	76	#line 117 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	118	76		cmp 0, __zfcorregir_en_linea, __signed_stack_002corregir_en_linea, __D0corregir_en_linea
+9	117	80	#line 117 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	117	80	#line 117 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	118	80		and __D0corregir_en_linea, __signed_stack_001corregir_en_linea, __zfcorregir_en_linea
+9	119	84	#line 119 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	120	84		tst 5, __zfcorregir_en_linea, __D0corregir_en_linea
+9	119	87	#line 119 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	120	87		brtst 4, __NXC_Label_548, __zfcorregir_en_linea
+9	119	90	#line 119 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	120	90		set __derecha_7qG2_vel_7qG2_000, 36
+9	119	93	#line 119 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	119	93	#line 119 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	120	93		set __derecha_7qG2_ms_7qG2_000, 500
+9	119	96	#line 119 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	120	96	#line 120 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	121	96		subcall derecha, __derecha_return
+9	120	98	#line 120 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	121	98	#line 121 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	122	98		subcall parar, __parar_return
+9	121	100	#line 121 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	121	100	#line 121 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	122	100		set __girar_eje_7qG2_vel_7qG2_000, 36
+9	121	103	#line 121 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	121	103	#line 121 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	122	103		set __girar_eje_7qG2_ms_7qG2_000, 300
+9	121	106	#line 121 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	122	106	#line 122 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	123	106		subcall girar_eje, __girar_eje_return
+9	122	108	#line 122 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	123	108	#line 123 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	124	108		subcall parar, __parar_return
+9	123	110	#line 123 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	124	110	#line 124 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	124	110	#line 124 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	125	110		mov __signed_stack_001corregir_en_linea, __corregir_en_linea_7qG2_fl_7qG2_000
+9	124	112	#line 124 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	124	112	#line 124 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	125	112		set __D0corregir_en_linea, 35
+9	124	115	#line 124 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	125	115		cmp 0, __zfcorregir_en_linea, __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+9	124	119	#line 124 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	125	119		mov __D0corregir_en_linea, __zfcorregir_en_linea
+9	124	121	#line 124 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	125	121		brtst 4, __NXC_Label_558, __zfcorregir_en_linea
+9	124	124	#line 124 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	125	124		mov __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+9	124	126	#line 124 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	125	126		mov __signed_stack_002corregir_en_linea, __corregir_en_linea_7qG2_tl_7qG2_000
+9	124	128	#line 124 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	125	128	#line 125 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	126	128		set __D0corregir_en_linea, 35
+9	125	131	#line 125 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	126	131		cmp 1, __zfcorregir_en_linea, __signed_stack_002corregir_en_linea, __D0corregir_en_linea
+9	125	135	#line 125 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	125	135	#line 125 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	126	135		and __D0corregir_en_linea, __signed_stack_001corregir_en_linea, __zfcorregir_en_linea
+9	127	139	#line 127 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	128	139		tst 5, __zfcorregir_en_linea, __D0corregir_en_linea
+9	127	142	#line 127 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	128	142		brtst 4, __NXC_Label_559, __zfcorregir_en_linea
+9	127	145	#line 127 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	128	145		set __derecha_7qG2_vel_7qG2_000, 36
+9	127	148	#line 127 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	127	148	#line 127 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	128	148		set __derecha_7qG2_ms_7qG2_000, 500
+9	127	151	#line 127 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	128	151	#line 128 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	129	151		subcall derecha, __derecha_return
+9	128	153	#line 128 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	129	153	#line 129 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	130	153		subcall parar, __parar_return
+9	129	155	#line 129 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	129	155	#line 129 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	130	155		set __girar_eje_anti_7qG2_vel_7qG2_000, 36
+9	129	158	#line 129 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	129	158	#line 129 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	130	158		set __girar_eje_anti_7qG2_ms_7qG2_000, 300
+9	129	161	#line 129 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	130	161	#line 130 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	131	161		subcall girar_eje_anti, __girar_eje_anti_return
+9	130	163	#line 130 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	131	163	#line 131 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	132	163		subcall parar, __parar_return
+9	131	165	#line 131 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	132	165	#line 132 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	132	165	#line 132 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	133	165		mov __signed_stack_001corregir_en_linea, __corregir_en_linea_7qG2_fl_7qG2_000
+9	132	167	#line 132 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	132	167	#line 132 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	133	167		set __D0corregir_en_linea, 35
+9	132	170	#line 132 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	133	170		cmp 1, __zfcorregir_en_linea, __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+9	132	174	#line 132 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	133	174		mov __D0corregir_en_linea, __zfcorregir_en_linea
+9	132	176	#line 132 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	133	176		brtst 4, __NXC_Label_569, __zfcorregir_en_linea
+9	132	179	#line 132 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	133	179		mov __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+9	132	181	#line 132 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	133	181		mov __signed_stack_002corregir_en_linea, __corregir_en_linea_7qG2_tl_7qG2_000
+9	132	183	#line 132 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	133	183	#line 133 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	134	183		set __D0corregir_en_linea, 35
+9	133	186	#line 133 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	134	186		cmp 1, __zfcorregir_en_linea, __signed_stack_002corregir_en_linea, __D0corregir_en_linea
+9	133	190	#line 133 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	133	190	#line 133 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	134	190		and __D0corregir_en_linea, __signed_stack_001corregir_en_linea, __zfcorregir_en_linea
+9	134	194	#line 134 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	135	194		tst 5, __zfcorregir_en_linea, __D0corregir_en_linea
+9	134	197	#line 134 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	135	197		brtst 4, __NXC_Label_570, __zfcorregir_en_linea
+9	134	200	#line 134 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	135	200		set __corregir_en_linea_7qG2_contador_7qG2_001, 1
+9	134	203	#line 134 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	135	203	#line 135 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	136	203		set __corregir_en_linea_7qG2_contador2_7qG2_001, 0
+9	135	206	#line 135 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	136	206	#line 136 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	137	206		subcall parar, __parar_return
+9	136	208	#line 136 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	137	208	#line 137 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	138	208		set __D0corregir_en_linea, 1
+9	139	211	#line 139 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	140	211		tst 5, __zfcorregir_en_linea, __D0corregir_en_linea
+9	139	214	#line 139 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	140	214		brtst 4, __NXC_Label_576, __zfcorregir_en_linea
+9	139	217	#line 139 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	140	217		mov __signed_stack_001corregir_en_linea, __corregir_en_linea_7qG2_fl_7qG2_000
+9	139	219	#line 139 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	139	219	#line 139 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	140	219		set __D0corregir_en_linea, 35
+9	139	222	#line 139 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	140	222		cmp 0, __zfcorregir_en_linea, __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+9	139	226	#line 139 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	140	226		mov __D0corregir_en_linea, __zfcorregir_en_linea
+9	139	228	#line 139 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	140	228		brtst 4, __NXC_Label_580, __zfcorregir_en_linea
+9	139	231	#line 139 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	140	231		mov __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+9	139	233	#line 139 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	140	233		mov __signed_stack_002corregir_en_linea, __corregir_en_linea_7qG2_tl_7qG2_000
+9	139	235	#line 139 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	140	235	#line 140 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	141	235		set __D0corregir_en_linea, 35
+9	140	238	#line 140 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	141	238		cmp 0, __zfcorregir_en_linea, __signed_stack_002corregir_en_linea, __D0corregir_en_linea
+9	140	242	#line 140 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	140	242	#line 140 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	141	242		and __D0corregir_en_linea, __signed_stack_001corregir_en_linea, __zfcorregir_en_linea
+9	142	246	#line 142 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	143	246		tst 5, __zfcorregir_en_linea, __D0corregir_en_linea
+9	142	249	#line 142 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	143	249		brtst 4, __NXC_Label_581, __zfcorregir_en_linea
+9	142	252	#line 142 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	143	252		set __derecha_7qG2_vel_7qG2_000, 36
+9	142	255	#line 142 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	142	255	#line 142 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	143	255		set __derecha_7qG2_ms_7qG2_000, 500
+9	142	258	#line 142 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	143	258	#line 143 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	144	258		subcall derecha, __derecha_return
+9	143	260	#line 143 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	144	260	#line 144 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	145	260		subcall parar, __parar_return
+9	144	262	#line 144 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	144	262	#line 144 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	145	262		set __girar_eje_anti_7qG2_vel_7qG2_000, 36
+9	144	265	#line 144 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	144	265	#line 144 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	145	265		set __girar_eje_anti_7qG2_ms_7qG2_000, 300
+9	144	268	#line 144 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	145	268	#line 145 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	146	268		subcall girar_eje_anti, __girar_eje_anti_return
+9	145	270	#line 145 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	147	270	#line 147 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	148	270		subcall parar, __parar_return
+9	147	272	#line 147 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	148	272	#line 148 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	149	272		jmp __NXC_Label_576
+9	148	274	#line 148 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	149	274	#line 149 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	149	274	#line 149 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	150	274		mov __signed_stack_001corregir_en_linea, __corregir_en_linea_7qG2_contador_7qG2_001
+9	149	276	#line 149 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	150	276	#line 150 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	151	276		set __D0corregir_en_linea, 1
+9	150	279	#line 150 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	151	279		cmp 4, __zfcorregir_en_linea, __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+9	150	283	#line 150 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	151	283		mov __D0corregir_en_linea, __zfcorregir_en_linea
+9	151	285	#line 151 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	152	285		brtst 4, __NXC_Label_592, __zfcorregir_en_linea
+9	151	288	#line 151 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	152	288		set __izquierda_7qG2_vel_7qG2_000, 36
+9	151	291	#line 151 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	151	291	#line 151 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	152	291		set __izquierda_7qG2_ms_7qG2_000, 500
+9	151	294	#line 151 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	152	294	#line 152 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	153	294		subcall izquierda, __izquierda_return
+9	152	296	#line 152 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	152	296	#line 152 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	153	296		set __girar_eje_7qG2_vel_7qG2_000, 36
+9	152	299	#line 152 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	152	299	#line 152 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	153	299		set __girar_eje_7qG2_ms_7qG2_000, 300
+9	152	302	#line 152 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	153	302	#line 153 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	154	302		subcall girar_eje, __girar_eje_return
+9	153	304	#line 153 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	154	304	#line 154 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	154	304	#line 154 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	155	304		sub __corregir_en_linea_7qG2_contador_7qG2_001, __corregir_en_linea_7qG2_contador_7qG2_001, __constVal1
+9	154	308	#line 154 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	155	308	#line 155 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	155	308	#line 155 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	156	308		add __corregir_en_linea_7qG2_contador2_7qG2_001, __corregir_en_linea_7qG2_contador2_7qG2_001, __constVal1
+9	155	312	#line 155 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	156	312	#line 156 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	157	312		subcall parar, __parar_return
+9	156	314	#line 156 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	157	314	#line 157 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	157	314	#line 157 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	158	314		mov __signed_stack_001corregir_en_linea, __corregir_en_linea_7qG2_contador2_7qG2_001
+9	157	316	#line 157 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	158	316	#line 158 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	159	316		set __D0corregir_en_linea, 1
+9	158	319	#line 158 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	159	319		cmp 4, __zfcorregir_en_linea, __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+9	158	323	#line 158 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	159	323		mov __D0corregir_en_linea, __zfcorregir_en_linea
+9	159	325	#line 159 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	160	325		brtst 4, __NXC_Label_607, __zfcorregir_en_linea
+9	159	328	#line 159 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	160	328		set __izquierda_7qG2_vel_7qG2_000, 36
+9	159	331	#line 159 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	159	331	#line 159 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	160	331		set __izquierda_7qG2_ms_7qG2_000, 500
+9	159	334	#line 159 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	160	334	#line 160 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	161	334		subcall izquierda, __izquierda_return
+9	160	336	#line 160 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	160	336	#line 160 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	161	336		set __girar_eje_anti_7qG2_vel_7qG2_000, 36
+9	160	339	#line 160 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	160	339	#line 160 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	161	339		set __girar_eje_anti_7qG2_ms_7qG2_000, 300
+9	160	342	#line 160 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	161	342	#line 161 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	162	342		subcall girar_eje_anti, __girar_eje_anti_return
+9	161	344	#line 161 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	162	344	#line 162 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	162	344	#line 162 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	163	344		add __corregir_en_linea_7qG2_contador_7qG2_001, __corregir_en_linea_7qG2_contador_7qG2_001, __constVal1
+9	162	348	#line 162 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	163	348	#line 163 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	163	348	#line 163 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	164	348		sub __corregir_en_linea_7qG2_contador2_7qG2_001, __corregir_en_linea_7qG2_contador2_7qG2_001, __constVal1
+9	163	352	#line 163 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	164	352	#line 164 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	165	352		subcall parar, __parar_return
+9	164	354	#line 164 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	168	354	#line 168 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	170	354	#line 170 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	171	354		jmp __NXC_Label_575
+9	170	356	#line 170 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	173	356	#line 173 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	173	356	#line 173 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+9	174	356		subret __corregir_en_linea_return
+10	175	0	#line 175 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	176	0		mov __signed_stack_001corregir_busqueda, __corregir_busqueda_7qG2_fl_7qG2_000
+10	175	2	#line 175 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	175	2	#line 175 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	176	2		set __D0corregir_busqueda, 35
+10	175	5	#line 175 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	176	5		cmp 0, __zfcorregir_busqueda, __signed_stack_001corregir_busqueda, __D0corregir_busqueda
+10	175	9	#line 175 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	176	9		mov __corregir_busqueda_7qG2_fl_negro_7qG2_000, __zfcorregir_busqueda
+10	176	11	#line 176 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	176	11	#line 176 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	177	11		mov __signed_stack_001corregir_busqueda, __corregir_busqueda_7qG2_tl_7qG2_000
+10	176	13	#line 176 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	176	13	#line 176 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	177	13		set __D0corregir_busqueda, 35
+10	176	16	#line 176 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	177	16		cmp 0, __zfcorregir_busqueda, __signed_stack_001corregir_busqueda, __D0corregir_busqueda
+10	176	20	#line 176 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	177	20		mov __corregir_busqueda_7qG2_tl_negro_7qG2_000, __zfcorregir_busqueda
+10	178	22	#line 178 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	178	22	#line 178 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	179	22		mov __DU0corregir_busqueda, __zfcorregir_busqueda
+10	178	24	#line 178 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	179	24		tst 5, __zfcorregir_busqueda, __DU0corregir_busqueda
+10	178	27	#line 178 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	179	27		mov __D0corregir_busqueda, __zfcorregir_busqueda
+10	178	29	#line 178 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	179	29		brtst 4, __NXC_Label_629, __zfcorregir_busqueda
+10	178	32	#line 178 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	179	32		mov __signed_stack_001corregir_busqueda, __D0corregir_busqueda
+10	179	34	#line 179 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	179	34	#line 179 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	180	34		not __DU0corregir_busqueda, __corregir_busqueda_7qG2_fl_negro_7qG2_000
+10	179	37	#line 179 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	180	37		tst 5, __zfcorregir_busqueda, __DU0corregir_busqueda
+10	179	40	#line 179 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	179	40	#line 179 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	180	40		and __D0corregir_busqueda, __signed_stack_001corregir_busqueda, __zfcorregir_busqueda
+10	181	44	#line 181 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	182	44		tst 5, __zfcorregir_busqueda, __D0corregir_busqueda
+10	181	47	#line 181 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	182	47		brtst 4, __NXC_Label_630, __zfcorregir_busqueda
+10	181	50	#line 181 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	182	50		set __girar_eje_7qG2_vel_7qG2_000, 36
+10	181	53	#line 181 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	181	53	#line 181 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	182	53		set __girar_eje_7qG2_ms_7qG2_000, 300
+10	181	56	#line 181 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	182	56	#line 182 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	183	56		subcall girar_eje, __girar_eje_return
+10	182	58	#line 182 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	183	58	#line 183 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	184	58		subcall parar, __parar_return
+10	183	60	#line 183 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	184	60	#line 184 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	184	60	#line 184 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	184	60	#line 184 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	185	60		not __DU0corregir_busqueda, __corregir_busqueda_7qG2_tl_negro_7qG2_000
+10	184	63	#line 184 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	185	63		tst 5, __zfcorregir_busqueda, __DU0corregir_busqueda
+10	184	66	#line 184 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	185	66		mov __D0corregir_busqueda, __zfcorregir_busqueda
+10	184	68	#line 184 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	185	68		brtst 4, __NXC_Label_636, __zfcorregir_busqueda
+10	184	71	#line 184 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	185	71		mov __signed_stack_001corregir_busqueda, __D0corregir_busqueda
+10	185	73	#line 185 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	185	73	#line 185 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	186	73		not __DU0corregir_busqueda, __corregir_busqueda_7qG2_fl_negro_7qG2_000
+10	185	76	#line 185 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	186	76		tst 5, __zfcorregir_busqueda, __DU0corregir_busqueda
+10	185	79	#line 185 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	185	79	#line 185 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	186	79		and __D0corregir_busqueda, __signed_stack_001corregir_busqueda, __zfcorregir_busqueda
+10	187	83	#line 187 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	188	83		tst 5, __zfcorregir_busqueda, __D0corregir_busqueda
+10	187	86	#line 187 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	188	86		brtst 4, __NXC_Label_637, __zfcorregir_busqueda
+10	187	89	#line 187 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	188	89		set __girar_eje_anti_7qG2_vel_7qG2_000, 36
+10	187	92	#line 187 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	187	92	#line 187 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	188	92		set __girar_eje_anti_7qG2_ms_7qG2_000, 300
+10	187	95	#line 187 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	188	95	#line 188 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	189	95		subcall girar_eje_anti, __girar_eje_anti_return
+10	188	97	#line 188 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	189	97	#line 189 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	190	97		subcall parar, __parar_return
+10	189	99	#line 189 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	207	99	#line 207 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	207	99	#line 207 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+10	208	99		subret __corregir_busqueda_return
+11	212	0	#line 212 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	213	0		set __adelante_7qG2_vel_7qG2_000, 75
+11	212	3	#line 212 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	212	3	#line 212 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	213	3		set __adelante_7qG2_ms_7qG2_000, 1400
+11	212	6	#line 212 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	213	6	#line 213 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	214	6		subcall adelante, __adelante_return
+11	213	8	#line 213 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	216	8	#line 216 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	217	8		subcall parar, __parar_return
+11	216	10	#line 216 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	217	10	#line 217 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	218	10		set __D0avanzar_hasta_linea, 1
+11	219	13	#line 219 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	220	13		tst 5, __zfavanzar_hasta_linea, __D0avanzar_hasta_linea
+11	219	16	#line 219 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	220	16		brtst 4, __NXC_Label_647, __zfavanzar_hasta_linea
+11	219	19	#line 219 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	220	19		set __izquierda_7qG2_vel_7qG2_000, 36
+11	219	22	#line 219 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	219	22	#line 219 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	220	22		set __izquierda_7qG2_ms_7qG2_000, 500
+11	219	25	#line 219 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	220	25	#line 220 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	221	25		subcall izquierda, __izquierda_return
+11	220	27	#line 220 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	223	27	#line 223 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	224	27		subcall parar, __parar_return
+11	223	29	#line 223 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	223	29	#line 223 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	224	29		getin __avanzar_hasta_linea_7qG2_fl_7qG2_001, __constVal0, 4
+11	223	33	#line 223 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	224	33	#line 224 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	225	33		getin __avanzar_hasta_linea_7qG2_fr_7qG2_001, __constVal2, 4
+11	224	37	#line 224 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	225	37	#line 225 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	226	37		getin __avanzar_hasta_linea_7qG2_tl_7qG2_001, __constVal1, 4
+11	225	41	#line 225 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	228	41	#line 228 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	229	41		mov __signed_stack_001avanzar_hasta_linea, __avanzar_hasta_linea_7qG2_fl_7qG2_001
+11	228	43	#line 228 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	228	43	#line 228 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	229	43		set __D0avanzar_hasta_linea, 35
+11	228	46	#line 228 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	229	46		cmp 0, __zfavanzar_hasta_linea, __signed_stack_001avanzar_hasta_linea, __D0avanzar_hasta_linea
+11	228	50	#line 228 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	229	50		mov __D0avanzar_hasta_linea, __zfavanzar_hasta_linea
+11	228	52	#line 228 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	229	52		brtst 5, __NXC_Label_660, __zfavanzar_hasta_linea
+11	228	55	#line 228 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	229	55		mov __signed_stack_001avanzar_hasta_linea, __D0avanzar_hasta_linea
+11	228	57	#line 228 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	229	57		mov __signed_stack_002avanzar_hasta_linea, __avanzar_hasta_linea_7qG2_fr_7qG2_001
+11	228	59	#line 228 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	229	59	#line 229 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	230	59		set __D0avanzar_hasta_linea, 35
+11	229	62	#line 229 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	230	62		cmp 0, __zfavanzar_hasta_linea, __signed_stack_002avanzar_hasta_linea, __D0avanzar_hasta_linea
+11	229	66	#line 229 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	229	66	#line 229 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	230	66		or __D0avanzar_hasta_linea, __signed_stack_001avanzar_hasta_linea, __zfavanzar_hasta_linea
+11	230	70	#line 230 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	231	70		tst 5, __zfavanzar_hasta_linea, __D0avanzar_hasta_linea
+11	230	73	#line 230 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	231	73		brtst 4, __NXC_Label_663, __zfavanzar_hasta_linea
+11	230	76	#line 230 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	231	76		set __atras_7qG2_vel_7qG2_000, 36
+11	230	79	#line 230 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	230	79	#line 230 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	231	79		set __atras_7qG2_ms_7qG2_000, 500
+11	230	82	#line 230 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	231	82	#line 231 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	232	82		subcall atras, __atras_return
+11	231	84	#line 231 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	232	84	#line 232 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	233	84		jmp __NXC_Label_647
+11	232	86	#line 232 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	235	86	#line 235 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	235	86	#line 235 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	236	86		mov __corregir_busqueda_7qG2_fl_7qG2_000, __avanzar_hasta_linea_7qG2_fl_7qG2_001
+11	235	88	#line 235 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	235	88	#line 235 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	236	88		mov __corregir_busqueda_7qG2_tl_7qG2_000, __avanzar_hasta_linea_7qG2_tl_7qG2_001
+11	235	90	#line 235 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	237	90	#line 237 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	238	90		subcall corregir_busqueda, __corregir_busqueda_return
+11	237	92	#line 237 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	237	92	#line 237 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	238	92		set __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea, 10
+11	237	95	#line 237 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	7921	95	#line 7921 "NXCDefs.h"
+11	7922	95		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea
+11	7921	98	#line 7921 "NXCDefs.h"
+11	238	98	#line 238 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	241	98	#line 241 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	242	98		jmp __NXC_Label_646
+11	241	100	#line 241 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	242	100	#line 242 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	243	100		set __D0avanzar_hasta_linea, 1
+11	245	103	#line 245 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	246	103		tst 5, __zfavanzar_hasta_linea, __D0avanzar_hasta_linea
+11	245	106	#line 245 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	246	106		brtst 4, __NXC_Label_675, __zfavanzar_hasta_linea
+11	245	109	#line 245 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	246	109		getin __avanzar_hasta_linea_7qG2_fl_7qG2_001, __constVal0, 4
+11	245	113	#line 245 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	246	113	#line 246 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	247	113		getin __avanzar_hasta_linea_7qG2_fr_7qG2_001, __constVal2, 4
+11	246	117	#line 246 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	247	117	#line 247 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	248	117		getin __avanzar_hasta_linea_7qG2_tl_7qG2_001, __constVal1, 4
+11	247	121	#line 247 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	250	121	#line 250 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	251	121		set __adelante_7qG2_vel_7qG2_000, 36
+11	250	124	#line 250 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	250	124	#line 250 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	251	124		set __adelante_7qG2_ms_7qG2_000, 500
+11	250	127	#line 250 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	251	127	#line 251 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	252	127		subcall adelante, __adelante_return
+11	251	129	#line 251 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	255	129	#line 255 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	256	129		subcall parar, __parar_return
+11	255	131	#line 255 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	255	131	#line 255 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	256	131		mov __corregir_en_linea_7qG2_fl_7qG2_000, __avanzar_hasta_linea_7qG2_fl_7qG2_001
+11	255	133	#line 255 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	255	133	#line 255 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	256	133		mov __corregir_en_linea_7qG2_tl_7qG2_000, __avanzar_hasta_linea_7qG2_tl_7qG2_001
+11	255	135	#line 255 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	257	135	#line 257 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	258	135		subcall corregir_en_linea, __corregir_en_linea_return
+11	257	137	#line 257 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	257	137	#line 257 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	258	137		set __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea, 10
+11	257	140	#line 257 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	7921	140	#line 7921 "NXCDefs.h"
+11	7922	140		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea
+11	7921	143	#line 7921 "NXCDefs.h"
+11	258	143	#line 258 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	262	143	#line 262 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	263	143		jmp __NXC_Label_674
+11	262	145	#line 262 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	262	145	#line 262 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+11	263	145		subret __avanzar_hasta_linea_return
+12	279	0	#line 279 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc"
+12	280	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc
+1	__ResetSensorSubroutine	139	NXTDefs.h
+2	adelante	152	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc
+3	atras	214	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc
+4	derecha	276	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc
+5	izquierda	371	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc
+6	parar	471	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc
+7	girar_eje	502	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc
+8	girar_eje_anti	594	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc
+9	corregir_en_linea	681	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc
+10	corregir_busqueda	1039	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc
+11	avanzar_hasta_linea	1140	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc
+12	__initialize_global_data	1287	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Untitled1.nxc

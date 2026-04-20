@@ -1,0 +1,126 @@
+    #define MOT_A  OUT_A
+#define MOT_B  OUT_B
+#define MOT_C  OUT_C
+
+#define SEN_LINEA_FL  IN_1
+#define SEN_LINEA_TL  IN_2
+#define SEN_LINEA_FR  IN_3
+
+#define VEL           36
+#define UMBRAL_LINEA  43
+
+// --- FUNCIONES DE MOVIMIENTO CORREGIDAS ---
+void adelante(int vel, int ms) {
+    OnRev(MOT_B, vel);
+    OnFwd(MOT_C, vel);
+    Wait(ms); // IMPORTANTE: Sin esto, el robot no se mueve el tiempo deseado
+}
+
+void atras(int vel, int ms) {
+    OnFwd(MOT_B, vel);
+    OnRev(MOT_C, vel);
+    Wait(ms);
+}
+
+void derecha(int vel, int ms) {
+    OnRev(MOT_A, vel);
+    OnFwd(MOT_B, vel / 2);
+    OnFwd(MOT_C, vel / 2);
+    Wait(ms);
+}
+
+void izquierda(int vel, int ms) {
+    OnFwd(MOT_A, vel);
+    OnRev(MOT_B, vel / 2);
+    OnRev(MOT_C, vel / 2);
+    Wait(ms);
+}
+
+void girar_eje(int vel, int ms) {
+    OnRev(MOT_A, vel);
+    OnFwd(MOT_B, vel);
+    OnRev(MOT_C, vel);
+    Wait(ms);
+}
+
+void girar_eje_anti(int vel, int ms) {
+    OnFwd(MOT_A, vel);
+    OnRev(MOT_B, vel);
+    OnFwd(MOT_C, vel);
+    Wait(ms);
+}
+
+void parar() {
+    Off(OUT_ABC);
+    Wait(100);
+}
+
+// --- LÓGICA DE SEGUIMIENTO ---
+
+void corregir_en_linea(int fl, int fr, int tl) {
+    if(fl > UMBRAL_LINEA && tl > UMBRAL_LINEA) {
+        // Si ambos están en blanco, retroceder un poco para buscar
+        atras(VEL, 50);
+    }
+    else if (fl <= UMBRAL_LINEA && tl <= UMBRAL_LINEA) {
+        derecha(VEL, 50);
+        girar_eje_anti(VEL, 50);
+    }
+    else if (fl > UMBRAL_LINEA && tl <= UMBRAL_LINEA) {
+        derecha(VEL, 50);
+        girar_eje(VEL, 50);
+    }
+    else if (fl <= UMBRAL_LINEA && tl > UMBRAL_LINEA) {
+        derecha(VEL, 50);
+        girar_eje_anti(VEL, 50);
+    }
+    parar();
+}
+
+bool avanzar_hasta_linea() {
+    int fl, fr, tl;
+
+    // FASE A: Salir del cuadro (Aumenté el tiempo para asegurar salida)
+    adelante(60, 2000);
+    parar();
+
+    // FASE B: Buscar línea
+    while (true) {
+        fl = Sensor(SEN_LINEA_FL);
+        fr = Sensor(SEN_LINEA_FR);
+        tl = Sensor(SEN_LINEA_TL);
+
+        if (fl <= UMBRAL_LINEA || fr <= UMBRAL_LINEA) {
+            break;
+        }
+        izquierda(VEL, 60);
+        parar();
+    }
+
+    // FASE C: Seguir línea
+    while (true) {
+        fl = Sensor(SEN_LINEA_FL);
+        fr = Sensor(SEN_LINEA_FR);
+        tl = Sensor(SEN_LINEA_TL);
+
+        // Condición de parada (Llegada)
+        if (fr < UMBRAL_LINEA && fl < UMBRAL_LINEA) {
+            parar();
+            return true;
+        }
+
+        adelante(VEL, 50);
+        corregir_en_linea(fl, fr, tl);
+    }
+}
+
+task main() {
+    SetSensorLight(SEN_LINEA_FL);
+    SetSensorLight(SEN_LINEA_TL);
+    SetSensorLight(SEN_LINEA_FR);
+
+    if(avanzar_hasta_linea()) {
+        // Opcional: Sonido para saber que terminó con éxito
+        PlayTone(440, 500);
+    }
+}

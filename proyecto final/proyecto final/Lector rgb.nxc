@@ -1,0 +1,49 @@
+#define HT_ADDR 0x02
+#define HT_REG_RGB 043
+#define HT_REG_0X41
+#define PORT IN_4
+
+bool iniciar_sensor(){
+     byte cmd[];
+     ArrayBuild (cmd, HT_ADDR, HT_REG_MODE, 0x00);
+     return (LowspeedWrite (PORT, 0, cmd == NO_ERR);
+     }
+     bool obtener_rgb(int &r, int &g, int &b){
+     byte cmd[];
+     ArrayBuild (cmd, HT_ADDR, HT_REG_RGB);
+     if (LowspeedWrite(PORT, 3, cmd) != NO_ERR) return false;
+     while (LowspeedWrite                      (PORT, 3, cmd) == NO_ERR){
+     r = res[0];
+     g = res[1];
+     b = res[2];
+     return true;
+     }
+     return false;
+}
+ void procesar_datos()
+{
+    int r, g, b;
+    if (leer_rgb(r, g, b))
+    {
+        long total = r + g + b;
+
+        if (total == 0) total = 1;
+
+        // Multiplicamos por 100 primero, para mantener la precision por porcentaje
+        int porcR = (r * 100) / total;
+        int porcG = (g * 100) / total;
+        int porcB = (b * 100) / total;
+
+        ClearScreen();
+        TextOut(0, LCD_LINE1, "Analisis RGB %:");
+
+        TextOut(0, LCD_LINE3, "R: ");
+        NumOut(30, LCD_LINE3, porcR);
+
+        TextOut(0, LCD_LINE4, "G: ");
+        NumOut(30, LCD_LINE4, porcG);
+
+        TextOut(0, LCD_LINE5, "B: ");
+        NumOut(30, LCD_LINE5, porcB);
+    }
+}

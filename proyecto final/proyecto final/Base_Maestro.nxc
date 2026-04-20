@@ -1,0 +1,598 @@
+/* ==============================================================================
+ * PROYECTO : LARC OPEN 2026 - Robot Recolector de Cafe
+ * DISPOSITIVO: "Base" (Maestro)
+ * EQUIPO   : PUMA Nexus Coffea
+ * VERSION  : 3.0 - Corregido, puertos verificados, estrategia barrido por nivel
+ * ==============================================================================
+ * PUERTOS (VERIFICADOS):
+ *   MA (OUT_A) - Motor frontal derecho  (eje principal de avance)
+ *   MB (OUT_B) - Motor izquierdo
+ *   MC (OUT_C) - Motor trasero
+ *   S1 (IN_1)  - Sensor seguidor de linea frontal izquierdo
+ *   S2 (IN_2)  - Sensor seguidor de linea trasero izquierdo
+ *   S3 (IN_3)  - Sensor seguidor de linea frontal derecho
+ *   S4 (IN_4)  - Sensor ultrasonico frontal (obstaculos / albercas)
+ *
+ * MODELO OMNI:
+ *   El robot avanza hacia adelante en el eje del motor MA.
+ *   Para avanzar recto: MB=Rev, MC=Fwd (basado en Movimiento.nxc)
+ *   Para girar derecha: MA=Rev, MB=Fwd/2, MC=Fwd/2
+ *   Para girar izquierda: MA=Fwd, MB=Rev/2, MC=Rev/2
+ *
+ * ESTRATEGIA (barrido por nivel):
+ *   1. Salir del cuadro inicial -> desplazarse a la izquierda hasta linea negra
+ *   2. Avanzar hacia la zona de cultivo esquivando albercas (guardar ruta)
+ *   3. NIVEL ALTO:  recorrer arbol A -> B -> C recogiendo fila superior (5 bolas)
+ *   4. NIVEL MEDIO: recorrer arbol A -> B -> C recogiendo fila media   (6 bolas)
+ *   5. NIVEL BAJO:  recorrer arbol A -> B -> C recogiendo fila inferior(5 bolas)
+ *   6. Regresar al beneficiadero usando la ruta inversa guardada
+ *   7. Recorrer los 5 cuadros del beneficiadero (10 s cada uno)
+ *      -> el Selector deposita autonomamente si detecta caja
+ *   8. Volver al cuadro inicial -> FIN
+ *
+ * COMUNICACION BT:
+ *   Maestro -> Garra (OUTBOX 1): comandos de recoleccion / soltar
+ *   Garra -> Maestro (INBOX 0): ACK (1 = recogio, 0 = no recogio / verde)
+ * ============================================================================ */
+
+// ---------------------------------------------------------------
+//  BLUETOOTH
+// ---------------------------------------------------------------
+#define BT_CONN      1      // slot BT del esclavo Garra
+#define OUTBOX       1      // buzon de envio al esclavo
+#define INBOX        0      // buzon de recepcion del esclavo
+
+// ---------------------------------------------------------------
+//  COMANDOS AL ESCLAVO GARRA
+// ---------------------------------------------------------------
+#define CMD_SUBIR_ALTO    10   // elevar a fila alta y detectar/recoger
+#define CMD_SUBIR_MEDIO   11   // elevar a fila media
+#define CMD_SUBIR_BAJO    12   // elevar a fila baja
+#define CMD_SOLTAR        20   // abrir pinza -> pelota cae al selector
+
+// ACK del esclavo
+#define ACK_RECOGIO  1
+#define ACK_VACIO    0
+
+// ---------------------------------------------------------------
+//  MOTORES (puertos verificados)
+// ---------------------------------------------------------------
+#define MOT_A  OUT_A   // frontal derecho (eje de avance)
+#define MOT_B  OUT_B   // izquierdo
+#define MOT_C  OUT_C   // trasero
+
+// ---------------------------------------------------------------
+//  SENSORES (puertos verificados)
+// ---------------------------------------------------------------
+#define SEN_LINEA_FL  IN_1   // seguidor linea - frontal izquierdo
+#define SEN_LINEA_TL  IN_2   // seguidor linea - trasero izquierdo
+#define SEN_LINEA_FR  IN_3   // seguidor linea - frontal derecho
+#define SEN_US_FRONT  IN_4   // ultrasonico frontal
+
+// ---------------------------------------------------------------
+//  PARAMETROS DE MOVIMIENTO
+// ---------------------------------------------------------------
+#define VEL            75   // % potencia base
+#define VEL_LENTO      40   // % para recorrido fino frente al arbol
+#define UMBRAL_LINEA   35   // entre blanco (~60) y negro (~20)
+#define DIST_OBST      35   // cm umbral ultrasonido para alberca
+
+// ---------------------------------------------------------------
+//  TIEMPOS (ms) - calibrados para VEL = 75
+// ---------------------------------------------------------------
+#define T_AVANCE        200   // paso unitario de avance
+#define T_GIRO_90       300   // giro 90 grados sobre su eje
+#define T_SALIDA        800   // salir del cuadro inicial (lateral)
+#define T_FINO          150   // ajuste fino frente al arbol
+#define T_RETROCESO     120   // retroceder unos cm del arbol p/ soltar
+
+#define T_ESPERA_ACK   8000   // timeout esperando ACK de la garra
+#define T_DEPOSITO    10000   // tiempo por cuadro en beneficiadero
+
+// Esquive de alberca
+#define T_ESQ_LATERAL   400
+#define T_ESQ_FRENTE    500
+
+// Desplazamiento lateral entre arboles (~1174.5 mm por sector)
+#define T_ENTRE_ARBOL   600
+
+// Desplazamiento lateral entre posiciones de pelota dentro de 1 arbol
+// Arbol mide ~300 mm; 5 bolas -> ~60 mm entre cada una
+#define T_LATERAL_BOLA   80   // ms de movimiento lateral a VEL_LENTO
+
+// Cantidad de intentos por fila (5 en alta/baja, 6 en media)
+#define BOLAS_FILA_ALTA   5
+#define BOLAS_FILA_MEDIA  6
+#define BOLAS_FILA_BAJA   5
+
+// ---------------------------------------------------------------
+//  RUTA GUARDADA  (matriz 5x2)
+//  ruta[i][0] = 0 sin obstaculo, 1 con obstaculo
+//  ruta[i][1] = direccion del esquive (1 = derecha, -1 = izquierda)
+// ---------------------------------------------------------------
+#define MAX_PASOS 5
+int ruta[MAX_PASOS][2];
+int total_pasos;
+
+// ================================================================
+//  FUNCIONES DE MOVIMIENTO OMNIDIRECCIONAL (ruedas omni)
+//  Basadas en Movimiento.nxc (funciones probadas y validadas)
+// ================================================================
+
+// Avanza en el eje de MOT_A (hacia adelante del robot)
+// Segun Movimiento.nxc: MB=Rev, MC=Fwd produce avance recto
+void adelante(int vel, int ms)
+{
+    OnRev(MOT_B, vel);
+    OnFwd(MOT_C, vel);
+    Wait(ms);
+    Off(OUT_BC);
+}
+
+// Retrocede (inverso de adelante)
+void atras(int vel, int ms)
+{
+    OnFwd(MOT_B, vel);
+    OnRev(MOT_C, vel);
+    Wait(ms);
+    Off(OUT_BC);
+}
+
+// Giro a la derecha (basado en Movimiento.nxc)
+// MA=Rev, MB=Fwd/2-3, MC=Fwd/2
+void derecha(int vel, int ms)
+{
+    OnRev(MOT_A, vel);
+    OnFwd(MOT_B, vel / 2 - 3);
+    OnFwd(MOT_C, vel / 2);
+    Wait(ms);
+    Off(OUT_ABC);
+}
+
+// Giro a la izquierda (espejo de derecha)
+void izquierda(int vel, int ms)
+{
+    OnFwd(MOT_A, vel);
+    OnRev(MOT_B, vel / 2 - 3);
+    OnRev(MOT_C, vel / 2);
+    Wait(ms);
+    Off(OUT_ABC);
+}
+
+// Giro sobre su propio eje (para dar vuelta 180 grados)
+void girar_eje(int vel, int ms)
+{
+    OnFwd(MOT_A, vel);
+    OnRev(MOT_B, vel);
+    OnFwd(MOT_C, vel);
+    Wait(ms);
+    Off(OUT_ABC);
+}
+
+// Parada completa con freno
+void parar()
+{
+    Off(OUT_ABC);
+    Wait(150);
+}
+
+// ================================================================
+//  SEGUIMIENTO DE LINEA CON SENSORES CONTINUOS
+// ================================================================
+// Avanza con los 3 sensores de linea + ultrasonico activos:
+//   - SEN_LINEA_FL y SEN_LINEA_FR -> detectan linea negra
+//   - SEN_LINEA_TL -> correccion de trayectoria trasera
+//   - SEN_US_FRONT -> obstaculo
+// Retorna: true = llego a linea negra, false = encontro obstaculo
+bool avanzar_hasta_linea()
+{
+    // Encender motores de forma continua (avance recto)
+    OnRev(MOT_B, VEL);
+    OnFwd(MOT_C, VEL);
+
+    while (true)
+    {
+        int fl = Sensor(SEN_LINEA_FL);
+        int fr = Sensor(SEN_LINEA_FR);
+        int tl = Sensor(SEN_LINEA_TL);
+
+        // Obstaculo al frente -> parar y reportar
+        if (SensorUS(SEN_US_FRONT) < DIST_OBST)
+        {
+            parar();
+            return false;
+        }
+
+        // Linea negra detectada en alguno de los frontales -> llegamos
+        if (fl < UMBRAL_LINEA || fr < UMBRAL_LINEA)
+        {
+            parar();
+            return true;
+        }
+
+        // Correccion de trayectoria en caliente usando sensores laterales
+        if (fl < UMBRAL_LINEA + 5)
+        {
+            // Sensor frontal izquierdo ve algo oscuro -> desviado a izquierda
+            Off(OUT_BC);
+            derecha(VEL_LENTO, 30);
+            OnRev(MOT_B, VEL);
+            OnFwd(MOT_C, VEL);
+        }
+        else if (fr < UMBRAL_LINEA + 5)
+        {
+            // Sensor frontal derecho ve algo oscuro -> desviado a derecha
+            Off(OUT_BC);
+            izquierda(VEL_LENTO, 30);
+            OnRev(MOT_B, VEL);
+            OnFwd(MOT_C, VEL);
+        }
+        else if (tl < UMBRAL_LINEA + 5)
+        {
+            // Sensor trasero izquierdo -> correccion leve
+            Off(OUT_BC);
+            derecha(VEL_LENTO, 20);
+            OnRev(MOT_B, VEL);
+            OnFwd(MOT_C, VEL);
+        }
+
+        Wait(10);  // anti-saturacion del procesador
+    }
+}
+
+// ================================================================
+//  ESQUIVE DE ALBERCA
+// ================================================================
+void esquivar_obstaculo(int paso)
+{
+    ruta[paso][0] = 1;   // hubo obstaculo
+    ruta[paso][1] = 1;   // direccion: derecha
+
+    // Maniobra en U alrededor de la alberca
+    derecha(VEL, T_GIRO_90);
+    adelante(VEL, T_ESQ_LATERAL);
+    izquierda(VEL, T_GIRO_90);
+    adelante(VEL, T_ESQ_FRENTE);
+    izquierda(VEL, T_GIRO_90);
+    adelante(VEL, T_ESQ_LATERAL);
+    derecha(VEL, T_GIRO_90);
+
+    parar();
+}
+
+// Esquive inverso para el regreso
+void esquivar_inverso()
+{
+    izquierda(VEL, T_GIRO_90);
+    atras(VEL, T_ESQ_LATERAL);
+    derecha(VEL, T_GIRO_90);
+    atras(VEL, T_ESQ_FRENTE);
+    derecha(VEL, T_GIRO_90);
+    atras(VEL, T_ESQ_LATERAL);
+    izquierda(VEL, T_GIRO_90);
+
+    parar();
+}
+
+// ================================================================
+//  COMUNICACION BT CON GARRA
+// ================================================================
+
+// Envia comando y espera ACK del esclavo
+// Retorna: 1 = recogio pelota, 0 = no recogio
+int enviar_y_esperar(int comando)
+{
+    // Limpiar buzon de entrada
+    int basura;
+    ReceiveRemoteNumber(INBOX, true, basura);
+
+    // Enviar comando
+    SendRemoteNumber(BT_CONN, OUTBOX, comando);
+
+    // Esperar ACK con timeout
+    int ack = ACK_VACIO;
+    long t0 = CurrentTick();
+    while ((CurrentTick() - t0) < T_ESPERA_ACK)
+    {
+        if (ReceiveRemoteNumber(INBOX, true, ack) == NO_ERR)
+            break;
+        Wait(50);
+    }
+
+    return ack;
+}
+
+// Envia CMD_SOLTAR sin esperar respuesta elaborada
+void enviar_soltar()
+{
+    SendRemoteNumber(BT_CONN, OUTBOX, CMD_SOLTAR);
+    Wait(800);  // tiempo mecanico para que la pinza abra y caiga
+}
+
+// ================================================================
+//  RECOLECCION DE UN NIVEL EN UN ARBOL
+// ================================================================
+// El robot ya esta frente al arbol.
+// Recorre lateralmente las N posiciones de bola,
+// enviando el comando de nivel a la garra en cada una.
+// Si la garra recoge: retrocede, suelta al selector, avanza de nuevo.
+void recolectar_fila_arbol(int cmd_nivel, int n_bolas)
+{
+    int i;
+    for (i = 0; i < n_bolas; i++)
+    {
+        ClearScreen();
+        TextOut(0, LCD_LINE4, "Bola ");
+        NumOut(30, LCD_LINE4, i + 1);
+
+        // Enviar comando de nivel a la garra
+        int ack = enviar_y_esperar(cmd_nivel);
+
+        if (ack == ACK_RECOGIO)
+        {
+            // Retroceder unos cm del arbol
+            atras(VEL_LENTO, T_RETROCESO);
+            parar();
+
+            // Soltar pelota al selector
+            enviar_soltar();
+
+            // Avanzar de nuevo hacia el arbol
+            adelante(VEL_LENTO, T_RETROCESO);
+            parar();
+        }
+
+        // Desplazarse lateralmente a la siguiente posicion de bola
+        if (i < n_bolas - 1)
+        {
+            derecha(VEL_LENTO, T_LATERAL_BOLA);
+            parar();
+        }
+    }
+
+    // Regresar al centro del arbol (deshacer el desplazamiento lateral)
+    // Se movio (n_bolas - 1) veces a la derecha -> regresar a la izquierda
+    if (n_bolas > 1)
+    {
+        izquierda(VEL_LENTO, T_LATERAL_BOLA * (n_bolas - 1));
+        parar();
+    }
+}
+
+// ================================================================
+//  NAVEGACION ENTRE ARBOLES
+// ================================================================
+
+// Avanza del arbol actual al siguiente (A->B o B->C)
+void ir_siguiente_arbol()
+{
+    derecha(VEL, T_ENTRE_ARBOL);
+    parar();
+}
+
+// Regresa del arbol C al A (para el siguiente nivel)
+void regresar_a_arbol_A()
+{
+    izquierda(VEL, T_ENTRE_ARBOL * 2);
+    parar();
+}
+
+// ================================================================
+//  BARRIDO COMPLETO DE UN NIVEL EN LOS 3 ARBOLES
+// ================================================================
+void barrer_nivel(int cmd_nivel, int n_bolas)
+{
+    // Arbol A
+    TextOut(0, LCD_LINE3, "Arbol A");
+    recolectar_fila_arbol(cmd_nivel, n_bolas);
+
+    // Mover al Arbol B
+    ir_siguiente_arbol();
+
+    TextOut(0, LCD_LINE3, "Arbol B");
+    recolectar_fila_arbol(cmd_nivel, n_bolas);
+
+    // Mover al Arbol C
+    ir_siguiente_arbol();
+
+    TextOut(0, LCD_LINE3, "Arbol C");
+    recolectar_fila_arbol(cmd_nivel, n_bolas);
+
+    // Regresar al Arbol A para el siguiente nivel
+    regresar_a_arbol_A();
+}
+
+// ================================================================
+//  RECORRIDO DEL BENEFICIADERO (5 cuadros)
+// ================================================================
+void recorrer_beneficiadero()
+{
+    int i;
+    for (i = 0; i < 5; i++)
+    {
+        ClearScreen();
+        TextOut(0, LCD_LINE1, "BENEFICIADERO");
+        NumOut(0, LCD_LINE2, i + 1);
+        TextOut(20, LCD_LINE2, "/ 5");
+
+        // Avanzar al siguiente cuadro
+        derecha(VEL, 600);
+        parar();
+
+        // Esperar 10 s para que el Selector deposite si hay caja
+        Wait(T_DEPOSITO);
+    }
+
+    // Regresar los 5 cuadros
+    for (i = 0; i < 5; i++)
+    {
+        izquierda(VEL, 600);
+        parar();
+        Wait(200);
+    }
+}
+
+// ================================================================
+//                    TAREA PRINCIPAL
+// ================================================================
+task main()
+{
+    // -- Configurar sensores --
+    SetSensorLight(SEN_LINEA_FL);    // S1 = seguidor frontal izquierdo
+    SetSensorLight(SEN_LINEA_TL);    // S2 = seguidor trasero izquierdo
+    SetSensorLight(SEN_LINEA_FR);    // S3 = seguidor frontal derecho
+    SetSensorLowspeed(SEN_US_FRONT); // S4 = ultrasonico frontal
+
+    // Inicializar matriz de ruta
+    int i;
+    total_pasos = 0;
+    for (i = 0; i < MAX_PASOS; i++)
+    {
+        ruta[i][0] = 0;
+        ruta[i][1] = 0;
+    }
+
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "BASE MAESTRO v3");
+    TextOut(0, LCD_LINE2, "Esperando BT...");
+
+    // -- Esperar conexion BT con Garra --
+    until (BluetoothStatus(BT_CONN) == NO_ERR);
+    PlaySound(SOUND_UP);
+    Wait(500);
+
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "BT OK");
+    TextOut(0, LCD_LINE2, "Iniciando...");
+    Wait(1000);
+
+    // ================================================
+    // FASE 1: Salir del cuadro inicial
+    // ================================================
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "FASE 1");
+    TextOut(0, LCD_LINE2, "Saliendo...");
+
+    // ================================================
+    // FASE 2: Navegar hacia la zona de cultivo
+    //         (esquivando albercas, guardando ruta)
+    // ================================================
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "FASE 2");
+    TextOut(0, LCD_LINE2, "Hacia cultivo");
+
+    total_pasos = 0;
+    bool encontro_linea;
+
+    // Tramo 1: avanzar hasta linea o alberca
+    encontro_linea = avanzar_hasta_linea();
+    if (!encontro_linea)
+    {
+        esquivar_obstaculo(total_pasos);
+        // Seguir avanzando despues del esquive
+        encontro_linea = avanzar_hasta_linea();
+    }
+    else
+    {
+        ruta[total_pasos][0] = 0;
+    }
+    total_pasos++;
+
+    // Tramo 2 (posible segunda alberca)
+    encontro_linea = avanzar_hasta_linea();
+    if (!encontro_linea)
+    {
+        esquivar_obstaculo(total_pasos);
+        encontro_linea = avanzar_hasta_linea();
+    }
+    else
+    {
+        ruta[total_pasos][0] = 0;
+    }
+    total_pasos++;
+
+    // Ajuste fino para quedar frente al primer arbol
+    adelante(VEL_LENTO, T_FINO);
+    parar();
+
+    // ================================================
+    // FASE 3: Recoleccion por niveles
+    //   3a -> Fila ALTA  en A, B, C (5 bolas c/u)
+    //   3b -> Fila MEDIA en A, B, C (6 bolas c/u)
+    //   3c -> Fila BAJA  en A, B, C (5 bolas c/u)
+    // ================================================
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "FASE 3");
+
+    // -- 3a: Nivel ALTO --
+    TextOut(0, LCD_LINE2, "Nivel ALTO");
+    barrer_nivel(CMD_SUBIR_ALTO, BOLAS_FILA_ALTA);
+    Wait(500);
+
+    // -- 3b: Nivel MEDIO --
+    TextOut(0, LCD_LINE2, "Nivel MEDIO");
+    barrer_nivel(CMD_SUBIR_MEDIO, BOLAS_FILA_MEDIA);
+    Wait(500);
+
+    // -- 3c: Nivel BAJO --
+    TextOut(0, LCD_LINE2, "Nivel BAJO");
+    barrer_nivel(CMD_SUBIR_BAJO, BOLAS_FILA_BAJA);
+    Wait(500);
+
+    PlaySound(SOUND_FAST_UP);
+
+    // ================================================
+    // FASE 4: Regresar al beneficiadero
+    //         (ruta inversa guardada)
+    // ================================================
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "FASE 4");
+    TextOut(0, LCD_LINE2, "Regresando...");
+
+    // Dar media vuelta (180 grados)
+    girar_eje(VEL, T_GIRO_90 * 2);
+    parar();
+
+    // Recorrer la ruta inversa
+    int paso;
+    for (paso = total_pasos - 1; paso >= 0; paso--)
+    {
+        if (ruta[paso][0] == 1)
+        {
+            // Hubo obstaculo en este tramo -> esquive inverso
+            esquivar_inverso();
+        }
+        else
+        {
+            // Tramo libre -> avanzar recto
+            adelante(VEL, T_AVANCE * 3);
+            parar();
+        }
+    }
+
+    // ================================================
+    // FASE 5: Recorrer beneficiadero
+    //         (5 cuadros, 10 s cada uno)
+    // ================================================
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "FASE 5");
+    TextOut(0, LCD_LINE2, "Beneficiadero");
+
+    recorrer_beneficiadero();
+
+    // ================================================
+    // FASE 6: Volver al cuadro inicial -> FIN
+    // ================================================
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "FASE 6");
+    TextOut(0, LCD_LINE2, "Cuadro inicial");
+
+    adelante(VEL, 300);
+    parar();
+
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "** FIN **");
+    PlaySound(SOUND_UP);
+    PlaySound(SOUND_UP);
+    Wait(3000);
+}

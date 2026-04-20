@@ -1,0 +1,69 @@
+#define V 50        // Velocidad base normalizada
+#define T_LADO 2000
+#define SEN1 IN_1
+#define SEN3 IN_3
+#define UMBRAL_LINEA 43
+
+// Función para ir recto
+void adelante(int vel, int ms)
+{
+    Off(OUT_A);           // El motor A no participa para ir recto (eje frontal)
+    OnRev(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+    Off(OUT_ABC);
+}
+
+// Función para desplazamiento lateral (Derecha)
+// Requiere que los 3 motores se muevan para compensar el ángulo
+void derecha(int vel, int ms)
+{
+    OnRev(OUT_A, vel);           // Motor frontal empuja
+    OnFwd(OUT_B, vel / 2);       // Motores traseros compensan el ángulo
+    OnFwd(OUT_C, vel / 2);
+    Wait(ms);
+    Off(OUT_ABC);
+}
+
+// Función para girar sobre su propio eje (en caso de que la necesiten)
+void rotar_derecha(int vel, int ms)
+{
+    OnFwd(OUT_A, vel);
+    OnFwd(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+    Off(OUT_ABC);
+}
+
+task main()
+{
+    SetSensorLight(SEN1);
+    SetSensorLight(SEN3);
+
+    int c = 0;
+
+    // Bucle de búsqueda de línea
+    while(c == 0)
+    {
+        // Movimiento suave hacia adelante
+        OnRev(OUT_B, V);
+        OnFwd(OUT_C, V);
+        Off(OUT_A);
+
+        // Corregido: Sensor(SEN1) para obtener el valor real
+        if (Sensor(SEN1) < UMBRAL_LINEA && Sensor(SEN3) < UMBRAL_LINEA)
+        {
+            Off(OUT_ABC);
+            PlayTone(880, 400);
+            c = 1; // Rompe el ciclo
+        }
+    }
+
+    Wait(1000);
+
+    // Movimientos de prueba con velocidades reales (máximo 100)
+    adelante(V + 20, 2000);
+    Wait(500);
+    derecha(V + 20, 2000);
+}
+

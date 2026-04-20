@@ -1,0 +1,36 @@
+#define V    75
+#define T_LADO 4000
+
+void adelante(int vel, int ms)
+{
+    OnRev(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+    Off(OUT_BC);
+    Wait(2000);
+}
+
+void derecha(int vel, int ms)
+{
+    OnRev(OUT_A, vel);
+    OnFwd(OUT_B, vel/2-3);
+    OnFwd(OUT_C, vel/2);
+    Wait(ms);
+    Off(OUT_ABC);
+    Wait(1000);
+}
+
+
+task main()
+{
+    adelante(V, T_LADO-1000);
+    derecha(V,T_LADO+2000);
+    
+    //adelante(V, T_LADO);
+    //adelante(V, T_LADO+2000);
+    //derecha(V,T_LADO+4000);
+    //derecha(V,T_LADO+4500);
+
+    
+    PlayTone(880, 400);
+}

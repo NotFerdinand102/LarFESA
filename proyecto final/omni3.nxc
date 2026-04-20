@@ -1,0 +1,127 @@
+/*
+ * Robot Omnidireccional 3 Ruedas — NXC
+ *
+ * Disposición de motores (visto desde arriba, ruedas tangentes al círculo):
+ *
+ *          [Motor A]  ? frontal, rueda apunta horizontal
+ *         /          \
+ *    [Motor B]    [Motor C]
+ *    (trasero-izq) (trasero-der)
+ *
+ * Cada rueda empuja en dirección tangente. Para mover el robot:
+ *   - ADELANTE : A fwd  | B rev  | C fwd   ? resultado: avanza
+ *   - ATRÁS    : A rev  | B fwd  | C rev
+ *   - DERECHA  : A fwd  | B fwd  | C rev
+ *   - IZQUIERDA: A rev  | B rev  | C fwd
+ *
+ * (Los signos dependen del montaje físico de tus ruedas;
+ *  invierte el signo de un motor individual si va al revés.)
+ */
+
+#define VEL      60    // Velocidad base (0-100)
+#define T_LADO   1500  // ms que dura un lado del cuadrado
+#define T_GIRO   600   // ms para girar 90°
+
+// -- Movimientos básicos --------------------------------------------
+void adelante(int vel, int ms)
+{
+    //OnFwd(OUT_A,  vel);   // Motor A hacia adelante
+    OnRev(OUT_B,  vel);   // Motor B hacia atrás
+    OnFwd(OUT_C,  vel);   // Motor C hacia adelante
+    Wait(ms);
+    //Off(OUT_ABC);
+    OFF(OUT_BC)
+}
+
+void atras(int vel, int ms)
+{
+    OnRev(OUT_A,  vel);
+    OnFwd(OUT_B,  vel);
+    OnRev(OUT_C,  vel);
+    Wait(ms);
+    Off(OUT_ABC);
+}
+
+void derecha(int vel, int ms)
+{
+    OnFwd(OUT_A,  vel);
+    OnFwd(OUT_B,  vel);
+    OnRev(OUT_C,  vel);
+    Wait(ms);
+    Off(OUT_ABC);
+}
+
+void izquierda(int vel, int ms)
+{
+    OnRev(OUT_A,  vel);
+    OnRev(OUT_B,  vel);
+    OnFwd(OUT_C,  vel);
+    Wait(ms);
+    Off(OUT_ABC);
+}
+
+// -- Giro en su propio eje (opcional, útil para cuadrado con giro) --
+void girar_derecha(int vel, int ms)
+{
+    OnFwd(OUT_A, vel);
+    OnFwd(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+    Off(OUT_ABC);
+}
+
+void girar_izquierda(int vel, int ms)
+{
+    OnRev(OUT_A, vel);
+    OnRev(OUT_B, vel);
+    OnRev(OUT_C, vel);
+    Wait(ms);
+    Off(OUT_ABC);
+}
+
+// -- Cuadrado ------------------------------------------------------
+// Versión A: desplazamiento lateral puro (robot NO gira, usa strafe)
+void cuadrado_strafe()
+{
+    int i;
+    for (i = 0; i < 4; i++)
+    {
+        adelante(VEL, T_LADO);   // Lado 1: avanza
+        Wait(100);
+        //derecha(VEL, T_LADO);    // Lado 2: desplaza derecha
+        //Wait(200);
+        //atras(VEL, T_LADO);      // Lado 3: retrocede
+        //Wait(200);
+        izquierda(VEL, T_LADO);  // Lado 4: desplaza izquierda
+        //Wait(200);
+        // Un ciclo completo ya trazó el cuadrado; sal del bucle
+        break;
+    }
+}
+
+// Versión B: avanza y gira (robot rota 90° en cada esquina)
+//void cuadrado_giro()
+//{
+   // int i;
+    //for (i = 0; i < 4; i++)
+    //{
+       // adelante(VEL, T_LADO);
+        //Wait(200);
+        //girar_derecha(VEL, T_GIRO);  // Gira 90° sobre el eje
+        //Wait(200);
+    //}
+//}
+
+// -- Programa principal --------------------------------------------
+task main()
+{
+    // Espera pulsación del botón naranja antes de arrancar
+    until(ButtonPressed(BTNCENTER, false));
+    Wait(500);
+
+    // Elige qué versión de cuadrado ejecutar:
+    cuadrado_strafe();   // Cuadrado sin girar (omnidireccional puro)
+    // cuadrado_giro();  // Cuadrado girando en esquinas
+
+    PlayTone(880, 400);  // Pitido al terminar
+}

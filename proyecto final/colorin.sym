@@ -1,0 +1,511 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0SetSensorLight_inline_colorin	6	1	0	4	3
+1	__D0garra	6	1	4	4	19
+2	__D0SetSensorLight_inline_garra	6	1	8	4	3
+3	__DU0SetSensorLight_inline_colorin	5	1	12	4	2
+4	__D0colorin	6	1	16	4	7
+5	__ResetSensorMutex	9	0	20	4	4
+6	__rotate_theAngle1	5	1	24	4	2
+7	__D0cerrar	6	1	28	4	2
+8	__D0abrir	6	1	32	4	2
+9	__DU0SetSensorLight_inline_garra	5	1	36	4	2
+10	__signed_stack_002garra	6	1	40	4	4
+11	__signed_stack_001garra	6	1	44	4	10
+12	__Wait_7qG2_ms_7qG2_000_inline_garra	5	1	48	4	2
+13	__Wait_7qG2_ms_7qG2_000_inline_colorin	5	1	52	4	4
+14	__signed_stack_003colorin	6	1	56	4	2
+15	__signed_stack_001cerrar	6	1	60	4	2
+16	__signed_stack_001abrir	6	1	64	4	2
+17	__signed_stack_002colorin	6	1	68	4	4
+18	__signed_stack_001colorin	6	1	72	4	6
+19	__rotateMutex1	9	0	76	4	4
+20	__rotate_angle1	6	1	80	4	6
+21	__garra_7qG2_val_7qG2_000	4	1	84	2	3
+22	__rotate_RotCount1	4	1	86	2	4
+23	__colorin_7qG2_k_7qG2_000	4	1	88	2	4
+24	__colorin_7qG2_val_7qG2_000	4	1	90	2	3
+25	__rotate_OldRotCount1	4	1	92	2	2
+26	__garra_7qG2_cont_7qG2_000	4	1	94	2	8
+27	__SetSensorLight_7qG2_port_7qG2_000_inline_colorin	1	1	96	1	4
+28	__colorin_return	1	1	97	1	4
+29	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_colorin	1	1	98	1	2
+30	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_colorin	1	1	99	1	2
+31	__SetSensorLight_7qG2_bActive_7qG2_000_inline_colorin	1	1	100	1	2
+32	__constValNeg65	2	0	101	1	1
+33	__cerrar_return	1	1	102	1	3
+34	____initialize_global_data_return	1	1	103	1	3
+35	__colorin_7qG2_puerto_7qG2_000	1	1	104	1	3
+36	__abrir_return	1	1	105	1	3
+37	__constVal96	2	0	106	1	2
+38	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_colorin	1	1	107	1	2
+39	__SetSensorLight_7qG2_port_7qG2_000_inline_garra	1	1	108	1	4
+40	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_garra	1	1	109	1	2
+41	__SetSensorLight_7qG2_bActive_7qG2_000_inline_garra	1	1	110	1	2
+42	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_garra	1	1	111	1	2
+43	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_garra	1	1	112	1	2
+44	__garra_return	1	1	113	1	3
+45	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_colorin	1	1	114	1	2
+46	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_colorin	1	1	115	1	2
+47	__rotate_power1	1	1	116	1	5
+48	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_garra	1	1	117	1	2
+49	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_garra	1	1	118	1	2
+50	__rotate_firstPort1	1	1	119	1	5
+51	__rotate_rs1	1	1	120	1	2
+52	__PFTmp	1	1	121	1	1
+53	____ResetSensorSubroutine_return	1	1	122	1	4
+54	__zfcolorin	1	1	123	1	3
+55	__constVal32	2	0	124	1	5
+56	__rotate_theRVD1	1	1	125	1	3
+57	__ResetSensorTmp	1	1	126	1	2
+58	__constVal50	2	0	127	1	1
+59	__constVal0	2	1	128	1	9
+60	__constVal1	2	0	129	1	12
+61	__ResetSensorPort	1	1	130	1	4
+62	____RotateMotor1_sign_tmp	2	1	131	1	4
+63	____RotateMotor1_return	1	1	132	1	4
+64	__rotate_theTurnPct1	2	1	133	1	4
+65	__rotate_theUF1	1	1	134	1	6
+66	__zfSetSensorLight_inline_garra	1	1	135	1	2
+67	__rotate_theOM1	1	1	136	1	7
+68	__rotate_turnpct1	2	1	137	1	4
+69	__rotate_thePower1	2	1	138	1	4
+70	__rotate_sync1	1	1	139	1	3
+71	__rotate_stop1	1	1	140	1	3
+72	__rotate_theRVP1	1	1	141	1	3
+73	__zfgarra	1	1	142	1	17
+74	__rotate_theRVI1	1	1	143	1	3
+75	__rotate_theRS1	1	1	144	1	3
+76	__rotate_theRM1	1	1	145	1	4
+77	__zfSetSensorLight_inline_colorin	1	1	146	1	2
+78	__TextOutArgs	8	0	4	16	10
+79	__TextOutArgs.Result	2	1	148	1	10
+80	__TextOutArgs.Location	8	0	2	4	10
+81	__TextOutArgs.Location.X	4	1	152	2	10
+82	__TextOutArgs.Location.Y	4	1	154	2	10
+83	__TextOutArgs.Text	7	0	156	4	10
+84	__TextOutArgs.Text.Text_type	1	0	0	1	0
+85	__TextOutArgs.Options	5	1	160	4	10
+86	__rotate_ports1	7	0	164	4	7
+87	__rotate_ports1.__rotate_ports1_type	1	0	0	1	0
+88	__strbufcolorin	7	0	166	4	2
+89	__strbufcolorin.__strbufcolorin_type	1	0	0	1	0
+90	__constStr0009	7	0	168	4	1
+91	__constStr0009.__constStr0009_type	1	1	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	60	0	#line 60 "E:\proyecto final\colorin.nxc"
+0	61	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	60	2	#line 60 "E:\proyecto final\colorin.nxc"
+0	61	2	#line 61 "E:\proyecto final\colorin.nxc"
+0	62	2		subcall garra, __garra_return
+0	61	4	#line 61 "E:\proyecto final\colorin.nxc"
+0	62	4		exit -1, -1
+1	4529	0		brtst 4, __rotate_Done1, __rotate_angle1
+1	4530	3		set ____RotateMotor1_sign_tmp, 0
+1	4530	6		brtst EQ, __sign_1, __rotate_angle1
+1	4530	9		set ____RotateMotor1_sign_tmp, -1
+1	4530	12		brtst LT, __sign_1, __rotate_angle1
+1	4530	15		set ____RotateMotor1_sign_tmp, 1
+1	4530	18	__sign_1:	mov __rotate_thePower1, ____RotateMotor1_sign_tmp
+1	4531	20		abs __rotate_theAngle1, __rotate_angle1
+1	4532	23		mul __rotate_thePower1, __rotate_thePower1, __rotate_power1
+1	4534	27		set __rotate_theUF1, 23
+1	4535	30		brtst 4, __rotate_NoSync1, __rotate_sync1
+1	4536	33		set __rotate_theOM1, 7
+1	4537	36		set __rotate_theRM1, 2
+1	4538	39		mov __rotate_theTurnPct1, __rotate_turnpct1
+1	4539	41		brtst 4, __rotate_Start1, __rotate_theTurnPct1
+1	4540	44		add __rotate_theUF1, __rotate_theUF1, __constVal32
+1	4541	48		jmp __rotate_Start1
+1	4543	50		set __rotate_theOM1, 3
+1	4544	53		set __rotate_theRM1, 0
+1	4545	56		set __rotate_theTurnPct1, 0
+1	4547	59		set __rotate_theRS1, 32
+1	4548	62		setout __rotate_ports1, 1, __rotate_theOM1, 8, __rotate_theRM1, 5, __rotate_theAngle1, 6, __rotate_theRS1, 10, __rotate_theRVP1, 11, __rotate_theRVI1, 12, __rotate_theRVD1, 2, __rotate_thePower1, 7, __rotate_turnpct1, 0, __rotate_theUF1
+1	4551	85		index __rotate_firstPort1, __rotate_ports1, 65535
+1	4553	89		getout __rotate_power1, __rotate_firstPort1, 2
+1	4554	93		brtst 4, __rotate_doneRunning1, __rotate_power1
+1	4555	96		getout __rotate_rs1, __rotate_firstPort1, 6
+1	4556	100		brcmp 4, __rotate_Running1, __rotate_rs1, __constVal32
+1	4558	104		brtst 4, __rotate_Reset1, __rotate_stop1
+1	4560	107		set __rotate_theOM1, 7
+1	4561	110		set __rotate_theUF1, 7
+1	4562	113		setout __rotate_ports1, 1, __rotate_theOM1, 8, __constVal1, 6, __rotate_theRS1, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF1
+1	4564	128		getout __rotate_RotCount1, __rotate_firstPort1, 14
+1	4566	132		mov __rotate_OldRotCount1, __rotate_RotCount1
+1	4567	134		wait2 NA, __constVal50
+1	4569	137		getout __rotate_RotCount1, __rotate_firstPort1, 14
+1	4570	141		brcmp 5, __rotate_Stabilize1, __rotate_OldRotCount1, __rotate_RotCount1
+1	4571	145		set __rotate_theOM1, 4
+1	4572	148		setout __rotate_ports1, 8, __rotate_theRM1, 6, __constVal0, 1, __rotate_theOM1, 0, __constVal1
+1	4575	159		brtst 4, __rotate_Done1, __rotate_theTurnPct1
+1	4576	162		setout __rotate_ports1, 0, __constVal32
+1	4578	167		subret ____RotateMotor1_return
+2	4885	0		setin __constVal1, __ResetSensorPort, 5
+2	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+2	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+2	4889	11		subret ____ResetSensorSubroutine_return
+3	11	0	#line 11 "E:\proyecto final\colorin.nxc"
+3	12	0		set __signed_stack_001cerrar, 55
+3	11	3	#line 11 "E:\proyecto final\colorin.nxc"
+3	11	3	#line 11 "E:\proyecto final\colorin.nxc"
+3	12	3		mov __D0cerrar, __constValNeg65
+3	12	5	#line 12 "E:\proyecto final\colorin.nxc"
+3	13	5	#pragma macro 33
+3	13	5		acquire __rotateMutex1
+3	13	6		arrbuild __rotate_ports1, __constVal1
+3	13	10		mov __rotate_power1, __signed_stack_001cerrar
+3	13	12		mov __rotate_angle1, __D0cerrar
+3	13	14		mov __rotate_turnpct1, __constVal0
+3	13	16		mov __rotate_sync1, __constVal0
+3	13	18		mov __rotate_stop1, __constVal1
+3	13	20		mov __rotate_theRVP1, __constVal32
+3	13	22		mov __rotate_theRVI1, __constVal0
+3	13	24		mov __rotate_theRVD1, __constVal96
+3	13	26		subcall __RotateMotor1, ____RotateMotor1_return
+3	13	28		release __rotateMutex1
+3	3823	29	#line 3823 "E:\proyecto final\colorin.nxc"
+3	12	29	#line 12 "E:\proyecto final\colorin.nxc"
+3	14	29	#line 14 "E:\proyecto final\colorin.nxc"
+3	15	29		subret __cerrar_return
+4	16	0	#line 16 "E:\proyecto final\colorin.nxc"
+4	17	0		set __signed_stack_001abrir, 55
+4	16	3	#line 16 "E:\proyecto final\colorin.nxc"
+4	16	3	#line 16 "E:\proyecto final\colorin.nxc"
+4	17	3		set __D0abrir, 65
+4	17	6	#line 17 "E:\proyecto final\colorin.nxc"
+4	18	6	#pragma macro 33
+4	18	6		acquire __rotateMutex1
+4	18	7		arrbuild __rotate_ports1, __constVal1
+4	18	11		mov __rotate_power1, __signed_stack_001abrir
+4	18	13		mov __rotate_angle1, __D0abrir
+4	18	15		mov __rotate_turnpct1, __constVal0
+4	18	17		mov __rotate_sync1, __constVal0
+4	18	19		mov __rotate_stop1, __constVal1
+4	18	21		mov __rotate_theRVP1, __constVal32
+4	18	23		mov __rotate_theRVI1, __constVal0
+4	18	25		mov __rotate_theRVD1, __constVal96
+4	18	27		subcall __RotateMotor1, ____RotateMotor1_return
+4	18	29		release __rotateMutex1
+4	3841	30	#line 3841 "E:\proyecto final\colorin.nxc"
+4	17	30	#line 17 "E:\proyecto final\colorin.nxc"
+4	19	30	#line 19 "E:\proyecto final\colorin.nxc"
+4	20	30		subret __abrir_return
+5	20	0	#line 20 "E:\proyecto final\colorin.nxc"
+5	21	0		mov __SetSensorLight_7qG2_port_7qG2_000_inline_colorin, __colorin_7qG2_puerto_7qG2_000
+5	20	2	#line 20 "E:\proyecto final\colorin.nxc"
+5	21	2	#line 21 "E:\proyecto final\colorin.nxc"
+5	22	2		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_colorin, __constVal1
+5	3729	4	#line 3729 "NXCDefs.h"
+5	3730	4		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_colorin, __SetSensorLight_7qG2_port_7qG2_000_inline_colorin
+5	3729	6	#line 3729 "NXCDefs.h"
+5	3729	6	#line 3729 "NXCDefs.h"
+5	3730	6		mov __DU0SetSensorLight_inline_colorin, __SetSensorLight_7qG2_bActive_7qG2_000_inline_colorin
+5	3729	8	#line 3729 "NXCDefs.h"
+5	3730	8		tst 5, __zfSetSensorLight_inline_colorin, __DU0SetSensorLight_inline_colorin
+5	3729	11	#line 3729 "NXCDefs.h"
+5	3730	11		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_colorin
+5	3729	14	#line 3729 "NXCDefs.h"
+5	3730	14		set __D0SetSensorLight_inline_colorin, 5
+5	3729	17	#line 3729 "NXCDefs.h"
+5	3730	17		jmp __001__NXC_Label_5
+5	3729	19	#line 3729 "NXCDefs.h"
+5	3730	19		set __D0SetSensorLight_inline_colorin, 6
+5	3729	22	#line 3729 "NXCDefs.h"
+5	3730	22		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_colorin, __D0SetSensorLight_inline_colorin
+5	3663	24	#line 3663 "NXCDefs.h"
+5	3664	24		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_colorin, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_colorin, 0
+5	3663	28	#line 3663 "NXCDefs.h"
+5	3730	28	#line 3730 "NXCDefs.h"
+5	3730	28	#line 3730 "NXCDefs.h"
+5	3731	28		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_colorin, __SetSensorLight_7qG2_port_7qG2_000_inline_colorin
+5	3730	30	#line 3730 "NXCDefs.h"
+5	3730	30	#line 3730 "NXCDefs.h"
+5	3731	30		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_colorin, 128
+5	3730	33	#line 3730 "NXCDefs.h"
+5	3676	33	#line 3676 "NXCDefs.h"
+5	3677	33		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_colorin, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_colorin, 1
+5	3676	37	#line 3676 "NXCDefs.h"
+5	3731	37	#line 3731 "NXCDefs.h"
+5	3731	37	#line 3731 "NXCDefs.h"
+5	3732	37		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_colorin, __SetSensorLight_7qG2_port_7qG2_000_inline_colorin
+5	3731	39	#line 3731 "NXCDefs.h"
+5	3694	39	#line 3694 "NXCDefs.h"
+5	3695	39	#pragma macro 4
+5	3695	39		acquire __ResetSensorMutex
+5	3695	40		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_colorin
+5	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+5	3695	44		release __ResetSensorMutex
+5	3943	45	#line 3943 "NXCDefs.h"
+5	3694	45	#line 3694 "NXCDefs.h"
+5	3732	45	#line 3732 "NXCDefs.h"
+5	21	45	#line 21 "E:\proyecto final\colorin.nxc"
+5	21	45	#line 21 "E:\proyecto final\colorin.nxc"
+5	22	45		set __signed_stack_001colorin, 0
+5	21	48	#line 21 "E:\proyecto final\colorin.nxc"
+5	21	48	#line 21 "E:\proyecto final\colorin.nxc"
+5	22	48		set __signed_stack_002colorin, 56
+5	21	51	#line 21 "E:\proyecto final\colorin.nxc"
+5	21	51	#line 21 "E:\proyecto final\colorin.nxc"
+5	22	51		strcat __strbufcolorin, __constStr0009
+5	22	55	#line 22 "E:\proyecto final\colorin.nxc"
+5	22	55	#line 22 "E:\proyecto final\colorin.nxc"
+5	23	55		mov __TextOutArgs.Location.X, __signed_stack_001colorin
+5	22	57	#line 22 "E:\proyecto final\colorin.nxc"
+5	23	57		mov __TextOutArgs.Location.Y, __signed_stack_002colorin
+5	22	59	#line 22 "E:\proyecto final\colorin.nxc"
+5	23	59		set __TextOutArgs.Options, 0
+5	22	62	#line 22 "E:\proyecto final\colorin.nxc"
+5	23	62		mov __TextOutArgs.Text, __strbufcolorin
+5	22	64	#line 22 "E:\proyecto final\colorin.nxc"
+5	23	64		syscall 13, __TextOutArgs
+5	22	67	#line 22 "E:\proyecto final\colorin.nxc"
+5	22	67	#line 22 "E:\proyecto final\colorin.nxc"
+5	22	67	#line 22 "E:\proyecto final\colorin.nxc"
+5	22	67	#line 22 "E:\proyecto final\colorin.nxc"
+5	23	67		set __Wait_7qG2_ms_7qG2_000_inline_colorin, 2000
+5	22	70	#line 22 "E:\proyecto final\colorin.nxc"
+5	7921	70	#line 7921 "NXCDefs.h"
+5	7922	70		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_colorin
+5	7921	73	#line 7921 "NXCDefs.h"
+5	23	73	#line 23 "E:\proyecto final\colorin.nxc"
+5	26	73	#line 26 "E:\proyecto final\colorin.nxc"
+5	27	73		set __colorin_7qG2_k_7qG2_000, 1
+5	26	76	#line 26 "E:\proyecto final\colorin.nxc"
+5	26	76	#line 26 "E:\proyecto final\colorin.nxc"
+5	27	76		mov __signed_stack_001colorin, __colorin_7qG2_k_7qG2_000
+5	26	78	#line 26 "E:\proyecto final\colorin.nxc"
+5	26	78	#line 26 "E:\proyecto final\colorin.nxc"
+5	27	78		set __D0colorin, 100
+5	26	81	#line 26 "E:\proyecto final\colorin.nxc"
+5	27	81		cmp 0, __zfcolorin, __signed_stack_001colorin, __D0colorin
+5	26	85	#line 26 "E:\proyecto final\colorin.nxc"
+5	27	85		mov __D0colorin, __zfcolorin
+5	27	87	#line 27 "E:\proyecto final\colorin.nxc"
+5	28	87		brtst 4, __NXC_Label_508, __zfcolorin
+5	27	90	#line 27 "E:\proyecto final\colorin.nxc"
+5	28	90		getin __colorin_7qG2_val_7qG2_000, __colorin_7qG2_puerto_7qG2_000, 4
+5	27	94	#line 27 "E:\proyecto final\colorin.nxc"
+5	27	94	#line 27 "E:\proyecto final\colorin.nxc"
+5	27	94	#line 27 "E:\proyecto final\colorin.nxc"
+5	28	94	#line 28 "E:\proyecto final\colorin.nxc"
+5	29	94		set __signed_stack_001colorin, 0
+5	28	97	#line 28 "E:\proyecto final\colorin.nxc"
+5	28	97	#line 28 "E:\proyecto final\colorin.nxc"
+5	29	97		set __signed_stack_002colorin, 40
+5	28	100	#line 28 "E:\proyecto final\colorin.nxc"
+5	28	100	#line 28 "E:\proyecto final\colorin.nxc"
+5	29	100		mov __signed_stack_003colorin, __colorin_7qG2_val_7qG2_000
+5	28	102	#line 28 "E:\proyecto final\colorin.nxc"
+5	28	102	#line 28 "E:\proyecto final\colorin.nxc"
+5	29	102		set __D0colorin, 1
+5	29	105	#line 29 "E:\proyecto final\colorin.nxc"
+5	29	105	#line 29 "E:\proyecto final\colorin.nxc"
+5	30	105		mov __TextOutArgs.Location.X, __signed_stack_001colorin
+5	29	107	#line 29 "E:\proyecto final\colorin.nxc"
+5	30	107		mov __TextOutArgs.Location.Y, __signed_stack_002colorin
+5	29	109	#line 29 "E:\proyecto final\colorin.nxc"
+5	30	109		mov __TextOutArgs.Options, __D0colorin
+5	29	111	#line 29 "E:\proyecto final\colorin.nxc"
+5	30	111		numtostr __TextOutArgs.Text, __signed_stack_003colorin
+5	29	114	#line 29 "E:\proyecto final\colorin.nxc"
+5	30	114		syscall 13, __TextOutArgs
+5	29	117	#line 29 "E:\proyecto final\colorin.nxc"
+5	29	117	#line 29 "E:\proyecto final\colorin.nxc"
+5	29	117	#line 29 "E:\proyecto final\colorin.nxc"
+5	29	117	#line 29 "E:\proyecto final\colorin.nxc"
+5	30	117		set __Wait_7qG2_ms_7qG2_000_inline_colorin, 200
+5	29	120	#line 29 "E:\proyecto final\colorin.nxc"
+5	7921	120	#line 7921 "NXCDefs.h"
+5	7922	120		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_colorin
+5	7921	123	#line 7921 "NXCDefs.h"
+5	30	123	#line 30 "E:\proyecto final\colorin.nxc"
+5	30	123	#line 30 "E:\proyecto final\colorin.nxc"
+5	30	123	#line 30 "E:\proyecto final\colorin.nxc"
+5	31	123	#line 31 "E:\proyecto final\colorin.nxc"
+5	31	123	#line 31 "E:\proyecto final\colorin.nxc"
+5	32	123		add __colorin_7qG2_k_7qG2_000, __colorin_7qG2_k_7qG2_000, __constVal1
+5	31	127	#line 31 "E:\proyecto final\colorin.nxc"
+5	31	127	#line 31 "E:\proyecto final\colorin.nxc"
+5	32	127	#line 32 "E:\proyecto final\colorin.nxc"
+5	33	127		jmp __NXC_Label_507
+5	32	129	#line 32 "E:\proyecto final\colorin.nxc"
+5	33	129	#line 33 "E:\proyecto final\colorin.nxc"
+5	34	129		mov __D0colorin, __colorin_7qG2_val_7qG2_000
+5	33	131	#line 33 "E:\proyecto final\colorin.nxc"
+5	34	131		subret __colorin_return
+5	33	133	#line 33 "E:\proyecto final\colorin.nxc"
+5	37	133	#line 37 "E:\proyecto final\colorin.nxc"
+5	38	133		subret __colorin_return
+6	40	0	#line 40 "E:\proyecto final\colorin.nxc"
+6	41	0		set __SetSensorLight_7qG2_port_7qG2_000_inline_garra, 3
+6	40	3	#line 40 "E:\proyecto final\colorin.nxc"
+6	41	3	#line 41 "E:\proyecto final\colorin.nxc"
+6	42	3		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_garra, __constVal1
+6	3729	5	#line 3729 "NXCDefs.h"
+6	3730	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_garra, __SetSensorLight_7qG2_port_7qG2_000_inline_garra
+6	3729	7	#line 3729 "NXCDefs.h"
+6	3729	7	#line 3729 "NXCDefs.h"
+6	3730	7		mov __DU0SetSensorLight_inline_garra, __SetSensorLight_7qG2_bActive_7qG2_000_inline_garra
+6	3729	9	#line 3729 "NXCDefs.h"
+6	3730	9		tst 5, __zfSetSensorLight_inline_garra, __DU0SetSensorLight_inline_garra
+6	3729	12	#line 3729 "NXCDefs.h"
+6	3730	12		brtst 4, __002__NXC_Label_4, __zfSetSensorLight_inline_garra
+6	3729	15	#line 3729 "NXCDefs.h"
+6	3730	15		set __D0SetSensorLight_inline_garra, 5
+6	3729	18	#line 3729 "NXCDefs.h"
+6	3730	18		jmp __002__NXC_Label_5
+6	3729	20	#line 3729 "NXCDefs.h"
+6	3730	20		set __D0SetSensorLight_inline_garra, 6
+6	3729	23	#line 3729 "NXCDefs.h"
+6	3730	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_garra, __D0SetSensorLight_inline_garra
+6	3663	25	#line 3663 "NXCDefs.h"
+6	3664	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_garra, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_garra, 0
+6	3663	29	#line 3663 "NXCDefs.h"
+6	3730	29	#line 3730 "NXCDefs.h"
+6	3730	29	#line 3730 "NXCDefs.h"
+6	3731	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_garra, __SetSensorLight_7qG2_port_7qG2_000_inline_garra
+6	3730	31	#line 3730 "NXCDefs.h"
+6	3730	31	#line 3730 "NXCDefs.h"
+6	3731	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_garra, 128
+6	3730	34	#line 3730 "NXCDefs.h"
+6	3676	34	#line 3676 "NXCDefs.h"
+6	3677	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_garra, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_garra, 1
+6	3676	38	#line 3676 "NXCDefs.h"
+6	3731	38	#line 3731 "NXCDefs.h"
+6	3731	38	#line 3731 "NXCDefs.h"
+6	3732	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_garra, __SetSensorLight_7qG2_port_7qG2_000_inline_garra
+6	3731	40	#line 3731 "NXCDefs.h"
+6	3694	40	#line 3694 "NXCDefs.h"
+6	3695	40	#pragma macro 4
+6	3695	40		acquire __ResetSensorMutex
+6	3695	41		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_garra
+6	3695	43		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+6	3695	45		release __ResetSensorMutex
+6	4202	46	#line 4202 "NXCDefs.h"
+6	3694	46	#line 3694 "NXCDefs.h"
+6	3732	46	#line 3732 "NXCDefs.h"
+6	41	46	#line 41 "E:\proyecto final\colorin.nxc"
+6	41	46	#line 41 "E:\proyecto final\colorin.nxc"
+6	42	46		set __colorin_7qG2_puerto_7qG2_000, 3
+6	41	49	#line 41 "E:\proyecto final\colorin.nxc"
+6	42	49	#line 42 "E:\proyecto final\colorin.nxc"
+6	43	49		subcall colorin, __colorin_return
+6	42	51	#line 42 "E:\proyecto final\colorin.nxc"
+6	43	51		mov __garra_7qG2_val_7qG2_000, __D0colorin
+6	42	53	#line 42 "E:\proyecto final\colorin.nxc"
+6	42	53	#line 42 "E:\proyecto final\colorin.nxc"
+6	44	53	#line 44 "E:\proyecto final\colorin.nxc"
+6	45	53		set __garra_7qG2_cont_7qG2_000, 33
+6	44	56	#line 44 "E:\proyecto final\colorin.nxc"
+6	44	56	#line 44 "E:\proyecto final\colorin.nxc"
+6	45	56		mov __signed_stack_001garra, __garra_7qG2_val_7qG2_000
+6	44	58	#line 44 "E:\proyecto final\colorin.nxc"
+6	44	58	#line 44 "E:\proyecto final\colorin.nxc"
+6	45	58		set __D0garra, 26
+6	44	61	#line 44 "E:\proyecto final\colorin.nxc"
+6	45	61		cmp 0, __zfgarra, __signed_stack_001garra, __D0garra
+6	44	65	#line 44 "E:\proyecto final\colorin.nxc"
+6	45	65		mov __D0garra, __zfgarra
+6	44	67	#line 44 "E:\proyecto final\colorin.nxc"
+6	45	67		brtst 5, __NXC_Label_535, __zfgarra
+6	44	70	#line 44 "E:\proyecto final\colorin.nxc"
+6	45	70		mov __signed_stack_001garra, __D0garra
+6	44	72	#line 44 "E:\proyecto final\colorin.nxc"
+6	45	72		mov __signed_stack_002garra, __garra_7qG2_val_7qG2_000
+6	44	74	#line 44 "E:\proyecto final\colorin.nxc"
+6	44	74	#line 44 "E:\proyecto final\colorin.nxc"
+6	45	74		set __D0garra, 40
+6	44	77	#line 44 "E:\proyecto final\colorin.nxc"
+6	45	77		cmp 1, __zfgarra, __signed_stack_002garra, __D0garra
+6	44	81	#line 44 "E:\proyecto final\colorin.nxc"
+6	44	81	#line 44 "E:\proyecto final\colorin.nxc"
+6	45	81		or __D0garra, __signed_stack_001garra, __zfgarra
+6	45	85	#line 45 "E:\proyecto final\colorin.nxc"
+6	46	85		tst 5, __zfgarra, __D0garra
+6	45	88	#line 45 "E:\proyecto final\colorin.nxc"
+6	46	88		brtst 4, __NXC_Label_538, __zfgarra
+6	45	91	#line 45 "E:\proyecto final\colorin.nxc"
+6	46	91		mov __signed_stack_001garra, __garra_7qG2_cont_7qG2_000
+6	45	93	#line 45 "E:\proyecto final\colorin.nxc"
+6	45	93	#line 45 "E:\proyecto final\colorin.nxc"
+6	46	93		set __D0garra, 0
+6	45	96	#line 45 "E:\proyecto final\colorin.nxc"
+6	46	96		cmp 3, __zfgarra, __signed_stack_001garra, __D0garra
+6	45	100	#line 45 "E:\proyecto final\colorin.nxc"
+6	46	100		mov __D0garra, __zfgarra
+6	45	102	#line 45 "E:\proyecto final\colorin.nxc"
+6	46	102		brtst 4, __NXC_Label_542, __zfgarra
+6	45	105	#line 45 "E:\proyecto final\colorin.nxc"
+6	46	105		mov __signed_stack_001garra, __D0garra
+6	45	107	#line 45 "E:\proyecto final\colorin.nxc"
+6	46	107		mov __signed_stack_002garra, __garra_7qG2_cont_7qG2_000
+6	45	109	#line 45 "E:\proyecto final\colorin.nxc"
+6	45	109	#line 45 "E:\proyecto final\colorin.nxc"
+6	46	109		set __D0garra, 33
+6	45	112	#line 45 "E:\proyecto final\colorin.nxc"
+6	46	112		cmp 2, __zfgarra, __signed_stack_002garra, __D0garra
+6	45	116	#line 45 "E:\proyecto final\colorin.nxc"
+6	45	116	#line 45 "E:\proyecto final\colorin.nxc"
+6	46	116		and __D0garra, __signed_stack_001garra, __zfgarra
+6	46	120	#line 46 "E:\proyecto final\colorin.nxc"
+6	47	120		tst 5, __zfgarra, __D0garra
+6	46	123	#line 46 "E:\proyecto final\colorin.nxc"
+6	47	123		brtst 4, __NXC_Label_540, __zfgarra
+6	47	126	#line 47 "E:\proyecto final\colorin.nxc"
+6	48	126		subcall cerrar, __cerrar_return
+6	47	128	#line 47 "E:\proyecto final\colorin.nxc"
+6	47	128	#line 47 "E:\proyecto final\colorin.nxc"
+6	47	128	#line 47 "E:\proyecto final\colorin.nxc"
+6	48	128	#line 48 "E:\proyecto final\colorin.nxc"
+6	48	128	#line 48 "E:\proyecto final\colorin.nxc"
+6	49	128		sub __garra_7qG2_cont_7qG2_000, __garra_7qG2_cont_7qG2_000, __constVal1
+6	48	132	#line 48 "E:\proyecto final\colorin.nxc"
+6	48	132	#line 48 "E:\proyecto final\colorin.nxc"
+6	49	132	#line 49 "E:\proyecto final\colorin.nxc"
+6	50	132		jmp __NXC_Label_539
+6	49	134	#line 49 "E:\proyecto final\colorin.nxc"
+6	49	134	#line 49 "E:\proyecto final\colorin.nxc"
+6	50	134		set __Wait_7qG2_ms_7qG2_000_inline_garra, 2000
+6	49	137	#line 49 "E:\proyecto final\colorin.nxc"
+6	7921	137	#line 7921 "NXCDefs.h"
+6	7922	137		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_garra
+6	7921	140	#line 7921 "NXCDefs.h"
+6	51	140	#line 51 "E:\proyecto final\colorin.nxc"
+6	51	140	#line 51 "E:\proyecto final\colorin.nxc"
+6	52	140		mov __signed_stack_001garra, __garra_7qG2_cont_7qG2_000
+6	51	142	#line 51 "E:\proyecto final\colorin.nxc"
+6	51	142	#line 51 "E:\proyecto final\colorin.nxc"
+6	52	142		set __D0garra, 33
+6	51	145	#line 51 "E:\proyecto final\colorin.nxc"
+6	52	145		cmp 2, __zfgarra, __signed_stack_001garra, __D0garra
+6	51	149	#line 51 "E:\proyecto final\colorin.nxc"
+6	52	149		mov __D0garra, __zfgarra
+6	52	151	#line 52 "E:\proyecto final\colorin.nxc"
+6	53	151		brtst 4, __NXC_Label_548, __zfgarra
+6	53	154	#line 53 "E:\proyecto final\colorin.nxc"
+6	54	154		subcall abrir, __abrir_return
+6	53	156	#line 53 "E:\proyecto final\colorin.nxc"
+6	54	156	#line 54 "E:\proyecto final\colorin.nxc"
+6	54	156	#line 54 "E:\proyecto final\colorin.nxc"
+6	55	156		add __garra_7qG2_cont_7qG2_000, __garra_7qG2_cont_7qG2_000, __constVal1
+6	54	160	#line 54 "E:\proyecto final\colorin.nxc"
+6	56	160	#line 56 "E:\proyecto final\colorin.nxc"
+6	57	160		jmp __NXC_Label_547
+6	56	162	#line 56 "E:\proyecto final\colorin.nxc"
+6	58	162	#line 58 "E:\proyecto final\colorin.nxc"
+6	58	162	#line 58 "E:\proyecto final\colorin.nxc"
+6	59	162		subret __garra_return
+7	64	0	#line 64 "E:\proyecto final\colorin.nxc"
+7	65	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	E:\proyecto final\colorin.nxc
+1	__RotateMotor1	7	NXTDefs.h
+2	__ResetSensorSubroutine	176	NXTDefs.h
+3	cerrar	189	E:\proyecto final\colorin.nxc
+4	abrir	220	E:\proyecto final\colorin.nxc
+5	colorin	252	E:\proyecto final\colorin.nxc
+6	garra	387	E:\proyecto final\colorin.nxc
+7	__initialize_global_data	551	E:\proyecto final\colorin.nxc

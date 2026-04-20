@@ -1,0 +1,1994 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0SetSensorLight_inline_main	6	1	0	4	9
+1	__DU0SetSensorLight_inline_main	5	1	4	4	6
+2	__D0main	6	1	8	4	7
+3	__DU0main	5	1	12	4	2
+4	__D0SetSensorLowspeed_inline_main	6	1	16	4	3
+5	__signed_stack_002avanzar_hasta_linea	6	1	20	4	36
+6	__signed_stack_003avanzar_hasta_linea	6	1	24	4	6
+7	__DU0SetSensorLowspeed_inline_main	5	1	28	4	2
+8	__signed_stack_001avanzar_hasta_linea	6	1	32	4	42
+9	__D0izquierda	6	1	36	4	6
+10	__D0corregir_en_linea	6	1	40	4	16
+11	__DU0corregir_en_linea	5	1	44	4	12
+12	__D0corregir_busqueda	6	1	48	4	12
+13	__DU0corregir_busqueda	5	1	52	4	8
+14	__D0derecha	6	1	56	4	6
+15	__D0girar_eje	6	1	60	4	6
+16	__D0girar_eje_anti	6	1	64	4	6
+17	__D0detectar_cruce	6	1	68	4	18
+18	__DU0detectar_cruce	5	1	72	4	3
+19	__Wait_7qG2_ms_7qG2_000_inline_izquierda	5	1	76	4	2
+20	__Wait_7qG2_ms_7qG2_000_inline_girar_eje	5	1	80	4	2
+21	__Wait_7qG2_ms_7qG2_000_inline_adelante	5	1	84	4	2
+22	__Wait_7qG2_ms_7qG2_000_inline_derecha	5	1	88	4	2
+23	__Wait_7qG2_ms_7qG2_000_inline_girar_eje_anti	5	1	92	4	2
+24	__Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea	5	1	96	4	10
+25	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	100	4	4
+26	__Wait_7qG2_ms_7qG2_000_inline_parar	5	1	104	4	2
+27	__detectar_cruce_7qG2_ahora_7qG2_001	6	1	108	4	3
+28	ultimo_cruce	6	1	112	4	4
+29	__signed_stack_001derecha	6	1	116	4	2
+30	__signed_stack_001detectar_cruce	6	1	120	4	12
+31	__signed_stack_001corregir_busqueda	6	1	124	4	8
+32	__signed_stack_001corregir_en_linea	6	1	128	4	10
+33	__signed_stack_002detectar_cruce	6	1	132	4	8
+34	__signed_stack_001main	6	1	136	4	10
+35	__signed_stack_002main	6	1	140	4	10
+36	__signed_stack_003detectar_cruce	6	1	144	4	2
+37	__signed_stack_001izquierda	6	1	148	4	2
+38	__SPTArgsMutex	9	0	152	4	8
+39	__TextOutMutex	9	0	156	4	42
+40	__RLSBmutex3	9	0	160	4	2
+41	__OnRevMutex	9	0	164	4	14
+42	__PointOutMutex	9	0	168	4	16
+43	__D0adelante	6	1	172	4	4
+44	__CLSCSMutex3	9	0	176	4	2
+45	__CLSWMutex3	9	0	180	4	2
+46	__DU0avanzar_hasta_linea	5	1	184	4	5
+47	__D0avanzar_hasta_linea	6	1	188	4	49
+48	__CLSRMutex3	9	0	192	4	2
+49	__izquierda_7qG2_vel_7qG2_000	4	1	196	2	4
+50	__izquierda_7qG2_ms_7qG2_000	4	1	198	2	2
+51	__girar_eje_7qG2_vel_7qG2_000	4	1	200	2	5
+52	__derecha_7qG2_ms_7qG2_000	4	1	202	2	2
+53	__adelante_7qG2_vel_7qG2_000	4	1	204	2	5
+54	lineas_cruzadas	4	1	206	2	10
+55	__derecha_7qG2_vel_7qG2_000	4	1	208	2	4
+56	__adelante_7qG2_ms_7qG2_000	4	1	210	2	4
+57	__girar_eje_7qG2_ms_7qG2_000	4	1	212	2	3
+58	__corregir_en_linea_7qG2_fl_7qG2_000	4	1	214	2	2
+59	__corregir_busqueda_7qG2_tl_7qG2_000	4	1	216	2	2
+60	__corregir_busqueda_7qG2_fl_7qG2_000	4	1	218	2	2
+61	__corregir_en_linea_7qG2_tl_7qG2_000	4	1	220	2	2
+62	__avanzar_hasta_linea_7qG2_tl_7qG2_000	4	1	222	2	6
+63	__avanzar_hasta_linea_7qG2_fr_7qG2_000	4	1	224	2	6
+64	__avanzar_hasta_linea_7qG2_fl_7qG2_000	4	1	226	2	8
+65	__leer_sensores_7qG2_fl_7qG2_000	4	1	228	2	5
+66	__girar_eje_anti_7qG2_ms_7qG2_000	4	1	230	2	3
+67	__girar_eje_anti_7qG2_vel_7qG2_000	4	1	232	2	5
+68	__leer_sensores_7qG2_fr_7qG2_000	4	1	234	2	5
+69	__detectar_cruce_7qG2_fr_7qG2_000	4	1	236	2	2
+70	__detectar_cruce_7qG2_fl_7qG2_000	4	1	238	2	2
+71	__leer_sensores_7qG2_tl_7qG2_000	4	1	240	2	5
+72	__constVal200	4	0	242	2	16
+73	__corregir_en_linea_7qG2_fl_negro_7qG2_000	1	1	244	1	5
+74	__zfcorregir_en_linea	1	1	245	1	25
+75	__corregir_en_linea_return	1	1	246	1	3
+76	__zfcorregir_busqueda	1	1	247	1	19
+77	__zfavanzar_hasta_linea	1	1	248	1	19
+78	__corregir_en_linea_7qG2_tl_negro_7qG2_000	1	1	249	1	5
+79	__avanzar_hasta_linea_return	1	1	250	1	5
+80	__detectar_cruce_return	1	1	251	1	5
+81	__PFTmp	1	1	252	1	1
+82	__leer_sensores_return	1	1	253	1	4
+83	__zfdetectar_cruce	1	1	254	1	10
+84	__corregir_busqueda_7qG2_tl_negro_7qG2_000	1	1	255	1	3
+85	__corregir_busqueda_7qG2_fl_negro_7qG2_000	1	1	256	1	5
+86	__corregir_busqueda_return	1	1	257	1	3
+87	__OnRev_Tmp	2	1	258	1	14
+88	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	259	1	2
+89	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	260	1	2
+90	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	261	1	4
+91	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	262	1	2
+92	__main_7qG2_encontro_linea_7qG2_000	1	1	263	1	2
+93	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	264	1	2
+94	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	265	1	2
+95	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	266	1	3
+96	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	267	1	6
+97	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	268	1	15
+98	____initialize_global_data_return	1	1	269	1	3
+99	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	270	1	6
+100	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	271	1	6
+101	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	272	1	6
+102	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	273	1	6
+103	__RLSBIterations3	1	1	274	1	4
+104	__constVal2	2	0	275	1	10
+105	__ResetSensorPort	1	1	276	1	6
+106	__derecha_return	1	1	277	1	3
+107	____ReadLSBytes3_return	1	1	278	1	3
+108	__zfSetSensorLight_inline_main	1	1	279	1	6
+109	__constVal3	2	0	280	1	17
+110	__izquierda_return	1	1	281	1	3
+111	__constVal96	2	0	282	1	15
+112	__adelante_return	1	1	283	1	5
+113	____ResetSensorSubroutine_return	1	1	284	1	6
+114	__constVal63	2	0	285	1	15
+115	__zfSetSensorLowspeed_inline_main	1	1	286	1	2
+116	__constVal15	2	0	287	1	3
+117	__ResetSensorTmp	1	1	288	1	2
+118	__RLSBResult3	2	1	289	1	7
+119	__RLSBytesCount3	1	1	290	1	7
+120	__zfmain	1	1	291	1	2
+121	__constVal32	2	0	292	1	45
+122	__parar_return	1	1	293	1	14
+123	__constVal1	2	0	294	1	21
+124	__girar_eje_anti_return	1	1	295	1	4
+125	__girar_eje_return	1	1	296	1	4
+126	__constVal0	2	1	297	1	52
+127	__CLSRArgs3	8	0	4	12	5
+128	__CLSRArgs3.Result	2	1	300	1	5
+129	__CLSRArgs3.Port	1	1	301	1	5
+130	__CLSRArgs3.Buffer	7	0	302	4	5
+131	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+132	__CLSRArgs3.BufferLen	1	1	304	1	5
+133	__CLSWArgs3	8	0	4	12	5
+134	__CLSWArgs3.Result	2	1	308	1	5
+135	__CLSWArgs3.Port	1	1	309	1	5
+136	__CLSWArgs3.Buffer	7	0	310	4	5
+137	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+138	__CLSWArgs3.ReturnLen	1	1	312	1	5
+139	__SPTArgs	8	0	5	8	24
+140	__SPTArgs.Result	2	1	316	1	24
+141	__SPTArgs.Frequency	3	1	318	2	24
+142	__SPTArgs.Duration	3	1	320	2	24
+143	__SPTArgs.Loop	1	1	322	1	24
+144	__SPTArgs.Volume	1	1	323	1	24
+145	__PointOutArgs	8	0	3	12	32
+146	__PointOutArgs.Result	2	1	324	1	32
+147	__PointOutArgs.Location	8	0	2	4	32
+148	__PointOutArgs.Location.X	4	1	328	2	32
+149	__PointOutArgs.Location.Y	4	1	330	2	32
+150	__PointOutArgs.Options	5	1	332	4	32
+151	__TextOutArgs	8	0	4	16	126
+152	__TextOutArgs.Result	2	1	336	1	126
+153	__TextOutArgs.Location	8	0	2	4	126
+154	__TextOutArgs.Location.X	4	1	340	2	126
+155	__TextOutArgs.Location.Y	4	1	342	2	126
+156	__TextOutArgs.Text	7	0	344	4	126
+157	__TextOutArgs.Text.Text_type	1	0	0	1	0
+158	__TextOutArgs.Options	5	1	348	4	126
+159	__CLSCSArgs3	8	0	3	4	4
+160	__CLSCSArgs3.Result	2	1	352	1	4
+161	__CLSCSArgs3.Port	1	1	353	1	4
+162	__CLSCSArgs3.BytesReady	1	1	354	1	4
+163	__constStr0022	7	0	356	4	1
+164	__constStr0022.__constStr0022_type	1	1	0	1	0
+165	__strbufdetectar_cruce	7	0	358	4	2
+166	__strbufdetectar_cruce.__strbufdetectar_cruce_type	1	0	0	1	0
+167	__OUT_ABC	7	0	360	4	1
+168	__OUT_ABC.__OUT_ABC_type	1	0	0	1	0
+169	__constStr0021	7	0	362	4	1
+170	__constStr0021.__constStr0021_type	1	1	0	1	0
+171	__RLSReadBuf3	7	0	364	4	8
+172	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+173	__RLSBbufLSWrite1	7	0	366	4	1
+174	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+175	__constStr0009	7	0	368	4	1
+176	__constStr0009.__constStr0009_type	1	1	0	1	0
+177	__constStr0011	7	0	370	4	1
+178	__constStr0011.__constStr0011_type	1	1	0	1	0
+179	__constStr0012	7	0	372	4	1
+180	__constStr0012.__constStr0012_type	1	1	0	1	0
+181	__constStr0013	7	0	374	4	1
+182	__constStr0013.__constStr0013_type	1	1	0	1	0
+183	__constStr0010	7	0	376	4	1
+184	__constStr0010.__constStr0010_type	1	1	0	1	0
+185	__RLSLastGoodRead3	7	0	378	4	2
+186	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+187	__strbufmain	7	0	380	4	8
+188	__strbufmain.__strbufmain_type	1	0	0	1	0
+189	__strbufavanzar_hasta_linea	7	0	382	4	22
+190	__strbufavanzar_hasta_linea.__strbufavanzar_hasta_linea_type	1	0	0	1	0
+191	__constStr0018	7	0	384	4	1
+192	__constStr0018.__constStr0018_type	1	1	0	1	0
+193	__constStr0019	7	0	386	4	1
+194	__constStr0019.__constStr0019_type	1	1	0	1	0
+195	__constStr0020	7	0	388	4	2
+196	__constStr0020.__constStr0020_type	1	1	0	1	0
+197	__constStr0017	7	0	390	4	1
+198	__constStr0017.__constStr0017_type	1	1	0	1	0
+199	__constStr0014	7	0	392	4	1
+200	__constStr0014.__constStr0014_type	1	1	0	1	0
+201	__constStr0015	7	0	394	4	1
+202	__constStr0015.__constStr0015_type	1	1	0	1	0
+203	__constStr0016	7	0	396	4	2
+204	__constStr0016.__constStr0016_type	1	1	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	358	0	#line 358 "E:\proyecto final\Movimiento_v5.nxc"
+0	359	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	358	2	#line 358 "E:\proyecto final\Movimiento_v5.nxc"
+0	358	2	#line 358 "E:\proyecto final\Movimiento_v5.nxc"
+0	359	2		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 0
+0	358	5	#line 358 "E:\proyecto final\Movimiento_v5.nxc"
+0	359	5	#line 359 "E:\proyecto final\Movimiento_v5.nxc"
+0	360	5		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	7	#line 3729 "NXCDefs.h"
+0	3730	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	9	#line 3729 "NXCDefs.h"
+0	3729	9	#line 3729 "NXCDefs.h"
+0	3730	9		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	11	#line 3729 "NXCDefs.h"
+0	3730	11		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	14	#line 3729 "NXCDefs.h"
+0	3730	14		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	17	#line 3729 "NXCDefs.h"
+0	3730	17		set __D0SetSensorLight_inline_main, 5
+0	3729	20	#line 3729 "NXCDefs.h"
+0	3730	20		jmp __001__NXC_Label_5
+0	3729	22	#line 3729 "NXCDefs.h"
+0	3730	22		set __D0SetSensorLight_inline_main, 6
+0	3729	25	#line 3729 "NXCDefs.h"
+0	3730	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	27	#line 3663 "NXCDefs.h"
+0	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	31	#line 3663 "NXCDefs.h"
+0	3730	31	#line 3730 "NXCDefs.h"
+0	3730	31	#line 3730 "NXCDefs.h"
+0	3731	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	33	#line 3730 "NXCDefs.h"
+0	3730	33	#line 3730 "NXCDefs.h"
+0	3731	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	36	#line 3730 "NXCDefs.h"
+0	3676	36	#line 3676 "NXCDefs.h"
+0	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	40	#line 3676 "NXCDefs.h"
+0	3731	40	#line 3731 "NXCDefs.h"
+0	3731	40	#line 3731 "NXCDefs.h"
+0	3732	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	42	#line 3731 "NXCDefs.h"
+0	3694	42	#line 3694 "NXCDefs.h"
+0	3695	42	#pragma macro 4
+0	3695	42		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6558	46	#line 6558 "NXCDefs.h"
+0	3694	46	#line 3694 "NXCDefs.h"
+0	3732	46	#line 3732 "NXCDefs.h"
+0	359	46	#line 359 "E:\proyecto final\Movimiento_v5.nxc"
+0	359	46	#line 359 "E:\proyecto final\Movimiento_v5.nxc"
+0	360	46		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	359	49	#line 359 "E:\proyecto final\Movimiento_v5.nxc"
+0	360	49	#line 360 "E:\proyecto final\Movimiento_v5.nxc"
+0	361	49		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	51	#line 3729 "NXCDefs.h"
+0	3730	51		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	53	#line 3729 "NXCDefs.h"
+0	3729	53	#line 3729 "NXCDefs.h"
+0	3730	53		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	55	#line 3729 "NXCDefs.h"
+0	3730	55		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	58	#line 3729 "NXCDefs.h"
+0	3730	58		brtst 4, __002__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	61	#line 3729 "NXCDefs.h"
+0	3730	61		set __D0SetSensorLight_inline_main, 5
+0	3729	64	#line 3729 "NXCDefs.h"
+0	3730	64		jmp __002__NXC_Label_5
+0	3729	66	#line 3729 "NXCDefs.h"
+0	3730	66		set __D0SetSensorLight_inline_main, 6
+0	3729	69	#line 3729 "NXCDefs.h"
+0	3730	69		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	71	#line 3663 "NXCDefs.h"
+0	3664	71		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	75	#line 3663 "NXCDefs.h"
+0	3730	75	#line 3730 "NXCDefs.h"
+0	3730	75	#line 3730 "NXCDefs.h"
+0	3731	75		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	77	#line 3730 "NXCDefs.h"
+0	3730	77	#line 3730 "NXCDefs.h"
+0	3731	77		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	80	#line 3730 "NXCDefs.h"
+0	3676	80	#line 3676 "NXCDefs.h"
+0	3677	80		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	84	#line 3676 "NXCDefs.h"
+0	3731	84	#line 3731 "NXCDefs.h"
+0	3731	84	#line 3731 "NXCDefs.h"
+0	3732	84		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	86	#line 3731 "NXCDefs.h"
+0	3694	86	#line 3694 "NXCDefs.h"
+0	3695	86	#pragma macro 4
+0	3695	86		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	88		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6625	90	#line 6625 "NXCDefs.h"
+0	3694	90	#line 3694 "NXCDefs.h"
+0	3732	90	#line 3732 "NXCDefs.h"
+0	360	90	#line 360 "E:\proyecto final\Movimiento_v5.nxc"
+0	360	90	#line 360 "E:\proyecto final\Movimiento_v5.nxc"
+0	361	90		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 2
+0	360	93	#line 360 "E:\proyecto final\Movimiento_v5.nxc"
+0	361	93	#line 361 "E:\proyecto final\Movimiento_v5.nxc"
+0	362	93		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	95	#line 3729 "NXCDefs.h"
+0	3730	95		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	97	#line 3729 "NXCDefs.h"
+0	3729	97	#line 3729 "NXCDefs.h"
+0	3730	97		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	99	#line 3729 "NXCDefs.h"
+0	3730	99		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	102	#line 3729 "NXCDefs.h"
+0	3730	102		brtst 4, __003__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	105	#line 3729 "NXCDefs.h"
+0	3730	105		set __D0SetSensorLight_inline_main, 5
+0	3729	108	#line 3729 "NXCDefs.h"
+0	3730	108		jmp __003__NXC_Label_5
+0	3729	110	#line 3729 "NXCDefs.h"
+0	3730	110		set __D0SetSensorLight_inline_main, 6
+0	3729	113	#line 3729 "NXCDefs.h"
+0	3730	113		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	115	#line 3663 "NXCDefs.h"
+0	3664	115		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	119	#line 3663 "NXCDefs.h"
+0	3730	119	#line 3730 "NXCDefs.h"
+0	3730	119	#line 3730 "NXCDefs.h"
+0	3731	119		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	121	#line 3730 "NXCDefs.h"
+0	3730	121	#line 3730 "NXCDefs.h"
+0	3731	121		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	124	#line 3730 "NXCDefs.h"
+0	3676	124	#line 3676 "NXCDefs.h"
+0	3677	124		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	128	#line 3676 "NXCDefs.h"
+0	3731	128	#line 3731 "NXCDefs.h"
+0	3731	128	#line 3731 "NXCDefs.h"
+0	3732	128		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	130	#line 3731 "NXCDefs.h"
+0	3694	130	#line 3694 "NXCDefs.h"
+0	3695	130	#pragma macro 4
+0	3695	130		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	132		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6692	134	#line 6692 "NXCDefs.h"
+0	3694	134	#line 3694 "NXCDefs.h"
+0	3732	134	#line 3732 "NXCDefs.h"
+0	361	134	#line 361 "E:\proyecto final\Movimiento_v5.nxc"
+0	361	134	#line 361 "E:\proyecto final\Movimiento_v5.nxc"
+0	362	134		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 3
+0	361	137	#line 361 "E:\proyecto final\Movimiento_v5.nxc"
+0	363	137	#line 363 "E:\proyecto final\Movimiento_v5.nxc"
+0	364	137		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	139	#line 3758 "NXCDefs.h"
+0	3759	139		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	141	#line 3758 "NXCDefs.h"
+0	3758	141	#line 3758 "NXCDefs.h"
+0	3759	141		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	143	#line 3758 "NXCDefs.h"
+0	3759	143		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	146	#line 3758 "NXCDefs.h"
+0	3759	146		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	149	#line 3758 "NXCDefs.h"
+0	3759	149		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	152	#line 3758 "NXCDefs.h"
+0	3759	152		jmp __004__NXC_Label_37
+0	3758	154	#line 3758 "NXCDefs.h"
+0	3759	154		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	157	#line 3758 "NXCDefs.h"
+0	3759	157		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	159	#line 3663 "NXCDefs.h"
+0	3664	159		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	163	#line 3663 "NXCDefs.h"
+0	3759	163	#line 3759 "NXCDefs.h"
+0	3759	163	#line 3759 "NXCDefs.h"
+0	3760	163		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	165	#line 3759 "NXCDefs.h"
+0	3759	165	#line 3759 "NXCDefs.h"
+0	3760	165		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	168	#line 3759 "NXCDefs.h"
+0	3676	168	#line 3676 "NXCDefs.h"
+0	3677	168		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	172	#line 3676 "NXCDefs.h"
+0	3760	172	#line 3760 "NXCDefs.h"
+0	3760	172	#line 3760 "NXCDefs.h"
+0	3760	172	#line 3760 "NXCDefs.h"
+0	3694	172	#line 3694 "NXCDefs.h"
+0	3695	172	#pragma macro 4
+0	3695	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6787	176	#line 6787 "NXCDefs.h"
+0	3694	176	#line 3694 "NXCDefs.h"
+0	3761	176	#line 3761 "NXCDefs.h"
+0	363	176	#line 363 "E:\proyecto final\Movimiento_v5.nxc"
+0	6069	176	#line 6069 "NXCDefs.h"
+0	6070	176	#pragma macro 6
+0	6070	176		acquire __PointOutMutex
+0	6070	177		mov __PointOutArgs.Location.X, __constVal200
+0	6070	179		mov __PointOutArgs.Location.Y, __constVal200
+0	6070	181		mov __PointOutArgs.Options, __constVal1
+0	6070	183		syscall 14, __PointOutArgs
+0	6070	186		release __PointOutMutex
+0	6792	187	#line 6792 "NXCDefs.h"
+0	6069	187	#line 6069 "NXCDefs.h"
+0	364	187	#line 364 "E:\proyecto final\Movimiento_v5.nxc"
+0	364	187	#line 364 "E:\proyecto final\Movimiento_v5.nxc"
+0	365	187		set __signed_stack_001main, 0
+0	364	190	#line 364 "E:\proyecto final\Movimiento_v5.nxc"
+0	364	190	#line 364 "E:\proyecto final\Movimiento_v5.nxc"
+0	365	190		set __signed_stack_002main, 56
+0	364	193	#line 364 "E:\proyecto final\Movimiento_v5.nxc"
+0	364	193	#line 364 "E:\proyecto final\Movimiento_v5.nxc"
+0	365	193		strcat __strbufmain, __constStr0021
+0	365	197	#line 365 "E:\proyecto final\Movimiento_v5.nxc"
+0	366	197		acquire __TextOutMutex
+0	365	198	#line 365 "E:\proyecto final\Movimiento_v5.nxc"
+0	366	198		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	365	200	#line 365 "E:\proyecto final\Movimiento_v5.nxc"
+0	366	200		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	365	202	#line 365 "E:\proyecto final\Movimiento_v5.nxc"
+0	366	202		set __TextOutArgs.Options, 0
+0	365	205	#line 365 "E:\proyecto final\Movimiento_v5.nxc"
+0	366	205		mov __TextOutArgs.Text, __strbufmain
+0	365	207	#line 365 "E:\proyecto final\Movimiento_v5.nxc"
+0	366	207		syscall 13, __TextOutArgs
+0	365	210	#line 365 "E:\proyecto final\Movimiento_v5.nxc"
+0	366	210		mov __D0main, __TextOutArgs.Result
+0	365	213	#line 365 "E:\proyecto final\Movimiento_v5.nxc"
+0	366	213		release __TextOutMutex
+0	365	214	#line 365 "E:\proyecto final\Movimiento_v5.nxc"
+0	365	214	#line 365 "E:\proyecto final\Movimiento_v5.nxc"
+0	366	214		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	365	217	#line 365 "E:\proyecto final\Movimiento_v5.nxc"
+0	7921	217	#line 7921 "NXCDefs.h"
+0	7922	217		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	220	#line 7921 "NXCDefs.h"
+0	367	220	#line 367 "E:\proyecto final\Movimiento_v5.nxc"
+0	371	220	#line 371 "E:\proyecto final\Movimiento_v5.nxc"
+0	372	220		subcall avanzar_hasta_linea, __avanzar_hasta_linea_return
+0	371	222	#line 371 "E:\proyecto final\Movimiento_v5.nxc"
+0	372	222		mov __main_7qG2_encontro_linea_7qG2_000, __DU0avanzar_hasta_linea
+0	371	224	#line 371 "E:\proyecto final\Movimiento_v5.nxc"
+0	371	224	#line 371 "E:\proyecto final\Movimiento_v5.nxc"
+0	374	224	#line 374 "E:\proyecto final\Movimiento_v5.nxc"
+0	375	224		subcall parar, __parar_return
+0	374	226	#line 374 "E:\proyecto final\Movimiento_v5.nxc"
+0	6069	226	#line 6069 "NXCDefs.h"
+0	6070	226	#pragma macro 6
+0	6070	226		acquire __PointOutMutex
+0	6070	227		mov __PointOutArgs.Location.X, __constVal200
+0	6070	229		mov __PointOutArgs.Location.Y, __constVal200
+0	6070	231		mov __PointOutArgs.Options, __constVal1
+0	6070	233		syscall 14, __PointOutArgs
+0	6070	236		release __PointOutMutex
+0	6857	237	#line 6857 "NXCDefs.h"
+0	6069	237	#line 6069 "NXCDefs.h"
+0	375	237	#line 375 "E:\proyecto final\Movimiento_v5.nxc"
+0	376	237	#line 376 "E:\proyecto final\Movimiento_v5.nxc"
+0	377	237		mov __DU0main, __main_7qG2_encontro_linea_7qG2_000
+0	377	239	#line 377 "E:\proyecto final\Movimiento_v5.nxc"
+0	378	239		tst 5, __zfmain, __DU0main
+0	377	242	#line 377 "E:\proyecto final\Movimiento_v5.nxc"
+0	378	242		brtst 4, __NXC_Label_804, __zfmain
+0	377	245	#line 377 "E:\proyecto final\Movimiento_v5.nxc"
+0	378	245		set __signed_stack_001main, 0
+0	377	248	#line 377 "E:\proyecto final\Movimiento_v5.nxc"
+0	377	248	#line 377 "E:\proyecto final\Movimiento_v5.nxc"
+0	378	248		set __signed_stack_002main, 56
+0	377	251	#line 377 "E:\proyecto final\Movimiento_v5.nxc"
+0	377	251	#line 377 "E:\proyecto final\Movimiento_v5.nxc"
+0	378	251		strcat __strbufmain, __constStr0022
+0	378	255	#line 378 "E:\proyecto final\Movimiento_v5.nxc"
+0	379	255		acquire __TextOutMutex
+0	378	256	#line 378 "E:\proyecto final\Movimiento_v5.nxc"
+0	379	256		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	378	258	#line 378 "E:\proyecto final\Movimiento_v5.nxc"
+0	379	258		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	378	260	#line 378 "E:\proyecto final\Movimiento_v5.nxc"
+0	379	260		set __TextOutArgs.Options, 0
+0	378	263	#line 378 "E:\proyecto final\Movimiento_v5.nxc"
+0	379	263		mov __TextOutArgs.Text, __strbufmain
+0	378	265	#line 378 "E:\proyecto final\Movimiento_v5.nxc"
+0	379	265		syscall 13, __TextOutArgs
+0	378	268	#line 378 "E:\proyecto final\Movimiento_v5.nxc"
+0	379	268		mov __D0main, __TextOutArgs.Result
+0	378	271	#line 378 "E:\proyecto final\Movimiento_v5.nxc"
+0	379	271		release __TextOutMutex
+0	378	272	#line 378 "E:\proyecto final\Movimiento_v5.nxc"
+0	381	272	#line 381 "E:\proyecto final\Movimiento_v5.nxc"
+0	382	272		jmp __NXC_Label_809
+0	381	274	#line 381 "E:\proyecto final\Movimiento_v5.nxc"
+0	382	274		set __signed_stack_001main, 0
+0	381	277	#line 381 "E:\proyecto final\Movimiento_v5.nxc"
+0	381	277	#line 381 "E:\proyecto final\Movimiento_v5.nxc"
+0	382	277		set __signed_stack_002main, 56
+0	381	280	#line 381 "E:\proyecto final\Movimiento_v5.nxc"
+0	381	280	#line 381 "E:\proyecto final\Movimiento_v5.nxc"
+0	382	280		strcat __strbufmain, __constStr0016
+0	382	284	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	284		acquire __TextOutMutex
+0	382	285	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	285		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	382	287	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	287		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	382	289	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	289		set __TextOutArgs.Options, 0
+0	382	292	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	292		mov __TextOutArgs.Text, __strbufmain
+0	382	294	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	294		syscall 13, __TextOutArgs
+0	382	297	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	297		mov __D0main, __TextOutArgs.Result
+0	382	300	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	300		release __TextOutMutex
+0	382	301	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	382	301	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	301		set __signed_stack_001main, 0
+0	382	304	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	382	304	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	304		set __signed_stack_002main, 48
+0	382	307	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	382	307	#line 382 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	307		strcat __strbufmain, __constStr0020
+0	383	311	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	384	311		acquire __TextOutMutex
+0	383	312	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	384	312		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	383	314	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	384	314		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	383	316	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	384	316		set __TextOutArgs.Options, 0
+0	383	319	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	384	319		mov __TextOutArgs.Text, __strbufmain
+0	383	321	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	384	321		syscall 13, __TextOutArgs
+0	383	324	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	384	324		mov __D0main, __TextOutArgs.Result
+0	383	327	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	384	327		release __TextOutMutex
+0	383	328	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	328	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	384	328		set __signed_stack_001main, 50
+0	383	331	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	331	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	384	331		set __signed_stack_002main, 48
+0	383	334	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	383	334	#line 383 "E:\proyecto final\Movimiento_v5.nxc"
+0	384	334		mov __D0main, lineas_cruzadas
+0	384	336	#line 384 "E:\proyecto final\Movimiento_v5.nxc"
+0	385	336		acquire __TextOutMutex
+0	384	337	#line 384 "E:\proyecto final\Movimiento_v5.nxc"
+0	385	337		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	384	339	#line 384 "E:\proyecto final\Movimiento_v5.nxc"
+0	385	339		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	384	341	#line 384 "E:\proyecto final\Movimiento_v5.nxc"
+0	385	341		set __TextOutArgs.Options, 0
+0	384	344	#line 384 "E:\proyecto final\Movimiento_v5.nxc"
+0	385	344		numtostr __TextOutArgs.Text, __D0main
+0	384	347	#line 384 "E:\proyecto final\Movimiento_v5.nxc"
+0	385	347		syscall 13, __TextOutArgs
+0	384	350	#line 384 "E:\proyecto final\Movimiento_v5.nxc"
+0	385	350		mov __D0main, __TextOutArgs.Result
+0	384	353	#line 384 "E:\proyecto final\Movimiento_v5.nxc"
+0	385	353		release __TextOutMutex
+0	384	354	#line 384 "E:\proyecto final\Movimiento_v5.nxc"
+0	385	354	#line 385 "E:\proyecto final\Movimiento_v5.nxc"
+0	385	354	#line 385 "E:\proyecto final\Movimiento_v5.nxc"
+0	386	354		set __Wait_7qG2_ms_7qG2_000_inline_main, 5000
+0	385	357	#line 385 "E:\proyecto final\Movimiento_v5.nxc"
+0	7921	357	#line 7921 "NXCDefs.h"
+0	7922	357		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	360	#line 7921 "NXCDefs.h"
+0	386	360	#line 386 "E:\proyecto final\Movimiento_v5.nxc"
+0	387	360		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5784	0	#pragma macro 25
+2	5784	0		acquire __CLSWMutex3
+2	5784	1		set __CLSWArgs3.Port, 3
+2	5784	4		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+2	5784	6		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+2	5784	8		syscall 21, __CLSWArgs3
+2	5784	11		mov __RLSBResult3, __CLSWArgs3.Result
+2	5784	13		release __CLSWMutex3
+2	5784	14	#line 5784 "NXTDefs.h"
+2	5785	14		brtst 4, __RLSBReturn3, __RLSBytesCount3
+2	5786	17		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+2	5787	21		brtst 5, __RLSBError3, __RLSBResult3
+2	5788	24		set __RLSBIterations3, 4
+2	5790	27	#pragma macro 23
+2	5790	27		acquire __CLSCSMutex3
+2	5790	28		set __CLSCSArgs3.Port, 3
+2	5790	31		syscall 23, __CLSCSArgs3
+2	5790	34		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+2	5790	36		mov __RLSBResult3, __CLSCSArgs3.Result
+2	5790	38		release __CLSCSMutex3
+2	5790	39	#line 5790 "NXTDefs.h"
+2	5791	39		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+2	5792	43		brtst 2, __RLSBError3, __RLSBIterations3
+2	5793	46		brtst 0, __RLSBError3, __RLSBResult3
+2	5794	49		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+2	5796	52		wait2 NA, __constVal15
+2	5797	55		jmp __RLSBDoCheckStatus3
+2	5800	57	#pragma macro 25
+2	5800	57		acquire __CLSRMutex3
+2	5800	58		set __CLSRArgs3.Port, 3
+2	5800	61		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+2	5800	63		syscall 22, __CLSRArgs3
+2	5800	66		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+2	5800	68		mov __RLSBResult3, __CLSRArgs3.Result
+2	5800	70		release __CLSRMutex3
+2	5800	71	#line 5800 "NXTDefs.h"
+2	5801	71		brtst 5, __RLSBError3, __RLSBResult3
+2	5802	74		mov __RLSLastGoodRead3, __RLSReadBuf3
+2	5803	76		jmp __RLSBDone3
+2	5805	78		mov __RLSReadBuf3, __RLSLastGoodRead3
+2	5807	80		arrsize __RLSBytesCount3, __RLSReadBuf3
+2	5809	83		subret ____ReadLSBytes3_return
+3	59	0	#line 59 "E:\proyecto final\Movimiento_v5.nxc"
+3	60	0		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+3	60	2	#line 60 "E:\proyecto final\Movimiento_v5.nxc"
+3	61	2	#pragma macro 10
+3	61	2		acquire __OnRevMutex
+3	61	3		neg __OnRev_Tmp, __D0adelante
+3	61	6		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	61	29		release __OnRevMutex
+3	4589	30	#line 4589 "E:\proyecto final\Movimiento_v5.nxc"
+3	60	30	#line 60 "E:\proyecto final\Movimiento_v5.nxc"
+3	60	30	#line 60 "E:\proyecto final\Movimiento_v5.nxc"
+3	61	30		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+3	61	32	#line 61 "E:\proyecto final\Movimiento_v5.nxc"
+3	62	32	#pragma macro 7
+3	62	32		setout __constVal2, 2, __D0adelante, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4596	55	#line 4596 "E:\proyecto final\Movimiento_v5.nxc"
+3	61	55	#line 61 "E:\proyecto final\Movimiento_v5.nxc"
+3	61	55	#line 61 "E:\proyecto final\Movimiento_v5.nxc"
+3	62	55		mov __Wait_7qG2_ms_7qG2_000_inline_adelante, __adelante_7qG2_ms_7qG2_000
+3	61	57	#line 61 "E:\proyecto final\Movimiento_v5.nxc"
+3	7921	57	#line 7921 "NXCDefs.h"
+3	7922	57		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_adelante
+3	7921	60	#line 7921 "NXCDefs.h"
+3	62	60	#line 62 "E:\proyecto final\Movimiento_v5.nxc"
+3	64	60	#line 64 "E:\proyecto final\Movimiento_v5.nxc"
+3	65	60		subret __adelante_return
+4	73	0	#line 73 "E:\proyecto final\Movimiento_v5.nxc"
+4	74	0		mov __D0derecha, __derecha_7qG2_vel_7qG2_000
+4	74	2	#line 74 "E:\proyecto final\Movimiento_v5.nxc"
+4	75	2	#pragma macro 10
+4	75	2		acquire __OnRevMutex
+4	75	3		neg __OnRev_Tmp, __D0derecha
+4	75	6		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	75	29		release __OnRevMutex
+4	4671	30	#line 4671 "E:\proyecto final\Movimiento_v5.nxc"
+4	74	30	#line 74 "E:\proyecto final\Movimiento_v5.nxc"
+4	74	30	#line 74 "E:\proyecto final\Movimiento_v5.nxc"
+4	74	30	#line 74 "E:\proyecto final\Movimiento_v5.nxc"
+4	74	30	#line 74 "E:\proyecto final\Movimiento_v5.nxc"
+4	74	30	#line 74 "E:\proyecto final\Movimiento_v5.nxc"
+4	75	30		div __signed_stack_001derecha, __derecha_7qG2_vel_7qG2_000, __constVal2
+4	74	34	#line 74 "E:\proyecto final\Movimiento_v5.nxc"
+4	74	34	#line 74 "E:\proyecto final\Movimiento_v5.nxc"
+4	74	34	#line 74 "E:\proyecto final\Movimiento_v5.nxc"
+4	75	34		sub __D0derecha, __signed_stack_001derecha, __constVal3
+4	75	38	#line 75 "E:\proyecto final\Movimiento_v5.nxc"
+4	76	38	#pragma macro 7
+4	76	38		setout __constVal1, 2, __D0derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4690	61	#line 4690 "E:\proyecto final\Movimiento_v5.nxc"
+4	75	61	#line 75 "E:\proyecto final\Movimiento_v5.nxc"
+4	75	61	#line 75 "E:\proyecto final\Movimiento_v5.nxc"
+4	75	61	#line 75 "E:\proyecto final\Movimiento_v5.nxc"
+4	75	61	#line 75 "E:\proyecto final\Movimiento_v5.nxc"
+4	75	61	#line 75 "E:\proyecto final\Movimiento_v5.nxc"
+4	76	61		div __D0derecha, __derecha_7qG2_vel_7qG2_000, __constVal2
+4	76	65	#line 76 "E:\proyecto final\Movimiento_v5.nxc"
+4	77	65	#pragma macro 7
+4	77	65		setout __constVal2, 2, __D0derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4703	88	#line 4703 "E:\proyecto final\Movimiento_v5.nxc"
+4	76	88	#line 76 "E:\proyecto final\Movimiento_v5.nxc"
+4	76	88	#line 76 "E:\proyecto final\Movimiento_v5.nxc"
+4	77	88		mov __Wait_7qG2_ms_7qG2_000_inline_derecha, __derecha_7qG2_ms_7qG2_000
+4	76	90	#line 76 "E:\proyecto final\Movimiento_v5.nxc"
+4	7921	90	#line 7921 "NXCDefs.h"
+4	7922	90		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_derecha
+4	7921	93	#line 7921 "NXCDefs.h"
+4	77	93	#line 77 "E:\proyecto final\Movimiento_v5.nxc"
+4	79	93	#line 79 "E:\proyecto final\Movimiento_v5.nxc"
+4	80	93		subret __derecha_return
+5	81	0	#line 81 "E:\proyecto final\Movimiento_v5.nxc"
+5	82	0		mov __D0izquierda, __izquierda_7qG2_vel_7qG2_000
+5	82	2	#line 82 "E:\proyecto final\Movimiento_v5.nxc"
+5	83	2	#pragma macro 7
+5	83	2		setout __constVal0, 2, __D0izquierda, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	4737	25	#line 4737 "E:\proyecto final\Movimiento_v5.nxc"
+5	82	25	#line 82 "E:\proyecto final\Movimiento_v5.nxc"
+5	82	25	#line 82 "E:\proyecto final\Movimiento_v5.nxc"
+5	82	25	#line 82 "E:\proyecto final\Movimiento_v5.nxc"
+5	82	25	#line 82 "E:\proyecto final\Movimiento_v5.nxc"
+5	82	25	#line 82 "E:\proyecto final\Movimiento_v5.nxc"
+5	83	25		div __signed_stack_001izquierda, __izquierda_7qG2_vel_7qG2_000, __constVal2
+5	82	29	#line 82 "E:\proyecto final\Movimiento_v5.nxc"
+5	82	29	#line 82 "E:\proyecto final\Movimiento_v5.nxc"
+5	82	29	#line 82 "E:\proyecto final\Movimiento_v5.nxc"
+5	83	29		sub __D0izquierda, __signed_stack_001izquierda, __constVal3
+5	83	33	#line 83 "E:\proyecto final\Movimiento_v5.nxc"
+5	84	33	#pragma macro 10
+5	84	33		acquire __OnRevMutex
+5	84	34		neg __OnRev_Tmp, __D0izquierda
+5	84	37		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	84	60		release __OnRevMutex
+5	4756	61	#line 4756 "E:\proyecto final\Movimiento_v5.nxc"
+5	83	61	#line 83 "E:\proyecto final\Movimiento_v5.nxc"
+5	83	61	#line 83 "E:\proyecto final\Movimiento_v5.nxc"
+5	83	61	#line 83 "E:\proyecto final\Movimiento_v5.nxc"
+5	83	61	#line 83 "E:\proyecto final\Movimiento_v5.nxc"
+5	83	61	#line 83 "E:\proyecto final\Movimiento_v5.nxc"
+5	84	61		div __D0izquierda, __izquierda_7qG2_vel_7qG2_000, __constVal2
+5	84	65	#line 84 "E:\proyecto final\Movimiento_v5.nxc"
+5	85	65	#pragma macro 10
+5	85	65		acquire __OnRevMutex
+5	85	66		neg __OnRev_Tmp, __D0izquierda
+5	85	69		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	85	92		release __OnRevMutex
+5	4769	93	#line 4769 "E:\proyecto final\Movimiento_v5.nxc"
+5	84	93	#line 84 "E:\proyecto final\Movimiento_v5.nxc"
+5	84	93	#line 84 "E:\proyecto final\Movimiento_v5.nxc"
+5	85	93		mov __Wait_7qG2_ms_7qG2_000_inline_izquierda, __izquierda_7qG2_ms_7qG2_000
+5	84	95	#line 84 "E:\proyecto final\Movimiento_v5.nxc"
+5	7921	95	#line 7921 "NXCDefs.h"
+5	7922	95		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_izquierda
+5	7921	98	#line 7921 "NXCDefs.h"
+5	85	98	#line 85 "E:\proyecto final\Movimiento_v5.nxc"
+5	88	98	#line 88 "E:\proyecto final\Movimiento_v5.nxc"
+5	89	98		subret __izquierda_return
+6	90	0	#line 90 "E:\proyecto final\Movimiento_v5.nxc"
+6	91	0		mov __D0girar_eje, __girar_eje_7qG2_vel_7qG2_000
+6	91	2	#line 91 "E:\proyecto final\Movimiento_v5.nxc"
+6	92	2	#pragma macro 10
+6	92	2		acquire __OnRevMutex
+6	92	3		neg __OnRev_Tmp, __D0girar_eje
+6	92	6		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	92	29		release __OnRevMutex
+6	4803	30	#line 4803 "E:\proyecto final\Movimiento_v5.nxc"
+6	91	30	#line 91 "E:\proyecto final\Movimiento_v5.nxc"
+6	91	30	#line 91 "E:\proyecto final\Movimiento_v5.nxc"
+6	92	30		mov __D0girar_eje, __girar_eje_7qG2_vel_7qG2_000
+6	92	32	#line 92 "E:\proyecto final\Movimiento_v5.nxc"
+6	93	32	#pragma macro 7
+6	93	32		setout __constVal1, 2, __D0girar_eje, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4810	55	#line 4810 "E:\proyecto final\Movimiento_v5.nxc"
+6	92	55	#line 92 "E:\proyecto final\Movimiento_v5.nxc"
+6	92	55	#line 92 "E:\proyecto final\Movimiento_v5.nxc"
+6	93	55		mov __D0girar_eje, __girar_eje_7qG2_vel_7qG2_000
+6	93	57	#line 93 "E:\proyecto final\Movimiento_v5.nxc"
+6	94	57	#pragma macro 10
+6	94	57		acquire __OnRevMutex
+6	94	58		neg __OnRev_Tmp, __D0girar_eje
+6	94	61		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	94	84		release __OnRevMutex
+6	4817	85	#line 4817 "E:\proyecto final\Movimiento_v5.nxc"
+6	93	85	#line 93 "E:\proyecto final\Movimiento_v5.nxc"
+6	93	85	#line 93 "E:\proyecto final\Movimiento_v5.nxc"
+6	94	85		mov __Wait_7qG2_ms_7qG2_000_inline_girar_eje, __girar_eje_7qG2_ms_7qG2_000
+6	93	87	#line 93 "E:\proyecto final\Movimiento_v5.nxc"
+6	7921	87	#line 7921 "NXCDefs.h"
+6	7922	87		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_girar_eje
+6	7921	90	#line 7921 "NXCDefs.h"
+6	94	90	#line 94 "E:\proyecto final\Movimiento_v5.nxc"
+6	97	90	#line 97 "E:\proyecto final\Movimiento_v5.nxc"
+6	98	90		subret __girar_eje_return
+7	99	0	#line 99 "E:\proyecto final\Movimiento_v5.nxc"
+7	100	0		mov __D0girar_eje_anti, __girar_eje_anti_7qG2_vel_7qG2_000
+7	100	2	#line 100 "E:\proyecto final\Movimiento_v5.nxc"
+7	101	2	#pragma macro 7
+7	101	2		setout __constVal0, 2, __D0girar_eje_anti, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4851	25	#line 4851 "E:\proyecto final\Movimiento_v5.nxc"
+7	100	25	#line 100 "E:\proyecto final\Movimiento_v5.nxc"
+7	100	25	#line 100 "E:\proyecto final\Movimiento_v5.nxc"
+7	101	25		mov __D0girar_eje_anti, __girar_eje_anti_7qG2_vel_7qG2_000
+7	101	27	#line 101 "E:\proyecto final\Movimiento_v5.nxc"
+7	102	27	#pragma macro 10
+7	102	27		acquire __OnRevMutex
+7	102	28		neg __OnRev_Tmp, __D0girar_eje_anti
+7	102	31		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	102	54		release __OnRevMutex
+7	4858	55	#line 4858 "E:\proyecto final\Movimiento_v5.nxc"
+7	101	55	#line 101 "E:\proyecto final\Movimiento_v5.nxc"
+7	101	55	#line 101 "E:\proyecto final\Movimiento_v5.nxc"
+7	102	55		mov __D0girar_eje_anti, __girar_eje_anti_7qG2_vel_7qG2_000
+7	102	57	#line 102 "E:\proyecto final\Movimiento_v5.nxc"
+7	103	57	#pragma macro 7
+7	103	57		setout __constVal2, 2, __D0girar_eje_anti, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4865	80	#line 4865 "E:\proyecto final\Movimiento_v5.nxc"
+7	102	80	#line 102 "E:\proyecto final\Movimiento_v5.nxc"
+7	102	80	#line 102 "E:\proyecto final\Movimiento_v5.nxc"
+7	103	80		mov __Wait_7qG2_ms_7qG2_000_inline_girar_eje_anti, __girar_eje_anti_7qG2_ms_7qG2_000
+7	102	82	#line 102 "E:\proyecto final\Movimiento_v5.nxc"
+7	7921	82	#line 7921 "NXCDefs.h"
+7	7922	82		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_girar_eje_anti
+7	7921	85	#line 7921 "NXCDefs.h"
+7	103	85	#line 103 "E:\proyecto final\Movimiento_v5.nxc"
+7	105	85	#line 105 "E:\proyecto final\Movimiento_v5.nxc"
+7	106	85		subret __girar_eje_anti_return
+8	108	0	#line 108 "E:\proyecto final\Movimiento_v5.nxc"
+8	109	0	#pragma macro 7
+8	109	0		setout __OUT_ABC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4887	23	#line 4887 "E:\proyecto final\Movimiento_v5.nxc"
+8	108	23	#line 108 "E:\proyecto final\Movimiento_v5.nxc"
+8	108	23	#line 108 "E:\proyecto final\Movimiento_v5.nxc"
+8	109	23		set __Wait_7qG2_ms_7qG2_000_inline_parar, 150
+8	108	26	#line 108 "E:\proyecto final\Movimiento_v5.nxc"
+8	7921	26	#line 7921 "NXCDefs.h"
+8	7922	26		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_parar
+8	7921	29	#line 7921 "NXCDefs.h"
+8	109	29	#line 109 "E:\proyecto final\Movimiento_v5.nxc"
+8	114	29	#line 114 "E:\proyecto final\Movimiento_v5.nxc"
+8	115	29		subret __parar_return
+9	116	0	#line 116 "E:\proyecto final\Movimiento_v5.nxc"
+9	117	0		getin __leer_sensores_7qG2_fl_7qG2_000, __constVal0, 4
+9	116	4	#line 116 "E:\proyecto final\Movimiento_v5.nxc"
+9	116	4	#line 116 "E:\proyecto final\Movimiento_v5.nxc"
+9	116	4	#line 116 "E:\proyecto final\Movimiento_v5.nxc"
+9	117	4	#line 117 "E:\proyecto final\Movimiento_v5.nxc"
+9	118	4		getin __leer_sensores_7qG2_fr_7qG2_000, __constVal2, 4
+9	117	8	#line 117 "E:\proyecto final\Movimiento_v5.nxc"
+9	117	8	#line 117 "E:\proyecto final\Movimiento_v5.nxc"
+9	117	8	#line 117 "E:\proyecto final\Movimiento_v5.nxc"
+9	118	8	#line 118 "E:\proyecto final\Movimiento_v5.nxc"
+9	119	8		getin __leer_sensores_7qG2_tl_7qG2_000, __constVal1, 4
+9	118	12	#line 118 "E:\proyecto final\Movimiento_v5.nxc"
+9	118	12	#line 118 "E:\proyecto final\Movimiento_v5.nxc"
+9	118	12	#line 118 "E:\proyecto final\Movimiento_v5.nxc"
+9	130	12	#line 130 "E:\proyecto final\Movimiento_v5.nxc"
+9	131	12		subret __leer_sensores_return
+10	133	0	#line 133 "E:\proyecto final\Movimiento_v5.nxc"
+10	134	0		mov __signed_stack_001detectar_cruce, __detectar_cruce_7qG2_fl_7qG2_000
+10	133	2	#line 133 "E:\proyecto final\Movimiento_v5.nxc"
+10	133	2	#line 133 "E:\proyecto final\Movimiento_v5.nxc"
+10	134	2		set __D0detectar_cruce, 43
+10	133	5	#line 133 "E:\proyecto final\Movimiento_v5.nxc"
+10	134	5		cmp 0, __zfdetectar_cruce, __signed_stack_001detectar_cruce, __D0detectar_cruce
+10	133	9	#line 133 "E:\proyecto final\Movimiento_v5.nxc"
+10	134	9		mov __D0detectar_cruce, __zfdetectar_cruce
+10	133	11	#line 133 "E:\proyecto final\Movimiento_v5.nxc"
+10	134	11		brtst 4, __NXC_Label_542, __zfdetectar_cruce
+10	133	14	#line 133 "E:\proyecto final\Movimiento_v5.nxc"
+10	134	14		mov __signed_stack_001detectar_cruce, __D0detectar_cruce
+10	133	16	#line 133 "E:\proyecto final\Movimiento_v5.nxc"
+10	134	16		mov __signed_stack_002detectar_cruce, __detectar_cruce_7qG2_fr_7qG2_000
+10	133	18	#line 133 "E:\proyecto final\Movimiento_v5.nxc"
+10	134	18	#line 134 "E:\proyecto final\Movimiento_v5.nxc"
+10	135	18		set __D0detectar_cruce, 43
+10	134	21	#line 134 "E:\proyecto final\Movimiento_v5.nxc"
+10	135	21		cmp 0, __zfdetectar_cruce, __signed_stack_002detectar_cruce, __D0detectar_cruce
+10	134	25	#line 134 "E:\proyecto final\Movimiento_v5.nxc"
+10	134	25	#line 134 "E:\proyecto final\Movimiento_v5.nxc"
+10	135	25		and __D0detectar_cruce, __signed_stack_001detectar_cruce, __zfdetectar_cruce
+10	135	29	#line 135 "E:\proyecto final\Movimiento_v5.nxc"
+10	136	29		tst 5, __zfdetectar_cruce, __D0detectar_cruce
+10	135	32	#line 135 "E:\proyecto final\Movimiento_v5.nxc"
+10	136	32		brtst 4, __NXC_Label_543, __zfdetectar_cruce
+10	135	35	#line 135 "E:\proyecto final\Movimiento_v5.nxc"
+10	136	35		gettick __detectar_cruce_7qG2_ahora_7qG2_001
+10	135	37	#line 135 "E:\proyecto final\Movimiento_v5.nxc"
+10	138	37	#line 138 "E:\proyecto final\Movimiento_v5.nxc"
+10	138	37	#line 138 "E:\proyecto final\Movimiento_v5.nxc"
+10	138	37	#line 138 "E:\proyecto final\Movimiento_v5.nxc"
+10	138	37	#line 138 "E:\proyecto final\Movimiento_v5.nxc"
+10	139	37		sub __signed_stack_001detectar_cruce, __detectar_cruce_7qG2_ahora_7qG2_001, ultimo_cruce
+10	138	41	#line 138 "E:\proyecto final\Movimiento_v5.nxc"
+10	139	41	#line 139 "E:\proyecto final\Movimiento_v5.nxc"
+10	140	41		set __D0detectar_cruce, 300
+10	139	44	#line 139 "E:\proyecto final\Movimiento_v5.nxc"
+10	140	44		cmp 1, __zfdetectar_cruce, __signed_stack_001detectar_cruce, __D0detectar_cruce
+10	139	48	#line 139 "E:\proyecto final\Movimiento_v5.nxc"
+10	140	48		mov __D0detectar_cruce, __zfdetectar_cruce
+10	140	50	#line 140 "E:\proyecto final\Movimiento_v5.nxc"
+10	141	50		brtst 4, __NXC_Label_550, __zfdetectar_cruce
+10	141	53	#line 141 "E:\proyecto final\Movimiento_v5.nxc"
+10	142	53		add lineas_cruzadas, lineas_cruzadas, __constVal1
+10	141	57	#line 141 "E:\proyecto final\Movimiento_v5.nxc"
+10	144	57	#line 144 "E:\proyecto final\Movimiento_v5.nxc"
+10	145	57		mov ultimo_cruce, __detectar_cruce_7qG2_ahora_7qG2_001
+10	144	59	#line 144 "E:\proyecto final\Movimiento_v5.nxc"
+10	144	59	#line 144 "E:\proyecto final\Movimiento_v5.nxc"
+10	6069	59	#line 6069 "NXCDefs.h"
+10	6070	59	#pragma macro 6
+10	6070	59		acquire __PointOutMutex
+10	6070	60		mov __PointOutArgs.Location.X, __constVal200
+10	6070	62		mov __PointOutArgs.Location.Y, __constVal200
+10	6070	64		mov __PointOutArgs.Options, __constVal1
+10	6070	66		syscall 14, __PointOutArgs
+10	6070	69		release __PointOutMutex
+10	5032	70	#line 5032 "NXCDefs.h"
+10	6069	70	#line 6069 "NXCDefs.h"
+10	145	70	#line 145 "E:\proyecto final\Movimiento_v5.nxc"
+10	145	70	#line 145 "E:\proyecto final\Movimiento_v5.nxc"
+10	146	70		set __signed_stack_001detectar_cruce, 0
+10	145	73	#line 145 "E:\proyecto final\Movimiento_v5.nxc"
+10	145	73	#line 145 "E:\proyecto final\Movimiento_v5.nxc"
+10	146	73		set __signed_stack_002detectar_cruce, 56
+10	145	76	#line 145 "E:\proyecto final\Movimiento_v5.nxc"
+10	145	76	#line 145 "E:\proyecto final\Movimiento_v5.nxc"
+10	146	76		strcat __strbufdetectar_cruce, __constStr0009
+10	146	80	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	80		acquire __TextOutMutex
+10	146	81	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	81		mov __TextOutArgs.Location.X, __signed_stack_001detectar_cruce
+10	146	83	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	83		mov __TextOutArgs.Location.Y, __signed_stack_002detectar_cruce
+10	146	85	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	85		set __TextOutArgs.Options, 0
+10	146	88	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	88		mov __TextOutArgs.Text, __strbufdetectar_cruce
+10	146	90	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	90		syscall 13, __TextOutArgs
+10	146	93	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	93		mov __D0detectar_cruce, __TextOutArgs.Result
+10	146	96	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	96		release __TextOutMutex
+10	146	97	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	146	97	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	97		set __signed_stack_001detectar_cruce, 50
+10	146	100	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	146	100	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	100		set __signed_stack_002detectar_cruce, 56
+10	146	103	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	146	103	#line 146 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	103		mov __D0detectar_cruce, lineas_cruzadas
+10	147	105	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	148	105		acquire __TextOutMutex
+10	147	106	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	148	106		mov __TextOutArgs.Location.X, __signed_stack_001detectar_cruce
+10	147	108	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	148	108		mov __TextOutArgs.Location.Y, __signed_stack_002detectar_cruce
+10	147	110	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	148	110		set __TextOutArgs.Options, 0
+10	147	113	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	148	113		numtostr __TextOutArgs.Text, __D0detectar_cruce
+10	147	116	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	148	116		syscall 13, __TextOutArgs
+10	147	119	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	148	119		mov __D0detectar_cruce, __TextOutArgs.Result
+10	147	122	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	148	122		release __TextOutMutex
+10	147	123	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	123	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	148	123		set __signed_stack_001detectar_cruce, 660
+10	147	126	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	126	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	148	126		set __signed_stack_002detectar_cruce, 100
+10	147	129	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	129	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	148	129		set __signed_stack_003detectar_cruce, 4
+10	147	132	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	147	132	#line 147 "E:\proyecto final\Movimiento_v5.nxc"
+10	148	132		set __D0detectar_cruce, 0
+10	149	135	#line 149 "E:\proyecto final\Movimiento_v5.nxc"
+10	150	135		acquire __SPTArgsMutex
+10	149	136	#line 149 "E:\proyecto final\Movimiento_v5.nxc"
+10	150	136		mov __SPTArgs.Frequency, __signed_stack_001detectar_cruce
+10	149	138	#line 149 "E:\proyecto final\Movimiento_v5.nxc"
+10	150	138		mov __SPTArgs.Duration, __signed_stack_002detectar_cruce
+10	149	140	#line 149 "E:\proyecto final\Movimiento_v5.nxc"
+10	150	140		mov __SPTArgs.Volume, __signed_stack_003detectar_cruce
+10	149	142	#line 149 "E:\proyecto final\Movimiento_v5.nxc"
+10	150	142		mov __SPTArgs.Loop, __D0detectar_cruce
+10	149	144	#line 149 "E:\proyecto final\Movimiento_v5.nxc"
+10	150	144		syscall 10, __SPTArgs
+10	149	147	#line 149 "E:\proyecto final\Movimiento_v5.nxc"
+10	150	147		mov __D0detectar_cruce, __SPTArgs.Result
+10	149	149	#line 149 "E:\proyecto final\Movimiento_v5.nxc"
+10	150	149		release __SPTArgsMutex
+10	149	150	#line 149 "E:\proyecto final\Movimiento_v5.nxc"
+10	150	150	#line 150 "E:\proyecto final\Movimiento_v5.nxc"
+10	151	150		set __DU0detectar_cruce, 1
+10	150	153	#line 150 "E:\proyecto final\Movimiento_v5.nxc"
+10	150	153	#line 150 "E:\proyecto final\Movimiento_v5.nxc"
+10	151	153		subret __detectar_cruce_return
+10	150	155	#line 150 "E:\proyecto final\Movimiento_v5.nxc"
+10	152	155	#line 152 "E:\proyecto final\Movimiento_v5.nxc"
+10	152	155	#line 152 "E:\proyecto final\Movimiento_v5.nxc"
+10	153	155	#line 153 "E:\proyecto final\Movimiento_v5.nxc"
+10	154	155		set __DU0detectar_cruce, 0
+10	153	158	#line 153 "E:\proyecto final\Movimiento_v5.nxc"
+10	153	158	#line 153 "E:\proyecto final\Movimiento_v5.nxc"
+10	154	158		subret __detectar_cruce_return
+10	153	160	#line 153 "E:\proyecto final\Movimiento_v5.nxc"
+10	161	160	#line 161 "E:\proyecto final\Movimiento_v5.nxc"
+10	162	160		subret __detectar_cruce_return
+11	163	0	#line 163 "E:\proyecto final\Movimiento_v5.nxc"
+11	164	0		mov __signed_stack_001corregir_busqueda, __corregir_busqueda_7qG2_fl_7qG2_000
+11	163	2	#line 163 "E:\proyecto final\Movimiento_v5.nxc"
+11	163	2	#line 163 "E:\proyecto final\Movimiento_v5.nxc"
+11	164	2		set __D0corregir_busqueda, 43
+11	163	5	#line 163 "E:\proyecto final\Movimiento_v5.nxc"
+11	164	5		cmp 0, __zfcorregir_busqueda, __signed_stack_001corregir_busqueda, __D0corregir_busqueda
+11	163	9	#line 163 "E:\proyecto final\Movimiento_v5.nxc"
+11	164	9		mov __corregir_busqueda_7qG2_fl_negro_7qG2_000, __zfcorregir_busqueda
+11	164	11	#line 164 "E:\proyecto final\Movimiento_v5.nxc"
+11	164	11	#line 164 "E:\proyecto final\Movimiento_v5.nxc"
+11	165	11		mov __signed_stack_001corregir_busqueda, __corregir_busqueda_7qG2_tl_7qG2_000
+11	164	13	#line 164 "E:\proyecto final\Movimiento_v5.nxc"
+11	164	13	#line 164 "E:\proyecto final\Movimiento_v5.nxc"
+11	165	13		set __D0corregir_busqueda, 43
+11	164	16	#line 164 "E:\proyecto final\Movimiento_v5.nxc"
+11	165	16		cmp 0, __zfcorregir_busqueda, __signed_stack_001corregir_busqueda, __D0corregir_busqueda
+11	164	20	#line 164 "E:\proyecto final\Movimiento_v5.nxc"
+11	165	20		mov __corregir_busqueda_7qG2_tl_negro_7qG2_000, __zfcorregir_busqueda
+11	166	22	#line 166 "E:\proyecto final\Movimiento_v5.nxc"
+11	166	22	#line 166 "E:\proyecto final\Movimiento_v5.nxc"
+11	167	22		mov __DU0corregir_busqueda, __zfcorregir_busqueda
+11	166	24	#line 166 "E:\proyecto final\Movimiento_v5.nxc"
+11	167	24		tst 5, __zfcorregir_busqueda, __DU0corregir_busqueda
+11	166	27	#line 166 "E:\proyecto final\Movimiento_v5.nxc"
+11	167	27		mov __D0corregir_busqueda, __zfcorregir_busqueda
+11	166	29	#line 166 "E:\proyecto final\Movimiento_v5.nxc"
+11	167	29		brtst 4, __NXC_Label_584, __zfcorregir_busqueda
+11	166	32	#line 166 "E:\proyecto final\Movimiento_v5.nxc"
+11	167	32		mov __signed_stack_001corregir_busqueda, __D0corregir_busqueda
+11	167	34	#line 167 "E:\proyecto final\Movimiento_v5.nxc"
+11	167	34	#line 167 "E:\proyecto final\Movimiento_v5.nxc"
+11	168	34		not __DU0corregir_busqueda, __corregir_busqueda_7qG2_fl_negro_7qG2_000
+11	167	37	#line 167 "E:\proyecto final\Movimiento_v5.nxc"
+11	168	37		tst 5, __zfcorregir_busqueda, __DU0corregir_busqueda
+11	167	40	#line 167 "E:\proyecto final\Movimiento_v5.nxc"
+11	167	40	#line 167 "E:\proyecto final\Movimiento_v5.nxc"
+11	168	40		and __D0corregir_busqueda, __signed_stack_001corregir_busqueda, __zfcorregir_busqueda
+11	169	44	#line 169 "E:\proyecto final\Movimiento_v5.nxc"
+11	170	44		tst 5, __zfcorregir_busqueda, __D0corregir_busqueda
+11	169	47	#line 169 "E:\proyecto final\Movimiento_v5.nxc"
+11	170	47		brtst 4, __NXC_Label_585, __zfcorregir_busqueda
+11	169	50	#line 169 "E:\proyecto final\Movimiento_v5.nxc"
+11	170	50		set __girar_eje_7qG2_vel_7qG2_000, 40
+11	169	53	#line 169 "E:\proyecto final\Movimiento_v5.nxc"
+11	169	53	#line 169 "E:\proyecto final\Movimiento_v5.nxc"
+11	170	53		set __girar_eje_7qG2_ms_7qG2_000, 275
+11	169	56	#line 169 "E:\proyecto final\Movimiento_v5.nxc"
+11	170	56	#line 170 "E:\proyecto final\Movimiento_v5.nxc"
+11	171	56		subcall girar_eje, __girar_eje_return
+11	170	58	#line 170 "E:\proyecto final\Movimiento_v5.nxc"
+11	171	58	#line 171 "E:\proyecto final\Movimiento_v5.nxc"
+11	172	58		subcall parar, __parar_return
+11	171	60	#line 171 "E:\proyecto final\Movimiento_v5.nxc"
+11	172	60	#line 172 "E:\proyecto final\Movimiento_v5.nxc"
+11	173	60		jmp __NXC_Label_590
+11	172	62	#line 172 "E:\proyecto final\Movimiento_v5.nxc"
+11	172	62	#line 172 "E:\proyecto final\Movimiento_v5.nxc"
+11	173	62		not __DU0corregir_busqueda, __corregir_busqueda_7qG2_tl_negro_7qG2_000
+11	172	65	#line 172 "E:\proyecto final\Movimiento_v5.nxc"
+11	173	65		tst 5, __zfcorregir_busqueda, __DU0corregir_busqueda
+11	172	68	#line 172 "E:\proyecto final\Movimiento_v5.nxc"
+11	173	68		mov __D0corregir_busqueda, __zfcorregir_busqueda
+11	172	70	#line 172 "E:\proyecto final\Movimiento_v5.nxc"
+11	173	70		brtst 4, __NXC_Label_592, __zfcorregir_busqueda
+11	172	73	#line 172 "E:\proyecto final\Movimiento_v5.nxc"
+11	173	73		mov __signed_stack_001corregir_busqueda, __D0corregir_busqueda
+11	173	75	#line 173 "E:\proyecto final\Movimiento_v5.nxc"
+11	173	75	#line 173 "E:\proyecto final\Movimiento_v5.nxc"
+11	174	75		not __DU0corregir_busqueda, __corregir_busqueda_7qG2_fl_negro_7qG2_000
+11	173	78	#line 173 "E:\proyecto final\Movimiento_v5.nxc"
+11	174	78		tst 5, __zfcorregir_busqueda, __DU0corregir_busqueda
+11	173	81	#line 173 "E:\proyecto final\Movimiento_v5.nxc"
+11	173	81	#line 173 "E:\proyecto final\Movimiento_v5.nxc"
+11	174	81		and __D0corregir_busqueda, __signed_stack_001corregir_busqueda, __zfcorregir_busqueda
+11	175	85	#line 175 "E:\proyecto final\Movimiento_v5.nxc"
+11	176	85		tst 5, __zfcorregir_busqueda, __D0corregir_busqueda
+11	175	88	#line 175 "E:\proyecto final\Movimiento_v5.nxc"
+11	176	88		brtst 4, __NXC_Label_593, __zfcorregir_busqueda
+11	175	91	#line 175 "E:\proyecto final\Movimiento_v5.nxc"
+11	176	91		set __girar_eje_anti_7qG2_vel_7qG2_000, 40
+11	175	94	#line 175 "E:\proyecto final\Movimiento_v5.nxc"
+11	175	94	#line 175 "E:\proyecto final\Movimiento_v5.nxc"
+11	176	94		set __girar_eje_anti_7qG2_ms_7qG2_000, 275
+11	175	97	#line 175 "E:\proyecto final\Movimiento_v5.nxc"
+11	176	97	#line 176 "E:\proyecto final\Movimiento_v5.nxc"
+11	177	97		subcall girar_eje_anti, __girar_eje_anti_return
+11	176	99	#line 176 "E:\proyecto final\Movimiento_v5.nxc"
+11	177	99	#line 177 "E:\proyecto final\Movimiento_v5.nxc"
+11	178	99		subcall parar, __parar_return
+11	177	101	#line 177 "E:\proyecto final\Movimiento_v5.nxc"
+11	203	101	#line 203 "E:\proyecto final\Movimiento_v5.nxc"
+11	203	101	#line 203 "E:\proyecto final\Movimiento_v5.nxc"
+11	203	101	#line 203 "E:\proyecto final\Movimiento_v5.nxc"
+11	204	101		subret __corregir_busqueda_return
+12	205	0	#line 205 "E:\proyecto final\Movimiento_v5.nxc"
+12	206	0		mov __signed_stack_001corregir_en_linea, __corregir_en_linea_7qG2_fl_7qG2_000
+12	205	2	#line 205 "E:\proyecto final\Movimiento_v5.nxc"
+12	205	2	#line 205 "E:\proyecto final\Movimiento_v5.nxc"
+12	206	2		set __D0corregir_en_linea, 43
+12	205	5	#line 205 "E:\proyecto final\Movimiento_v5.nxc"
+12	206	5		cmp 0, __zfcorregir_en_linea, __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+12	205	9	#line 205 "E:\proyecto final\Movimiento_v5.nxc"
+12	206	9		mov __corregir_en_linea_7qG2_fl_negro_7qG2_000, __zfcorregir_en_linea
+12	206	11	#line 206 "E:\proyecto final\Movimiento_v5.nxc"
+12	206	11	#line 206 "E:\proyecto final\Movimiento_v5.nxc"
+12	207	11		mov __signed_stack_001corregir_en_linea, __corregir_en_linea_7qG2_tl_7qG2_000
+12	206	13	#line 206 "E:\proyecto final\Movimiento_v5.nxc"
+12	206	13	#line 206 "E:\proyecto final\Movimiento_v5.nxc"
+12	207	13		set __D0corregir_en_linea, 43
+12	206	16	#line 206 "E:\proyecto final\Movimiento_v5.nxc"
+12	207	16		cmp 0, __zfcorregir_en_linea, __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+12	206	20	#line 206 "E:\proyecto final\Movimiento_v5.nxc"
+12	207	20		mov __corregir_en_linea_7qG2_tl_negro_7qG2_000, __zfcorregir_en_linea
+12	208	22	#line 208 "E:\proyecto final\Movimiento_v5.nxc"
+12	208	22	#line 208 "E:\proyecto final\Movimiento_v5.nxc"
+12	209	22		mov __DU0corregir_en_linea, __corregir_en_linea_7qG2_fl_negro_7qG2_000
+12	208	24	#line 208 "E:\proyecto final\Movimiento_v5.nxc"
+12	209	24		tst 5, __zfcorregir_en_linea, __DU0corregir_en_linea
+12	208	27	#line 208 "E:\proyecto final\Movimiento_v5.nxc"
+12	209	27		mov __D0corregir_en_linea, __zfcorregir_en_linea
+12	208	29	#line 208 "E:\proyecto final\Movimiento_v5.nxc"
+12	209	29		brtst 4, __NXC_Label_607, __zfcorregir_en_linea
+12	208	32	#line 208 "E:\proyecto final\Movimiento_v5.nxc"
+12	209	32		mov __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+12	209	34	#line 209 "E:\proyecto final\Movimiento_v5.nxc"
+12	210	34		mov __DU0corregir_en_linea, __corregir_en_linea_7qG2_tl_negro_7qG2_000
+12	209	36	#line 209 "E:\proyecto final\Movimiento_v5.nxc"
+12	210	36		tst 5, __zfcorregir_en_linea, __DU0corregir_en_linea
+12	209	39	#line 209 "E:\proyecto final\Movimiento_v5.nxc"
+12	209	39	#line 209 "E:\proyecto final\Movimiento_v5.nxc"
+12	210	39		and __D0corregir_en_linea, __signed_stack_001corregir_en_linea, __zfcorregir_en_linea
+12	211	43	#line 211 "E:\proyecto final\Movimiento_v5.nxc"
+12	212	43		tst 5, __zfcorregir_en_linea, __D0corregir_en_linea
+12	211	46	#line 211 "E:\proyecto final\Movimiento_v5.nxc"
+12	212	46		brtst 4, __NXC_Label_608, __zfcorregir_en_linea
+12	211	49	#line 211 "E:\proyecto final\Movimiento_v5.nxc"
+12	212	49		set __derecha_7qG2_vel_7qG2_000, 30
+12	211	52	#line 211 "E:\proyecto final\Movimiento_v5.nxc"
+12	211	52	#line 211 "E:\proyecto final\Movimiento_v5.nxc"
+12	212	52		set __derecha_7qG2_ms_7qG2_000, 220
+12	211	55	#line 211 "E:\proyecto final\Movimiento_v5.nxc"
+12	212	55	#line 212 "E:\proyecto final\Movimiento_v5.nxc"
+12	213	55		subcall derecha, __derecha_return
+12	212	57	#line 212 "E:\proyecto final\Movimiento_v5.nxc"
+12	213	57	#line 213 "E:\proyecto final\Movimiento_v5.nxc"
+12	214	57		subcall parar, __parar_return
+12	213	59	#line 213 "E:\proyecto final\Movimiento_v5.nxc"
+12	214	59	#line 214 "E:\proyecto final\Movimiento_v5.nxc"
+12	215	59		jmp __NXC_Label_613
+12	214	61	#line 214 "E:\proyecto final\Movimiento_v5.nxc"
+12	214	61	#line 214 "E:\proyecto final\Movimiento_v5.nxc"
+12	215	61		not __DU0corregir_en_linea, __corregir_en_linea_7qG2_fl_negro_7qG2_000
+12	214	64	#line 214 "E:\proyecto final\Movimiento_v5.nxc"
+12	215	64		tst 5, __zfcorregir_en_linea, __DU0corregir_en_linea
+12	214	67	#line 214 "E:\proyecto final\Movimiento_v5.nxc"
+12	215	67		mov __D0corregir_en_linea, __zfcorregir_en_linea
+12	214	69	#line 214 "E:\proyecto final\Movimiento_v5.nxc"
+12	215	69		brtst 4, __NXC_Label_615, __zfcorregir_en_linea
+12	214	72	#line 214 "E:\proyecto final\Movimiento_v5.nxc"
+12	215	72		mov __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+12	215	74	#line 215 "E:\proyecto final\Movimiento_v5.nxc"
+12	216	74		mov __DU0corregir_en_linea, __corregir_en_linea_7qG2_tl_negro_7qG2_000
+12	215	76	#line 215 "E:\proyecto final\Movimiento_v5.nxc"
+12	216	76		tst 5, __zfcorregir_en_linea, __DU0corregir_en_linea
+12	215	79	#line 215 "E:\proyecto final\Movimiento_v5.nxc"
+12	215	79	#line 215 "E:\proyecto final\Movimiento_v5.nxc"
+12	216	79		and __D0corregir_en_linea, __signed_stack_001corregir_en_linea, __zfcorregir_en_linea
+12	218	83	#line 218 "E:\proyecto final\Movimiento_v5.nxc"
+12	219	83		tst 5, __zfcorregir_en_linea, __D0corregir_en_linea
+12	218	86	#line 218 "E:\proyecto final\Movimiento_v5.nxc"
+12	219	86		brtst 4, __NXC_Label_616, __zfcorregir_en_linea
+12	218	89	#line 218 "E:\proyecto final\Movimiento_v5.nxc"
+12	219	89		set __girar_eje_anti_7qG2_vel_7qG2_000, 30
+12	218	92	#line 218 "E:\proyecto final\Movimiento_v5.nxc"
+12	218	92	#line 218 "E:\proyecto final\Movimiento_v5.nxc"
+12	219	92		set __girar_eje_anti_7qG2_ms_7qG2_000, 275
+12	218	95	#line 218 "E:\proyecto final\Movimiento_v5.nxc"
+12	219	95	#line 219 "E:\proyecto final\Movimiento_v5.nxc"
+12	220	95		subcall girar_eje_anti, __girar_eje_anti_return
+12	219	97	#line 219 "E:\proyecto final\Movimiento_v5.nxc"
+12	220	97	#line 220 "E:\proyecto final\Movimiento_v5.nxc"
+12	221	97		subcall parar, __parar_return
+12	220	99	#line 220 "E:\proyecto final\Movimiento_v5.nxc"
+12	221	99	#line 221 "E:\proyecto final\Movimiento_v5.nxc"
+12	222	99		jmp __NXC_Label_621
+12	221	101	#line 221 "E:\proyecto final\Movimiento_v5.nxc"
+12	222	101		mov __DU0corregir_en_linea, __corregir_en_linea_7qG2_fl_negro_7qG2_000
+12	221	103	#line 221 "E:\proyecto final\Movimiento_v5.nxc"
+12	222	103		tst 5, __zfcorregir_en_linea, __DU0corregir_en_linea
+12	221	106	#line 221 "E:\proyecto final\Movimiento_v5.nxc"
+12	222	106		mov __D0corregir_en_linea, __zfcorregir_en_linea
+12	221	108	#line 221 "E:\proyecto final\Movimiento_v5.nxc"
+12	222	108		brtst 4, __NXC_Label_623, __zfcorregir_en_linea
+12	221	111	#line 221 "E:\proyecto final\Movimiento_v5.nxc"
+12	222	111		mov __signed_stack_001corregir_en_linea, __D0corregir_en_linea
+12	222	113	#line 222 "E:\proyecto final\Movimiento_v5.nxc"
+12	222	113	#line 222 "E:\proyecto final\Movimiento_v5.nxc"
+12	223	113		not __DU0corregir_en_linea, __corregir_en_linea_7qG2_tl_negro_7qG2_000
+12	222	116	#line 222 "E:\proyecto final\Movimiento_v5.nxc"
+12	223	116		tst 5, __zfcorregir_en_linea, __DU0corregir_en_linea
+12	222	119	#line 222 "E:\proyecto final\Movimiento_v5.nxc"
+12	222	119	#line 222 "E:\proyecto final\Movimiento_v5.nxc"
+12	223	119		and __D0corregir_en_linea, __signed_stack_001corregir_en_linea, __zfcorregir_en_linea
+12	225	123	#line 225 "E:\proyecto final\Movimiento_v5.nxc"
+12	226	123		tst 5, __zfcorregir_en_linea, __D0corregir_en_linea
+12	225	126	#line 225 "E:\proyecto final\Movimiento_v5.nxc"
+12	226	126		brtst 4, __NXC_Label_624, __zfcorregir_en_linea
+12	225	129	#line 225 "E:\proyecto final\Movimiento_v5.nxc"
+12	226	129		set __girar_eje_7qG2_vel_7qG2_000, 30
+12	225	132	#line 225 "E:\proyecto final\Movimiento_v5.nxc"
+12	225	132	#line 225 "E:\proyecto final\Movimiento_v5.nxc"
+12	226	132		set __girar_eje_7qG2_ms_7qG2_000, 275
+12	225	135	#line 225 "E:\proyecto final\Movimiento_v5.nxc"
+12	226	135	#line 226 "E:\proyecto final\Movimiento_v5.nxc"
+12	227	135		subcall girar_eje, __girar_eje_return
+12	226	137	#line 226 "E:\proyecto final\Movimiento_v5.nxc"
+12	227	137	#line 227 "E:\proyecto final\Movimiento_v5.nxc"
+12	228	137		subcall parar, __parar_return
+12	227	139	#line 227 "E:\proyecto final\Movimiento_v5.nxc"
+12	243	139	#line 243 "E:\proyecto final\Movimiento_v5.nxc"
+12	243	139	#line 243 "E:\proyecto final\Movimiento_v5.nxc"
+12	243	139	#line 243 "E:\proyecto final\Movimiento_v5.nxc"
+12	243	139	#line 243 "E:\proyecto final\Movimiento_v5.nxc"
+12	244	139		subret __corregir_en_linea_return
+13	249	0	#line 249 "E:\proyecto final\Movimiento_v5.nxc"
+13	250	0		set lineas_cruzadas, 0
+13	249	3	#line 249 "E:\proyecto final\Movimiento_v5.nxc"
+13	249	3	#line 249 "E:\proyecto final\Movimiento_v5.nxc"
+13	252	3	#line 252 "E:\proyecto final\Movimiento_v5.nxc"
+13	253	3		set ultimo_cruce, 0
+13	252	6	#line 252 "E:\proyecto final\Movimiento_v5.nxc"
+13	252	6	#line 252 "E:\proyecto final\Movimiento_v5.nxc"
+13	6069	6	#line 6069 "NXCDefs.h"
+13	6070	6	#pragma macro 6
+13	6070	6		acquire __PointOutMutex
+13	6070	7		mov __PointOutArgs.Location.X, __constVal200
+13	6070	9		mov __PointOutArgs.Location.Y, __constVal200
+13	6070	11		mov __PointOutArgs.Options, __constVal1
+13	6070	13		syscall 14, __PointOutArgs
+13	6070	16		release __PointOutMutex
+13	5537	17	#line 5537 "NXCDefs.h"
+13	6069	17	#line 6069 "NXCDefs.h"
+13	253	17	#line 253 "E:\proyecto final\Movimiento_v5.nxc"
+13	253	17	#line 253 "E:\proyecto final\Movimiento_v5.nxc"
+13	254	17		set __signed_stack_001avanzar_hasta_linea, 0
+13	253	20	#line 253 "E:\proyecto final\Movimiento_v5.nxc"
+13	253	20	#line 253 "E:\proyecto final\Movimiento_v5.nxc"
+13	254	20		set __signed_stack_002avanzar_hasta_linea, 56
+13	253	23	#line 253 "E:\proyecto final\Movimiento_v5.nxc"
+13	253	23	#line 253 "E:\proyecto final\Movimiento_v5.nxc"
+13	254	23		strcat __strbufavanzar_hasta_linea, __constStr0010
+13	254	27	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	255	27		acquire __TextOutMutex
+13	254	28	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	255	28		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	254	31	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	255	31		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	254	34	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	255	34		set __TextOutArgs.Options, 0
+13	254	37	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	255	37		mov __TextOutArgs.Text, __strbufavanzar_hasta_linea
+13	254	39	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	255	39		syscall 13, __TextOutArgs
+13	254	42	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	255	42		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	254	44	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	255	44		release __TextOutMutex
+13	254	45	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	254	45	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	255	45		set __signed_stack_001avanzar_hasta_linea, 0
+13	254	48	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	254	48	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	255	48		set __signed_stack_002avanzar_hasta_linea, 48
+13	254	51	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	254	51	#line 254 "E:\proyecto final\Movimiento_v5.nxc"
+13	255	51		strcat __strbufavanzar_hasta_linea, __constStr0011
+13	256	55	#line 256 "E:\proyecto final\Movimiento_v5.nxc"
+13	257	55		acquire __TextOutMutex
+13	256	56	#line 256 "E:\proyecto final\Movimiento_v5.nxc"
+13	257	56		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	256	59	#line 256 "E:\proyecto final\Movimiento_v5.nxc"
+13	257	59		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	256	62	#line 256 "E:\proyecto final\Movimiento_v5.nxc"
+13	257	62		set __TextOutArgs.Options, 0
+13	256	65	#line 256 "E:\proyecto final\Movimiento_v5.nxc"
+13	257	65		mov __TextOutArgs.Text, __strbufavanzar_hasta_linea
+13	256	67	#line 256 "E:\proyecto final\Movimiento_v5.nxc"
+13	257	67		syscall 13, __TextOutArgs
+13	256	70	#line 256 "E:\proyecto final\Movimiento_v5.nxc"
+13	257	70		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	256	72	#line 256 "E:\proyecto final\Movimiento_v5.nxc"
+13	257	72		release __TextOutMutex
+13	256	73	#line 256 "E:\proyecto final\Movimiento_v5.nxc"
+13	256	73	#line 256 "E:\proyecto final\Movimiento_v5.nxc"
+13	257	73		set __adelante_7qG2_vel_7qG2_000, 75
+13	256	76	#line 256 "E:\proyecto final\Movimiento_v5.nxc"
+13	256	76	#line 256 "E:\proyecto final\Movimiento_v5.nxc"
+13	257	76		set __adelante_7qG2_ms_7qG2_000, 2400
+13	256	79	#line 256 "E:\proyecto final\Movimiento_v5.nxc"
+13	257	79	#line 257 "E:\proyecto final\Movimiento_v5.nxc"
+13	258	79		subcall adelante, __adelante_return
+13	257	81	#line 257 "E:\proyecto final\Movimiento_v5.nxc"
+13	260	81	#line 260 "E:\proyecto final\Movimiento_v5.nxc"
+13	261	81		subcall parar, __parar_return
+13	260	83	#line 260 "E:\proyecto final\Movimiento_v5.nxc"
+13	6069	83	#line 6069 "NXCDefs.h"
+13	6070	83	#pragma macro 6
+13	6070	83		acquire __PointOutMutex
+13	6070	84		mov __PointOutArgs.Location.X, __constVal200
+13	6070	86		mov __PointOutArgs.Location.Y, __constVal200
+13	6070	88		mov __PointOutArgs.Options, __constVal1
+13	6070	90		syscall 14, __PointOutArgs
+13	6070	93		release __PointOutMutex
+13	5621	94	#line 5621 "NXCDefs.h"
+13	6069	94	#line 6069 "NXCDefs.h"
+13	261	94	#line 261 "E:\proyecto final\Movimiento_v5.nxc"
+13	261	94	#line 261 "E:\proyecto final\Movimiento_v5.nxc"
+13	262	94		set __signed_stack_001avanzar_hasta_linea, 0
+13	261	97	#line 261 "E:\proyecto final\Movimiento_v5.nxc"
+13	261	97	#line 261 "E:\proyecto final\Movimiento_v5.nxc"
+13	262	97		set __signed_stack_002avanzar_hasta_linea, 56
+13	261	100	#line 261 "E:\proyecto final\Movimiento_v5.nxc"
+13	261	100	#line 261 "E:\proyecto final\Movimiento_v5.nxc"
+13	262	100		strcat __strbufavanzar_hasta_linea, __constStr0012
+13	262	104	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	263	104		acquire __TextOutMutex
+13	262	105	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	263	105		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	262	108	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	263	108		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	262	111	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	263	111		set __TextOutArgs.Options, 0
+13	262	114	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	263	114		mov __TextOutArgs.Text, __strbufavanzar_hasta_linea
+13	262	116	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	263	116		syscall 13, __TextOutArgs
+13	262	119	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	263	119		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	262	121	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	263	121		release __TextOutMutex
+13	262	122	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	262	122	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	263	122		set __signed_stack_001avanzar_hasta_linea, 0
+13	262	125	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	262	125	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	263	125		set __signed_stack_002avanzar_hasta_linea, 48
+13	262	128	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	262	128	#line 262 "E:\proyecto final\Movimiento_v5.nxc"
+13	263	128		strcat __strbufavanzar_hasta_linea, __constStr0013
+13	264	132	#line 264 "E:\proyecto final\Movimiento_v5.nxc"
+13	265	132		acquire __TextOutMutex
+13	264	133	#line 264 "E:\proyecto final\Movimiento_v5.nxc"
+13	265	133		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	264	136	#line 264 "E:\proyecto final\Movimiento_v5.nxc"
+13	265	136		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	264	139	#line 264 "E:\proyecto final\Movimiento_v5.nxc"
+13	265	139		set __TextOutArgs.Options, 0
+13	264	142	#line 264 "E:\proyecto final\Movimiento_v5.nxc"
+13	265	142		mov __TextOutArgs.Text, __strbufavanzar_hasta_linea
+13	264	144	#line 264 "E:\proyecto final\Movimiento_v5.nxc"
+13	265	144		syscall 13, __TextOutArgs
+13	264	147	#line 264 "E:\proyecto final\Movimiento_v5.nxc"
+13	265	147		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	264	149	#line 264 "E:\proyecto final\Movimiento_v5.nxc"
+13	265	149		release __TextOutMutex
+13	264	150	#line 264 "E:\proyecto final\Movimiento_v5.nxc"
+13	265	150	#line 265 "E:\proyecto final\Movimiento_v5.nxc"
+13	266	150		set __D0avanzar_hasta_linea, 1
+13	267	153	#line 267 "E:\proyecto final\Movimiento_v5.nxc"
+13	268	153		tst 5, __zfavanzar_hasta_linea, __D0avanzar_hasta_linea
+13	267	156	#line 267 "E:\proyecto final\Movimiento_v5.nxc"
+13	268	156		brtst 4, __NXC_Label_654, __zfavanzar_hasta_linea
+13	267	159	#line 267 "E:\proyecto final\Movimiento_v5.nxc"
+13	268	159		set __izquierda_7qG2_vel_7qG2_000, 40
+13	267	162	#line 267 "E:\proyecto final\Movimiento_v5.nxc"
+13	267	162	#line 267 "E:\proyecto final\Movimiento_v5.nxc"
+13	268	162		set __izquierda_7qG2_ms_7qG2_000, 455
+13	267	165	#line 267 "E:\proyecto final\Movimiento_v5.nxc"
+13	268	165	#line 268 "E:\proyecto final\Movimiento_v5.nxc"
+13	269	165		subcall izquierda, __izquierda_return
+13	268	167	#line 268 "E:\proyecto final\Movimiento_v5.nxc"
+13	271	167	#line 271 "E:\proyecto final\Movimiento_v5.nxc"
+13	272	167		subcall parar, __parar_return
+13	271	169	#line 271 "E:\proyecto final\Movimiento_v5.nxc"
+13	271	169	#line 271 "E:\proyecto final\Movimiento_v5.nxc"
+13	272	169		mov __leer_sensores_7qG2_fl_7qG2_000, __avanzar_hasta_linea_7qG2_fl_7qG2_000
+13	271	171	#line 271 "E:\proyecto final\Movimiento_v5.nxc"
+13	272	171		mov __leer_sensores_7qG2_fr_7qG2_000, __avanzar_hasta_linea_7qG2_fr_7qG2_000
+13	271	173	#line 271 "E:\proyecto final\Movimiento_v5.nxc"
+13	272	173		mov __leer_sensores_7qG2_tl_7qG2_000, __avanzar_hasta_linea_7qG2_tl_7qG2_000
+13	274	175	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	275	175		subcall leer_sensores, __leer_sensores_return
+13	274	177	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	275	177		mov __avanzar_hasta_linea_7qG2_fl_7qG2_000, __leer_sensores_7qG2_fl_7qG2_000
+13	274	179	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	275	179		mov __avanzar_hasta_linea_7qG2_fr_7qG2_000, __leer_sensores_7qG2_fr_7qG2_000
+13	274	181	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	275	181		mov __avanzar_hasta_linea_7qG2_tl_7qG2_000, __leer_sensores_7qG2_tl_7qG2_000
+13	274	183	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	274	183	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	275	183		mov __signed_stack_001avanzar_hasta_linea, __avanzar_hasta_linea_7qG2_fl_7qG2_000
+13	274	185	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	274	185	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	275	185		set __D0avanzar_hasta_linea, 43
+13	274	188	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	275	188		cmp 0, __zfavanzar_hasta_linea, __signed_stack_001avanzar_hasta_linea, __D0avanzar_hasta_linea
+13	274	192	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	275	192		mov __D0avanzar_hasta_linea, __zfavanzar_hasta_linea
+13	274	194	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	275	194		brtst 5, __NXC_Label_661, __zfavanzar_hasta_linea
+13	274	197	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	275	197		mov __signed_stack_001avanzar_hasta_linea, __D0avanzar_hasta_linea
+13	274	199	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	275	199		mov __signed_stack_002avanzar_hasta_linea, __avanzar_hasta_linea_7qG2_fr_7qG2_000
+13	274	201	#line 274 "E:\proyecto final\Movimiento_v5.nxc"
+13	275	201	#line 275 "E:\proyecto final\Movimiento_v5.nxc"
+13	276	201		set __D0avanzar_hasta_linea, 43
+13	275	204	#line 275 "E:\proyecto final\Movimiento_v5.nxc"
+13	276	204		cmp 0, __zfavanzar_hasta_linea, __signed_stack_002avanzar_hasta_linea, __D0avanzar_hasta_linea
+13	275	208	#line 275 "E:\proyecto final\Movimiento_v5.nxc"
+13	275	208	#line 275 "E:\proyecto final\Movimiento_v5.nxc"
+13	276	208		or __D0avanzar_hasta_linea, __signed_stack_001avanzar_hasta_linea, __zfavanzar_hasta_linea
+13	276	212	#line 276 "E:\proyecto final\Movimiento_v5.nxc"
+13	277	212		tst 5, __zfavanzar_hasta_linea, __D0avanzar_hasta_linea
+13	276	215	#line 276 "E:\proyecto final\Movimiento_v5.nxc"
+13	277	215		brtst 4, __NXC_Label_664, __zfavanzar_hasta_linea
+13	276	218	#line 276 "E:\proyecto final\Movimiento_v5.nxc"
+13	277	218		set __signed_stack_001avanzar_hasta_linea, 880
+13	276	221	#line 276 "E:\proyecto final\Movimiento_v5.nxc"
+13	276	221	#line 276 "E:\proyecto final\Movimiento_v5.nxc"
+13	277	221		set __signed_stack_002avanzar_hasta_linea, 200
+13	276	224	#line 276 "E:\proyecto final\Movimiento_v5.nxc"
+13	276	224	#line 276 "E:\proyecto final\Movimiento_v5.nxc"
+13	277	224		set __signed_stack_003avanzar_hasta_linea, 4
+13	276	227	#line 276 "E:\proyecto final\Movimiento_v5.nxc"
+13	276	227	#line 276 "E:\proyecto final\Movimiento_v5.nxc"
+13	277	227		set __D0avanzar_hasta_linea, 0
+13	277	230	#line 277 "E:\proyecto final\Movimiento_v5.nxc"
+13	278	230		acquire __SPTArgsMutex
+13	277	231	#line 277 "E:\proyecto final\Movimiento_v5.nxc"
+13	278	231		mov __SPTArgs.Frequency, __signed_stack_001avanzar_hasta_linea
+13	277	234	#line 277 "E:\proyecto final\Movimiento_v5.nxc"
+13	278	234		mov __SPTArgs.Duration, __signed_stack_002avanzar_hasta_linea
+13	277	237	#line 277 "E:\proyecto final\Movimiento_v5.nxc"
+13	278	237		mov __SPTArgs.Volume, __signed_stack_003avanzar_hasta_linea
+13	277	240	#line 277 "E:\proyecto final\Movimiento_v5.nxc"
+13	278	240		mov __SPTArgs.Loop, __D0avanzar_hasta_linea
+13	277	242	#line 277 "E:\proyecto final\Movimiento_v5.nxc"
+13	278	242		syscall 10, __SPTArgs
+13	277	245	#line 277 "E:\proyecto final\Movimiento_v5.nxc"
+13	278	245		mov __D0avanzar_hasta_linea, __SPTArgs.Result
+13	277	247	#line 277 "E:\proyecto final\Movimiento_v5.nxc"
+13	278	247		release __SPTArgsMutex
+13	277	248	#line 277 "E:\proyecto final\Movimiento_v5.nxc"
+13	277	248	#line 277 "E:\proyecto final\Movimiento_v5.nxc"
+13	278	248		set __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea, 200
+13	277	251	#line 277 "E:\proyecto final\Movimiento_v5.nxc"
+13	7921	251	#line 7921 "NXCDefs.h"
+13	7922	251		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea
+13	7921	254	#line 7921 "NXCDefs.h"
+13	278	254	#line 278 "E:\proyecto final\Movimiento_v5.nxc"
+13	279	254	#line 279 "E:\proyecto final\Movimiento_v5.nxc"
+13	280	254		jmp __NXC_Label_654
+13	279	256	#line 279 "E:\proyecto final\Movimiento_v5.nxc"
+13	282	256	#line 282 "E:\proyecto final\Movimiento_v5.nxc"
+13	282	256	#line 282 "E:\proyecto final\Movimiento_v5.nxc"
+13	283	256		mov __corregir_busqueda_7qG2_fl_7qG2_000, __avanzar_hasta_linea_7qG2_fl_7qG2_000
+13	282	258	#line 282 "E:\proyecto final\Movimiento_v5.nxc"
+13	282	258	#line 282 "E:\proyecto final\Movimiento_v5.nxc"
+13	283	258		mov __corregir_busqueda_7qG2_tl_7qG2_000, __avanzar_hasta_linea_7qG2_tl_7qG2_000
+13	282	260	#line 282 "E:\proyecto final\Movimiento_v5.nxc"
+13	284	260	#line 284 "E:\proyecto final\Movimiento_v5.nxc"
+13	285	260		subcall corregir_busqueda, __corregir_busqueda_return
+13	284	262	#line 284 "E:\proyecto final\Movimiento_v5.nxc"
+13	284	262	#line 284 "E:\proyecto final\Movimiento_v5.nxc"
+13	285	262		set __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea, 10
+13	284	265	#line 284 "E:\proyecto final\Movimiento_v5.nxc"
+13	7921	265	#line 7921 "NXCDefs.h"
+13	7922	265		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea
+13	7921	268	#line 7921 "NXCDefs.h"
+13	285	268	#line 285 "E:\proyecto final\Movimiento_v5.nxc"
+13	288	268	#line 288 "E:\proyecto final\Movimiento_v5.nxc"
+13	289	268		jmp __NXC_Label_653
+13	288	270	#line 288 "E:\proyecto final\Movimiento_v5.nxc"
+13	6069	270	#line 6069 "NXCDefs.h"
+13	6070	270	#pragma macro 6
+13	6070	270		acquire __PointOutMutex
+13	6070	271		mov __PointOutArgs.Location.X, __constVal200
+13	6070	273		mov __PointOutArgs.Location.Y, __constVal200
+13	6070	275		mov __PointOutArgs.Options, __constVal1
+13	6070	277		syscall 14, __PointOutArgs
+13	6070	280		release __PointOutMutex
+13	5849	281	#line 5849 "NXCDefs.h"
+13	6069	281	#line 6069 "NXCDefs.h"
+13	289	281	#line 289 "E:\proyecto final\Movimiento_v5.nxc"
+13	289	281	#line 289 "E:\proyecto final\Movimiento_v5.nxc"
+13	290	281		set __signed_stack_001avanzar_hasta_linea, 0
+13	289	284	#line 289 "E:\proyecto final\Movimiento_v5.nxc"
+13	289	284	#line 289 "E:\proyecto final\Movimiento_v5.nxc"
+13	290	284		set __signed_stack_002avanzar_hasta_linea, 56
+13	289	287	#line 289 "E:\proyecto final\Movimiento_v5.nxc"
+13	289	287	#line 289 "E:\proyecto final\Movimiento_v5.nxc"
+13	290	287		strcat __strbufavanzar_hasta_linea, __constStr0014
+13	290	291	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	291	291		acquire __TextOutMutex
+13	290	292	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	291	292		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	290	295	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	291	295		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	290	298	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	291	298		set __TextOutArgs.Options, 0
+13	290	301	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	291	301		mov __TextOutArgs.Text, __strbufavanzar_hasta_linea
+13	290	303	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	291	303		syscall 13, __TextOutArgs
+13	290	306	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	291	306		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	290	308	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	291	308		release __TextOutMutex
+13	290	309	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	290	309	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	291	309		set __signed_stack_001avanzar_hasta_linea, 0
+13	290	312	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	290	312	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	291	312		set __signed_stack_002avanzar_hasta_linea, 48
+13	290	315	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	290	315	#line 290 "E:\proyecto final\Movimiento_v5.nxc"
+13	291	315		strcat __strbufavanzar_hasta_linea, __constStr0015
+13	293	319	#line 293 "E:\proyecto final\Movimiento_v5.nxc"
+13	294	319		acquire __TextOutMutex
+13	293	320	#line 293 "E:\proyecto final\Movimiento_v5.nxc"
+13	294	320		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	293	323	#line 293 "E:\proyecto final\Movimiento_v5.nxc"
+13	294	323		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	293	326	#line 293 "E:\proyecto final\Movimiento_v5.nxc"
+13	294	326		set __TextOutArgs.Options, 0
+13	293	329	#line 293 "E:\proyecto final\Movimiento_v5.nxc"
+13	294	329		mov __TextOutArgs.Text, __strbufavanzar_hasta_linea
+13	293	331	#line 293 "E:\proyecto final\Movimiento_v5.nxc"
+13	294	331		syscall 13, __TextOutArgs
+13	293	334	#line 293 "E:\proyecto final\Movimiento_v5.nxc"
+13	294	334		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	293	336	#line 293 "E:\proyecto final\Movimiento_v5.nxc"
+13	294	336		release __TextOutMutex
+13	293	337	#line 293 "E:\proyecto final\Movimiento_v5.nxc"
+13	294	337	#line 294 "E:\proyecto final\Movimiento_v5.nxc"
+13	295	337		set lineas_cruzadas, 0
+13	294	340	#line 294 "E:\proyecto final\Movimiento_v5.nxc"
+13	294	340	#line 294 "E:\proyecto final\Movimiento_v5.nxc"
+13	294	340	#line 294 "E:\proyecto final\Movimiento_v5.nxc"
+13	295	340		gettick ultimo_cruce
+13	294	342	#line 294 "E:\proyecto final\Movimiento_v5.nxc"
+13	294	342	#line 294 "E:\proyecto final\Movimiento_v5.nxc"
+13	294	342	#line 294 "E:\proyecto final\Movimiento_v5.nxc"
+13	297	342	#line 297 "E:\proyecto final\Movimiento_v5.nxc"
+13	298	342		set __D0avanzar_hasta_linea, 1
+13	299	345	#line 299 "E:\proyecto final\Movimiento_v5.nxc"
+13	300	345		tst 5, __zfavanzar_hasta_linea, __D0avanzar_hasta_linea
+13	299	348	#line 299 "E:\proyecto final\Movimiento_v5.nxc"
+13	300	348		brtst 4, __NXC_Label_694, __zfavanzar_hasta_linea
+13	299	351	#line 299 "E:\proyecto final\Movimiento_v5.nxc"
+13	300	351		set __adelante_7qG2_vel_7qG2_000, 40
+13	299	354	#line 299 "E:\proyecto final\Movimiento_v5.nxc"
+13	299	354	#line 299 "E:\proyecto final\Movimiento_v5.nxc"
+13	300	354		set __adelante_7qG2_ms_7qG2_000, 455
+13	299	357	#line 299 "E:\proyecto final\Movimiento_v5.nxc"
+13	300	357	#line 300 "E:\proyecto final\Movimiento_v5.nxc"
+13	301	357		subcall adelante, __adelante_return
+13	300	359	#line 300 "E:\proyecto final\Movimiento_v5.nxc"
+13	303	359	#line 303 "E:\proyecto final\Movimiento_v5.nxc"
+13	304	359		subcall parar, __parar_return
+13	303	361	#line 303 "E:\proyecto final\Movimiento_v5.nxc"
+13	303	361	#line 303 "E:\proyecto final\Movimiento_v5.nxc"
+13	304	361		mov __leer_sensores_7qG2_fl_7qG2_000, __avanzar_hasta_linea_7qG2_fl_7qG2_000
+13	303	363	#line 303 "E:\proyecto final\Movimiento_v5.nxc"
+13	304	363		mov __leer_sensores_7qG2_fr_7qG2_000, __avanzar_hasta_linea_7qG2_fr_7qG2_000
+13	303	365	#line 303 "E:\proyecto final\Movimiento_v5.nxc"
+13	304	365		mov __leer_sensores_7qG2_tl_7qG2_000, __avanzar_hasta_linea_7qG2_tl_7qG2_000
+13	306	367	#line 306 "E:\proyecto final\Movimiento_v5.nxc"
+13	307	367		subcall leer_sensores, __leer_sensores_return
+13	306	369	#line 306 "E:\proyecto final\Movimiento_v5.nxc"
+13	307	369		mov __avanzar_hasta_linea_7qG2_fl_7qG2_000, __leer_sensores_7qG2_fl_7qG2_000
+13	306	371	#line 306 "E:\proyecto final\Movimiento_v5.nxc"
+13	307	371		mov __avanzar_hasta_linea_7qG2_fr_7qG2_000, __leer_sensores_7qG2_fr_7qG2_000
+13	306	373	#line 306 "E:\proyecto final\Movimiento_v5.nxc"
+13	307	373		mov __avanzar_hasta_linea_7qG2_tl_7qG2_000, __leer_sensores_7qG2_tl_7qG2_000
+13	306	375	#line 306 "E:\proyecto final\Movimiento_v5.nxc"
+13	306	375	#line 306 "E:\proyecto final\Movimiento_v5.nxc"
+13	307	375	#pragma macro 26
+13	307	375		acquire __RLSBmutex3
+13	307	376		mov __RLSReadBuf3, __RLSBbufLSWrite1
+13	307	378		set __RLSBytesCount3, 1
+13	307	381		wait2 NA, __constVal15
+13	307	384		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+13	307	386		index __D0avanzar_hasta_linea, __RLSReadBuf3, 65535
+13	307	390		release __RLSBmutex3
+13	5972	391	#line 5972 "E:\proyecto final\Movimiento_v5.nxc"
+13	306	391	#line 306 "E:\proyecto final\Movimiento_v5.nxc"
+13	307	391		mov __signed_stack_001avanzar_hasta_linea, __D0avanzar_hasta_linea
+13	307	393	#line 307 "E:\proyecto final\Movimiento_v5.nxc"
+13	308	393		set __D0avanzar_hasta_linea, 40
+13	307	396	#line 307 "E:\proyecto final\Movimiento_v5.nxc"
+13	308	396		cmp 0, __zfavanzar_hasta_linea, __signed_stack_001avanzar_hasta_linea, __D0avanzar_hasta_linea
+13	307	400	#line 307 "E:\proyecto final\Movimiento_v5.nxc"
+13	308	400		mov __D0avanzar_hasta_linea, __zfavanzar_hasta_linea
+13	308	402	#line 308 "E:\proyecto final\Movimiento_v5.nxc"
+13	309	402		brtst 4, __NXC_Label_703, __zfavanzar_hasta_linea
+13	309	405	#line 309 "E:\proyecto final\Movimiento_v5.nxc"
+13	310	405		subcall parar, __parar_return
+13	309	407	#line 309 "E:\proyecto final\Movimiento_v5.nxc"
+13	6069	407	#line 6069 "NXCDefs.h"
+13	6070	407	#pragma macro 6
+13	6070	407		acquire __PointOutMutex
+13	6070	408		mov __PointOutArgs.Location.X, __constVal200
+13	6070	410		mov __PointOutArgs.Location.Y, __constVal200
+13	6070	412		mov __PointOutArgs.Options, __constVal1
+13	6070	414		syscall 14, __PointOutArgs
+13	6070	417		release __PointOutMutex
+13	5989	418	#line 5989 "NXCDefs.h"
+13	6069	418	#line 6069 "NXCDefs.h"
+13	310	418	#line 310 "E:\proyecto final\Movimiento_v5.nxc"
+13	310	418	#line 310 "E:\proyecto final\Movimiento_v5.nxc"
+13	311	418		set __signed_stack_001avanzar_hasta_linea, 0
+13	310	421	#line 310 "E:\proyecto final\Movimiento_v5.nxc"
+13	310	421	#line 310 "E:\proyecto final\Movimiento_v5.nxc"
+13	311	421		set __signed_stack_002avanzar_hasta_linea, 56
+13	310	424	#line 310 "E:\proyecto final\Movimiento_v5.nxc"
+13	310	424	#line 310 "E:\proyecto final\Movimiento_v5.nxc"
+13	311	424		strcat __strbufavanzar_hasta_linea, __constStr0016
+13	311	428	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	428		acquire __TextOutMutex
+13	311	429	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	429		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	311	432	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	432		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	311	435	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	435		set __TextOutArgs.Options, 0
+13	311	438	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	438		mov __TextOutArgs.Text, __strbufavanzar_hasta_linea
+13	311	440	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	440		syscall 13, __TextOutArgs
+13	311	443	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	443		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	311	445	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	445		release __TextOutMutex
+13	311	446	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	311	446	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	446		set __signed_stack_001avanzar_hasta_linea, 0
+13	311	449	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	311	449	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	449		set __signed_stack_002avanzar_hasta_linea, 48
+13	311	452	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	311	452	#line 311 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	452		mov __D0avanzar_hasta_linea, lineas_cruzadas
+13	312	454	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	454		acquire __TextOutMutex
+13	312	455	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	455		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	312	458	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	458		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	312	461	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	461		set __TextOutArgs.Options, 0
+13	312	464	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	464		numtostr __TextOutArgs.Text, __D0avanzar_hasta_linea
+13	312	467	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	467		syscall 13, __TextOutArgs
+13	312	470	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	470		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	312	472	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	472		release __TextOutMutex
+13	312	473	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	473	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	473		set __signed_stack_001avanzar_hasta_linea, 20
+13	312	476	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	476	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	476		set __signed_stack_002avanzar_hasta_linea, 48
+13	312	479	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	312	479	#line 312 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	479		strcat __strbufavanzar_hasta_linea, __constStr0017
+13	313	483	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	314	483		acquire __TextOutMutex
+13	313	484	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	314	484		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	313	487	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	314	487		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	313	490	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	314	490		set __TextOutArgs.Options, 0
+13	313	493	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	314	493		mov __TextOutArgs.Text, __strbufavanzar_hasta_linea
+13	313	495	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	314	495		syscall 13, __TextOutArgs
+13	313	498	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	314	498		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	313	500	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	314	500		release __TextOutMutex
+13	313	501	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	501	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	314	501		set __signed_stack_001avanzar_hasta_linea, 440
+13	313	504	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	504	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	314	504		set __signed_stack_002avanzar_hasta_linea, 300
+13	313	507	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	507	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	314	507		set __signed_stack_003avanzar_hasta_linea, 4
+13	313	510	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	313	510	#line 313 "E:\proyecto final\Movimiento_v5.nxc"
+13	314	510		set __D0avanzar_hasta_linea, 0
+13	314	513	#line 314 "E:\proyecto final\Movimiento_v5.nxc"
+13	315	513		acquire __SPTArgsMutex
+13	314	514	#line 314 "E:\proyecto final\Movimiento_v5.nxc"
+13	315	514		mov __SPTArgs.Frequency, __signed_stack_001avanzar_hasta_linea
+13	314	517	#line 314 "E:\proyecto final\Movimiento_v5.nxc"
+13	315	517		mov __SPTArgs.Duration, __signed_stack_002avanzar_hasta_linea
+13	314	520	#line 314 "E:\proyecto final\Movimiento_v5.nxc"
+13	315	520		mov __SPTArgs.Volume, __signed_stack_003avanzar_hasta_linea
+13	314	523	#line 314 "E:\proyecto final\Movimiento_v5.nxc"
+13	315	523		mov __SPTArgs.Loop, __D0avanzar_hasta_linea
+13	314	525	#line 314 "E:\proyecto final\Movimiento_v5.nxc"
+13	315	525		syscall 10, __SPTArgs
+13	314	528	#line 314 "E:\proyecto final\Movimiento_v5.nxc"
+13	315	528		mov __D0avanzar_hasta_linea, __SPTArgs.Result
+13	314	530	#line 314 "E:\proyecto final\Movimiento_v5.nxc"
+13	315	530		release __SPTArgsMutex
+13	314	531	#line 314 "E:\proyecto final\Movimiento_v5.nxc"
+13	314	531	#line 314 "E:\proyecto final\Movimiento_v5.nxc"
+13	315	531		set __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea, 300
+13	314	534	#line 314 "E:\proyecto final\Movimiento_v5.nxc"
+13	7921	534	#line 7921 "NXCDefs.h"
+13	7922	534		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea
+13	7921	537	#line 7921 "NXCDefs.h"
+13	315	537	#line 315 "E:\proyecto final\Movimiento_v5.nxc"
+13	316	537	#line 316 "E:\proyecto final\Movimiento_v5.nxc"
+13	317	537		set __DU0avanzar_hasta_linea, 0
+13	316	540	#line 316 "E:\proyecto final\Movimiento_v5.nxc"
+13	316	540	#line 316 "E:\proyecto final\Movimiento_v5.nxc"
+13	317	540		subret __avanzar_hasta_linea_return
+13	316	542	#line 316 "E:\proyecto final\Movimiento_v5.nxc"
+13	319	542	#line 319 "E:\proyecto final\Movimiento_v5.nxc"
+13	319	542	#line 319 "E:\proyecto final\Movimiento_v5.nxc"
+13	320	542		mov __detectar_cruce_7qG2_fl_7qG2_000, __avanzar_hasta_linea_7qG2_fl_7qG2_000
+13	319	544	#line 319 "E:\proyecto final\Movimiento_v5.nxc"
+13	319	544	#line 319 "E:\proyecto final\Movimiento_v5.nxc"
+13	320	544		mov __detectar_cruce_7qG2_fr_7qG2_000, __avanzar_hasta_linea_7qG2_fr_7qG2_000
+13	319	546	#line 319 "E:\proyecto final\Movimiento_v5.nxc"
+13	320	546	#line 320 "E:\proyecto final\Movimiento_v5.nxc"
+13	321	546		subcall detectar_cruce, __detectar_cruce_return
+13	320	548	#line 320 "E:\proyecto final\Movimiento_v5.nxc"
+13	321	548		mov __DU0avanzar_hasta_linea, __DU0detectar_cruce
+13	322	550	#line 322 "E:\proyecto final\Movimiento_v5.nxc"
+13	323	550		tst 5, __zfavanzar_hasta_linea, __DU0avanzar_hasta_linea
+13	322	553	#line 322 "E:\proyecto final\Movimiento_v5.nxc"
+13	323	553		brtst 4, __NXC_Label_736, __zfavanzar_hasta_linea
+13	322	556	#line 322 "E:\proyecto final\Movimiento_v5.nxc"
+13	323	556		set __signed_stack_001avanzar_hasta_linea, 0
+13	322	559	#line 322 "E:\proyecto final\Movimiento_v5.nxc"
+13	322	559	#line 322 "E:\proyecto final\Movimiento_v5.nxc"
+13	323	559		set __signed_stack_002avanzar_hasta_linea, 40
+13	322	562	#line 322 "E:\proyecto final\Movimiento_v5.nxc"
+13	322	562	#line 322 "E:\proyecto final\Movimiento_v5.nxc"
+13	323	562		strcat __strbufavanzar_hasta_linea, __constStr0018
+13	323	566	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	324	566		acquire __TextOutMutex
+13	323	567	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	324	567		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	323	570	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	324	570		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	323	573	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	324	573		set __TextOutArgs.Options, 0
+13	323	576	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	324	576		mov __TextOutArgs.Text, __strbufavanzar_hasta_linea
+13	323	578	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	324	578		syscall 13, __TextOutArgs
+13	323	581	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	324	581		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	323	583	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	324	583		release __TextOutMutex
+13	323	584	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	323	584	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	324	584		set __signed_stack_001avanzar_hasta_linea, 50
+13	323	587	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	323	587	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	324	587		set __signed_stack_002avanzar_hasta_linea, 40
+13	323	590	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	323	590	#line 323 "E:\proyecto final\Movimiento_v5.nxc"
+13	324	590		mov __D0avanzar_hasta_linea, lineas_cruzadas
+13	327	592	#line 327 "E:\proyecto final\Movimiento_v5.nxc"
+13	328	592		acquire __TextOutMutex
+13	327	593	#line 327 "E:\proyecto final\Movimiento_v5.nxc"
+13	328	593		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	327	596	#line 327 "E:\proyecto final\Movimiento_v5.nxc"
+13	328	596		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	327	599	#line 327 "E:\proyecto final\Movimiento_v5.nxc"
+13	328	599		set __TextOutArgs.Options, 0
+13	327	602	#line 327 "E:\proyecto final\Movimiento_v5.nxc"
+13	328	602		numtostr __TextOutArgs.Text, __D0avanzar_hasta_linea
+13	327	605	#line 327 "E:\proyecto final\Movimiento_v5.nxc"
+13	328	605		syscall 13, __TextOutArgs
+13	327	608	#line 327 "E:\proyecto final\Movimiento_v5.nxc"
+13	328	608		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	327	610	#line 327 "E:\proyecto final\Movimiento_v5.nxc"
+13	328	610		release __TextOutMutex
+13	327	611	#line 327 "E:\proyecto final\Movimiento_v5.nxc"
+13	327	611	#line 327 "E:\proyecto final\Movimiento_v5.nxc"
+13	328	611		mov __signed_stack_001avanzar_hasta_linea, lineas_cruzadas
+13	327	613	#line 327 "E:\proyecto final\Movimiento_v5.nxc"
+13	328	613	#line 328 "E:\proyecto final\Movimiento_v5.nxc"
+13	329	613		set __D0avanzar_hasta_linea, 3
+13	328	616	#line 328 "E:\proyecto final\Movimiento_v5.nxc"
+13	329	616		cmp 3, __zfavanzar_hasta_linea, __signed_stack_001avanzar_hasta_linea, __D0avanzar_hasta_linea
+13	328	620	#line 328 "E:\proyecto final\Movimiento_v5.nxc"
+13	329	620		mov __D0avanzar_hasta_linea, __zfavanzar_hasta_linea
+13	329	622	#line 329 "E:\proyecto final\Movimiento_v5.nxc"
+13	330	622		brtst 4, __NXC_Label_749, __zfavanzar_hasta_linea
+13	330	625	#line 330 "E:\proyecto final\Movimiento_v5.nxc"
+13	331	625		subcall parar, __parar_return
+13	330	627	#line 330 "E:\proyecto final\Movimiento_v5.nxc"
+13	6069	627	#line 6069 "NXCDefs.h"
+13	6070	627	#pragma macro 6
+13	6070	627		acquire __PointOutMutex
+13	6070	628		mov __PointOutArgs.Location.X, __constVal200
+13	6070	630		mov __PointOutArgs.Location.Y, __constVal200
+13	6070	632		mov __PointOutArgs.Options, __constVal1
+13	6070	634		syscall 14, __PointOutArgs
+13	6070	637		release __PointOutMutex
+13	6251	638	#line 6251 "NXCDefs.h"
+13	6069	638	#line 6069 "NXCDefs.h"
+13	331	638	#line 331 "E:\proyecto final\Movimiento_v5.nxc"
+13	331	638	#line 331 "E:\proyecto final\Movimiento_v5.nxc"
+13	332	638		set __signed_stack_001avanzar_hasta_linea, 0
+13	331	641	#line 331 "E:\proyecto final\Movimiento_v5.nxc"
+13	331	641	#line 331 "E:\proyecto final\Movimiento_v5.nxc"
+13	332	641		set __signed_stack_002avanzar_hasta_linea, 56
+13	331	644	#line 331 "E:\proyecto final\Movimiento_v5.nxc"
+13	331	644	#line 331 "E:\proyecto final\Movimiento_v5.nxc"
+13	332	644		strcat __strbufavanzar_hasta_linea, __constStr0019
+13	332	648	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	648		acquire __TextOutMutex
+13	332	649	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	649		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	332	652	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	652		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	332	655	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	655		set __TextOutArgs.Options, 0
+13	332	658	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	658		mov __TextOutArgs.Text, __strbufavanzar_hasta_linea
+13	332	660	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	660		syscall 13, __TextOutArgs
+13	332	663	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	663		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	332	665	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	665		release __TextOutMutex
+13	332	666	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	332	666	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	666		set __signed_stack_001avanzar_hasta_linea, 0
+13	332	669	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	332	669	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	669		set __signed_stack_002avanzar_hasta_linea, 48
+13	332	672	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	332	672	#line 332 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	672		strcat __strbufavanzar_hasta_linea, __constStr0020
+13	333	676	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	676		acquire __TextOutMutex
+13	333	677	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	677		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	333	680	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	680		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	333	683	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	683		set __TextOutArgs.Options, 0
+13	333	686	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	686		mov __TextOutArgs.Text, __strbufavanzar_hasta_linea
+13	333	688	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	688		syscall 13, __TextOutArgs
+13	333	691	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	691		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	333	693	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	693		release __TextOutMutex
+13	333	694	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	694	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	694		set __signed_stack_001avanzar_hasta_linea, 50
+13	333	697	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	697	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	697		set __signed_stack_002avanzar_hasta_linea, 48
+13	333	700	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	333	700	#line 333 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	700		mov __D0avanzar_hasta_linea, lineas_cruzadas
+13	334	702	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	335	702		acquire __TextOutMutex
+13	334	703	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	335	703		mov __TextOutArgs.Location.X, __signed_stack_001avanzar_hasta_linea
+13	334	706	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	335	706		mov __TextOutArgs.Location.Y, __signed_stack_002avanzar_hasta_linea
+13	334	709	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	335	709		set __TextOutArgs.Options, 0
+13	334	712	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	335	712		numtostr __TextOutArgs.Text, __D0avanzar_hasta_linea
+13	334	715	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	335	715		syscall 13, __TextOutArgs
+13	334	718	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	335	718		mov __D0avanzar_hasta_linea, __TextOutArgs.Result
+13	334	720	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	335	720		release __TextOutMutex
+13	334	721	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	721	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	335	721		set __signed_stack_001avanzar_hasta_linea, 880
+13	334	724	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	724	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	335	724		set __signed_stack_002avanzar_hasta_linea, 500
+13	334	727	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	727	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	335	727		set __signed_stack_003avanzar_hasta_linea, 4
+13	334	730	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	334	730	#line 334 "E:\proyecto final\Movimiento_v5.nxc"
+13	335	730		set __D0avanzar_hasta_linea, 0
+13	335	733	#line 335 "E:\proyecto final\Movimiento_v5.nxc"
+13	336	733		acquire __SPTArgsMutex
+13	335	734	#line 335 "E:\proyecto final\Movimiento_v5.nxc"
+13	336	734		mov __SPTArgs.Frequency, __signed_stack_001avanzar_hasta_linea
+13	335	737	#line 335 "E:\proyecto final\Movimiento_v5.nxc"
+13	336	737		mov __SPTArgs.Duration, __signed_stack_002avanzar_hasta_linea
+13	335	740	#line 335 "E:\proyecto final\Movimiento_v5.nxc"
+13	336	740		mov __SPTArgs.Volume, __signed_stack_003avanzar_hasta_linea
+13	335	743	#line 335 "E:\proyecto final\Movimiento_v5.nxc"
+13	336	743		mov __SPTArgs.Loop, __D0avanzar_hasta_linea
+13	335	745	#line 335 "E:\proyecto final\Movimiento_v5.nxc"
+13	336	745		syscall 10, __SPTArgs
+13	335	748	#line 335 "E:\proyecto final\Movimiento_v5.nxc"
+13	336	748		mov __D0avanzar_hasta_linea, __SPTArgs.Result
+13	335	750	#line 335 "E:\proyecto final\Movimiento_v5.nxc"
+13	336	750		release __SPTArgsMutex
+13	335	751	#line 335 "E:\proyecto final\Movimiento_v5.nxc"
+13	335	751	#line 335 "E:\proyecto final\Movimiento_v5.nxc"
+13	336	751		set __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea, 500
+13	335	754	#line 335 "E:\proyecto final\Movimiento_v5.nxc"
+13	7921	754	#line 7921 "NXCDefs.h"
+13	7922	754		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea
+13	7921	757	#line 7921 "NXCDefs.h"
+13	336	757	#line 336 "E:\proyecto final\Movimiento_v5.nxc"
+13	337	757	#line 337 "E:\proyecto final\Movimiento_v5.nxc"
+13	338	757		set __DU0avanzar_hasta_linea, 1
+13	337	760	#line 337 "E:\proyecto final\Movimiento_v5.nxc"
+13	337	760	#line 337 "E:\proyecto final\Movimiento_v5.nxc"
+13	338	760		subret __avanzar_hasta_linea_return
+13	337	762	#line 337 "E:\proyecto final\Movimiento_v5.nxc"
+13	341	762	#line 341 "E:\proyecto final\Movimiento_v5.nxc"
+13	341	762	#line 341 "E:\proyecto final\Movimiento_v5.nxc"
+13	342	762		set __adelante_7qG2_vel_7qG2_000, 40
+13	341	765	#line 341 "E:\proyecto final\Movimiento_v5.nxc"
+13	341	765	#line 341 "E:\proyecto final\Movimiento_v5.nxc"
+13	342	765		set __adelante_7qG2_ms_7qG2_000, 300
+13	341	768	#line 341 "E:\proyecto final\Movimiento_v5.nxc"
+13	342	768	#line 342 "E:\proyecto final\Movimiento_v5.nxc"
+13	343	768		subcall adelante, __adelante_return
+13	342	770	#line 342 "E:\proyecto final\Movimiento_v5.nxc"
+13	343	770	#line 343 "E:\proyecto final\Movimiento_v5.nxc"
+13	344	770		subcall parar, __parar_return
+13	343	772	#line 343 "E:\proyecto final\Movimiento_v5.nxc"
+13	346	772	#line 346 "E:\proyecto final\Movimiento_v5.nxc"
+13	346	772	#line 346 "E:\proyecto final\Movimiento_v5.nxc"
+13	347	772		mov __corregir_en_linea_7qG2_fl_7qG2_000, __avanzar_hasta_linea_7qG2_fl_7qG2_000
+13	346	774	#line 346 "E:\proyecto final\Movimiento_v5.nxc"
+13	346	774	#line 346 "E:\proyecto final\Movimiento_v5.nxc"
+13	347	774		mov __corregir_en_linea_7qG2_tl_7qG2_000, __avanzar_hasta_linea_7qG2_tl_7qG2_000
+13	346	776	#line 346 "E:\proyecto final\Movimiento_v5.nxc"
+13	348	776	#line 348 "E:\proyecto final\Movimiento_v5.nxc"
+13	349	776		subcall corregir_en_linea, __corregir_en_linea_return
+13	348	778	#line 348 "E:\proyecto final\Movimiento_v5.nxc"
+13	348	778	#line 348 "E:\proyecto final\Movimiento_v5.nxc"
+13	349	778		set __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea, 10
+13	348	781	#line 348 "E:\proyecto final\Movimiento_v5.nxc"
+13	7921	781	#line 7921 "NXCDefs.h"
+13	7922	781		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_avanzar_hasta_linea
+13	7921	784	#line 7921 "NXCDefs.h"
+13	349	784	#line 349 "E:\proyecto final\Movimiento_v5.nxc"
+13	355	784	#line 355 "E:\proyecto final\Movimiento_v5.nxc"
+13	356	784		jmp __NXC_Label_693
+13	355	786	#line 355 "E:\proyecto final\Movimiento_v5.nxc"
+13	355	786	#line 355 "E:\proyecto final\Movimiento_v5.nxc"
+13	356	786		subret __avanzar_hasta_linea_return
+14	389	0	#line 389 "E:\proyecto final\Movimiento_v5.nxc"
+14	390	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	E:\proyecto final\Movimiento_v5.nxc
+1	__ResetSensorSubroutine	363	NXTDefs.h
+2	__ReadLSBytes3	376	NXTDefs.h
+3	adelante	461	E:\proyecto final\Movimiento_v5.nxc
+4	derecha	523	E:\proyecto final\Movimiento_v5.nxc
+5	izquierda	618	E:\proyecto final\Movimiento_v5.nxc
+6	girar_eje	718	E:\proyecto final\Movimiento_v5.nxc
+7	girar_eje_anti	810	E:\proyecto final\Movimiento_v5.nxc
+8	parar	897	E:\proyecto final\Movimiento_v5.nxc
+9	leer_sensores	928	E:\proyecto final\Movimiento_v5.nxc
+10	detectar_cruce	942	E:\proyecto final\Movimiento_v5.nxc
+11	corregir_busqueda	1104	E:\proyecto final\Movimiento_v5.nxc
+12	corregir_en_linea	1207	E:\proyecto final\Movimiento_v5.nxc
+13	avanzar_hasta_linea	1348	E:\proyecto final\Movimiento_v5.nxc
+14	__initialize_global_data	2136	E:\proyecto final\Movimiento_v5.nxc

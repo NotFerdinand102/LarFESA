@@ -1,0 +1,999 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0SetSensorLight_inline_main	6	1	0	4	9
+1	__D0rderecha	6	1	4	4	6
+2	__DU0SetSensorLight_inline_main	5	1	8	4	6
+3	__DU0SetSensorLowspeed_inline_main	5	1	12	4	2
+4	__D0SetSensorLowspeed_inline_main	6	1	16	4	3
+5	__D0r	6	1	20	4	6
+6	__D0adelante	6	1	24	4	4
+7	__SPTArgsMutex	9	0	28	4	8
+8	__D0atras	6	1	32	4	4
+9	__D0main	6	1	36	4	38
+10	__D0derecha	6	1	40	4	6
+11	__Wait_7qG2_ms_7qG2_000_inline_rderecha	5	1	44	4	2
+12	__Wait_7qG2_ms_7qG2_000_inline_derecha	5	1	48	4	2
+13	__Wait_7qG2_ms_7qG2_000_inline_r	5	1	52	4	2
+14	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	56	4	12
+15	__Wait_7qG2_ms_7qG2_000_inline_parar	5	1	60	4	2
+16	__Wait_7qG2_ms_7qG2_000_inline_atras	5	1	64	4	2
+17	__signed_stack_001main	6	1	68	4	24
+18	__signed_stack_001derecha	6	1	72	4	2
+19	__signed_stack_002main	6	1	76	4	14
+20	__Wait_7qG2_ms_7qG2_000_inline_adelante	5	1	80	4	2
+21	__signed_stack_003main	6	1	84	4	8
+22	__RLSBmutex3	9	0	88	4	2
+23	__CLSCSMutex3	9	0	92	4	2
+24	__OnRevMutex	9	0	96	4	12
+25	__CLSRMutex3	9	0	100	4	2
+26	__CLSWMutex3	9	0	104	4	2
+27	__atras_7qG2_vel_7qG2_000	4	1	108	2	3
+28	__atras_7qG2_ms_7qG2_000	4	1	110	2	2
+29	__adelante_7qG2_ms_7qG2_000	4	1	112	2	3
+30	SOM1	4	1	114	2	5
+31	__adelante_7qG2_vel_7qG2_000	4	1	116	2	4
+32	__derecha_7qG2_vel_7qG2_000	4	1	118	2	5
+33	__main_7qG2_fi_7qG2_001	4	1	120	2	3
+34	__r_7qG2_ms_7qG2_000	4	1	122	2	2
+35	__main_7qG2_fd_7qG2_001	4	1	124	2	2
+36	__main_7qG2_ti_7qG2_001	4	1	126	2	2
+37	__rderecha_7qG2_vel_7qG2_000	4	1	128	2	4
+38	__derecha_7qG2_ms_7qG2_000	4	1	130	2	3
+39	__r_7qG2_vel_7qG2_000	4	1	132	2	4
+40	__rderecha_7qG2_ms_7qG2_000	4	1	134	2	2
+41	__constVal200	4	0	136	2	4
+42	____initialize_global_data_return	1	1	138	1	3
+43	__OnRev_Tmp	2	1	139	1	12
+44	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	140	1	15
+45	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	141	1	6
+46	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	142	1	6
+47	__parar_return	1	1	143	1	7
+48	__rderecha_return	1	1	144	1	3
+49	__PFTmp	1	1	145	1	1
+50	__constVal32	2	0	146	1	42
+51	__RLSBIterations3	1	1	147	1	4
+52	__r_return	1	1	148	1	3
+53	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	149	1	2
+54	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	150	1	2
+55	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	151	1	2
+56	__RLSBResult3	2	1	152	1	7
+57	__RLSBytesCount3	1	1	153	1	7
+58	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	154	1	2
+59	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	155	1	6
+60	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	156	1	6
+61	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	157	1	6
+62	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	158	1	2
+63	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	159	1	4
+64	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	160	1	3
+65	__constVal1	2	0	161	1	14
+66	__constVal96	2	0	162	1	14
+67	__adelante_return	1	1	163	1	4
+68	__constVal3	2	0	164	1	15
+69	__constVal63	2	0	165	1	14
+70	__zfSetSensorLowspeed_inline_main	1	1	166	1	2
+71	__ResetSensorTmp	1	1	167	1	2
+72	____ResetSensorSubroutine_return	1	1	168	1	6
+73	__zfmain	1	1	169	1	20
+74	__ResetSensorPort	1	1	170	1	6
+75	__derecha_return	1	1	171	1	4
+76	__constVal0	2	1	172	1	49
+77	____ReadLSBytes3_return	1	1	173	1	3
+78	__zfSetSensorLight_inline_main	1	1	174	1	6
+79	__constVal2	2	0	175	1	8
+80	__constVal15	2	0	176	1	3
+81	__atras_return	1	1	177	1	3
+82	__CLSRArgs3	8	0	4	12	5
+83	__CLSRArgs3.Result	2	1	180	1	5
+84	__CLSRArgs3.Port	1	1	181	1	5
+85	__CLSRArgs3.Buffer	7	0	182	4	5
+86	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+87	__CLSRArgs3.BufferLen	1	1	184	1	5
+88	__CLSWArgs3	8	0	4	12	5
+89	__CLSWArgs3.Result	2	1	188	1	5
+90	__CLSWArgs3.Port	1	1	189	1	5
+91	__CLSWArgs3.Buffer	7	0	190	4	5
+92	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+93	__CLSWArgs3.ReturnLen	1	1	192	1	5
+94	__TextOutArgs	8	0	4	16	11
+95	__TextOutArgs.Result	2	1	196	1	11
+96	__TextOutArgs.Location	8	0	2	4	11
+97	__TextOutArgs.Location.X	4	1	200	2	11
+98	__TextOutArgs.Location.Y	4	1	202	2	11
+99	__TextOutArgs.Text	7	0	204	4	11
+100	__TextOutArgs.Text.Text_type	1	0	0	1	0
+101	__TextOutArgs.Options	5	1	208	4	11
+102	__CLSCSArgs3	8	0	3	4	4
+103	__CLSCSArgs3.Result	2	1	212	1	4
+104	__CLSCSArgs3.Port	1	1	213	1	4
+105	__CLSCSArgs3.BytesReady	1	1	214	1	4
+106	__SPTArgs	8	0	5	8	24
+107	__SPTArgs.Result	2	1	216	1	24
+108	__SPTArgs.Frequency	3	1	218	2	24
+109	__SPTArgs.Duration	3	1	220	2	24
+110	__SPTArgs.Loop	1	1	222	1	24
+111	__SPTArgs.Volume	1	1	223	1	24
+112	__RBtnArgs	8	0	5	8	5
+113	__RBtnArgs.Result	2	1	224	1	5
+114	__RBtnArgs.Index	1	1	225	1	5
+115	__RBtnArgs.Pressed	1	1	226	1	5
+116	__RBtnArgs.Count	1	1	227	1	5
+117	__RBtnArgs.Reset	1	1	228	1	5
+118	__PointOutArgs	8	0	3	12	8
+119	__PointOutArgs.Result	2	1	232	1	8
+120	__PointOutArgs.Location	8	0	2	4	8
+121	__PointOutArgs.Location.X	4	1	236	2	8
+122	__PointOutArgs.Location.Y	4	1	238	2	8
+123	__PointOutArgs.Options	5	1	240	4	8
+124	__OUT_ABC	7	0	244	4	1
+125	__OUT_ABC.__OUT_ABC_type	1	0	0	1	0
+126	__RLSLastGoodRead3	7	0	246	4	2
+127	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+128	__constStr0010	7	0	248	4	1
+129	__constStr0010.__constStr0010_type	1	1	0	1	0
+130	__RLSBbufLSWrite1	7	0	250	4	1
+131	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+132	__strbufmain	7	0	252	4	4
+133	__strbufmain.__strbufmain_type	1	0	0	1	0
+134	__constStr0009	7	0	254	4	1
+135	__constStr0009.__constStr0009_type	1	1	0	1	0
+136	__RLSReadBuf3	7	0	256	4	8
+137	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	59	0	#line 59 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	60	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	59	2	#line 59 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	59	2	#line 59 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	60	2		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 0
+0	59	5	#line 59 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	60	5	#line 60 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	61	5		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	7	#line 3729 "NXCDefs.h"
+0	3730	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	9	#line 3729 "NXCDefs.h"
+0	3729	9	#line 3729 "NXCDefs.h"
+0	3730	9		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	11	#line 3729 "NXCDefs.h"
+0	3730	11		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	14	#line 3729 "NXCDefs.h"
+0	3730	14		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	17	#line 3729 "NXCDefs.h"
+0	3730	17		set __D0SetSensorLight_inline_main, 5
+0	3729	20	#line 3729 "NXCDefs.h"
+0	3730	20		jmp __001__NXC_Label_5
+0	3729	22	#line 3729 "NXCDefs.h"
+0	3730	22		set __D0SetSensorLight_inline_main, 6
+0	3729	25	#line 3729 "NXCDefs.h"
+0	3730	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	27	#line 3663 "NXCDefs.h"
+0	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	31	#line 3663 "NXCDefs.h"
+0	3730	31	#line 3730 "NXCDefs.h"
+0	3730	31	#line 3730 "NXCDefs.h"
+0	3731	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	33	#line 3730 "NXCDefs.h"
+0	3730	33	#line 3730 "NXCDefs.h"
+0	3731	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	36	#line 3730 "NXCDefs.h"
+0	3676	36	#line 3676 "NXCDefs.h"
+0	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	40	#line 3676 "NXCDefs.h"
+0	3731	40	#line 3731 "NXCDefs.h"
+0	3731	40	#line 3731 "NXCDefs.h"
+0	3732	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	42	#line 3731 "NXCDefs.h"
+0	3694	42	#line 3694 "NXCDefs.h"
+0	3695	42	#pragma macro 4
+0	3695	42		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4513	46	#line 4513 "NXCDefs.h"
+0	3694	46	#line 3694 "NXCDefs.h"
+0	3732	46	#line 3732 "NXCDefs.h"
+0	60	46	#line 60 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	60	46	#line 60 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	61	46		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	60	49	#line 60 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	61	49	#line 61 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	62	49		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	51	#line 3729 "NXCDefs.h"
+0	3730	51		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	53	#line 3729 "NXCDefs.h"
+0	3729	53	#line 3729 "NXCDefs.h"
+0	3730	53		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	55	#line 3729 "NXCDefs.h"
+0	3730	55		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	58	#line 3729 "NXCDefs.h"
+0	3730	58		brtst 4, __002__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	61	#line 3729 "NXCDefs.h"
+0	3730	61		set __D0SetSensorLight_inline_main, 5
+0	3729	64	#line 3729 "NXCDefs.h"
+0	3730	64		jmp __002__NXC_Label_5
+0	3729	66	#line 3729 "NXCDefs.h"
+0	3730	66		set __D0SetSensorLight_inline_main, 6
+0	3729	69	#line 3729 "NXCDefs.h"
+0	3730	69		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	71	#line 3663 "NXCDefs.h"
+0	3664	71		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	75	#line 3663 "NXCDefs.h"
+0	3730	75	#line 3730 "NXCDefs.h"
+0	3730	75	#line 3730 "NXCDefs.h"
+0	3731	75		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	77	#line 3730 "NXCDefs.h"
+0	3730	77	#line 3730 "NXCDefs.h"
+0	3731	77		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	80	#line 3730 "NXCDefs.h"
+0	3676	80	#line 3676 "NXCDefs.h"
+0	3677	80		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	84	#line 3676 "NXCDefs.h"
+0	3731	84	#line 3731 "NXCDefs.h"
+0	3731	84	#line 3731 "NXCDefs.h"
+0	3732	84		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	86	#line 3731 "NXCDefs.h"
+0	3694	86	#line 3694 "NXCDefs.h"
+0	3695	86	#pragma macro 4
+0	3695	86		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	88		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4580	90	#line 4580 "NXCDefs.h"
+0	3694	90	#line 3694 "NXCDefs.h"
+0	3732	90	#line 3732 "NXCDefs.h"
+0	61	90	#line 61 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	61	90	#line 61 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	62	90		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 2
+0	61	93	#line 61 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	62	93	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	63	93		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	3729	95	#line 3729 "NXCDefs.h"
+0	3730	95		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3729	97	#line 3729 "NXCDefs.h"
+0	3729	97	#line 3729 "NXCDefs.h"
+0	3730	97		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	3729	99	#line 3729 "NXCDefs.h"
+0	3730	99		tst 5, __zfSetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	3729	102	#line 3729 "NXCDefs.h"
+0	3730	102		brtst 4, __003__NXC_Label_4, __zfSetSensorLight_inline_main
+0	3729	105	#line 3729 "NXCDefs.h"
+0	3730	105		set __D0SetSensorLight_inline_main, 5
+0	3729	108	#line 3729 "NXCDefs.h"
+0	3730	108		jmp __003__NXC_Label_5
+0	3729	110	#line 3729 "NXCDefs.h"
+0	3730	110		set __D0SetSensorLight_inline_main, 6
+0	3729	113	#line 3729 "NXCDefs.h"
+0	3730	113		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __D0SetSensorLight_inline_main
+0	3663	115	#line 3663 "NXCDefs.h"
+0	3664	115		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	3663	119	#line 3663 "NXCDefs.h"
+0	3730	119	#line 3730 "NXCDefs.h"
+0	3730	119	#line 3730 "NXCDefs.h"
+0	3731	119		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3730	121	#line 3730 "NXCDefs.h"
+0	3730	121	#line 3730 "NXCDefs.h"
+0	3731	121		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	3730	124	#line 3730 "NXCDefs.h"
+0	3676	124	#line 3676 "NXCDefs.h"
+0	3677	124		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	3676	128	#line 3676 "NXCDefs.h"
+0	3731	128	#line 3731 "NXCDefs.h"
+0	3731	128	#line 3731 "NXCDefs.h"
+0	3732	128		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3731	130	#line 3731 "NXCDefs.h"
+0	3694	130	#line 3694 "NXCDefs.h"
+0	3695	130	#pragma macro 4
+0	3695	130		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	3695	132		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4647	134	#line 4647 "NXCDefs.h"
+0	3694	134	#line 3694 "NXCDefs.h"
+0	3732	134	#line 3732 "NXCDefs.h"
+0	62	134	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	62	134	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	63	134		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 3
+0	62	137	#line 62 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	64	137	#line 64 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	65	137		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	139	#line 3758 "NXCDefs.h"
+0	3759	139		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	141	#line 3758 "NXCDefs.h"
+0	3758	141	#line 3758 "NXCDefs.h"
+0	3759	141		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	143	#line 3758 "NXCDefs.h"
+0	3759	143		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	146	#line 3758 "NXCDefs.h"
+0	3759	146		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	149	#line 3758 "NXCDefs.h"
+0	3759	149		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	152	#line 3758 "NXCDefs.h"
+0	3759	152		jmp __004__NXC_Label_37
+0	3758	154	#line 3758 "NXCDefs.h"
+0	3759	154		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	157	#line 3758 "NXCDefs.h"
+0	3759	157		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	159	#line 3663 "NXCDefs.h"
+0	3664	159		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	163	#line 3663 "NXCDefs.h"
+0	3759	163	#line 3759 "NXCDefs.h"
+0	3759	163	#line 3759 "NXCDefs.h"
+0	3760	163		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	165	#line 3759 "NXCDefs.h"
+0	3759	165	#line 3759 "NXCDefs.h"
+0	3760	165		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	168	#line 3759 "NXCDefs.h"
+0	3676	168	#line 3676 "NXCDefs.h"
+0	3677	168		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	172	#line 3676 "NXCDefs.h"
+0	3760	172	#line 3760 "NXCDefs.h"
+0	3760	172	#line 3760 "NXCDefs.h"
+0	3760	172	#line 3760 "NXCDefs.h"
+0	3694	172	#line 3694 "NXCDefs.h"
+0	3695	172	#pragma macro 4
+0	3695	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4742	176	#line 4742 "NXCDefs.h"
+0	3694	176	#line 3694 "NXCDefs.h"
+0	3761	176	#line 3761 "NXCDefs.h"
+0	64	176	#line 64 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	6069	176	#line 6069 "NXCDefs.h"
+0	6070	176	#pragma macro 6
+0	6070	176		mov __PointOutArgs.Location.X, __constVal200
+0	6070	178		mov __PointOutArgs.Location.Y, __constVal200
+0	6070	180		mov __PointOutArgs.Options, __constVal1
+0	6070	182		syscall 14, __PointOutArgs
+0	4747	185	#line 4747 "NXCDefs.h"
+0	6069	185	#line 6069 "NXCDefs.h"
+0	65	185	#line 65 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	65	185	#line 65 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	66	185		set __signed_stack_001main, 0
+0	65	188	#line 65 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	65	188	#line 65 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	66	188		set __signed_stack_002main, 56
+0	65	191	#line 65 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	65	191	#line 65 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	66	191		strcat __strbufmain, __constStr0009
+0	66	195	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	66	195	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	195		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	66	197	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	197		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	66	199	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	199		set __TextOutArgs.Options, 0
+0	66	202	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	202		mov __TextOutArgs.Text, __strbufmain
+0	66	204	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	204		syscall 13, __TextOutArgs
+0	66	207	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	66	207	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	66	207	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	66	207	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	207		set __signed_stack_001main, 0
+0	66	210	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	66	210	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	210		set __signed_stack_002main, 48
+0	66	213	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	66	213	#line 66 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	213		strcat __strbufmain, __constStr0010
+0	67	217	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	217	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	217		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	67	219	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	219		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	67	221	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	221		set __TextOutArgs.Options, 0
+0	67	224	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	224		mov __TextOutArgs.Text, __strbufmain
+0	67	226	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	226		syscall 13, __TextOutArgs
+0	67	229	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	229		mov __D0main, __TextOutArgs.Result
+0	67	231	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	231	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	231	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	231		set __signed_stack_001main, 1
+0	67	234	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	234	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	234		set __D0main, 1
+0	67	237	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	237	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	237		mov __RBtnArgs.Index, __signed_stack_001main
+0	67	239	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	239		mov __RBtnArgs.Reset, __D0main
+0	67	241	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	241		syscall 20, __RBtnArgs
+0	67	244	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	244	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	67	244	#line 67 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	244		not __D0main, __RBtnArgs.Pressed
+0	68	247	#line 68 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	69	247		tst 5, __zfmain, __D0main
+0	68	250	#line 68 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	69	250		brtst 4, __NXC_Label_544, __zfmain
+0	68	253	#line 68 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	253	#line 68 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	69	253		jmp __NXC_Label_543
+0	68	255	#line 68 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	255	#line 68 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	69	255		getin SOM1, __constVal0, 4
+0	68	259	#line 68 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	259	#line 68 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	68	259	#line 68 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	69	259	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	70	259		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	69	262	#line 69 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	7921	262	#line 7921 "NXCDefs.h"
+0	7922	262		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	265	#line 7921 "NXCDefs.h"
+0	70	265	#line 70 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	6069	265	#line 6069 "NXCDefs.h"
+0	6070	265	#pragma macro 6
+0	6070	265		mov __PointOutArgs.Location.X, __constVal200
+0	6070	267		mov __PointOutArgs.Location.Y, __constVal200
+0	6070	269		mov __PointOutArgs.Options, __constVal1
+0	6070	271		syscall 14, __PointOutArgs
+0	4873	274	#line 4873 "NXCDefs.h"
+0	6069	274	#line 6069 "NXCDefs.h"
+0	71	274	#line 71 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	71	274	#line 71 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	72	274		set __adelante_7qG2_vel_7qG2_000, 75
+0	71	277	#line 71 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	71	277	#line 71 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	72	277		set __adelante_7qG2_ms_7qG2_000, 1200
+0	71	280	#line 71 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	74	280	#line 74 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	75	280		subcall adelante, __adelante_return
+0	74	282	#line 74 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	75	282	#line 75 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	76	282		set __D0main, 1
+0	76	285	#line 76 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	77	285		tst 5, __zfmain, __D0main
+0	76	288	#line 76 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	77	288		brtst 4, __NXC_Label_562, __zfmain
+0	76	291	#line 76 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	77	291		set __Wait_7qG2_ms_7qG2_000_inline_main, 10
+0	76	294	#line 76 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	7921	294	#line 7921 "NXCDefs.h"
+0	7922	294		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	297	#line 7921 "NXCDefs.h"
+0	77	297	#line 77 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	77	297	#line 77 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	78	297		getin __main_7qG2_fi_7qG2_001, __constVal0, 4
+0	77	301	#line 77 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	78	301	#line 78 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	79	301		getin __main_7qG2_ti_7qG2_001, __constVal1, 4
+0	78	305	#line 78 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	79	305	#line 79 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	80	305		getin __main_7qG2_fd_7qG2_001, __constVal2, 4
+0	79	309	#line 79 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	80	309	#line 80 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	81	309	#pragma macro 26
+0	81	309		acquire __RLSBmutex3
+0	81	310		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	81	312		set __RLSBytesCount3, 1
+0	81	315		wait2 NA, __constVal15
+0	81	318		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	81	320		index __D0main, __RLSReadBuf3, 65535
+0	81	324		release __RLSBmutex3
+0	4945	325	#line 4945 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	80	325	#line 80 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	82	325	#line 82 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	83	325		mov __signed_stack_001main, __D0main
+0	82	327	#line 82 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	83	327	#line 83 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	84	327		set __D0main, 20
+0	83	330	#line 83 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	84	330		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	83	334	#line 83 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	84	334		mov __D0main, __zfmain
+0	84	336	#line 84 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	85	336		brtst 4, __NXC_Label_577, __zfmain
+0	84	339	#line 84 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	85	339		set __atras_7qG2_vel_7qG2_000, 45
+0	84	342	#line 84 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	84	342	#line 84 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	85	342		set __atras_7qG2_ms_7qG2_000, 500
+0	84	345	#line 84 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	85	345	#line 85 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	86	345		subcall atras, __atras_return
+0	85	347	#line 85 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	86	347	#line 86 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	87	347		subcall parar, __parar_return
+0	86	349	#line 86 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	86	349	#line 86 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	87	349		set __signed_stack_001main, 880
+0	86	352	#line 86 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	86	352	#line 86 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	87	352		set __signed_stack_002main, 500
+0	86	355	#line 86 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	86	355	#line 86 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	87	355		set __signed_stack_003main, 4
+0	86	358	#line 86 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	86	358	#line 86 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	87	358		set __D0main, 0
+0	87	361	#line 87 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	88	361		acquire __SPTArgsMutex
+0	87	362	#line 87 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	88	362		mov __SPTArgs.Frequency, __signed_stack_001main
+0	87	364	#line 87 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	88	364		mov __SPTArgs.Duration, __signed_stack_002main
+0	87	366	#line 87 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	88	366		mov __SPTArgs.Volume, __signed_stack_003main
+0	87	368	#line 87 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	88	368		mov __SPTArgs.Loop, __D0main
+0	87	370	#line 87 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	88	370		syscall 10, __SPTArgs
+0	87	373	#line 87 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	88	373		mov __D0main, __SPTArgs.Result
+0	87	375	#line 87 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	88	375		release __SPTArgsMutex
+0	87	376	#line 87 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	87	376	#line 87 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	88	376		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	87	379	#line 87 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	7921	379	#line 7921 "NXCDefs.h"
+0	7922	379		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	382	#line 7921 "NXCDefs.h"
+0	88	382	#line 88 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	89	382	#line 89 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	90	382		jmp __NXC_Label_592
+0	89	384	#line 89 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	90	384		mov __signed_stack_001main, __main_7qG2_fi_7qG2_001
+0	89	386	#line 89 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	89	386	#line 89 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	90	386		mov __D0main, SOM1
+0	89	388	#line 89 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	90	388		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	89	392	#line 89 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	90	392		mov __D0main, __zfmain
+0	89	394	#line 89 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	90	394		brtst 4, __NXC_Label_594, __zfmain
+0	89	397	#line 89 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	90	397		mov __signed_stack_001main, __D0main
+0	89	399	#line 89 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	90	399		mov __signed_stack_002main, __main_7qG2_fd_7qG2_001
+0	89	401	#line 89 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	90	401	#line 90 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	91	401		mov __D0main, SOM1
+0	90	403	#line 90 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	91	403		cmp 0, __zfmain, __signed_stack_002main, __D0main
+0	90	407	#line 90 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	90	407	#line 90 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	91	407		and __D0main, __signed_stack_001main, __zfmain
+0	92	411	#line 92 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	93	411		tst 5, __zfmain, __D0main
+0	92	414	#line 92 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	93	414		brtst 4, __NXC_Label_595, __zfmain
+0	92	417	#line 92 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	93	417		set __signed_stack_001main, 440
+0	92	420	#line 92 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	92	420	#line 92 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	93	420		set __signed_stack_002main, 200
+0	92	423	#line 92 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	92	423	#line 92 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	93	423		set __signed_stack_003main, 4
+0	92	426	#line 92 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	92	426	#line 92 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	93	426		set __D0main, 0
+0	93	429	#line 93 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	94	429		acquire __SPTArgsMutex
+0	93	430	#line 93 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	94	430		mov __SPTArgs.Frequency, __signed_stack_001main
+0	93	432	#line 93 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	94	432		mov __SPTArgs.Duration, __signed_stack_002main
+0	93	434	#line 93 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	94	434		mov __SPTArgs.Volume, __signed_stack_003main
+0	93	436	#line 93 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	94	436		mov __SPTArgs.Loop, __D0main
+0	93	438	#line 93 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	94	438		syscall 10, __SPTArgs
+0	93	441	#line 93 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	94	441		mov __D0main, __SPTArgs.Result
+0	93	443	#line 93 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	94	443		release __SPTArgsMutex
+0	93	444	#line 93 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	93	444	#line 93 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	94	444		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	93	447	#line 93 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	7921	447	#line 7921 "NXCDefs.h"
+0	7922	447		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	450	#line 7921 "NXCDefs.h"
+0	95	450	#line 95 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	96	450	#line 96 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	97	450		subcall parar, __parar_return
+0	96	452	#line 96 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	97	452	#line 97 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	98	452		jmp __NXC_Label_562
+0	97	454	#line 97 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	98	454	#line 98 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	99	454		jmp __NXC_Label_606
+0	98	456	#line 98 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	99	456		mov __signed_stack_001main, __main_7qG2_fi_7qG2_001
+0	98	458	#line 98 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	99	458	#line 99 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	100	458		mov __D0main, SOM1
+0	99	460	#line 99 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	100	460		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	99	464	#line 99 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	100	464		mov __D0main, __zfmain
+0	100	466	#line 100 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	101	466		brtst 4, __NXC_Label_609, __zfmain
+0	100	469	#line 100 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	101	469		set __derecha_7qG2_vel_7qG2_000, 45
+0	100	472	#line 100 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	100	472	#line 100 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	101	472		set __derecha_7qG2_ms_7qG2_000, 800
+0	100	475	#line 100 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	101	475	#line 101 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	102	475		subcall derecha, __derecha_return
+0	101	477	#line 101 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	101	477	#line 101 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	102	477		set __r_7qG2_vel_7qG2_000, 45
+0	101	480	#line 101 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	101	480	#line 101 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	102	480		set __r_7qG2_ms_7qG2_000, 600
+0	101	483	#line 101 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	102	483	#line 102 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	103	483		subcall r, __r_return
+0	102	485	#line 102 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	103	485	#line 103 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	104	485		subcall parar, __parar_return
+0	103	487	#line 103 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	103	487	#line 103 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	104	487		set __signed_stack_001main, 440
+0	103	490	#line 103 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	103	490	#line 103 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	104	490		set __signed_stack_002main, 200
+0	103	493	#line 103 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	103	493	#line 103 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	104	493		set __signed_stack_003main, 4
+0	103	496	#line 103 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	103	496	#line 103 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	104	496		set __D0main, 0
+0	104	499	#line 104 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	105	499		acquire __SPTArgsMutex
+0	104	500	#line 104 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	105	500		mov __SPTArgs.Frequency, __signed_stack_001main
+0	104	502	#line 104 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	105	502		mov __SPTArgs.Duration, __signed_stack_002main
+0	104	504	#line 104 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	105	504		mov __SPTArgs.Volume, __signed_stack_003main
+0	104	506	#line 104 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	105	506		mov __SPTArgs.Loop, __D0main
+0	104	508	#line 104 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	105	508		syscall 10, __SPTArgs
+0	104	511	#line 104 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	105	511		mov __D0main, __SPTArgs.Result
+0	104	513	#line 104 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	105	513		release __SPTArgsMutex
+0	104	514	#line 104 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	104	514	#line 104 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	105	514		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	104	517	#line 104 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	7921	517	#line 7921 "NXCDefs.h"
+0	7922	517		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	520	#line 7921 "NXCDefs.h"
+0	106	520	#line 106 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	107	520	#line 107 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	108	520		jmp __NXC_Label_628
+0	107	522	#line 107 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	108	522		mov __signed_stack_001main, __main_7qG2_ti_7qG2_001
+0	107	524	#line 107 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	108	524	#line 108 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	109	524		mov __D0main, SOM1
+0	108	526	#line 108 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	109	526		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	108	530	#line 108 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	109	530		mov __D0main, __zfmain
+0	109	532	#line 109 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	110	532		brtst 4, __NXC_Label_631, __zfmain
+0	109	535	#line 109 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	110	535		set __derecha_7qG2_vel_7qG2_000, 45
+0	109	538	#line 109 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	109	538	#line 109 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	110	538		set __derecha_7qG2_ms_7qG2_000, 800
+0	109	541	#line 109 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	110	541	#line 110 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	111	541		subcall derecha, __derecha_return
+0	110	543	#line 110 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	110	543	#line 110 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	111	543		set __rderecha_7qG2_vel_7qG2_000, 45
+0	110	546	#line 110 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	110	546	#line 110 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	111	546		set __rderecha_7qG2_ms_7qG2_000, 600
+0	110	549	#line 110 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	111	549	#line 111 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	112	549		subcall rderecha, __rderecha_return
+0	111	551	#line 111 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	112	551	#line 112 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	113	551		subcall parar, __parar_return
+0	112	553	#line 112 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	112	553	#line 112 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	113	553		set __signed_stack_001main, 440
+0	112	556	#line 112 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	112	556	#line 112 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	113	556		set __signed_stack_002main, 200
+0	112	559	#line 112 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	112	559	#line 112 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	113	559		set __signed_stack_003main, 4
+0	112	562	#line 112 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	112	562	#line 112 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	113	562		set __D0main, 0
+0	113	565	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	114	565		acquire __SPTArgsMutex
+0	113	566	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	114	566		mov __SPTArgs.Frequency, __signed_stack_001main
+0	113	568	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	114	568		mov __SPTArgs.Duration, __signed_stack_002main
+0	113	570	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	114	570		mov __SPTArgs.Volume, __signed_stack_003main
+0	113	572	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	114	572		mov __SPTArgs.Loop, __D0main
+0	113	574	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	114	574		syscall 10, __SPTArgs
+0	113	577	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	114	577		mov __D0main, __SPTArgs.Result
+0	113	579	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	114	579		release __SPTArgsMutex
+0	113	580	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	113	580	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	114	580		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	113	583	#line 113 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	7921	583	#line 7921 "NXCDefs.h"
+0	7922	583		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	586	#line 7921 "NXCDefs.h"
+0	114	586	#line 114 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	117	586	#line 117 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	118	586		jmp __NXC_Label_650
+0	117	588	#line 117 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	118	588		set __adelante_7qG2_vel_7qG2_000, 45
+0	117	591	#line 117 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	117	591	#line 117 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	118	591		set __adelante_7qG2_ms_7qG2_000, 500
+0	117	594	#line 117 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	118	594	#line 118 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	119	594		subcall adelante, __adelante_return
+0	118	596	#line 118 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	121	596	#line 121 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	122	596		subcall parar, __parar_return
+0	121	598	#line 121 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	127	598	#line 127 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	127	598	#line 127 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	127	598	#line 127 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	127	598	#line 127 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	129	598	#line 129 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	130	598		jmp __NXC_Label_561
+0	129	600	#line 129 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+0	130	600		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5784	0	#pragma macro 25
+2	5784	0		acquire __CLSWMutex3
+2	5784	1		set __CLSWArgs3.Port, 3
+2	5784	4		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+2	5784	6		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+2	5784	8		syscall 21, __CLSWArgs3
+2	5784	11		mov __RLSBResult3, __CLSWArgs3.Result
+2	5784	13		release __CLSWMutex3
+2	5784	14	#line 5784 "NXTDefs.h"
+2	5785	14		brtst 4, __RLSBReturn3, __RLSBytesCount3
+2	5786	17		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+2	5787	21		brtst 5, __RLSBError3, __RLSBResult3
+2	5788	24		set __RLSBIterations3, 4
+2	5790	27	#pragma macro 23
+2	5790	27		acquire __CLSCSMutex3
+2	5790	28		set __CLSCSArgs3.Port, 3
+2	5790	31		syscall 23, __CLSCSArgs3
+2	5790	34		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+2	5790	36		mov __RLSBResult3, __CLSCSArgs3.Result
+2	5790	38		release __CLSCSMutex3
+2	5790	39	#line 5790 "NXTDefs.h"
+2	5791	39		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+2	5792	43		brtst 2, __RLSBError3, __RLSBIterations3
+2	5793	46		brtst 0, __RLSBError3, __RLSBResult3
+2	5794	49		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+2	5796	52		wait2 NA, __constVal15
+2	5797	55		jmp __RLSBDoCheckStatus3
+2	5800	57	#pragma macro 25
+2	5800	57		acquire __CLSRMutex3
+2	5800	58		set __CLSRArgs3.Port, 3
+2	5800	61		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+2	5800	63		syscall 22, __CLSRArgs3
+2	5800	66		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+2	5800	68		mov __RLSBResult3, __CLSRArgs3.Result
+2	5800	70		release __CLSRMutex3
+2	5800	71	#line 5800 "NXTDefs.h"
+2	5801	71		brtst 5, __RLSBError3, __RLSBResult3
+2	5802	74		mov __RLSLastGoodRead3, __RLSReadBuf3
+2	5803	76		jmp __RLSBDone3
+2	5805	78		mov __RLSReadBuf3, __RLSLastGoodRead3
+2	5807	80		arrsize __RLSBytesCount3, __RLSReadBuf3
+2	5809	83		subret ____ReadLSBytes3_return
+3	13	0	#line 13 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+3	14	0		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+3	14	2	#line 14 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+3	15	2	#pragma macro 10
+3	15	2		acquire __OnRevMutex
+3	15	3		neg __OnRev_Tmp, __D0adelante
+3	15	6		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	15	29		release __OnRevMutex
+3	4165	30	#line 4165 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+3	14	30	#line 14 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+3	14	30	#line 14 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+3	15	30		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+3	15	32	#line 15 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+3	16	32	#pragma macro 7
+3	16	32		setout __constVal2, 2, __D0adelante, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4172	55	#line 4172 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+3	15	55	#line 15 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+3	15	55	#line 15 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+3	16	55		mov __Wait_7qG2_ms_7qG2_000_inline_adelante, __adelante_7qG2_ms_7qG2_000
+3	15	57	#line 15 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+3	7921	57	#line 7921 "NXCDefs.h"
+3	7922	57		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_adelante
+3	7921	60	#line 7921 "NXCDefs.h"
+3	17	60	#line 17 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+3	19	60	#line 19 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+3	20	60		subret __adelante_return
+4	21	0	#line 21 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+4	22	0		mov __D0atras, __atras_7qG2_vel_7qG2_000
+4	22	2	#line 22 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+4	23	2	#pragma macro 7
+4	23	2		setout __constVal1, 2, __D0atras, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4206	25	#line 4206 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+4	22	25	#line 22 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+4	22	25	#line 22 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+4	23	25		mov __D0atras, __atras_7qG2_vel_7qG2_000
+4	23	27	#line 23 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+4	24	27	#pragma macro 10
+4	24	27		acquire __OnRevMutex
+4	24	28		neg __OnRev_Tmp, __D0atras
+4	24	31		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	24	54		release __OnRevMutex
+4	4213	55	#line 4213 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+4	23	55	#line 23 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+4	23	55	#line 23 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+4	24	55		mov __Wait_7qG2_ms_7qG2_000_inline_atras, __atras_7qG2_ms_7qG2_000
+4	23	57	#line 23 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+4	7921	57	#line 7921 "NXCDefs.h"
+4	7922	57		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_atras
+4	7921	60	#line 7921 "NXCDefs.h"
+4	24	60	#line 24 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+4	25	60	#line 25 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+4	26	60		subret __atras_return
+5	27	0	#line 27 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	28	0		mov __D0derecha, __derecha_7qG2_vel_7qG2_000
+5	28	2	#line 28 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	29	2	#pragma macro 10
+5	29	2		acquire __OnRevMutex
+5	29	3		neg __OnRev_Tmp, __D0derecha
+5	29	6		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	29	29		release __OnRevMutex
+5	4247	30	#line 4247 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	28	30	#line 28 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	28	30	#line 28 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	28	30	#line 28 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	28	30	#line 28 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	28	30	#line 28 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	29	30		div __signed_stack_001derecha, __derecha_7qG2_vel_7qG2_000, __constVal2
+5	28	34	#line 28 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	28	34	#line 28 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	28	34	#line 28 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	29	34		sub __D0derecha, __signed_stack_001derecha, __constVal3
+5	29	38	#line 29 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	30	38	#pragma macro 7
+5	30	38		setout __constVal1, 2, __D0derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	4266	61	#line 4266 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	29	61	#line 29 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	29	61	#line 29 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	29	61	#line 29 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	29	61	#line 29 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	29	61	#line 29 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	30	61		div __D0derecha, __derecha_7qG2_vel_7qG2_000, __constVal2
+5	30	65	#line 30 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	31	65	#pragma macro 7
+5	31	65		setout __constVal2, 2, __D0derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	4279	88	#line 4279 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	30	88	#line 30 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	30	88	#line 30 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	31	88		mov __Wait_7qG2_ms_7qG2_000_inline_derecha, __derecha_7qG2_ms_7qG2_000
+5	30	90	#line 30 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	7921	90	#line 7921 "NXCDefs.h"
+5	7922	90		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_derecha
+5	7921	93	#line 7921 "NXCDefs.h"
+5	31	93	#line 31 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	33	93	#line 33 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+5	34	93		subret __derecha_return
+6	35	0	#line 35 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	36	0		mov __D0rderecha, __rderecha_7qG2_vel_7qG2_000
+6	36	2	#line 36 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	37	2	#pragma macro 7
+6	37	2		setout __constVal0, 2, __D0rderecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4313	25	#line 4313 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	36	25	#line 36 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	36	25	#line 36 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	37	25		mov __D0rderecha, __rderecha_7qG2_vel_7qG2_000
+6	37	27	#line 37 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	38	27	#pragma macro 7
+6	38	27		setout __constVal1, 2, __D0rderecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4320	50	#line 4320 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	37	50	#line 37 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	37	50	#line 37 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	38	50		mov __D0rderecha, __rderecha_7qG2_vel_7qG2_000
+6	38	52	#line 38 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	39	52	#pragma macro 7
+6	39	52		setout __constVal2, 2, __D0rderecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4327	75	#line 4327 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	38	75	#line 38 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	38	75	#line 38 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	39	75		mov __Wait_7qG2_ms_7qG2_000_inline_rderecha, __rderecha_7qG2_ms_7qG2_000
+6	38	77	#line 38 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	7921	77	#line 7921 "NXCDefs.h"
+6	7922	77		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_rderecha
+6	7921	80	#line 7921 "NXCDefs.h"
+6	39	80	#line 39 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	41	80	#line 41 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+6	42	80		subret __rderecha_return
+7	43	0	#line 43 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	44	0		mov __D0r, __r_7qG2_vel_7qG2_000
+7	44	2	#line 44 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	45	2	#pragma macro 10
+7	45	2		acquire __OnRevMutex
+7	45	3		neg __OnRev_Tmp, __D0r
+7	45	6		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	45	29		release __OnRevMutex
+7	4361	30	#line 4361 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	44	30	#line 44 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	44	30	#line 44 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	45	30		mov __D0r, __r_7qG2_vel_7qG2_000
+7	45	32	#line 45 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	46	32	#pragma macro 10
+7	46	32		acquire __OnRevMutex
+7	46	33		neg __OnRev_Tmp, __D0r
+7	46	36		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	46	59		release __OnRevMutex
+7	4368	60	#line 4368 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	45	60	#line 45 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	45	60	#line 45 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	46	60		mov __D0r, __r_7qG2_vel_7qG2_000
+7	46	62	#line 46 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	47	62	#pragma macro 10
+7	47	62		acquire __OnRevMutex
+7	47	63		neg __OnRev_Tmp, __D0r
+7	47	66		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	47	89		release __OnRevMutex
+7	4375	90	#line 4375 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	46	90	#line 46 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	46	90	#line 46 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	47	90		mov __Wait_7qG2_ms_7qG2_000_inline_r, __r_7qG2_ms_7qG2_000
+7	46	92	#line 46 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	7921	92	#line 7921 "NXCDefs.h"
+7	7922	92		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_r
+7	7921	95	#line 7921 "NXCDefs.h"
+7	47	95	#line 47 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	49	95	#line 49 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+7	50	95		subret __r_return
+8	52	0	#line 52 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+8	53	0	#pragma macro 7
+8	53	0		setout __OUT_ABC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4397	23	#line 4397 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+8	52	23	#line 52 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+8	52	23	#line 52 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+8	53	23		set __Wait_7qG2_ms_7qG2_000_inline_parar, 200
+8	52	26	#line 52 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+8	7921	26	#line 7921 "NXCDefs.h"
+8	7922	26		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_parar
+8	7921	29	#line 7921 "NXCDefs.h"
+8	53	29	#line 53 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+8	57	29	#line 57 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+8	58	29		subret __parar_return
+9	130	0	#line 130 "C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc"
+9	131	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc
+1	__ResetSensorSubroutine	603	NXTDefs.h
+2	__ReadLSBytes3	616	NXTDefs.h
+3	adelante	701	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc
+4	atras	763	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc
+5	derecha	825	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc
+6	rderecha	920	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc
+7	r	1002	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc
+8	parar	1099	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc
+9	__initialize_global_data	1130	C:\Users\amorp\OneDrive\Escritorio\proyecto final\Movimiento\MovimientoV3.nxc

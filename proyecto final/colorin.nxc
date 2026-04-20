@@ -1,0 +1,62 @@
+#define ang 65
+#define vel 55
+#define SA1  IN_4
+#define pin OUT_B
+#define min_ver 26
+#define max_ver 40
+
+//29-38
+
+void cerrar()
+{
+  RotateMotor(pin, vel, -ang);
+}
+
+void abrir()
+{
+  RotateMotor(pin, vel , ang);
+}
+
+int colorin(byte puerto){
+    SetSensorLight(puerto);
+    TextOut(0,LCD_LINE1,"coloca");
+    Wait(2000);
+    int val;
+    int k =1;
+    //while(!ButtonPressed(BTNCENTER, false)){
+    while(k<100){
+        val = Sensor(puerto);
+        NumOut(0,LCD_LINE3,val,true);
+        Wait(200);
+        k=k+1;
+    }
+    return val;
+}
+
+
+
+void garra()
+{
+     int val;
+     SetSensorLight(SA1);
+     val = colorin(SA1);
+     int cont=33;
+     
+     if(val < min_ver || val> max_ver){
+           while(cont >=0 && cont <=33){
+               cerrar();
+               cont = cont-1;
+           }
+           Wait(2000);
+           
+           while(cont<=33){
+               abrir();
+               cont+=1;
+           }
+     }
+}
+
+task main()
+{
+   garra();
+}

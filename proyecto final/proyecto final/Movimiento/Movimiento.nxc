@@ -1,0 +1,103 @@
+#define V    45
+#define TIEM 500
+#define SEN1 IN_1   // seguidor linea - frontal izquierdo
+#define SEN2 IN_2   // seguidor linea - trasero izquierdo
+#define SEN3 IN_3   // seguidor linea - frontal derecho
+
+#define SOM 35
+
+void adelante(int vel, int ms)
+{
+    OnRev(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+
+}
+
+void derecha(int vel, int ms)
+{
+    OnRev(OUT_A, vel);
+    OnFwd(OUT_B, vel/2-3);
+    OnFwd(OUT_C, vel/2);
+    Wait(ms);
+}
+
+void rderecha(int vel, int ms)
+{
+    OnFwd(OUT_A, vel);
+    OnFwd(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+}
+
+void r(int vel, int ms)
+{
+    OnRev(OUT_A, vel);
+    OnRev(OUT_B, vel);
+    OnRev(OUT_C, vel);
+    Wait(ms);
+}
+
+void parar()
+{
+ Off(OUT_ABC);
+ Wait(200);
+}
+
+
+
+task main()
+{
+ SetSensorLight(SEN1);
+ SetSensorLight(SEN2);
+ SetSensorLight(SEN3);
+
+     adelante(75,2000);
+
+    //iniciar movimiento.
+    while(true)
+    {
+      Wait(10);
+      int fi = Sensor(SEN1);
+      int ti = Sensor(SEN2);
+      int fd = Sensor(SEN3);
+
+      if(fi < SOM && fd <SOM)
+      {
+
+         PlayTone(440,200);
+         Wait(200);
+
+         parar();
+         break;
+      }
+      else if(fi < SOM)
+      {
+        derecha(V,TIEM+300);
+        r(V,TIEM+100);
+        parar();
+        PlayTone(440,200);
+        Wait(200);
+
+      }
+      else if(ti < SOM)
+      {
+        derecha(V,TIEM+300);
+        rderecha(V,TIEM+100);
+        parar();
+        PlayTone(440,200);
+        Wait(200);
+      }
+      else
+      {
+          adelante(V, TIEM);
+          parar();
+
+
+      }
+
+
+
+    }
+
+}

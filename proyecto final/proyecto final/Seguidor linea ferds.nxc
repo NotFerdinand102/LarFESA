@@ -1,0 +1,47 @@
+
+void adelante(int vel, int ms)
+{
+    OnRev(MOT_B, vel);
+    OnFwd(MOT_C, vel);
+    Wait(ms);
+}
+
+void atras(int vel, int ms)
+{
+    OnFwd(MOT_B, vel);
+    OnRev(MOT_C, vel);
+    Wait(ms);
+}
+
+#define MOT_A  OUT_A   // frontal derecho (eje de avance)
+#define MOT_B  OUT_B   // izquierdo
+#define MOT_C  OUT_C   // trasero
+
+// ---------------------------------------------------------------
+//  SENSORES (puertos verificados)
+// ---------------------------------------------------------------
+#define SEN_LINEA_FL  IN_1   // seguidor linea - frontal izquierdo
+#define SEN_LINEA_TL  IN_2   // seguidor linea - trasero izquierdo
+#define SEN_LINEA_FR  IN_3   // seguidor linea - frontal derecho
+#define SEN_US_FRONT  IN_4   // ultrasonico frontal
+
+
+void derecha(int vel, int ms)
+{
+    OnRev(MOT_A, vel);
+    OnFwd(MOT_B, vel / 2 - 3);
+    OnFwd(MOT_C, vel / 2);
+    Wait(ms);
+}
+
+void izquierda(int vel, int ms)
+{
+    OnFwd(MOT_A, vel);
+    OnRev(MOT_B, vel / 2 - 3);
+    OnRev(MOT_C, vel / 2);
+    Wait(ms);
+}
+
+task main(){
+    adelante(35, 10000);
+}
