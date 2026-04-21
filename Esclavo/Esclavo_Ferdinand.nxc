@@ -1,16 +1,16 @@
 #define V    50
-#define SOM  35      // Umbral para el color negro (frontera/lÌnea)
-#define DIST 14      // Distancia del obst·culo
+#define SOM  35      // Umbral para el color negro (frontera/l√≠nea)
+#define DIST 14      // Distancia del obst√°culo
 
 // Sensores
 #define SEN_FRONT_IZQ IN_1
-#define SEN_LAT_IZQ   IN_2  // El que "sigue" la lÌnea lateral
+#define SEN_LAT_IZQ   IN_2  // El que "sigue" la l√≠nea lateral
 #define SEN_FRONT_DER IN_3
 #define SEN_US        IN_4
 
 // Motores (3 ejes omni)
 #define M_LATERAL     OUT_A
-#define M_IZQ         OUT_B // *AtenciÛn: Se comparte con el empuje
+#define M_IZQ         OUT_B // *Atenci√≥n: Se comparte con el empuje
 #define M_DER         OUT_C
 
 // --- FUNCIONES DE MOVIMIENTO ---
@@ -35,12 +35,12 @@ void deslizar_izquierda(int ms) {
     if(ms > 0) { Wait(ms); parar(); }
 }
 
-// --- MECANISMO DE RECOLECCI”N (ESCLAVO) ---
+// --- MECANISMO DE RECOLECCI√ìN (ESCLAVO) ---
 void recolectar_pelotas() {
     PlaySound(SOUND_DOUBLE_BEEP);
-    // AquÌ activas tu mecanismo de empuje/succiÛn
-    // Ejemplo: usando el motor B que ahora est· libre porque el robot parÛ
-    RotateMotor(OUT_B, 60, 1400); // Ajusta seg˙n tu diseÒo de "worm gear"
+    // Aqu√≠ activas tu mecanismo de empuje/succi√≥n
+    // Ejemplo: usando el motor B que ahora est√° libre porque el robot par√≥
+    RotateMotor(OUT_B, 60, 1400); // Ajusta seg√∫n tu dise√±o de "worm gear"
     Wait(500);
     RotateMotor(OUT_B, 60, -1400);
     Off(OUT_B);
@@ -58,7 +58,7 @@ task main() {
         int fd = Sensor(SEN_FRONT_DER);
         int ul = SensorUS(SEN_US);
 
-        // 1. CONDICI”N FINAL: FRONTERA + OBST¡CULO
+        // 1. CONDICI√ìN FINAL: FRONTERA + OBST√ÅCULO
         // El robot se detiene y activa el mecanismo del esclavo
         if (fi < SOM && fd < SOM && ul < DIST) {
             parar();
@@ -72,26 +72,26 @@ task main() {
             deslizar_derecha(500); // Se aleja de la frontera de lado
         }
 
-        // 3. SORTEO DE OBST¡CULO (Si hay objeto pero no hay lÌnea de frente)
+        // 3. SORTEO DE OBST√ÅCULO (Si hay objeto pero no hay l√≠nea de frente)
         else if (ul < DIST) {
-            // Esquiva lateralmente hasta que el camino estÈ limpio
+            // Esquiva lateralmente hasta que el camino est√© limpio
             while(SensorUS(SEN_US) < (DIST + 5)) {
                 deslizar_derecha(0);
             }
             parar();
         }
 
-        // 4. SEGUIDOR DE LÕNEA LATERAL (SEN2 en esquina trasera)
-        // El robot avanza siguiendo la lÌnea negra lateral pero sin pisarla
+        // 4. SEGUIDOR DE L√çNEA LATERAL (SEN2 en esquina trasera)
+        // El robot avanza siguiendo la l√≠nea negra lateral pero sin pisarla
         else if (ti < SOM) {
-            // Si toca negro atr·s, el robot se est· "metiendo" en la lÌnea.
+            // Si toca negro atr√°s, el robot se est√° "metiendo" en la l√≠nea.
             // Deslizamos a la derecha mientras avanzamos para enderezar.
             OnRev(M_LATERAL, V);
             OnRev(M_IZQ, V);
             OnFwd(M_DER, V);
         }
         else {
-            // Si no detecta la lÌnea, la busca desliz·ndose un poco a la izquierda
+            // Si no detecta la l√≠nea, la busca desliz√°ndose un poco a la izquierda
             OnFwd(M_LATERAL, V-15);
             OnRev(M_IZQ, V);
             OnFwd(M_DER, V);
