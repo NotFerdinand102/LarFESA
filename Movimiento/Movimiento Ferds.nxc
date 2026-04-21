@@ -4,7 +4,7 @@
 #define SEN3 IN_3
 #define UMBRAL_LINEA 43
 
-// Función para ir recto
+// FunciÃ³n para ir recto
 void adelante(int vel, int ms)
 {
     Off(OUT_A);           // El motor A no participa para ir recto (eje frontal)
@@ -14,18 +14,18 @@ void adelante(int vel, int ms)
     Off(OUT_ABC);
 }
 
-// Función para desplazamiento lateral (Derecha)
-// Requiere que los 3 motores se muevan para compensar el ángulo
+// FunciÃ³n para desplazamiento lateral (Derecha)
+// Requiere que los 3 motores se muevan para compensar el Ã¡ngulo
 void derecha(int vel, int ms)
 {
     OnRev(OUT_A, vel);           // Motor frontal empuja
-    OnFwd(OUT_B, vel / 2);       // Motores traseros compensan el ángulo
+    OnFwd(OUT_B, vel / 2);       // Motores traseros compensan el Ã¡ngulo
     OnFwd(OUT_C, vel / 2);
     Wait(ms);
     Off(OUT_ABC);
 }
 
-// Función para girar sobre su propio eje (en caso de que la necesiten)
+// FunciÃ³n para girar sobre su propio eje (en caso de que la necesiten)
 void rotar_derecha(int vel, int ms)
 {
     OnFwd(OUT_A, vel);
@@ -42,7 +42,7 @@ task main()
 
     int c = 0;
 
-    // Bucle de búsqueda de línea
+    // Bucle de bÃºsqueda de lÃ­nea
     while(c == 0)
     {
         // Movimiento suave hacia adelante
@@ -61,7 +61,7 @@ task main()
 
     Wait(1000);
 
-    // Movimientos de prueba con velocidades reales (máximo 100)
+    // Movimientos de prueba con velocidades reales (mÃ¡ximo 100)
     adelante(V + 20, 2000);
     Wait(500);
     derecha(V + 20, 2000);
