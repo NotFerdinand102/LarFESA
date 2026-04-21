@@ -1,28 +1,28 @@
 // ================================================================
 //  MAESTRO_DEFINITIVO_PRO_BT.nxc
-//  Proyecto: Rob髏ica Universitaria - Recolecci髇 Omnidireccional
+//  Proyecto: Rob贸tica Universitaria - Recolecci贸n Omnidireccional
 // ================================================================
 
-#define ESCLAVO_SLOT 1    // Conexi髇 Bluetooth al esclavo
-#define BUZON_TX     1    // Env韆 orden al esclavo
-#define BUZON_RX     2    // Recibe confirmaci髇 del esclavo
+#define ESCLAVO_SLOT 1    // Conexi贸n Bluetooth al esclavo
+#define BUZON_TX     1    // Env铆a orden al esclavo
+#define BUZON_RX     2    // Recibe confirmaci贸n del esclavo
 
-// --- PAR罬ETROS DE MOVIMIENTO ---
+// --- PAR脕METROS DE MOVIMIENTO ---
 #define V_SALIDA     75   // Velocidad para salir de casilla
-#define V_CRUCERO    55   // Velocidad de navegaci髇
+#define V_CRUCERO    55   // Velocidad de navegaci贸n
 #define SOM          35   // Umbral de color negro
-#define DIST_OBJ     14   // Distancia de detecci髇 ultras髇ica
+#define DIST_OBJ     14   // Distancia de detecci贸n ultras贸nica
 #define PASO_8CM     850  // Tiempo (ms) para avanzar 8 cm
 
 // --- MAPEO DE PUERTOS ---
 #define SEN_FI       IN_1 // Frontal Izquierdo
-#define SEN_LI       IN_2 // Lateral Trasero Izquierdo (Gu韆)
+#define SEN_LI       IN_2 // Lateral Trasero Izquierdo (Gu铆a)
 #define SEN_FD       IN_3 // Frontal Derecho
-#define SEN_US       IN_4 // Ultras髇ico
+#define SEN_US       IN_4 // Ultras贸nico
 
 #define M_LAT        OUT_A // Motor omni lateral (X)
-#define M_IZQ        OUT_B // Tracci髇 Izquierda (Y)
-#define M_DER        OUT_C // Tracci髇 Derecha (Y)
+#define M_IZQ        OUT_B // Tracci贸n Izquierda (Y)
+#define M_DER        OUT_C // Tracci贸n Derecha (Y)
 
 // --- FUNCIONES DE CONTROL ---
 
@@ -31,7 +31,7 @@ void parar() {
     Wait(200);
 }
 
-// Avanza sin usar el motor lateral (estabilidad m醲ima)
+// Avanza sin usar el motor lateral (estabilidad m谩xima)
 void adelante_recto(int vel) {
     OnRev(M_IZQ, vel);
     OnFwd(M_DER, vel);
@@ -49,7 +49,7 @@ void atras(int vel, int ms) {
 // Desplazamiento lateral (Strafe) sin rotar
 void slide_derecha(int vel, int ms) {
     OnRev(M_LAT, vel);
-    // Compensaci髇 para que no gire mientras desliza
+    // Compensaci贸n para que no gire mientras desliza
     OnFwd(M_IZQ, vel/2);
     OnFwd(M_DER, vel/2);
     if(ms > 0) { Wait(ms); parar(); }
@@ -58,7 +58,7 @@ void slide_derecha(int vel, int ms) {
 // --- TAREA PRINCIPAL ---
 
 task main() {
-    // Configuraci髇 de Sensores
+    // Configuraci贸n de Sensores
     SetSensorLight(SEN_FI);
     SetSensorLight(SEN_LI);
     SetSensorLight(SEN_FD);
@@ -75,22 +75,22 @@ task main() {
     PlaySound(SOUND_DOUBLE_BEEP);
     ClearScreen();
 
-    // --- FASE 2: BUCLE DE NAVEGACI覰 Y RECOLECCI覰 ---
+    // --- FASE 2: BUCLE DE NAVEGACI脫N Y RECOLECCI脫N ---
     while(true) {
         int fi = Sensor(SEN_FI);
         int ti = Sensor(SEN_LI);
         int fd = Sensor(SEN_FD);
         int ul = SensorUS(SEN_US);
 
-        // 1. CONDICI覰 DE RECOLECCI覰 (Frontera Frontal + Objeto Detectado)
+        // 1. CONDICI脫N DE RECOLECCI脫N (Frontera Frontal + Objeto Detectado)
         if (fi < SOM && fd < SOM && ul < DIST_OBJ) {
             parar();
             TextOut(0, LCD_LINE1, "OBJETIVO LISTO");
 
-            // Enviamos se馻l de inicio al Esclavo
+            // Enviamos se帽al de inicio al Esclavo
             SendRemoteNumber(ESCLAVO_SLOT, BUZON_TX, 1);
 
-            // Espera bloqueante hasta que el esclavo responda por Buz髇 2
+            // Espera bloqueante hasta que el esclavo responda por Buz贸n 2
             int respuesta = 0;
             while (ReceiveRemoteNumber(BUZON_RX, true, respuesta) != NO_ERR) {
                 Wait(50); // Mantiene el canal abierto para escuchar
@@ -117,13 +117,13 @@ task main() {
             Wait(100);
         }
 
-        // 3. PROTECCI覰 DE FRONTERA FRONTAL (Solo l韓ea negra, sin objeto)
+        // 3. PROTECCI脫N DE FRONTERA FRONTAL (Solo l铆nea negra, sin objeto)
         else if (fi < SOM || fd < SOM) {
             atras(V_CRUCERO, 400);
             slide_derecha(V_CRUCERO, 600); // Busca salida lateral
         }
 
-        // 4. SORTEO DE OBST罜ULOS DIN罬ICOS (Otros robots / paredes)
+        // 4. SORTEO DE OBST脕CULOS DIN脕MICOS (Otros robots / paredes)
         else if (ul < DIST_OBJ) {
             // Esquiva lateral puro hasta que el sensor US ya no detecte nada
             while(SensorUS(SEN_US) < (DIST_OBJ + 5)) {
@@ -132,11 +132,11 @@ task main() {
             parar();
         }
 
-        // 5. NAVEGACI覰 EN L蚇EA RECTA ESTABLE
+        // 5. NAVEGACI脫N EN L脥NEA RECTA ESTABLE
         else {
             adelante_recto(V_CRUCERO);
         }
 
-        Wait(20); // Resoluci髇 del ciclo de control
+        Wait(20); // Resoluci贸n del ciclo de control
     }
 }
