@@ -1,25 +1,25 @@
 // ================================================================
 //  ESCLAVO_COMPLETO_FINAL.nxc
-//  Sincronizado con el Maestro (Protocolo 8cm + ConfirmaciÛn)
+//  Sincronizado con el Maestro (Protocolo 8cm + Confirmaci√≥n)
 // ================================================================
 
 #define BUZON_RX 1  // Recibe orden del Maestro
-#define BUZON_TX 2  // EnvÌa confirmaciÛn al Maestro
+#define BUZON_TX 2  // Env√≠a confirmaci√≥n al Maestro
 
-// --- CONFIGURACI”N DEL MOTOR DEL MECANISMO ---
-#define MOTOR_REC OUT_B  // Puerto donde est· tu mecanismo de empuje/recogida
+// --- CONFIGURACI√ìN DEL MOTOR DEL MECANISMO ---
+#define MOTOR_REC OUT_B  // Puerto donde est√° tu mecanismo de empuje/recogida
 #define POTENCIA  60     // Velocidad del motor de recogida
 
-// --- FUNCI”N DE ACCI”N MEC¡NICA ---
+// --- FUNCI√ìN DE ACCI√ìN MEC√ÅNICA ---
 void ejecutar_recogida() {
     PlaySound(SOUND_DOUBLE_BEEP);
 
-    // 1. Accionar mecanismo (Ajusta los grados seg˙n tu diseÒo)
+    // 1. Accionar mecanismo (Ajusta los grados seg√∫n tu dise√±o)
     // Ejemplo: 720 grados para una vuelta completa del worm gear
     RotateMotor(MOTOR_REC, POTENCIA, 720);
     Wait(300);
 
-    // 2. Regresar mecanismo a posiciÛn inicial (opcional)
+    // 2. Regresar mecanismo a posici√≥n inicial (opcional)
     RotateMotor(MOTOR_REC, POTENCIA, -720);
 
     Off(MOTOR_REC);
@@ -34,17 +34,17 @@ task main() {
         // Limpiamos la variable antes de checar
         mensaje_recibido = 0;
 
-        // 1. ESCUCHAR AL MAESTRO (BuzÛn 1)
-        // El programa se queda aquÌ hasta que llegue un "1" del Maestro
+        // 1. ESCUCHAR AL MAESTRO (Buz√≥n 1)
+        // El programa se queda aqu√≠ hasta que llegue un "1" del Maestro
         if (ReceiveRemoteNumber(BUZON_RX, true, mensaje_recibido) == NO_ERR) {
 
             if (mensaje_recibido == 1) {
                 TextOut(0, LCD_LINE2, "RECOGIENDO...");
 
-                // 2. EJECUTAR LA ACCI”N
+                // 2. EJECUTAR LA ACCI√ìN
                 ejecutar_recogida();
 
-                // 3. MANDAR CONFIRMACI”N (BuzÛn 2)
+                // 3. MANDAR CONFIRMACI√ìN (Buz√≥n 2)
                 // Esto "desbloquea" al Maestro para que avance los 8cm
                 SendRemoteNumber(0, BUZON_TX, 1);
 
