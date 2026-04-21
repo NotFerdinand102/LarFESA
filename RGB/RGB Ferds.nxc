@@ -2,14 +2,14 @@
 #define M_EMPUJE  OUT_B
 #define M_TIJERA  OUT_AC
 
-// --- PAR¡METROS DE MOVIMIENTO ---
+// --- PAR√ÅMETROS DE MOVIMIENTO ---
 #define VEL_GOLPE    80
-#define ANG_GOLPE    1400 // Ajustar seg˙n el largo de tu tornillo sin fin
+#define ANG_GOLPE    1400 // Ajustar seg√∫n el largo de tu tornillo sin fin
 
 int color_detectado = 0;
 bool disparar_barra = false;
 
-// Tarea 1: Control fÌsico (Ida y Vuelta)
+// Tarea 1: Control f√≠sico (Ida y Vuelta)
 task task_mecanismo_empuje() {
     while(true) {
         if (disparar_barra) {
@@ -43,7 +43,7 @@ task task_sensor_color() {
     }
 }
 
-// Tarea 3: LÛgica Maestra con Bloqueo Anti-Error
+// Tarea 3: L√≥gica Maestra con Bloqueo Anti-Error
 task main() {
     StartTask(task_sensor_color);
     StartTask(task_mecanismo_empuje);
@@ -51,14 +51,14 @@ task main() {
     while(true) {
 
         /* //robot_detenido
-        // Esta secciÛn se activar· con la seÒal del Maestro
+        // Esta secci√≥n se activar√° con la se√±al del Maestro
         if (robot_detenido == true) {
         */
 
-            // Solo actuamos si el brazo est· en reposo (disparar_barra es false)
+            // Solo actuamos si el brazo est√° en reposo (disparar_barra es false)
             if (!disparar_barra) {
 
-                // Si detecta algo que no es aire(1), vacÌo(0) o verde(3)
+                // Si detecta algo que no es aire(1), vac√≠o(0) o verde(3)
                 if (color_detectado > 1 && color_detectado != 3) {
 
                     // Breve espera para confirmar que la pelota no va de paso
@@ -67,11 +67,11 @@ task main() {
                     if (color_detectado > 1 && color_detectado != 3) {
                         PlaySound(SOUND_UP);
 
-                        // ACTIVACI”N DEL PROCESO
+                        // ACTIVACI√ìN DEL PROCESO
                         disparar_barra = true;
 
-                        // BLOQUEO CRÕTICO:
-                        // El cÛdigo se detiene aquÌ hasta que task_mecanismo_empuje
+                        // BLOQUEO CR√çTICO:
+                        // El c√≥digo se detiene aqu√≠ hasta que task_mecanismo_empuje
                         // termine su rutina y ponga disparar_barra en false.
                         while(disparar_barra) {
                             Wait(100);
