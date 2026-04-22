@@ -1,0 +1,92 @@
+#define BUZON_M 4
+#define BUZON_R 3
+#define CONEX   1
+
+#define M_SELEC  OUT_A // forward - azul
+#define M_ABRIR  OUT_B // forward - abrir
+#define M_EXTRA  OUT_C
+
+#define S_DIS    IN_1   // Ultrasonico
+#define S_COLOR_DEP  IN_2   // RGB trasero (Depósitos)
+#define S_COLOR_SEL  IN_4   // RGB selector (Pelotas)
+
+#define DIST_LIMITE 15
+
+// Variables globales para comunicación entre tareas
+int color_pelota = 0;
+int color_deposito = 0;
+int distancia_actual = 255;
+int mensaje;
+
+// proximidad
+task task_distancia(){
+    SetSensorLowspeed(S_DIS);
+    while(true){
+        distancia_actual = SensorUS(S_DIS);
+        if(distancia_actual < DIST_LIMITE){
+            // Aquí puedes añadir una acción inmediata si es necesario
+            PlayTone(1000, 50);
+        }
+        Wait(50);
+    }
+}
+
+//Pelotas (Selector)
+task task_RGB_pelotas(){
+    SetSensorColorFull(S_COLOR_SEL);
+    while(true){
+        color_pelota = Sensor(S_COLOR_SEL);
+        Wait(50);
+    }
+}
+
+// Tarea 3: Sensor de Cajas (Depósitos)
+task task_RGB_depositos(){
+    SetSensorColorFull(S_COLOR_DEP);
+    while(true){
+        color_deposito = Sensor(S_COLOR_DEP);
+        Wait(50);
+    }
+}
+
+task main(){
+
+     // ConnectBT(CONEX, "MOV_NXT"); // Solo si no están emparejados
+     Wait(2000);
+     PlaySound(SOUND_DOUBLE_BEEP);
+     
+     // Inicialización
+     StartTask(task_distancia);
+     StartTask(task_RGB_pelotas);
+     StartTask(task_RGB_depositos);
+
+
+
+     while(true){
+         if(ReceiveRemoteNumber(BUZON_R, true, mensaje) == NO_ERR){
+             if(mensaje == 0){
+                 NumOut(0,LCD_LINE3,mensaje,true);
+             }
+             else if(mensaje == 1){ // 1 si quieren que la garra detecte
+                 PlaySound(SOUND_FAST_UP);
+                 RGB();
+                 Wait(1000);
+                 mensaje = 0;
+                 SendResponseNumber(CONEXION, BUZON_MANDAR, 1);
+             }
+             else if(mensaje == 2){  // Mensaje para subir nivel 2
+                  PlaySound(SOUND_UP);
+                  subir_tijera(450); // Ejemplo: Ajusten los grados a su mecanismo
+
+                  // IMPORTANTE: Después de subir, manden una confirmación
+                  // al ladrillo de movimiento (Maestro)
+                  SendResponseNumber(CONEXION, BUZON_MANDAR, 2);
+                  mensaje = 0;
+             }
+             else{
+                 PlayTone(400,200); //Raro
+             }
+         }
+         Wait(50);
+     }
+}

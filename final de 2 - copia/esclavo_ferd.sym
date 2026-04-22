@@ -1,0 +1,446 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__rotate_theAngle1	5	1	0	4	2
+1	__signed_stack_001task_sensor_color	6	1	4	4	16
+2	__unsigned_stack_001main	5	1	8	4	2
+3	__unsigned_stack_001task_sensor_color	5	1	12	4	2
+4	__signed_stack_003task_sensor_color	6	1	16	4	2
+5	__signed_stack_002task_sensor_color	6	1	20	4	8
+6	__D0empuje	6	1	24	4	4
+7	__ResetSensorMutex	9	0	28	4	2
+8	__TextOutMutex	9	0	32	4	8
+9	__signed_stack_001empuje	6	1	36	4	4
+10	__D0task_sensor_color	6	1	40	4	36
+11	__D0main	6	1	44	4	8
+12	__Wait_7qG2_ms_7qG2_000_inline_task_sensor_color	5	1	48	4	4
+13	__rotate_angle1	6	1	52	4	5
+14	__Wait_7qG2_ms_7qG2_000_inline_empuje	5	1	56	4	4
+15	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	60	4	2
+16	__constValNeg1400	4	0	64	2	1
+17	color_detectado	4	1	66	2	6
+18	__rotate_OldRotCount1	4	1	68	2	2
+19	__rotate_RotCount1	4	1	70	2	4
+20	__constVal13	2	0	72	1	1
+21	____initialize_global_data_return	1	1	73	1	3
+22	__SetSensorColorFull_7qG2_port_7qG2_000_inline_task_sensor_color	1	1	74	1	4
+23	ya_disparo	1	1	75	1	3
+24	disparar_barra	1	1	76	1	3
+25	__empuje_return	1	1	77	1	3
+26	__constVal63	2	0	78	1	2
+27	__constVal96	2	0	79	1	4
+28	____ResetSensorSubroutine_return	1	1	80	1	3
+29	__rotate_theRS1	1	1	81	1	3
+30	__rotate_theRM1	1	1	82	1	4
+31	__rotate_theOM1	1	1	83	1	7
+32	__rotate_theRVD1	1	1	84	1	3
+33	__rotate_theRVI1	1	1	85	1	3
+34	__rotate_theRVP1	1	1	86	1	3
+35	__rotate_sync1	1	1	87	1	3
+36	__rotate_firstPort1	1	1	88	1	5
+37	__rotate_power1	1	1	89	1	5
+38	__rotate_theUF1	1	1	90	1	6
+39	__rotate_turnpct1	2	1	91	1	4
+40	__rotate_stop1	1	1	92	1	3
+41	____RotateMotor1_return	1	1	93	1	4
+42	__constVal0	2	1	94	1	18
+43	__constVal3	2	0	95	1	3
+44	__ResetSensorTmp	1	1	96	1	2
+45	__ResetSensorPort	1	1	97	1	3
+46	__rotate_theTurnPct1	2	1	98	1	4
+47	__rotate_thePower1	2	1	99	1	4
+48	__constVal32	2	0	100	1	11
+49	__rotate_rs1	1	1	101	1	2
+50	__constVal1	2	0	102	1	9
+51	__TextOutArgs	8	0	4	16	24
+52	__TextOutArgs.Result	2	1	104	1	24
+53	__TextOutArgs.Location	8	0	2	4	24
+54	__TextOutArgs.Location.X	4	1	108	2	24
+55	__TextOutArgs.Location.Y	4	1	110	2	24
+56	__TextOutArgs.Text	7	0	112	4	24
+57	__TextOutArgs.Text.Text_type	1	0	0	1	0
+58	__TextOutArgs.Options	5	1	116	4	24
+59	__rotate_ports1	7	0	120	4	7
+60	__rotate_ports1.__rotate_ports1_type	1	0	0	1	0
+61	__strbuftask_sensor_color	7	0	122	4	6
+62	__strbuftask_sensor_color.__strbuftask_sensor_color_type	1	0	0	1	0
+63	__constStr0011	7	0	124	4	1
+64	__constStr0011.__constStr0011_type	1	1	0	1	0
+65	__constStr0009	7	0	126	4	1
+66	__constStr0009.__constStr0009_type	1	1	0	1	0
+67	__constStr0010	7	0	128	4	1
+68	__constStr0010.__constStr0010_type	1	1	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	67	0	#line 67 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	68	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	67	2	#line 67 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	69	2	#line 69 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	70	2		start task_sensor_color
+0	69	4	#line 69 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	69	4	#line 69 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	70	4		set __D0main, 1
+0	71	7	#line 71 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	72	7		tst 5, __D0main, __D0main
+0	71	10	#line 71 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	72	10		brtst 4, __ASM_Label_679, __D0main
+0	71	13	#line 71 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	72	13		mov __unsigned_stack_001main, disparar_barra
+0	71	15	#line 71 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	71	15	#line 71 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	72	15		set __D0main, 1
+0	71	18	#line 71 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	72	18		cmp 4, __D0main, __unsigned_stack_001main, __D0main
+0	72	22	#line 72 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	73	22		brtst 4, __ASM_Label_684, __D0main
+0	73	25	#line 73 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	74	25		subcall empuje, __empuje_return
+0	73	27	#line 73 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	76	27	#line 76 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	76	27	#line 76 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	77	27		set __Wait_7qG2_ms_7qG2_000_inline_main, 20
+0	76	30	#line 76 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	8551	30	#line 8551 "NXCDefs.h"
+0	8552	30		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	32	#line 8551 "NXCDefs.h"
+0	77	32	#line 77 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	80	32	#line 80 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	81	32		jmp __ASM_Label_678
+0	80	34	#line 80 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	81	34		exit -1, -1
+1	5120	0		brtst 4, __rotate_Done1, __rotate_angle1
+1	5121	3		sign __rotate_thePower1, __rotate_angle1
+1	5122	6		abs __rotate_theAngle1, __rotate_angle1
+1	5123	9		mul __rotate_thePower1, __rotate_thePower1, __rotate_power1
+1	5125	13		set __rotate_theUF1, 23
+1	5126	16		brtst 4, __rotate_NoSync1, __rotate_sync1
+1	5127	19		set __rotate_theOM1, 7
+1	5128	22		set __rotate_theRM1, 2
+1	5129	25		mov __rotate_theTurnPct1, __rotate_turnpct1
+1	5130	27		brtst 4, __rotate_Start1, __rotate_theTurnPct1
+1	5131	30		add __rotate_theUF1, __rotate_theUF1, __constVal32
+1	5132	34		jmp __rotate_Start1
+1	5134	36		set __rotate_theOM1, 3
+1	5135	39		set __rotate_theRM1, 0
+1	5136	42		set __rotate_theTurnPct1, 0
+1	5138	45		set __rotate_theRS1, 32
+1	5139	48		setout __rotate_ports1, 1, __rotate_theOM1, 8, __rotate_theRM1, 5, __rotate_theAngle1, 6, __rotate_theRS1, 10, __rotate_theRVP1, 11, __rotate_theRVI1, 12, __rotate_theRVD1, 2, __rotate_thePower1, 7, __rotate_turnpct1, 0, __rotate_theUF1
+1	5142	71		index __rotate_firstPort1, __rotate_ports1, 65535
+1	5144	75		getout __rotate_power1, __rotate_firstPort1, 2
+1	5145	79		brtst 4, __rotate_doneRunning1, __rotate_power1
+1	5146	82		getout __rotate_rs1, __rotate_firstPort1, 6
+1	5147	86		brcmp 4, __rotate_Running1, __rotate_rs1, __constVal32
+1	5149	90		brtst 4, __rotate_Reset1, __rotate_stop1
+1	5151	93		set __rotate_theOM1, 7
+1	5152	96		set __rotate_theUF1, 7
+1	5153	99		setout __rotate_ports1, 1, __rotate_theOM1, 8, __constVal1, 6, __rotate_theRS1, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF1
+1	5155	114		getout __rotate_RotCount1, __rotate_firstPort1, 14
+1	5157	118		mov __rotate_OldRotCount1, __rotate_RotCount1
+1	5158	120		wait 50
+1	5160	122		getout __rotate_RotCount1, __rotate_firstPort1, 14
+1	5161	126		brcmp 5, __rotate_Stabilize1, __rotate_OldRotCount1, __rotate_RotCount1
+1	5162	130		set __rotate_theOM1, 4
+1	5163	133		setout __rotate_ports1, 8, __rotate_theRM1, 6, __constVal0, 1, __rotate_theOM1, 0, __constVal1
+1	5166	144		brtst 4, __rotate_Done1, __rotate_theTurnPct1
+1	5167	147		setout __rotate_ports1, 0, __constVal32
+1	5169	152		subret ____RotateMotor1_return
+2	5476	0		setin __constVal1, __ResetSensorPort, 5
+2	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+2	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+2	5480	11		subret ____ResetSensorSubroutine_return
+3	17	0	#line 17 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	18	0		set ya_disparo, 1
+3	17	3	#line 17 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	17	3	#line 17 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	17	3	#line 17 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	18	3		set __signed_stack_001empuje, 60
+3	17	6	#line 17 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	17	6	#line 17 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	18	6		mov __D0empuje, __constValNeg1400
+3	20	8	#line 20 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	21	8	#pragma macro 33
+3	21	8		arrbuild __rotate_ports1, __constVal1
+3	21	12		mov __rotate_power1, __signed_stack_001empuje
+3	21	14		mov __rotate_angle1, __D0empuje
+3	21	16		mov __rotate_turnpct1, __constVal0
+3	21	18		mov __rotate_sync1, __constVal0
+3	21	20		mov __rotate_stop1, __constVal1
+3	21	22		mov __rotate_theRVP1, __constVal32
+3	21	24		mov __rotate_theRVI1, __constVal0
+3	21	26		mov __rotate_theRVD1, __constVal96
+3	21	28		subcall __RotateMotor1, ____RotateMotor1_return
+3	6211	30	#line 6211 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	20	30	#line 20 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	21	30	#line 21 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	22	30	#pragma macro 7
+3	22	30		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6215	53	#line 6215 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	21	53	#line 21 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	21	53	#line 21 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	22	53		set __Wait_7qG2_ms_7qG2_000_inline_empuje, 300
+3	21	56	#line 21 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	8551	56	#line 8551 "NXCDefs.h"
+3	8552	56		waitv __Wait_7qG2_ms_7qG2_000_inline_empuje
+3	8551	58	#line 8551 "NXCDefs.h"
+3	24	58	#line 24 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	24	58	#line 24 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	25	58		set __signed_stack_001empuje, 60
+3	24	61	#line 24 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	24	61	#line 24 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	25	61		set __D0empuje, 1400
+3	27	64	#line 27 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	28	64	#pragma macro 33
+3	28	64		arrbuild __rotate_ports1, __constVal1
+3	28	68		mov __rotate_power1, __signed_stack_001empuje
+3	28	70		mov __rotate_angle1, __D0empuje
+3	28	72		mov __rotate_turnpct1, __constVal0
+3	28	74		mov __rotate_sync1, __constVal0
+3	28	76		mov __rotate_stop1, __constVal1
+3	28	78		mov __rotate_theRVP1, __constVal32
+3	28	80		mov __rotate_theRVI1, __constVal0
+3	28	82		mov __rotate_theRVD1, __constVal96
+3	28	84		subcall __RotateMotor1, ____RotateMotor1_return
+3	6237	86	#line 6237 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	27	86	#line 27 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	28	86	#line 28 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	29	86	#pragma macro 7
+3	29	86		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6241	109	#line 6241 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	28	109	#line 28 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	31	109	#line 31 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	32	109		set disparar_barra, 0
+3	31	112	#line 31 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	31	112	#line 31 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	31	112	#line 31 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	32	112		set __Wait_7qG2_ms_7qG2_000_inline_empuje, 800
+3	31	115	#line 31 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	8551	115	#line 8551 "NXCDefs.h"
+3	8552	115		waitv __Wait_7qG2_ms_7qG2_000_inline_empuje
+3	8551	117	#line 8551 "NXCDefs.h"
+3	32	117	#line 32 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	33	117	#line 33 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	34	117		set ya_disparo, 0
+3	33	120	#line 33 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	33	120	#line 33 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	36	120	#line 36 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	37	120		subret __empuje_return
+4	37	0	#line 37 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	38	0		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_task_sensor_color, 3
+4	37	3	#line 37 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	4386	3	#line 4386 "NXCDefs.h"
+4	4387	3	#pragma macro 6
+4	4387	3		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_task_sensor_color, 0
+4	4387	7		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_task_sensor_color, 1
+4	4387	11		acquire __ResetSensorMutex
+4	4387	12		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_task_sensor_color
+4	4387	14		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	4387	16		release __ResetSensorMutex
+4	6275	17	#line 6275 "NXCDefs.h"
+4	4386	17	#line 4386 "NXCDefs.h"
+4	38	17	#line 38 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	38	17	#line 38 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	39	17		set __Wait_7qG2_ms_7qG2_000_inline_task_sensor_color, 500
+4	38	20	#line 38 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	8551	20	#line 8551 "NXCDefs.h"
+4	8552	20		waitv __Wait_7qG2_ms_7qG2_000_inline_task_sensor_color
+4	8551	22	#line 8551 "NXCDefs.h"
+4	40	22	#line 40 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	40	22	#line 40 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	41	22		set __D0task_sensor_color, 1
+4	41	25	#line 41 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	42	25		tst 5, __D0task_sensor_color, __D0task_sensor_color
+4	41	28	#line 41 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	42	28		brtst 4, __ASM_Label_627, __D0task_sensor_color
+4	41	31	#line 41 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	42	31		getin color_detectado, __constVal3, 4
+4	41	35	#line 41 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	41	35	#line 41 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	41	35	#line 41 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	44	35	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	45	35		mov __unsigned_stack_001task_sensor_color, ya_disparo
+4	44	37	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	44	37	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	45	37		set __D0task_sensor_color, 0
+4	44	40	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	45	40		cmp 4, __D0task_sensor_color, __unsigned_stack_001task_sensor_color, __D0task_sensor_color
+4	46	44	#line 46 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	47	44		brtst 4, __ASM_Label_634, __D0task_sensor_color
+4	46	47	#line 46 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	47	47		mov __signed_stack_001task_sensor_color, color_detectado
+4	46	49	#line 46 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	46	49	#line 46 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	47	49		set __D0task_sensor_color, 1
+4	46	52	#line 46 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	47	52		cmp 4, __D0task_sensor_color, __signed_stack_001task_sensor_color, __D0task_sensor_color
+4	47	56	#line 47 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	48	56		brtst 4, __ASM_Label_637, __D0task_sensor_color
+4	47	59	#line 47 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	48	59		set __signed_stack_001task_sensor_color, 0
+4	47	62	#line 47 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	47	62	#line 47 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	48	62		set __signed_stack_002task_sensor_color, 40
+4	47	65	#line 47 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	47	65	#line 47 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	48	65		strcat __strbuftask_sensor_color, __constStr0009
+4	47	69	#line 47 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	48	69		set __D0task_sensor_color, 1
+4	48	72	#line 48 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	49	72		acquire __TextOutMutex
+4	48	73	#line 48 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	49	73		mov __TextOutArgs.Location.X, __signed_stack_001task_sensor_color
+4	48	75	#line 48 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	49	75		mov __TextOutArgs.Location.Y, __signed_stack_002task_sensor_color
+4	48	77	#line 48 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	49	77		mov __TextOutArgs.Options, __D0task_sensor_color
+4	48	79	#line 48 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	49	79		mov __TextOutArgs.Text, __strbuftask_sensor_color
+4	48	81	#line 48 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	49	81		syscall 13, __TextOutArgs
+4	48	84	#line 48 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	49	84		mov __D0task_sensor_color, __TextOutArgs.Result
+4	48	86	#line 48 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	49	86		release __TextOutMutex
+4	48	87	#line 48 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	49	87	#line 49 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	50	87		jmp __ASM_Label_644
+4	49	89	#line 49 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	50	89		mov __signed_stack_001task_sensor_color, color_detectado
+4	49	91	#line 49 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	49	91	#line 49 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	50	91		set __D0task_sensor_color, 0
+4	49	94	#line 49 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	50	94		cmp 4, __D0task_sensor_color, __signed_stack_001task_sensor_color, __D0task_sensor_color
+4	49	98	#line 49 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	50	98		brtst 5, __ASM_Label_645, __D0task_sensor_color
+4	49	101	#line 49 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	50	101		mov __signed_stack_001task_sensor_color, color_detectado
+4	49	103	#line 49 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	49	103	#line 49 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	50	103		set __D0task_sensor_color, 6
+4	49	106	#line 49 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	50	106		cmp 4, __D0task_sensor_color, __signed_stack_001task_sensor_color, __D0task_sensor_color
+4	50	110	#line 50 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	51	110		brtst 4, __ASM_Label_648, __D0task_sensor_color
+4	50	113	#line 50 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	51	113		set __signed_stack_001task_sensor_color, 0
+4	50	116	#line 50 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	50	116	#line 50 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	51	116		set __signed_stack_002task_sensor_color, 40
+4	50	119	#line 50 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	50	119	#line 50 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	51	119		strcat __strbuftask_sensor_color, __constStr0010
+4	50	123	#line 50 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	51	123		set __D0task_sensor_color, 1
+4	51	126	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	52	126		acquire __TextOutMutex
+4	51	127	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	52	127		mov __TextOutArgs.Location.X, __signed_stack_001task_sensor_color
+4	51	129	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	52	129		mov __TextOutArgs.Location.Y, __signed_stack_002task_sensor_color
+4	51	131	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	52	131		mov __TextOutArgs.Options, __D0task_sensor_color
+4	51	133	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	52	133		mov __TextOutArgs.Text, __strbuftask_sensor_color
+4	51	135	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	52	135		syscall 13, __TextOutArgs
+4	51	138	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	52	138		mov __D0task_sensor_color, __TextOutArgs.Result
+4	51	140	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	52	140		release __TextOutMutex
+4	51	141	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	52	141	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	53	141		jmp __ASM_Label_655
+4	52	143	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	53	143		mov __signed_stack_001task_sensor_color, color_detectado
+4	52	145	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	52	145	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	53	145		set __D0task_sensor_color, 3
+4	52	148	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	53	148		cmp 4, __D0task_sensor_color, __signed_stack_001task_sensor_color, __D0task_sensor_color
+4	53	152	#line 53 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	54	152		brtst 4, __ASM_Label_658, __D0task_sensor_color
+4	53	155	#line 53 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	54	155		set __signed_stack_001task_sensor_color, 0
+4	53	158	#line 53 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	53	158	#line 53 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	54	158		set __signed_stack_002task_sensor_color, 40
+4	53	161	#line 53 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	53	161	#line 53 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	54	161		strcat __strbuftask_sensor_color, __constStr0011
+4	53	165	#line 53 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	54	165		set __D0task_sensor_color, 1
+4	54	168	#line 54 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	55	168		acquire __TextOutMutex
+4	54	169	#line 54 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	55	169		mov __TextOutArgs.Location.X, __signed_stack_001task_sensor_color
+4	54	171	#line 54 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	55	171		mov __TextOutArgs.Location.Y, __signed_stack_002task_sensor_color
+4	54	173	#line 54 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	55	173		mov __TextOutArgs.Options, __D0task_sensor_color
+4	54	175	#line 54 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	55	175		mov __TextOutArgs.Text, __strbuftask_sensor_color
+4	54	177	#line 54 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	55	177		syscall 13, __TextOutArgs
+4	54	180	#line 54 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	55	180		mov __D0task_sensor_color, __TextOutArgs.Result
+4	54	182	#line 54 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	55	182		release __TextOutMutex
+4	54	183	#line 54 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	57	183	#line 57 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	58	183		jmp __ASM_Label_665
+4	57	185	#line 57 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	58	185		set __signed_stack_001task_sensor_color, 40
+4	57	188	#line 57 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	57	188	#line 57 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	58	188		set __signed_stack_002task_sensor_color, 40
+4	57	191	#line 57 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	57	191	#line 57 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	58	191		mov __signed_stack_003task_sensor_color, color_detectado
+4	57	193	#line 57 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	57	193	#line 57 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	58	193		set __D0task_sensor_color, 1
+4	58	196	#line 58 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	59	196		acquire __TextOutMutex
+4	58	197	#line 58 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	59	197		mov __TextOutArgs.Location.X, __signed_stack_001task_sensor_color
+4	58	199	#line 58 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	59	199		mov __TextOutArgs.Location.Y, __signed_stack_002task_sensor_color
+4	58	201	#line 58 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	59	201		mov __TextOutArgs.Options, __D0task_sensor_color
+4	58	203	#line 58 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	59	203		numtostr __TextOutArgs.Text, __signed_stack_003task_sensor_color
+4	58	206	#line 58 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	59	206		syscall 13, __TextOutArgs
+4	58	209	#line 58 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	59	209		mov __D0task_sensor_color, __TextOutArgs.Result
+4	58	211	#line 58 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	59	211		release __TextOutMutex
+4	58	212	#line 58 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	59	212	#line 59 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	60	212		set disparar_barra, 1
+4	59	215	#line 59 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	59	215	#line 59 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	61	215	#line 61 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	61	215	#line 61 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	61	215	#line 61 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	61	215	#line 61 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	61	215	#line 61 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	62	215		set __Wait_7qG2_ms_7qG2_000_inline_task_sensor_color, 50
+4	61	218	#line 61 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	8551	218	#line 8551 "NXCDefs.h"
+4	8552	218		waitv __Wait_7qG2_ms_7qG2_000_inline_task_sensor_color
+4	8551	220	#line 8551 "NXCDefs.h"
+4	62	220	#line 62 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	66	220	#line 66 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	67	220		jmp __ASM_Label_626
+4	66	222	#line 66 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+4	67	222		exit -1, -1
+5	81	0	#line 81 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+5	82	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Miriam\AppData\Local\Temp\temp.nxc
+1	__RotateMotor1	37	NXTDefs.h
+2	__ResetSensorSubroutine	191	NXTDefs.h
+3	empuje	204	C:\Users\Miriam\AppData\Local\Temp\temp.nxc
+4	task_sensor_color	326	C:\Users\Miriam\AppData\Local\Temp\temp.nxc
+5	__initialize_global_data	551	C:\Users\Miriam\AppData\Local\Temp\temp.nxc

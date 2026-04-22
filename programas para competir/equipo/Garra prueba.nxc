@@ -1,0 +1,37 @@
+0 // garra y motores
+ 
+#define M_PINZA   OUT_B   // garra / pinza
+#define M_ELEV1   OUT_C   // elevador principal (Fwd = sube)
+#define M_ELEV2   OUT_A   // elevador secundario (Rev = sube)
+
+//#define ANG_ALTO    45    // grados de elevador para fila alta
+//#define ANG_MEDIO   25    // grados para fila media
+//#define ANG_BAJO    10    // grados para fila baja
+
+#define ANG_PINZA   45    // grados para abrir/cerrar pinza
+#define VEL_ELEV    100    // potencia elevador (no aumentar; solo ajustar angulo)
+#define VEL_PINZA   50    // potencia pinza
+
+
+// Sube el elevador: MB=Fwd, MC=Rev (ambos producen subida mecanica)
+void subir(int angulo)
+{
+    RotateMotor(OUT_AC, VEL_ELEV, angulo);   // MC -> Rev (inverso)
+
+}
+void para()
+{
+    RotateMotor(OUT_C, 0, 0);
+    RotateMotor(OUT_A, 0, 0);
+}
+
+void cerrar_pinza()
+{
+  //RotateMotor(M_PINZA, VEL_PINZA, ANG_PINZA);
+}
+
+task main()
+{
+
+
+}

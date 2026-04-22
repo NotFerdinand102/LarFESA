@@ -1,0 +1,98 @@
+// Maestro - esclavo
+//movimiento- garra
+#define BUZON_MANDAR 1
+#define BUZON_RECIBE 2
+#define CONEXION 0
+
+//Movimiento - selector
+#define BUZON_M 3
+#define BUZON_R 4
+#define CONEX 1
+
+
+// ---------------------------------------------------------------
+//  MOTORES (puertos verificados)
+// ---------------------------------------------------------------
+#define MOT_A  OUT_A   // frontal derecho (eje de avance)
+#define MOT_B  OUT_B   // izquierdo
+#define MOT_C  OUT_C   // trasero
+
+// ---------------------------------------------------------------
+//  SENSORES (puertos verificados)
+// ---------------------------------------------------------------
+#define SEN_LINEA_FL  IN_1   // seguidor linea - frontal izquierdo
+#define SEN_LINEA_TL  IN_2   // seguidor linea - trasero izquierdo
+#define SEN_LINEA_FR  IN_3   // seguidor linea - frontal derecho
+#define SEN_US_FRONT  IN_4   // ultrasonico frontal
+
+int Aviso = 0;
+
+task escuchar(){
+     int res;
+     while(true){
+         if(ReceiveRemoteNumber(BUZON_RECIBE, true, res) == NO_ERR){
+             if(res == 0){
+                 NumOut(0,LCD_LINE3,res,true);
+             }
+             else if(res == 1){
+                 PlaySound(SOUND_FAST_UP);
+                 Aviso = 1;
+                 res = 0;
+             }
+             else if(res == 2){
+                 Aviso = 2;
+                 res = 0;
+             }
+             else{
+                 PlayTone(400,200); //Raro
+             }
+         }
+     }
+}
+
+task sentidos(){
+    int fl = Sensor(SEN_LINEA_FL);
+    int fr = Sensor(SEN_LINEA_FR);
+    int tl = Sensor(SEN_LINEA_TL);
+}
+
+int grisesin(byte puerto){
+    SetSensorLight(puerto);
+    TextOut(0,LCD_LINE1,"coloca");
+    Wait(2000);
+    int val;
+    int k =1;
+    //while(!ButtonPressed(BTNCENTER, false)){
+    while(k<100){
+        val = Sensor(puerto);
+        NumOut(0,LCD_LINE3,val,true);
+        Wait(200);
+        k=k+1;
+    }
+    return val;
+}
+
+int calibrar(){
+    while(!ButtonPressed(BTNCENTER, false)){
+        TextOut(0, LCD_LINE1, ".", true);
+    }
+    int negro1 = grisesin();  ///////colocar puerto
+}
+
+task main(){
+     ConnectBT(CONEXION, "SLAVE_NXT");
+     Wait(2000);
+     PlaySound(SOUND_DOUBLE_BEEP);
+     StartTask (escuchar);
+     
+     // MANDA MENSAJE A ESCLAVO que chambee
+     SendRemoteNumber(CONEXION, BUZON_MANDAR, 1);
+     
+     //Espera hasat que esclavo conteste
+     while (aviso == 0){
+         NumOut(0,LCD_LINE3,aviso,true);
+     }
+     Aviso = 0;
+     
+     //SIgue
+}

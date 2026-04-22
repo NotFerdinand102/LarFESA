@@ -1,0 +1,51 @@
+#define V    35
+#define T_LADO 300
+#define SEN_LINEA_FL  IN_1   // seguidor linea - frontal izquierdo
+#define SEN_LINEA_TL  IN_2   // seguidor linea - trasero izquierdo
+#define SEN_LINEA_FR  IN_3   // seguidor linea - frontal derecho
+#define SEN_US_FRONT  IN_4   // ultrasonico frontal
+#define UMBRAL_LINEA   35
+
+void adelante(int vel, int ms)
+{
+    OnRev(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+    Off(OUT_BC);
+    Wait(2000);
+}
+
+void derecha(int vel, int ms)
+{
+    OnRev(OUT_A, vel);
+    OnFwd(OUT_B, vel/2-3);
+    OnFwd(OUT_C, vel/2);
+    Wait(ms);
+    Off(OUT_ABC);
+    Wait(1000);
+}
+
+void leer_sensores(int &fl, int &fr, int &tl)
+{
+    fl = Sensor(SEN_LINEA_FL);
+    fr = Sensor(SEN_LINEA_FR);
+    tl = Sensor(SEN_LINEA_TL);
+}
+
+
+task main()
+{
+    while(true)
+    {
+    adelante(V, T_LADO);
+    leer_sensores(fl, fr, tl);
+    // Algun frontal ve la linea -> pasar a FASE C
+        if (fl < UMBRAL_LINEA || fr < UMBRAL_LINEA)
+        {
+            break;  // salir a FASE C
+        }
+
+    }
+
+    PlayTone(880, 400);
+}

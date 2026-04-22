@@ -1,0 +1,86 @@
+#define SEN_COLOR  IN_4   // HiTechnic Color v2
+
+// Direccion I2C del HiTechnic Color v2
+//#define HT_ADDR  0x02
+
+#define M_PINZA   OUT_B   // garra / pinza
+#define M_ELEV1   OUT_C   // elevador principal (Fwd = sube)
+#define M_ELEV2   OUT_A   // elevador secundario (Rev = sube)
+#define M_TIJERA  OUT_AC  //ambos motores, como uno solo
+
+#define ANG_PINZA   80    // grados para abrir/cerrar pinza
+#define VEL_ELEV    100    // potencia elevador (no aumentar; solo ajustar angulo)
+#define VEL_PINZA   55    // potencia pinza
+
+#define BUZON_RECIBE 1
+#define BUZON_MANDAR 2
+#define CONEXION 0
+
+int mensaje;
+
+void empujar(){
+      RotateMotor(OUT_AC, VEL_PINZA, ANG_PINZA);
+      Wait(200); //RotateMotor(OUT_AC, 0,0);
+      RotateMotor(OUT_AC, VEL_PINZA, -ANG_PINZA);
+      //RotateMotor(OUT_AC, 0,0);
+}
+/*
+void subir(int angulo)
+{
+    RotateMotor(OUT_AC, VEL_ELEV, angulo);   // MC -> Rev (inverso)
+
+} */
+void subir_tijera(int grados) {// Los dos motores en Forward (potencia positiva)
+    // El NXT sincroniza internamente los encoders de A y C
+    RotateMotor(M_TIJERA, 100, grados);
+}
+
+void bajar_tijera(int grados) {
+    // Los dos motores en Reverse (potencia positiva, grados negativos)
+    RotateMotor(M_TIJERA, 100, -grados);
+}   /*
+void subir_especial(int angulo) {
+    OnFwd(OUT_A, VEL_ELEV);  // Uno hacia adelante
+    OnFwd(OUT_C, VEL_ELEV);  // El otro hacia atrás para compensar el giro invertido
+    Wait(500);               // Ajustar por tiempo o grados
+    Off(OUT_AC);
+}     */
+
+void RGB(){
+     //Codigo Fran
+     //
+     empujar();
+}
+
+task main(){
+     ConnectBT(CONEXION, "MASTER_NXT");
+     Wait(2000);
+     PlaySound(SOUND_DOUBLE_BEEP);
+     while(true){
+         if(ReceiveRemoteNumber(BUZON_RECIBE, true, mensaje) == NO_ERR){
+             if(mensaje == 0){
+                 NumOut(0,LCD_LINE3,mensaje,true);
+             }
+             else if(mensaje == 1){ // 1 si quieren uqe la garra detecte
+                 PlaySound(SOUND_FAST_UP);
+                 RGB();
+                 Wait(1000);
+                 SendResponseNumber(CONEXION, BUZON_MANDAR, 1);
+                 mensaje = 0;
+             }
+             else if(mensaje == 2){  // Mensaje para subir nivel 2
+                  PlaySound(SOUND_UP);
+                  subir_tijera(450); // Ejemplo: Ajusten los grados a su mecanismo
+
+                  // IMPORTANTE: Después de subir, manden una confirmación
+                  // al ladrillo de movimiento (Maestro)
+                  SendResponseNumber(CONEXION, BUZON_MANDAR, 2);
+                  mensaje = 0;
+             }
+             else{
+                 PlayTone(400,200); //Raro
+             }
+         }
+         Wait(50);
+     }
+}

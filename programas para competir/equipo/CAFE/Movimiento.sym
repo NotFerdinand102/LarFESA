@@ -1,0 +1,145 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0main	6	1	0	4	3
+1	__signed_stack_001izquierda	6	1	4	4	6
+2	__SPTArgsMutex	9	0	8	4	2
+3	__D0izquierda	6	1	12	4	12
+4	__signed_stack_003main	6	1	16	4	2
+5	__Wait_7qG2_ms_7qG2_000_inline_izquierda	5	1	20	4	4
+6	__signed_stack_001main	6	1	24	4	2
+7	__signed_stack_002main	6	1	28	4	2
+8	__OnRevMutex	9	0	32	4	4
+9	__izquierda_7qG2_ms_7qG2_000	4	1	36	2	2
+10	__izquierda_7qG2_vel_7qG2_000	4	1	38	2	4
+11	__constVal96	2	0	40	1	4
+12	__OnRev_Tmp	2	1	41	1	4
+13	__constVal63	2	0	42	1	4
+14	__izquierda_return	1	1	43	1	3
+15	____initialize_global_data_return	1	1	44	1	3
+16	__constVal1	2	0	45	1	1
+17	__constVal3	2	0	46	1	4
+18	__constVal2	2	0	47	1	1
+19	__PFTmp	1	1	48	1	1
+20	__constVal32	2	0	49	1	12
+21	__constVal0	2	1	50	1	14
+22	__SPTArgs	8	0	5	8	6
+23	__SPTArgs.Result	2	1	52	1	6
+24	__SPTArgs.Frequency	3	1	54	2	6
+25	__SPTArgs.Duration	3	1	56	2	6
+26	__SPTArgs.Loop	1	1	58	1	6
+27	__SPTArgs.Volume	1	1	59	1	6
+28	__OUT_ABC	7	0	60	4	1
+29	__OUT_ABC.__OUT_ABC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	63	0	#line 63 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	64	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	63	2	#line 63 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	63	2	#line 63 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	64	2		set __izquierda_7qG2_vel_7qG2_000, 75
+0	63	5	#line 63 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	63	5	#line 63 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	64	5		set __izquierda_7qG2_ms_7qG2_000, 4000
+0	63	8	#line 63 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	63	8	#line 63 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	64	8		subcall izquierda, __izquierda_return
+0	63	10	#line 63 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	65	10	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	66	10		set __signed_stack_001main, 880
+0	65	13	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	65	13	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	66	13		set __signed_stack_002main, 400
+0	65	16	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	65	16	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	66	16		set __signed_stack_003main, 4
+0	65	19	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	65	19	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	66	19		set __D0main, 0
+0	65	22	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	66	22		acquire __SPTArgsMutex
+0	65	23	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	66	23		mov __SPTArgs.Frequency, __signed_stack_001main
+0	65	25	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	66	25		mov __SPTArgs.Duration, __signed_stack_002main
+0	65	27	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	66	27		mov __SPTArgs.Volume, __signed_stack_003main
+0	65	29	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	66	29		mov __SPTArgs.Loop, __D0main
+0	65	31	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	66	31		syscall 10, __SPTArgs
+0	65	34	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	66	34		mov __D0main, __SPTArgs.Result
+0	65	36	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	66	36		release __SPTArgsMutex
+0	65	37	#line 65 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+0	66	37		exit -1, -1
+1	36	0	#line 36 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	37	0		mov __D0izquierda, __izquierda_7qG2_vel_7qG2_000
+1	36	2	#line 36 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	37	2	#pragma macro 7
+1	37	2		setout __constVal0, 2, __D0izquierda, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	4285	25	#line 4285 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	36	25	#line 36 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	37	25	#line 37 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	38	25		mov __signed_stack_001izquierda, __izquierda_7qG2_vel_7qG2_000
+1	37	27	#line 37 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	37	27	#line 37 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	38	27		set __D0izquierda, 2
+1	37	30	#line 37 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	38	30		div __signed_stack_001izquierda, __signed_stack_001izquierda, __D0izquierda
+1	37	34	#line 37 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	37	34	#line 37 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	38	34		set __D0izquierda, 3
+1	37	37	#line 37 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	38	37		sub __D0izquierda, __signed_stack_001izquierda, __D0izquierda
+1	37	41	#line 37 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	38	41	#pragma macro 10
+1	38	41		acquire __OnRevMutex
+1	38	42		neg __OnRev_Tmp, __D0izquierda
+1	38	45		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	38	68		release __OnRevMutex
+1	4308	69	#line 4308 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	37	69	#line 37 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	38	69	#line 38 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	39	69		mov __signed_stack_001izquierda, __izquierda_7qG2_vel_7qG2_000
+1	38	71	#line 38 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	38	71	#line 38 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	39	71		set __D0izquierda, 2
+1	38	74	#line 38 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	39	74		div __D0izquierda, __signed_stack_001izquierda, __D0izquierda
+1	38	78	#line 38 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	39	78	#pragma macro 10
+1	39	78		acquire __OnRevMutex
+1	39	79		neg __OnRev_Tmp, __D0izquierda
+1	39	82		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	39	105		release __OnRevMutex
+1	4323	106	#line 4323 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	38	106	#line 38 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	39	106	#line 39 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	40	106		mov __Wait_7qG2_ms_7qG2_000_inline_izquierda, __izquierda_7qG2_ms_7qG2_000
+1	39	108	#line 39 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	8869	108	#line 8869 "NXCDefs.h"
+1	8870	108		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_izquierda
+1	8869	111	#line 8869 "NXCDefs.h"
+1	39	111	#line 39 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	40	111	#line 40 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	41	111	#pragma macro 7
+1	41	111		setout __OUT_ABC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	4340	134	#line 4340 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	40	134	#line 40 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	41	134	#line 41 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	42	134		set __Wait_7qG2_ms_7qG2_000_inline_izquierda, 1000
+1	41	137	#line 41 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	8869	137	#line 8869 "NXCDefs.h"
+1	8870	137		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_izquierda
+1	8869	140	#line 8869 "NXCDefs.h"
+1	41	140	#line 41 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	44	140	#line 44 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+1	45	140		subret __izquierda_return
+2	69	0	#line 69 "C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc"
+2	70	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc
+1	izquierda	40	C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc
+2	__initialize_global_data	182	C:\Users\LAR_Lenovo\Desktop\CAFE\Movimiento.nxc

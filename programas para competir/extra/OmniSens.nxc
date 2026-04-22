@@ -1,0 +1,72 @@
+//movimiento para robor omnidireccional de 3 ruedas triagular con sensores
+//Creado por Enrique Martinez Celis
+//Creado el 26-Noviembre-2025     VcS  el 7-enero-2026
+//Actualizado el 7-enero-2026
+
+//A+b = frontal
+//B = motor azul
+//C = motor amarillo
+
+//Declaro multiplexor
+#include "mindsensors-mux.h"
+SMUXSensor smux;
+
+//Valores de correccion
+const float Fact_ade = 1.0;
+const float Fact_lat = 1.0513;
+
+void adelante(int potencia, float ti, float desc){
+     OnFwd(OUT_A, potencia*Fact_ade*0.222);
+     OnRev(OUT_B, potencia*Fact_ade*0.953);
+     OnFwd(OUT_C, potencia*Fact_ade*0.735);
+     Wait(ti * 1000);
+     Off(OUT_A);
+     Off(OUT_C);
+     Off(OUT_B);
+     Wait(desc * 1000);
+}
+
+void atras(int potencia, float ti, float desc){
+     OnRev(OUT_A, potencia*Fact_ade*0.222);
+     OnFwd(OUT_B, potencia*Fact_ade*0.953);
+     OnRev(OUT_C, potencia*Fact_ade*0.735);
+     Wait(ti * 1000);
+     Off(OUT_A);
+     Off(OUT_C);
+     Off(OUT_B);
+     Wait(desc * 1000);
+}
+
+void izquierda(int potencia, float ti, float desc){
+     OnFwd(OUT_A, potencia*Fact_lat*0.975);
+     OnRev(OUT_B, potencia*Fact_lat*0.304);
+     OnRev(OUT_C, potencia*Fact_lat*0.678);
+     Wait(ti * 1000);
+     Off(OUT_A);
+     Off(OUT_C);
+     Off(OUT_B);
+     Wait(desc * 1000);
+}
+
+void derecha(int potencia, float ti, float desc){
+     OnRev(OUT_A, potencia*Fact_lat*0.975);
+     OnFwd(OUT_B, potencia*Fact_lat*0.304);
+     OnFwd(OUT_C, potencia*Fact_lat*0.678);
+     Wait(ti * 1000);
+     Off(OUT_A);
+     Off(OUT_C);
+     Off(OUT_B);
+     Wait(desc * 1000);
+}
+
+/* Menu de funciones  :
+     adelante(pot, 3, 0.5);
+     izquierda(pot, 3, 0.5);
+     atras(pot, 3, 0.5);
+     derecha(pot, 3, 0.5)
+*/
+
+task main(){
+     SMUXConfigureSensor(S1, &smux); //Declaro multiploexor
+     int pot = 75;
+}

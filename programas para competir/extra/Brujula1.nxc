@@ -1,0 +1,34 @@
+// Define the sensor port and I2C address constants
+const byte COMPASS_PORT = S1;
+// The I2C address depends on the specific sensor model and configuration.
+// Refer to your Mindsensors documentation for the correct value.
+// A typical default address might be around 0x01 or 0x08.
+#define HT_ADDR_COMPASS 0x02 // Placeholder: use actual sensor address
+
+task main()
+{
+    SetSensorLowspeed(COMPASS_PORT);
+    int headingValue;
+
+    // Optional: Configure the sensor type (often handled by the function internally or BricxCC setup)
+    // SetSensorType(COMPASS_PORT, SENSOR_TYPE_I2C_LS);
+
+    while (true)
+    {
+        // Call the SensorMSCompass function to get the current heading
+        //headingValue = SensorMSCompass(COMPASS_PORT, HT_ADDR_COMPASS);
+        headingValue = SensorHTCompass(COMPASS_PORT);
+        TextOut(0, LCD_LINE5, "Compass: ");
+        NumOut(25, LCD_LINE7, headingValue);
+
+        // Display the result on the NXT screen
+        ClearScreen();
+        TextOut(0, 0, "Heading:");
+        // DisplayInt(column, row, value, number of digits, flash);
+        //DisplayInt(0, 1, headingValue, 0);
+        //NumOut (0,1, headingValue);
+
+        // Wait briefly before the next reading
+        Wait(100); // Wait 100 milliseconds
+    }
+}

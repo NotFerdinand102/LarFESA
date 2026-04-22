@@ -1,0 +1,55 @@
+/* * ==============================================================================
+ * PROYECTO: LARC OPEN 2026 - DISPOSITIVO: "Garra"
+ * ==============================================================================
+ * Este programa gestiona el mecanismo de elevación de tijera y la pinza.
+ *
+ * JUSTIFICACIÓN DE VALORES (Mundo Real):
+ * - Sync (40, 0): Potencia 40 con factor de giro 0. Esto obliga a ambos motores
+ *   del elevador a girar idénticos; si uno se desfasa, la tijera se traba.
+ * - SensorUS (10): 10cm es la distancia óptima para que la pinza rodee el grano.
+ * - Rotate (90): Representa 1/4 de vuelta del motor, suficiente para cerrar
+ *   la pinza sin forzar el mecanismo (evita sobrecalentamiento).
+ * ==============================================================================
+ */
+
+#define INBOX 1
+#define M_ELEVADOR_1 OUT_A
+#define M_ELEVADOR_2 OUT_B
+#define M_PINZA OUT_C
+
+task main() {
+    // Sensor ultrasónico para validar la posición del grano antes de cerrar.
+    SetSensorLowspeed(S1);
+    int comando = 0;
+
+    while(true) {
+        ReceiveRemoteNumber(INBOX, true, comando);
+
+        if (comando == 10) {
+            /* * ASCENSO: 2500ms (2.5s) para alcanzar la altura de 10-15cm.
+             * AJUSTE: Si no llega al tope, aumentar tiempo, NO la potencia para
+             * evitar estrés mecánico en las vigas.
+             */
+            OnFwdSync(OUT_AB, 40, 0);
+            Wait(2500);
+            Off(OUT_AB);
+
+            /* * CAPTURA: Si el sensor detecta el grano a <10cm, cierra pinza.
+             * CONSIDERACIÓN: Si el grano se resbala, subir a 100 grados de rotación.
+             */
+            if (SensorUS(S1) < 10) {
+                RotateMotor(M_PINZA, 50, 90);
+            }
+
+            // DESCENSO: Potencia reducida (30) para un aterrizaje suave en la rampa.
+            OnRevSync(OUT_AB, 30, 0);
+            Wait(2500);
+            Off(OUT_AB);
+
+            // Abre pinza para depositar en el sistema de almacenamiento.
+            RotateMotor(M_PINZA, 50, -90);
+            comando = 0;
+        }
+        Wait(50);
+    }
+}

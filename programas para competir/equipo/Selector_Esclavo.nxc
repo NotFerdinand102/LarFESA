@@ -1,0 +1,284 @@
+/* ==============================================================================
+ * PROYECTO : LARC OPEN 2026 - Robot Recolector de Cafe
+ * DISPOSITIVO: "Selector" (Autonomo - sin BT)
+ * EQUIPO   : PUMA Nexus Coffea
+ * VERSION  : 3.0 - Corregido, puertos verificados, I2C mejorado
+ * ==============================================================================
+ * PUERTOS (VERIFICADOS):
+ *   MA (OUT_A) - Motor selector
+ *                0 grados = neutro, +45 = canal caja roja, -45 = canal caja azul
+ *   MB (OUT_B) - Motor compuerta izquierda  (caja azul / sobremaduros)
+ *   MC (OUT_C) - Motor compuerta derecha     (caja roja / maduros)
+ *   S1 (IN_1)  - Sensor ultrasonico (detecta presencia de caja < 15 cm)
+ *   S2 (IN_2)  - Sensor RGB HiTechnic Color v2
+ *                -> Lee color de la PELOTA entrante (cuando no hay caja cerca)
+ *                -> Lee color de la CAJA  externa   (cuando detecta caja cerca)
+ *
+ * OPERACION COMPLETAMENTE AUTONOMA:
+ *   No recibe comandos BT. Permanece activo toda la ronda.
+ *   S1 y S2 sirven para detectar las cajas donde se depositaran las pelotas.
+ *
+ * LOGICA DE CLASIFICACION (por tonalidad relativa R, G, B):
+ *   R domina (R > G, R > B, R > umbral) -> MADURA (rojo/naranja/amarillo)
+ *   B domina (B > R, B > G, B > umbral) -> SOBREMADURA (azul/negro)
+ *   G domina (G > R, G > B, G > umbral) -> VERDE -> ignorar
+ *   Ninguno domina                      -> ignorar
+ *
+ * PROTECCION ANTI-PENALIZACION:
+ *   Solo abre compuerta si tipo_pelota == tipo_caja
+ *   Maduro  en caja roja  -> +7 pts  (SI abre)
+ *   Sobrema en caja azul  -> +5 pts  (SI abre)
+ *   Maduro  en caja azul  -> -7 pts  (NO abre - bloqueado)
+ *   Sobrema en caja roja  -> -5 pts  (NO abre - bloqueado)
+ * ============================================================================ */
+
+// ---------------------------------------------------------------
+//  MOTORES (puertos verificados)
+// ---------------------------------------------------------------
+#define M_SELECTOR   OUT_A   // dirige pelota a canal rojo o azul
+#define M_COMP_IZQ   OUT_B   // compuerta izquierda -> caja azul
+#define M_COMP_DER   OUT_C   // compuerta derecha   -> caja roja
+
+// ---------------------------------------------------------------
+//  SENSORES (puertos verificados)
+// ---------------------------------------------------------------
+#define SEN_US     IN_1   // ultrasonico - detecta caja
+#define SEN_COLOR  IN_2   // HiTechnic Color v2
+
+// Direccion I2C del HiTechnic Color v2
+#define HT_ADDR  0x02
+
+// ---------------------------------------------------------------
+//  PARAMETROS MECANICOS
+// ---------------------------------------------------------------
+#define ANG_SELECTOR    45   // grados: +45 -> roja, -45 -> azul
+#define ANG_COMPUERTA   90   // apertura completa de compuerta
+#define VEL_SEL         40   // potencia del selector
+#define VEL_COMP        50   // potencia de las compuertas
+#define T_CAIDA       1500   // ms para que la pelota caiga por gravedad
+
+// ---------------------------------------------------------------
+//  DISTANCIA DE DETECCION
+// ---------------------------------------------------------------
+#define DIST_CAJA  15   // cm: si US < 15 -> hay caja enfrente
+
+// ---------------------------------------------------------------
+//  UMBRALES DE COLOR (tonalidad relativa)
+// ---------------------------------------------------------------
+#define UMBRAL_ROJO   50   // canal R dominando por encima de 50 = roja
+#define UMBRAL_AZUL   50   // canal B dominando por encima de 50 = azul
+#define UMBRAL_VERDE  40   // canal G dominando por encima de 40 = verde
+
+// ---------------------------------------------------------------
+//  TIPOS DE PELOTA / CAJA
+// ---------------------------------------------------------------
+#define TIPO_NINGUNA   0
+#define TIPO_MADURA    1   // rojo / naranja / amarillo -> caja roja
+#define TIPO_SOBREMAD  2   // azul / negro              -> caja azul
+
+// Estado actual
+int pelota_actual;
+
+// ================================================================
+//  LECTURA DEL SENSOR HITECHNIC COLOR V2 (I2C manual)
+// ================================================================
+
+bool iniciar_color_sensor(byte puerto)
+{
+    byte cmd[];
+    ArrayBuild(cmd, HT_ADDR, 0x41, 0x00);   // registro modo -> activo
+    int res = LowspeedWrite(puerto, 0, cmd);
+    Wait(100);
+    return (res == NO_ERR);
+}
+
+bool leer_rgb(byte puerto, int &r, int &g, int &b)
+{
+    // Solicitar lectura desde registro 0x43 (R)
+    byte cmd[];
+    ArrayBuild(cmd, HT_ADDR, 0x43);
+    int res = LowspeedWrite(puerto, 3, cmd);
+    if (res != NO_ERR) { r = 0; g = 0; b = 0; return false; }
+
+    // Esperar a que los datos esten disponibles (max 50 ms)
+    long t0 = CurrentTick();
+    while (LowspeedCheckStatus(puerto) != NO_ERR)
+    {
+        if ((CurrentTick() - t0) > 50) { r = 0; g = 0; b = 0; return false; }
+        Wait(2);
+    }
+
+    byte resp[];
+    ArrayInit(resp, 0, 3);
+    res = LowspeedRead(puerto, 3, resp);
+    if (res != NO_ERR) { r = 0; g = 0; b = 0; return false; }
+
+    r = resp[0];
+    g = resp[1];
+    b = resp[2];
+    return true;
+}
+
+// ================================================================
+//  CLASIFICACION DE COLOR POR TONALIDAD
+// ================================================================
+// Determina si el color leido corresponde a:
+//   MADURA (rojo domina), SOBREMADURA (azul domina), o NINGUNA
+int clasificar_color(int r, int g, int b)
+{
+    // Verde domina -> pelota verde o superficie verde -> ignorar
+    if (g > r && g > b && g > UMBRAL_VERDE)
+        return TIPO_NINGUNA;
+
+    // Azul domina -> sobremaduro (azul/negro)
+    if (b > r && b > g && b > UMBRAL_AZUL)
+        return TIPO_SOBREMAD;
+
+    // Rojo domina -> maduro (rojo/naranja/amarillo)
+    if (r > g && r > b && r > UMBRAL_ROJO)
+        return TIPO_MADURA;
+
+    // Ningun canal domina claramente -> ignorar
+    return TIPO_NINGUNA;
+}
+
+// ================================================================
+//  DEPOSITAR EN LA CAJA CORRECTA
+// ================================================================
+void depositar(int tipo)
+{
+    if (tipo == TIPO_MADURA)
+    {
+        // Girar selector hacia caja roja (+45 grados)
+        RotateMotor(M_SELECTOR, VEL_SEL, ANG_SELECTOR);
+        Wait(300);
+
+        // Abrir compuerta derecha (caja roja)
+        RotateMotor(M_COMP_DER, VEL_COMP, ANG_COMPUERTA);
+        Wait(T_CAIDA);
+
+        // Cerrar compuerta
+        RotateMotor(M_COMP_DER, VEL_COMP, -ANG_COMPUERTA);
+        Wait(200);
+
+        // Regresar selector al neutro
+        RotateMotor(M_SELECTOR, VEL_SEL, -ANG_SELECTOR);
+    }
+    else if (tipo == TIPO_SOBREMAD)
+    {
+        // Girar selector hacia caja azul (-45 grados)
+        RotateMotor(M_SELECTOR, VEL_SEL, -ANG_SELECTOR);
+        Wait(300);
+
+        // Abrir compuerta izquierda (caja azul)
+        RotateMotor(M_COMP_IZQ, VEL_COMP, ANG_COMPUERTA);
+        Wait(T_CAIDA);
+
+        // Cerrar compuerta
+        RotateMotor(M_COMP_IZQ, VEL_COMP, -ANG_COMPUERTA);
+        Wait(200);
+
+        // Regresar selector al neutro
+        RotateMotor(M_SELECTOR, VEL_SEL, ANG_SELECTOR);
+    }
+}
+
+// ================================================================
+//                    TAREA PRINCIPAL
+// ================================================================
+task main()
+{
+    // -- Configurar sensores I2C --
+    SetSensorLowspeed(SEN_COLOR);  // S2 = RGB HiTechnic
+    SetSensorLowspeed(SEN_US);     // S1 = ultrasonico
+    Wait(500);
+
+    // Inicializar HiTechnic Color v2
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "SELECTOR v3");
+    TextOut(0, LCD_LINE2, "Iniciando...");
+
+    bool ok = iniciar_color_sensor(SEN_COLOR);
+    if (!ok)
+    {
+        TextOut(0, LCD_LINE3, "Color: reintento");
+        Wait(300);
+        iniciar_color_sensor(SEN_COLOR);
+        Wait(200);
+    }
+
+    pelota_actual = TIPO_NINGUNA;
+
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "SELECTOR ACTIVO");
+    TextOut(0, LCD_LINE2, "Sin pelota");
+
+    // ================================================
+    //  BUCLE PRINCIPAL (siempre activo toda la ronda)
+    // ================================================
+    while (true)
+    {
+        int r = 0, g = 0, b = 0;
+        int dist = SensorUS(SEN_US);
+        bool lectura_ok = leer_rgb(SEN_COLOR, r, g, b);
+
+        // ------------------------------------------------
+        // FASE A: Detectar pelota entrante
+        //   Condiciones:
+        //   - No hay pelota almacenada
+        //   - No hay caja cerca (dist > DIST_CAJA)
+        //   - Se leyo color valido
+        // ------------------------------------------------
+        if (pelota_actual == TIPO_NINGUNA && dist > DIST_CAJA && lectura_ok)
+        {
+            int tipo = clasificar_color(r, g, b);
+            if (tipo != TIPO_NINGUNA)
+            {
+                pelota_actual = tipo;
+                PlayTone(660, 150);
+
+                ClearScreen();
+                TextOut(0, LCD_LINE1, "SELECTOR v3");
+                if (pelota_actual == TIPO_MADURA)
+                    TextOut(0, LCD_LINE2, "MADURA (roja)");
+                else
+                    TextOut(0, LCD_LINE2, "SOBREMAD (azul)");
+            }
+        }
+
+        // ------------------------------------------------
+        // FASE B: Depositar si hay caja cerca
+        //   Condiciones:
+        //   - Hay pelota almacenada
+        //   - Hay caja cerca (dist < DIST_CAJA)
+        //   - Se leyo color de la caja
+        // ------------------------------------------------
+        if (pelota_actual != TIPO_NINGUNA && dist < DIST_CAJA && lectura_ok)
+        {
+            int tipo_caja = clasificar_color(r, g, b);
+
+            // PROTECCION ANTI-PENALIZACION:
+            // Solo depositar si el tipo de pelota coincide con el tipo de caja
+            if (tipo_caja == pelota_actual)
+            {
+                depositar(pelota_actual);
+                pelota_actual = TIPO_NINGUNA;
+
+                PlayTone(880, 300);
+                ClearScreen();
+                TextOut(0, LCD_LINE1, "SELECTOR v3");
+                TextOut(0, LCD_LINE2, "DEPOSITADO OK");
+            }
+            else if (tipo_caja != TIPO_NINGUNA)
+            {
+                // Caja de color incorrecto -> NO abrir, esperar siguiente cuadro
+                ClearScreen();
+                TextOut(0, LCD_LINE1, "SELECTOR v3");
+                TextOut(0, LCD_LINE2, "CAJA ERRONEA");
+                TextOut(0, LCD_LINE3, "Esperando...");
+            }
+        }
+
+        Wait(50);  // ciclo cada ~50 ms
+    }
+}

@@ -1,0 +1,107 @@
+#define BUZON_M 4
+#define BUZON_R 3
+#define CONEX   1
+
+#define M_SELEC  OUT_A
+#define M_ABRIR  OUT_B
+#define M_EXTRA  OUT_C
+
+#define S_DIS    IN_1   // Ultrasonico
+#define S_COLOR_DEP  IN_2   // RGB trasero (Depósitos)
+#define S_COLOR_SEL  IN_4   // RGB selector (Pelotas)
+
+#define DIST_LIMITE 15
+
+// Variables globales para comunicación entre tareas
+int color_pelota = 0;
+int color_deposito = 0;
+int distancia_actual = 255;
+int mensaje;
+
+// Tarea 1: Monitoreo constante de proximidad
+task task_distancia(){
+    SetSensorLowspeed(S_DIS);
+    while(true){
+        distancia_actual = SensorUS(S_DIS);
+        if(distancia_actual < DIST_LIMITE){
+            // Aquí puedes añadir una acción inmediata si es necesario
+            PlayTone(1000, 50);
+        }
+        Wait(50);
+    }
+}
+
+// Tarea 2: Sensor de Pelotas (Selector)
+task task_RGB_pelotas(){
+    SetSensorColorFull(S_COLOR_SEL);
+    while(true){
+        color_pelota = Sensor(S_COLOR_SEL);
+        Wait(50);
+    }
+}
+
+// Tarea 3: Sensor de Cajas (Depósitos)
+task task_RGB_depositos(){
+    SetSensorColorFull(S_COLOR_DEP);
+    while(true){
+        color_deposito = Sensor(S_COLOR_DEP);
+        Wait(50);
+    }
+}
+
+task main(){
+     // Inicialización
+     StartTask(task_distancia);
+     StartTask(task_RGB_pelotas);
+     StartTask(task_RGB_depositos);
+
+     // ConnectBT(CONEX, "MOV_NXT"); // Solo si no están emparejados
+     Wait(2000);
+     PlaySound(SOUND_DOUBLE_BEEP);
+
+     while(true){
+         if(ReceiveRemoteNumber(BUZON_R, true, mensaje) == NO_ERR){
+
+             // CASO 1: Clasificar Pelota
+             if(mensaje == 1){
+                 PlaySound(SOUND_FAST_UP);
+
+                 // Lógica de selección según color_pelota
+                 if(color_pelota == 2){ // Ejemplo: Azul
+                     RotateMotor(M_SELEC, 50, 90);
+                 } else {
+                     RotateMotor(M_SELEC, 50, -90);
+                 }
+
+                 Wait(500);
+                 SendRemoteNumber(CONEX, BUZON_M, 1);
+                 mensaje = 0;
+             }
+
+             // CASO 2: Buscar Depósito y Detenerse por Proximidad
+             else if(mensaje == 2){
+                 // Este bucle espera a que estemos cerca Y el color sea el correcto
+                 while(distancia_actual > DIST_LIMITE){
+                     TextOut(0, LCD_LINE3, "Buscando caja...");
+                     NumOut(0, LCD_LINE4, distancia_actual);
+                     Wait(20);
+                 }
+
+                 // Al salir del bucle es porque ya está a la distancia límite
+                 PlaySound(SOUND_DOWN);
+
+                 // Confirmar color de la caja antes de soltar
+                 if(color_deposito == color_pelota){
+                     // Abrir compuerta
+                     RotateMotor(M_ABRIR, 40, 60);
+                     Wait(500);
+                     RotateMotor(M_ABRIR, 40, -60);
+                 }
+
+                 SendRemoteNumber(CONEX, BUZON_M, 2);
+                 mensaje = 0;
+             }
+         }
+         Wait(50);
+     }
+}

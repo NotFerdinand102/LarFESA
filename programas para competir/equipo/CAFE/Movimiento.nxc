@@ -1,0 +1,67 @@
+//nueva propuesta.
+
+#define V    75
+#define T_LADO 4000
+
+void adelante(int vel, int ms)
+{
+    OnRev(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+    Off(OUT_BC);
+    Wait(2000);
+}
+
+void derecha(int vel, int ms)
+{
+    OnRev(OUT_A, vel);
+    OnFwd(OUT_B, vel/2-3);
+    OnFwd(OUT_C, vel/2);
+    Wait(ms);
+    Off(OUT_ABC);
+    Wait(1000);
+}
+
+//Propuestas de atras,izquierda y vuelta
+void atras(int vel, int ms)
+{
+    OnFwd(OUT_B, vel);   // OnRev → OnFwd
+    OnRev(OUT_C, vel);   // OnFwd → OnRev
+    Wait(ms);
+    Off(OUT_BC);
+    Wait(2000);
+}
+
+void izquierda(int vel, int ms)
+{
+    OnFwd(OUT_A, vel);        // OnRev → OnFwd
+    OnRev(OUT_B, vel/2-3);    // OnFwd → OnRev
+    OnRev(OUT_C, vel/2);      // OnFwd → OnRev
+    Wait(ms);
+    Off(OUT_ABC);
+    Wait(1000);
+}
+
+void vuelta(int vel, int ms)
+{
+	OnFwd(OUT_A, vel);
+	OnRev(OUT_B, vel);
+	OnFwd(OUT_C, vel);
+	Wait(ms);
+	Off(OUT_ABC);
+	Wait(1000);
+}
+
+task main()
+{
+    adelante(V, T_LADO-1000);
+    derecha(V,T_LADO+2000);
+    
+    //adelante(V, T_LADO);
+    //adelante(V, T_LADO+2000);
+    //derecha(V,T_LADO+4000);
+    //derecha(V,T_LADO+4500);
+
+    
+    PlayTone(880, 400);
+}

@@ -1,0 +1,190 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0main	6	1	0	4	15
+1	__D0adelante	6	1	4	4	4
+2	__SPTArgsMutex	9	0	8	4	2
+3	__signed_stack_001main	6	1	12	4	6
+4	__Wait_7qG2_ms_7qG2_000_inline_adelante	5	1	16	4	4
+5	__signed_stack_003main	6	1	20	4	2
+6	__signed_stack_002main	6	1	24	4	2
+7	__OnRevMutex	9	0	28	4	2
+8	__leer_sensores_7qG2_fr_7qG2_000	4	1	32	2	3
+9	__leer_sensores_7qG2_fl_7qG2_000	4	1	34	2	3
+10	__adelante_7qG2_ms_7qG2_000	4	1	36	2	2
+11	__adelante_7qG2_vel_7qG2_000	4	1	38	2	3
+12	__leer_sensores_7qG2_tl_7qG2_000	4	1	40	2	3
+13	__main_7qG2_fr_7qG2_000	4	1	42	2	3
+14	__main_7qG2_tl_7qG2_000	4	1	44	2	2
+15	__main_7qG2_fl_7qG2_000	4	1	46	2	3
+16	__constVal63	2	0	48	1	3
+17	__leer_sensores_return	1	1	49	1	3
+18	____initialize_global_data_return	1	1	50	1	3
+19	__constVal96	2	0	51	1	3
+20	__constVal3	2	0	52	1	3
+21	__constVal0	2	1	53	1	11
+22	__constVal2	2	0	54	1	2
+23	__PFTmp	1	1	55	1	1
+24	__constVal1	2	0	56	1	2
+25	__adelante_return	1	1	57	1	3
+26	__OnRev_Tmp	2	1	58	1	2
+27	__constVal32	2	0	59	1	9
+28	__SPTArgs	8	0	5	8	6
+29	__SPTArgs.Result	2	1	60	1	6
+30	__SPTArgs.Frequency	3	1	62	2	6
+31	__SPTArgs.Duration	3	1	64	2	6
+32	__SPTArgs.Loop	1	1	66	1	6
+33	__SPTArgs.Volume	1	1	67	1	6
+34	__OUT_BC	7	0	68	4	1
+35	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	38	0	#line 38 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	39	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	38	2	#line 38 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	40	2	#line 40 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	41	2		set __D0main, 1
+0	41	5	#line 41 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	42	5		tst 5, __D0main, __D0main
+0	41	8	#line 41 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	42	8		brtst 4, __ASM_Label_514, __D0main
+0	41	11	#line 41 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	42	11		set __adelante_7qG2_vel_7qG2_000, 35
+0	41	14	#line 41 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	41	14	#line 41 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	42	14		set __adelante_7qG2_ms_7qG2_000, 300
+0	41	17	#line 41 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	42	17	#line 42 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	43	17		subcall adelante, __adelante_return
+0	42	19	#line 42 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	42	19	#line 42 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	43	19		mov __leer_sensores_7qG2_fl_7qG2_000, __main_7qG2_fl_7qG2_000
+0	42	21	#line 42 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	43	21		mov __leer_sensores_7qG2_fr_7qG2_000, __main_7qG2_fr_7qG2_000
+0	42	23	#line 42 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	43	23		mov __leer_sensores_7qG2_tl_7qG2_000, __main_7qG2_tl_7qG2_000
+0	44	25	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	45	25		subcall leer_sensores, __leer_sensores_return
+0	44	27	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	45	27		mov __main_7qG2_fl_7qG2_000, __leer_sensores_7qG2_fl_7qG2_000
+0	44	29	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	45	29		mov __main_7qG2_fr_7qG2_000, __leer_sensores_7qG2_fr_7qG2_000
+0	44	31	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	45	31		mov __main_7qG2_tl_7qG2_000, __leer_sensores_7qG2_tl_7qG2_000
+0	44	33	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	44	33	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	45	33		mov __signed_stack_001main, __main_7qG2_fl_7qG2_000
+0	44	35	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	44	35	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	45	35		set __D0main, 35
+0	44	38	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	45	38		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	44	42	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	45	42		brtst 5, __ASM_Label_521, __D0main
+0	44	45	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	45	45		mov __signed_stack_001main, __main_7qG2_fr_7qG2_000
+0	44	47	#line 44 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	45	47	#line 45 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	46	47		set __D0main, 35
+0	45	50	#line 45 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	46	50		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	46	54	#line 46 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	47	54		brtst 4, __ASM_Label_524, __D0main
+0	47	57	#line 47 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	48	57		jmp __ASM_Label_514
+0	47	59	#line 47 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	51	59	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	51	59	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	52	59		jmp __ASM_Label_513
+0	51	61	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	51	61	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	52	61		set __signed_stack_001main, 880
+0	51	64	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	51	64	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	52	64		set __signed_stack_002main, 400
+0	51	67	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	51	67	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	52	67		set __signed_stack_003main, 4
+0	51	70	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	51	70	#line 51 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	52	70		set __D0main, 0
+0	52	73	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	53	73		acquire __SPTArgsMutex
+0	52	74	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	53	74		mov __SPTArgs.Frequency, __signed_stack_001main
+0	52	76	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	53	76		mov __SPTArgs.Duration, __signed_stack_002main
+0	52	78	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	53	78		mov __SPTArgs.Volume, __signed_stack_003main
+0	52	80	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	53	80		mov __SPTArgs.Loop, __D0main
+0	52	82	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	53	82		syscall 10, __SPTArgs
+0	52	85	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	53	85		mov __D0main, __SPTArgs.Result
+0	52	87	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	53	87		release __SPTArgsMutex
+0	52	88	#line 52 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+0	53	88		exit -1, -1
+1	11	0	#line 11 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	12	0		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+1	12	2	#line 12 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	13	2	#pragma macro 10
+1	13	2		acquire __OnRevMutex
+1	13	3		neg __OnRev_Tmp, __D0adelante
+1	13	6		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	13	29		release __OnRevMutex
+1	3704	30	#line 3704 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	12	30	#line 12 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	12	30	#line 12 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	13	30		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+1	13	32	#line 13 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	14	32	#pragma macro 7
+1	14	32		setout __constVal2, 2, __D0adelante, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	3711	55	#line 3711 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	13	55	#line 13 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	13	55	#line 13 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	14	55		mov __Wait_7qG2_ms_7qG2_000_inline_adelante, __adelante_7qG2_ms_7qG2_000
+1	13	57	#line 13 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	8551	57	#line 8551 "NXCDefs.h"
+1	8552	57		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_adelante
+1	8551	60	#line 8551 "NXCDefs.h"
+1	14	60	#line 14 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	15	60	#line 15 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	16	60	#pragma macro 7
+1	16	60		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	3728	83	#line 3728 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	15	83	#line 15 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	15	83	#line 15 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	16	83		set __Wait_7qG2_ms_7qG2_000_inline_adelante, 2000
+1	15	86	#line 15 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	8551	86	#line 8551 "NXCDefs.h"
+1	8552	86		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_adelante
+1	8551	89	#line 8551 "NXCDefs.h"
+1	16	89	#line 16 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	18	89	#line 18 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+1	19	89		subret __adelante_return
+2	30	0	#line 30 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+2	31	0		getin __leer_sensores_7qG2_fl_7qG2_000, __constVal0, 4
+2	30	4	#line 30 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+2	30	4	#line 30 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+2	30	4	#line 30 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+2	31	4	#line 31 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+2	32	4		getin __leer_sensores_7qG2_fr_7qG2_000, __constVal2, 4
+2	31	8	#line 31 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+2	31	8	#line 31 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+2	31	8	#line 31 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+2	32	8	#line 32 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+2	33	8		getin __leer_sensores_7qG2_tl_7qG2_000, __constVal1, 4
+2	32	12	#line 32 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+2	32	12	#line 32 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+2	32	12	#line 32 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+2	36	12	#line 36 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+2	37	12		subret __leer_sensores_return
+3	55	0	#line 55 "C:\Users\Miriam\AppData\Local\Temp\temp.nxc"
+3	56	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Miriam\AppData\Local\Temp\temp.nxc
+1	adelante	91	C:\Users\Miriam\AppData\Local\Temp\temp.nxc
+2	leer_sensores	182	C:\Users\Miriam\AppData\Local\Temp\temp.nxc
+3	__initialize_global_data	196	C:\Users\Miriam\AppData\Local\Temp\temp.nxc

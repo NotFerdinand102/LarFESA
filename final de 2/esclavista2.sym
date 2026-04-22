@@ -1,0 +1,1583 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0r	6	1	0	4	6
+1	__D0rderecha	6	1	4	4	6
+2	__D0main	6	1	8	4	47
+3	__D0PlaySound	6	1	12	4	69
+4	__D0SetSensorLowspeed_inline_main	6	1	16	4	2
+5	__DU0SetSensorLowspeed_inline_main	5	1	20	4	5
+6	__D0SetSensorLight_inline_main	6	1	24	4	6
+7	__DU0SetSensorLight_inline_main	5	1	28	4	15
+8	__RemoteMutex	9	0	32	4	4
+9	__SPTArgsMutex	9	0	36	4	24
+10	__CBTWMutex	9	0	40	4	4
+11	__SRSTmpLongVal	6	1	44	4	4
+12	__D0derecha	6	1	48	4	12
+13	__D0escuchar	6	1	52	4	28
+14	__D0adelante	6	1	56	4	4
+15	__D0atras	6	1	60	4	4
+16	__signed_stack_001derecha	6	1	64	4	6
+17	__Wait_7qG2_ms_7qG2_000_inline_atras	5	1	68	4	2
+18	__Wait_7qG2_ms_7qG2_000_inline_derecha	5	1	72	4	2
+19	__signed_stack_003PlaySound	6	1	76	4	14
+20	__Wait_7qG2_ms_7qG2_000_inline_adelante	5	1	80	4	2
+21	__Wait_7qG2_ms_7qG2_000_inline_parar	5	1	84	4	2
+22	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	88	4	16
+23	__Wait_7qG2_ms_7qG2_000_inline_rderecha	5	1	92	4	2
+24	__Wait_7qG2_ms_7qG2_000_inline_r	5	1	96	4	2
+25	__signed_stack_003escuchar	6	1	100	4	4
+26	__signed_stack_001main	6	1	104	4	22
+27	__signed_stack_001escuchar	6	1	108	4	12
+28	__signed_stack_002escuchar	6	1	112	4	4
+29	__signed_stack_001PlaySound	6	1	116	4	44
+30	__signed_stack_002PlaySound	6	1	120	4	14
+31	__signed_stack_002main	6	1	124	4	10
+32	__signed_stack_003main	6	1	128	4	10
+33	__RRNTmpVal	6	1	132	4	4
+34	__MRMutex	9	0	136	4	2
+35	__TextOutMutex	9	0	140	4	4
+36	__RLSBmutex3	9	0	144	4	2
+37	__OnRevMutex	9	0	148	4	12
+38	__CLSCSMutex3	9	0	152	4	2
+39	__CLSWMutex3	9	0	156	4	2
+40	__ResetSensorMutex	9	0	160	4	8
+41	__CLSRMutex3	9	0	164	4	2
+42	Aviso	4	1	168	2	5
+43	__adelante_7qG2_ms_7qG2_000	4	1	170	2	3
+44	__adelante_7qG2_vel_7qG2_000	4	1	172	2	4
+45	__constVal150	4	0	174	2	1
+46	__PlaySound_7qG2_aCode_7qG2_000	4	1	176	2	8
+47	__constVal500	4	0	178	2	1
+48	__PlaySound_7qG2_i_7qG2_001	4	1	180	2	15
+49	__main_7qG2_fi_7qG2_001	4	1	182	2	3
+50	__escuchar_7qG2_res_7qG2_000	4	1	184	2	7
+51	__r_7qG2_ms_7qG2_000	4	1	186	2	2
+52	__main_7qG2_ul_7qG2_001	4	1	188	2	2
+53	__main_7qG2_fd_7qG2_001	4	1	190	2	2
+54	__main_7qG2_ti_7qG2_001	4	1	192	2	2
+55	__r_7qG2_vel_7qG2_000	4	1	194	2	4
+56	__derecha_7qG2_vel_7qG2_000	4	1	196	2	5
+57	__atras_7qG2_ms_7qG2_000	4	1	198	2	2
+58	__atras_7qG2_vel_7qG2_000	4	1	200	2	3
+59	__rderecha_7qG2_ms_7qG2_000	4	1	202	2	2
+60	__rderecha_7qG2_vel_7qG2_000	4	1	204	2	4
+61	__derecha_7qG2_ms_7qG2_000	4	1	206	2	3
+62	__constVal200	4	0	208	2	1
+63	__OnRev_Tmp	2	1	210	1	12
+64	__parar_return	1	1	211	1	7
+65	__r_return	1	1	212	1	3
+66	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	213	1	6
+67	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	214	1	12
+68	____initialize_global_data_return	1	1	215	1	3
+69	__PFTmp	1	1	216	1	1
+70	__constVal1	2	0	217	1	22
+71	__derecha_return	1	1	218	1	4
+72	__constVal32	2	0	219	1	42
+73	__rderecha_return	1	1	220	1	3
+74	__constVal100	2	0	221	1	2
+75	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	222	1	6
+76	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	223	1	2
+77	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	224	1	2
+78	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	225	1	2
+79	__escuchar_Spawner_return	1	1	226	1	1
+80	__RRNErr	1	1	227	1	1
+81	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	228	1	2
+82	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	229	1	2
+83	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	230	1	6
+84	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	231	1	6
+85	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	232	1	6
+86	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	233	1	2
+87	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	234	1	4
+88	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	235	1	6
+89	__constVal2	2	0	236	1	10
+90	____ResetSensorSubroutine_return	1	1	237	1	6
+91	____ReadLSBytes3_return	1	1	238	1	3
+92	__RLSBytesCount3	1	1	239	1	7
+93	__RLSBResult3	2	1	240	1	7
+94	__PlaySound_return	1	1	241	1	4
+95	__ResetSensorPort	1	1	242	1	6
+96	__ResetSensorTmp	1	1	243	1	2
+97	__LSWriteOptions3	1	1	244	1	1
+98	__constVal3	2	0	245	1	17
+99	__constVal5	2	0	246	1	2
+100	__adelante_return	1	1	247	1	4
+101	__constVal50	2	0	248	1	1
+102	__constVal63	2	0	249	1	14
+103	__RLSBIterations3	1	1	250	1	4
+104	__atras_return	1	1	251	1	3
+105	__constVal15	2	0	252	1	2
+106	__constVal96	2	0	253	1	14
+107	__constVal0	2	1	254	1	48
+108	__TextOutArgs	8	0	4	16	12
+109	__TextOutArgs.Result	2	1	256	1	12
+110	__TextOutArgs.Location	8	0	2	4	12
+111	__TextOutArgs.Location.X	4	1	260	2	12
+112	__TextOutArgs.Location.Y	4	1	262	2	12
+113	__TextOutArgs.Text	7	0	264	4	12
+114	__TextOutArgs.Text.Text_type	1	0	0	1	0
+115	__TextOutArgs.Options	5	1	268	4	12
+116	__SPTArgs	8	0	5	8	72
+117	__SPTArgs.Result	2	1	272	1	72
+118	__SPTArgs.Frequency	3	1	274	2	72
+119	__SPTArgs.Duration	3	1	276	2	72
+120	__SPTArgs.Loop	1	1	278	1	72
+121	__SPTArgs.Volume	1	1	279	1	72
+122	__CBTWArgs	8	0	3	8	8
+123	__CBTWArgs.Result	2	1	280	1	8
+124	__CBTWArgs.Connection	1	1	281	1	8
+125	__CBTWArgs.Buffer	7	0	282	4	8
+126	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
+127	__MRArgs	8	0	4	8	5
+128	__MRArgs.Result	2	1	284	1	5
+129	__MRArgs.QueueID	1	1	285	1	5
+130	__MRArgs.Remove	1	1	286	1	5
+131	__MRArgs.Message	7	0	288	4	5
+132	__MRArgs.Message.Message_type	1	0	0	1	0
+133	__CLSCSArgs3	8	0	3	4	4
+134	__CLSCSArgs3.Result	2	1	292	1	4
+135	__CLSCSArgs3.Port	1	1	293	1	4
+136	__CLSCSArgs3.BytesReady	1	1	294	1	4
+137	__CLSWArgs3	8	0	4	12	5
+138	__CLSWArgs3.Result	2	1	296	1	5
+139	__CLSWArgs3.Port	1	1	297	1	5
+140	__CLSWArgs3.Buffer	7	0	298	4	5
+141	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+142	__CLSWArgs3.ReturnLen	1	1	300	1	5
+143	__CLSRArgs3	8	0	4	12	5
+144	__CLSRArgs3.Result	2	1	304	1	5
+145	__CLSRArgs3.Port	1	1	305	1	5
+146	__CLSRArgs3.Buffer	7	0	306	4	5
+147	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+148	__CLSRArgs3.BufferLen	1	1	308	1	5
+149	__SRSTmpBuf	7	0	310	4	12
+150	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
+151	__SRSFlattenBuf	7	0	312	4	4
+152	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
+153	__RLSReadBuf3	7	0	314	4	8
+154	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+155	__DCMessageWritePacket	7	0	316	4	2
+156	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
+157	__SRSSendBuf	7	0	318	4	4
+158	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
+159	__RLSBbufLSWrite1	7	0	320	4	1
+160	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+161	__RLSLastGoodRead3	7	0	322	4	2
+162	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+163	__OUT_ABC	7	0	324	4	1
+164	__OUT_ABC.__OUT_ABC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	89	0	#line 89 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	90	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	89	2	#line 89 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	89	2	#line 89 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	90	2		set __Wait_7qG2_ms_7qG2_000_inline_main, 2000
+0	89	5	#line 89 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	8551	5	#line 8551 "NXCDefs.h"
+0	8552	5		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	8	#line 8551 "NXCDefs.h"
+0	90	8	#line 90 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	90	8	#line 90 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	91	8		set __PlaySound_7qG2_aCode_7qG2_000, 1
+0	90	11	#line 90 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	92	11	#line 92 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	93	11		subcall PlaySound, __PlaySound_return
+0	92	13	#line 92 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	92	13	#line 92 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	93	13		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 0
+0	92	16	#line 92 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	93	16	#line 93 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	94	16		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	18	#line 4313 "NXCDefs.h"
+0	4314	18		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	20	#line 4313 "NXCDefs.h"
+0	4313	20	#line 4313 "NXCDefs.h"
+0	4314	20		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	22	#line 4313 "NXCDefs.h"
+0	4314	22		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	25	#line 4313 "NXCDefs.h"
+0	4314	25		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	28	#line 4313 "NXCDefs.h"
+0	4314	28		set __DU0SetSensorLight_inline_main, 5
+0	4313	31	#line 4313 "NXCDefs.h"
+0	4313	31	#line 4313 "NXCDefs.h"
+0	4314	31		jmp __001__ASM_Label_5
+0	4313	33	#line 4313 "NXCDefs.h"
+0	4314	33		set __DU0SetSensorLight_inline_main, 6
+0	4313	36	#line 4313 "NXCDefs.h"
+0	4313	36	#line 4313 "NXCDefs.h"
+0	4314	36		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	38	#line 4247 "NXCDefs.h"
+0	4248	38		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	42	#line 4247 "NXCDefs.h"
+0	4314	42	#line 4314 "NXCDefs.h"
+0	4314	42	#line 4314 "NXCDefs.h"
+0	4315	42		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	44	#line 4314 "NXCDefs.h"
+0	4314	44	#line 4314 "NXCDefs.h"
+0	4315	44		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	47	#line 4314 "NXCDefs.h"
+0	4260	47	#line 4260 "NXCDefs.h"
+0	4261	47		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	51	#line 4260 "NXCDefs.h"
+0	4315	51	#line 4315 "NXCDefs.h"
+0	4315	51	#line 4315 "NXCDefs.h"
+0	4316	51		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	53	#line 4315 "NXCDefs.h"
+0	4278	53	#line 4278 "NXCDefs.h"
+0	4279	53	#pragma macro 4
+0	4279	53		acquire __ResetSensorMutex
+0	4279	54		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main
+0	4279	56		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4279	58		release __ResetSensorMutex
+0	4731	59	#line 4731 "NXCDefs.h"
+0	4278	59	#line 4278 "NXCDefs.h"
+0	4316	59	#line 4316 "NXCDefs.h"
+0	93	59	#line 93 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	93	59	#line 93 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	94	59		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	93	62	#line 93 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	94	62	#line 94 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	95	62		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	64	#line 4313 "NXCDefs.h"
+0	4314	64		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	66	#line 4313 "NXCDefs.h"
+0	4313	66	#line 4313 "NXCDefs.h"
+0	4314	66		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	68	#line 4313 "NXCDefs.h"
+0	4314	68		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	71	#line 4313 "NXCDefs.h"
+0	4314	71		brtst 4, __002__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	74	#line 4313 "NXCDefs.h"
+0	4314	74		set __DU0SetSensorLight_inline_main, 5
+0	4313	77	#line 4313 "NXCDefs.h"
+0	4313	77	#line 4313 "NXCDefs.h"
+0	4314	77		jmp __002__ASM_Label_5
+0	4313	79	#line 4313 "NXCDefs.h"
+0	4314	79		set __DU0SetSensorLight_inline_main, 6
+0	4313	82	#line 4313 "NXCDefs.h"
+0	4313	82	#line 4313 "NXCDefs.h"
+0	4314	82		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	84	#line 4247 "NXCDefs.h"
+0	4248	84		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	88	#line 4247 "NXCDefs.h"
+0	4314	88	#line 4314 "NXCDefs.h"
+0	4314	88	#line 4314 "NXCDefs.h"
+0	4315	88		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	90	#line 4314 "NXCDefs.h"
+0	4314	90	#line 4314 "NXCDefs.h"
+0	4315	90		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	93	#line 4314 "NXCDefs.h"
+0	4260	93	#line 4260 "NXCDefs.h"
+0	4261	93		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	97	#line 4260 "NXCDefs.h"
+0	4315	97	#line 4315 "NXCDefs.h"
+0	4315	97	#line 4315 "NXCDefs.h"
+0	4316	97		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	99	#line 4315 "NXCDefs.h"
+0	4278	99	#line 4278 "NXCDefs.h"
+0	4279	99	#pragma macro 4
+0	4279	99		acquire __ResetSensorMutex
+0	4279	100		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main
+0	4279	102		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4279	104		release __ResetSensorMutex
+0	4794	105	#line 4794 "NXCDefs.h"
+0	4278	105	#line 4278 "NXCDefs.h"
+0	4316	105	#line 4316 "NXCDefs.h"
+0	94	105	#line 94 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	94	105	#line 94 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	95	105		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 2
+0	94	108	#line 94 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	95	108	#line 95 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	96	108		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	110	#line 4313 "NXCDefs.h"
+0	4314	110		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	112	#line 4313 "NXCDefs.h"
+0	4313	112	#line 4313 "NXCDefs.h"
+0	4314	112		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	114	#line 4313 "NXCDefs.h"
+0	4314	114		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	117	#line 4313 "NXCDefs.h"
+0	4314	117		brtst 4, __003__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	120	#line 4313 "NXCDefs.h"
+0	4314	120		set __DU0SetSensorLight_inline_main, 5
+0	4313	123	#line 4313 "NXCDefs.h"
+0	4313	123	#line 4313 "NXCDefs.h"
+0	4314	123		jmp __003__ASM_Label_5
+0	4313	125	#line 4313 "NXCDefs.h"
+0	4314	125		set __DU0SetSensorLight_inline_main, 6
+0	4313	128	#line 4313 "NXCDefs.h"
+0	4313	128	#line 4313 "NXCDefs.h"
+0	4314	128		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	130	#line 4247 "NXCDefs.h"
+0	4248	130		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	134	#line 4247 "NXCDefs.h"
+0	4314	134	#line 4314 "NXCDefs.h"
+0	4314	134	#line 4314 "NXCDefs.h"
+0	4315	134		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	136	#line 4314 "NXCDefs.h"
+0	4314	136	#line 4314 "NXCDefs.h"
+0	4315	136		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	139	#line 4314 "NXCDefs.h"
+0	4260	139	#line 4260 "NXCDefs.h"
+0	4261	139		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	143	#line 4260 "NXCDefs.h"
+0	4315	143	#line 4315 "NXCDefs.h"
+0	4315	143	#line 4315 "NXCDefs.h"
+0	4316	143		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	145	#line 4315 "NXCDefs.h"
+0	4278	145	#line 4278 "NXCDefs.h"
+0	4279	145	#pragma macro 4
+0	4279	145		acquire __ResetSensorMutex
+0	4279	146		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main
+0	4279	148		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4279	150		release __ResetSensorMutex
+0	4857	151	#line 4857 "NXCDefs.h"
+0	4278	151	#line 4278 "NXCDefs.h"
+0	4316	151	#line 4316 "NXCDefs.h"
+0	95	151	#line 95 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	95	151	#line 95 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	96	151		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 3
+0	95	154	#line 95 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	97	154	#line 97 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	98	154		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	4342	156	#line 4342 "NXCDefs.h"
+0	4343	156		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4342	158	#line 4342 "NXCDefs.h"
+0	4342	158	#line 4342 "NXCDefs.h"
+0	4343	158		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	4342	160	#line 4342 "NXCDefs.h"
+0	4343	160		tst 5, __D0SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4342	163	#line 4342 "NXCDefs.h"
+0	4343	163		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_main
+0	4342	166	#line 4342 "NXCDefs.h"
+0	4343	166		set __DU0SetSensorLowspeed_inline_main, 11
+0	4342	169	#line 4342 "NXCDefs.h"
+0	4342	169	#line 4342 "NXCDefs.h"
+0	4343	169		jmp __004__ASM_Label_37
+0	4342	171	#line 4342 "NXCDefs.h"
+0	4343	171		set __DU0SetSensorLowspeed_inline_main, 10
+0	4342	174	#line 4342 "NXCDefs.h"
+0	4342	174	#line 4342 "NXCDefs.h"
+0	4343	174		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4247	176	#line 4247 "NXCDefs.h"
+0	4248	176		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4247	180	#line 4247 "NXCDefs.h"
+0	4343	180	#line 4343 "NXCDefs.h"
+0	4343	180	#line 4343 "NXCDefs.h"
+0	4344	180		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4343	182	#line 4343 "NXCDefs.h"
+0	4343	182	#line 4343 "NXCDefs.h"
+0	4344	182		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4343	185	#line 4343 "NXCDefs.h"
+0	4260	185	#line 4260 "NXCDefs.h"
+0	4261	185		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	4260	189	#line 4260 "NXCDefs.h"
+0	4344	189	#line 4344 "NXCDefs.h"
+0	4344	189	#line 4344 "NXCDefs.h"
+0	4345	189		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4344	191	#line 4344 "NXCDefs.h"
+0	4278	191	#line 4278 "NXCDefs.h"
+0	4279	191	#pragma macro 4
+0	4279	191		acquire __ResetSensorMutex
+0	4279	192		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main
+0	4279	194		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4279	196		release __ResetSensorMutex
+0	4948	197	#line 4948 "NXCDefs.h"
+0	4278	197	#line 4278 "NXCDefs.h"
+0	4345	197	#line 4345 "NXCDefs.h"
+0	97	197	#line 97 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	97	197	#line 97 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	98	197	#pragma macro 14
+0	98	197		acquire __RemoteMutex
+0	98	198		mov __SRSTmpBuf, __DCMessageWritePacket
+0	98	200		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+0	98	205		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+0	98	210		mov __SRSTmpLongVal, __constVal2
+0	98	212		flatten __SRSFlattenBuf, __SRSTmpLongVal
+0	98	215		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+0	98	220		acquire __CBTWMutex
+0	98	221		mov __CBTWArgs.Connection, __constVal1
+0	98	223		mov __CBTWArgs.Buffer, __SRSSendBuf
+0	98	225		syscall 29, __CBTWArgs
+0	98	228		mov __D0main, __CBTWArgs.Result
+0	98	230		release __CBTWMutex
+0	98	231		release __RemoteMutex
+0	4953	232	#line 4953 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	97	232	#line 97 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	97	232	#line 97 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	99	232	#line 99 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	100	232		set __Wait_7qG2_ms_7qG2_000_inline_main, 10000
+0	99	235	#line 99 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	8551	235	#line 8551 "NXCDefs.h"
+0	8552	235		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	238	#line 8551 "NXCDefs.h"
+0	101	238	#line 101 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	101	238	#line 101 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	102	238		set __adelante_7qG2_vel_7qG2_000, 75
+0	101	241	#line 101 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	101	241	#line 101 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	102	241		set __adelante_7qG2_ms_7qG2_000, 1200
+0	101	244	#line 101 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	104	244	#line 104 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	105	244		subcall adelante, __adelante_return
+0	104	246	#line 104 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	105	246	#line 105 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	106	246		set __D0main, 1
+0	106	249	#line 106 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	107	249		tst 5, __D0main, __D0main
+0	106	252	#line 106 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	107	252		brtst 4, __ASM_Label_591, __D0main
+0	106	255	#line 106 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	107	255		set __Wait_7qG2_ms_7qG2_000_inline_main, 10
+0	106	258	#line 106 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	8551	258	#line 8551 "NXCDefs.h"
+0	8552	258		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	261	#line 8551 "NXCDefs.h"
+0	107	261	#line 107 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	107	261	#line 107 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	108	261		getin __main_7qG2_fi_7qG2_001, __constVal0, 4
+0	107	265	#line 107 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	108	265	#line 108 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	109	265		getin __main_7qG2_ti_7qG2_001, __constVal1, 4
+0	108	269	#line 108 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	109	269	#line 109 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	110	269		getin __main_7qG2_fd_7qG2_001, __constVal2, 4
+0	109	273	#line 109 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	110	273	#line 110 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	111	273	#pragma macro 26
+0	111	273		acquire __RLSBmutex3
+0	111	274		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	111	276		set __RLSBytesCount3, 1
+0	111	279		wait2 NA, __constVal15
+0	111	282		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	111	284		index __D0main, __RLSReadBuf3, 65535
+0	111	288		release __RLSBmutex3
+0	5025	289	#line 5025 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	110	289	#line 110 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	111	289		mov __main_7qG2_ul_7qG2_001, __D0main
+0	112	291	#line 112 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	113	291		mov __signed_stack_001main, __main_7qG2_ul_7qG2_001
+0	112	293	#line 112 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	113	293	#line 113 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	114	293		set __D0main, 15
+0	113	296	#line 113 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	114	296		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	114	300	#line 114 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	115	300		brtst 4, __ASM_Label_606, __D0main
+0	114	303	#line 114 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	115	303		set __atras_7qG2_vel_7qG2_000, 45
+0	114	306	#line 114 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	114	306	#line 114 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	115	306		set __atras_7qG2_ms_7qG2_000, 500
+0	114	309	#line 114 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	115	309	#line 115 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	116	309		subcall atras, __atras_return
+0	115	311	#line 115 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	116	311	#line 116 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	117	311		subcall parar, __parar_return
+0	116	313	#line 116 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	116	313	#line 116 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	117	313		set __signed_stack_001main, 880
+0	116	316	#line 116 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	116	316	#line 116 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	117	316		set __signed_stack_002main, 500
+0	116	319	#line 116 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	116	319	#line 116 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	117	319		set __signed_stack_003main, 4
+0	116	322	#line 116 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	116	322	#line 116 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	117	322		set __D0main, 0
+0	117	325	#line 117 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	118	325		acquire __SPTArgsMutex
+0	117	326	#line 117 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	118	326		mov __SPTArgs.Frequency, __signed_stack_001main
+0	117	328	#line 117 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	118	328		mov __SPTArgs.Duration, __signed_stack_002main
+0	117	330	#line 117 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	118	330		mov __SPTArgs.Volume, __signed_stack_003main
+0	117	332	#line 117 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	118	332		mov __SPTArgs.Loop, __D0main
+0	117	334	#line 117 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	118	334		syscall 10, __SPTArgs
+0	117	337	#line 117 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	118	337		mov __D0main, __SPTArgs.Result
+0	117	339	#line 117 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	118	339		release __SPTArgsMutex
+0	117	340	#line 117 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	117	340	#line 117 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	118	340		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	117	343	#line 117 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	8551	343	#line 8551 "NXCDefs.h"
+0	8552	343		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	346	#line 8551 "NXCDefs.h"
+0	118	346	#line 118 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	119	346	#line 119 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	120	346		jmp __ASM_Label_621
+0	119	348	#line 119 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	120	348		mov __signed_stack_001main, __main_7qG2_fi_7qG2_001
+0	119	350	#line 119 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	119	350	#line 119 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	120	350		set __D0main, 35
+0	119	353	#line 119 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	120	353		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	119	357	#line 119 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	120	357		brtst 4, __ASM_Label_623, __D0main
+0	119	360	#line 119 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	120	360		mov __signed_stack_001main, __main_7qG2_fd_7qG2_001
+0	119	362	#line 119 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	120	362	#line 120 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	121	362		set __D0main, 35
+0	120	365	#line 120 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	121	365		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	122	369	#line 122 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	123	369		brtst 4, __ASM_Label_624, __D0main
+0	122	372	#line 122 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	123	372		set __signed_stack_001main, 440
+0	122	375	#line 122 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	122	375	#line 122 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	123	375		set __signed_stack_002main, 200
+0	122	378	#line 122 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	122	378	#line 122 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	123	378		set __signed_stack_003main, 4
+0	122	381	#line 122 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	122	381	#line 122 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	123	381		set __D0main, 0
+0	123	384	#line 123 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	124	384		acquire __SPTArgsMutex
+0	123	385	#line 123 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	124	385		mov __SPTArgs.Frequency, __signed_stack_001main
+0	123	387	#line 123 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	124	387		mov __SPTArgs.Duration, __signed_stack_002main
+0	123	389	#line 123 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	124	389		mov __SPTArgs.Volume, __signed_stack_003main
+0	123	391	#line 123 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	124	391		mov __SPTArgs.Loop, __D0main
+0	123	393	#line 123 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	124	393		syscall 10, __SPTArgs
+0	123	396	#line 123 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	124	396		mov __D0main, __SPTArgs.Result
+0	123	398	#line 123 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	124	398		release __SPTArgsMutex
+0	123	399	#line 123 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	123	399	#line 123 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	124	399		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	123	402	#line 123 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	8551	402	#line 8551 "NXCDefs.h"
+0	8552	402		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	405	#line 8551 "NXCDefs.h"
+0	125	405	#line 125 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	126	405	#line 126 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	127	405		subcall parar, __parar_return
+0	126	407	#line 126 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	127	407	#line 127 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	128	407		jmp __ASM_Label_591
+0	127	409	#line 127 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	128	409	#line 128 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	129	409		jmp __ASM_Label_635
+0	128	411	#line 128 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	129	411		mov __signed_stack_001main, __main_7qG2_fi_7qG2_001
+0	128	413	#line 128 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	129	413	#line 129 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	130	413		set __D0main, 35
+0	129	416	#line 129 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	130	416		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	130	420	#line 130 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	131	420		brtst 4, __ASM_Label_638, __D0main
+0	130	423	#line 130 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	131	423		set __derecha_7qG2_vel_7qG2_000, 45
+0	130	426	#line 130 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	130	426	#line 130 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	131	426		set __derecha_7qG2_ms_7qG2_000, 800
+0	130	429	#line 130 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	131	429	#line 131 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	132	429		subcall derecha, __derecha_return
+0	131	431	#line 131 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	131	431	#line 131 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	132	431		set __r_7qG2_vel_7qG2_000, 45
+0	131	434	#line 131 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	131	434	#line 131 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	132	434		set __r_7qG2_ms_7qG2_000, 600
+0	131	437	#line 131 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	132	437	#line 132 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	133	437		subcall r, __r_return
+0	132	439	#line 132 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	133	439	#line 133 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	134	439		subcall parar, __parar_return
+0	133	441	#line 133 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	133	441	#line 133 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	134	441		set __signed_stack_001main, 440
+0	133	444	#line 133 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	133	444	#line 133 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	134	444		set __signed_stack_002main, 200
+0	133	447	#line 133 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	133	447	#line 133 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	134	447		set __signed_stack_003main, 4
+0	133	450	#line 133 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	133	450	#line 133 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	134	450		set __D0main, 0
+0	134	453	#line 134 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	135	453		acquire __SPTArgsMutex
+0	134	454	#line 134 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	135	454		mov __SPTArgs.Frequency, __signed_stack_001main
+0	134	456	#line 134 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	135	456		mov __SPTArgs.Duration, __signed_stack_002main
+0	134	458	#line 134 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	135	458		mov __SPTArgs.Volume, __signed_stack_003main
+0	134	460	#line 134 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	135	460		mov __SPTArgs.Loop, __D0main
+0	134	462	#line 134 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	135	462		syscall 10, __SPTArgs
+0	134	465	#line 134 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	135	465		mov __D0main, __SPTArgs.Result
+0	134	467	#line 134 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	135	467		release __SPTArgsMutex
+0	134	468	#line 134 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	134	468	#line 134 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	135	468		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	134	471	#line 134 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	8551	471	#line 8551 "NXCDefs.h"
+0	8552	471		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	474	#line 8551 "NXCDefs.h"
+0	136	474	#line 136 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	137	474	#line 137 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	138	474		jmp __ASM_Label_657
+0	137	476	#line 137 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	138	476		mov __signed_stack_001main, __main_7qG2_ti_7qG2_001
+0	137	478	#line 137 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	138	478	#line 138 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	139	478		set __D0main, 35
+0	138	481	#line 138 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	139	481		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	139	485	#line 139 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	140	485		brtst 4, __ASM_Label_660, __D0main
+0	139	488	#line 139 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	140	488		set __derecha_7qG2_vel_7qG2_000, 45
+0	139	491	#line 139 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	139	491	#line 139 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	140	491		set __derecha_7qG2_ms_7qG2_000, 800
+0	139	494	#line 139 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	140	494	#line 140 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	141	494		subcall derecha, __derecha_return
+0	140	496	#line 140 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	140	496	#line 140 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	141	496		set __rderecha_7qG2_vel_7qG2_000, 45
+0	140	499	#line 140 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	140	499	#line 140 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	141	499		set __rderecha_7qG2_ms_7qG2_000, 600
+0	140	502	#line 140 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	141	502	#line 141 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	142	502		subcall rderecha, __rderecha_return
+0	141	504	#line 141 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	142	504	#line 142 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	143	504		subcall parar, __parar_return
+0	142	506	#line 142 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	142	506	#line 142 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	143	506		set __signed_stack_001main, 440
+0	142	509	#line 142 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	142	509	#line 142 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	143	509		set __signed_stack_002main, 200
+0	142	512	#line 142 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	142	512	#line 142 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	143	512		set __signed_stack_003main, 4
+0	142	515	#line 142 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	142	515	#line 142 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	143	515		set __D0main, 0
+0	143	518	#line 143 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	144	518		acquire __SPTArgsMutex
+0	143	519	#line 143 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	144	519		mov __SPTArgs.Frequency, __signed_stack_001main
+0	143	521	#line 143 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	144	521		mov __SPTArgs.Duration, __signed_stack_002main
+0	143	523	#line 143 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	144	523		mov __SPTArgs.Volume, __signed_stack_003main
+0	143	525	#line 143 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	144	525		mov __SPTArgs.Loop, __D0main
+0	143	527	#line 143 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	144	527		syscall 10, __SPTArgs
+0	143	530	#line 143 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	144	530		mov __D0main, __SPTArgs.Result
+0	143	532	#line 143 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	144	532		release __SPTArgsMutex
+0	143	533	#line 143 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	143	533	#line 143 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	144	533		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	143	536	#line 143 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	8551	536	#line 8551 "NXCDefs.h"
+0	8552	536		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	539	#line 8551 "NXCDefs.h"
+0	144	539	#line 144 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	147	539	#line 147 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	148	539		jmp __ASM_Label_679
+0	147	541	#line 147 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	148	541		set __adelante_7qG2_vel_7qG2_000, 45
+0	147	544	#line 147 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	147	544	#line 147 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	148	544		set __adelante_7qG2_ms_7qG2_000, 500
+0	147	547	#line 147 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	148	547	#line 148 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	149	547		subcall adelante, __adelante_return
+0	148	549	#line 148 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	151	549	#line 151 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	152	549		subcall parar, __parar_return
+0	151	551	#line 151 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	158	551	#line 158 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	158	551	#line 158 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	158	551	#line 158 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	158	551	#line 158 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	158	551	#line 158 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	159	551		jmp __ASM_Label_590
+0	158	553	#line 158 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	159	553	#line 159 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	160	553		subcall __escuchar_Spawner, __escuchar_Spawner_return
+0	159	555	#line 159 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	159	555	#line 159 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	160	555		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	159	558	#line 159 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	8551	558	#line 8551 "NXCDefs.h"
+0	8552	558		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	561	#line 8551 "NXCDefs.h"
+0	161	561	#line 161 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	161	561	#line 161 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	162	561	#pragma macro 14
+0	162	561		acquire __RemoteMutex
+0	162	562		mov __SRSTmpBuf, __DCMessageWritePacket
+0	162	564		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+0	162	569		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+0	162	574		mov __SRSTmpLongVal, __constVal1
+0	162	576		flatten __SRSFlattenBuf, __SRSTmpLongVal
+0	162	579		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+0	162	584		acquire __CBTWMutex
+0	162	585		mov __CBTWArgs.Connection, __constVal1
+0	162	587		mov __CBTWArgs.Buffer, __SRSSendBuf
+0	162	589		syscall 29, __CBTWArgs
+0	162	592		mov __D0main, __CBTWArgs.Result
+0	162	594		release __CBTWMutex
+0	162	595		release __RemoteMutex
+0	5398	596	#line 5398 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	161	596	#line 161 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	161	596	#line 161 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	164	596	#line 164 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	165	596		mov __signed_stack_001main, Aviso
+0	164	598	#line 164 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	164	598	#line 164 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	165	598		set __D0main, 0
+0	164	601	#line 164 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	165	601		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	165	605	#line 165 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	166	605		brtst 4, __ASM_Label_687, __D0main
+0	165	608	#line 165 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	166	608		set __signed_stack_001main, 0
+0	165	611	#line 165 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	165	611	#line 165 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	166	611		set __signed_stack_002main, 40
+0	165	614	#line 165 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	165	614	#line 165 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	166	614		mov __signed_stack_003main, Aviso
+0	165	616	#line 165 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	165	616	#line 165 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	166	616		set __D0main, 1
+0	166	619	#line 166 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	167	619		acquire __TextOutMutex
+0	166	620	#line 166 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	167	620		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	166	622	#line 166 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	167	622		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	166	624	#line 166 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	167	624		mov __TextOutArgs.Options, __D0main
+0	166	626	#line 166 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	167	626		numtostr __TextOutArgs.Text, __signed_stack_003main
+0	166	629	#line 166 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	167	629		syscall 13, __TextOutArgs
+0	166	632	#line 166 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	167	632		mov __D0main, __TextOutArgs.Result
+0	166	634	#line 166 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	167	634		release __TextOutMutex
+0	166	635	#line 166 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	167	635	#line 167 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	168	635		jmp __ASM_Label_686
+0	167	637	#line 167 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	170	637	#line 170 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	171	637		set Aviso, 0
+0	170	640	#line 170 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	170	640	#line 170 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+0	171	640		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	6393	0	#pragma macro 25
+2	6393	0		acquire __CLSWMutex3
+2	6393	1		or __CLSWArgs3.Port, __constVal3, __LSWriteOptions3
+2	6393	5		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+2	6393	7		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+2	6393	9		syscall 21, __CLSWArgs3
+2	6393	12		mov __RLSBResult3, __CLSWArgs3.Result
+2	6393	14		release __CLSWMutex3
+2	6393	15	#line 6393 "NXTDefs.h"
+2	6394	15		brtst 5, __RLSBError3, __RLSBResult3
+2	6395	18		set __RLSBIterations3, 60
+2	6397	21	#pragma macro 23
+2	6397	21		acquire __CLSCSMutex3
+2	6397	22		set __CLSCSArgs3.Port, 3
+2	6397	25		syscall 23, __CLSCSArgs3
+2	6397	28		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+2	6397	30		mov __RLSBResult3, __CLSCSArgs3.Result
+2	6397	32		release __CLSCSMutex3
+2	6397	33	#line 6397 "NXTDefs.h"
+2	6398	33		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+2	6399	37		brtst 2, __RLSBError3, __RLSBIterations3
+2	6400	40		brtst 0, __RLSBError3, __RLSBResult3
+2	6401	43		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+2	6403	46		wait2 NA, __constVal1
+2	6404	49		jmp __RLSBDoCheckStatus3
+2	6406	51		brtst 4, __RLSBReturn3, __RLSBytesCount3
+2	6407	54		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+2	6409	58	#pragma macro 25
+2	6409	58		acquire __CLSRMutex3
+2	6409	59		set __CLSRArgs3.Port, 3
+2	6409	62		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+2	6409	64		syscall 22, __CLSRArgs3
+2	6409	67		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+2	6409	69		mov __RLSBResult3, __CLSRArgs3.Result
+2	6409	71		release __CLSRMutex3
+2	6409	72	#line 6409 "NXTDefs.h"
+2	6410	72		brtst 5, __RLSBError3, __RLSBResult3
+2	6411	75		mov __RLSLastGoodRead3, __RLSReadBuf3
+2	6412	77		jmp __RLSBDone3
+2	6414	79		mov __RLSReadBuf3, __RLSLastGoodRead3
+2	6416	81		arrsize __RLSBytesCount3, __RLSReadBuf3
+2	6418	84		subret ____ReadLSBytes3_return
+3	7127	0	#line 7127 "NXCDefs.h"
+3	7128	0		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7127	2	#line 7127 "NXCDefs.h"
+3	7128	2	#line 7128 "NXCDefs.h"
+3	7129	2		set __D0PlaySound, 0
+3	7128	5	#line 7128 "NXCDefs.h"
+3	7129	5		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7128	9	#line 7128 "NXCDefs.h"
+3	7129	9		brtst 4, __ASM_Label_56, __D0PlaySound
+3	7128	12	#line 7128 "NXCDefs.h"
+3	7129	12		set __signed_stack_001PlaySound, 600
+3	7128	15	#line 7128 "NXCDefs.h"
+3	7128	15	#line 7128 "NXCDefs.h"
+3	7129	15		set __signed_stack_002PlaySound, 200
+3	7128	18	#line 7128 "NXCDefs.h"
+3	7128	18	#line 7128 "NXCDefs.h"
+3	7129	18		set __signed_stack_003PlaySound, 4
+3	7128	21	#line 7128 "NXCDefs.h"
+3	7128	21	#line 7128 "NXCDefs.h"
+3	7129	21		set __D0PlaySound, 0
+3	7129	24	#line 7129 "NXCDefs.h"
+3	7130	24		acquire __SPTArgsMutex
+3	7129	25	#line 7129 "NXCDefs.h"
+3	7130	25		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7129	27	#line 7129 "NXCDefs.h"
+3	7130	27		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7129	29	#line 7129 "NXCDefs.h"
+3	7130	29		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7129	31	#line 7129 "NXCDefs.h"
+3	7130	31		mov __SPTArgs.Loop, __D0PlaySound
+3	7129	33	#line 7129 "NXCDefs.h"
+3	7130	33		syscall 10, __SPTArgs
+3	7129	36	#line 7129 "NXCDefs.h"
+3	7130	36		mov __D0PlaySound, __SPTArgs.Result
+3	7129	38	#line 7129 "NXCDefs.h"
+3	7130	38		release __SPTArgsMutex
+3	7129	39	#line 7129 "NXCDefs.h"
+3	7129	39	#line 7129 "NXCDefs.h"
+3	7130	39		jmp __ASM_Label_65
+3	7129	41	#line 7129 "NXCDefs.h"
+3	7130	41		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7129	43	#line 7129 "NXCDefs.h"
+3	7130	43	#line 7130 "NXCDefs.h"
+3	7131	43		set __D0PlaySound, 1
+3	7130	46	#line 7130 "NXCDefs.h"
+3	7131	46		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7131	50	#line 7131 "NXCDefs.h"
+3	7132	50		brtst 4, __ASM_Label_68, __D0PlaySound
+3	7131	53	#line 7131 "NXCDefs.h"
+3	7132	53		set __signed_stack_001PlaySound, 600
+3	7131	56	#line 7131 "NXCDefs.h"
+3	7131	56	#line 7131 "NXCDefs.h"
+3	7132	56		set __signed_stack_002PlaySound, 150
+3	7131	59	#line 7131 "NXCDefs.h"
+3	7131	59	#line 7131 "NXCDefs.h"
+3	7132	59		set __signed_stack_003PlaySound, 4
+3	7131	62	#line 7131 "NXCDefs.h"
+3	7131	62	#line 7131 "NXCDefs.h"
+3	7132	62		set __D0PlaySound, 0
+3	7132	65	#line 7132 "NXCDefs.h"
+3	7133	65		acquire __SPTArgsMutex
+3	7132	66	#line 7132 "NXCDefs.h"
+3	7133	66		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7132	68	#line 7132 "NXCDefs.h"
+3	7133	68		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7132	70	#line 7132 "NXCDefs.h"
+3	7133	70		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7132	72	#line 7132 "NXCDefs.h"
+3	7133	72		mov __SPTArgs.Loop, __D0PlaySound
+3	7132	74	#line 7132 "NXCDefs.h"
+3	7133	74		syscall 10, __SPTArgs
+3	7132	77	#line 7132 "NXCDefs.h"
+3	7133	77		mov __D0PlaySound, __SPTArgs.Result
+3	7132	79	#line 7132 "NXCDefs.h"
+3	7133	79		release __SPTArgsMutex
+3	7132	80	#line 7132 "NXCDefs.h"
+3	7132	80	#line 7132 "NXCDefs.h"
+3	7133	80		wait2 NA, __constVal200
+3	7132	83	#line 7132 "NXCDefs.h"
+3	7132	83	#line 7132 "NXCDefs.h"
+3	7133	83	#line 7133 "NXCDefs.h"
+3	7134	83		set __signed_stack_001PlaySound, 600
+3	7133	86	#line 7133 "NXCDefs.h"
+3	7133	86	#line 7133 "NXCDefs.h"
+3	7134	86		set __signed_stack_002PlaySound, 150
+3	7133	89	#line 7133 "NXCDefs.h"
+3	7133	89	#line 7133 "NXCDefs.h"
+3	7134	89		set __signed_stack_003PlaySound, 4
+3	7133	92	#line 7133 "NXCDefs.h"
+3	7133	92	#line 7133 "NXCDefs.h"
+3	7134	92		set __D0PlaySound, 0
+3	7134	95	#line 7134 "NXCDefs.h"
+3	7135	95		acquire __SPTArgsMutex
+3	7134	96	#line 7134 "NXCDefs.h"
+3	7135	96		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7134	98	#line 7134 "NXCDefs.h"
+3	7135	98		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7134	100	#line 7134 "NXCDefs.h"
+3	7135	100		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7134	102	#line 7134 "NXCDefs.h"
+3	7135	102		mov __SPTArgs.Loop, __D0PlaySound
+3	7134	104	#line 7134 "NXCDefs.h"
+3	7135	104		syscall 10, __SPTArgs
+3	7134	107	#line 7134 "NXCDefs.h"
+3	7135	107		mov __D0PlaySound, __SPTArgs.Result
+3	7134	109	#line 7134 "NXCDefs.h"
+3	7135	109		release __SPTArgsMutex
+3	7134	110	#line 7134 "NXCDefs.h"
+3	7134	110	#line 7134 "NXCDefs.h"
+3	7135	110		wait2 NA, __constVal150
+3	7134	113	#line 7134 "NXCDefs.h"
+3	7134	113	#line 7134 "NXCDefs.h"
+3	7136	113	#line 7136 "NXCDefs.h"
+3	7137	113		jmp __ASM_Label_85
+3	7136	115	#line 7136 "NXCDefs.h"
+3	7137	115		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7136	117	#line 7136 "NXCDefs.h"
+3	7137	117	#line 7137 "NXCDefs.h"
+3	7138	117		set __D0PlaySound, 3
+3	7137	120	#line 7137 "NXCDefs.h"
+3	7138	120		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7137	124	#line 7137 "NXCDefs.h"
+3	7138	124		brtst 4, __ASM_Label_88, __D0PlaySound
+3	7137	127	#line 7137 "NXCDefs.h"
+3	7138	127		set __PlaySound_7qG2_i_7qG2_001, 4
+3	7137	130	#line 7137 "NXCDefs.h"
+3	7137	130	#line 7137 "NXCDefs.h"
+3	7138	130		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7137	132	#line 7137 "NXCDefs.h"
+3	7137	132	#line 7137 "NXCDefs.h"
+3	7138	132		set __D0PlaySound, 8
+3	7137	135	#line 7137 "NXCDefs.h"
+3	7138	135		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7137	139	#line 7137 "NXCDefs.h"
+3	7138	139		brtst 4, __ASM_Label_90, __D0PlaySound
+3	7137	142	#line 7137 "NXCDefs.h"
+3	7138	142		jmp __ASM_Label_91
+3	7138	144	#line 7138 "NXCDefs.h"
+3	7139	144		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+3	7139	148	#line 7139 "NXCDefs.h"
+3	7140	148		jmp __ASM_Label_89
+3	7139	150	#line 7139 "NXCDefs.h"
+3	7140	150		set __signed_stack_001PlaySound, 523
+3	7139	153	#line 7139 "NXCDefs.h"
+3	7139	153	#line 7139 "NXCDefs.h"
+3	7140	153		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7139	155	#line 7139 "NXCDefs.h"
+3	7140	155		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7139	159	#line 7139 "NXCDefs.h"
+3	7139	159	#line 7139 "NXCDefs.h"
+3	7140	159		set __D0PlaySound, 4
+3	7139	162	#line 7139 "NXCDefs.h"
+3	7140	162		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7139	166	#line 7139 "NXCDefs.h"
+3	7139	166	#line 7139 "NXCDefs.h"
+3	7140	166		set __signed_stack_002PlaySound, 100
+3	7139	169	#line 7139 "NXCDefs.h"
+3	7139	169	#line 7139 "NXCDefs.h"
+3	7140	169		set __signed_stack_003PlaySound, 4
+3	7139	172	#line 7139 "NXCDefs.h"
+3	7139	172	#line 7139 "NXCDefs.h"
+3	7140	172		set __D0PlaySound, 0
+3	7140	175	#line 7140 "NXCDefs.h"
+3	7141	175		acquire __SPTArgsMutex
+3	7140	176	#line 7140 "NXCDefs.h"
+3	7141	176		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7140	178	#line 7140 "NXCDefs.h"
+3	7141	178		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7140	180	#line 7140 "NXCDefs.h"
+3	7141	180		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7140	182	#line 7140 "NXCDefs.h"
+3	7141	182		mov __SPTArgs.Loop, __D0PlaySound
+3	7140	184	#line 7140 "NXCDefs.h"
+3	7141	184		syscall 10, __SPTArgs
+3	7140	187	#line 7140 "NXCDefs.h"
+3	7141	187		mov __D0PlaySound, __SPTArgs.Result
+3	7140	189	#line 7140 "NXCDefs.h"
+3	7141	189		release __SPTArgsMutex
+3	7140	190	#line 7140 "NXCDefs.h"
+3	7140	190	#line 7140 "NXCDefs.h"
+3	7141	190		wait2 NA, __constVal100
+3	7140	193	#line 7140 "NXCDefs.h"
+3	7140	193	#line 7140 "NXCDefs.h"
+3	7142	193	#line 7142 "NXCDefs.h"
+3	7143	193		jmp __ASM_Label_92
+3	7142	195	#line 7142 "NXCDefs.h"
+3	7142	195	#line 7142 "NXCDefs.h"
+3	7143	195		jmp __ASM_Label_105
+3	7142	197	#line 7142 "NXCDefs.h"
+3	7143	197		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7142	199	#line 7142 "NXCDefs.h"
+3	7143	199	#line 7143 "NXCDefs.h"
+3	7144	199		set __D0PlaySound, 2
+3	7143	202	#line 7143 "NXCDefs.h"
+3	7144	202		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7143	206	#line 7143 "NXCDefs.h"
+3	7144	206		brtst 4, __ASM_Label_108, __D0PlaySound
+3	7143	209	#line 7143 "NXCDefs.h"
+3	7144	209		set __PlaySound_7qG2_i_7qG2_001, 7
+3	7143	212	#line 7143 "NXCDefs.h"
+3	7143	212	#line 7143 "NXCDefs.h"
+3	7144	212		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7143	214	#line 7143 "NXCDefs.h"
+3	7143	214	#line 7143 "NXCDefs.h"
+3	7144	214		set __D0PlaySound, 3
+3	7143	217	#line 7143 "NXCDefs.h"
+3	7144	217		cmp 1, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7143	221	#line 7143 "NXCDefs.h"
+3	7144	221		brtst 4, __ASM_Label_110, __D0PlaySound
+3	7143	224	#line 7143 "NXCDefs.h"
+3	7144	224		jmp __ASM_Label_111
+3	7144	226	#line 7144 "NXCDefs.h"
+3	7145	226		sub __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+3	7145	230	#line 7145 "NXCDefs.h"
+3	7146	230		jmp __ASM_Label_109
+3	7145	232	#line 7145 "NXCDefs.h"
+3	7146	232		set __signed_stack_001PlaySound, 523
+3	7145	235	#line 7145 "NXCDefs.h"
+3	7145	235	#line 7145 "NXCDefs.h"
+3	7146	235		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7145	237	#line 7145 "NXCDefs.h"
+3	7146	237		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7145	241	#line 7145 "NXCDefs.h"
+3	7145	241	#line 7145 "NXCDefs.h"
+3	7146	241		set __D0PlaySound, 4
+3	7145	244	#line 7145 "NXCDefs.h"
+3	7146	244		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7145	248	#line 7145 "NXCDefs.h"
+3	7145	248	#line 7145 "NXCDefs.h"
+3	7146	248		set __signed_stack_002PlaySound, 100
+3	7145	251	#line 7145 "NXCDefs.h"
+3	7145	251	#line 7145 "NXCDefs.h"
+3	7146	251		set __signed_stack_003PlaySound, 4
+3	7145	254	#line 7145 "NXCDefs.h"
+3	7145	254	#line 7145 "NXCDefs.h"
+3	7146	254		set __D0PlaySound, 0
+3	7146	257	#line 7146 "NXCDefs.h"
+3	7147	257		acquire __SPTArgsMutex
+3	7146	258	#line 7146 "NXCDefs.h"
+3	7147	258		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7146	260	#line 7146 "NXCDefs.h"
+3	7147	260		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7146	262	#line 7146 "NXCDefs.h"
+3	7147	262		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7146	264	#line 7146 "NXCDefs.h"
+3	7147	264		mov __SPTArgs.Loop, __D0PlaySound
+3	7146	266	#line 7146 "NXCDefs.h"
+3	7147	266		syscall 10, __SPTArgs
+3	7146	269	#line 7146 "NXCDefs.h"
+3	7147	269		mov __D0PlaySound, __SPTArgs.Result
+3	7146	271	#line 7146 "NXCDefs.h"
+3	7147	271		release __SPTArgsMutex
+3	7146	272	#line 7146 "NXCDefs.h"
+3	7146	272	#line 7146 "NXCDefs.h"
+3	7147	272		wait2 NA, __constVal100
+3	7146	275	#line 7146 "NXCDefs.h"
+3	7146	275	#line 7146 "NXCDefs.h"
+3	7148	275	#line 7148 "NXCDefs.h"
+3	7149	275		jmp __ASM_Label_112
+3	7148	277	#line 7148 "NXCDefs.h"
+3	7148	277	#line 7148 "NXCDefs.h"
+3	7149	277		jmp __ASM_Label_125
+3	7148	279	#line 7148 "NXCDefs.h"
+3	7149	279		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7148	281	#line 7148 "NXCDefs.h"
+3	7149	281	#line 7149 "NXCDefs.h"
+3	7150	281		set __D0PlaySound, 4
+3	7149	284	#line 7149 "NXCDefs.h"
+3	7150	284		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7150	288	#line 7150 "NXCDefs.h"
+3	7151	288		brtst 4, __ASM_Label_128, __D0PlaySound
+3	7150	291	#line 7150 "NXCDefs.h"
+3	7151	291		set __signed_stack_001PlaySound, 100
+3	7150	294	#line 7150 "NXCDefs.h"
+3	7150	294	#line 7150 "NXCDefs.h"
+3	7151	294		set __signed_stack_002PlaySound, 500
+3	7150	297	#line 7150 "NXCDefs.h"
+3	7150	297	#line 7150 "NXCDefs.h"
+3	7151	297		set __signed_stack_003PlaySound, 4
+3	7150	300	#line 7150 "NXCDefs.h"
+3	7150	300	#line 7150 "NXCDefs.h"
+3	7151	300		set __D0PlaySound, 0
+3	7151	303	#line 7151 "NXCDefs.h"
+3	7152	303		acquire __SPTArgsMutex
+3	7151	304	#line 7151 "NXCDefs.h"
+3	7152	304		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7151	306	#line 7151 "NXCDefs.h"
+3	7152	306		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7151	308	#line 7151 "NXCDefs.h"
+3	7152	308		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7151	310	#line 7151 "NXCDefs.h"
+3	7152	310		mov __SPTArgs.Loop, __D0PlaySound
+3	7151	312	#line 7151 "NXCDefs.h"
+3	7152	312		syscall 10, __SPTArgs
+3	7151	315	#line 7151 "NXCDefs.h"
+3	7152	315		mov __D0PlaySound, __SPTArgs.Result
+3	7151	317	#line 7151 "NXCDefs.h"
+3	7152	317		release __SPTArgsMutex
+3	7151	318	#line 7151 "NXCDefs.h"
+3	7151	318	#line 7151 "NXCDefs.h"
+3	7152	318		wait2 NA, __constVal500
+3	7151	321	#line 7151 "NXCDefs.h"
+3	7151	321	#line 7151 "NXCDefs.h"
+3	7153	321	#line 7153 "NXCDefs.h"
+3	7154	321		jmp __ASM_Label_137
+3	7153	323	#line 7153 "NXCDefs.h"
+3	7154	323		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7153	325	#line 7153 "NXCDefs.h"
+3	7154	325	#line 7154 "NXCDefs.h"
+3	7155	325		set __D0PlaySound, 5
+3	7154	328	#line 7154 "NXCDefs.h"
+3	7155	328		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7154	332	#line 7154 "NXCDefs.h"
+3	7155	332		brtst 4, __ASM_Label_140, __D0PlaySound
+3	7154	335	#line 7154 "NXCDefs.h"
+3	7155	335		set __PlaySound_7qG2_i_7qG2_001, 4
+3	7154	338	#line 7154 "NXCDefs.h"
+3	7154	338	#line 7154 "NXCDefs.h"
+3	7155	338		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7154	340	#line 7154 "NXCDefs.h"
+3	7154	340	#line 7154 "NXCDefs.h"
+3	7155	340		set __D0PlaySound, 8
+3	7154	343	#line 7154 "NXCDefs.h"
+3	7155	343		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7154	347	#line 7154 "NXCDefs.h"
+3	7155	347		brtst 4, __ASM_Label_142, __D0PlaySound
+3	7154	350	#line 7154 "NXCDefs.h"
+3	7155	350		jmp __ASM_Label_143
+3	7155	352	#line 7155 "NXCDefs.h"
+3	7156	352		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+3	7156	356	#line 7156 "NXCDefs.h"
+3	7157	356		jmp __ASM_Label_141
+3	7156	358	#line 7156 "NXCDefs.h"
+3	7157	358		set __signed_stack_001PlaySound, 523
+3	7156	361	#line 7156 "NXCDefs.h"
+3	7156	361	#line 7156 "NXCDefs.h"
+3	7157	361		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7156	363	#line 7156 "NXCDefs.h"
+3	7157	363		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7156	367	#line 7156 "NXCDefs.h"
+3	7156	367	#line 7156 "NXCDefs.h"
+3	7157	367		set __D0PlaySound, 4
+3	7156	370	#line 7156 "NXCDefs.h"
+3	7157	370		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7156	374	#line 7156 "NXCDefs.h"
+3	7156	374	#line 7156 "NXCDefs.h"
+3	7157	374		set __signed_stack_002PlaySound, 50
+3	7156	377	#line 7156 "NXCDefs.h"
+3	7156	377	#line 7156 "NXCDefs.h"
+3	7157	377		set __signed_stack_003PlaySound, 4
+3	7156	380	#line 7156 "NXCDefs.h"
+3	7156	380	#line 7156 "NXCDefs.h"
+3	7157	380		set __D0PlaySound, 0
+3	7157	383	#line 7157 "NXCDefs.h"
+3	7158	383		acquire __SPTArgsMutex
+3	7157	384	#line 7157 "NXCDefs.h"
+3	7158	384		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7157	386	#line 7157 "NXCDefs.h"
+3	7158	386		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7157	388	#line 7157 "NXCDefs.h"
+3	7158	388		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7157	390	#line 7157 "NXCDefs.h"
+3	7158	390		mov __SPTArgs.Loop, __D0PlaySound
+3	7157	392	#line 7157 "NXCDefs.h"
+3	7158	392		syscall 10, __SPTArgs
+3	7157	395	#line 7157 "NXCDefs.h"
+3	7158	395		mov __D0PlaySound, __SPTArgs.Result
+3	7157	397	#line 7157 "NXCDefs.h"
+3	7158	397		release __SPTArgsMutex
+3	7157	398	#line 7157 "NXCDefs.h"
+3	7157	398	#line 7157 "NXCDefs.h"
+3	7158	398		wait2 NA, __constVal50
+3	7157	401	#line 7157 "NXCDefs.h"
+3	7157	401	#line 7157 "NXCDefs.h"
+3	7169	401	#line 7169 "NXCDefs.h"
+3	7170	401		jmp __ASM_Label_144
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7170	403		subret __PlaySound_return
+4	19	0	#line 19 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+4	20	0		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+4	20	2	#line 20 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+4	21	2	#pragma macro 10
+4	21	2		acquire __OnRevMutex
+4	21	3		neg __OnRev_Tmp, __D0adelante
+4	21	6		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	21	29		release __OnRevMutex
+4	4170	30	#line 4170 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+4	20	30	#line 20 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+4	20	30	#line 20 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+4	21	30		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+4	21	32	#line 21 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+4	22	32	#pragma macro 7
+4	22	32		setout __constVal2, 2, __D0adelante, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4177	55	#line 4177 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+4	21	55	#line 21 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+4	21	55	#line 21 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+4	22	55		mov __Wait_7qG2_ms_7qG2_000_inline_adelante, __adelante_7qG2_ms_7qG2_000
+4	21	57	#line 21 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+4	8551	57	#line 8551 "NXCDefs.h"
+4	8552	57		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_adelante
+4	8551	60	#line 8551 "NXCDefs.h"
+4	23	60	#line 23 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+4	25	60	#line 25 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+4	26	60		subret __adelante_return
+5	27	0	#line 27 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+5	28	0		mov __D0atras, __atras_7qG2_vel_7qG2_000
+5	28	2	#line 28 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+5	29	2	#pragma macro 7
+5	29	2		setout __constVal1, 2, __D0atras, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	4211	25	#line 4211 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+5	28	25	#line 28 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+5	28	25	#line 28 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+5	29	25		mov __D0atras, __atras_7qG2_vel_7qG2_000
+5	29	27	#line 29 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+5	30	27	#pragma macro 10
+5	30	27		acquire __OnRevMutex
+5	30	28		neg __OnRev_Tmp, __D0atras
+5	30	31		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	30	54		release __OnRevMutex
+5	4218	55	#line 4218 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+5	29	55	#line 29 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+5	29	55	#line 29 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+5	30	55		mov __Wait_7qG2_ms_7qG2_000_inline_atras, __atras_7qG2_ms_7qG2_000
+5	29	57	#line 29 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+5	8551	57	#line 8551 "NXCDefs.h"
+5	8552	57		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_atras
+5	8551	60	#line 8551 "NXCDefs.h"
+5	30	60	#line 30 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+5	31	60	#line 31 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+5	32	60		subret __atras_return
+6	33	0	#line 33 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	34	0		mov __D0derecha, __derecha_7qG2_vel_7qG2_000
+6	34	2	#line 34 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	35	2	#pragma macro 10
+6	35	2		acquire __OnRevMutex
+6	35	3		neg __OnRev_Tmp, __D0derecha
+6	35	6		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	35	29		release __OnRevMutex
+6	4252	30	#line 4252 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	34	30	#line 34 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	34	30	#line 34 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	35	30		mov __signed_stack_001derecha, __derecha_7qG2_vel_7qG2_000
+6	34	32	#line 34 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	34	32	#line 34 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	35	32		set __D0derecha, 2
+6	34	35	#line 34 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	35	35		div __signed_stack_001derecha, __signed_stack_001derecha, __D0derecha
+6	34	39	#line 34 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	34	39	#line 34 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	35	39		set __D0derecha, 3
+6	34	42	#line 34 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	35	42		sub __D0derecha, __signed_stack_001derecha, __D0derecha
+6	35	46	#line 35 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	36	46	#pragma macro 7
+6	36	46		setout __constVal1, 2, __D0derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4275	69	#line 4275 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	35	69	#line 35 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	35	69	#line 35 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	36	69		mov __signed_stack_001derecha, __derecha_7qG2_vel_7qG2_000
+6	35	71	#line 35 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	35	71	#line 35 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	36	71		set __D0derecha, 2
+6	35	74	#line 35 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	36	74		div __D0derecha, __signed_stack_001derecha, __D0derecha
+6	36	78	#line 36 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	37	78	#pragma macro 7
+6	37	78		setout __constVal2, 2, __D0derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4290	101	#line 4290 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	36	101	#line 36 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	36	101	#line 36 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	37	101		mov __Wait_7qG2_ms_7qG2_000_inline_derecha, __derecha_7qG2_ms_7qG2_000
+6	36	103	#line 36 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	8551	103	#line 8551 "NXCDefs.h"
+6	8552	103		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_derecha
+6	8551	106	#line 8551 "NXCDefs.h"
+6	37	106	#line 37 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	39	106	#line 39 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+6	40	106		subret __derecha_return
+7	41	0	#line 41 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	42	0		mov __D0rderecha, __rderecha_7qG2_vel_7qG2_000
+7	42	2	#line 42 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	43	2	#pragma macro 7
+7	43	2		setout __constVal0, 2, __D0rderecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4324	25	#line 4324 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	42	25	#line 42 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	42	25	#line 42 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	43	25		mov __D0rderecha, __rderecha_7qG2_vel_7qG2_000
+7	43	27	#line 43 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	44	27	#pragma macro 7
+7	44	27		setout __constVal1, 2, __D0rderecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4331	50	#line 4331 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	43	50	#line 43 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	43	50	#line 43 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	44	50		mov __D0rderecha, __rderecha_7qG2_vel_7qG2_000
+7	44	52	#line 44 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	45	52	#pragma macro 7
+7	45	52		setout __constVal2, 2, __D0rderecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4338	75	#line 4338 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	44	75	#line 44 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	44	75	#line 44 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	45	75		mov __Wait_7qG2_ms_7qG2_000_inline_rderecha, __rderecha_7qG2_ms_7qG2_000
+7	44	77	#line 44 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	8551	77	#line 8551 "NXCDefs.h"
+7	8552	77		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_rderecha
+7	8551	80	#line 8551 "NXCDefs.h"
+7	45	80	#line 45 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	47	80	#line 47 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+7	48	80		subret __rderecha_return
+8	49	0	#line 49 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	50	0		mov __D0r, __r_7qG2_vel_7qG2_000
+8	50	2	#line 50 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	51	2	#pragma macro 10
+8	51	2		acquire __OnRevMutex
+8	51	3		neg __OnRev_Tmp, __D0r
+8	51	6		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	51	29		release __OnRevMutex
+8	4372	30	#line 4372 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	50	30	#line 50 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	50	30	#line 50 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	51	30		mov __D0r, __r_7qG2_vel_7qG2_000
+8	51	32	#line 51 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	52	32	#pragma macro 10
+8	52	32		acquire __OnRevMutex
+8	52	33		neg __OnRev_Tmp, __D0r
+8	52	36		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	52	59		release __OnRevMutex
+8	4379	60	#line 4379 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	51	60	#line 51 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	51	60	#line 51 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	52	60		mov __D0r, __r_7qG2_vel_7qG2_000
+8	52	62	#line 52 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	53	62	#pragma macro 10
+8	53	62		acquire __OnRevMutex
+8	53	63		neg __OnRev_Tmp, __D0r
+8	53	66		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	53	89		release __OnRevMutex
+8	4386	90	#line 4386 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	52	90	#line 52 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	52	90	#line 52 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	53	90		mov __Wait_7qG2_ms_7qG2_000_inline_r, __r_7qG2_ms_7qG2_000
+8	52	92	#line 52 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	8551	92	#line 8551 "NXCDefs.h"
+8	8552	92		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_r
+8	8551	95	#line 8551 "NXCDefs.h"
+8	53	95	#line 53 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	55	95	#line 55 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+8	56	95		subret __r_return
+9	58	0	#line 58 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+9	59	0	#pragma macro 7
+9	59	0		setout __OUT_ABC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	4408	23	#line 4408 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+9	58	23	#line 58 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+9	58	23	#line 58 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+9	59	23		set __Wait_7qG2_ms_7qG2_000_inline_parar, 200
+9	58	26	#line 58 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+9	8551	26	#line 8551 "NXCDefs.h"
+9	8552	26		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_parar
+9	8551	29	#line 8551 "NXCDefs.h"
+9	59	29	#line 59 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+9	63	29	#line 63 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+9	64	29		subret __parar_return
+10	65	0	#line 65 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	66	0		set __D0escuchar, 1
+10	66	3	#line 66 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	67	3		tst 5, __D0escuchar, __D0escuchar
+10	66	6	#line 66 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	67	6		brtst 4, __ASM_Label_528, __D0escuchar
+10	66	9	#line 66 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	67	9	#pragma macro 9
+10	67	9		acquire __MRMutex
+10	67	10		mov __MRArgs.QueueID, __constVal2
+10	67	12		mov __MRArgs.Remove, __constVal1
+10	67	14		set __RRNTmpVal, 0
+10	67	17		syscall 27, __MRArgs
+10	67	20		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+10	67	25		mov __escuchar_7qG2_res_7qG2_000, __RRNTmpVal
+10	67	27		mov __D0escuchar, __MRArgs.Result
+10	67	29		release __MRMutex
+10	4439	30	#line 4439 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	66	30	#line 66 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	67	30		mov __signed_stack_001escuchar, __D0escuchar
+10	66	32	#line 66 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	67	32		set __D0escuchar, 0
+10	66	35	#line 66 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	67	35		cmp 4, __D0escuchar, __signed_stack_001escuchar, __D0escuchar
+10	67	39	#line 67 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	68	39		brtst 4, __ASM_Label_533, __D0escuchar
+10	67	42	#line 67 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	68	42		mov __signed_stack_001escuchar, __escuchar_7qG2_res_7qG2_000
+10	67	44	#line 67 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	67	44	#line 67 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	68	44		set __D0escuchar, 0
+10	67	47	#line 67 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	68	47		cmp 4, __D0escuchar, __signed_stack_001escuchar, __D0escuchar
+10	68	51	#line 68 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	69	51		brtst 4, __ASM_Label_536, __D0escuchar
+10	68	54	#line 68 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	69	54		set __signed_stack_001escuchar, 0
+10	68	57	#line 68 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	68	57	#line 68 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	69	57		set __signed_stack_002escuchar, 40
+10	68	60	#line 68 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	68	60	#line 68 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	69	60		mov __signed_stack_003escuchar, __escuchar_7qG2_res_7qG2_000
+10	68	62	#line 68 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	68	62	#line 68 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	69	62		set __D0escuchar, 1
+10	69	65	#line 69 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	70	65		acquire __TextOutMutex
+10	69	66	#line 69 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	70	66		mov __TextOutArgs.Location.X, __signed_stack_001escuchar
+10	69	68	#line 69 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	70	68		mov __TextOutArgs.Location.Y, __signed_stack_002escuchar
+10	69	70	#line 69 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	70	70		mov __TextOutArgs.Options, __D0escuchar
+10	69	72	#line 69 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	70	72		numtostr __TextOutArgs.Text, __signed_stack_003escuchar
+10	69	75	#line 69 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	70	75		syscall 13, __TextOutArgs
+10	69	78	#line 69 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	70	78		mov __D0escuchar, __TextOutArgs.Result
+10	69	80	#line 69 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	70	80		release __TextOutMutex
+10	69	81	#line 69 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	70	81	#line 70 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	71	81		jmp __ASM_Label_545
+10	70	83	#line 70 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	71	83		mov __signed_stack_001escuchar, __escuchar_7qG2_res_7qG2_000
+10	70	85	#line 70 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	70	85	#line 70 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	71	85		set __D0escuchar, 1
+10	70	88	#line 70 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	71	88		cmp 4, __D0escuchar, __signed_stack_001escuchar, __D0escuchar
+10	71	92	#line 71 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	72	92		brtst 4, __ASM_Label_548, __D0escuchar
+10	71	95	#line 71 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	72	95		set __PlaySound_7qG2_aCode_7qG2_000, 5
+10	71	98	#line 71 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	72	98	#line 72 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	73	98		subcall PlaySound, __PlaySound_return
+10	72	100	#line 72 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	73	100	#line 73 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	74	100		set Aviso, 1
+10	73	103	#line 73 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	73	103	#line 73 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	74	103	#line 74 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	75	103		set __escuchar_7qG2_res_7qG2_000, 0
+10	74	106	#line 74 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	74	106	#line 74 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	75	106	#line 75 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	76	106		jmp __ASM_Label_555
+10	75	108	#line 75 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	76	108		mov __signed_stack_001escuchar, __escuchar_7qG2_res_7qG2_000
+10	75	110	#line 75 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	75	110	#line 75 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	76	110		set __D0escuchar, 2
+10	75	113	#line 75 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	76	113		cmp 4, __D0escuchar, __signed_stack_001escuchar, __D0escuchar
+10	76	117	#line 76 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	77	117		brtst 4, __ASM_Label_558, __D0escuchar
+10	77	120	#line 77 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	78	120		set Aviso, 2
+10	77	123	#line 77 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	77	123	#line 77 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	78	123	#line 78 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	79	123		set __escuchar_7qG2_res_7qG2_000, 0
+10	78	126	#line 78 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	78	126	#line 78 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	80	126	#line 80 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	81	126		jmp __ASM_Label_563
+10	80	128	#line 80 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	81	128		set __signed_stack_001escuchar, 400
+10	80	131	#line 80 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	80	131	#line 80 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	81	131		set __signed_stack_002escuchar, 200
+10	80	134	#line 80 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	80	134	#line 80 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	81	134		set __signed_stack_003escuchar, 4
+10	80	137	#line 80 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	80	137	#line 80 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	81	137		set __D0escuchar, 0
+10	81	140	#line 81 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	82	140		acquire __SPTArgsMutex
+10	81	141	#line 81 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	82	141		mov __SPTArgs.Frequency, __signed_stack_001escuchar
+10	81	143	#line 81 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	82	143		mov __SPTArgs.Duration, __signed_stack_002escuchar
+10	81	145	#line 81 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	82	145		mov __SPTArgs.Volume, __signed_stack_003escuchar
+10	81	147	#line 81 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	82	147		mov __SPTArgs.Loop, __D0escuchar
+10	81	149	#line 81 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	82	149		syscall 10, __SPTArgs
+10	81	152	#line 81 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	82	152		mov __D0escuchar, __SPTArgs.Result
+10	81	154	#line 81 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	82	154		release __SPTArgsMutex
+10	81	155	#line 81 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	83	155	#line 83 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	83	155	#line 83 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	83	155	#line 83 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	84	155	#line 84 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	87	155	#line 87 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	88	155		jmp __ASM_Label_527
+10	87	157	#line 87 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+10	88	157		exit -1, -1
+11	0	0		subret __escuchar_Spawner_return
+12	0	0		exit 0, 1
+13	173	0	#line 173 "C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc"
+13	174	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc
+1	__ResetSensorSubroutine	643	NXTDefs.h
+2	__ReadLSBytes3	656	NXTDefs.h
+3	PlaySound	742	NXCDefs.h
+4	adelante	1147	C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc
+5	atras	1209	C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc
+6	derecha	1271	C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc
+7	rderecha	1379	C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc
+8	r	1461	C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc
+9	parar	1558	C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc
+10	escuchar	1589	C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc
+11	__escuchar_Returner	1749	C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc
+12	__escuchar_Spawner	1751	C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc
+13	__initialize_global_data	1754	C:\Users\Miriam\Desktop\final de 2\esclavista2.nxc

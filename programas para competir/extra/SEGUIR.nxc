@@ -1,0 +1,19 @@
+#define UMBRAL 45
+#define POTENCIA 35
+task main()
+{
+  SetSensorLight(IN_3);
+  while(true)
+   {
+    if(Sensor(IN_3) < UMBRAL)
+      {
+        OnFwd(OUT_B, POTENCIA);
+        Off(OUT_C);
+      }
+      else
+       {
+          Off(OUT_B);
+          OnFwd(OUT_C, POTENCIA);
+       }
+   }
+}

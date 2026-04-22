@@ -4,7 +4,7 @@
 #define SEN2 IN_2   // seguidor linea - trasero izquierdo
 #define SEN3 IN_3   // seguidor linea - frontal derecho
 #define SEN4 IN_4   // ultra sonico
-#define SOM 33
+#define SOM 35
 
 void adelante(int vel, int ms)
 {

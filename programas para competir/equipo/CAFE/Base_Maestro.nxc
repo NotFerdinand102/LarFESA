@@ -1,0 +1,57 @@
+/* * ==============================================================================
+ * PROYECTO: LARC OPEN 2026 - DISPOSITIVO: "Base" (Maestro)
+ * ==============================================================================
+ * Este programa centraliza la navegación omnidireccional y la coordinación de red.
+ * Basado en los cálculos de trayectoria y algoritmos de control de Armando.
+ *
+ * JUSTIFICACIÓN DE VALORES (Mundo Real):
+ * - Potencia (25): Se elige el 25% de PWM para compensar la inercia del chasis de
+ *   31x36cm. Valores altos causarían que el robot se desvíe por peso en las curvas.
+ * - Umbral (35): Punto medio de contraste. El negro suele leer ~20 y el blanco ~60.
+ *   35 es el "filtro" seguro para detectar marcas de árboles bajo luz de arena.
+ * ==============================================================================
+ */
+
+#define BT_GARRA 1
+#define BT_ALMACEN 2
+#define OUTBOX 1
+
+// Configuración de motores para la base triple (Omni-wheels)
+#define MOT_A OUT_A
+#define MOT_B OUT_B
+#define MOT_C OUT_C
+
+task main() {
+    // Sensores de luz para seguimiento de línea de 19mm (Apéndice A)
+    SetSensorLight(S1);
+    SetSensorLight(S2);
+
+    // El sistema no inicia hasta confirmar que los esclavos están vinculados.
+    // CONSIDERACIÓN: Encender primero los esclavos y al final este Maestro.
+    until(BluetoothStatus(BT_GARRA) == NO_ERR && BluetoothStatus(BT_ALMACEN) == NO_ERR);
+    PlaySound(SOUND_UP);
+
+    while(true) {
+        /* * NAVEGACIÓN: Se aplica la distribución de potencia calculada por Armando.
+         * AJUSTE: Si el robot patina en el arranque, reducir a 20.
+         * Si la batería baja de 7.5V, subir a 30 para mantener el torque.
+         */
+        OnFwd(MOT_A, 25); OnFwd(MOT_B, 25); OnFwd(MOT_C, 25);
+
+        /* * DETECCIÓN: S1 busca la marca del árbol.
+         * CAMBIO: Si hay sombras excesivas en el evento, subir el valor a 40 para
+         * evitar falsos positivos, o bajarlo si no detecta el negro.
+         */
+        if (Sensor(S1) < 35) {
+            // Paro total para evitar vibraciones en la estructura de tijera elevada.
+            Off(MOT_A); Off(MOT_B); Off(MOT_C);
+
+            // Envío de señal 10: Inicia secuencia de recolección en Ladrillo Garra.
+            SendRemoteNumber(BT_GARRA, OUTBOX, 10);
+
+            // Wait(6000): 6 seg es el tiempo físico para el ciclo completo de la garra.
+            Wait(6000);
+        }
+        Wait(10); // Ciclo de muestreo para estabilidad del procesador NXT.
+    }
+}

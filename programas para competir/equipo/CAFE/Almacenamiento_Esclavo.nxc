@@ -1,0 +1,44 @@
+/* * ==============================================================================
+ * PROYECTO: LARC OPEN 2026 - DISPOSITIVO: "Almacenamiento"
+ * ==============================================================================
+ * Este programa gestiona la clasificación y descarga selectiva de granos.
+ *
+ * JUSTIFICACIÓN DE VALORES (Mundo Real):
+ * - Rotate (60): Ángulo necesario para alinear la rampa interna con las cajas.
+ * - Wait (1500): 1.5 segundos permite que la gravedad haga rodar el grano
+ *   completamente hacia afuera del robot hacia el contenedor.
+ * - SensorUS (12): Distancia de seguridad para alinear la compuerta con la caja.
+ * ==============================================================================
+ */
+
+#define INBOX 1
+#define M_CLASIFICADOR OUT_A
+#define M_PUERTA_1 OUT_B
+#define M_PUERTA_2 OUT_C
+
+task main() {
+    // S1: Grano interno | S2: Color de caja externa | S3: Proximidad a caja.
+    SetSensorColorFull(S1); SetSensorColorFull(S2); SetSensorLowspeed(S3);
+
+    while(true) {
+        /* * CLASIFICACIÓN: S1 identifica la madurez del grano entregado por la garra.
+         * CONSIDERACIÓN: Si el sensor falla, asegurar que la rampa interna esté limpia.
+         */
+        if (Sensor(S1) == COLOR_RED || Sensor(S1) == COLOR_BROWN) {
+
+            // Mueve el clasificador 60 grados hacia la rampa correspondiente.
+            RotateMotor(M_CLASIFICADOR, 30, 60);
+
+            /* * DESCARGA: Se activa solo si detecta la caja externa del mismo color.
+             * AJUSTE: Si el grano cae fuera de la caja, reducir US a 10cm.
+             */
+            if (SensorUS(S3) < 12 && Sensor(S2) == Sensor(S1)) {
+                RotateMotor(M_PUERTA_1, 60, 90);
+                // Espera de 1.5s para asegurar que el grano termine de rodar.
+                Wait(1500);
+                RotateMotor(M_PUERTA_1, 60, -90);
+            }
+        }
+        Wait(50);
+    }
+}
