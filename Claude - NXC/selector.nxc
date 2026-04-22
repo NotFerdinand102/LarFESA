@@ -1,0 +1,298 @@
+// ================================================================
+// selector.nxc  |  Brick 3 - Clasificador y compuertas
+// Robot recolector LARC TMR2026 - FES Acatlan UNAM
+//
+// RESUMEN DE COMPORTAMIENTO:
+//
+// DURANTE COSECHA (tarea clasificar_granos - corre siempre):
+//   1. Espera que el sensor de presion confirme que hay una pelota
+//      (evita lecturas falsas del "aire" que aparece como negro)
+//   2. Lee el color de la pelota con el sensor RGB
+//   3. DesvÃ­a la pelota a la canasta correcta:
+//      - Maduro  (rojo/naranja/amarillo) -> canasta IZQUIERDA
+//      - Sobremaduro (azul/negro)        -> canasta DERECHA
+//
+// DURANTE DEPOSITO (al recibir CMD_DEPOSITAR del maestro):
+//   1. Lee el color de la caja del beneficiadero (sensor COLOR2)
+//   2. Abre la compuerta de la canasta que corresponde al color
+//   3. Espera que los granos caigan
+//   4. Cierra la compuerta
+//   5. Confirma al maestro con CMD_OK
+//
+// ================================================================
+
+// --- Sensores ---
+#define SEN_COLOR1  IN_1   // RGB - clasifica granos en la entrada de canasta
+#define SEN_TOUCH   IN_2   // presion / tactil - confirma pelota presente
+#define SEN_COLOR2  IN_3   // RGB - identifica el color de la caja del beneficiadero
+#define SEN_LUZ     IN_4   // luz - detecta zona del beneficiadero (opcional)
+                           // Si no se usa SEN_LUZ, comentar SetSensorLight(SEN_LUZ)
+
+// --- Motores ---
+// OUT_A = mecanismo desviador (empuja pelota a izquierda o a derecha)
+// OUT_B = compuerta canasta IZQUIERDA  (granos maduros: rojo, naranja, amarillo)
+// OUT_C = compuerta canasta DERECHA    (granos sobremaduros: azul, negro)
+
+// --- Velocidades y tiempos ---
+#define VEL_DESVIADOR   55
+#define VEL_COMPUERTA   40
+#define TIEM_DESVIO     300   // ms de recorrido del desviador
+
+// Angulo de apertura de las compuertas (90 grados segun especificacion)
+// Usa el encoder del motor NXT para girar exactamente 90 grados.
+//
+// NOTA DE SENTIDO DE GIRO - COMPUERTA IZQUIERDA (OUT_B):
+//   Giro HORARIO:       usar  +ANGULO_COMPUERTA  en RotateMotor
+//   Giro ANTIHORARIO:   usar  -ANGULO_COMPUERTA  en RotateMotor
+//   CAMBIAR EL SIGNO en abrir_compuerta_izq() y cerrar_compuerta_izq()
+//   El cierre siempre es el signo contrario a la apertura.
+//
+// NOTA DE SENTIDO DE GIRO - COMPUERTA DERECHA (OUT_C):
+//   Giro HORARIO:       usar  +ANGULO_COMPUERTA  en RotateMotor
+//   Giro ANTIHORARIO:   usar  -ANGULO_COMPUERTA  en RotateMotor
+//   CAMBIAR EL SIGNO en abrir_compuerta_der() y cerrar_compuerta_der()
+//   El cierre siempre es el signo contrario a la apertura.
+#define ANGULO_COMPUERTA   90
+
+// Tiempo de vaciado: cuanto esperar con la compuerta abierta
+#define TIEM_VACIADO      2500  // ms - AJUSTAR segun el caudal real de granos
+
+// --- Thresholds de color (raw RGB - calibrar en el escenario real) ---
+// Valores aproximados. Medir bajo la iluminacion de la competencia
+// y ajustar los limites correspondientes.
+
+// VERDE: canal G dominante
+#define VERDE_G_MIN   90
+#define VERDE_R_MAX   75
+#define VERDE_B_MAX   75
+
+// AZUL: canal B dominante, R y G bajos
+#define AZUL_B_MIN    90
+#define AZUL_R_MAX    70
+#define AZUL_G_MAX    80
+
+// NEGRO: todos los canales bajos
+#define NEGRO_MAX     55   // si R, G y B son todos menores a este valor -> negro
+
+// ROJO (caja del beneficiadero): R alto, G y B bajos
+#define ROJO_R_MIN    90
+#define ROJO_G_MAX    70
+#define ROJO_B_MAX    70
+
+// Por exclusion: si no es verde, azul ni negro -> es maduro (rojo/naranja/amarillo)
+
+// --- Bluetooth ---
+#define MBOX_RECV   MAILBOX1   // recibir comandos del maestro
+#define MBOX_RESP   MAILBOX2   // responder al maestro
+#define CMD_DEPOSITAR "DP"
+#define CMD_OK        "OK"
+
+
+// ================================================================
+// Lectura del sensor de color por puerto especifico
+// ================================================================
+// ================================================================
+// Lectura del sensor de color por puerto específico (CORREGIDO)
+// ================================================================
+void leer_rgb(byte puerto, int &r, int &g, int &b) {
+    unsigned int raw_vals[]; // Array para almacenar R, G, B y Blank
+
+    // ReadSensorColorRaw es la forma correcta de obtener RGB en NXC
+    if (ReadSensorColorRaw(puerto, raw_vals)) {
+        r = raw_vals[0]; // Rojo
+        g = raw_vals[1]; // Verde
+        b = raw_vals[2]; // Azul
+    } else {
+        // En caso de error de lectura, ponemos valores neutros
+        r = 0; g = 0; b = 0;
+    }
+}
+
+// Clasificar el color de un grano (para la canasta del robot)
+// Retorna: 1 = maduro (izquierda), 2 = sobremaduro (derecha), 0 = verde/ignorar
+int clasificar_grano(int r, int g, int b) {
+    // Verde: no deberia llegar aqui, pero por seguridad
+    if(g > VERDE_G_MIN && r < VERDE_R_MAX && b < VERDE_B_MAX)
+        return 0;
+    // Negro: sobremaduro
+    if(r < NEGRO_MAX && g < NEGRO_MAX && b < NEGRO_MAX)
+        return 2;
+    // Azul: sobremaduro
+    if(b > AZUL_B_MIN && r < AZUL_R_MAX && g < AZUL_G_MAX)
+        return 2;
+    // Rojo, naranja o amarillo: maduro (por exclusion)
+    return 1;
+}
+
+// Identificar si la caja del beneficiadero es azul o roja
+// Retorna: 2 = caja azul (sobremaduros), 1 = caja roja (maduros)
+int identificar_caja(int r, int g, int b) {
+    if(b > AZUL_B_MIN && r < AZUL_R_MAX && g < AZUL_G_MAX)
+        return 2;   // caja azul -> vaciar canasta derecha
+    return 1;       // caja roja -> vaciar canasta izquierda
+}
+
+
+// ================================================================
+// Control del desviador (ruta cada pelota a su canasta)
+// ================================================================
+
+void desviar_a_izquierda() {
+    // Empujar pelota hacia la canasta de maduros (izquierda)
+    OnRev(OUT_A, VEL_DESVIADOR);
+    Wait(TIEM_DESVIO);
+    // Centrar el desviador
+    OnFwd(OUT_A, VEL_DESVIADOR);
+    Wait(TIEM_DESVIO);
+    Off(OUT_A);
+}
+
+void desviar_a_derecha() {
+    // Empujar pelota hacia la canasta de sobremaduros (derecha)
+    OnFwd(OUT_A, VEL_DESVIADOR);
+    Wait(TIEM_DESVIO);
+    // Centrar el desviador
+    OnRev(OUT_A, VEL_DESVIADOR);
+    Wait(TIEM_DESVIO);
+    Off(OUT_A);
+}
+
+
+// ================================================================
+// Control de compuertas usando encoder del motor NXT
+// El encoder garantiza exactamente 90 grados de giro.
+//
+// PARA CAMBIAR EL SENTIDO DE GIRO:
+//   Modificar el signo del tercer argumento de RotateMotor():
+//     +ANGULO_COMPUERTA -> giro horario
+//     -ANGULO_COMPUERTA -> giro antihorario
+//   El cierre usa siempre el signo contrario al de la apertura.
+// ================================================================
+
+// --- Compuerta izquierda (canasta maduros) ---
+void abrir_compuerta_izq() {
+    // AJUSTAR SIGNO: +ANGULO si horario, -ANGULO si antihorario
+    RotateMotor(OUT_B, VEL_COMPUERTA, ANGULO_COMPUERTA);
+    Wait(200);
+}
+
+void cerrar_compuerta_izq() {
+    // Siempre signo contrario al de abrir
+    RotateMotor(OUT_B, VEL_COMPUERTA, -ANGULO_COMPUERTA);
+    Wait(200);
+}
+
+// --- Compuerta derecha (canasta sobremaduros) ---
+void abrir_compuerta_der() {
+    // AJUSTAR SIGNO: +ANGULO si horario, -ANGULO si antihorario
+    RotateMotor(OUT_C, VEL_COMPUERTA, ANGULO_COMPUERTA);
+    Wait(200);
+}
+
+void cerrar_compuerta_der() {
+    // Siempre signo contrario al de abrir
+    RotateMotor(OUT_C, VEL_COMPUERTA, -ANGULO_COMPUERTA);
+    Wait(200);
+}
+
+
+// ================================================================
+// Deposito en el beneficiadero
+// El maestro ya posiciono el robot a 250mm de la caja.
+// Esta funcion lee el color de la caja y vacia la canasta correcta.
+// ================================================================
+
+void depositar_en_caja() {
+    int r, g, b;
+    leer_rgb(SEN_COLOR2, r, g, b);
+    int tipo_caja = identificar_caja(r, g, b);
+
+    if(tipo_caja == 2) {
+        // Caja AZUL: vaciar canasta derecha (sobremaduros)
+        abrir_compuerta_der();
+        Wait(TIEM_VACIADO);
+        cerrar_compuerta_der();
+    } else {
+        // Caja ROJA: vaciar canasta izquierda (maduros)
+        abrir_compuerta_izq();
+        Wait(TIEM_VACIADO);
+        cerrar_compuerta_izq();
+    }
+}
+
+
+// ================================================================
+// task clasificar_granos
+// Corre en paralelo con el main durante toda la cosecha.
+// Espera al sensor de presion antes de leer el color:
+//   - Evita lecturas falsas del "aire" (que el sensor ve como negro)
+//   - Doble confirmacion del tacto para mayor confiabilidad
+// ================================================================
+
+task clasificar_granos() {
+    int r, g, b;
+
+    while(true) {
+
+        // Primera confirmacion: sensor de presion activo
+        if(Sensor(SEN_TOUCH) == 1) {
+            // Breve espera para que la pelota quede asentada
+            Wait(60);
+
+            // Segunda confirmacion: asegurar que sigue presente
+            if(Sensor(SEN_TOUCH) == 1) {
+
+                // Leer color solo cuando la presencia es confirmada
+                leer_rgb(SEN_COLOR1, r, g, b);
+                int tipo = clasificar_grano(r, g, b);
+
+                if(tipo == 1) {
+                    desviar_a_izquierda();    // maduro -> izquierda
+                } else if(tipo == 2) {
+                    desviar_a_derecha();      // sobremaduro -> derecha
+                }
+                // tipo == 0 (verde): no actuar (no deberia ocurrir)
+
+                // Esperar a que la pelota salga del area del sensor
+                // antes de permitir la siguiente lectura
+                Wait(400);
+            }
+        }
+
+        Wait(30);
+    }
+}
+
+
+// ================================================================
+// task main - Escucha comandos del maestro y ejecuta deposito
+// La clasificacion de granos corre de forma independiente
+// ================================================================
+
+task main() {
+    SetSensorColorFull(SEN_COLOR1);
+    SetSensorTouch(SEN_TOUCH);
+    SetSensorColorFull(SEN_COLOR2);
+    SetSensorLight(SEN_LUZ);    // comentar si no se usa este sensor
+
+    // Iniciar clasificacion de granos en paralelo desde el arranque
+    start clasificar_granos;
+
+    string msg = "";
+
+    while(true) {
+        if(ReceiveMessage(MBOX_RECV, true, msg) == NO_ERR) {
+
+            if(msg == CMD_DEPOSITAR) {
+                // Maestro detuvo el robot frente a la caja:
+                // leer color y vaciar la canasta correspondiente
+                depositar_en_caja();
+
+                // Confirmar al maestro que el deposito termino
+                SendResponseString(MBOX_RESP, CMD_OK);
+            }
+        }
+
+        Wait(20);
+    }
+}

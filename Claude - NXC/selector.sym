@@ -1,0 +1,1034 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0desviar_a_derecha	6	1	0	4	4
+1	__D0desviar_a_izquierda	6	1	4	4	4
+2	__D0clasificar_granos	6	1	8	4	20
+3	__D0depositar_en_caja	6	1	12	4	4
+4	__D0identificar_caja	6	1	16	4	15
+5	__D0SetSensorLight_inline_main	6	1	20	4	2
+6	__DU0SetSensorLight_inline_main	5	1	24	4	5
+7	__D0leer_rgb	6	1	28	4	4
+8	__D0main	6	1	32	4	13
+9	__D0clasificar_grano	6	1	36	4	41
+10	__ColorSensorReadMutex	9	0	40	4	2
+11	__MWMutex	9	0	44	4	2
+12	__rotate_theAngle2	5	1	48	4	2
+13	__ResetSensorMutex	9	0	52	4	8
+14	__MRMutex	9	0	56	4	2
+15	__D0cerrar_compuerta_der	6	1	60	4	2
+16	__D0cerrar_compuerta_izq	6	1	64	4	2
+17	__D0abrir_compuerta_der	6	1	68	4	2
+18	__D0abrir_compuerta_izq	6	1	72	4	2
+19	__Wait_7qG2_ms_7qG2_000_inline_abrir_compuerta_izq	5	1	76	4	2
+20	__Wait_7qG2_ms_7qG2_000_inline_cerrar_compuerta_izq	5	1	80	4	2
+21	__Wait_7qG2_ms_7qG2_000_inline_desviar_a_izquierda	5	1	84	4	4
+22	__Wait_7qG2_ms_7qG2_000_inline_desviar_a_derecha	5	1	88	4	4
+23	__Wait_7qG2_ms_7qG2_000_inline_abrir_compuerta_der	5	1	92	4	2
+24	__Wait_7qG2_ms_7qG2_000_inline_clasificar_granos	5	1	96	4	6
+25	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	100	4	2
+26	__Wait_7qG2_ms_7qG2_000_inline_cerrar_compuerta_der	5	1	104	4	2
+27	__Wait_7qG2_ms_7qG2_000_inline_depositar_en_caja	5	1	108	4	4
+28	__signed_stack_001main	6	1	112	4	2
+29	__signed_stack_001cerrar_compuerta_der	6	1	116	4	2
+30	__signed_stack_001cerrar_compuerta_izq	6	1	120	4	2
+31	__signed_stack_001abrir_compuerta_der	6	1	124	4	2
+32	__signed_stack_001abrir_compuerta_izq	6	1	128	4	2
+33	__signed_stack_001clasificar_grano	6	1	132	4	18
+34	__signed_stack_001identificar_caja	6	1	136	4	6
+35	__signed_stack_001leer_rgb	6	1	140	4	6
+36	__signed_stack_001clasificar_granos	6	1	144	4	8
+37	__signed_stack_001depositar_en_caja	6	1	148	4	2
+38	__rotateMutex2	9	0	152	4	4
+39	__OnRevMutex	9	0	156	4	4
+40	__rotateMutex1	9	0	160	4	4
+41	__rotate_angle2	6	1	164	4	6
+42	__rotate_angle1	6	1	168	4	6
+43	__rotate_theAngle1	5	1	172	4	2
+44	__clasificar_granos_7qG2_r_7qG2_000	4	1	176	2	3
+45	__clasificar_granos_7qG2_b_7qG2_000	4	1	178	2	3
+46	__clasificar_granos_7qG2_g_7qG2_000	4	1	180	2	3
+47	__depositar_en_caja_7qG2_r_7qG2_000	4	1	182	2	3
+48	__identificar_caja_7qG2_b_7qG2_000	4	1	184	2	2
+49	__depositar_en_caja_7qG2_g_7qG2_000	4	1	186	2	3
+50	__depositar_en_caja_7qG2_tipo_caja_7qG2_000	4	1	188	2	2
+51	__depositar_en_caja_7qG2_b_7qG2_000	4	1	190	2	3
+52	__clasificar_granos_7qG2_tipo_7qG2_003	4	1	192	2	3
+53	__leer_rgb_7qG2_g_7qG2_000	4	1	194	2	6
+54	__leer_rgb_7qG2_b_7qG2_000	4	1	196	2	6
+55	__clasificar_grano_7qG2_r_7qG2_000	4	1	198	2	4
+56	__leer_rgb_7qG2_r_7qG2_000	4	1	200	2	6
+57	__rotate_OldRotCount2	4	1	202	2	2
+58	__rotate_RotCount2	4	1	204	2	4
+59	__clasificar_grano_7qG2_g_7qG2_000	4	1	206	2	4
+60	__identificar_caja_7qG2_r_7qG2_000	4	1	208	2	2
+61	__identificar_caja_7qG2_g_7qG2_000	4	1	210	2	2
+62	__rotate_OldRotCount1	4	1	212	2	2
+63	__clasificar_grano_7qG2_b_7qG2_000	4	1	214	2	4
+64	__rotate_RotCount1	4	1	216	2	4
+65	__rotate_sync1	1	1	218	1	3
+66	__constVal63	2	0	219	1	6
+67	__constVal96	2	0	220	1	10
+68	__clasificar_grano_return	1	1	221	1	7
+69	__leer_rgb_return	1	1	222	1	4
+70	__desviar_a_izquierda_return	1	1	223	1	3
+71	__identificar_caja_return	1	1	224	1	5
+72	__desviar_a_derecha_return	1	1	225	1	3
+73	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	226	1	2
+74	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	227	1	2
+75	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	228	1	2
+76	__SetSensorTouch_7qG2_port_7qG2_000_inline_main	1	1	229	1	4
+77	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	230	1	4
+78	__clasificar_granos_Spawner_return	1	1	231	1	1
+79	__OnRev_Tmp	2	1	232	1	4
+80	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	233	1	2
+81	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	234	1	2
+82	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	235	1	2
+83	__constValNeg90	2	0	236	1	2
+84	__abrir_compuerta_der_return	1	1	237	1	3
+85	__cerrar_compuerta_izq_return	1	1	238	1	3
+86	__rotate_firstPort1	1	1	239	1	5
+87	__abrir_compuerta_izq_return	1	1	240	1	3
+88	____initialize_global_data_return	1	1	241	1	3
+89	__SetSensorColorFull_7qG2_port_7qG2_000_inline_main	1	1	242	1	8
+90	__depositar_en_caja_return	1	1	243	1	3
+91	__rotate_power1	1	1	244	1	5
+92	__cerrar_compuerta_der_return	1	1	245	1	3
+93	__leer_rgb_7qG2_puerto_7qG2_000	1	1	246	1	3
+94	__rotate_theRS2	1	1	247	1	3
+95	__constVal0	2	1	248	1	47
+96	__constVal13	2	0	249	1	2
+97	__constVal2	2	0	250	1	2
+98	__constVal10	2	0	251	1	1
+99	__rotate_theOM2	1	1	252	1	7
+100	__rotate_theUF2	1	1	253	1	6
+101	__PFTmp	1	1	254	1	1
+102	__rotate_theRM2	1	1	255	1	4
+103	__constVal1	2	0	256	1	17
+104	__rotate_theRVP2	1	1	257	1	3
+105	____RotateMotor2_sign_tmp	2	1	258	1	4
+106	__constVal3	2	0	259	1	6
+107	____RotateMotor2_return	1	1	260	1	4
+108	____RotateMotor1_return	1	1	261	1	4
+109	____RotateMotor1_sign_tmp	2	1	262	1	4
+110	____ResetSensorSubroutine_return	1	1	263	1	6
+111	__constVal50	2	0	264	1	2
+112	__ResetSensorTmp	1	1	265	1	2
+113	__rotate_theRVI2	1	1	266	1	3
+114	__ResetSensorPort	1	1	267	1	6
+115	__rotate_turnpct2	2	1	268	1	4
+116	__rotate_theRS1	1	1	269	1	3
+117	__rotate_theRM1	1	1	270	1	4
+118	__rotate_theRVP1	1	1	271	1	3
+119	__rotate_theRVD1	1	1	272	1	3
+120	__rotate_theRVI1	1	1	273	1	3
+121	__rotate_turnpct1	2	1	274	1	4
+122	__rotate_stop1	1	1	275	1	3
+123	__rotate_theUF1	1	1	276	1	6
+124	__rotate_rs2	1	1	277	1	2
+125	__rotate_theOM1	1	1	278	1	7
+126	__rotate_rs1	1	1	279	1	2
+127	__rotate_firstPort2	1	1	280	1	5
+128	__rotate_theTurnPct2	2	1	281	1	4
+129	__rotate_sync2	1	1	282	1	3
+130	__constVal32	2	0	283	1	29
+131	__rotate_stop2	1	1	284	1	3
+132	__rotate_theRVD2	1	1	285	1	3
+133	__rotate_thePower2	2	1	286	1	4
+134	__rotate_thePower1	2	1	287	1	4
+135	__rotate_power2	1	1	288	1	5
+136	__rotate_theTurnPct1	2	1	289	1	4
+137	__MRArgs	8	0	4	8	5
+138	__MRArgs.Result	2	1	292	1	5
+139	__MRArgs.QueueID	1	1	293	1	5
+140	__MRArgs.Remove	1	1	294	1	5
+141	__MRArgs.Message	7	0	296	4	5
+142	__MRArgs.Message.Message_type	1	0	0	1	0
+143	__MWArgs	8	0	3	8	4
+144	__MWArgs.Result	2	1	300	1	4
+145	__MWArgs.QueueID	1	1	301	1	4
+146	__MWArgs.Message	7	0	302	4	4
+147	__MWArgs.Message.Message_type	1	0	0	1	0
+148	__ColorSensorReadArgs	8	0	7	20	4
+149	__ColorSensorReadArgs.Result	2	1	304	1	4
+150	__ColorSensorReadArgs.Port	1	1	305	1	4
+151	__ColorSensorReadArgs.ColorValue	4	1	306	2	4
+152	__ColorSensorReadArgs.RawArray	7	0	308	4	4
+153	__ColorSensorReadArgs.RawArray.RawArray_type	3	0	0	2	0
+154	__ColorSensorReadArgs.NormalizedArray	7	0	310	4	4
+155	__ColorSensorReadArgs.NormalizedArray.NormalizedArray_type	3	0	0	2	0
+156	__ColorSensorReadArgs.ScaledArray	7	0	312	4	4
+157	__ColorSensorReadArgs.ScaledArray.ScaledArray_type	4	0	0	2	0
+158	__ColorSensorReadArgs.Invalid	1	1	314	1	4
+159	__constStr0010	7	0	316	4	1
+160	__constStr0010.__constStr0010_type	1	1	0	1	0
+161	__constStr0009	7	0	318	4	1
+162	__constStr0009.__constStr0009_type	1	1	0	1	0
+163	__leer_rgb_7qG2_raw_vals_7qG2_000	7	0	320	4	4
+164	__leer_rgb_7qG2_raw_vals_7qG2_000.__leer_rgb_7qG2_raw_vals_7qG2_000_type	3	0	0	2	0
+165	__constStr0011	7	0	322	4	1
+166	__constStr0011.__constStr0011_type	1	1	0	1	0
+167	__main_7qG2_msg_7qG2_000	7	0	324	4	3
+168	__main_7qG2_msg_7qG2_000.__main_7qG2_msg_7qG2_000_type	1	0	0	1	0
+169	__rotate_ports2	7	0	326	4	7
+170	__rotate_ports2.__rotate_ports2_type	1	0	0	1	0
+171	__rotate_ports1	7	0	328	4	7
+172	__rotate_ports1.__rotate_ports1_type	1	0	0	1	0
+173	__strbufmain	7	0	330	4	6
+174	__strbufmain.__strbufmain_type	1	0	0	1	0
+175	__strtmpbufmain	7	0	332	4	2
+176	__strtmpbufmain.__strtmpbufmain_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	272	0	#line 272 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	273	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	272	2	#line 272 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	272	2	#line 272 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	273	2		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	272	5	#line 272 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	4386	5	#line 4386 "NXCDefs.h"
+0	4387	5	#pragma macro 6
+0	4387	5		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	4387	9		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 1
+0	4387	13		acquire __ResetSensorMutex
+0	4387	14		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main
+0	4387	16		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4387	18		release __ResetSensorMutex
+0	5271	19	#line 5271 "NXCDefs.h"
+0	4386	19	#line 4386 "NXCDefs.h"
+0	273	19	#line 273 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	273	19	#line 273 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	274	19		set __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	273	22	#line 273 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	4302	22	#line 4302 "NXCDefs.h"
+0	4303	22	#pragma macro 6
+0	4303	22		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	4303	26		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	4303	30		acquire __ResetSensorMutex
+0	4303	31		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_main
+0	4303	33		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4303	35		release __ResetSensorMutex
+0	5283	36	#line 5283 "NXCDefs.h"
+0	4302	36	#line 4302 "NXCDefs.h"
+0	274	36	#line 274 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	274	36	#line 274 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	275	36		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 2
+0	274	39	#line 274 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	4386	39	#line 4386 "NXCDefs.h"
+0	4387	39	#pragma macro 6
+0	4387	39		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	4387	43		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 1
+0	4387	47		acquire __ResetSensorMutex
+0	4387	48		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main
+0	4387	50		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4387	52		release __ResetSensorMutex
+0	5291	53	#line 5291 "NXCDefs.h"
+0	4386	53	#line 4386 "NXCDefs.h"
+0	275	53	#line 275 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	275	53	#line 275 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	276	53		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 3
+0	275	56	#line 275 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	278	56	#line 278 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	279	56		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	58	#line 4313 "NXCDefs.h"
+0	4314	58		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	60	#line 4313 "NXCDefs.h"
+0	4313	60	#line 4313 "NXCDefs.h"
+0	4314	60		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	62	#line 4313 "NXCDefs.h"
+0	4314	62		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	65	#line 4313 "NXCDefs.h"
+0	4314	65		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	68	#line 4313 "NXCDefs.h"
+0	4314	68		set __DU0SetSensorLight_inline_main, 5
+0	4313	71	#line 4313 "NXCDefs.h"
+0	4313	71	#line 4313 "NXCDefs.h"
+0	4314	71		jmp __001__ASM_Label_5
+0	4313	73	#line 4313 "NXCDefs.h"
+0	4314	73		set __DU0SetSensorLight_inline_main, 6
+0	4313	76	#line 4313 "NXCDefs.h"
+0	4313	76	#line 4313 "NXCDefs.h"
+0	4314	76		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	78	#line 4247 "NXCDefs.h"
+0	4248	78		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	82	#line 4247 "NXCDefs.h"
+0	4314	82	#line 4314 "NXCDefs.h"
+0	4314	82	#line 4314 "NXCDefs.h"
+0	4315	82		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	84	#line 4314 "NXCDefs.h"
+0	4314	84	#line 4314 "NXCDefs.h"
+0	4315	84		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	87	#line 4314 "NXCDefs.h"
+0	4260	87	#line 4260 "NXCDefs.h"
+0	4261	87		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	91	#line 4260 "NXCDefs.h"
+0	4315	91	#line 4315 "NXCDefs.h"
+0	4315	91	#line 4315 "NXCDefs.h"
+0	4316	91		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	93	#line 4315 "NXCDefs.h"
+0	4278	93	#line 4278 "NXCDefs.h"
+0	4279	93	#pragma macro 4
+0	4279	93		acquire __ResetSensorMutex
+0	4279	94		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main
+0	4279	96		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4279	98		release __ResetSensorMutex
+0	5381	99	#line 5381 "NXCDefs.h"
+0	4278	99	#line 4278 "NXCDefs.h"
+0	4316	99	#line 4316 "NXCDefs.h"
+0	278	99	#line 278 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	280	99	#line 280 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	281	99		subcall __clasificar_granos_Spawner, __clasificar_granos_Spawner_return
+0	280	101	#line 280 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	282	101	#line 282 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	283	101		strcat __strbufmain, __constStr0009
+0	282	105	#line 282 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	283	105		mov __main_7qG2_msg_7qG2_000, __strbufmain
+0	282	107	#line 282 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	283	107		set __D0main, 1
+0	283	110	#line 283 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	284	110		tst 5, __D0main, __D0main
+0	283	113	#line 283 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	284	113		brtst 4, __ASM_Label_635, __D0main
+0	283	116	#line 283 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	284	116	#pragma macro 7
+0	284	116		acquire __MRMutex
+0	284	117		mov __MRArgs.QueueID, __constVal0
+0	284	119		mov __MRArgs.Remove, __constVal1
+0	284	121		syscall 27, __MRArgs
+0	284	124		mov __main_7qG2_msg_7qG2_000, __MRArgs.Message
+0	284	126		mov __D0main, __MRArgs.Result
+0	284	129		release __MRMutex
+0	5404	130	#line 5404 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	283	130	#line 283 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	284	130		mov __signed_stack_001main, __D0main
+0	283	132	#line 283 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	284	132		set __D0main, 0
+0	283	135	#line 283 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	284	135		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	285	139	#line 285 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	286	139		brtst 4, __ASM_Label_640, __D0main
+0	285	142	#line 285 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	286	142		strcat __strbufmain, __main_7qG2_msg_7qG2_000
+0	285	146	#line 285 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	286	146		mov __strtmpbufmain, __strbufmain
+0	285	148	#line 285 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	286	148		strcat __strbufmain, __constStr0010
+0	285	152	#line 285 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	286	152		cmp 4, __D0main, __strtmpbufmain, __strbufmain
+0	288	156	#line 288 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	289	156		brtst 4, __ASM_Label_643, __D0main
+0	291	159	#line 291 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	292	159		subcall depositar_en_caja, __depositar_en_caja_return
+0	291	161	#line 291 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	291	161	#line 291 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	292	161	#pragma macro 6
+0	292	161		acquire __MWMutex
+0	292	162		add __MWArgs.QueueID, __constVal1, __constVal10
+0	292	166		mov __MWArgs.Message, __constStr0011
+0	292	168		syscall 26, __MWArgs
+0	292	171		mov __D0main, __MWArgs.Result
+0	292	174		release __MWMutex
+0	5433	175	#line 5433 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	291	175	#line 291 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	291	175	#line 291 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	295	175	#line 295 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	295	175	#line 295 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	295	175	#line 295 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	296	175		set __Wait_7qG2_ms_7qG2_000_inline_main, 20
+0	295	178	#line 295 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	8551	178	#line 8551 "NXCDefs.h"
+0	8552	178		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	181	#line 8551 "NXCDefs.h"
+0	296	181	#line 296 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	299	181	#line 299 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	300	181		jmp __ASM_Label_634
+0	299	183	#line 299 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+0	300	183		exit -1, -1
+1	5120	0		brtst 4, __rotate_Done1, __rotate_angle1
+1	5121	3		set ____RotateMotor1_sign_tmp, 0
+1	5121	6		brtst EQ, __sign_1, __rotate_angle1
+1	5121	9		set ____RotateMotor1_sign_tmp, -1
+1	5121	12		brtst LT, __sign_1, __rotate_angle1
+1	5121	15		set ____RotateMotor1_sign_tmp, 1
+1	5121	18	__sign_1:	mov __rotate_thePower1, ____RotateMotor1_sign_tmp
+1	5122	20		abs __rotate_theAngle1, __rotate_angle1
+1	5123	23		mul __rotate_thePower1, __rotate_thePower1, __rotate_power1
+1	5125	27		set __rotate_theUF1, 23
+1	5126	30		brtst 4, __rotate_NoSync1, __rotate_sync1
+1	5127	33		set __rotate_theOM1, 7
+1	5128	36		set __rotate_theRM1, 2
+1	5129	39		mov __rotate_theTurnPct1, __rotate_turnpct1
+1	5130	41		brtst 4, __rotate_Start1, __rotate_theTurnPct1
+1	5131	44		add __rotate_theUF1, __rotate_theUF1, __constVal32
+1	5132	48		jmp __rotate_Start1
+1	5134	50		set __rotate_theOM1, 3
+1	5135	53		set __rotate_theRM1, 0
+1	5136	56		set __rotate_theTurnPct1, 0
+1	5138	59		set __rotate_theRS1, 32
+1	5139	62		setout __rotate_ports1, 1, __rotate_theOM1, 8, __rotate_theRM1, 5, __rotate_theAngle1, 6, __rotate_theRS1, 10, __rotate_theRVP1, 11, __rotate_theRVI1, 12, __rotate_theRVD1, 2, __rotate_thePower1, 7, __rotate_turnpct1, 0, __rotate_theUF1
+1	5142	85		index __rotate_firstPort1, __rotate_ports1, 65535
+1	5144	89		getout __rotate_power1, __rotate_firstPort1, 2
+1	5145	93		brtst 4, __rotate_doneRunning1, __rotate_power1
+1	5146	96		getout __rotate_rs1, __rotate_firstPort1, 6
+1	5147	100		brcmp 4, __rotate_Running1, __rotate_rs1, __constVal32
+1	5149	104		brtst 4, __rotate_Reset1, __rotate_stop1
+1	5151	107		set __rotate_theOM1, 7
+1	5152	110		set __rotate_theUF1, 7
+1	5153	113		setout __rotate_ports1, 1, __rotate_theOM1, 8, __constVal1, 6, __rotate_theRS1, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF1
+1	5155	128		getout __rotate_RotCount1, __rotate_firstPort1, 14
+1	5157	132		mov __rotate_OldRotCount1, __rotate_RotCount1
+1	5158	134		wait2 NA, __constVal50
+1	5160	137		getout __rotate_RotCount1, __rotate_firstPort1, 14
+1	5161	141		brcmp 5, __rotate_Stabilize1, __rotate_OldRotCount1, __rotate_RotCount1
+1	5162	145		set __rotate_theOM1, 4
+1	5163	148		setout __rotate_ports1, 8, __rotate_theRM1, 6, __constVal0, 1, __rotate_theOM1, 0, __constVal1
+1	5166	159		brtst 4, __rotate_Done1, __rotate_theTurnPct1
+1	5167	162		setout __rotate_ports1, 0, __constVal32
+1	5169	167		subret ____RotateMotor1_return
+2	5173	0		brtst 4, __rotate_Done2, __rotate_angle2
+2	5174	3		set ____RotateMotor2_sign_tmp, 0
+2	5174	6		brtst EQ, __sign_2, __rotate_angle2
+2	5174	9		set ____RotateMotor2_sign_tmp, -1
+2	5174	12		brtst LT, __sign_2, __rotate_angle2
+2	5174	15		set ____RotateMotor2_sign_tmp, 1
+2	5174	18	__sign_2:	mov __rotate_thePower2, ____RotateMotor2_sign_tmp
+2	5175	20		abs __rotate_theAngle2, __rotate_angle2
+2	5176	23		mul __rotate_thePower2, __rotate_thePower2, __rotate_power2
+2	5178	27		set __rotate_theUF2, 23
+2	5179	30		brtst 4, __rotate_NoSync2, __rotate_sync2
+2	5180	33		set __rotate_theOM2, 7
+2	5181	36		set __rotate_theRM2, 2
+2	5182	39		mov __rotate_theTurnPct2, __rotate_turnpct2
+2	5183	41		brtst 4, __rotate_Start2, __rotate_theTurnPct2
+2	5184	44		add __rotate_theUF2, __rotate_theUF2, __constVal32
+2	5185	48		jmp __rotate_Start2
+2	5187	50		set __rotate_theOM2, 3
+2	5188	53		set __rotate_theRM2, 0
+2	5189	56		set __rotate_theTurnPct2, 0
+2	5191	59		set __rotate_theRS2, 32
+2	5192	62		setout __rotate_ports2, 1, __rotate_theOM2, 8, __rotate_theRM2, 5, __rotate_theAngle2, 6, __rotate_theRS2, 10, __rotate_theRVP2, 11, __rotate_theRVI2, 12, __rotate_theRVD2, 2, __rotate_thePower2, 7, __rotate_turnpct2, 0, __rotate_theUF2
+2	5195	85		index __rotate_firstPort2, __rotate_ports2, 65535
+2	5197	89		getout __rotate_power2, __rotate_firstPort2, 2
+2	5198	93		brtst 4, __rotate_doneRunning2, __rotate_power2
+2	5199	96		getout __rotate_rs2, __rotate_firstPort2, 6
+2	5200	100		brcmp 4, __rotate_Running2, __rotate_rs2, __constVal32
+2	5202	104		brtst 4, __rotate_Reset2, __rotate_stop2
+2	5204	107		set __rotate_theOM2, 7
+2	5205	110		set __rotate_theUF2, 7
+2	5206	113		setout __rotate_ports2, 1, __rotate_theOM2, 8, __constVal1, 6, __rotate_theRS2, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF2
+2	5208	128		getout __rotate_RotCount2, __rotate_firstPort2, 14
+2	5210	132		mov __rotate_OldRotCount2, __rotate_RotCount2
+2	5211	134		wait2 NA, __constVal50
+2	5213	137		getout __rotate_RotCount2, __rotate_firstPort2, 14
+2	5214	141		brcmp 5, __rotate_Stabilize2, __rotate_OldRotCount2, __rotate_RotCount2
+2	5215	145		set __rotate_theOM2, 4
+2	5216	148		setout __rotate_ports2, 8, __rotate_theRM2, 6, __constVal0, 1, __rotate_theOM2, 0, __constVal1
+2	5219	159		brtst 4, __rotate_Done2, __rotate_theTurnPct2
+2	5220	162		setout __rotate_ports2, 0, __constVal32
+2	5222	167		subret ____RotateMotor2_return
+3	5476	0		setin __constVal1, __ResetSensorPort, 5
+3	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+3	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+3	5480	11		subret ____ResetSensorSubroutine_return
+4	100	0	#line 100 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	101	0	#pragma macro 6
+4	101	0		acquire __ColorSensorReadMutex
+4	101	1		mov __ColorSensorReadArgs.Port, __leer_rgb_7qG2_puerto_7qG2_000
+4	101	3		syscall 34, __ColorSensorReadArgs
+4	101	6		mov __leer_rgb_7qG2_raw_vals_7qG2_000, __ColorSensorReadArgs.RawArray
+4	101	8		tst 4, __D0leer_rgb, __ColorSensorReadArgs.Result
+4	101	11		release __ColorSensorReadMutex
+4	4470	12	#line 4470 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	101	12	#line 101 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	102	12		tst 5, __D0leer_rgb, __D0leer_rgb
+4	101	15	#line 101 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	102	15		brtst 4, __ASM_Label_491, __D0leer_rgb
+4	101	18	#line 101 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	102	18		set __signed_stack_001leer_rgb, 0
+4	101	21	#line 101 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	101	21	#line 101 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	102	21		index __leer_rgb_7qG2_r_7qG2_000, __leer_rgb_7qG2_raw_vals_7qG2_000, __signed_stack_001leer_rgb
+4	101	25	#line 101 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	102	25	#line 102 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	102	25	#line 102 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	102	25	#line 102 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	103	25		set __signed_stack_001leer_rgb, 1
+4	102	28	#line 102 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	102	28	#line 102 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	103	28		index __leer_rgb_7qG2_g_7qG2_000, __leer_rgb_7qG2_raw_vals_7qG2_000, __signed_stack_001leer_rgb
+4	102	32	#line 102 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	103	32	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	103	32	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	103	32	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	104	32		set __signed_stack_001leer_rgb, 2
+4	103	35	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	103	35	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	104	35		index __leer_rgb_7qG2_b_7qG2_000, __leer_rgb_7qG2_raw_vals_7qG2_000, __signed_stack_001leer_rgb
+4	103	39	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	104	39	#line 104 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	104	39	#line 104 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	106	39	#line 106 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	107	39		jmp __ASM_Label_504
+4	106	41	#line 106 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	107	41		set __leer_rgb_7qG2_r_7qG2_000, 0
+4	106	44	#line 106 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	106	44	#line 106 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	106	44	#line 106 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	107	44		set __leer_rgb_7qG2_g_7qG2_000, 0
+4	106	47	#line 106 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	106	47	#line 106 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	107	47	#line 107 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	108	47		set __leer_rgb_7qG2_b_7qG2_000, 0
+4	107	50	#line 107 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	107	50	#line 107 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	112	50	#line 112 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	112	50	#line 112 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+4	113	50		subret __leer_rgb_return
+5	114	0	#line 114 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	115	0		mov __signed_stack_001clasificar_grano, __clasificar_grano_7qG2_g_7qG2_000
+5	114	2	#line 114 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	114	2	#line 114 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	115	2		set __D0clasificar_grano, 90
+5	114	5	#line 114 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	115	5		cmp 1, __D0clasificar_grano, __signed_stack_001clasificar_grano, __D0clasificar_grano
+5	114	9	#line 114 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	115	9		brtst 4, __ASM_Label_512, __D0clasificar_grano
+5	114	12	#line 114 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	115	12		mov __signed_stack_001clasificar_grano, __clasificar_grano_7qG2_r_7qG2_000
+5	114	14	#line 114 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	114	14	#line 114 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	115	14		set __D0clasificar_grano, 75
+5	114	17	#line 114 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	115	17		cmp 0, __D0clasificar_grano, __signed_stack_001clasificar_grano, __D0clasificar_grano
+5	114	21	#line 114 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	115	21		brtst 4, __ASM_Label_512, __D0clasificar_grano
+5	114	24	#line 114 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	115	24		mov __signed_stack_001clasificar_grano, __clasificar_grano_7qG2_b_7qG2_000
+5	114	26	#line 114 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	115	26	#line 115 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	116	26		set __D0clasificar_grano, 75
+5	115	29	#line 115 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	116	29		cmp 0, __D0clasificar_grano, __signed_stack_001clasificar_grano, __D0clasificar_grano
+5	115	33	#line 115 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	116	33		brtst 4, __ASM_Label_513, __D0clasificar_grano
+5	117	36	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	118	36		set __D0clasificar_grano, 0
+5	117	39	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	118	39		subret __clasificar_grano_return
+5	117	41	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	117	41	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	117	41	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	118	41		mov __signed_stack_001clasificar_grano, __clasificar_grano_7qG2_r_7qG2_000
+5	117	43	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	117	43	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	118	43		set __D0clasificar_grano, 55
+5	117	46	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	118	46		cmp 0, __D0clasificar_grano, __signed_stack_001clasificar_grano, __D0clasificar_grano
+5	117	50	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	118	50		brtst 4, __ASM_Label_517, __D0clasificar_grano
+5	117	53	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	118	53		mov __signed_stack_001clasificar_grano, __clasificar_grano_7qG2_g_7qG2_000
+5	117	55	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	117	55	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	118	55		set __D0clasificar_grano, 55
+5	117	58	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	118	58		cmp 0, __D0clasificar_grano, __signed_stack_001clasificar_grano, __D0clasificar_grano
+5	117	62	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	118	62		brtst 4, __ASM_Label_517, __D0clasificar_grano
+5	117	65	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	118	65		mov __signed_stack_001clasificar_grano, __clasificar_grano_7qG2_b_7qG2_000
+5	117	67	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	118	67	#line 118 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	119	67		set __D0clasificar_grano, 55
+5	118	70	#line 118 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	119	70		cmp 0, __D0clasificar_grano, __signed_stack_001clasificar_grano, __D0clasificar_grano
+5	118	74	#line 118 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	119	74		brtst 4, __ASM_Label_518, __D0clasificar_grano
+5	120	77	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	121	77		set __D0clasificar_grano, 2
+5	120	80	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	121	80		subret __clasificar_grano_return
+5	120	82	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	120	82	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	120	82	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	121	82		mov __signed_stack_001clasificar_grano, __clasificar_grano_7qG2_b_7qG2_000
+5	120	84	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	120	84	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	121	84		set __D0clasificar_grano, 90
+5	120	87	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	121	87		cmp 1, __D0clasificar_grano, __signed_stack_001clasificar_grano, __D0clasificar_grano
+5	120	91	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	121	91		brtst 4, __ASM_Label_522, __D0clasificar_grano
+5	120	94	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	121	94		mov __signed_stack_001clasificar_grano, __clasificar_grano_7qG2_r_7qG2_000
+5	120	96	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	120	96	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	121	96		set __D0clasificar_grano, 70
+5	120	99	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	121	99		cmp 0, __D0clasificar_grano, __signed_stack_001clasificar_grano, __D0clasificar_grano
+5	120	103	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	121	103		brtst 4, __ASM_Label_522, __D0clasificar_grano
+5	120	106	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	121	106		mov __signed_stack_001clasificar_grano, __clasificar_grano_7qG2_g_7qG2_000
+5	120	108	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	121	108	#line 121 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	122	108		set __D0clasificar_grano, 80
+5	121	111	#line 121 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	122	111		cmp 0, __D0clasificar_grano, __signed_stack_001clasificar_grano, __D0clasificar_grano
+5	121	115	#line 121 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	122	115		brtst 4, __ASM_Label_523, __D0clasificar_grano
+5	123	118	#line 123 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	124	118		set __D0clasificar_grano, 2
+5	123	121	#line 123 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	124	121		subret __clasificar_grano_return
+5	123	123	#line 123 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	123	123	#line 123 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	124	123	#line 124 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	125	123		set __D0clasificar_grano, 1
+5	124	126	#line 124 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	125	126		subret __clasificar_grano_return
+5	124	128	#line 124 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	128	128	#line 128 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+5	129	128		subret __clasificar_grano_return
+6	129	0	#line 129 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	130	0		mov __signed_stack_001identificar_caja, __identificar_caja_7qG2_b_7qG2_000
+6	129	2	#line 129 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	129	2	#line 129 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	130	2		set __D0identificar_caja, 90
+6	129	5	#line 129 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	130	5		cmp 1, __D0identificar_caja, __signed_stack_001identificar_caja, __D0identificar_caja
+6	129	9	#line 129 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	130	9		brtst 4, __ASM_Label_529, __D0identificar_caja
+6	129	12	#line 129 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	130	12		mov __signed_stack_001identificar_caja, __identificar_caja_7qG2_r_7qG2_000
+6	129	14	#line 129 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	129	14	#line 129 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	130	14		set __D0identificar_caja, 70
+6	129	17	#line 129 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	130	17		cmp 0, __D0identificar_caja, __signed_stack_001identificar_caja, __D0identificar_caja
+6	129	21	#line 129 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	130	21		brtst 4, __ASM_Label_529, __D0identificar_caja
+6	129	24	#line 129 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	130	24		mov __signed_stack_001identificar_caja, __identificar_caja_7qG2_g_7qG2_000
+6	129	26	#line 129 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	130	26	#line 130 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	131	26		set __D0identificar_caja, 80
+6	130	29	#line 130 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	131	29		cmp 0, __D0identificar_caja, __signed_stack_001identificar_caja, __D0identificar_caja
+6	130	33	#line 130 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	131	33		brtst 4, __ASM_Label_530, __D0identificar_caja
+6	131	36	#line 131 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	132	36		set __D0identificar_caja, 2
+6	131	39	#line 131 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	132	39		subret __identificar_caja_return
+6	131	41	#line 131 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	131	41	#line 131 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	132	41	#line 132 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	133	41		set __D0identificar_caja, 1
+6	132	44	#line 132 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	133	44		subret __identificar_caja_return
+6	132	46	#line 132 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	139	46	#line 139 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+6	140	46		subret __identificar_caja_return
+7	141	0	#line 141 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	142	0		set __D0desviar_a_izquierda, 55
+7	142	3	#line 142 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	143	3	#pragma macro 10
+7	143	3		acquire __OnRevMutex
+7	143	4		neg __OnRev_Tmp, __D0desviar_a_izquierda
+7	143	7		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	143	30		release __OnRevMutex
+7	4780	31	#line 4780 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	142	31	#line 142 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	142	31	#line 142 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	143	31		set __Wait_7qG2_ms_7qG2_000_inline_desviar_a_izquierda, 300
+7	142	34	#line 142 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	8551	34	#line 8551 "NXCDefs.h"
+7	8552	34		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_desviar_a_izquierda
+7	8551	37	#line 8551 "NXCDefs.h"
+7	144	37	#line 144 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	144	37	#line 144 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	145	37		set __D0desviar_a_izquierda, 55
+7	145	40	#line 145 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	146	40	#pragma macro 7
+7	146	40		setout __constVal0, 2, __D0desviar_a_izquierda, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4797	63	#line 4797 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	145	63	#line 145 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	145	63	#line 145 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	146	63		set __Wait_7qG2_ms_7qG2_000_inline_desviar_a_izquierda, 300
+7	145	66	#line 145 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	8551	66	#line 8551 "NXCDefs.h"
+7	8552	66		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_desviar_a_izquierda
+7	8551	69	#line 8551 "NXCDefs.h"
+7	146	69	#line 146 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	147	69	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	148	69	#pragma macro 7
+7	148	69		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4808	92	#line 4808 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	147	92	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	149	92	#line 149 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+7	150	92		subret __desviar_a_izquierda_return
+8	151	0	#line 151 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	152	0		set __D0desviar_a_derecha, 55
+8	152	3	#line 152 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	153	3	#pragma macro 7
+8	153	3		setout __constVal0, 2, __D0desviar_a_derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4818	26	#line 4818 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	152	26	#line 152 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	152	26	#line 152 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	153	26		set __Wait_7qG2_ms_7qG2_000_inline_desviar_a_derecha, 300
+8	152	29	#line 152 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	8551	29	#line 8551 "NXCDefs.h"
+8	8552	29		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_desviar_a_derecha
+8	8551	32	#line 8551 "NXCDefs.h"
+8	154	32	#line 154 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	154	32	#line 154 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	155	32		set __D0desviar_a_derecha, 55
+8	155	35	#line 155 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	156	35	#pragma macro 10
+8	156	35		acquire __OnRevMutex
+8	156	36		neg __OnRev_Tmp, __D0desviar_a_derecha
+8	156	39		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	156	62		release __OnRevMutex
+8	4835	63	#line 4835 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	155	63	#line 155 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	155	63	#line 155 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	156	63		set __Wait_7qG2_ms_7qG2_000_inline_desviar_a_derecha, 300
+8	155	66	#line 155 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	8551	66	#line 8551 "NXCDefs.h"
+8	8552	66		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_desviar_a_derecha
+8	8551	69	#line 8551 "NXCDefs.h"
+8	156	69	#line 156 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	157	69	#line 157 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	158	69	#pragma macro 7
+8	158	69		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4846	92	#line 4846 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	157	92	#line 157 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	172	92	#line 172 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+8	173	92		subret __desviar_a_derecha_return
+9	174	0	#line 174 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+9	175	0		set __signed_stack_001abrir_compuerta_izq, 40
+9	174	3	#line 174 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+9	174	3	#line 174 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+9	175	3		set __D0abrir_compuerta_izq, 90
+9	175	6	#line 175 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+9	176	6	#pragma macro 33
+9	176	6		acquire __rotateMutex1
+9	176	7		arrbuild __rotate_ports1, __constVal1
+9	176	11		mov __rotate_power1, __signed_stack_001abrir_compuerta_izq
+9	176	13		mov __rotate_angle1, __D0abrir_compuerta_izq
+9	176	15		mov __rotate_turnpct1, __constVal0
+9	176	17		mov __rotate_sync1, __constVal0
+9	176	19		mov __rotate_stop1, __constVal1
+9	176	21		mov __rotate_theRVP1, __constVal32
+9	176	23		mov __rotate_theRVI1, __constVal0
+9	176	25		mov __rotate_theRVD1, __constVal96
+9	176	27		subcall __RotateMotor1, ____RotateMotor1_return
+9	176	29		release __rotateMutex1
+9	4861	30	#line 4861 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+9	175	30	#line 175 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+9	175	30	#line 175 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+9	176	30		set __Wait_7qG2_ms_7qG2_000_inline_abrir_compuerta_izq, 200
+9	175	33	#line 175 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+9	8551	33	#line 8551 "NXCDefs.h"
+9	8552	33		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_abrir_compuerta_izq
+9	8551	36	#line 8551 "NXCDefs.h"
+9	176	36	#line 176 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+9	178	36	#line 178 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+9	179	36		subret __abrir_compuerta_izq_return
+10	180	0	#line 180 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+10	181	0		set __signed_stack_001cerrar_compuerta_izq, 40
+10	180	3	#line 180 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+10	180	3	#line 180 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+10	181	3		mov __D0cerrar_compuerta_izq, __constValNeg90
+10	181	5	#line 181 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+10	182	5	#pragma macro 33
+10	182	5		acquire __rotateMutex1
+10	182	6		arrbuild __rotate_ports1, __constVal1
+10	182	10		mov __rotate_power1, __signed_stack_001cerrar_compuerta_izq
+10	182	12		mov __rotate_angle1, __D0cerrar_compuerta_izq
+10	182	14		mov __rotate_turnpct1, __constVal0
+10	182	16		mov __rotate_sync1, __constVal0
+10	182	18		mov __rotate_stop1, __constVal1
+10	182	20		mov __rotate_theRVP1, __constVal32
+10	182	22		mov __rotate_theRVI1, __constVal0
+10	182	24		mov __rotate_theRVD1, __constVal96
+10	182	26		subcall __RotateMotor1, ____RotateMotor1_return
+10	182	28		release __rotateMutex1
+10	4889	29	#line 4889 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+10	181	29	#line 181 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+10	181	29	#line 181 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+10	182	29		set __Wait_7qG2_ms_7qG2_000_inline_cerrar_compuerta_izq, 200
+10	181	32	#line 181 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+10	8551	32	#line 8551 "NXCDefs.h"
+10	8552	32		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_cerrar_compuerta_izq
+10	8551	35	#line 8551 "NXCDefs.h"
+10	182	35	#line 182 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+10	185	35	#line 185 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+10	186	35		subret __cerrar_compuerta_izq_return
+11	187	0	#line 187 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+11	188	0		set __signed_stack_001abrir_compuerta_der, 40
+11	187	3	#line 187 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+11	187	3	#line 187 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+11	188	3		set __D0abrir_compuerta_der, 90
+11	188	6	#line 188 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+11	189	6	#pragma macro 33
+11	189	6		acquire __rotateMutex2
+11	189	7		arrbuild __rotate_ports2, __constVal2
+11	189	11		mov __rotate_power2, __signed_stack_001abrir_compuerta_der
+11	189	13		mov __rotate_angle2, __D0abrir_compuerta_der
+11	189	15		mov __rotate_turnpct2, __constVal0
+11	189	17		mov __rotate_sync2, __constVal0
+11	189	19		mov __rotate_stop2, __constVal1
+11	189	21		mov __rotate_theRVP2, __constVal32
+11	189	23		mov __rotate_theRVI2, __constVal0
+11	189	25		mov __rotate_theRVD2, __constVal96
+11	189	27		subcall __RotateMotor2, ____RotateMotor2_return
+11	189	29		release __rotateMutex2
+11	4917	30	#line 4917 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+11	188	30	#line 188 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+11	188	30	#line 188 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+11	189	30		set __Wait_7qG2_ms_7qG2_000_inline_abrir_compuerta_der, 200
+11	188	33	#line 188 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+11	8551	33	#line 8551 "NXCDefs.h"
+11	8552	33		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_abrir_compuerta_der
+11	8551	36	#line 8551 "NXCDefs.h"
+11	189	36	#line 189 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+11	191	36	#line 191 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+11	192	36		subret __abrir_compuerta_der_return
+12	193	0	#line 193 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+12	194	0		set __signed_stack_001cerrar_compuerta_der, 40
+12	193	3	#line 193 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+12	193	3	#line 193 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+12	194	3		mov __D0cerrar_compuerta_der, __constValNeg90
+12	194	5	#line 194 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+12	195	5	#pragma macro 33
+12	195	5		acquire __rotateMutex2
+12	195	6		arrbuild __rotate_ports2, __constVal2
+12	195	10		mov __rotate_power2, __signed_stack_001cerrar_compuerta_der
+12	195	12		mov __rotate_angle2, __D0cerrar_compuerta_der
+12	195	14		mov __rotate_turnpct2, __constVal0
+12	195	16		mov __rotate_sync2, __constVal0
+12	195	18		mov __rotate_stop2, __constVal1
+12	195	20		mov __rotate_theRVP2, __constVal32
+12	195	22		mov __rotate_theRVI2, __constVal0
+12	195	24		mov __rotate_theRVD2, __constVal96
+12	195	26		subcall __RotateMotor2, ____RotateMotor2_return
+12	195	28		release __rotateMutex2
+12	4945	29	#line 4945 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+12	194	29	#line 194 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+12	194	29	#line 194 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+12	195	29		set __Wait_7qG2_ms_7qG2_000_inline_cerrar_compuerta_der, 200
+12	194	32	#line 194 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+12	8551	32	#line 8551 "NXCDefs.h"
+12	8552	32		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_cerrar_compuerta_der
+12	8551	35	#line 8551 "NXCDefs.h"
+12	195	35	#line 195 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+12	204	35	#line 204 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+12	205	35		subret __cerrar_compuerta_der_return
+13	206	0	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	207	0		set __leer_rgb_7qG2_puerto_7qG2_000, 2
+13	206	3	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	206	3	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	207	3		mov __leer_rgb_7qG2_r_7qG2_000, __depositar_en_caja_7qG2_r_7qG2_000
+13	206	5	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	207	5		mov __leer_rgb_7qG2_g_7qG2_000, __depositar_en_caja_7qG2_g_7qG2_000
+13	206	7	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	207	7		mov __leer_rgb_7qG2_b_7qG2_000, __depositar_en_caja_7qG2_b_7qG2_000
+13	207	9	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	208	9		subcall leer_rgb, __leer_rgb_return
+13	207	11	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	208	11		mov __depositar_en_caja_7qG2_r_7qG2_000, __leer_rgb_7qG2_r_7qG2_000
+13	207	13	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	208	13		mov __depositar_en_caja_7qG2_g_7qG2_000, __leer_rgb_7qG2_g_7qG2_000
+13	207	15	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	208	15		mov __depositar_en_caja_7qG2_b_7qG2_000, __leer_rgb_7qG2_b_7qG2_000
+13	207	17	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	207	17	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	208	17		mov __identificar_caja_7qG2_r_7qG2_000, __depositar_en_caja_7qG2_r_7qG2_000
+13	207	19	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	207	19	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	208	19		mov __identificar_caja_7qG2_g_7qG2_000, __depositar_en_caja_7qG2_g_7qG2_000
+13	207	21	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	207	21	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	208	21		mov __identificar_caja_7qG2_b_7qG2_000, __depositar_en_caja_7qG2_b_7qG2_000
+13	207	23	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	209	23	#line 209 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	210	23		subcall identificar_caja, __identificar_caja_return
+13	209	25	#line 209 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	210	25		mov __depositar_en_caja_7qG2_tipo_caja_7qG2_000, __D0identificar_caja
+13	209	27	#line 209 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	209	27	#line 209 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	210	27		mov __signed_stack_001depositar_en_caja, __depositar_en_caja_7qG2_tipo_caja_7qG2_000
+13	209	29	#line 209 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	209	29	#line 209 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	210	29		set __D0depositar_en_caja, 2
+13	209	32	#line 209 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	210	32		cmp 4, __D0depositar_en_caja, __signed_stack_001depositar_en_caja, __D0depositar_en_caja
+13	211	36	#line 211 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	212	36		brtst 4, __ASM_Label_587, __D0depositar_en_caja
+13	212	39	#line 212 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	213	39		subcall abrir_compuerta_der, __abrir_compuerta_der_return
+13	212	41	#line 212 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	212	41	#line 212 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	213	41		set __Wait_7qG2_ms_7qG2_000_inline_depositar_en_caja, 2500
+13	212	44	#line 212 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	8551	44	#line 8551 "NXCDefs.h"
+13	8552	44		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_depositar_en_caja
+13	8551	47	#line 8551 "NXCDefs.h"
+13	213	47	#line 213 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	214	47	#line 214 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	215	47		subcall cerrar_compuerta_der, __cerrar_compuerta_der_return
+13	214	49	#line 214 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	216	49	#line 216 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	217	49		jmp __ASM_Label_590
+13	217	51	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	218	51		subcall abrir_compuerta_izq, __abrir_compuerta_izq_return
+13	217	53	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	217	53	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	218	53		set __Wait_7qG2_ms_7qG2_000_inline_depositar_en_caja, 2500
+13	217	56	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	8551	56	#line 8551 "NXCDefs.h"
+13	8552	56		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_depositar_en_caja
+13	8551	59	#line 8551 "NXCDefs.h"
+13	218	59	#line 218 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	219	59	#line 219 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	220	59		subcall cerrar_compuerta_izq, __cerrar_compuerta_izq_return
+13	219	61	#line 219 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	231	61	#line 231 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	231	61	#line 231 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+13	232	61		subret __depositar_en_caja_return
+14	234	0	#line 234 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	235	0		set __D0clasificar_granos, 1
+14	237	3	#line 237 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	238	3		tst 5, __D0clasificar_granos, __D0clasificar_granos
+14	237	6	#line 237 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	238	6		brtst 4, __ASM_Label_594, __D0clasificar_granos
+14	237	9	#line 237 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	238	9		getin __signed_stack_001clasificar_granos, __constVal1, 4
+14	237	13	#line 237 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	237	13	#line 237 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	238	13		set __D0clasificar_granos, 1
+14	237	16	#line 237 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	238	16		cmp 4, __D0clasificar_granos, __signed_stack_001clasificar_granos, __D0clasificar_granos
+14	239	20	#line 239 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	240	20		brtst 4, __ASM_Label_599, __D0clasificar_granos
+14	239	23	#line 239 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	240	23		set __Wait_7qG2_ms_7qG2_000_inline_clasificar_granos, 60
+14	239	26	#line 239 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	8551	26	#line 8551 "NXCDefs.h"
+14	8552	26		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_clasificar_granos
+14	8551	29	#line 8551 "NXCDefs.h"
+14	242	29	#line 242 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	242	29	#line 242 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	243	29		getin __signed_stack_001clasificar_granos, __constVal1, 4
+14	242	33	#line 242 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	242	33	#line 242 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	243	33		set __D0clasificar_granos, 1
+14	242	36	#line 242 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	243	36		cmp 4, __D0clasificar_granos, __signed_stack_001clasificar_granos, __D0clasificar_granos
+14	245	40	#line 245 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	246	40		brtst 4, __ASM_Label_604, __D0clasificar_granos
+14	245	43	#line 245 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	246	43		set __leer_rgb_7qG2_puerto_7qG2_000, 0
+14	245	46	#line 245 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	245	46	#line 245 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	246	46		mov __leer_rgb_7qG2_r_7qG2_000, __clasificar_granos_7qG2_r_7qG2_000
+14	245	48	#line 245 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	246	48		mov __leer_rgb_7qG2_g_7qG2_000, __clasificar_granos_7qG2_g_7qG2_000
+14	245	50	#line 245 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	246	50		mov __leer_rgb_7qG2_b_7qG2_000, __clasificar_granos_7qG2_b_7qG2_000
+14	246	52	#line 246 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	247	52		subcall leer_rgb, __leer_rgb_return
+14	246	54	#line 246 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	247	54		mov __clasificar_granos_7qG2_r_7qG2_000, __leer_rgb_7qG2_r_7qG2_000
+14	246	56	#line 246 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	247	56		mov __clasificar_granos_7qG2_g_7qG2_000, __leer_rgb_7qG2_g_7qG2_000
+14	246	58	#line 246 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	247	58		mov __clasificar_granos_7qG2_b_7qG2_000, __leer_rgb_7qG2_b_7qG2_000
+14	246	60	#line 246 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	246	60	#line 246 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	247	60		mov __clasificar_grano_7qG2_r_7qG2_000, __clasificar_granos_7qG2_r_7qG2_000
+14	246	62	#line 246 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	246	62	#line 246 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	247	62		mov __clasificar_grano_7qG2_g_7qG2_000, __clasificar_granos_7qG2_g_7qG2_000
+14	246	64	#line 246 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	246	64	#line 246 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	247	64		mov __clasificar_grano_7qG2_b_7qG2_000, __clasificar_granos_7qG2_b_7qG2_000
+14	246	66	#line 246 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	248	66	#line 248 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	249	66		subcall clasificar_grano, __clasificar_grano_return
+14	248	68	#line 248 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	249	68		mov __clasificar_granos_7qG2_tipo_7qG2_003, __D0clasificar_grano
+14	248	70	#line 248 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	248	70	#line 248 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	249	70		mov __signed_stack_001clasificar_granos, __clasificar_granos_7qG2_tipo_7qG2_003
+14	248	72	#line 248 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	248	72	#line 248 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	249	72		set __D0clasificar_granos, 1
+14	248	75	#line 248 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	249	75		cmp 4, __D0clasificar_granos, __signed_stack_001clasificar_granos, __D0clasificar_granos
+14	249	79	#line 249 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	250	79		brtst 4, __ASM_Label_617, __D0clasificar_granos
+14	250	82	#line 250 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	251	82		subcall desviar_a_izquierda, __desviar_a_izquierda_return
+14	250	84	#line 250 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	250	84	#line 250 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	251	84		jmp __ASM_Label_618
+14	250	86	#line 250 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	251	86		mov __signed_stack_001clasificar_granos, __clasificar_granos_7qG2_tipo_7qG2_003
+14	250	88	#line 250 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	250	88	#line 250 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	251	88		set __D0clasificar_granos, 2
+14	250	91	#line 250 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	251	91		cmp 4, __D0clasificar_granos, __signed_stack_001clasificar_granos, __D0clasificar_granos
+14	251	95	#line 251 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	252	95		brtst 4, __ASM_Label_621, __D0clasificar_granos
+14	252	98	#line 252 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	253	98		subcall desviar_a_derecha, __desviar_a_derecha_return
+14	252	100	#line 252 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	257	100	#line 257 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	257	100	#line 257 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	257	100	#line 257 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	258	100		set __Wait_7qG2_ms_7qG2_000_inline_clasificar_granos, 400
+14	257	103	#line 257 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	8551	103	#line 8551 "NXCDefs.h"
+14	8552	103		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_clasificar_granos
+14	8551	106	#line 8551 "NXCDefs.h"
+14	258	106	#line 258 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	261	106	#line 261 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	261	106	#line 261 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	261	106	#line 261 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	262	106		set __Wait_7qG2_ms_7qG2_000_inline_clasificar_granos, 30
+14	261	109	#line 261 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	8551	109	#line 8551 "NXCDefs.h"
+14	8552	109		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_clasificar_granos
+14	8551	112	#line 8551 "NXCDefs.h"
+14	262	112	#line 262 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	271	112	#line 271 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	272	112		jmp __ASM_Label_593
+14	271	114	#line 271 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+14	272	114		exit -1, -1
+15	0	0		subret __clasificar_granos_Spawner_return
+16	0	0		exit 0, 1
+17	300	0	#line 300 "C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc"
+17	301	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+1	__RotateMotor1	186	NXTDefs.h
+2	__RotateMotor2	355	NXTDefs.h
+3	__ResetSensorSubroutine	524	NXTDefs.h
+4	leer_rgb	537	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+5	clasificar_grano	589	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+6	identificar_caja	719	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+7	desviar_a_izquierda	767	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+8	desviar_a_derecha	861	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+9	abrir_compuerta_izq	955	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+10	cerrar_compuerta_izq	993	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+11	abrir_compuerta_der	1030	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+12	cerrar_compuerta_der	1068	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+13	depositar_en_caja	1105	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+14	clasificar_granos	1168	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+15	__clasificar_granos_Returner	1285	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+16	__clasificar_granos_Spawner	1287	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc
+17	__initialize_global_data	1290	C:\Users\Miriam\Downloads\Claude - NXC\selector.nxc

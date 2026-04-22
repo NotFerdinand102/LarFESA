@@ -1,0 +1,712 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0ir_a_nivel_3	6	1	0	4	2
+1	__D0ir_a_nivel_2	6	1	4	4	2
+2	__D0leer_rgb	6	1	8	4	4
+3	__DU0main	5	1	12	4	4
+4	__D0main	6	1	16	4	14
+5	__D0ir_a_nivel_1	6	1	20	4	2
+6	__D0empujar_pelota	6	1	24	4	4
+7	__MRMutex	9	0	28	4	2
+8	__D0es_verde	6	1	32	4	12
+9	__D0escuchar_maestro	6	1	36	4	18
+10	__DU0es_verde	5	1	40	4	3
+11	__D0SetSensorLowspeed_inline_main	6	1	44	4	2
+12	__Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_3	5	1	48	4	4
+13	__Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_2	5	1	52	4	4
+14	__Wait_7qG2_ms_7qG2_000_inline_empujar_pelota	5	1	56	4	6
+15	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	60	4	4
+16	__Wait_7qG2_ms_7qG2_000_inline_escuchar_maestro	5	1	64	4	2
+17	__Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_1	5	1	68	4	4
+18	__signed_stack_001es_verde	6	1	72	4	6
+19	__DU0SetSensorLowspeed_inline_main	5	1	76	4	5
+20	__signed_stack_001escuchar_maestro	6	1	80	4	2
+21	__signed_stack_001main	6	1	84	4	2
+22	__signed_stack_001leer_rgb	6	1	88	4	6
+23	__ResetSensorMutex	9	0	92	4	4
+24	__OnRevMutex	9	0	96	4	4
+25	__RLSBmutex1	9	0	100	4	2
+26	__CLSRMutex1	9	0	104	4	2
+27	__CLSWMutex1	9	0	108	4	2
+28	__CLSCSMutex1	9	0	112	4	2
+29	__leer_rgb_7qG2_g_7qG2_000	4	1	116	2	3
+30	__leer_rgb_7qG2_r_7qG2_000	4	1	118	2	3
+31	__leer_rgb_7qG2_b_7qG2_000	4	1	120	2	3
+32	__main_7qG2_g_7qG2_000	4	1	122	2	3
+33	__main_7qG2_b_7qG2_000	4	1	124	2	3
+34	__main_7qG2_dist_7qG2_000	4	1	126	2	2
+35	__main_7qG2_r_7qG2_000	4	1	128	2	3
+36	__es_verde_7qG2_r_7qG2_000	4	1	130	2	2
+37	__es_verde_7qG2_g_7qG2_000	4	1	132	2	2
+38	__es_verde_7qG2_b_7qG2_000	4	1	134	2	2
+39	__constVal13	2	0	136	1	1
+40	__empujar_pelota_return	1	1	137	1	3
+41	__OnRev_Tmp	2	1	138	1	4
+42	__SetSensorColorFull_7qG2_port_7qG2_000_inline_main	1	1	139	1	4
+43	____initialize_global_data_return	1	1	140	1	3
+44	__constVal32	2	0	141	1	30
+45	__constVal0	2	1	142	1	45
+46	__constVal63	2	0	143	1	10
+47	__ir_a_nivel_2_return	1	1	144	1	4
+48	__ir_a_nivel_3_return	1	1	145	1	3
+49	__constVal1	2	0	146	1	9
+50	__escuchar_maestro_Spawner_return	1	1	147	1	1
+51	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	148	1	2
+52	__RLSBIterations1	1	1	149	1	4
+53	__RLSBResult1	2	1	150	1	7
+54	__RLSBytesCount1	1	1	151	1	7
+55	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	152	1	2
+56	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	153	1	2
+57	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	154	1	4
+58	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	155	1	2
+59	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	156	1	2
+60	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	157	1	2
+61	__constVal96	2	0	158	1	10
+62	__constVal3	2	0	159	1	10
+63	cosechando	1	1	160	1	10
+64	____ReadLSBytes1_return	1	1	161	1	3
+65	__ResetSensorPort	1	1	162	1	4
+66	__LSWriteOptions1	1	1	163	1	1
+67	____ResetSensorSubroutine_return	1	1	164	1	4
+68	__ResetSensorTmp	1	1	165	1	2
+69	__constVal15	2	0	166	1	2
+70	__es_verde_return	1	1	167	1	4
+71	__leer_rgb_return	1	1	168	1	3
+72	__PFTmp	1	1	169	1	1
+73	__ir_a_nivel_1_return	1	1	170	1	4
+74	__CLSRArgs1	8	0	4	12	5
+75	__CLSRArgs1.Result	2	1	172	1	5
+76	__CLSRArgs1.Port	1	1	173	1	5
+77	__CLSRArgs1.Buffer	7	0	174	4	5
+78	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+79	__CLSRArgs1.BufferLen	1	1	176	1	5
+80	__ColorSensorReadArgs	8	0	7	20	4
+81	__ColorSensorReadArgs.Result	2	1	180	1	4
+82	__ColorSensorReadArgs.Port	1	1	181	1	4
+83	__ColorSensorReadArgs.ColorValue	4	1	182	2	4
+84	__ColorSensorReadArgs.RawArray	7	0	184	4	4
+85	__ColorSensorReadArgs.RawArray.RawArray_type	3	0	0	2	0
+86	__ColorSensorReadArgs.NormalizedArray	7	0	186	4	4
+87	__ColorSensorReadArgs.NormalizedArray.NormalizedArray_type	3	0	0	2	0
+88	__ColorSensorReadArgs.ScaledArray	7	0	188	4	4
+89	__ColorSensorReadArgs.ScaledArray.ScaledArray_type	4	0	0	2	0
+90	__ColorSensorReadArgs.Invalid	1	1	190	1	4
+91	__CLSCSArgs1	8	0	3	4	4
+92	__CLSCSArgs1.Result	2	1	192	1	4
+93	__CLSCSArgs1.Port	1	1	193	1	4
+94	__CLSCSArgs1.BytesReady	1	1	194	1	4
+95	__CLSWArgs1	8	0	4	12	5
+96	__CLSWArgs1.Result	2	1	196	1	5
+97	__CLSWArgs1.Port	1	1	197	1	5
+98	__CLSWArgs1.Buffer	7	0	198	4	5
+99	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+100	__CLSWArgs1.ReturnLen	1	1	200	1	5
+101	__MRArgs	8	0	4	8	5
+102	__MRArgs.Result	2	1	204	1	5
+103	__MRArgs.QueueID	1	1	205	1	5
+104	__MRArgs.Remove	1	1	206	1	5
+105	__MRArgs.Message	7	0	208	4	5
+106	__MRArgs.Message.Message_type	1	0	0	1	0
+107	__strbufescuchar_maestro	7	0	210	4	18
+108	__strbufescuchar_maestro.__strbufescuchar_maestro_type	1	0	0	1	0
+109	__RLSReadBuf1	7	0	212	4	8
+110	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+111	__constStr0010	7	0	214	4	1
+112	__constStr0010.__constStr0010_type	1	1	0	1	0
+113	__OUT_AB	7	0	216	4	1
+114	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+115	__escuchar_maestro_7qG2_msg_7qG2_000	7	0	218	4	6
+116	__escuchar_maestro_7qG2_msg_7qG2_000.__escuchar_maestro_7qG2_msg_7qG2_000_type	1	0	0	1	0
+117	__constStr0009	7	0	220	4	1
+118	__constStr0009.__constStr0009_type	1	1	0	1	0
+119	__strtmpbufescuchar_maestro	7	0	222	4	8
+120	__strtmpbufescuchar_maestro.__strtmpbufescuchar_maestro_type	1	0	0	1	0
+121	__constStr0013	7	0	224	4	1
+122	__constStr0013.__constStr0013_type	1	1	0	1	0
+123	__RLSBbufLSWrite1	7	0	226	4	1
+124	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+125	__leer_rgb_7qG2_raw_vals_7qG2_000	7	0	228	4	4
+126	__leer_rgb_7qG2_raw_vals_7qG2_000.__leer_rgb_7qG2_raw_vals_7qG2_000_type	3	0	0	2	0
+127	__constStr0011	7	0	230	4	1
+128	__constStr0011.__constStr0011_type	1	1	0	1	0
+129	__constStr0012	7	0	232	4	1
+130	__constStr0012.__constStr0012_type	1	1	0	1	0
+131	__RLSLastGoodRead1	7	0	234	4	2
+132	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	182	0	#line 182 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	183	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	182	2	#line 182 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	182	2	#line 182 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	183	2		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	182	5	#line 182 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	4386	5	#line 4386 "NXCDefs.h"
+0	4387	5	#pragma macro 6
+0	4387	5		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	4387	9		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 1
+0	4387	13		acquire __ResetSensorMutex
+0	4387	14		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main
+0	4387	16		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4387	18		release __ResetSensorMutex
+0	4585	19	#line 4585 "NXCDefs.h"
+0	4386	19	#line 4386 "NXCDefs.h"
+0	183	19	#line 183 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	183	19	#line 183 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	184	19		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 1
+0	183	22	#line 183 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	186	22	#line 186 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	187	22		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	4342	24	#line 4342 "NXCDefs.h"
+0	4343	24		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4342	26	#line 4342 "NXCDefs.h"
+0	4342	26	#line 4342 "NXCDefs.h"
+0	4343	26		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	4342	28	#line 4342 "NXCDefs.h"
+0	4343	28		tst 5, __D0SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4342	31	#line 4342 "NXCDefs.h"
+0	4343	31		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_main
+0	4342	34	#line 4342 "NXCDefs.h"
+0	4343	34		set __DU0SetSensorLowspeed_inline_main, 11
+0	4342	37	#line 4342 "NXCDefs.h"
+0	4342	37	#line 4342 "NXCDefs.h"
+0	4343	37		jmp __004__ASM_Label_37
+0	4342	39	#line 4342 "NXCDefs.h"
+0	4343	39		set __DU0SetSensorLowspeed_inline_main, 10
+0	4342	42	#line 4342 "NXCDefs.h"
+0	4342	42	#line 4342 "NXCDefs.h"
+0	4343	42		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4247	44	#line 4247 "NXCDefs.h"
+0	4248	44		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4247	48	#line 4247 "NXCDefs.h"
+0	4343	48	#line 4343 "NXCDefs.h"
+0	4343	48	#line 4343 "NXCDefs.h"
+0	4344	48		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4343	50	#line 4343 "NXCDefs.h"
+0	4343	50	#line 4343 "NXCDefs.h"
+0	4344	50		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4343	53	#line 4343 "NXCDefs.h"
+0	4260	53	#line 4260 "NXCDefs.h"
+0	4261	53		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	4260	57	#line 4260 "NXCDefs.h"
+0	4344	57	#line 4344 "NXCDefs.h"
+0	4344	57	#line 4344 "NXCDefs.h"
+0	4345	57		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4344	59	#line 4344 "NXCDefs.h"
+0	4278	59	#line 4278 "NXCDefs.h"
+0	4279	59	#pragma macro 4
+0	4279	59		acquire __ResetSensorMutex
+0	4279	60		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main
+0	4279	62		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4279	64		release __ResetSensorMutex
+0	4675	65	#line 4675 "NXCDefs.h"
+0	4278	65	#line 4278 "NXCDefs.h"
+0	4345	65	#line 4345 "NXCDefs.h"
+0	186	65	#line 186 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	188	65	#line 188 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	189	65		subcall __escuchar_maestro_Spawner, __escuchar_maestro_Spawner_return
+0	188	67	#line 188 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	191	67	#line 191 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	192	67		set __D0main, 1
+0	192	70	#line 192 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	193	70		tst 5, __D0main, __D0main
+0	192	73	#line 192 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	193	73		brtst 4, __ASM_Label_579, __D0main
+0	192	76	#line 192 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	193	76		mov __DU0main, cosechando
+0	195	78	#line 195 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	196	78		tst 5, __D0main, __DU0main
+0	195	81	#line 195 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	196	81		brtst 4, __ASM_Label_584, __D0main
+0	195	84	#line 195 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	196	84	#pragma macro 26
+0	196	84		acquire __RLSBmutex1
+0	196	85		mov __RLSReadBuf1, __RLSBbufLSWrite1
+0	196	87		set __RLSBytesCount1, 1
+0	196	90		wait2 NA, __constVal15
+0	196	93		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+0	196	95		index __D0main, __RLSReadBuf1, 65535
+0	196	99		release __RLSBmutex1
+0	4714	100	#line 4714 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	195	100	#line 195 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	196	100		mov __main_7qG2_dist_7qG2_000, __D0main
+0	195	102	#line 195 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	195	102	#line 195 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	198	102	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	199	102		mov __leer_rgb_7qG2_r_7qG2_000, __main_7qG2_r_7qG2_000
+0	198	104	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	199	104		mov __leer_rgb_7qG2_g_7qG2_000, __main_7qG2_g_7qG2_000
+0	198	106	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	199	106		mov __leer_rgb_7qG2_b_7qG2_000, __main_7qG2_b_7qG2_000
+0	207	108	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	108		subcall leer_rgb, __leer_rgb_return
+0	207	110	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	110		mov __main_7qG2_r_7qG2_000, __leer_rgb_7qG2_r_7qG2_000
+0	207	112	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	112		mov __main_7qG2_g_7qG2_000, __leer_rgb_7qG2_g_7qG2_000
+0	207	114	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	114		mov __main_7qG2_b_7qG2_000, __leer_rgb_7qG2_b_7qG2_000
+0	207	116	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	207	116	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	116		mov __signed_stack_001main, __main_7qG2_dist_7qG2_000
+0	207	118	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	207	118	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	118		set __D0main, 10
+0	207	121	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	121		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	207	125	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	125		brtst 4, __ASM_Label_588, __D0main
+0	207	128	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	128		mov __es_verde_7qG2_r_7qG2_000, __main_7qG2_r_7qG2_000
+0	207	130	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	207	130	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	130		mov __es_verde_7qG2_g_7qG2_000, __main_7qG2_g_7qG2_000
+0	207	132	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	207	132	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	132		mov __es_verde_7qG2_b_7qG2_000, __main_7qG2_b_7qG2_000
+0	207	134	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	207	134	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	134		subcall es_verde, __es_verde_return
+0	207	136	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	207	136	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	136		not __DU0main, __DU0es_verde
+0	207	139	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	208	139		tst 5, __D0main, __DU0main
+0	211	142	#line 211 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	212	142		brtst 4, __ASM_Label_595, __D0main
+0	213	145	#line 213 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	214	145		set cosechando, 0
+0	213	148	#line 213 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	213	148	#line 213 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	217	148	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	218	148		subcall empujar_pelota, __empujar_pelota_return
+0	217	150	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	217	150	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	218	150		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	217	153	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	8551	153	#line 8551 "NXCDefs.h"
+0	8552	153		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	156	#line 8551 "NXCDefs.h"
+0	219	156	#line 219 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	220	156	#line 220 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	221	156		set cosechando, 1
+0	220	159	#line 220 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	220	159	#line 220 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	226	159	#line 226 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	226	159	#line 226 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	226	159	#line 226 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	227	159		set __Wait_7qG2_ms_7qG2_000_inline_main, 60
+0	226	162	#line 226 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	8551	162	#line 8551 "NXCDefs.h"
+0	8552	162		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	165	#line 8551 "NXCDefs.h"
+0	227	165	#line 227 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	230	165	#line 230 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	231	165		jmp __ASM_Label_578
+0	230	167	#line 230 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+0	231	167		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	6319	0	#pragma macro 25
+2	6319	0		acquire __CLSWMutex1
+2	6319	1		or __CLSWArgs1.Port, __constVal1, __LSWriteOptions1
+2	6319	5		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+2	6319	7		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+2	6319	9		syscall 21, __CLSWArgs1
+2	6319	12		mov __RLSBResult1, __CLSWArgs1.Result
+2	6319	14		release __CLSWMutex1
+2	6319	15	#line 6319 "NXTDefs.h"
+2	6320	15		brtst 5, __RLSBError1, __RLSBResult1
+2	6321	18		set __RLSBIterations1, 60
+2	6323	21	#pragma macro 23
+2	6323	21		acquire __CLSCSMutex1
+2	6323	22		set __CLSCSArgs1.Port, 1
+2	6323	25		syscall 23, __CLSCSArgs1
+2	6323	28		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+2	6323	30		mov __RLSBResult1, __CLSCSArgs1.Result
+2	6323	32		release __CLSCSMutex1
+2	6323	33	#line 6323 "NXTDefs.h"
+2	6324	33		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+2	6325	37		brtst 2, __RLSBError1, __RLSBIterations1
+2	6326	40		brtst 0, __RLSBError1, __RLSBResult1
+2	6327	43		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+2	6329	46		wait2 NA, __constVal1
+2	6330	49		jmp __RLSBDoCheckStatus1
+2	6332	51		brtst 4, __RLSBReturn1, __RLSBytesCount1
+2	6333	54		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+2	6335	58	#pragma macro 25
+2	6335	58		acquire __CLSRMutex1
+2	6335	59		set __CLSRArgs1.Port, 1
+2	6335	62		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+2	6335	64		syscall 22, __CLSRArgs1
+2	6335	67		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+2	6335	69		mov __RLSBResult1, __CLSRArgs1.Result
+2	6335	71		release __CLSRMutex1
+2	6335	72	#line 6335 "NXTDefs.h"
+2	6336	72		brtst 5, __RLSBError1, __RLSBResult1
+2	6337	75		mov __RLSLastGoodRead1, __RLSReadBuf1
+2	6338	77		jmp __RLSBDone1
+2	6340	79		mov __RLSReadBuf1, __RLSLastGoodRead1
+2	6342	81		arrsize __RLSBytesCount1, __RLSReadBuf1
+2	6344	84		subret ____ReadLSBytes1_return
+3	80	0	#line 80 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	81	0	#pragma macro 6
+3	81	0		mov __ColorSensorReadArgs.Port, __constVal0
+3	81	2		syscall 34, __ColorSensorReadArgs
+3	81	5		mov __leer_rgb_7qG2_raw_vals_7qG2_000, __ColorSensorReadArgs.RawArray
+3	81	7		tst 4, __D0leer_rgb, __ColorSensorReadArgs.Result
+3	4134	10	#line 4134 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	81	10	#line 81 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	82	10		tst 5, __D0leer_rgb, __D0leer_rgb
+3	81	13	#line 81 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	82	13		brtst 4, __ASM_Label_491, __D0leer_rgb
+3	81	16	#line 81 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	82	16		set __signed_stack_001leer_rgb, 0
+3	81	19	#line 81 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	81	19	#line 81 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	82	19		index __leer_rgb_7qG2_r_7qG2_000, __leer_rgb_7qG2_raw_vals_7qG2_000, __signed_stack_001leer_rgb
+3	81	23	#line 81 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	82	23	#line 82 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	82	23	#line 82 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	82	23	#line 82 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	83	23		set __signed_stack_001leer_rgb, 1
+3	82	26	#line 82 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	82	26	#line 82 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	83	26		index __leer_rgb_7qG2_g_7qG2_000, __leer_rgb_7qG2_raw_vals_7qG2_000, __signed_stack_001leer_rgb
+3	82	30	#line 82 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	83	30	#line 83 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	83	30	#line 83 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	83	30	#line 83 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	84	30		set __signed_stack_001leer_rgb, 2
+3	83	33	#line 83 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	83	33	#line 83 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	84	33		index __leer_rgb_7qG2_b_7qG2_000, __leer_rgb_7qG2_raw_vals_7qG2_000, __signed_stack_001leer_rgb
+3	83	37	#line 83 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	84	37	#line 84 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	84	37	#line 84 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	88	37	#line 88 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	88	37	#line 88 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+3	89	37		subret __leer_rgb_return
+4	89	0	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	90	0		mov __signed_stack_001es_verde, __es_verde_7qG2_g_7qG2_000
+4	89	2	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	89	2	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	90	2		set __D0es_verde, 90
+4	89	5	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	90	5		cmp 1, __D0es_verde, __signed_stack_001es_verde, __D0es_verde
+4	89	9	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	90	9		brtst 4, __ASM_Label_507, __D0es_verde
+4	89	12	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	90	12		mov __signed_stack_001es_verde, __es_verde_7qG2_r_7qG2_000
+4	89	14	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	89	14	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	90	14		set __D0es_verde, 75
+4	89	17	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	90	17		cmp 0, __D0es_verde, __signed_stack_001es_verde, __D0es_verde
+4	89	21	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	90	21		brtst 4, __ASM_Label_507, __D0es_verde
+4	89	24	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	90	24		mov __signed_stack_001es_verde, __es_verde_7qG2_b_7qG2_000
+4	89	26	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	89	26	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	90	26		set __D0es_verde, 75
+4	89	29	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	90	29		cmp 0, __D0es_verde, __signed_stack_001es_verde, __D0es_verde
+4	90	33	#line 90 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	91	33		mov __DU0es_verde, __D0es_verde
+4	90	35	#line 90 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	91	35		subret __es_verde_return
+4	90	37	#line 90 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	98	37	#line 98 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+4	99	37		subret __es_verde_return
+5	100	0	#line 100 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	101	0		set __D0ir_a_nivel_1, 50
+5	101	3	#line 101 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	102	3	#pragma macro 10
+5	102	3		acquire __OnRevMutex
+5	102	4		neg __OnRev_Tmp, __D0ir_a_nivel_1
+5	102	7		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	102	30		release __OnRevMutex
+5	4262	31	#line 4262 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	101	31	#line 101 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	101	31	#line 101 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	102	31		set __Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_1, 1600
+5	101	34	#line 101 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	8551	34	#line 8551 "NXCDefs.h"
+5	8552	34		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_1
+5	8551	37	#line 8551 "NXCDefs.h"
+5	102	37	#line 102 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	103	37	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	104	37	#pragma macro 7
+5	104	37		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	4277	60	#line 4277 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	103	60	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	103	60	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	104	60		set __Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_1, 150
+5	103	63	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	8551	63	#line 8551 "NXCDefs.h"
+5	8552	63		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_1
+5	8551	66	#line 8551 "NXCDefs.h"
+5	104	66	#line 104 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	106	66	#line 106 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+5	107	66		subret __ir_a_nivel_1_return
+6	108	0	#line 108 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	109	0		subcall ir_a_nivel_1, __ir_a_nivel_1_return
+6	108	2	#line 108 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	108	2	#line 108 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	109	2		set __D0ir_a_nivel_2, 50
+6	109	5	#line 109 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	110	5	#pragma macro 7
+6	110	5		setout __constVal0, 2, __D0ir_a_nivel_2, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4298	28	#line 4298 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	109	28	#line 109 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	109	28	#line 109 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	110	28		set __Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_2, 700
+6	109	31	#line 109 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	8551	31	#line 8551 "NXCDefs.h"
+6	8552	31		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_2
+6	8551	34	#line 8551 "NXCDefs.h"
+6	110	34	#line 110 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	111	34	#line 111 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	112	34	#pragma macro 7
+6	112	34		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4313	57	#line 4313 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	111	57	#line 111 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	111	57	#line 111 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	112	57		set __Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_2, 150
+6	111	60	#line 111 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	8551	60	#line 8551 "NXCDefs.h"
+6	8552	60		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_2
+6	8551	63	#line 8551 "NXCDefs.h"
+6	112	63	#line 112 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	114	63	#line 114 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+6	115	63		subret __ir_a_nivel_2_return
+7	116	0	#line 116 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	117	0		subcall ir_a_nivel_2, __ir_a_nivel_2_return
+7	116	2	#line 116 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	116	2	#line 116 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	117	2		set __D0ir_a_nivel_3, 50
+7	117	5	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	118	5	#pragma macro 7
+7	118	5		setout __constVal0, 2, __D0ir_a_nivel_3, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4334	28	#line 4334 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	117	28	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	117	28	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	118	28		set __Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_3, 700
+7	117	31	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	8551	31	#line 8551 "NXCDefs.h"
+7	8552	31		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_3
+7	8551	34	#line 8551 "NXCDefs.h"
+7	118	34	#line 118 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	119	34	#line 119 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	120	34	#pragma macro 7
+7	120	34		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4349	57	#line 4349 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	119	57	#line 119 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	119	57	#line 119 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	120	57		set __Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_3, 150
+7	119	60	#line 119 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	8551	60	#line 8551 "NXCDefs.h"
+7	8552	60		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_ir_a_nivel_3
+7	8551	63	#line 8551 "NXCDefs.h"
+7	120	63	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	129	63	#line 129 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+7	130	63		subret __ir_a_nivel_3_return
+8	131	0	#line 131 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	132	0		set __D0empujar_pelota, 65
+8	132	3	#line 132 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	133	3	#pragma macro 7
+8	133	3		setout __constVal1, 2, __D0empujar_pelota, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4367	26	#line 4367 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	132	26	#line 132 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	132	26	#line 132 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	133	26		set __Wait_7qG2_ms_7qG2_000_inline_empujar_pelota, 350
+8	132	29	#line 132 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	8551	29	#line 8551 "NXCDefs.h"
+8	8552	29		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_empujar_pelota
+8	8551	32	#line 8551 "NXCDefs.h"
+8	134	32	#line 134 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	134	32	#line 134 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	135	32		set __D0empujar_pelota, 65
+8	135	35	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	136	35	#pragma macro 10
+8	136	35		acquire __OnRevMutex
+8	136	36		neg __OnRev_Tmp, __D0empujar_pelota
+8	136	39		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	136	62		release __OnRevMutex
+8	4384	63	#line 4384 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	135	63	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	135	63	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	136	63		set __Wait_7qG2_ms_7qG2_000_inline_empujar_pelota, 350
+8	135	66	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	8551	66	#line 8551 "NXCDefs.h"
+8	8552	66		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_empujar_pelota
+8	8551	69	#line 8551 "NXCDefs.h"
+8	136	69	#line 136 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	137	69	#line 137 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	138	69	#pragma macro 7
+8	138	69		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4395	92	#line 4395 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	137	92	#line 137 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	137	92	#line 137 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	138	92		set __Wait_7qG2_ms_7qG2_000_inline_empujar_pelota, 100
+8	137	95	#line 137 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	8551	95	#line 8551 "NXCDefs.h"
+8	8552	95		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_empujar_pelota
+8	8551	98	#line 8551 "NXCDefs.h"
+8	138	98	#line 138 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	147	98	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+8	148	98		subret __empujar_pelota_return
+9	149	0	#line 149 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	150	0		strcat __strbufescuchar_maestro, __constStr0009
+9	149	4	#line 149 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	150	4		mov __escuchar_maestro_7qG2_msg_7qG2_000, __strbufescuchar_maestro
+9	149	6	#line 149 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	150	6		set __D0escuchar_maestro, 1
+9	150	9	#line 150 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	151	9		tst 5, __D0escuchar_maestro, __D0escuchar_maestro
+9	150	12	#line 150 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	151	12		brtst 4, __ASM_Label_537, __D0escuchar_maestro
+9	150	15	#line 150 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	151	15	#pragma macro 7
+9	151	15		acquire __MRMutex
+9	151	16		mov __MRArgs.QueueID, __constVal0
+9	151	18		mov __MRArgs.Remove, __constVal1
+9	151	20		syscall 27, __MRArgs
+9	151	23		mov __escuchar_maestro_7qG2_msg_7qG2_000, __MRArgs.Message
+9	151	25		mov __D0escuchar_maestro, __MRArgs.Result
+9	151	27		release __MRMutex
+9	4426	28	#line 4426 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	150	28	#line 150 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	151	28		mov __signed_stack_001escuchar_maestro, __D0escuchar_maestro
+9	150	30	#line 150 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	151	30		set __D0escuchar_maestro, 0
+9	150	33	#line 150 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	151	33		cmp 4, __D0escuchar_maestro, __signed_stack_001escuchar_maestro, __D0escuchar_maestro
+9	152	37	#line 152 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	153	37		brtst 4, __ASM_Label_542, __D0escuchar_maestro
+9	152	40	#line 152 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	153	40		strcat __strbufescuchar_maestro, __escuchar_maestro_7qG2_msg_7qG2_000
+9	152	44	#line 152 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	153	44		mov __strtmpbufescuchar_maestro, __strbufescuchar_maestro
+9	152	46	#line 152 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	153	46		strcat __strbufescuchar_maestro, __constStr0010
+9	152	50	#line 152 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	153	50		cmp 4, __D0escuchar_maestro, __strtmpbufescuchar_maestro, __strbufescuchar_maestro
+9	153	54	#line 153 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	154	54		brtst 4, __ASM_Label_545, __D0escuchar_maestro
+9	154	57	#line 154 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	155	57		set cosechando, 0
+9	154	60	#line 154 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	154	60	#line 154 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	155	60	#line 155 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	156	60		subcall ir_a_nivel_1, __ir_a_nivel_1_return
+9	155	62	#line 155 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	157	62	#line 157 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	158	62		set cosechando, 1
+9	157	65	#line 157 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	157	65	#line 157 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	157	65	#line 157 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	158	65		jmp __ASM_Label_550
+9	157	67	#line 157 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	158	67		strcat __strbufescuchar_maestro, __escuchar_maestro_7qG2_msg_7qG2_000
+9	157	71	#line 157 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	158	71		mov __strtmpbufescuchar_maestro, __strbufescuchar_maestro
+9	157	73	#line 157 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	158	73		strcat __strbufescuchar_maestro, __constStr0011
+9	157	77	#line 157 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	158	77		cmp 4, __D0escuchar_maestro, __strtmpbufescuchar_maestro, __strbufescuchar_maestro
+9	158	81	#line 158 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	159	81		brtst 4, __ASM_Label_553, __D0escuchar_maestro
+9	159	84	#line 159 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	160	84		set cosechando, 0
+9	159	87	#line 159 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	159	87	#line 159 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	160	87	#line 160 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	161	87		subcall ir_a_nivel_2, __ir_a_nivel_2_return
+9	160	89	#line 160 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	162	89	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	163	89		set cosechando, 1
+9	162	92	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	162	92	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	162	92	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	163	92		jmp __ASM_Label_558
+9	162	94	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	163	94		strcat __strbufescuchar_maestro, __escuchar_maestro_7qG2_msg_7qG2_000
+9	162	98	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	163	98		mov __strtmpbufescuchar_maestro, __strbufescuchar_maestro
+9	162	100	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	163	100		strcat __strbufescuchar_maestro, __constStr0012
+9	162	104	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	163	104		cmp 4, __D0escuchar_maestro, __strtmpbufescuchar_maestro, __strbufescuchar_maestro
+9	163	108	#line 163 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	164	108		brtst 4, __ASM_Label_561, __D0escuchar_maestro
+9	164	111	#line 164 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	165	111		set cosechando, 0
+9	164	114	#line 164 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	164	114	#line 164 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	165	114	#line 165 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	166	114		subcall ir_a_nivel_3, __ir_a_nivel_3_return
+9	165	116	#line 165 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	167	116	#line 167 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	168	116		set cosechando, 1
+9	167	119	#line 167 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	167	119	#line 167 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	167	119	#line 167 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	168	119		jmp __ASM_Label_566
+9	167	121	#line 167 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	168	121		strcat __strbufescuchar_maestro, __escuchar_maestro_7qG2_msg_7qG2_000
+9	167	125	#line 167 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	168	125		mov __strtmpbufescuchar_maestro, __strbufescuchar_maestro
+9	167	127	#line 167 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	168	127		strcat __strbufescuchar_maestro, __constStr0013
+9	167	131	#line 167 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	168	131		cmp 4, __D0escuchar_maestro, __strtmpbufescuchar_maestro, __strbufescuchar_maestro
+9	168	135	#line 168 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	169	135		brtst 4, __ASM_Label_569, __D0escuchar_maestro
+9	169	138	#line 169 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	170	138		set cosechando, 0
+9	169	141	#line 169 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	169	141	#line 169 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	170	141	#line 170 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	171	141	#pragma macro 7
+9	171	141		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	4541	164	#line 4541 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	170	164	#line 170 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	172	164	#line 172 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	172	164	#line 172 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	172	164	#line 172 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	172	164	#line 172 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	172	164	#line 172 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	172	164	#line 172 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	173	164		set __Wait_7qG2_ms_7qG2_000_inline_escuchar_maestro, 20
+9	172	167	#line 172 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	8551	167	#line 8551 "NXCDefs.h"
+9	8552	167		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_escuchar_maestro
+9	8551	170	#line 8551 "NXCDefs.h"
+9	173	170	#line 173 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	181	170	#line 181 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	182	170		jmp __ASM_Label_536
+9	181	172	#line 181 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+9	182	172		exit -1, -1
+10	0	0		subret __escuchar_maestro_Spawner_return
+11	0	0		exit 0, 1
+12	231	0	#line 231 "C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc"
+12	232	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc
+1	__ResetSensorSubroutine	170	NXTDefs.h
+2	__ReadLSBytes1	183	NXTDefs.h
+3	leer_rgb	269	C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc
+4	es_verde	308	C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc
+5	ir_a_nivel_1	347	C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc
+6	ir_a_nivel_2	415	C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc
+7	ir_a_nivel_3	480	C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc
+8	empujar_pelota	545	C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc
+9	escuchar_maestro	645	C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc
+10	__escuchar_maestro_Returner	820	C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc
+11	__escuchar_maestro_Spawner	822	C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc
+12	__initialize_global_data	825	C:\Users\Miriam\Downloads\Claude - NXC\garra.nxc

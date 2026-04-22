@@ -1,0 +1,1623 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0SetSensorLight_inline_main	6	1	0	4	6
+1	__DU0main	5	1	4	4	20
+2	__D0main	6	1	8	4	174
+3	__DU0SetSensorLowspeed_inline_main	5	1	12	4	5
+4	__D0SetSensorLowspeed_inline_main	6	1	16	4	2
+5	__DU0SetSensorLight_inline_main	5	1	20	4	15
+6	__D0izquierda	6	1	24	4	12
+7	__D0adelante	6	1	28	4	4
+8	__SPTArgsMutex	9	0	32	4	4
+9	__SRSTmpLongVal	6	1	36	4	2
+10	__D0evasion	6	1	40	4	28
+11	__D0derecha	6	1	44	4	12
+12	__D0atras	6	1	48	4	4
+13	__signed_stack_001derecha	6	1	52	4	6
+14	__Wait_7qG2_ms_7qG2_000_inline_parar	5	1	56	4	2
+15	__Wait_7qG2_ms_7qG2_000_inline_izquierda	5	1	60	4	2
+16	__Wait_7qG2_ms_7qG2_000_inline_derecha	5	1	64	4	2
+17	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	68	4	12
+18	__Wait_7qG2_ms_7qG2_000_inline_evasion	5	1	72	4	2
+19	__Wait_7qG2_ms_7qG2_000_inline_enviarCmd	5	1	76	4	2
+20	__Wait_7qG2_ms_7qG2_000_inline_atras	5	1	80	4	2
+21	__signed_stack_001main	6	1	84	4	76
+22	__signed_stack_001izquierda	6	1	88	4	6
+23	__signed_stack_001evasion	6	1	92	4	14
+24	__Wait_7qG2_ms_7qG2_000_inline_adelante	5	1	96	4	2
+25	__signed_stack_003main	6	1	100	4	4
+26	__signed_stack_002main	6	1	104	4	4
+27	__OnRevMutex	9	0	108	4	10
+28	__RLSBmutex3	9	0	112	4	18
+29	__CLSCSMutex3	9	0	116	4	2
+30	__CLSRMutex3	9	0	120	4	2
+31	__CLSWMutex3	9	0	124	4	2
+32	__atras_7qG2_ms_7qG2_000	4	1	128	2	4
+33	__derecha_7qG2_vel_7qG2_000	4	1	130	2	10
+34	__atras_7qG2_vel_7qG2_000	4	1	132	2	5
+35	__adelante_7qG2_vel_7qG2_000	4	1	134	2	5
+36	__adelante_7qG2_ms_7qG2_000	4	1	136	2	4
+37	__main_7qG2_ul_7qG2_001	4	1	138	2	6
+38	__evasion_7qG2_intentos_7qG2_000	4	1	140	2	5
+39	__main_7qG2_cajas_7qG2_000	4	1	142	2	5
+40	__main_7qG2_n_7qG2_000	4	1	144	2	7
+41	__enviarCmd_7qG2_cmd_7qG2_000	4	1	146	2	9
+42	__izquierda_7qG2_vel_7qG2_000	4	1	148	2	8
+43	__derecha_7qG2_ms_7qG2_000	4	1	150	2	8
+44	__enviarCmd_7qG2_conn_7qG2_000	4	1	152	2	9
+45	__izquierda_7qG2_ms_7qG2_000	4	1	154	2	6
+46	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	156	1	15
+47	____initialize_global_data_return	1	1	157	1	3
+48	__OnRev_Tmp	2	1	158	1	10
+49	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	159	1	6
+50	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	160	1	6
+51	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	161	1	6
+52	__parar_return	1	1	162	1	16
+53	__constVal1	2	0	163	1	20
+54	__izquierda_return	1	1	164	1	7
+55	__evasion_return	1	1	165	1	10
+56	__enviarCmd_return	1	1	166	1	10
+57	__constVal32	2	0	167	1	33
+58	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	168	1	2
+59	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	169	1	2
+60	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	170	1	2
+61	__main_7qG2_salido_7qG2_000	1	1	171	1	3
+62	__main_7qG2_bt_sel_7qG2_000	1	1	172	1	4
+63	__main_7qG2_bt_garra_7qG2_000	1	1	173	1	6
+64	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	174	1	3
+65	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	175	1	6
+66	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	176	1	6
+67	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	177	1	2
+68	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	178	1	2
+69	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	179	1	4
+70	__PFTmp	1	1	180	1	1
+71	__constVal96	2	0	181	1	11
+72	__adelante_return	1	1	182	1	5
+73	__constVal63	2	0	183	1	11
+74	__RLSBResult3	2	1	184	1	7
+75	__constVal5	2	0	185	1	1
+76	____ReadLSBytes3_return	1	1	186	1	11
+77	__constVal2	2	0	187	1	12
+78	__LSWriteOptions3	1	1	188	1	1
+79	____ResetSensorSubroutine_return	1	1	189	1	6
+80	__ResetSensorPort	1	1	190	1	6
+81	__ResetSensorTmp	1	1	191	1	2
+82	__RLSBytesCount3	1	1	192	1	15
+83	__constVal15	2	0	193	1	18
+84	__RLSBIterations3	1	1	194	1	4
+85	__derecha_return	1	1	195	1	9
+86	__constVal0	2	1	196	1	46
+87	__constVal3	2	0	197	1	14
+88	__atras_return	1	1	198	1	5
+89	__CBTCSArgs	8	0	2	4	6
+90	__CBTCSArgs.Result	2	1	200	1	6
+91	__CBTCSArgs.Connection	1	1	201	1	6
+92	__CLSWArgs3	8	0	4	12	5
+93	__CLSWArgs3.Result	2	1	204	1	5
+94	__CLSWArgs3.Port	1	1	205	1	5
+95	__CLSWArgs3.Buffer	7	0	206	4	5
+96	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+97	__CLSWArgs3.ReturnLen	1	1	208	1	5
+98	__CBTWArgs	8	0	3	8	3
+99	__CBTWArgs.Result	2	1	212	1	3
+100	__CBTWArgs.Connection	1	1	213	1	3
+101	__CBTWArgs.Buffer	7	0	214	4	3
+102	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
+103	__CLSRArgs3	8	0	4	12	5
+104	__CLSRArgs3.Result	2	1	216	1	5
+105	__CLSRArgs3.Port	1	1	217	1	5
+106	__CLSRArgs3.Buffer	7	0	218	4	5
+107	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+108	__CLSRArgs3.BufferLen	1	1	220	1	5
+109	__CLSCSArgs3	8	0	3	4	4
+110	__CLSCSArgs3.Result	2	1	224	1	4
+111	__CLSCSArgs3.Port	1	1	225	1	4
+112	__CLSCSArgs3.BytesReady	1	1	226	1	4
+113	__SPTArgs	8	0	5	8	12
+114	__SPTArgs.Result	2	1	228	1	12
+115	__SPTArgs.Frequency	3	1	230	2	12
+116	__SPTArgs.Duration	3	1	232	2	12
+117	__SPTArgs.Loop	1	1	234	1	12
+118	__SPTArgs.Volume	1	1	235	1	12
+119	__main_7qG2_cmds_niv_7qG2_000	7	0	236	4	9
+120	__main_7qG2_cmds_niv_7qG2_000.__main_7qG2_cmds_niv_7qG2_000_type	4	0	0	2	0
+121	__SRSTmpBuf	7	0	238	4	6
+122	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
+123	__SRSSendBuf	7	0	240	4	2
+124	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
+125	__RLSReadBuf3	7	0	242	4	24
+126	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+127	__RLSLastGoodRead3	7	0	244	4	2
+128	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+129	__OUT_ABC	7	0	246	4	1
+130	__OUT_ABC.__OUT_ABC_type	1	0	0	1	0
+131	__DCMessageWritePacket	7	0	248	4	1
+132	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
+133	__SRSFlattenBuf	7	0	250	4	2
+134	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
+135	__RLSBbufLSWrite1	7	0	252	4	9
+136	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	117	0	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	118	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	117	2	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	117	2	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	118	2		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 0
+0	117	5	#line 117 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	118	5	#line 118 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	119	5		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	7	#line 4313 "NXCDefs.h"
+0	4314	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	9	#line 4313 "NXCDefs.h"
+0	4313	9	#line 4313 "NXCDefs.h"
+0	4314	9		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	11	#line 4313 "NXCDefs.h"
+0	4314	11		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	14	#line 4313 "NXCDefs.h"
+0	4314	14		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	17	#line 4313 "NXCDefs.h"
+0	4314	17		set __DU0SetSensorLight_inline_main, 5
+0	4313	20	#line 4313 "NXCDefs.h"
+0	4313	20	#line 4313 "NXCDefs.h"
+0	4314	20		jmp __001__ASM_Label_5
+0	4313	22	#line 4313 "NXCDefs.h"
+0	4314	22		set __DU0SetSensorLight_inline_main, 6
+0	4313	25	#line 4313 "NXCDefs.h"
+0	4313	25	#line 4313 "NXCDefs.h"
+0	4314	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	27	#line 4247 "NXCDefs.h"
+0	4248	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	31	#line 4247 "NXCDefs.h"
+0	4314	31	#line 4314 "NXCDefs.h"
+0	4314	31	#line 4314 "NXCDefs.h"
+0	4315	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	33	#line 4314 "NXCDefs.h"
+0	4314	33	#line 4314 "NXCDefs.h"
+0	4315	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	36	#line 4314 "NXCDefs.h"
+0	4260	36	#line 4260 "NXCDefs.h"
+0	4261	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	40	#line 4260 "NXCDefs.h"
+0	4315	40	#line 4315 "NXCDefs.h"
+0	4315	40	#line 4315 "NXCDefs.h"
+0	4316	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	42	#line 4315 "NXCDefs.h"
+0	4278	42	#line 4278 "NXCDefs.h"
+0	4279	42	#pragma macro 4
+0	4279	42		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4761	46	#line 4761 "NXCDefs.h"
+0	4278	46	#line 4278 "NXCDefs.h"
+0	4316	46	#line 4316 "NXCDefs.h"
+0	118	46	#line 118 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	118	46	#line 118 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	119	46		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	118	49	#line 118 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	119	49	#line 119 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	120	49		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	51	#line 4313 "NXCDefs.h"
+0	4314	51		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	53	#line 4313 "NXCDefs.h"
+0	4313	53	#line 4313 "NXCDefs.h"
+0	4314	53		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	55	#line 4313 "NXCDefs.h"
+0	4314	55		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	58	#line 4313 "NXCDefs.h"
+0	4314	58		brtst 4, __002__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	61	#line 4313 "NXCDefs.h"
+0	4314	61		set __DU0SetSensorLight_inline_main, 5
+0	4313	64	#line 4313 "NXCDefs.h"
+0	4313	64	#line 4313 "NXCDefs.h"
+0	4314	64		jmp __002__ASM_Label_5
+0	4313	66	#line 4313 "NXCDefs.h"
+0	4314	66		set __DU0SetSensorLight_inline_main, 6
+0	4313	69	#line 4313 "NXCDefs.h"
+0	4313	69	#line 4313 "NXCDefs.h"
+0	4314	69		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	71	#line 4247 "NXCDefs.h"
+0	4248	71		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	75	#line 4247 "NXCDefs.h"
+0	4314	75	#line 4314 "NXCDefs.h"
+0	4314	75	#line 4314 "NXCDefs.h"
+0	4315	75		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	77	#line 4314 "NXCDefs.h"
+0	4314	77	#line 4314 "NXCDefs.h"
+0	4315	77		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	80	#line 4314 "NXCDefs.h"
+0	4260	80	#line 4260 "NXCDefs.h"
+0	4261	80		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	84	#line 4260 "NXCDefs.h"
+0	4315	84	#line 4315 "NXCDefs.h"
+0	4315	84	#line 4315 "NXCDefs.h"
+0	4316	84		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	86	#line 4315 "NXCDefs.h"
+0	4278	86	#line 4278 "NXCDefs.h"
+0	4279	86	#pragma macro 4
+0	4279	86		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	88		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4824	90	#line 4824 "NXCDefs.h"
+0	4278	90	#line 4278 "NXCDefs.h"
+0	4316	90	#line 4316 "NXCDefs.h"
+0	119	90	#line 119 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	119	90	#line 119 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	120	90		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 2
+0	119	93	#line 119 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	120	93	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	121	93		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	95	#line 4313 "NXCDefs.h"
+0	4314	95		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	97	#line 4313 "NXCDefs.h"
+0	4313	97	#line 4313 "NXCDefs.h"
+0	4314	97		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	99	#line 4313 "NXCDefs.h"
+0	4314	99		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	102	#line 4313 "NXCDefs.h"
+0	4314	102		brtst 4, __003__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	105	#line 4313 "NXCDefs.h"
+0	4314	105		set __DU0SetSensorLight_inline_main, 5
+0	4313	108	#line 4313 "NXCDefs.h"
+0	4313	108	#line 4313 "NXCDefs.h"
+0	4314	108		jmp __003__ASM_Label_5
+0	4313	110	#line 4313 "NXCDefs.h"
+0	4314	110		set __DU0SetSensorLight_inline_main, 6
+0	4313	113	#line 4313 "NXCDefs.h"
+0	4313	113	#line 4313 "NXCDefs.h"
+0	4314	113		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	115	#line 4247 "NXCDefs.h"
+0	4248	115		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	119	#line 4247 "NXCDefs.h"
+0	4314	119	#line 4314 "NXCDefs.h"
+0	4314	119	#line 4314 "NXCDefs.h"
+0	4315	119		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	121	#line 4314 "NXCDefs.h"
+0	4314	121	#line 4314 "NXCDefs.h"
+0	4315	121		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	124	#line 4314 "NXCDefs.h"
+0	4260	124	#line 4260 "NXCDefs.h"
+0	4261	124		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	128	#line 4260 "NXCDefs.h"
+0	4315	128	#line 4315 "NXCDefs.h"
+0	4315	128	#line 4315 "NXCDefs.h"
+0	4316	128		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	130	#line 4315 "NXCDefs.h"
+0	4278	130	#line 4278 "NXCDefs.h"
+0	4279	130	#pragma macro 4
+0	4279	130		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	132		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4887	134	#line 4887 "NXCDefs.h"
+0	4278	134	#line 4278 "NXCDefs.h"
+0	4316	134	#line 4316 "NXCDefs.h"
+0	120	134	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	120	134	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	121	134		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 3
+0	120	137	#line 120 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	121	137	#line 121 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	122	137		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	4342	139	#line 4342 "NXCDefs.h"
+0	4343	139		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4342	141	#line 4342 "NXCDefs.h"
+0	4342	141	#line 4342 "NXCDefs.h"
+0	4343	141		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	4342	143	#line 4342 "NXCDefs.h"
+0	4343	143		tst 5, __D0SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4342	146	#line 4342 "NXCDefs.h"
+0	4343	146		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_main
+0	4342	149	#line 4342 "NXCDefs.h"
+0	4343	149		set __DU0SetSensorLowspeed_inline_main, 11
+0	4342	152	#line 4342 "NXCDefs.h"
+0	4342	152	#line 4342 "NXCDefs.h"
+0	4343	152		jmp __004__ASM_Label_37
+0	4342	154	#line 4342 "NXCDefs.h"
+0	4343	154		set __DU0SetSensorLowspeed_inline_main, 10
+0	4342	157	#line 4342 "NXCDefs.h"
+0	4342	157	#line 4342 "NXCDefs.h"
+0	4343	157		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4247	159	#line 4247 "NXCDefs.h"
+0	4248	159		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4247	163	#line 4247 "NXCDefs.h"
+0	4343	163	#line 4343 "NXCDefs.h"
+0	4343	163	#line 4343 "NXCDefs.h"
+0	4344	163		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4343	165	#line 4343 "NXCDefs.h"
+0	4343	165	#line 4343 "NXCDefs.h"
+0	4344	165		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4343	168	#line 4343 "NXCDefs.h"
+0	4260	168	#line 4260 "NXCDefs.h"
+0	4261	168		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	4260	172	#line 4260 "NXCDefs.h"
+0	4344	172	#line 4344 "NXCDefs.h"
+0	4344	172	#line 4344 "NXCDefs.h"
+0	4344	172	#line 4344 "NXCDefs.h"
+0	4278	172	#line 4278 "NXCDefs.h"
+0	4279	172	#pragma macro 4
+0	4279	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4279	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4978	176	#line 4978 "NXCDefs.h"
+0	4278	176	#line 4278 "NXCDefs.h"
+0	4345	176	#line 4345 "NXCDefs.h"
+0	121	176	#line 121 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	121	176	#line 121 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	122	176		set __Wait_7qG2_ms_7qG2_000_inline_main, 600
+0	121	179	#line 121 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	8551	179	#line 8551 "NXCDefs.h"
+0	8552	179		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	182	#line 8551 "NXCDefs.h"
+0	123	182	#line 123 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	123	182	#line 123 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	124	182	#pragma macro 5
+0	124	182		mov __CBTCSArgs.Connection, __constVal1
+0	124	184		syscall 28, __CBTCSArgs
+0	124	187		mov __signed_stack_001main, __CBTCSArgs.Result
+0	4999	189	#line 4999 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	123	189	#line 123 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	123	189	#line 123 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	124	189		set __D0main, 0
+0	123	192	#line 123 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	124	192		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	124	196	#line 124 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	125	196		mov __main_7qG2_bt_garra_7qG2_000, __D0main
+0	124	198	#line 124 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	125	198	#pragma macro 5
+0	125	198		mov __CBTCSArgs.Connection, __constVal2
+0	125	200		syscall 28, __CBTCSArgs
+0	125	203		mov __signed_stack_001main, __CBTCSArgs.Result
+0	5019	205	#line 5019 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	124	205	#line 124 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	124	205	#line 124 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	125	205		set __D0main, 0
+0	124	208	#line 124 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	125	208		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	131	212	#line 131 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	132	212		mov __main_7qG2_bt_sel_7qG2_000, __D0main
+0	132	214	#line 132 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	133	214		set __main_7qG2_salido_7qG2_000, 0
+0	132	217	#line 132 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	132	217	#line 132 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	133	217		mov __DU0main, __main_7qG2_salido_7qG2_000
+0	132	219	#line 132 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	133	219		not __DU0main, __DU0main
+0	133	222	#line 133 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	134	222		tst 5, __D0main, __DU0main
+0	133	225	#line 133 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	134	225		brtst 4, __ASM_Label_583, __D0main
+0	133	228	#line 133 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	134	228	#pragma macro 26
+0	134	228		acquire __RLSBmutex3
+0	134	229		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	134	231		set __RLSBytesCount3, 1
+0	134	234		wait2 NA, __constVal15
+0	134	237		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	134	239		index __D0main, __RLSReadBuf3, 65535
+0	134	243		release __RLSBmutex3
+0	5054	244	#line 5054 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	133	244	#line 133 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	134	244		mov __signed_stack_001main, __D0main
+0	133	246	#line 133 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	134	246		set __D0main, 14
+0	133	249	#line 133 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	134	249		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	133	253	#line 133 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	134	253		brtst 4, __ASM_Label_588, __D0main
+0	134	256	#line 134 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	135	256		subcall evasion, __evasion_return
+0	134	258	#line 134 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	134	258	#line 134 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	134	258	#line 134 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	135	258		set __adelante_7qG2_vel_7qG2_000, 55
+0	134	261	#line 134 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	134	261	#line 134 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	135	261		set __adelante_7qG2_ms_7qG2_000, 450
+0	134	264	#line 134 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	135	264	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	136	264		subcall adelante, __adelante_return
+0	135	266	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	135	266	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	136	266		getin __signed_stack_001main, __constVal0, 4
+0	135	270	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	135	270	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	136	270		set __D0main, 35
+0	135	273	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	136	273		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	135	277	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	136	277		brtst 4, __ASM_Label_594, __D0main
+0	135	280	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	136	280		getin __signed_stack_001main, __constVal2, 4
+0	135	284	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	135	284	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	136	284		set __D0main, 35
+0	135	287	#line 135 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	136	287		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	136	291	#line 136 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	137	291		brtst 4, __ASM_Label_595, __D0main
+0	136	294	#line 136 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	137	294		set __adelante_7qG2_vel_7qG2_000, 55
+0	136	297	#line 136 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	136	297	#line 136 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	137	297		set __adelante_7qG2_ms_7qG2_000, 450
+0	136	300	#line 136 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	137	300	#line 137 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	138	300		subcall adelante, __adelante_return
+0	137	302	#line 137 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	138	302	#line 138 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	139	302		subcall parar, __parar_return
+0	138	304	#line 138 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	139	304	#line 139 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	140	304		set __main_7qG2_salido_7qG2_000, 1
+0	139	307	#line 139 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	139	307	#line 139 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	147	307	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	147	307	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	148	307		jmp __ASM_Label_582
+0	147	309	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	147	309	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	148	309		getin __signed_stack_001main, __constVal0, 4
+0	147	313	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	147	313	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	148	313		set __D0main, 35
+0	147	316	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	148	316		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	147	320	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	148	320		brtst 4, __ASM_Label_605, __D0main
+0	147	323	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	148	323		getin __signed_stack_001main, __constVal1, 4
+0	147	327	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	147	327	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	148	327		set __D0main, 35
+0	147	330	#line 147 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	148	330		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	148	334	#line 148 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	149	334		brtst 4, __ASM_Label_603, __D0main
+0	148	337	#line 148 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	149	337	#pragma macro 26
+0	149	337		acquire __RLSBmutex3
+0	149	338		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	149	340		set __RLSBytesCount3, 1
+0	149	343		wait2 NA, __constVal15
+0	149	346		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	149	348		index __D0main, __RLSReadBuf3, 65535
+0	149	352		release __RLSBmutex3
+0	5162	353	#line 5162 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	148	353	#line 148 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	149	353		mov __signed_stack_001main, __D0main
+0	148	355	#line 148 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	149	355		set __D0main, 14
+0	148	358	#line 148 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	149	358		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	148	362	#line 148 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	149	362		brtst 4, __ASM_Label_608, __D0main
+0	149	365	#line 149 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	150	365		subcall evasion, __evasion_return
+0	149	367	#line 149 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	149	367	#line 149 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	149	367	#line 149 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	150	367		set __izquierda_7qG2_vel_7qG2_000, 55
+0	149	370	#line 149 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	149	370	#line 149 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	150	370		set __izquierda_7qG2_ms_7qG2_000, 450
+0	149	373	#line 149 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	150	373	#line 150 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	151	373		subcall izquierda, __izquierda_return
+0	150	375	#line 150 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	151	375	#line 151 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	152	375		jmp __ASM_Label_602
+0	151	377	#line 151 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	153	377	#line 153 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	154	377		subcall parar, __parar_return
+0	153	379	#line 153 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	153	379	#line 153 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	154	379		set __derecha_7qG2_vel_7qG2_000, 55
+0	153	382	#line 153 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	153	382	#line 153 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	154	382		set __derecha_7qG2_ms_7qG2_000, 225
+0	153	385	#line 153 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	154	385	#line 154 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	155	385		subcall derecha, __derecha_return
+0	154	387	#line 154 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	162	387	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	163	387		subcall parar, __parar_return
+0	162	389	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	162	389	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	163	389		getin __signed_stack_001main, __constVal2, 4
+0	162	393	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	162	393	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	163	393		set __D0main, 35
+0	162	396	#line 162 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	163	396		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	163	400	#line 163 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	164	400		brtst 4, __ASM_Label_618, __D0main
+0	163	403	#line 163 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	164	403	#pragma macro 26
+0	164	403		acquire __RLSBmutex3
+0	164	404		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	164	406		set __RLSBytesCount3, 1
+0	164	409		wait2 NA, __constVal15
+0	164	412		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	164	414		index __D0main, __RLSReadBuf3, 65535
+0	164	418		release __RLSBmutex3
+0	5232	419	#line 5232 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	163	419	#line 163 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	164	419		mov __main_7qG2_ul_7qG2_001, __D0main
+0	164	421	#line 164 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	165	421		mov __signed_stack_001main, __main_7qG2_ul_7qG2_001
+0	164	423	#line 164 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	164	423	#line 164 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	165	423		set __D0main, 14
+0	164	426	#line 164 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	165	426		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	165	430	#line 165 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	166	430		brtst 4, __ASM_Label_625, __D0main
+0	166	433	#line 166 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	167	433		subcall evasion, __evasion_return
+0	166	435	#line 166 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	166	435	#line 166 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	167	435		jmp __ASM_Label_626
+0	166	437	#line 166 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	167	437		getin __signed_stack_001main, __constVal0, 4
+0	166	441	#line 166 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	166	441	#line 166 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	167	441		set __D0main, 35
+0	166	444	#line 166 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	167	444		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	166	448	#line 166 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	167	448		brtst 5, __ASM_Label_627, __D0main
+0	166	451	#line 166 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	167	451		getin __signed_stack_001main, __constVal1, 4
+0	166	455	#line 166 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	166	455	#line 166 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	167	455		set __D0main, 35
+0	166	458	#line 166 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	167	458		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	168	462	#line 168 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	169	462		brtst 4, __ASM_Label_630, __D0main
+0	168	465	#line 168 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	169	465		set __adelante_7qG2_vel_7qG2_000, 55
+0	168	468	#line 168 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	168	468	#line 168 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	169	468		set __adelante_7qG2_ms_7qG2_000, 150
+0	168	471	#line 168 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	169	471	#line 169 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	170	471		subcall adelante, __adelante_return
+0	169	473	#line 169 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	170	473	#line 170 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	171	473		jmp __ASM_Label_635
+0	170	475	#line 170 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	171	475		set __derecha_7qG2_vel_7qG2_000, 55
+0	170	478	#line 170 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	170	478	#line 170 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	171	478		set __derecha_7qG2_ms_7qG2_000, 450
+0	170	481	#line 170 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	171	481	#line 171 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	172	481		subcall derecha, __derecha_return
+0	171	483	#line 171 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	173	483	#line 173 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	173	483	#line 173 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	173	483	#line 173 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	174	483		jmp __ASM_Label_617
+0	173	485	#line 173 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	176	485	#line 176 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	177	485		subcall parar, __parar_return
+0	176	487	#line 176 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	176	487	#line 176 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	177	487		mov __DU0main, __main_7qG2_bt_sel_7qG2_000
+0	176	489	#line 176 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	177	489		tst 5, __D0main, __DU0main
+0	176	492	#line 176 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	177	492		brtst 4, __ASM_Label_642, __D0main
+0	176	495	#line 176 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	177	495		set __enviarCmd_7qG2_conn_7qG2_000, 2
+0	176	498	#line 176 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	176	498	#line 176 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	177	498		set __enviarCmd_7qG2_cmd_7qG2_000, 10
+0	176	501	#line 176 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	191	501	#line 191 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	192	501		subcall enviarCmd, __enviarCmd_return
+0	191	503	#line 191 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	191	503	#line 191 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	192	503	#line 192 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	193	503		arrinit __main_7qG2_cmds_niv_7qG2_000, __constVal0, __constVal3
+0	192	507	#line 192 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	193	507		set __signed_stack_001main, 0
+0	192	510	#line 192 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	193	510	#line 193 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	194	510		set __D0main, 1
+0	193	513	#line 193 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	194	513		replace __main_7qG2_cmds_niv_7qG2_000, __main_7qG2_cmds_niv_7qG2_000, __signed_stack_001main, __D0main
+0	193	518	#line 193 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	193	518	#line 193 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	194	518		set __signed_stack_001main, 1
+0	193	521	#line 193 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	194	521	#line 194 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	195	521		set __D0main, 2
+0	194	524	#line 194 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	195	524		replace __main_7qG2_cmds_niv_7qG2_000, __main_7qG2_cmds_niv_7qG2_000, __signed_stack_001main, __D0main
+0	194	529	#line 194 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	194	529	#line 194 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	195	529		set __signed_stack_001main, 2
+0	194	532	#line 194 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	196	532	#line 196 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	197	532		set __D0main, 3
+0	196	535	#line 196 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	197	535		replace __main_7qG2_cmds_niv_7qG2_000, __main_7qG2_cmds_niv_7qG2_000, __signed_stack_001main, __D0main
+0	196	540	#line 196 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	197	540	#line 197 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	198	540		set __main_7qG2_n_7qG2_000, 0
+0	197	543	#line 197 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	197	543	#line 197 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	198	543		mov __signed_stack_001main, __main_7qG2_n_7qG2_000
+0	197	545	#line 197 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	197	545	#line 197 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	198	545		set __D0main, 3
+0	197	548	#line 197 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	198	548		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	197	552	#line 197 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	198	552		brtst 4, __ASM_Label_660, __D0main
+0	197	555	#line 197 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	198	555		jmp __ASM_Label_661
+0	197	557	#line 197 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	198	557		add __main_7qG2_n_7qG2_000, __main_7qG2_n_7qG2_000, __constVal1
+0	198	561	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	199	561		jmp __ASM_Label_659
+0	198	563	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	199	563		mov __DU0main, __main_7qG2_bt_garra_7qG2_000
+0	198	565	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	199	565		tst 5, __D0main, __DU0main
+0	198	568	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	199	568		brtst 4, __ASM_Label_669, __D0main
+0	198	571	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	199	571		set __enviarCmd_7qG2_conn_7qG2_000, 1
+0	198	574	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	198	574	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	199	574		mov __signed_stack_001main, __main_7qG2_n_7qG2_000
+0	198	576	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	198	576	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	199	576		index __enviarCmd_7qG2_cmd_7qG2_000, __main_7qG2_cmds_niv_7qG2_000, __signed_stack_001main
+0	198	580	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	198	580	#line 198 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	201	580	#line 201 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	202	580		subcall enviarCmd, __enviarCmd_return
+0	201	582	#line 201 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	201	582	#line 201 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	201	582	#line 201 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	202	582		getin __signed_stack_001main, __constVal0, 4
+0	201	586	#line 201 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	201	586	#line 201 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	202	586		set __D0main, 35
+0	201	589	#line 201 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	202	589		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	201	593	#line 201 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	202	593		brtst 4, __ASM_Label_679, __D0main
+0	201	596	#line 201 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	202	596		getin __signed_stack_001main, __constVal1, 4
+0	201	600	#line 201 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	201	600	#line 201 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	202	600		set __D0main, 35
+0	201	603	#line 201 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	202	603		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	202	607	#line 202 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	203	607		brtst 4, __ASM_Label_677, __D0main
+0	202	610	#line 202 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	203	610	#pragma macro 26
+0	203	610		acquire __RLSBmutex3
+0	203	611		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	203	613		set __RLSBytesCount3, 1
+0	203	616		wait2 NA, __constVal15
+0	203	619		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	203	621		index __D0main, __RLSReadBuf3, 65535
+0	203	625		release __RLSBmutex3
+0	5474	626	#line 5474 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	202	626	#line 202 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	203	626		mov __signed_stack_001main, __D0main
+0	202	628	#line 202 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	203	628		set __D0main, 14
+0	202	631	#line 202 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	203	631		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	204	635	#line 204 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	205	635		brtst 4, __ASM_Label_682, __D0main
+0	204	638	#line 204 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	205	638		mov __DU0main, __main_7qG2_bt_garra_7qG2_000
+0	204	640	#line 204 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	205	640		tst 5, __D0main, __DU0main
+0	204	643	#line 204 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	205	643		brtst 4, __ASM_Label_685, __D0main
+0	204	646	#line 204 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	205	646		set __enviarCmd_7qG2_conn_7qG2_000, 1
+0	204	649	#line 204 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	204	649	#line 204 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	205	649		set __enviarCmd_7qG2_cmd_7qG2_000, 0
+0	204	652	#line 204 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	205	652	#line 205 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	206	652		subcall enviarCmd, __enviarCmd_return
+0	205	654	#line 205 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	205	654	#line 205 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	206	654	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	207	654		subcall evasion, __evasion_return
+0	206	656	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	206	656	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	207	656		mov __DU0main, __main_7qG2_bt_garra_7qG2_000
+0	206	658	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	207	658		tst 5, __D0main, __DU0main
+0	206	661	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	207	661		brtst 4, __ASM_Label_692, __D0main
+0	206	664	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	207	664		set __enviarCmd_7qG2_conn_7qG2_000, 1
+0	206	667	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	206	667	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	207	667		mov __signed_stack_001main, __main_7qG2_n_7qG2_000
+0	206	669	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	206	669	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	207	669		index __enviarCmd_7qG2_cmd_7qG2_000, __main_7qG2_cmds_niv_7qG2_000, __signed_stack_001main
+0	206	673	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	206	673	#line 206 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	207	673	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	208	673		subcall enviarCmd, __enviarCmd_return
+0	207	675	#line 207 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	208	675	#line 208 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	208	675	#line 208 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	208	675	#line 208 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	209	675		set __izquierda_7qG2_vel_7qG2_000, 20
+0	208	678	#line 208 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	208	678	#line 208 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	209	678		set __izquierda_7qG2_ms_7qG2_000, 250
+0	208	681	#line 208 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	209	681	#line 209 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	210	681		subcall izquierda, __izquierda_return
+0	209	683	#line 209 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	209	683	#line 209 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	210	683		set __Wait_7qG2_ms_7qG2_000_inline_main, 150
+0	209	686	#line 209 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	8551	686	#line 8551 "NXCDefs.h"
+0	8552	686		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	689	#line 8551 "NXCDefs.h"
+0	210	689	#line 210 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	211	689	#line 211 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	212	689		jmp __ASM_Label_676
+0	211	691	#line 211 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	214	691	#line 214 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	215	691		subcall parar, __parar_return
+0	214	693	#line 214 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	214	693	#line 214 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	215	693		mov __signed_stack_001main, __main_7qG2_n_7qG2_000
+0	214	695	#line 214 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	214	695	#line 214 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	215	695		set __D0main, 2
+0	214	698	#line 214 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	215	698		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	215	702	#line 215 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	216	702		brtst 4, __ASM_Label_707, __D0main
+0	215	705	#line 215 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	216	705		mov __DU0main, __main_7qG2_bt_garra_7qG2_000
+0	215	707	#line 215 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	216	707		tst 5, __D0main, __DU0main
+0	215	710	#line 215 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	216	710		brtst 4, __ASM_Label_710, __D0main
+0	215	713	#line 215 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	216	713		set __enviarCmd_7qG2_conn_7qG2_000, 1
+0	215	716	#line 215 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	215	716	#line 215 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	216	716		set __enviarCmd_7qG2_cmd_7qG2_000, 0
+0	215	719	#line 215 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	216	719	#line 216 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	217	719		subcall enviarCmd, __enviarCmd_return
+0	216	721	#line 216 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	216	721	#line 216 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	216	721	#line 216 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	217	721		getin __signed_stack_001main, __constVal2, 4
+0	216	725	#line 216 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	216	725	#line 216 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	217	725		set __D0main, 35
+0	216	728	#line 216 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	217	728		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	217	732	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	218	732		brtst 4, __ASM_Label_716, __D0main
+0	217	735	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	218	735	#pragma macro 26
+0	218	735		acquire __RLSBmutex3
+0	218	736		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	218	738		set __RLSBytesCount3, 1
+0	218	741		wait2 NA, __constVal15
+0	218	744		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	218	746		index __D0main, __RLSReadBuf3, 65535
+0	218	750		release __RLSBmutex3
+0	5625	751	#line 5625 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	217	751	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	218	751		mov __signed_stack_001main, __D0main
+0	217	753	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	218	753		set __D0main, 14
+0	217	756	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	218	756		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	217	760	#line 217 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	218	760		brtst 4, __ASM_Label_721, __D0main
+0	218	763	#line 218 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	219	763		subcall evasion, __evasion_return
+0	218	765	#line 218 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	218	765	#line 218 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	218	765	#line 218 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	219	765		set __derecha_7qG2_vel_7qG2_000, 70
+0	218	768	#line 218 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	218	768	#line 218 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	219	768		set __derecha_7qG2_ms_7qG2_000, 300
+0	218	771	#line 218 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	219	771	#line 219 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	220	771		subcall derecha, __derecha_return
+0	219	773	#line 219 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	220	773	#line 220 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	221	773		jmp __ASM_Label_715
+0	220	775	#line 220 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	221	775	#line 221 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	222	775		subcall parar, __parar_return
+0	221	777	#line 221 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	225	777	#line 225 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	225	777	#line 225 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	226	777		jmp __ASM_Label_662
+0	225	779	#line 225 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	225	779	#line 225 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	226	779		mov __DU0main, __main_7qG2_bt_garra_7qG2_000
+0	225	781	#line 225 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	226	781		tst 5, __D0main, __DU0main
+0	225	784	#line 225 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	226	784		brtst 4, __ASM_Label_728, __D0main
+0	225	787	#line 225 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	226	787		set __enviarCmd_7qG2_conn_7qG2_000, 1
+0	225	790	#line 225 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	225	790	#line 225 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	226	790		set __enviarCmd_7qG2_cmd_7qG2_000, 0
+0	225	793	#line 225 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	233	793	#line 233 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	234	793		subcall enviarCmd, __enviarCmd_return
+0	233	795	#line 233 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	233	795	#line 233 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	233	795	#line 233 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	234	795		getin __signed_stack_001main, __constVal0, 4
+0	233	799	#line 233 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	233	799	#line 233 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	234	799		set __D0main, 35
+0	233	802	#line 233 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	234	802		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	233	806	#line 233 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	234	806		brtst 4, __ASM_Label_736, __D0main
+0	233	809	#line 233 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	234	809		getin __signed_stack_001main, __constVal1, 4
+0	233	813	#line 233 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	233	813	#line 233 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	234	813		set __D0main, 35
+0	233	816	#line 233 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	234	816		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	234	820	#line 234 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	235	820		brtst 4, __ASM_Label_734, __D0main
+0	234	823	#line 234 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	235	823	#pragma macro 26
+0	235	823		acquire __RLSBmutex3
+0	235	824		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	235	826		set __RLSBytesCount3, 1
+0	235	829		wait2 NA, __constVal15
+0	235	832		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	235	834		index __D0main, __RLSReadBuf3, 65535
+0	235	838		release __RLSBmutex3
+0	5716	839	#line 5716 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	234	839	#line 234 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	235	839		mov __signed_stack_001main, __D0main
+0	234	841	#line 234 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	235	841		set __D0main, 14
+0	234	844	#line 234 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	235	844		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	234	848	#line 234 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	235	848		brtst 4, __ASM_Label_739, __D0main
+0	235	851	#line 235 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	236	851		subcall evasion, __evasion_return
+0	235	853	#line 235 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	235	853	#line 235 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	235	853	#line 235 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	236	853		set __izquierda_7qG2_vel_7qG2_000, 55
+0	235	856	#line 235 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	235	856	#line 235 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	236	856		set __izquierda_7qG2_ms_7qG2_000, 450
+0	235	859	#line 235 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	236	859	#line 236 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	237	859		subcall izquierda, __izquierda_return
+0	236	861	#line 236 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	237	861	#line 237 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	238	861		jmp __ASM_Label_733
+0	237	863	#line 237 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	240	863	#line 240 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	241	863		subcall parar, __parar_return
+0	240	865	#line 240 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	240	865	#line 240 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	241	865		getin __signed_stack_001main, __constVal0, 4
+0	240	869	#line 240 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	240	869	#line 240 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	241	869		set __D0main, 35
+0	240	872	#line 240 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	241	872		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	240	876	#line 240 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	241	876		brtst 4, __ASM_Label_749, __D0main
+0	240	879	#line 240 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	241	879		getin __signed_stack_001main, __constVal2, 4
+0	240	883	#line 240 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	240	883	#line 240 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	241	883		set __D0main, 35
+0	240	886	#line 240 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	241	886		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	240	890	#line 240 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	241	890		not __D0main, __D0main
+0	241	893	#line 241 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	242	893		tst 5, __D0main, __D0main
+0	241	896	#line 241 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	242	896		brtst 4, __ASM_Label_745, __D0main
+0	241	899	#line 241 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	242	899	#pragma macro 26
+0	242	899		acquire __RLSBmutex3
+0	242	900		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	242	902		set __RLSBytesCount3, 1
+0	242	905		wait2 NA, __constVal15
+0	242	908		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	242	910		index __D0main, __RLSReadBuf3, 65535
+0	242	914		release __RLSBmutex3
+0	5786	915	#line 5786 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	241	915	#line 241 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	242	915		mov __signed_stack_001main, __D0main
+0	241	917	#line 241 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	242	917		set __D0main, 14
+0	241	920	#line 241 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	242	920		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	241	924	#line 241 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	242	924		brtst 4, __ASM_Label_752, __D0main
+0	242	927	#line 242 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	243	927		subcall evasion, __evasion_return
+0	242	929	#line 242 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	242	929	#line 242 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	242	929	#line 242 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	243	929		set __atras_7qG2_vel_7qG2_000, 55
+0	242	932	#line 242 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	242	932	#line 242 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	243	932		set __atras_7qG2_ms_7qG2_000, 450
+0	242	935	#line 242 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	243	935	#line 243 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	244	935		subcall atras, __atras_return
+0	243	937	#line 243 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	244	937	#line 244 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	245	937		jmp __ASM_Label_744
+0	244	939	#line 244 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	244	939	#line 244 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	245	939		set __atras_7qG2_vel_7qG2_000, 55
+0	244	942	#line 244 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	244	942	#line 244 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	245	942		set __atras_7qG2_ms_7qG2_000, 450
+0	244	945	#line 244 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	245	945	#line 245 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	246	945		subcall atras, __atras_return
+0	245	947	#line 245 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	253	947	#line 253 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	254	947		subcall parar, __parar_return
+0	253	949	#line 253 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	254	949	#line 254 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	255	949		set __main_7qG2_cajas_7qG2_000, 0
+0	254	952	#line 254 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	254	952	#line 254 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	255	952		mov __signed_stack_001main, __main_7qG2_cajas_7qG2_000
+0	254	954	#line 254 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	254	954	#line 254 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	255	954		set __D0main, 2
+0	254	957	#line 254 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	255	957		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	255	961	#line 255 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	256	961		brtst 4, __ASM_Label_764, __D0main
+0	255	964	#line 255 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	256	964	#pragma macro 26
+0	256	964		acquire __RLSBmutex3
+0	256	965		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	256	967		set __RLSBytesCount3, 1
+0	256	970		wait2 NA, __constVal15
+0	256	973		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	256	975		index __D0main, __RLSReadBuf3, 65535
+0	256	979		release __RLSBmutex3
+0	5857	980	#line 5857 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	255	980	#line 255 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	256	980		mov __main_7qG2_ul_7qG2_001, __D0main
+0	257	982	#line 257 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	258	982		mov __signed_stack_001main, __main_7qG2_ul_7qG2_001
+0	257	984	#line 257 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	257	984	#line 257 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	258	984		set __D0main, 5
+0	257	987	#line 257 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	258	987		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	257	991	#line 257 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	258	991		brtst 4, __ASM_Label_770, __D0main
+0	257	994	#line 257 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	258	994		mov __signed_stack_001main, __main_7qG2_ul_7qG2_001
+0	257	996	#line 257 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	257	996	#line 257 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	258	996		set __D0main, 25
+0	257	999	#line 257 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	258	999		cmp 2, __D0main, __signed_stack_001main, __D0main
+0	259	1003	#line 259 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	260	1003		brtst 4, __ASM_Label_771, __D0main
+0	260	1006	#line 260 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	261	1006		subcall parar, __parar_return
+0	260	1008	#line 260 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	260	1008	#line 260 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	261	1008		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	260	1011	#line 260 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	8551	1011	#line 8551 "NXCDefs.h"
+0	8552	1011		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	1014	#line 8551 "NXCDefs.h"
+0	261	1014	#line 261 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	261	1014	#line 261 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	262	1014		mov __DU0main, __main_7qG2_bt_sel_7qG2_000
+0	262	1016	#line 262 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	263	1016		tst 5, __D0main, __DU0main
+0	262	1019	#line 262 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	263	1019		brtst 4, __ASM_Label_776, __D0main
+0	262	1022	#line 262 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	263	1022		set __enviarCmd_7qG2_conn_7qG2_000, 2
+0	262	1025	#line 262 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	262	1025	#line 262 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	263	1025		set __enviarCmd_7qG2_cmd_7qG2_000, 20
+0	262	1028	#line 262 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	265	1028	#line 265 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	266	1028		subcall enviarCmd, __enviarCmd_return
+0	265	1030	#line 265 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	265	1030	#line 265 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	266	1030		set __Wait_7qG2_ms_7qG2_000_inline_main, 7000
+0	265	1033	#line 265 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	8551	1033	#line 8551 "NXCDefs.h"
+0	8552	1033		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	1036	#line 8551 "NXCDefs.h"
+0	266	1036	#line 266 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	267	1036	#line 267 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	268	1036	#line 268 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	269	1036		add __main_7qG2_cajas_7qG2_000, __main_7qG2_cajas_7qG2_000, __constVal1
+0	268	1040	#line 268 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	268	1040	#line 268 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	269	1040		mov __signed_stack_001main, __main_7qG2_cajas_7qG2_000
+0	268	1042	#line 268 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	268	1042	#line 268 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	269	1042		set __D0main, 2
+0	268	1045	#line 268 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	269	1045		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	271	1049	#line 271 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	272	1049		brtst 4, __ASM_Label_785, __D0main
+0	271	1052	#line 271 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	272	1052		set __derecha_7qG2_vel_7qG2_000, 55
+0	271	1055	#line 271 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	271	1055	#line 271 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	272	1055		set __derecha_7qG2_ms_7qG2_000, 2700
+0	271	1058	#line 271 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	272	1058	#line 272 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	273	1058		subcall derecha, __derecha_return
+0	272	1060	#line 272 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	273	1060	#line 273 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	274	1060		subcall parar, __parar_return
+0	273	1062	#line 273 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	274	1062	#line 274 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	274	1062	#line 274 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	275	1062		jmp __ASM_Label_790
+0	274	1064	#line 274 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	275	1064		mov __signed_stack_001main, __main_7qG2_ul_7qG2_001
+0	274	1066	#line 274 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	274	1066	#line 274 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	275	1066		set __D0main, 14
+0	274	1069	#line 274 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	275	1069		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	275	1073	#line 275 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	276	1073		brtst 4, __ASM_Label_793, __D0main
+0	276	1076	#line 276 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	277	1076		subcall evasion, __evasion_return
+0	276	1078	#line 276 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	278	1078	#line 278 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	279	1078		jmp __ASM_Label_794
+0	278	1080	#line 278 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	279	1080		getin __signed_stack_001main, __constVal2, 4
+0	278	1084	#line 278 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	278	1084	#line 278 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	279	1084		set __D0main, 35
+0	278	1087	#line 278 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	279	1087		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	280	1091	#line 280 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	281	1091		brtst 4, __ASM_Label_797, __D0main
+0	281	1094	#line 281 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	282	1094		subcall parar, __parar_return
+0	281	1096	#line 281 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	282	1096	#line 282 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	283	1096		jmp __ASM_Label_764
+0	282	1098	#line 282 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	283	1098	#line 283 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	283	1098	#line 283 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	284	1098		set __derecha_7qG2_vel_7qG2_000, 55
+0	283	1101	#line 283 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	283	1101	#line 283 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	284	1101		set __derecha_7qG2_ms_7qG2_000, 450
+0	283	1104	#line 283 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	284	1104	#line 284 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	285	1104		subcall derecha, __derecha_return
+0	284	1106	#line 284 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	287	1106	#line 287 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	287	1106	#line 287 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	287	1106	#line 287 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	288	1106		jmp __ASM_Label_763
+0	287	1108	#line 287 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	287	1108	#line 287 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	288	1108		mov __DU0main, __main_7qG2_bt_sel_7qG2_000
+0	287	1110	#line 287 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	288	1110		tst 5, __D0main, __DU0main
+0	287	1113	#line 287 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	288	1113		brtst 4, __ASM_Label_804, __D0main
+0	287	1116	#line 287 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	288	1116		set __enviarCmd_7qG2_conn_7qG2_000, 2
+0	287	1119	#line 287 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	287	1119	#line 287 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	288	1119		set __enviarCmd_7qG2_cmd_7qG2_000, 11
+0	287	1122	#line 287 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	288	1122	#line 288 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	289	1122		subcall enviarCmd, __enviarCmd_return
+0	288	1124	#line 288 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	288	1124	#line 288 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	289	1124	#line 289 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	290	1124		subcall parar, __parar_return
+0	289	1126	#line 289 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	289	1126	#line 289 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	290	1126		set __signed_stack_001main, 880
+0	289	1129	#line 289 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	289	1129	#line 289 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	290	1129		set __signed_stack_002main, 500
+0	289	1132	#line 289 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	289	1132	#line 289 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	290	1132		set __signed_stack_003main, 4
+0	289	1135	#line 289 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	289	1135	#line 289 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	290	1135		set __D0main, 0
+0	290	1138	#line 290 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	291	1138		acquire __SPTArgsMutex
+0	290	1139	#line 290 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	291	1139		mov __SPTArgs.Frequency, __signed_stack_001main
+0	290	1141	#line 290 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	291	1141		mov __SPTArgs.Duration, __signed_stack_002main
+0	290	1143	#line 290 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	291	1143		mov __SPTArgs.Volume, __signed_stack_003main
+0	290	1145	#line 290 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	291	1145		mov __SPTArgs.Loop, __D0main
+0	290	1147	#line 290 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	291	1147		syscall 10, __SPTArgs
+0	290	1150	#line 290 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	291	1150		mov __D0main, __SPTArgs.Result
+0	290	1152	#line 290 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	291	1152		release __SPTArgsMutex
+0	290	1153	#line 290 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	290	1153	#line 290 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	291	1153		set __Wait_7qG2_ms_7qG2_000_inline_main, 600
+0	290	1156	#line 290 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	8551	1156	#line 8551 "NXCDefs.h"
+0	8552	1156		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	1159	#line 8551 "NXCDefs.h"
+0	291	1159	#line 291 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	291	1159	#line 291 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	292	1159		set __signed_stack_001main, 660
+0	291	1162	#line 291 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	291	1162	#line 291 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	292	1162		set __signed_stack_002main, 500
+0	291	1165	#line 291 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	291	1165	#line 291 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	292	1165		set __signed_stack_003main, 4
+0	291	1168	#line 291 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	291	1168	#line 291 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	292	1168		set __D0main, 0
+0	292	1171	#line 292 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	293	1171		acquire __SPTArgsMutex
+0	292	1172	#line 292 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	293	1172		mov __SPTArgs.Frequency, __signed_stack_001main
+0	292	1174	#line 292 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	293	1174		mov __SPTArgs.Duration, __signed_stack_002main
+0	292	1176	#line 292 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	293	1176		mov __SPTArgs.Volume, __signed_stack_003main
+0	292	1178	#line 292 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	293	1178		mov __SPTArgs.Loop, __D0main
+0	292	1180	#line 292 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	293	1180		syscall 10, __SPTArgs
+0	292	1183	#line 292 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	293	1183		mov __D0main, __SPTArgs.Result
+0	292	1185	#line 292 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	293	1185		release __SPTArgsMutex
+0	292	1186	#line 292 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	292	1186	#line 292 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	293	1186		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	292	1189	#line 292 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	8551	1189	#line 8551 "NXCDefs.h"
+0	8552	1189		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	1192	#line 8551 "NXCDefs.h"
+0	293	1192	#line 293 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+0	294	1192		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	6393	0	#pragma macro 25
+2	6393	0		acquire __CLSWMutex3
+2	6393	1		or __CLSWArgs3.Port, __constVal3, __LSWriteOptions3
+2	6393	5		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+2	6393	7		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+2	6393	9		syscall 21, __CLSWArgs3
+2	6393	12		mov __RLSBResult3, __CLSWArgs3.Result
+2	6393	14		release __CLSWMutex3
+2	6393	15	#line 6393 "NXTDefs.h"
+2	6394	15		brtst 5, __RLSBError3, __RLSBResult3
+2	6395	18		set __RLSBIterations3, 60
+2	6397	21	#pragma macro 23
+2	6397	21		acquire __CLSCSMutex3
+2	6397	22		set __CLSCSArgs3.Port, 3
+2	6397	25		syscall 23, __CLSCSArgs3
+2	6397	28		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+2	6397	30		mov __RLSBResult3, __CLSCSArgs3.Result
+2	6397	32		release __CLSCSMutex3
+2	6397	33	#line 6397 "NXTDefs.h"
+2	6398	33		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+2	6399	37		brtst 2, __RLSBError3, __RLSBIterations3
+2	6400	40		brtst 0, __RLSBError3, __RLSBResult3
+2	6401	43		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+2	6403	46		wait2 NA, __constVal1
+2	6404	49		jmp __RLSBDoCheckStatus3
+2	6406	51		brtst 4, __RLSBReturn3, __RLSBytesCount3
+2	6407	54		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+2	6409	58	#pragma macro 25
+2	6409	58		acquire __CLSRMutex3
+2	6409	59		set __CLSRArgs3.Port, 3
+2	6409	62		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+2	6409	64		syscall 22, __CLSRArgs3
+2	6409	67		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+2	6409	69		mov __RLSBResult3, __CLSRArgs3.Result
+2	6409	71		release __CLSRMutex3
+2	6409	72	#line 6409 "NXTDefs.h"
+2	6410	72		brtst 5, __RLSBError3, __RLSBResult3
+2	6411	75		mov __RLSLastGoodRead3, __RLSReadBuf3
+2	6412	77		jmp __RLSBDone3
+2	6414	79		mov __RLSReadBuf3, __RLSLastGoodRead3
+2	6416	81		arrsize __RLSBytesCount3, __RLSReadBuf3
+2	6418	84		subret ____ReadLSBytes3_return
+3	47	0	#line 47 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+3	48	0		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+3	48	2	#line 48 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+3	49	2	#pragma macro 10
+3	49	2		acquire __OnRevMutex
+3	49	3		neg __OnRev_Tmp, __D0adelante
+3	49	6		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	49	29		release __OnRevMutex
+3	4210	30	#line 4210 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+3	48	30	#line 48 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+3	48	30	#line 48 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+3	49	30		mov __D0adelante, __adelante_7qG2_vel_7qG2_000
+3	49	32	#line 49 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+3	50	32	#pragma macro 7
+3	50	32		setout __constVal2, 2, __D0adelante, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4217	55	#line 4217 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+3	49	55	#line 49 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+3	49	55	#line 49 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+3	50	55		mov __Wait_7qG2_ms_7qG2_000_inline_adelante, __adelante_7qG2_ms_7qG2_000
+3	49	57	#line 49 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+3	8551	57	#line 8551 "NXCDefs.h"
+3	8552	57		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_adelante
+3	8551	60	#line 8551 "NXCDefs.h"
+3	50	60	#line 50 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+3	51	60	#line 51 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+3	52	60		subret __adelante_return
+4	52	0	#line 52 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+4	53	0		mov __D0atras, __atras_7qG2_vel_7qG2_000
+4	53	2	#line 53 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+4	54	2	#pragma macro 7
+4	54	2		setout __constVal1, 2, __D0atras, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4251	25	#line 4251 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+4	53	25	#line 53 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+4	53	25	#line 53 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+4	54	25		mov __D0atras, __atras_7qG2_vel_7qG2_000
+4	54	27	#line 54 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+4	55	27	#pragma macro 10
+4	55	27		acquire __OnRevMutex
+4	55	28		neg __OnRev_Tmp, __D0atras
+4	55	31		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	55	54		release __OnRevMutex
+4	4258	55	#line 4258 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+4	54	55	#line 54 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+4	54	55	#line 54 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+4	55	55		mov __Wait_7qG2_ms_7qG2_000_inline_atras, __atras_7qG2_ms_7qG2_000
+4	54	57	#line 54 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+4	8551	57	#line 8551 "NXCDefs.h"
+4	8552	57		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_atras
+4	8551	60	#line 8551 "NXCDefs.h"
+4	55	60	#line 55 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+4	56	60	#line 56 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+4	57	60		subret __atras_return
+5	57	0	#line 57 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	58	0		mov __D0derecha, __derecha_7qG2_vel_7qG2_000
+5	58	2	#line 58 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	59	2	#pragma macro 10
+5	59	2		acquire __OnRevMutex
+5	59	3		neg __OnRev_Tmp, __D0derecha
+5	59	6		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	59	29		release __OnRevMutex
+5	4292	30	#line 4292 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	58	30	#line 58 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	58	30	#line 58 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	59	30		mov __signed_stack_001derecha, __derecha_7qG2_vel_7qG2_000
+5	58	32	#line 58 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	58	32	#line 58 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	59	32		set __D0derecha, 2
+5	58	35	#line 58 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	59	35		div __signed_stack_001derecha, __signed_stack_001derecha, __D0derecha
+5	58	39	#line 58 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	58	39	#line 58 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	59	39		set __D0derecha, 3
+5	58	42	#line 58 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	59	42		sub __D0derecha, __signed_stack_001derecha, __D0derecha
+5	59	46	#line 59 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	60	46	#pragma macro 7
+5	60	46		setout __constVal1, 2, __D0derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	4315	69	#line 4315 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	59	69	#line 59 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	59	69	#line 59 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	60	69		mov __signed_stack_001derecha, __derecha_7qG2_vel_7qG2_000
+5	59	71	#line 59 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	59	71	#line 59 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	60	71		set __D0derecha, 2
+5	59	74	#line 59 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	60	74		div __D0derecha, __signed_stack_001derecha, __D0derecha
+5	60	78	#line 60 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	61	78	#pragma macro 7
+5	61	78		setout __constVal2, 2, __D0derecha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	4330	101	#line 4330 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	60	101	#line 60 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	60	101	#line 60 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	61	101		mov __Wait_7qG2_ms_7qG2_000_inline_derecha, __derecha_7qG2_ms_7qG2_000
+5	60	103	#line 60 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	8551	103	#line 8551 "NXCDefs.h"
+5	8552	103		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_derecha
+5	8551	106	#line 8551 "NXCDefs.h"
+5	61	106	#line 61 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	62	106	#line 62 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+5	63	106		subret __derecha_return
+6	63	0	#line 63 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	64	0		mov __D0izquierda, __izquierda_7qG2_vel_7qG2_000
+6	64	2	#line 64 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	65	2	#pragma macro 7
+6	65	2		setout __constVal0, 2, __D0izquierda, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	4364	25	#line 4364 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	64	25	#line 64 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	64	25	#line 64 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	65	25		mov __signed_stack_001izquierda, __izquierda_7qG2_vel_7qG2_000
+6	64	27	#line 64 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	64	27	#line 64 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	65	27		set __D0izquierda, 2
+6	64	30	#line 64 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	65	30		div __signed_stack_001izquierda, __signed_stack_001izquierda, __D0izquierda
+6	64	34	#line 64 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	64	34	#line 64 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	65	34		set __D0izquierda, 3
+6	64	37	#line 64 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	65	37		sub __D0izquierda, __signed_stack_001izquierda, __D0izquierda
+6	65	41	#line 65 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	66	41	#pragma macro 10
+6	66	41		acquire __OnRevMutex
+6	66	42		neg __OnRev_Tmp, __D0izquierda
+6	66	45		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	66	68		release __OnRevMutex
+6	4387	69	#line 4387 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	65	69	#line 65 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	65	69	#line 65 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	66	69		mov __signed_stack_001izquierda, __izquierda_7qG2_vel_7qG2_000
+6	65	71	#line 65 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	65	71	#line 65 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	66	71		set __D0izquierda, 2
+6	65	74	#line 65 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	66	74		div __D0izquierda, __signed_stack_001izquierda, __D0izquierda
+6	66	78	#line 66 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	67	78	#pragma macro 10
+6	67	78		acquire __OnRevMutex
+6	67	79		neg __OnRev_Tmp, __D0izquierda
+6	67	82		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	67	105		release __OnRevMutex
+6	4402	106	#line 4402 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	66	106	#line 66 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	66	106	#line 66 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	67	106		mov __Wait_7qG2_ms_7qG2_000_inline_izquierda, __izquierda_7qG2_ms_7qG2_000
+6	66	108	#line 66 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	8551	108	#line 8551 "NXCDefs.h"
+6	8552	108		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_izquierda
+6	8551	111	#line 8551 "NXCDefs.h"
+6	67	111	#line 67 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	68	111	#line 68 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+6	69	111		subret __izquierda_return
+7	70	0	#line 70 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+7	71	0	#pragma macro 7
+7	71	0		setout __OUT_ABC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4424	23	#line 4424 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+7	70	23	#line 70 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+7	70	23	#line 70 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+7	71	23		set __Wait_7qG2_ms_7qG2_000_inline_parar, 150
+7	70	26	#line 70 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+7	8551	26	#line 8551 "NXCDefs.h"
+7	8552	26		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_parar
+7	8551	29	#line 8551 "NXCDefs.h"
+7	71	29	#line 71 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+7	77	29	#line 77 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+7	78	29		subret __parar_return
+8	78	0	#line 78 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+8	79	0	#pragma macro 14
+8	79	0		mov __SRSTmpBuf, __DCMessageWritePacket
+8	79	2		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal0
+8	79	7		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+8	79	12		mov __SRSTmpLongVal, __enviarCmd_7qG2_cmd_7qG2_000
+8	79	14		flatten __SRSFlattenBuf, __SRSTmpLongVal
+8	79	17		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+8	79	22		mov __CBTWArgs.Connection, __enviarCmd_7qG2_conn_7qG2_000
+8	79	24		mov __CBTWArgs.Buffer, __SRSSendBuf
+8	79	26		syscall 29, __CBTWArgs
+8	4452	29	#line 4452 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+8	78	29	#line 78 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+8	78	29	#line 78 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+8	79	29	#line 79 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+8	80	29		set __Wait_7qG2_ms_7qG2_000_inline_enviarCmd, 400
+8	79	32	#line 79 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+8	8551	32	#line 8551 "NXCDefs.h"
+8	8552	32		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_enviarCmd
+8	8551	35	#line 8551 "NXCDefs.h"
+8	80	35	#line 80 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+8	89	35	#line 89 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+8	90	35		subret __enviarCmd_return
+9	91	0	#line 91 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	92	0		set __evasion_7qG2_intentos_7qG2_000, 0
+9	91	3	#line 91 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	91	3	#line 91 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	92	3	#pragma macro 26
+9	92	3		acquire __RLSBmutex3
+9	92	4		mov __RLSReadBuf3, __RLSBbufLSWrite1
+9	92	6		set __RLSBytesCount3, 1
+9	92	9		wait2 NA, __constVal15
+9	92	12		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+9	92	14		index __D0evasion, __RLSReadBuf3, 65535
+9	92	18		release __RLSBmutex3
+9	4482	19	#line 4482 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	91	19	#line 91 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	92	19		mov __signed_stack_001evasion, __D0evasion
+9	91	21	#line 91 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	92	21		set __D0evasion, 14
+9	91	24	#line 91 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	92	24		cmp 0, __D0evasion, __signed_stack_001evasion, __D0evasion
+9	91	28	#line 91 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	92	28		brtst 4, __ASM_Label_526, __D0evasion
+9	91	31	#line 91 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	92	31		mov __signed_stack_001evasion, __evasion_7qG2_intentos_7qG2_000
+9	91	33	#line 91 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	91	33	#line 91 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	92	33		set __D0evasion, 8
+9	91	36	#line 91 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	92	36		cmp 0, __D0evasion, __signed_stack_001evasion, __D0evasion
+9	92	40	#line 92 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	93	40		brtst 4, __ASM_Label_524, __D0evasion
+9	92	43	#line 92 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	93	43		set __atras_7qG2_vel_7qG2_000, 55
+9	92	46	#line 92 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	92	46	#line 92 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	93	46		set __atras_7qG2_ms_7qG2_000, 450
+9	92	49	#line 92 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	93	49	#line 93 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	94	49		subcall atras, __atras_return
+9	93	51	#line 93 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	94	51	#line 94 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	95	51		subcall parar, __parar_return
+9	94	53	#line 94 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	94	53	#line 94 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	95	53		getin __signed_stack_001evasion, __constVal0, 4
+9	94	57	#line 94 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	94	57	#line 94 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	95	57		set __D0evasion, 35
+9	94	60	#line 94 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	95	60		cmp 0, __D0evasion, __signed_stack_001evasion, __D0evasion
+9	94	64	#line 94 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	95	64		brtst 5, __ASM_Label_531, __D0evasion
+9	94	67	#line 94 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	95	67		getin __signed_stack_001evasion, __constVal1, 4
+9	94	71	#line 94 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	94	71	#line 94 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	95	71		set __D0evasion, 35
+9	94	74	#line 94 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	95	74		cmp 0, __D0evasion, __signed_stack_001evasion, __D0evasion
+9	96	78	#line 96 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	97	78		brtst 4, __ASM_Label_534, __D0evasion
+9	96	81	#line 96 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	97	81		set __derecha_7qG2_vel_7qG2_000, 55
+9	96	84	#line 96 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	96	84	#line 96 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	97	84		set __derecha_7qG2_ms_7qG2_000, 900
+9	96	87	#line 96 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	97	87	#line 97 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	98	87		subcall derecha, __derecha_return
+9	97	89	#line 97 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	97	89	#line 97 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	98	89		jmp __ASM_Label_539
+9	97	91	#line 97 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	98	91		getin __signed_stack_001evasion, __constVal2, 4
+9	97	95	#line 97 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	97	95	#line 97 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	98	95		set __D0evasion, 35
+9	97	98	#line 97 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	98	98		cmp 0, __D0evasion, __signed_stack_001evasion, __D0evasion
+9	99	102	#line 99 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	100	102		brtst 4, __ASM_Label_542, __D0evasion
+9	99	105	#line 99 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	100	105		set __izquierda_7qG2_vel_7qG2_000, 55
+9	99	108	#line 99 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	99	108	#line 99 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	100	108		set __izquierda_7qG2_ms_7qG2_000, 900
+9	99	111	#line 99 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	100	111	#line 100 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	101	111		subcall izquierda, __izquierda_return
+9	100	113	#line 100 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	102	113	#line 102 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	103	113		jmp __ASM_Label_547
+9	102	115	#line 102 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	103	115		mov __signed_stack_001evasion, __evasion_7qG2_intentos_7qG2_000
+9	102	117	#line 102 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	102	117	#line 102 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	103	117		set __D0evasion, 2
+9	102	120	#line 102 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	103	120		mod __signed_stack_001evasion, __signed_stack_001evasion, __D0evasion
+9	102	124	#line 102 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	103	124	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	104	124		set __D0evasion, 0
+9	103	127	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	104	127		cmp 4, __D0evasion, __signed_stack_001evasion, __D0evasion
+9	103	131	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	104	131		brtst 4, __ASM_Label_550, __D0evasion
+9	103	134	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	104	134		set __derecha_7qG2_vel_7qG2_000, 55
+9	103	137	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	103	137	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	104	137		set __derecha_7qG2_ms_7qG2_000, 900
+9	103	140	#line 103 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	104	140	#line 104 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	105	140		subcall derecha, __derecha_return
+9	104	142	#line 104 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	105	142	#line 105 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	106	142		jmp __ASM_Label_555
+9	105	144	#line 105 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	106	144		set __izquierda_7qG2_vel_7qG2_000, 55
+9	105	147	#line 105 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	105	147	#line 105 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	106	147		set __izquierda_7qG2_ms_7qG2_000, 900
+9	105	150	#line 105 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	106	150	#line 106 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	107	150		subcall izquierda, __izquierda_return
+9	106	152	#line 106 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	106	152	#line 106 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	107	152	#line 107 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	107	152	#line 107 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	108	152	#line 108 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	109	152		subcall parar, __parar_return
+9	108	154	#line 108 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	108	154	#line 108 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	109	154		set __Wait_7qG2_ms_7qG2_000_inline_evasion, 200
+9	108	157	#line 108 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	8551	157	#line 8551 "NXCDefs.h"
+9	8552	157		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_evasion
+9	8551	160	#line 8551 "NXCDefs.h"
+9	109	160	#line 109 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	110	160	#line 110 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	111	160		add __evasion_7qG2_intentos_7qG2_000, __evasion_7qG2_intentos_7qG2_000, __constVal1
+9	110	164	#line 110 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	116	164	#line 116 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	117	164		jmp __ASM_Label_523
+9	116	166	#line 116 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	116	166	#line 116 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+9	117	166		subret __evasion_return
+10	296	0	#line 296 "C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc"
+10	297	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc
+1	__ResetSensorSubroutine	1195	NXTDefs.h
+2	__ReadLSBytes3	1208	NXTDefs.h
+3	adelante	1294	C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc
+4	atras	1356	C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc
+5	derecha	1418	C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc
+6	izquierda	1526	C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc
+7	parar	1639	C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc
+8	enviarCmd	1670	C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc
+9	evasion	1707	C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc
+10	__initialize_global_data	1875	C:\Users\Miriam\Downloads\Claude - NXC\maestro.nxc

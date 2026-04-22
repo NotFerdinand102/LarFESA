@@ -1,0 +1,294 @@
+// ============================================================
+// maestro.nxc
+// Bloque principal: navegacion, seguimiento de lineas,
+// evasion de obstaculos y coordinacion BT con esclavos.
+// ============================================================
+
+// --- Velocidades ---
+#define V_SLOW      20     // escaneo de arboles: lento para RGB
+#define V_NORM      55     // desplazamiento general
+#define V_FAST      70     // reposicionamiento sin recoleccion
+
+// --- Tiempos por paso (ms) ---
+#define T_SLOW      250    // paso en modo escaneo de arboles
+#define T_NORM      450    // paso en modo normal
+#define T_FAST      300    // paso de reposicionamiento
+
+// --- Puertos de sensor ---
+#define SEN_FL      IN_1   // luz - frontal izquierdo (frontera / borde)
+#define SEN_RL      IN_2   // luz - trasero izquierdo (borde lateral)
+#define SEN_FR      IN_3   // luz - frontal derecho (frontera der)
+#define SEN_US      IN_4   // ultrasonico (obstaculos y cajas)
+
+// --- Umbrales ---
+#define SOM         35     // umbral linea negra: valor < SOM = negro
+#define DIST_OBS    14     // cm: obstaculo detectado
+#define DIST_BOX    25     // cm: caja a ~250 mm (rango del sensor RGB)
+
+// --- Bluetooth ---
+// Emparejar el maestro con ambos esclavos antes de iniciar.
+// Garra = conexion 1, Selector = conexion 2.
+#define BT_GARRA    1
+#define BT_SEL      2
+#define MB_SEND     MAILBOX1
+
+// --- Comandos a esclavos ---
+#define CMD_STOP        0
+#define CMD_NIV1        1   // garra: escanear nivel 1 (bajo)
+#define CMD_NIV2        2   // garra: escanear nivel 2 (medio)
+#define CMD_NIV3        3   // garra: escanear nivel 3 (alto)
+#define CMD_SEL_ON     10   // selector: iniciar clasificacion
+#define CMD_SEL_OFF    11   // selector: detener clasificacion
+#define CMD_DEPOSITAR  20   // selector: leer caja y vaciar canasta
+
+// ============================================================
+// MOVIMIENTOS BASE
+// ============================================================
+void adelante(int vel, int ms) {
+    OnRev(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+}
+void atras(int vel, int ms) {
+    OnFwd(OUT_B, vel);
+    OnRev(OUT_C, vel);
+    Wait(ms);
+}
+void derecha(int vel, int ms) {
+    OnRev(OUT_A, vel);
+    OnFwd(OUT_B, vel / 2 - 3);
+    OnFwd(OUT_C, vel / 2);
+    Wait(ms);
+}
+void izquierda(int vel, int ms) {
+    OnFwd(OUT_A, vel);
+    OnRev(OUT_B, vel / 2 - 3);
+    OnRev(OUT_C, vel / 2);
+    Wait(ms);
+}
+void parar() {
+    Off(OUT_ABC);
+    Wait(150);
+}
+
+// ============================================================
+// ENVIO BT
+// Envia comando al esclavo y espera un ciclo de proceso.
+// ============================================================
+void enviarCmd(int conn, int cmd) {
+    SendRemoteNumber(conn, MB_SEND, cmd);
+    Wait(400);
+}
+
+// ============================================================
+// EVASION DE OBSTACULO
+// Retrocede y se mueve lateralmente alternando derecha/izq
+// hasta que el camino quede libre.
+// Si el borde izquierdo esta activo, evade hacia la derecha.
+// Si el borde derecho esta activo, evade hacia la izquierda.
+// ============================================================
+void evasion() {
+    int intentos = 0;
+    while (SensorUS(SEN_US) < DIST_OBS && intentos < 8) {
+        atras(V_NORM, T_NORM);
+        parar();
+        if (Sensor(SEN_FL) < SOM || Sensor(SEN_RL) < SOM) {
+            // Borde izquierdo activo: evadir hacia la derecha
+            derecha(V_NORM, T_NORM * 2);
+        } else if (Sensor(SEN_FR) < SOM) {
+            // Borde derecho activo: evadir hacia la izquierda
+            izquierda(V_NORM, T_NORM * 2);
+        } else {
+            // Sin borde: alternar segun numero de intento
+            if (intentos % 2 == 0)
+                derecha(V_NORM, T_NORM * 2);
+            else
+                izquierda(V_NORM, T_NORM * 2);
+        }
+        parar();
+        Wait(200);
+        intentos++;
+    }
+}
+
+// ============================================================
+// TASK PRINCIPAL
+// ============================================================
+task main() {
+    SetSensorLight(SEN_FL);
+    SetSensorLight(SEN_RL);
+    SetSensorLight(SEN_FR);
+    SetSensorLowspeed(SEN_US);
+    Wait(600);
+
+    bool bt_garra = (BluetoothStatus(BT_GARRA) == NO_ERR);
+    bool bt_sel   = (BluetoothStatus(BT_SEL)   == NO_ERR);
+
+    // ========================================================
+    // FASE 1: Salir de la casilla del beneficiadero
+    // Avanzar hasta detectar la linea de salida con ambos
+    // sensores frontales, luego cruzarla completamente.
+    // ========================================================
+    bool salido = false;
+    while (!salido) {
+        if (SensorUS(SEN_US) < DIST_OBS) evasion();
+        adelante(V_NORM, T_NORM);
+        if (Sensor(SEN_FL) < SOM && Sensor(SEN_FR) < SOM) {
+            adelante(V_NORM, T_NORM); // terminar de cruzar la linea
+            parar();
+            salido = true;
+        }
+    }
+
+    // ========================================================
+    // FASE 2: Buscar borde izquierdo del escenario
+    // Buscador de lineas: moverse a la izquierda hasta que
+    // el sensor lateral izquierdo detecte la linea de borde.
+    // ========================================================
+    while (Sensor(SEN_FL) >= SOM && Sensor(SEN_RL) >= SOM) {
+        if (SensorUS(SEN_US) < DIST_OBS) evasion();
+        izquierda(V_NORM, T_NORM);
+    }
+    parar();
+    // Alejarse ligeramente del borde
+    derecha(V_NORM, T_NORM / 2);
+    parar();
+
+    // ========================================================
+    // FASE 3: Ir a la esquina derecha del escenario
+    // Moverse a la derecha con buscador de lineas.
+    // El sensor frontal derecho detecta el borde derecho.
+    // Si se acerca demasiado al borde izquierdo: corregir.
+    // ========================================================
+    while (Sensor(SEN_FR) >= SOM) {
+        int ul = SensorUS(SEN_US);
+        if (ul < DIST_OBS) {
+            evasion();
+        } else if (Sensor(SEN_FL) < SOM || Sensor(SEN_RL) < SOM) {
+            // Demasiado cerca del borde izq: paso corto de correccion
+            adelante(V_NORM, T_NORM / 3);
+        } else {
+            derecha(V_NORM, T_NORM);
+        }
+    }
+    parar();
+
+    // Activar clasificador antes de empezar recoleccion
+    if (bt_sel) enviarCmd(BT_SEL, CMD_SEL_ON);
+
+    // ========================================================
+    // FASE 4: Escaneo de los 3 arboles — nivel por nivel
+    //
+    // Por cada nivel:
+    //   - Indicar al esclavo garra el nivel actual
+    //   - Barrer de DERECHA a IZQUIERDA a V_SLOW
+    //     (lento para dar tiempo al RGB del esclavo)
+    //   - Al llegar al borde izquierdo, detener garra
+    //   - Reposicionar rapido a la derecha para el siguiente nivel
+    //
+    // El esclavo garra detecta y recolecta de forma autonoma
+    // mientras el maestro se desplaza.
+    // ========================================================
+    int cmds_niv[3];
+    cmds_niv[0] = CMD_NIV1;
+    cmds_niv[1] = CMD_NIV2;
+    cmds_niv[2] = CMD_NIV3;
+
+    int n;
+    for (n = 0; n < 3; n++) {
+        if (bt_garra) enviarCmd(BT_GARRA, cmds_niv[n]);
+
+        // Barrer izquierda lentamente (buscador de lineas lateral)
+        while (Sensor(SEN_FL) >= SOM && Sensor(SEN_RL) >= SOM) {
+            if (SensorUS(SEN_US) < DIST_OBS) {
+                // Pausar recoleccion mientras se evade
+                if (bt_garra) enviarCmd(BT_GARRA, CMD_STOP);
+                evasion();
+                if (bt_garra) enviarCmd(BT_GARRA, cmds_niv[n]);
+            }
+            izquierda(V_SLOW, T_SLOW);
+            Wait(150); // pausa extra para estabilizar lectura RGB
+        }
+        parar();
+
+        // Reposicionar a la derecha para el siguiente nivel
+        if (n < 2) {
+            if (bt_garra) enviarCmd(BT_GARRA, CMD_STOP);
+            while (Sensor(SEN_FR) >= SOM) {
+                if (SensorUS(SEN_US) < DIST_OBS) evasion();
+                derecha(V_FAST, T_FAST);
+            }
+            parar();
+        }
+    }
+
+    // Detener garra: todos los niveles completados
+    if (bt_garra) enviarCmd(BT_GARRA, CMD_STOP);
+
+    // ========================================================
+    // FASE 5: Regresar a la zona del beneficiadero
+    // Ir primero a la esquina izquierda (buscador de lineas),
+    // luego retroceder hasta detectar la linea de entrada
+    // al beneficiadero con ambos sensores frontales.
+    // ========================================================
+    while (Sensor(SEN_FL) >= SOM && Sensor(SEN_RL) >= SOM) {
+        if (SensorUS(SEN_US) < DIST_OBS) evasion();
+        izquierda(V_NORM, T_NORM);
+    }
+    parar();
+
+    // Retroceder hasta la linea del beneficiadero
+    while (!(Sensor(SEN_FL) < SOM && Sensor(SEN_FR) < SOM)) {
+        if (SensorUS(SEN_US) < DIST_OBS) evasion();
+        atras(V_NORM, T_NORM);
+    }
+    atras(V_NORM, T_NORM); // cruzar completamente la linea
+    parar();
+
+    // ========================================================
+    // FASE 6: Buscar cajas y depositar
+    // Buscador de lineas hacia la derecha.
+    // Cuando el US detecta objeto a <= 250 mm: aproximarse,
+    // ordenar al selector que lea el color y vacle la canasta.
+    // ========================================================
+    int cajas = 0;
+    while (cajas < 2) {
+        int ul = SensorUS(SEN_US);
+
+        if (ul >= 5 && ul <= DIST_BOX) {
+            // Caja encontrada a distancia correcta
+            parar();
+            Wait(500);
+            if (bt_sel) {
+                enviarCmd(BT_SEL, CMD_DEPOSITAR);
+                // Esperar que el selector lea el color y vacle.
+                // AJUSTAR este tiempo segun el vaciado fisico real.
+                Wait(7000);
+            }
+            cajas++;
+            if (cajas < 2) {
+                // Avanzar a la siguiente caja.
+                // AJUSTAR T_NORM * N segun la distancia real entre cajas.
+                derecha(V_NORM, T_NORM * 6);
+                parar();
+            }
+        } else if (ul < DIST_OBS) {
+            evasion();
+        } else {
+            // Sin deteccion: seguir buscando
+            if (Sensor(SEN_FR) < SOM) {
+                // Borde derecho: no hay mas cajas
+                parar();
+                break;
+            }
+            derecha(V_NORM, T_NORM);
+        }
+    }
+
+    if (bt_sel) enviarCmd(BT_SEL, CMD_SEL_OFF);
+    parar();
+    PlayTone(880, 500);
+    Wait(600);
+    PlayTone(660, 500);
+    Wait(1000);
+}

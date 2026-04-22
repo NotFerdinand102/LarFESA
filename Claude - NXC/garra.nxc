@@ -1,0 +1,229 @@
+
+// ================================================================
+// garra.nxc  |  Brick 2 - Brazo recolector
+// Robot recolector LARC TMR2026 - FES Acatlan UNAM
+//
+// RESUMEN DE COMPORTAMIENTO:
+//   - Espera el comando del maestro para activarse (CMD_N1/N2/N3)
+//   - Posiciona el elevador en el nivel indicado
+//   - Escanea continuamente con el sensor RGB
+//   - Usa el sensor US del brazo para confirmar proximidad al grano
+//   - Si detecta algo NO verde a menos de DIST_GARRA cm: empuja la pelota
+//   - Espera que el ciclo termine antes de volver a escanear
+//     (esto evita retroalimentacion no deseada)
+//   - Se desactiva al recibir CMD_STOP_GARRA
+//
+// USO DEL SENSOR US EN EL BRAZO:
+//   El arbol es completamente verde, por lo que:
+//     - US cerca + color VERDE -> es el arbol, ignorar
+//     - US cerca + color NO verde -> es una pelota, empujar
+//   Esto evita activar la garra contra el arbol mismo.
+//   Si no se cuenta con sensor US en el brazo, comentar la
+//   condicion "dist < DIST_GARRA" y usar solo la deteccion de color.
+//
+// ================================================================
+
+// --- Sensores del brazo ---
+#define SEN_COLOR  IN_1   // sensor de color RGB en la garra
+#define SEN_US_ARM IN_2   // sensor US montado frente a la garra
+                          // Si no se usa, comentar las lineas de DIST_GARRA
+
+// --- Motores del brazo ---
+// OUT_A = elevador (sube y baja el brazo entre niveles)
+// OUT_B = garra    (empuje de la pelota)
+
+// --- Velocidades del brazo ---
+#define VEL_ELEV     50   // velocidad del elevador
+#define VEL_GARRA    65   // velocidad del empuje de garra
+#define TIEM_GARRA   350  // ms de extension de la garra
+                          // AJUSTAR si no empuja suficiente o empuja demas
+
+// --- Tiempos del elevador ---
+// AJUSTAR estos valores segun la construccion fisica del robot
+#define TIEM_BAJAR   1600  // ms para bajar al nivel 1 desde cualquier punto
+#define TIEM_L1_A_L2  700  // ms de nivel 1 a nivel 2
+#define TIEM_L2_A_L3  700  // ms de nivel 2 a nivel 3
+
+// --- Sensor US del brazo ---
+#define DIST_GARRA   10   // cm - distancia minima para activar garra
+                          // AJUSTAR segun la separacion garra-pelota
+
+// --- Thresholds de color (raw RGB - calibrar en el escenario real) ---
+// Estos valores son aproximados. Ajustar bajo la iluminacion de competencia.
+//
+// VERDE (arbol): canal G dominante, R y B bajos
+#define VERDE_G_MIN  90   // minimo G para ser considerado verde
+#define VERDE_R_MAX  75   // maximo R para ser verde
+#define VERDE_B_MAX  75   // maximo B para ser verde
+
+// --- Bluetooth ---
+#define MBOX_RECV  MAILBOX1   // recibir comandos del maestro
+#define CMD_N1     "N1"
+#define CMD_N2     "N2"
+#define CMD_N3     "N3"
+#define CMD_STOP   "SG"
+
+
+// Variable compartida entre tasks
+// true = escanear granos activamente
+bool cosechando = false;
+
+
+// ================================================================
+// Lectura del sensor de color (valores raw RGB)
+// Mas preciso que el indice de color para distinguir naranja
+// ================================================================
+
+void leer_rgb(int &r, int &g, int &b) {
+    unsigned int raw_vals[]; // Array para guardar los valores
+
+    // ReadSensorColorRaw devuelve los componentes R, G, B y Blank
+    if (ReadSensorColorRaw(SEN_COLOR, raw_vals)) {
+        r = raw_vals[0]; // Rojo
+        g = raw_vals[1]; // Verde
+        b = raw_vals[2]; // Azul
+    }
+}
+
+// Devuelve true si los valores RGB corresponden a VERDE (arbol)
+bool es_verde(int r, int g, int b) {
+    return (g > VERDE_G_MIN && r < VERDE_R_MAX && b < VERDE_B_MAX);
+}
+
+
+// ================================================================
+// Control del elevador
+// Siempre baja al nivel 1 primero para tener referencia absoluta.
+// ================================================================
+
+void ir_a_nivel_1() {
+    // Bajar hasta el tope mecanico (referencia absoluta)
+    OnRev(OUT_A, VEL_ELEV);
+    Wait(TIEM_BAJAR);
+    Off(OUT_A);
+    Wait(150);
+}
+
+void ir_a_nivel_2() {
+    ir_a_nivel_1();   // referenciar primero
+    OnFwd(OUT_A, VEL_ELEV);
+    Wait(TIEM_L1_A_L2);
+    Off(OUT_A);
+    Wait(150);
+}
+
+void ir_a_nivel_3() {
+    ir_a_nivel_2();   // referenciar y subir a 2 primero
+    OnFwd(OUT_A, VEL_ELEV);
+    Wait(TIEM_L2_A_L3);
+    Off(OUT_A);
+    Wait(150);
+}
+
+
+// ================================================================
+// Empuje de la pelota con la garra
+// La garra se extiende para empujar la pelota hacia la canasta
+// y luego regresa a la posicion cerrada.
+// ================================================================
+
+void empujar_pelota() {
+    // Extender garra (empujar pelota)
+    OnFwd(OUT_B, VEL_GARRA);
+    Wait(TIEM_GARRA);
+    // Retraer garra (posicion lista)
+    OnRev(OUT_B, VEL_GARRA);
+    Wait(TIEM_GARRA);
+    Off(OUT_B);
+    Wait(100);
+}
+
+
+// ================================================================
+// task escuchar_maestro
+// Corre en paralelo con el escaneo de granos.
+// Recibe comandos BT del maestro y actualiza el nivel del elevador.
+// ================================================================
+
+task escuchar_maestro() {
+    string msg = "";
+    while(true) {
+        if(ReceiveMessage(MBOX_RECV, true, msg) == NO_ERR) {
+
+            if(msg == CMD_N1) {
+                cosechando = false;   // pausar durante el cambio de nivel
+                ir_a_nivel_1();
+                cosechando = true;
+
+            } else if(msg == CMD_N2) {
+                cosechando = false;
+                ir_a_nivel_2();
+                cosechando = true;
+
+            } else if(msg == CMD_N3) {
+                cosechando = false;
+                ir_a_nivel_3();
+                cosechando = true;
+
+            } else if(msg == CMD_STOP) {
+                cosechando = false;
+                Off(OUT_AB);
+            }
+        }
+        Wait(20);
+    }
+}
+
+
+// ================================================================
+// task main - Ciclo de deteccion y cosecha
+// ================================================================
+
+task main() {
+    SetSensorColorFull(SEN_COLOR);
+    SetSensorLowspeed(SEN_US_ARM);
+
+    // Iniciar escucha BT en paralelo
+    start escuchar_maestro;
+
+    int r, g, b;
+    int dist;
+
+    while(true) {
+        if(cosechando) {
+
+            // Leer distancia frente a la garra
+            dist = SensorUS(SEN_US_ARM);
+
+            // Leer color del objeto frente a la garra
+            leer_rgb(r, g, b);
+
+            // Condicion de accion:
+            //   - Hay un objeto a menos de DIST_GARRA cm
+            //   - El color NO es verde (no es el arbol)
+            //
+            // Si no se usa sensor US en el brazo:
+            //   Comentar la condicion "dist < DIST_GARRA &&" y
+            //   dejar solo "!es_verde(r, g, b)"
+            if(dist < DIST_GARRA && !es_verde(r, g, b)) {
+
+                // Pausar escaneo durante el ciclo de empuje
+                // Esto previene retroalimentacion no deseada
+                cosechando = false;
+
+                empujar_pelota();
+
+                // Esperar que la pelota llegue a la canasta del selector
+                // antes de reanudar el escaneo
+                Wait(500);
+
+                cosechando = true;
+            }
+        }
+
+        // Ciclo de escaneo cada 60ms
+        // AJUSTAR: si el robot se mueve demasiado rapido entre lecturas,
+        // reducir este Wait o reducir V_LENTO en maestro.nxc
+        Wait(60);
+    }
+}
