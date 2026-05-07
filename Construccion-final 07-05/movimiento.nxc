@@ -39,7 +39,7 @@ task main()
     SetSensorLowspeed(SEN4);
 
     PlayTone(440, 200);
-    adelantet(75,1400);
+    adelantet(75,2000);
 
     while(true)
     {
@@ -56,7 +56,6 @@ task main()
             esperar(500);       // Retrocede 500ms leyendo sensores
             derecha(V);
             esperar(500);       // Gira 500ms leyendo sensores
-            adelante(V);        // Vuelve a avanzar
         }
         else if(fi < SOM)
         {
@@ -78,7 +77,7 @@ task main()
         {
             adelante(V);        // Solo enciende, no para
         }
-        
+
         if(fd < SOM)
         {
             parar();
