@@ -1,5 +1,5 @@
 #define V    50     // potencia
-#define TIEM 500   // tiempo
+#define TIEM 1400   // tiempo
 #define SEN1 IN_1   // seguidor linea - frontal izquierdo
 #define SEN2 IN_2   // seguidor linea - trasero izquierdo
 #define SEN3 IN_3   // seguidor linea - frontal derecho
