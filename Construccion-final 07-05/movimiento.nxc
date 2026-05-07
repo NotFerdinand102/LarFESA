@@ -1,0 +1,121 @@
+#define V    50     // potencia
+#define TIEM 555    // tiempo
+#define SEN1 IN_1   // seguidor linea - frontal izquierdo
+#define SEN2 IN_2   // seguidor linea - trasero izquierdo
+#define SEN3 IN_3   // seguidor linea - frontal derecho
+#define SEN4 IN_4   // ultra sonico
+#define SOM 35
+
+void adelante(int vel, int ms)
+{
+    OnRev(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+
+}
+
+void atras(int vel, int ms)
+{
+ OnFwd(OUT_B,vel);
+ OnRev(OUT_C,vel);
+ Wait(ms);
+}
+void derecha(int vel, int ms)
+{
+    OnRev(OUT_A, vel);
+    OnFwd(OUT_B, vel/2-3);
+    OnFwd(OUT_C, vel/2);
+    Wait(ms);
+}
+
+void rderecha(int vel, int ms)
+{
+    OnFwd(OUT_A, vel);
+    OnFwd(OUT_B, vel);
+    OnFwd(OUT_C, vel);
+    Wait(ms);
+}
+
+void r(int vel, int ms)
+{
+    OnRev(OUT_A, vel);
+    OnRev(OUT_B, vel);
+    OnRev(OUT_C, vel);
+    Wait(ms);
+}
+
+void parar()
+{
+ Off(OUT_ABC);
+ Wait(200);
+}
+
+task movimiento(){
+
+      adelante(75,1000);
+
+      //iniciar movimiento.
+      while(true)
+      {
+         int fi = Sensor(SEN1);
+         int ti = Sensor(SEN2);
+         int fd = Sensor(SEN3);
+         int ul = SensorUS(SEN4); //ultra sonico
+        Wait(50);
+        if(fd < SOM && fi < SOM)
+        {
+          PlayTone(440,200);
+          Wait(10);
+          parar();
+          break;
+        }
+        Wait(50);
+        if(ul<20)
+        {
+         atras(V,TIEM);
+         parar();
+         PlayTone(880,500);
+         Wait(10);
+         derecha(V,TIEM);
+         parar();
+         Wait(10);
+        }
+        else if(fi < SOM)
+        {
+         derecha(V,TIEM+300);
+         r(V,TIEM+100);
+         parar();
+         PlayTone(440,200);
+         Wait(10);
+
+         }
+         else if(ti < SOM)
+         {
+          derecha(V,TIEM+300);
+          rderecha(V,TIEM+100);
+          parar();
+          PlayTone(440,200);
+          Wait(10);
+         }
+         else
+         {
+           adelante(V, TIEM);
+           parar();
+         }
+      }
+
+}
+
+
+task main()
+{
+     SetSensorLight(SEN1);
+     SetSensorLight(SEN2);
+     SetSensorLight(SEN3);
+
+     SetSensorLowspeed(SEN4); //Ultrasonico
+     
+     start movimiento;
+     PlayTone(440,200);
+
+}
