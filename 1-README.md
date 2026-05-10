@@ -1,10 +1,14 @@
 # LarFESA
 Laboratorio de Algoritmos para la Robótica - FES Acatlán
 
-* **En partes del programa**: vienen los programas que realizamos por partes.
 * **En coffe**: viene las sugerencias que realizo el cuarto integrante.
+* **En partes del programa**: vienen los programas que realizamos por partes.
 * **En proyecto final**: es el intento de realizar programas definitivos para el robot.
-* **En unificacion**: viene los códigos que unimos al final de la ronda 3.
+* **En unificacion**: códigos que unimos al final.
+* **En Reconstruccion-07-05-2026**: Codigos que se modificaran para acabar el robot.
+* **En Claude-NXC**: vienen codigos sugeridos por la IA Claude.
+* **En Programas-extras**: codigos que pueden ser implementados al robot.
+
 
 ## Planteamiento del problema
 El repositorio fue generado para colocar todo lo referente a la solución del problema planteado en el IEEE LARC-Open Challenge 2026.
