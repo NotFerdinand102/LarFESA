@@ -1,2 +1,2 @@
-# HOLA
-Aqui vienen todas las partes que se trabajaron para el robot.
+# CONTENIDO
+Vienen los codigos trabajdos en el robot.
