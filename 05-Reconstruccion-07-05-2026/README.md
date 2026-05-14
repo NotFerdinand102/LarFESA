@@ -1,2 +1,2 @@
 ## Contenido
-* **Progrmas que van a ser modificados y cambiados.
+* **Progrmas** que van a ser modificados y cambiados.
