@@ -1,0 +1,11 @@
+//Motor de Garra puerto B
+#define SEN_MOT OUT_B
+
+task main()
+{
+  OnFwd(SEN_MOT,50); //OnFwd = movimiento adelante (la garra se va abrir)
+  //OnRev(SEN_MOT,50); //OnRev  = movimieento hacia atras  (la garra va a cerrar)
+  Wait(3000); // pausa el programa cierto toempo. (En este caso 3 segundos)
+  Off(SEN_MOT);
+
+}
