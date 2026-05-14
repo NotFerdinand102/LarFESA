@@ -11,26 +11,26 @@ task task_sensor_color() {
         col_d = SensorValue(SEN_COLOR); // analiza el color y lo actualiza
 
         if(col_d == 1) {
-            TextOut(0, LCD_LINE1, "NEGRO " , true);
+            TextOut(0, LCD_LINE3, "NEGRO" , true); // tercer parametro es para limpiar true = limpiar pantalla y escribir y false = solo escribir sin limpiar
+                                                   // Siempre se cumple ya que detecta el aire como negro al no haber algo
         }
         else if(col_d == 2)
         {
-             TextOut(0,LCD_LINE2, "AZUL", true);
-        }
+             TextOut(0,LCD_LINE3, "AZUL", true);         }
         else if(col_d == 3){
-             TextOut(0, LCD_LINE3, "verde" , true);
+             TextOut(0, LCD_LINE3, "vERDE" , true);
         }
         else if(col_d == 4)
         {
-             TextOut(0, LCD_LINE4, "AMARILLO" , true);
+             TextOut(0, LCD_LINE3, "AMARILLO" , true);
         }
         else if(col_d == 5)
         {
-             TextOut(0, LCD_LINE5, "Rojo" , true);
+             TextOut(0, LCD_LINE3, "ROJO" , true);
         }
         else if(col_d == 6)
         {
-             TextOut(0, LCD_LINE6, "Blanco" , true);
+             TextOut(0, LCD_LINE3, "BLANCO" , true);
         }
 
         Wait(50);
