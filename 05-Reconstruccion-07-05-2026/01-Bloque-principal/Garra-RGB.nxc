@@ -1,10 +1,11 @@
 //combinacion de Garra y RGB
 
-#define SEN_MOT OUT_B
-#define SEN_COLOR IN_4
+#define SEN_MOT OUT_B  // puerto de la garra
+#define SEN_COLOR IN_4 // puerto del sensor de color
 
 int col_d=0; // variable global con intervalo de 1-6
 
+//funcioines de la garra
 
 void Garraabrir(){
      OnFwd(SEN_MOT,50); //OnFwd = movimiento adelante (la garra se va abrir)
@@ -15,26 +16,77 @@ void Garracerrar(){
      OnRev(SEN_MOT,50); //OnRev  = movimieento hacia atras  (la garra va a cerrar)
      Wait(2500);
 }
+//
 
-
+//funcion del RGB en task para ejecucion en paralelo
 task RGB()
 {
-     SetSensorColorFull(SEN_COLOR);
+     SetSensorColorFull(SEN_COLOR); //Activar el sensor de color
      ClearScreen();
      Wait(500);
      
      while(true){
-                 col_d = SensorValue(SEN_COLOR);
+                 col_d = SensorValue(SEN_COLOR); //Reiniciar el sensor de color  para detectar valores una y otra vez
                  if(col_d == 2){
-                          TextOut(0,LCD_LINE3, "AZUL", true);
+                          TextOut(0,LCD_LINE3, "AZUL", true); // tercer parametro es para limpiar true = limpiar pantalla y escribir y false = solo escribir sin limpiar
                           Garracerrar();
+                          Off(SEN_MOT); //Apagar el motor para no provocar movimiento despues del Wait
+                          Wait(2500); //tiempo de espera despues de cerrar garra.
                           
-                 }else{
-                       TextOut(0,LCD_LINE3, "NADA", true);
+                          Garraabrir();
+                          Off(SEN_MOT);
+                          Wait(2500);
+                          
+                          
+                 }
+                 else if(col_d == 3){
+                               TextOut(0, LCD_LINE3, "VERDE" , true);
+                               Garracerrar();
+                               Off(SEN_MOT);
+                               Wait(2500);
+
+                               Garraabrir();
+                               Off(SEN_MOT);
+                               Wait(2500);
+                 }else if(col_d == 4){
+                                 TextOut(0, LCD_LINE3, "AMARILLO" , true);
+                                 Garracerrar();
+                                 Off(SEN_MOT);
+                                 Wait(2500);
+
+                                 Garraabrir();
+                                 Off(SEN_MOT);
+                                 Wait(2500);
+                 }else if(col_d == 5){
+                                 TextOut(0, LCD_LINE3, "ROJO" , true);
+                                 Garracerrar();
+                                 Off(SEN_MOT);
+                                 Wait(2500);
+
+                                 Garraabrir();
+                                 Off(SEN_MOT);
+                                 Wait(2500);
+                 }else if(col_d == 6){
+                                TextOut(0, LCD_LINE3, "BLANCO" , true);
+                                Garracerrar();
+                                Off(SEN_MOT);
+                                Wait(2500);
+
+                                Garraabrir();
+                                Off(SEN_MOT);
+                                Wait(2500);
+                 }
+                 else{
+                       TextOut(0,LCD_LINE3, "NADA", true);//color negro siempre se cumple al no detectar algo
                  }
                  
                  Wait(50);
      }
 
+}
+////////////////
 
+
+task main(){
+     start RGB;
 }
