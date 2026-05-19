@@ -39,16 +39,7 @@ task RGB()
                           
                           
                  }
-                 else if(col_d == 3){
-                               TextOut(0, LCD_LINE3, "VERDE" , true);
-                               Garracerrar();
-                               Off(SEN_MOT);
-                               Wait(2500);
-
-                               Garraabrir();
-                               Off(SEN_MOT);
-                               Wait(2500);
-                 }else if(col_d == 4){
+                 else if(col_d == 4){
                                  TextOut(0, LCD_LINE3, "AMARILLO" , true);
                                  Garracerrar();
                                  Off(SEN_MOT);
@@ -57,7 +48,8 @@ task RGB()
                                  Garraabrir();
                                  Off(SEN_MOT);
                                  Wait(2500);
-                 }else if(col_d == 5){
+                 }
+                 else if(col_d == 5){
                                  TextOut(0, LCD_LINE3, "ROJO" , true);
                                  Garracerrar();
                                  Off(SEN_MOT);
@@ -77,7 +69,7 @@ task RGB()
                                 Wait(2500);
                  }
                  else{
-                       TextOut(0,LCD_LINE3, "NADA", true);//color negro siempre se cumple al no detectar algo
+                       TextOut(0,LCD_LINE3, "NADA", true);//color negro y el verde siempre se cumple al no detectar algo
                  }
                  
                  Wait(50);
