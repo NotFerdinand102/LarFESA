@@ -1,0 +1,44 @@
+//SensorRGB puerto 4
+#define SEN_COLOR IN_4
+
+int col_d = 0; // valores de 1 a 6 para los colores.
+
+task task_sensor_color() {
+    SetSensorColorFull(SEN_COLOR);  // prende el sensor de color
+    ClearScreen(); // limpia pantalla antes de escribir
+    Wait(500);
+    while(true) {
+        col_d = SensorValue(SEN_COLOR); // analiza el color y lo actualiza
+
+        if(col_d == 1) {
+            TextOut(0, LCD_LINE3, "NEGRO" , true); // tercer parametro es para limpiar true = limpiar pantalla y escribir y false = solo escribir sin limpiar
+                                                   // Siempre se cumple ya que detecta el aire como negro al no haber algo
+        }
+        else if(col_d == 2)
+        {
+             TextOut(0,LCD_LINE3, "AZUL", true);         }
+        else if(col_d == 3){
+             TextOut(0, LCD_LINE3, "vERDE" , true);
+        }
+        else if(col_d == 4)
+        {
+             TextOut(0, LCD_LINE3, "AMARILLO" , true);
+        }
+        else if(col_d == 5)
+        {
+             TextOut(0, LCD_LINE3, "ROJO" , true);
+        }
+        else if(col_d == 6)
+        {
+             TextOut(0, LCD_LINE3, "BLANCO" , true);
+        }
+
+        Wait(50);
+
+    }
+}
+
+
+task main() {
+    start task_sensor_color;
+}

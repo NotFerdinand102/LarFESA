@@ -1,0 +1,87 @@
+#define V    50     // potencia
+#define TIEM 2700   // tiempo
+#define SEN1 IN_1   // seguidor linea - frontal izquierdo
+#define SEN2 IN_2   // seguidor linea - trasero izquierdo
+#define SEN3 IN_3   // seguidor linea - frontal derecho
+#define SEN4 IN_4   // ultra sonico
+#define SOM  35
+
+void adelante(int vel) {Off(OUT_A); OnRev(OUT_B, vel); OnFwd(OUT_C, vel);  }
+void adelantet(int vel,int tiem) { Off(OUT_A); OnRev(OUT_B, vel); OnFwd(OUT_C, vel); Wait(tiem);} // moviemto con tiempo
+void atras(int vel)    {Off(OUT_A); OnFwd(OUT_B, vel); OnRev(OUT_C, vel);}
+void atrast(int vel, int tiem)    {Off(OUT_A); OnFwd(OUT_B, vel); OnRev(OUT_C, vel); Wait(tiem);}
+void derecha(int vel)  { OnRev(OUT_A, vel); OnFwd(OUT_B, vel/2-3); OnFwd(OUT_C, vel/2);}
+void derechat(int vel,int tiem)  { OnRev(OUT_A, vel); OnFwd(OUT_B, vel/2-3); OnFwd(OUT_C, vel/2); Wait(tiem);} // moviemto con tiempo
+void rderecha(int vel) { OnFwd(OUT_A, vel); OnFwd(OUT_B, vel); OnFwd(OUT_C, vel);}
+void r(int vel)        { OnRev(OUT_A, vel); OnRev(OUT_B, vel); OnRev(OUT_C, vel);}
+void parar()           { Off(OUT_ABC); }
+
+
+// Espera tiempo MIENTRAS lee sensores
+// Retorna true si detecta línea
+bool esperar(int ms)
+{
+    long inicio = CurrentTick();
+    while(CurrentTick() - inicio < ms)
+    {
+
+        Wait(20);
+    }
+    return false;
+}
+
+task main()
+{
+    SetSensorLight(SEN1);
+    SetSensorLight(SEN2);
+    SetSensorLight(SEN3);
+    SetSensorLowspeed(SEN4);
+
+    PlayTone(440, 200);
+    adelantet(75,2700);
+
+    while(true)
+    {
+        int fi = Sensor(SEN1);
+        int ti = Sensor(SEN2);
+        int fd = Sensor(SEN3);
+        int ul = SensorUS(SEN4);
+
+
+        if(ul < 21)
+        {
+          atrast(V,TIEM);
+          derechat(V,TIEM);
+        }
+
+        if(fi < SOM)
+        {
+            derecha(V);
+            esperar(400);       // Gira 400ms
+            r(V);
+            esperar(300);       // Retrocede girando 300ms
+            adelante(V);
+        }
+        else if(ti < SOM)
+        {
+            derecha(V);
+            esperar(400);
+            rderecha(V);
+            esperar(300);
+            adelante(V);
+        }
+        else
+        {
+            adelante(V);        // Solo enciende, no para
+        }
+
+        if(fd < SOM)
+        {
+            parar();
+            PlayTone(440, 200);
+            break;
+        }
+
+        Wait(20);
+    }
+}
