@@ -1,0 +1,16 @@
+//Compuerta C  derecha
+#define SEN_MOT OUT_C
+
+void abrir( ){
+     RotateMotor(SEN_MOT,10,120);
+}
+void cerrar(){
+     RotateMotor(SEN_MOT,10,-120);
+}
+
+task main(){
+     abrir();
+     Wait(2500);
+     cerrar();
+
+}
