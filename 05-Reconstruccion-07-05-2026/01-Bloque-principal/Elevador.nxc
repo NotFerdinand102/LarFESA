@@ -1,0 +1,18 @@
+//Elevador motor A - prueba01
+#define SEN_MOT OUT_A
+
+void elevar(){
+     RotateMotor(SEN_MOT,100,80*360);
+}
+
+void bajar(){
+     RotateMotor(SEN_MOT,100,-80*360);
+}
+
+task main(){
+     elevar();
+     Wait(1000);
+     bajar();
+     Wait(1000);
+
+}
