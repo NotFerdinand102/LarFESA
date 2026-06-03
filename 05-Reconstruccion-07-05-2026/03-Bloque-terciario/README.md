@@ -1,12 +1,11 @@
 # Contenido
 * **Progrmas**:programas para el tercer bloque.
-```
-(/La mejor cura para el insomnio es tomar un /)
-(/Mucho sueño. -WC Fields/)
+________________________________________
+/ La mejor cura para el insomnio es tomar \
+\ mucho sueño. -W.C. Fields                /
  ----------------------------------------
-        o ^__^
-         o (oo)\_______
-            (__)\ )\/\
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
                 ||----w |
-                || ||
-```
+                ||     ||
