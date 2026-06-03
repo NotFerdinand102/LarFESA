@@ -1,0 +1,6 @@
+#define SEN_MOT OUT_A
+
+task main() {
+
+    RotateMotor(SEN_MOT, 100, 36000); // 1. gira 100 vueltas
+}

@@ -1,0 +1,71 @@
+// Motor y RGB
+#define SEN_MOT OUT_A
+#define SEN_COLOR IN_4
+
+int col_d=0; // variable global con intervalo de 1-6
+
+void izquierda(){
+     RotateMotor(SEN_MOT,10,90); // esta dividido en el puerto,potencia y grados
+}
+
+void derecha(){
+     RotateMotor(SEN_MOT,10,-90);
+}
+
+
+//funcion del RGB en task para ejecucion en paralelo
+task RGB()
+{
+     SetSensorColorFull(SEN_COLOR); //Activar el sensor de color
+     ClearScreen();
+     Wait(500);
+
+     while(true){
+                 col_d = SensorValue(SEN_COLOR); //Reiniciar el sensor de color  para detectar valores una y otra vez
+                 if(col_d == 2){ //caja azul
+                          TextOut(0,LCD_LINE3, "AZUL", true); // tercer parametro es para limpiar true = limpiar pantalla y escribir y false = solo escribir sin limpiar
+                          izquierda();
+                          Off(SEN_MOT); //Apagar el motor para no provocar movimiento despues del Wait
+                          Wait(2500); //tiempo de espera despues de cerrar garra.
+
+                          derecha();
+                          Off(SEN_MOT);
+                          Wait(2500);
+
+
+                 }
+                 else if(col_d == 4){ //caja roja
+                                 TextOut(0, LCD_LINE3, "AMARILLO" , true);
+                                 derecha();
+                                 Off(SEN_MOT);
+                                 Wait(2500);
+
+                                 izquierda();
+                                 Off(SEN_MOT);
+                                 Wait(2500);
+                 }
+                 else if(col_d == 5){//caja roja
+                                 TextOut(0, LCD_LINE3, "ROJO & NARANJA" , true);
+                                 derecha();
+                                 Off(SEN_MOT);
+                                 Wait(2500);
+
+                                 izquierda();
+                                 Off(SEN_MOT);
+                                 Wait(2500);
+                 }else if(col_d == 6){//ninguna caja
+                                TextOut(0, LCD_LINE3, "BLANCO" , true);
+                 }
+                 else{
+                       TextOut(0,LCD_LINE3, "NADA", true);//color negro y el verde siempre se cumple al no detectar algo
+                 }
+
+                 Wait(50);
+     }
+
+}
+////////////////
+
+task main(){
+     start RGB;
+}
