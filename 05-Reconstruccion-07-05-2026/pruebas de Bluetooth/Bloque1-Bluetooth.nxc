@@ -1,0 +1,17 @@
+//pruebas de bluetooth
+//Maestro
+task main()
+{
+    while (true)
+    {
+        if (ButtonPressed(BTNRIGHT, false))      // botón derecho
+        {
+            SendRemoteNumber(1, MAILBOX1, 1);    // envía 1 al esclavo
+        }
+        else if (ButtonPressed(BTNLEFT, false))  // botón izquierdo
+        {
+            SendRemoteNumber(1, MAILBOX1, 0);    // envía 0 al esclavo
+        }
+        Wait(100);
+    }
+}

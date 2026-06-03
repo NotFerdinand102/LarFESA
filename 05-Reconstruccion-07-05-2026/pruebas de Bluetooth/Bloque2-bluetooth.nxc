@@ -1,0 +1,20 @@
+//prueba de bluetooth
+//esclavo
+
+task main()
+{
+    long mensaje = 0;
+    while (true)
+    {
+        ReceiveRemoteNumber(MAILBOX1, true, mensaje);  // lee el buzón 1
+        ClearScreen();                                 // limpia la pantalla
+        TextOut(0, LCD_LINE2, "Mensaje recibido:");
+        NumOut(0, LCD_LINE4, mensaje);                 // muestra el número
+        if (mensaje == 1)
+            TextOut(0, LCD_LINE6, "Orden: Avanzar");
+            Wait(2000);
+        else
+            TextOut(0, LCD_LINE6, "Orden: Detener");
+        Wait(50);
+    }
+}
